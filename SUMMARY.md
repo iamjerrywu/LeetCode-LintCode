@@ -15,6 +15,7 @@
 * [W9. Sorting](algo_basic_python_java/w9.-sorting/README.md)
   * [Technics](algo_basic_python_java/w9.-sorting/technics.md)
   * [Problems](algo_basic_python_java/w9.-sorting/problems/README.md)
+    * [5. Kth Largest Element](algo_basic_python_java/w9.-sorting/problems/5.-kth-largest-element.md)
     * [6. Merge Two Sorted Arrays \(E\)](algo_basic_python_java/w9.-sorting/problems/6.-merge-two-sorted-arrays-e.md)
     * [464. Sort Integers II \(E\)](algo_basic_python_java/w9.-sorting/problems/464.-sort-integers-ii.md)
 
