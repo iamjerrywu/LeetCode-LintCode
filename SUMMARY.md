@@ -29,6 +29,6 @@
     * [415. Valid Palindrome \(M\)](algo_2021/w2.-two-pointer/problems/415.-valid-palindrome.md)
 * [W3. Dichotomy](algo_2021/w3.-dichotomy/README.md)
   * [Technics](algo_2021/w3.-dichotomy/technics.md)
-  * [Problems](algo_2021/w3.-dichotomy/problems.md)
-  * [Untitled](algo_2021/w3.-dichotomy/untitled.md)
+  * [Problems](algo_2021/w3.-dichotomy/problems/README.md)
+    * [365. Fibonacci \(N\)](algo_2021/w3.-dichotomy/problems/untitled.md)
 
