@@ -30,5 +30,6 @@
 * [W3. Dichotomy](algo_2021/w3.-dichotomy/README.md)
   * [Technics](algo_2021/w3.-dichotomy/technics.md)
   * [Problems](algo_2021/w3.-dichotomy/problems/README.md)
+    * [457. Classical Binary Search](algo_2021/w3.-dichotomy/problems/457.-classical-binary-search.md)
     * [1807. Fibonacci \(E\)](algo_2021/w3.-dichotomy/problems/untitled.md)
 
