@@ -32,5 +32,6 @@
   * [Problems](algo_2021/w3.-dichotomy/problems/README.md)
     * [14. First Position of Target](algo_2021/w3.-dichotomy/problems/14.-first-position-of-target.md)
     * [457. Classical Binary Search](algo_2021/w3.-dichotomy/problems/457.-classical-binary-search.md)
+    * [458. Last Position of Target](algo_2021/w3.-dichotomy/problems/458.-last-position-of-target.md)
     * [1807. Fibonacci \(E\)](algo_2021/w3.-dichotomy/problems/untitled.md)
 
