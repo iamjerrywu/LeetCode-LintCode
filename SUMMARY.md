@@ -30,6 +30,7 @@
 * [W3. Dichotomy](algo_2021/w3.-dichotomy/README.md)
   * [Technics](algo_2021/w3.-dichotomy/technics.md)
   * [Problems](algo_2021/w3.-dichotomy/problems/README.md)
+    * [14. First Position of Target](algo_2021/w3.-dichotomy/problems/14.-first-position-of-target.md)
     * [457. Classical Binary Search](algo_2021/w3.-dichotomy/problems/457.-classical-binary-search.md)
     * [1807. Fibonacci \(E\)](algo_2021/w3.-dichotomy/problems/untitled.md)
 

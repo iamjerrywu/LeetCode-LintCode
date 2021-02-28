@@ -80,8 +80,6 @@ class Solution:
 * **Space Complexity: O\(N\)**
   * We need space proportionate to `N` to account for the max size of the stack, in memory. This stack keeps track of the function calls to `fib(N)`. This has the potential to be bad in cases that there isn't enough physical memory to handle the increasingly growing stack, leading to a `StackOverflowError`
 
-\`\`
-
 ## Approach: Memoization
 
 ### Intuition:
