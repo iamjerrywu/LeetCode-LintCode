@@ -4,7 +4,7 @@ class Solution:
     @param target: An integer
     @return: An integer
     """
-    def findPosition(self, nums, target):
+    def binarySearch(self, nums, target):
         # write your code here
         if not nums:
             return -1
@@ -20,7 +20,7 @@ class Solution:
             elif nums[mid] > target:
                 end = mid
             else: # nums[mid] == target:
-                return mid
+                end = mid
         
         # search again in start/end
         # since above while loop end when reaching two element left (start + end)
