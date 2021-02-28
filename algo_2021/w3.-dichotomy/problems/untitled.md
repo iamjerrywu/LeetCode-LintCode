@@ -6,8 +6,6 @@
 
 #### Description
 
-中文
-
 Find the _N_th number in Fibonacci sequence.
 
 A Fibonacci sequence is defined as follow:
