@@ -1,4 +1,4 @@
-# 365. Fibonacci \(N\)
+# 1807. Fibonacci \(E\)
 
 ## Problem
 
@@ -84,20 +84,22 @@ class Solution:
 
 \`\`
 
-## Approach: Pure Recursive
+## Approach: Memoization
 
 ### Intuition:
 
-Recursively thinking
+Improve recursion by using iteration, still solving for all sub-problems and returning answer for N, using already computed Fibonacci values. 
 
 ### Algorithm: 
 
-Since _i_ th number is the sum of _i_-1 th number and _i_-2 th number, apply recursive algorithm exception the first 2 elements
+Using data structure \(hashmap, or array\) to store the memorized fibonacci number, then use iteration to find the Nth value
 
 #### Step by step: 
 
 * For n&lt;=2, answer = n - 1
-* Rest of res = sum of i-1th number and i-2th number
+* Otherwise, iterate through N, and storing each computed answer in dictionary along the way
+* Use this array as reference to 2 previous numbers to calculate the current fibonacci number
+* Eventually reach last number and return 
 
 ### Code
 
@@ -113,17 +115,25 @@ class Solution:
         # write your code here
         if n <= 2:
             return n - 1
-        return self.fibonacci(n - 2) + self.fibonacci(n - 1)
+        return self.memoize(n)
+        
+    def memoize(self, n):
+        # init memory
+        cache = {1:0, 2:1}
+        for i in range(3, n + 1):
+            # implement memory 
+            cache[i] = cache[i - 1] + cache[i - 2]
+        return cache[n]
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:** **O\(2^n\)**
-  * The slowest way because it takes exponential time. The amount of operations needed for each level of recursion, grows exponentially as depth approaches N. 
+* **Time Complexity:** **O\(n\)**
+  * Each number, starting at 2 up to and including `N`, is visited, computed and then stored for O\(1\)O\(1\) access later on.
 * **Space Complexity: O\(N\)**
-  * We need space proportionate to `N` to account for the max size of the stack, in memory. This stack keeps track of the function calls to `fib(N)`. This has the potential to be bad in cases that there isn't enough physical memory to handle the increasingly growing stack, leading to a `StackOverflowError`
+  * The size of the data structure is proportionate to `N`
 
 ## Approach: Iterative Top-Down Approach 
 
