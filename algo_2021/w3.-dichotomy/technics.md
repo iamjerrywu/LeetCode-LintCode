@@ -1,7 +1,66 @@
 # Technics
 
-### Java 版本
+## Binary Selection 
 
+Arguably one of the most frequent interview question
+
+### Application
+
+To find certain number in a sorted array, its time complexity is O\(logn\), better than regular O\(n\)
+
+### Template
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    # @param nums: The integer array
+    # @param target: Target number to find
+    # @return the first position of target in nums, position start from 0 
+    def binarySearch(self, nums, target):
+        if not nums:
+            return -1
+
+        start, end = 0, len(nums) - 1
+        # Use "start + 1" < end and not "start < end" to avoid deadlock 
+        # In first position of target no dead lock
+        # But in last position of target would have dead lock
+        # Ex：nums=[1，1] target = 1
+        # To unify template: start + 1 < end，guarantee no deadlock 
+        while start + 1 < end:
+            # python no overflow problem, can write like this
+            # java/C++ better write as mid = start + (end - start) / 2
+            # to avoid when start = 2^31 - 1, end = 2^31 - 1, overflow happened
+            mid = (start + end) // 2
+         
+            # can write as start = mid + 1
+            # however, in some case finding target interval, this may lost some value
+            # writing as start = mid won't affect algorithm correctness
+            # still O(logn) (like logn vs log(n+1), both is Ologn)
+            if nums[mid] < target:
+                start = mid
+            # WARNING!
+            # In first position, should be "end = mid", since we care if there any target before mid
+            # In last position, should be "start = mid", since we care if there any target after mid
+            # template here show for first position case
+            elif nums[mid] == target:
+                end = mid
+            else: # nums[mid] > target
+                end = mid
+
+        # search again in start/end
+        # since above while loop end when reaching two element left (start + end)
+        # these two still need check up 
+        if nums[start] == target:
+            return start
+        if nums[end] == target:
+            return end
+
+        return -1
+```
+{% endtab %}
+
+{% tab title="Java" %}
 ```java
 public class Solution {
     /**
@@ -15,11 +74,11 @@ public class Solution {
         }
 
         int start = 0, end = nums.length - 1;
-        // 要点1: start + 1 < end
+        // start + 1 < end
         while (start + 1 < end) {
-     // 要点2：start + (end - start) / 2
+     // start + (end - start) / 2
             int mid = start + (end - start) / 2;
-            // 要点3：=, <, > 分开讨论，mid 不+1也不-1
+        
             if (nums[mid] == target) {
                 return mid;
             } else if (nums[mid] < target) {
@@ -29,7 +88,7 @@ public class Solution {
             }
         }
 
-        // 要点4: 循环结束后，单独处理start和end
+        // Take care start / end 
         if (nums[start] == target) {
             return start;
         }
@@ -40,58 +99,6 @@ public class Solution {
     }
 }
 ```
-
-### Python 版本
-
-```python
-class Solution:
-    # @param nums: The integer array
-    # @param target: Target number to find
-    # @return the first position of target in nums, position start from 0 
-    def binarySearch(self, nums, target):
-        if not nums:
-            return -1
-
-        start, end = 0, len(nums) - 1
-        # 用 start + 1 < end 而不是 start < end 的目的是为了避免死循环
-        # 在 first position of target 的情况下不会出现死循环
-        # 但是在 last position of target 的情况下会出现死循环
-        # 样例：nums=[1，1] target = 1
-        # 为了统一模板，我们就都采用 start + 1 < end，就保证不会出现死循环
-        while start + 1 < end:
-            # python 没有 overflow 的问题，直接 // 2 就可以了
-            # java和C++ 最好写成 mid = start + (end - start) / 2
-            # 防止在 start = 2^31 - 1, end = 2^31 - 1 的情况下出现加法 overflow
-            mid = (start + end) // 2
-
-            # > , =, < 的逻辑先分开写，然后在看看 = 的情况是否能合并到其他分支里
-            if nums[mid] < target:
-                start = mid
-            elif nums[mid] == target:
-                end = mid
-            else: 
-                end = mid
-
-        # 因为上面的循环退出条件是 start + 1 < end
-        # 因此这里循环结束的时候，start 和 end 的关系是相邻关系（1和2，3和4这种）
-        # 因此需要再单独判断 start 和 end 这两个数谁是我们要的答案
-        # 如果是找 first position of target 就先看 start，否则就先看 end
-        if nums[start] == target:
-            return start
-        if nums[end] == target:
-            return end
-
-        return -1
-```
-
-如果你之前写过二分的题目，你会发现在二分问题中，最常见的错误就是死循环。而这个模版一定不会出现死循环。为什么呢？  
-因为我们这边使用了start + 1 &lt; end, 而不是start &lt; end 或者 start &lt;= end  
-二分法的模板中，整个程序架构分为两个部分：  
-通过 while 循环，将区间范围从 n 缩小到 2 （只有 start 和 end 两个点）。  
-在 start 和 end 中判断是否有解。  
-而普通的start &lt; end 或者 start &lt;= end 在寻找目标最后一次出现的位置的时候，可能出现死循环。
-
-有同学可能会问为什么明明可以 start = mid + 1 偏偏要写成 start = mid?  
-大部分时候，mid 是可以 +1 和 -1 的。在一些特殊情况下，比如寻找目标的最后一次出现的位置时，当 target 与 nums\[mid\] 相等的时候，是不能够使用 mid + 1 或者 mid - 1 的。因为会导致漏掉解。那么为了节省脑力，统一写成 start = mid / end = mid 并不会造成任何解的丢失，并且也不会损失效率——log\(n\) 和 log\(n+1\) 没有区别  
-
+{% endtab %}
+{% endtabs %}
 
