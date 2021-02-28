@@ -27,5 +27,7 @@
   * [Problems](algo_2021/w2.-two-pointer/problems/README.md)
     * [148. Sort Colors \(M\)](algo_2021/w2.-two-pointer/problems/148.-sort-colors.md)
     * [415. Valid Palindrome \(M\)](algo_2021/w2.-two-pointer/problems/415.-valid-palindrome.md)
-* [W3. Dichotomy](algo_2021/w3.-dichotomy.md)
+* [W3. Dichotomy](algo_2021/w3.-dichotomy/README.md)
+  * [Technics](algo_2021/w3.-dichotomy/technics.md)
+  * [Problems](algo_2021/w3.-dichotomy/problems.md)
 
