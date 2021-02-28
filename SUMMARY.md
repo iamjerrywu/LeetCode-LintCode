@@ -30,8 +30,9 @@
 * [W3. Dichotomy](algo_2021/w3.-dichotomy/README.md)
   * [Technics](algo_2021/w3.-dichotomy/technics.md)
   * [Problems](algo_2021/w3.-dichotomy/problems/README.md)
-    * [14. First Position of Target](algo_2021/w3.-dichotomy/problems/14.-first-position-of-target.md)
-    * [457. Classical Binary Search](algo_2021/w3.-dichotomy/problems/457.-classical-binary-search.md)
-    * [458. Last Position of Target](algo_2021/w3.-dichotomy/problems/458.-last-position-of-target.md)
+    * [14. First Position of Target \(E\)](algo_2021/w3.-dichotomy/problems/14.-first-position-of-target.md)
+    * [457. Classical Binary Search \(E\)](algo_2021/w3.-dichotomy/problems/457.-classical-binary-search.md)
+    * [458. Last Position of Target \(E\)](algo_2021/w3.-dichotomy/problems/458.-last-position-of-target.md)
+    * [1536. Find First and Last Position of Element in Sorted Array \(M\)](algo_2021/w3.-dichotomy/problems/1536.-find-first-and-last-position-of-element-in-sorted-array-m.md)
     * [1807. Fibonacci \(E\)](algo_2021/w3.-dichotomy/problems/untitled.md)
 
