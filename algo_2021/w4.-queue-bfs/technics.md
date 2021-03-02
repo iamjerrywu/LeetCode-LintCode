@@ -138,5 +138,21 @@ key = 5, value = 5
 ```
 {% endcode %}
 
+### List
 
+List is ordered and repetition and null value allowed data structure. In Java there are **LinkedList** and **ArrayList**
+
+#### LinkedList:
+
+* Based on linked-list
+
+**ArrayList:** 
+
+* Based on dynamic arrays
+
+**LinkedList vs ArrayList:**
+
+* For randomly access like **get/set**, ArrayList O\(1\) better than LinkedList O\(n\)
+* For new/delete like **add, remove**, if already know which index need to modify:
+  * LinkedList O\(1\) better than ArrayList O\(n\), since ArrayList need moving elements
 
