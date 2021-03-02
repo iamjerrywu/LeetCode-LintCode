@@ -13,9 +13,14 @@ There are two ways to implement queue:
 
 ### Set
 
+Set emphasizes on unique, like if trying to search any existed values, using set the best storage container
+
 #### HashSet
 
-No repeated values / **Can have null value / unordered**
+* No repeated values
+* **Can have null value** 
+* **Unordered**
+* **Access faster O\(1\)**
 
 {% code title="HashSet" %}
 ```java
@@ -34,7 +39,10 @@ while (iter.hasNext()) {
 
 #### TreeSet
 
-No repeated values / **Can't not have null value / ordered**
+* No repeated values
+* **Can't not have null value** 
+* **Ordered** 
+* **Access slower O\(logn\)**
 
 ```java
 Set<String> set = new TreeSet<>();
@@ -49,5 +57,12 @@ while (iter.hasNext()) {
 }// output ordered as: 1 2 3 4 5
 ```
 
+### Map
+
+Map is a type of fast key lookup data structure that offers flexible means of indexing into its individual elements. Key's non-repetitive. 
+
+#### HashMap
+
+* 
 
 
