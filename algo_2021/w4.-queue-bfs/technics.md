@@ -18,9 +18,9 @@ Set emphasizes on unique, like if trying to search any existed values, using set
 #### HashSet
 
 * No repeated values
-* **Can have null value** 
-* **Unordered**
-* **Access faster O\(1\)**
+* Can have null value 
+* Unordered
+* Access faster O\(1\)
 
 {% code title="HashSet" %}
 ```java
@@ -40,10 +40,11 @@ while (iter.hasNext()) {
 #### TreeSet
 
 * No repeated values
-* **Can't not have null value** 
-* **Ordered** 
-* **Access slower O\(logn\)**
+* Can't not have null value 
+* Ordered 
+* Access slower O\(logn\)
 
+{% code title="TreeSet" %}
 ```java
 Set<String> set = new TreeSet<>();
 for (int i = 1; i < 6; i ++) {
@@ -56,6 +57,7 @@ while (iter.hasNext()) {
 	system.out.print(iter.next() + " ");//ordered
 }// output ordered as: 1 2 3 4 5
 ```
+{% endcode %}
 
 ### Map
 
@@ -63,6 +65,76 @@ Map is a type of fast key lookup data structure that offers flexible means of in
 
 #### HashMap
 
-* 
+* Key non-repetitive, value repetitive
+* Key/value can be "null"
+* unordered 
 
+{% code title="HashMap" %}
+```java
+public class Solution {
+    public static void main(String[] args){
+        Map<String, String> map = new HashMap<>();
+        for (int i = 5; i > 0; i --) {
+            map.put(i + "", i + "");
+        }
+        map.put("1","1");//key non-repetitive
+        map.put("11","1");//value repetitive
+        map.put(null, null);//can be null
+        for (Iterator i = map.keySet().iterator(); i.hasNext(); ) {
+            String key = (String)i.next();
+            String value = map.get(key);
+            System.out.println("key = " + key + ", value = " + value);
+        }
+    }
+}
+//output
+/*
+key = 11, value = 1
+key = null, value = null
+key = 1, value = 1
+key = 2, value = 2
+key = 3, value = 3
+key = 4, value = 4
+key = 5, value = 5
+*/
+//unordered output
+```
+{% endcode %}
+
+#### TreeMap
+
+* Key non-repetitive, value repetitive
+* Key/value cannot be "null"
+* Ordered 
+
+{% code title="TreeMap" %}
+```java
+public class Solution {
+    public static void main(String[] args){
+        Map<String, String> map = new TreeMap<>();
+        for (int i = 5; i > 0; i --) {
+            map.put(i + "", i + "");
+        }
+        map.put("1","1");//key non-repetitive
+        map.put("11","1");//value repetitive
+        //map.put(null, null);//null value
+        for (Iterator i = map.keySet().iterator(); i.hasNext(); ) {
+            String key = (String)i.next();
+            String value = map.get(key);
+            System.out.println("key = " + key + ", value = " + value);
+        }
+    }
+}
+//ouput
+/*
+key = 1, value = 1
+key = 11, value = 1
+key = 2, value = 2
+key = 3, value = 3
+key = 4, value = 4
+key = 5, value = 5
+*/
+//ordered output
+```
+{% endcode %}
 
