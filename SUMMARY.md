@@ -37,5 +37,7 @@
     * [458. Last Position of Target \(E\)](algo_2021/w3.-dichotomy/problems/458.-last-position-of-target.md)
     * [1536. Find First and Last Position of Element in Sorted Array \(M\)](algo_2021/w3.-dichotomy/problems/1536.-find-first-and-last-position-of-element-in-sorted-array-m.md)
     * [1807. Fibonacci \(E\)](algo_2021/w3.-dichotomy/problems/untitled.md)
-* [W4. Queue/BFS](algo_2021/w4.-queue-bfs.md)
+* [W4. Queue/BFS](algo_2021/w4.-queue-bfs/README.md)
+  * [Technics](algo_2021/w4.-queue-bfs/technics.md)
+  * [Problems](algo_2021/w4.-queue-bfs/problems.md)
 
