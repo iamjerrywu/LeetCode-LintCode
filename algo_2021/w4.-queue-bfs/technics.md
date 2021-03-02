@@ -156,3 +156,17 @@ List is ordered and repetition and null value allowed data structure. In Java th
 * For new/delete like **add, remove**, if already know which index need to modify:
   * LinkedList O\(1\) better than ArrayList O\(n\), since ArrayList need moving elements
 
+### Queue
+
+Queue is a FIFO \(first in first out\) data structure, use enqueue to add value from tail, and remove from head 
+
+#### PriorityQueue:
+
+* Based on "Heap" 
+* Non-FIFO
+
+#### Queue:
+
+* Based on Linked-List
+* FIFO
+
