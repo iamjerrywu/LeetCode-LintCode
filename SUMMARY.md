@@ -39,5 +39,6 @@
     * [1807. Fibonacci \(E\)](algo_2021/w3.-dichotomy/problems/untitled.md)
 * [W4. Queue/BFS](algo_2021/w4.-queue-bfs/README.md)
   * [Technics](algo_2021/w4.-queue-bfs/technics.md)
-  * [Problems](algo_2021/w4.-queue-bfs/problems.md)
+  * [Problems](algo_2021/w4.-queue-bfs/problems/README.md)
+    * [457. Implement Queue by Linked List](algo_2021/w4.-queue-bfs/problems/457.-implement-queue-by-linked-list.md)
 
