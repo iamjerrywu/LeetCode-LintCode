@@ -40,6 +40,5 @@
 * [W4. Queue/BFS](algo_2021/w4.-queue-bfs/README.md)
   * [Technics](algo_2021/w4.-queue-bfs/technics.md)
   * [Problems](algo_2021/w4.-queue-bfs/problems/README.md)
-    * [Untitled](algo_2021/w4.-queue-bfs/problems/untitled.md)
     * [492. Implement Queue by Linked List \(E\)](algo_2021/w4.-queue-bfs/problems/457.-implement-queue-by-linked-list.md)
 
