@@ -207,3 +207,15 @@ Following matrix means vertex 0 connect to vertex 1, vertex 1 connect to vertex 
  \[1\]  
 \]
 
+{% code title="In Java can use HashMap / HashSet to realize adjacent list" %}
+```java
+Map<T, Set> = new HashMap<Integer, HashSet>();
+```
+{% endcode %}
+
+{% code title="Python can use dictionary comprehension" %}
+```python
+adjacency_list = {x:set() for x in nodes}
+```
+{% endcode %}
+
