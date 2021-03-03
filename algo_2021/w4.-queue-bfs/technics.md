@@ -184,3 +184,26 @@ Queue is a FIFO \(first in first out\) data structure, use enqueue to add value 
 * Based on Linked-List
 * FIFO
 
+## Graph
+
+### Adjacent matrix
+
+Following matrix means vertex 0 connect vertex 3, vertex 1 connect vertex 2. This data structure require O\(n^2\) space
+
+\[ \[1,0,0,1\],   
+  \[0,1,1,0\],   
+  \[0,1,1,0\],   
+  \[1,0,0,1\] \]  
+\]
+
+### Adjacent List
+
+Following matrix means vertex 0 connect to vertex 1, vertex 1 connect to vertex 2, vertex 1 connect to vertex 3. The total edges amount = m, and space complexity is O\(m\). For worst case is O\(n^2\), however, that's rare case
+
+\[  
+ \[1\],  
+ \[0,2,3\],  
+ \[1\],  
+ \[1\]  
+\]
+
