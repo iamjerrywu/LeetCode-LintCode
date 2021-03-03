@@ -1,5 +1,19 @@
 # Technics
 
+## BFS
+
+Application domain:
+
+* Level traversal
+  * Traverse over graph, tree, matrix
+  * Shortest path
+    * In graph every edge should be same length
+* Connective components
+  * Find all the connected vertices to one specific vertex 
+  * Find all solution for one problem but not using recursion
+* Tropological sorting 
+  * Easier than BFS
+
 ## Queue
 
 Queue is a FIFO \(first in first out\) data structure, and widely used in BFS \(breadth-first-search\)
