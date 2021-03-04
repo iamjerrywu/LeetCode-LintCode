@@ -29,6 +29,15 @@
                              /   \  
                            3      4
 
+## BST Traversal vs Divide Conquer
+
+Both of them can use DFS to implement, but there are some difference
+
+* Traversal: 
+  * Have to traverse all the nodes itself, and record the values \(require heap memory usage\)
+* Divide and Conquer:
+  * Traverse from left/right tree, then eventually merge the left/right tree's results
+
 ## BST Divide and Conquer Template
 
 {% tabs %}
