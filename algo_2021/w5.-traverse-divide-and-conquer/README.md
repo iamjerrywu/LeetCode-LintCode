@@ -29,7 +29,29 @@
                              /   \  
                            3      4
 
+## BST Divide and Conquer Template
 
+{% tabs %}
+{% tab title="python" %}
+```java
+public returntype divideConquer(TreeNode root) {
+    if (root == null) {
+        process if empty tree
+    }
+    
+    // if (root.left == null && root.right == null) {
+    // process when encounter leaf
+    // }
+    
+    left tree return result = divideConquer(root.left)
+    right tree return result = divideConquer(root.right)
+    whole tree return result = merge two tree result 
+    
+    return whole tree result
+}
+```
+{% endtab %}
+{% endtabs %}
 
 
 
