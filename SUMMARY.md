@@ -44,7 +44,5 @@
     * [492. Implement Queue by Linked List \(E\)](algo_2021/w4.-queue-bfs/problems/457.-implement-queue-by-linked-list.md)
     * [1179. Friend Circles \(M\)](algo_2021/w4.-queue-bfs/problems/1179.-friend-circles.md)
 * [W5. Traverse/D&C/DFS](algo_2021/w5.-traverse-divide-and-conquer/README.md)
-  * [Technics](algo_2021/w5.-traverse-divide-and-conquer/technics.md)
-  * [Problems](algo_2021/w5.-traverse-divide-and-conquer/problems/README.md)
-    * [480. Binary Tree Paths \(E\)](algo_2021/w5.-traverse-divide-and-conquer/problems/480.-binary-tree-paths-e.md)
+  * [480. Binary Tree Paths \(E\)](algo_2021/w5.-traverse-divide-and-conquer/480.-binary-tree-paths-e.md)
 
