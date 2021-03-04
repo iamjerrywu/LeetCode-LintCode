@@ -37,5 +37,5 @@
   * [1179. Friend Circles \(M\)](algo_2021/w4.-queue-bfs/1179.-friend-circles.md)
 * [W5. Traverse/D&C/DFS](algo_2021/w5.-traverse-divide-and-conquer/README.md)
   * [480. Binary Tree Paths \(E\)](algo_2021/w5.-traverse-divide-and-conquer/480.-binary-tree-paths-e.md)
-  * [93. Balanced Binary Tree](algo_2021/w5.-traverse-divide-and-conquer/93.-balanced-binary-tree.md)
+  * [93. Balanced Binary Tree \(E\)](algo_2021/w5.-traverse-divide-and-conquer/93.-balanced-binary-tree.md)
 
