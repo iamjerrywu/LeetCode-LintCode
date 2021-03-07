@@ -118,44 +118,38 @@ class Solution:
  * }
  */
 
-
 public class Solution {
     /**
-     * @param root: The root of binary tree.
-     * @return: True if this Binary tree is Balanced, or false.
+     * @param root: the root of binary tree
+     * @return: the root of the minimum subtree
      */
-    class Res {
-    public boolean isBalanced;
-    public int height;
-    public Res(boolean isBalanced, int height) {
-        this.isBalanced = isBalanced;
-        this.height = height;
+    private int minSum;
+    private TreeNode minRoot;
+    public Solution() {
+       minSum = Integer.MAX_VALUE;
+       minRoot = null; 
     }
-}
-    
-    public boolean isBalanced(TreeNode root) {
+    public TreeNode findSubtree(TreeNode root) {
         // write your code here
-        Res result= validate(root);
-        return result.isBalanced;
+        getSum(root);
+        
+        return minRoot;
     }
 
-    private Res validate(TreeNode root) {
+    private int getSum(TreeNode root) {
         if (root == null) {
-            return new Res(true, 0);
+            return 0;
         }
 
-        Res leftRes = validate(root.left);
-        Res rightRes = validate(root.right);
-        int rootHeight = Math.max(leftRes.height, rightRes.height) + 1;
+        int leftWeight = getSum(root.left);
+        int rightWeight = getSum(root.right);
+        int rootWeight = leftWeight + rightWeight + root.val;
 
-        if (!leftRes.isBalanced || !rightRes.isBalanced) {
-            return new Res(false, rootHeight);
+        if (rootWeight < minSum) {
+            minSum = rootWeight;
+            minRoot = root;
         }
-        if (Math.abs(leftRes.height - rightRes.height) > 1) {
-            return new Res(false, rootHeight);
-        }
-        return new Res(true, rootHeight);
-        
+        return rootWeight;
     }
 }
 ```
