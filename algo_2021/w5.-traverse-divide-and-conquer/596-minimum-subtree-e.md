@@ -42,22 +42,25 @@ The tree is look like this:
 There is one and only one subtree in the tree. So we return 1.
 ```
 
+{% hint style="warning" %}
+For a tree there's O\(n\) amounts of subtrees
+{% endhint %}
+
 ## Approach - DC With Global Variable
 
 ### Intuition
 
-Get left/right sub-tree's height recursively and judge if they are balanced or not
+DFS \(post-order traversal\) using divide and conquer, traversing all the subtree and record the minimum sum and node in global variable 
 
 ### Algorithm
 
-Recursion to get left/right subtree's height respectively, and calculate the root height from left/right subtrees's height
+Recursion 
 
 #### Step by step 
 
-* Recursion to return 
-  * if\_balanced: if that root tree is balanced
-  * height: that root tree's height, calculated based on max of height from left/right trees
-* In recursion, eventually can get the whole tree returned values
+* Recursion input the root and return that root's tree's weight
+* Calculate the weight from left/right subtree, then get the current root's tree's weight by adding root's value
+  * Compare the root's weight with global variable minimum\_weight, then update the global variable 
 
 ### Code
 
