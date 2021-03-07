@@ -37,6 +37,7 @@ Both of them can use DFS to implement, but there are some difference
   * Have to traverse all the nodes itself, and record the values \(require heap memory usage\)
 * Divide and Conquer:
   * Traverse from left/right tree, then eventually merge the left/right tree's results
+  * It's **Post-Traversal** \(left child -&gt; right child -&gt; parent\)
 
 ## BST Divide and Conquer Template
 
