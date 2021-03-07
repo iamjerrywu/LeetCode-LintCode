@@ -77,30 +77,30 @@ class TreeNode:
 
 class Solution:
     """
-    @param root: The root of binary tree.
-    @return: True if this Binary tree is Balanced, or false.
+    @param root: the root of binary tree
+    @return: the root of the minimum subtree
     """
-    def isBalanced(self, root):
-        # write your code here
-        is_balanced, _ = self.validate(root)
-        return is_balanced
+    def __init__(self):
+        self.minimum_weight = float('inf')
+        self.minimum_subtree_root = None
     
-    def validate(self, root):
-        # if empty tree, it's balanced and return heigh = 0
-        if not root:
-            return True, 0
+    def findSubtree(self, root):
+        # write your code here
+        self.get_tree_sum(root)
+        return self.minimum_subtree_root
+    
+    def get_tree_sum(self, root):
+        if root is None:
+            return 0
         
-        is_left_balanced, left_height = self.validate(root.left)
-        is_right_balanced, right_height = self.validate(root.right)
-        root_height = max(left_height, right_height) + 1
-
-        if not is_left_balanced or not is_right_balanced: 
-            return False, root_height
-        if abs(left_height - right_height) > 1:
-            return False, root_height
-        return True, root_height
+        left_weight = self.get_tree_sum(root.left)
+        right_weight = self.get_tree_sum(root.right)
+        root_weight = left_weight + right_weight + root.val
         
-
+        if root_weight < self.minimum_weight:
+            self.minimum_subtree_root = root
+            self.minimum_weight = root_weight
+        return root_weight
 ```
 {% endtab %}
 
@@ -186,6 +186,37 @@ Recursion and calculate the current root's total weight by summing the weight fr
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
+
+class Solution:
+    """
+    @param root: the root of binary tree
+    @return: the root of the minimum subtree
+    """
+    def findSubtree(self, root):
+        # write your code here
+        _, min_node, _ = self.helper(root)
+        return min_node
+    
+    def helper(self, root):
+        if not root:
+            return float('inf'), None, 0
+        
+        left_min_weight, left_min_node, left_sum = self.helper(root.left)
+        right_min_weight, right_min_node, right_sum = self.helper(root.right)
+        cur_sum = left_sum + right_sum + root.val
+        
+        if left_min_weight == min(left_min_weight, right_min_weight, cur_sum):
+            return left_min_weight, left_min_node, cur_sum
+        if right_min_weight == min(left_min_weight, right_min_weight, cur_sum):
+            return right_min_weight, right_min_node, cur_sum
+        return cur_sum, root, cur_sum
 
 ```
 {% endtab %}
