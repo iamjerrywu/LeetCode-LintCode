@@ -173,7 +173,7 @@ DFS \(post-order traversal\) using divide and conquer, traversing all the subtre
 
 ### Algorithm
 
-Recursion 
+Recursion and calculate the current root's total weight by summing the weight from left/right subtree, then compare to global min values
 
 #### Step by step 
 
