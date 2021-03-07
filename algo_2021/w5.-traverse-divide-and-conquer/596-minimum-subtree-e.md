@@ -42,7 +42,7 @@ The tree is look like this:
 There is one and only one subtree in the tree. So we return 1.
 ```
 
-## Approach - DFS \(Divide and Conquer \)
+## Approach - DC With Global Variable
 
 ### Intuition
 
