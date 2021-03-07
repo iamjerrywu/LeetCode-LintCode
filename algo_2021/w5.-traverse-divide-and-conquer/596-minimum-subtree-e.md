@@ -50,17 +50,17 @@ For a tree there's O\(n\) amounts of subtrees
 
 ### Intuition
 
-DFS \(post-order traversal\) using divide and conquer, traversing all the subtree and record the minimum sum and node in global variable 
+DFS \(post-order traversal\) using divide and conquer, traversing all the subtree and return the current root tree's min subtree sum, min subtree node and root weight
 
 ### Algorithm
 
-Recursion and calculate the current root's total weight by summing the weight from left/right subtree, then compare to global min values
+Recursion and calculate the current root's total weight by summing the weight from left/right subtree, then return the right values
 
 #### Step by step 
 
-* Recursion input the root and return that root's tree's weight
+* Recursion input the root and return that root's tree's weight, minimum subtree weight sum and node
 * Calculate the weight from left/right subtree, then get the current root's tree's weight by adding root's value
-  * Compare the root's weight with global variable minimum\_weight, then update the global variable 
+  * Compare the between left subtree weight, right subtree weight and current root tree's weight, depend what values should be returned
 
 ### Code
 
