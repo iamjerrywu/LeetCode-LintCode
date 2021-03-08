@@ -29,6 +29,8 @@
                              /   \  
                            3      4
 
+## 
+
 ## BST Traversal vs Divide Conquer
 
 Both of them can use DFS to implement, but there are some difference
