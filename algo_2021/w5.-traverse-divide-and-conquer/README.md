@@ -29,9 +29,9 @@
                              /   \  
                            3      4
 
-## 
+## BST DFS
 
-## BST Traversal vs Divide Conquer
+### BST Traversal vs Divide Conquer
 
 Both of them can use DFS to implement, but there are some difference
 
@@ -41,7 +41,7 @@ Both of them can use DFS to implement, but there are some difference
   * Traverse from left/right tree, then eventually merge the left/right tree's results
   * It's **Post-Traversal** \(left child -&gt; right child -&gt; parent\)
 
-## BST Divide and Conquer Template
+### BST Divide and Conquer Template
 
 {% tabs %}
 {% tab title="python" %}
