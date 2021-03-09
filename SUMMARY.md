@@ -36,6 +36,7 @@
   * [492. Implement Queue by Linked List \(E\)](algo_2021/w4.-queue-bfs/457.-implement-queue-by-linked-list.md)
   * [1179. Friend Circles \(M\)](algo_2021/w4.-queue-bfs/1179.-friend-circles.md)
 * [W5. Traverse/D&C/DFS](algo_2021/w5.-traverse-divide-and-conquer/README.md)
+  * [816. Traveling Salesman Problem \(H\)](algo_2021/w5.-traverse-divide-and-conquer/816.-traveling-salesman-problem-h.md)
   * [15. Permutations \(M\)](algo_2021/w5.-traverse-divide-and-conquer/15.-permutations-m.md)
   * [16. Permutations II \(M\)](algo_2021/w5.-traverse-divide-and-conquer/16.-permutations-ii-m.md)
   * [17. Subsets \(M\)](algo_2021/w5.-traverse-divide-and-conquer/17.-subsets-m.md)
