@@ -1,2 +1,2 @@
-# W2. Two Pointer
+# S2. Two Pointer
 
