@@ -21,10 +21,10 @@
 ## Algo\_2021
 
 * [S1. Intro](algo_2021/w1.-intro.md)
-* [S2. Two Pointer](algo_2021/w2.-two-pointer/README.md)
-  * [56. Two Sum \(E\)](algo_2021/w2.-two-pointer/56.-two-sum.md)
-  * [148. Sort Colors \(M\)](algo_2021/w2.-two-pointer/148.-sort-colors.md)
-  * [415. Valid Palindrome \(M\)](algo_2021/w2.-two-pointer/415.-valid-palindrome.md)
+* [S2. Two Pointer](algo_2021/s2.-two-pointer/README.md)
+  * [56. Two Sum \(E\)](algo_2021/s2.-two-pointer/56.-two-sum.md)
+  * [148. Sort Colors \(M\)](algo_2021/s2.-two-pointer/148.-sort-colors.md)
+  * [415. Valid Palindrome \(M\)](algo_2021/s2.-two-pointer/415.-valid-palindrome.md)
 * [W3. Dichotomy](algo_2021/w3.-dichotomy/README.md)
   * [14. First Position of Target \(E\)](algo_2021/w3.-dichotomy/14.-first-position-of-target.md)
   * [457. Classical Binary Search \(E\)](algo_2021/w3.-dichotomy/457.-classical-binary-search.md)
