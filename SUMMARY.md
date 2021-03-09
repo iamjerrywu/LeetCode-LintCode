@@ -20,7 +20,7 @@
 
 ## Algo\_2021
 
-* [S1. Intro](algo_2021/w1.-intro.md)
+* [S1. Intro](algo_2021/s1.-intro.md)
 * [S2. Two Pointer](algo_2021/s2.-two-pointer/README.md)
   * [56. Two Sum \(E\)](algo_2021/s2.-two-pointer/56.-two-sum.md)
   * [148. Sort Colors \(M\)](algo_2021/s2.-two-pointer/148.-sort-colors.md)
