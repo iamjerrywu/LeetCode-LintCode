@@ -4,19 +4,19 @@
 
 ## Algo\_Basic\_Python\_Java
 
-* [W1. Basic](algo_basic_python_java/w1.-basic.md)
-* [W2. String](algo_basic_python_java/w2.-string.md)
-* [W3. LinkedList](algo_basic_python_java/w3.-linkedlist.md)
-* [W4. Stack and Queue](algo_basic_python_java/w4.-stack-and-queue.md)
-* [W5. Binary Tree](algo_basic_python_java/w5.-binary-tree.md)
-* [W6. BST](algo_basic_python_java/w6.-bst.md)
-* [W7. Divide and Conquer](algo_basic_python_java/w7.-divide-and-conquer.md)
-* [W8. Hash](algo_basic_python_java/w8.-hash.md)
-* [W9. Sorting](algo_basic_python_java/w9.-sorting/README.md)
-  * [5. Kth Largest Element \(M\)](algo_basic_python_java/w9.-sorting/5.-kth-largest-element.md)
-  * [6. Merge Two Sorted Arrays \(E\)](algo_basic_python_java/w9.-sorting/6.-merge-two-sorted-arrays-e.md)
-  * [464. Sort Integers II \(E\)](algo_basic_python_java/w9.-sorting/464.-sort-integers-ii.md)
-  * [532. Reverse Pairs \(M\)](algo_basic_python_java/w9.-sorting/532.-reverse-pairs.md)
+* [S1. Basic](algo_basic_python_java/s1.-basic.md)
+* [S2. String](algo_basic_python_java/s2.-string.md)
+* [S3. LinkedList](algo_basic_python_java/s3.-linkedlist.md)
+* [S4. Stack and Queue](algo_basic_python_java/s4.-stack-and-queue.md)
+* [S5. Binary Tree](algo_basic_python_java/s5.-binary-tree.md)
+* [S6. BST](algo_basic_python_java/s6.-bst.md)
+* [S7. Divide and Conquer](algo_basic_python_java/s7.-divide-and-conquer.md)
+* [S8. Hash](algo_basic_python_java/s8.-hash.md)
+* [S9. Sorting](algo_basic_python_java/s9.-sorting/README.md)
+  * [5. Kth Largest Element \(M\)](algo_basic_python_java/s9.-sorting/5.-kth-largest-element.md)
+  * [6. Merge Two Sorted Arrays \(E\)](algo_basic_python_java/s9.-sorting/6.-merge-two-sorted-arrays-e.md)
+  * [464. Sort Integers II \(E\)](algo_basic_python_java/s9.-sorting/464.-sort-integers-ii.md)
+  * [532. Reverse Pairs \(M\)](algo_basic_python_java/s9.-sorting/532.-reverse-pairs.md)
 
 ## Algo\_2021
 
