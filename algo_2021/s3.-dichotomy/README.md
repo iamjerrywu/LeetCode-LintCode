@@ -1,4 +1,4 @@
-# W3. Dichotomy
+# S3. Dichotomy
 
 ## Binary Selection 
 
