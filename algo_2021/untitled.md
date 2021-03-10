@@ -19,3 +19,18 @@ HashMap is build up by array which each value in array is tailed by a linkedlist
 3. It that mapped value is not Null, then search for the linkedlist tailing that index's location. Once find the same key as the one in entry tuple, then update the value.
 4. If not finding the same key in the linkedlist, then shift the existed linkedlist backward, and make the new entry tuple as the head of that linkedlist
 
+### HashSet Principle
+
+1. When importing element into HashSet, HasSet would obtain hash value by importing element into HashCode\(\). Then based on that hash value, can calculate the location of that element. 
+   1. First if that location have no element, then store that element to that location
+   2. If that location is already occupied, then compare entry element with that one \(using `equals()`\)
+      1. If return `true`, then they are the same, entry element is repeated one, cannot be added 
+      2. If return `false`, then can add entry element inside
+
+### Conclusion
+
+| HashMap | HashSet |
+| :--- | :--- |
+| `Map` interface | `Set`interface |
+|  |  |
+
