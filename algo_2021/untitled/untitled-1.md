@@ -86,6 +86,7 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity: O\(n\)**
+  * Traverse all char in string
 * **Space Complexity: O\(n\)**
 
 
