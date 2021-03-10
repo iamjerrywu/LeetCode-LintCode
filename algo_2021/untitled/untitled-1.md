@@ -40,3 +40,11 @@ Output: 78
 Explanation: (97*33^3 + 98*33^2 + 99*33 + 100*1)%100 = 78
 ```
 
+## Approach
+
+### Intuition 
+
+Follow the problem guideline
+
+### A
+
