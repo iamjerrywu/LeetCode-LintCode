@@ -1,6 +1,6 @@
 # S7. Hash/Heap
 
-## Hash
+## Hash \(Java\)
 
 ### HashMap vs HashSet
 
@@ -10,5 +10,5 @@ Array is fast for accessing value \(via for loop\), but slow for storing \(with 
 
 HashSet is implemented vai HashMap. HashMap has imput parameters as `Key`, `Value`. HashSet keep `Value` as constant, only manipulate `key`.
 
-HashMap is build up by array which each value in array is tailed by a linkedlist. This is so called 
+HashMap is build up by array which each value in array is tailed by a linkedlist. This is so called `Hash Table: Chaining`. 
 
