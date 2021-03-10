@@ -46,5 +46,46 @@ Explanation: (97*33^3 + 98*33^2 + 99*33 + 100*1)%100 = 78
 
 Follow the problem guideline
 
-### A
+### Algorithm
+
+congruence modulo principle: \(a  _b \) % MOD = \(\(a % MOD\)_  \(b % MOD\)\) % MOD
+
+#### Step by step
+
+* Traverse every char in string 
+  * ans time 33 than plus ascii value of char
+  * mod HASH\_SIZE
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param key: A string you should hash
+    @param HASH_SIZE: An integer
+    @return: An integer
+    """
+    def hashCode(self, key, HASH_SIZE):
+        # write your code here
+        hash_value = 0
+        for c in key: 
+            hash_value = (hash_value * 33 + ord(c)) % HASH_SIZE
+        return hash_value
+```
+{% endtab %}
+
+{% tab title="java" %}
+```java
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+
+
+
 
