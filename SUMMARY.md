@@ -46,8 +46,5 @@
   * [17. Subsets \(M\)](algo_2021/s6.-dfs-comb-perm/17.-subsets-m.md)
   * [18. Subsets II \(M\)](algo_2021/s6.-dfs-comb-perm/18.-subsets-ii-m.md)
   * [816. Traveling Salesman Problem \(H\)](algo_2021/s6.-dfs-comb-perm/816.-traveling-salesman-problem-h.md)
-
----
-
-* [Untitled](untitled.md)
+* [S7. Hash/Heap](algo_2021/untitled.md)
 
