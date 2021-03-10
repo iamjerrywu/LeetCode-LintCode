@@ -32,5 +32,8 @@ HashMap is build up by array which each value in array is tailed by a linkedlist
 | HashMap | HashSet |
 | :--- | :--- |
 | `Map` interface | `Set`interface |
+| Store tuple | Store object |
+| `put()`to add into map | `add()`to add into set |
+| HashMap using Key to calculate HashCode | HashSet using object to calculate Hashcode. For two object their hashcode can be the same, use `equals()` to differentiate  \(return true if same/false if not\) |
 |  |  |
 
