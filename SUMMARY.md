@@ -41,6 +41,7 @@
   * [480. Binary Tree Paths \(E\)](algo_2021/s5.-traverse-d-and-c/480.-binary-tree-paths-e.md)
   * [596 Minimum Subtree \(E\)](algo_2021/s5.-traverse-d-and-c/596-minimum-subtree-e.md)
 * [S6. DFS/Comb/Perm](algo_2021/s6.-dfs-comb-perm/README.md)
+  * [425. Letter Combinations of a Phone Number \(M\)](algo_2021/s6.-dfs-comb-perm/425.-letter-combinations-of-a-phone-number-m.md)
   * [90. k Sum II \(M\)](algo_2021/s6.-dfs-comb-perm/90.-k-sum-ii-m.md)
   * [10. String Permutations II \(M\)](algo_2021/s6.-dfs-comb-perm/10.-string-permutations-ii-m.md)
   * [15. Permutations \(M\)](algo_2021/s6.-dfs-comb-perm/15.-permutations-m.md)
