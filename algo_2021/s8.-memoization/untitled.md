@@ -14,20 +14,32 @@ Bonus point if you are able to do this using only O\(n\) extra space, where n is
 
 ### Example
 
-**Example 1:**
+Example 1:
 
 ```text
-Input:  key="abcd", size = 1000
-Output: 978
-Explanation: (97*33^3 + 98*33^2 + 99*33 + 100*1)%1000 = 978
+Input the following triangle:
+[
+     [2],
+    [3,4],
+   [6,5,7],
+  [4,1,8,3]
+]
+Output: 11
+Explanation: The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).
 ```
 
-**Example 2:**
+Example 2:
 
 ```text
-Input:  key="abcd", size = 100
-Output: 78
-Explanation: (97*33^3 + 98*33^2 + 99*33 + 100*1)%100 = 78
+Input the following triangle:
+[
+     [2],
+    [3,2],
+   [6,5,7],
+  [4,4,8,1]
+]
+Output: 12
+Explanation: The minimum path sum from top to bottom is 12 (i.e., 2 + 2 + 7 + 1 = 12).
 ```
 
 ## Approach
