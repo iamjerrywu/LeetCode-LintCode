@@ -112,8 +112,8 @@ class Solution:
 Apparently this approach is too slow, requires optimization 
 {% endhint %}
 
-* **Space Complexity: O\(A\)**
-  * **A** is the length of Array, the call stack frame depth
+* **Space Complexity: O\(n\)**
+  * The call stack frame
 
 
 
