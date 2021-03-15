@@ -181,11 +181,15 @@ Apparently this approach is too slow, requires optimization
 
 ### Intuition 
 
-Using divide and conquer that obtaining minimum from left subtree and right subtree, then add its value, eventually can pick the minimum path
+Using divide and conquer that obtaining minimum from left subtree and right subtree, then add its value, eventually can pick the minimum path. However, since this triangle is quite different from BST, triangle has path that intersected with each other. Therefore some node would be visited twice, could use memoization to avoid redundant visiting 
 
-                     node  
- \(left min\) /            \\(right min\)  
-left subtree         right subtree
+The following node shows 5 is the intersected node
+
+                   1  
+                  /  \  
+                2    3  
+               / \  / \  
+             4    5    6
 
 ### Algorithm
 
