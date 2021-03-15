@@ -118,9 +118,12 @@ public class Solution {
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-  * Traverse all char in string
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O\(2 ^ n\)**
+  * Since this way of traverse is similar to BST traverse
+    * For each layer, the total run time = 1 + 2 + 4 + 8 + ......
+      * Therefore it's O\(2^n\)
+* **Space Complexity: O\(A\)**
+  * **A** is the length of Array
 
 
 
