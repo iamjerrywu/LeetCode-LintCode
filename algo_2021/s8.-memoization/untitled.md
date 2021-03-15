@@ -80,38 +80,22 @@ Traverse all the path and collect the minimum value
 ```python
 class Solution:
     """
-    @param key: A string you should hash
-    @param HASH_SIZE: An integer
-    @return: An integer
+    @param triangle: a list of lists of integers
+    @return: An integer, minimum path sum
     """
-    def hashCode(self, key, HASH_SIZE):
+    def minimumTotal(self, triangle):
         # write your code here
-        hash_value = 0
-        for c in key: 
-            hash_value = (hash_value * 33 + ord(c)) % HASH_SIZE
-        return hash_value
-```
-{% endtab %}
+        self.minimum = float('inf')
+        self.traverse(triangle, 0, 0, 0)
+        return self.minimum
+    
+    def traverse(self, triangle, x, y, path_sum):
+        if x == len(triangle):
+            self.minimum = min(path_sum, self.minimum)
+            return 
+        self.traverse(triangle, x + 1, y, path_sum + triangle[x][y])
+        self.traverse(triangle, x + 1, y + 1, path_sum + triangle[x][y])
 
-{% tab title="java" %}
-```java
-public class Solution {
-    /**
-     * @param key: A string you should hash
-     * @param HASH_SIZE: An integer
-     * @return: An integer
-     */
-    public int hashCode(char[] key, int HASH_SIZE) {
-        // write your code here
-        long ans = 0;
-        for (int i = 0; i < key.length; i++) {
-            ans = (ans * 33 + (int)key[i]) % HASH_SIZE; 
-        }
-
-        return (int)ans;
-        
-    }
-}
 ```
 {% endtab %}
 {% endtabs %}
