@@ -177,5 +177,64 @@ Apparently this approach is too slow, requires optimization
 
 
 
+## Approach - DFS: DC and Memoization
+
+### Intuition 
+
+Using divide and conquer that obtaining minimum from left subtree and right subtree, then add its value, eventually can pick the minimum path
+
+                     node  
+ \(left min\) /            \\(right min\)  
+left subtree         right subtree
+
+### Algorithm
+
+Divide and conquer from button to top that recursively get the minimum value from left subtree and right subtree, then plus its value.
+
+#### Step by step
+
+* Divide and Conquer \(recursively\) till the button layer
+  * If x == len\(triangle\), return 0 \(since no node here\)
+* Keep return min of\( left / right value \) plus nodes value
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param triangle: a list of lists of integers
+    @return: An integer, minimum path sum
+    """
+    def minimumTotal(self, triangle):
+        # write your code here
+        return self.divide_conquer(triangle, 0, 0)
+    
+    def divide_conquer(self, triangle, x, y):
+        if x == len(triangle):
+            return 0
+        left = self.divide_conquer(triangle, x + 1, y)
+        right = self.divide_conquer(triangle, x + 1, y + 1)
+        return min(left, right) + triangle[x][y]
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(2 ^ n\)**
+  * Since this way similar to divide and conquer in BST that traversing all route
+    * For each layer, the total run time = 1 + 2 + 4 + 8 + ......
+      * Therefore it's O\(2^n\)
+
+{% hint style="danger" %}
+Apparently this approach is too slow, requires optimization 
+{% endhint %}
+
+* **Space Complexity: O\(A\)**
+  * **A** is the length of Array, the call stack frame depth
+
 
 
