@@ -189,17 +189,19 @@ The following node shows 5 is the intersected node
                   /  \  
                 2    3  
                / \  / \  
-             4    5    6
+             4    **5**    6
 
 ### Algorithm
 
-Divide and conquer from button to top that recursively get the minimum value from left subtree and right subtree, then plus its value.
+Divide and conquer from button to top that recursively get the minimum value from left subtree and right subtree, then plus its value. Once get the minimum value, store it into dictionary for memorization, then return.
 
 #### Step by step
 
 * Divide and Conquer \(recursively\) till the button layer
   * If x == len\(triangle\), return 0 \(since no node here\)
+  * If value already in memo dictionary, then directly return the value instead of keep recusion
 * Keep return min of\( left / right value \) plus nodes value
+  * Before return value, first store it into memo dictionary, then return
 
 ### Code
 
@@ -213,14 +215,22 @@ class Solution:
     """
     def minimumTotal(self, triangle):
         # write your code here
-        return self.divide_conquer(triangle, 0, 0)
+        return self.divide_conquer(triangle, 0, 0, {})
     
-    def divide_conquer(self, triangle, x, y):
+    def divide_conquer(self, triangle, x, y, memo):
         if x == len(triangle):
             return 0
-        left = self.divide_conquer(triangle, x + 1, y)
-        right = self.divide_conquer(triangle, x + 1, y + 1)
-        return min(left, right) + triangle[x][y]
+        
+        # memoization for pruning
+        # avoid searching on the same node twice
+        if (x, y) in memo:
+            return memo[(x, y)]
+
+        left = self.divide_conquer(triangle, x + 1, y, memo)
+        right = self.divide_conquer(triangle, x + 1, y + 1, memo)
+        # first store in to dictionary
+        memo[(x, y)] = min(left, right) + triangle[x][y]
+        return memo[(x, y)]
 
 ```
 {% endtab %}
