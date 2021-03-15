@@ -56,5 +56,5 @@
   * [129. Rehashing \(M\)](algo_2021/s7.-hash-heap/129.-rehashing-m.md)
   * [130. Heapify](algo_2021/s7.-hash-heap/130.-heapify.md)
 * [S8. Memoization](algo_2021/s8.-memoization/README.md)
-  * [Untitled](algo_2021/s8.-memoization/untitled.md)
+  * [109. Triangle](algo_2021/s8.-memoization/untitled.md)
 
