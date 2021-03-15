@@ -174,8 +174,8 @@ class Solution:
 Apparently this approach is too slow, requires optimization 
 {% endhint %}
 
-* **Space Complexity: O\(A\)**
-  * **A** is the length of Array, the call stack frame depth
+* **Space Complexity: O\(n\)**
+  * The call stack frame depth
 
 
 
@@ -244,8 +244,8 @@ class Solution:
   * n is the rows of the triangle \(length of array\)
   * Since for every nodes would only be visited twice
     * O\(n \* \(n+1\)/2 \* 2\) = O\(n^2\)
-* **Space Complexity: O\(A\)**
-  * **A** is the length of Array, the call stack frame depth
+* **Space Complexity: O\(n^2\)**
+  * Extra space: O\(n^2\) for dictionary
 
 
 
