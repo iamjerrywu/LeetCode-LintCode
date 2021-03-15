@@ -42,6 +42,12 @@ Output: 12
 Explanation: The minimum path sum from top to bottom is 12 (i.e., 2 + 2 + 7 + 1 = 12).
 ```
 
+## Overview
+
+### Triangle vs BST
+
+
+
 ## Approach
 
 ### Intuition 
