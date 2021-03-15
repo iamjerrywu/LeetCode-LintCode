@@ -58,17 +58,20 @@ BST:
 
 ### Intuition 
 
-Follow the problem guideline
+Traverse all the path and calculate the sum using DFS \(recursion\)
 
 ### Algorithm
 
-congruence modulo principle: \(a  _b \) % MOD = \(\(a % MOD\)_  \(b % MOD\)\) % MOD
+Traverse all the path and collect the minimum value
 
 #### Step by step
 
-* Traverse every char in string 
-  * ans time 33 than plus ascii value of char
-  * mod HASH\_SIZE
+* Start from top point and traverse to button
+  * Recursively doing DFS
+    * Next Level: X + 1
+      * Have left, right path: Y / Y + 1
+    * If reach the button, than update the minimum value
+* Return minimum value
 
 ### Code
 
