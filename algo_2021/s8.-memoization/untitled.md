@@ -102,9 +102,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(2 ^ n\)**
-  * Since this way of traverse is similar to BST traverse
-    * For each layer, the total run time = 1 + 2 + 4 + 8 + ......
+* **Time Complexity: O\(2 ^ n\)** 
+  * n is the rows of the triangle \(length of array\)
+  * Since this way similar to divide and conquer in BST that traversing all route
+    * For each layer, the total run time \(the amonut of path\): 1, 2, 4, 8, ...2^\(n-1\)
       * Therefore it's O\(2^n\)
 
 {% hint style="danger" %}
@@ -163,9 +164,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(2 ^ n\)**
+* **Time Complexity: O\(2 ^ n\)** 
+  * n is the rows of the triangle \(length of array\)
   * Since this way similar to divide and conquer in BST that traversing all route
-    * For each layer, the total run time = 1 + 2 + 4 + 8 + ......
+    * For each layer, the total run time \(the amonut of path\): 1, 2, 4, 8, ...2^\(n-1\)
       * Therefore it's O\(2^n\)
 
 {% hint style="danger" %}
@@ -238,15 +240,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(2 ^ n\)**
-  * Since this way similar to divide and conquer in BST that traversing all route
-    * For each layer, the total run time = 1 + 2 + 4 + 8 + ......
-      * Therefore it's O\(2^n\)
-
-{% hint style="danger" %}
-Apparently this approach is too slow, requires optimization 
-{% endhint %}
-
+* **Time Complexity: O\(n^2\)**
+  * n is the rows of the triangle \(length of array\)
+  * Since for every nodes would only be visited twice
+    * O\(n \* \(n+1\)/2 \* 2\) = O\(n^2\)
 * **Space Complexity: O\(A\)**
   * **A** is the length of Array, the call stack frame depth
 
