@@ -148,16 +148,14 @@ class Solution:
     """
     def minimumTotal(self, triangle):
         # write your code here
-        self.minimum = float('inf')
-        self.traverse(triangle, 0, 0, 0)
-        return self.minimum
+        return self.divide_conquer(triangle, 0, 0)
     
-    def traverse(self, triangle, x, y, path_sum):
+    def divide_conquer(self, triangle, x, y):
         if x == len(triangle):
-            self.minimum = min(path_sum, self.minimum)
-            return 
-        self.traverse(triangle, x + 1, y, path_sum + triangle[x][y])
-        self.traverse(triangle, x + 1, y + 1, path_sum + triangle[x][y])
+            return 0
+        left = self.divide_conquer(triangle, x + 1, y)
+        right = self.divide_conquer(triangle, x + 1, y + 1)
+        return min(left, right) + triangle[x][y]
 
 ```
 {% endtab %}
