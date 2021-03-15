@@ -46,7 +46,13 @@ Explanation: The minimum path sum from top to bottom is 12 (i.e., 2 + 2 + 7 + 1 
 
 ### Triangle vs BST
 
+#### Triangle:
 
+* Total nodes amount: O\(n^2\)
+
+BST:
+
+* Total nodes amount: O\(2^n\)
 
 ## Approach
 
