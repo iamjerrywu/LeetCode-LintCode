@@ -247,9 +247,43 @@ class Solution:
 * **Space Complexity: O\(n^2\)**
   * Extra space: O\(n^2\) for dictionary
 
-## Approach - DFS: DC and Memoization
+## Approach - DP - Top Down
 
 ### Intuition 
 
-Using divide and conquer that obtaining minimum from left subtree and right subtree, then add its value, eventually can pick the minimum path. However, since this triangle is quite different from BST, triangle has path that intersected with each other. Therefore some node would be visited twice, could use memoization to avoid redundant visiting 
+### Algorithm
+
+#### Step by Step
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+## Approach - DP - Button Up
+
+### Intuition 
+
+### Algorithm
+
+#### Step by Step
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
 
