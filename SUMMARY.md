@@ -20,7 +20,7 @@
 
 ## Algo\_2021
 
-* [S1. Intro](algo_2021/s1.-intro.md)
+* [S1. Basic](algo_2021/s1.-intro.md)
 * [S2. Two Pointer](algo_2021/s2.-two-pointer/README.md)
   * [56. Two Sum \(E\)](algo_2021/s2.-two-pointer/56.-two-sum.md)
   * [148. Sort Colors \(M\)](algo_2021/s2.-two-pointer/148.-sort-colors.md)
@@ -55,7 +55,7 @@
   * [128. Hash Function \(E\)](algo_2021/s7.-hash-heap/untitled-1.md)
   * [129. Rehashing \(M\)](algo_2021/s7.-hash-heap/129.-rehashing-m.md)
   * [130. Heapify](algo_2021/s7.-hash-heap/130.-heapify.md)
-* [S8. Memoization](algo_2021/s8.-memoization/README.md)
+* [S8. DP/Memoization](algo_2021/s8.-memoization/README.md)
   * [109. Triangle](algo_2021/s8.-memoization/untitled.md)
 * [S9. Dynamic Programming](algo_2021/s9.-dynamic-programming.md)
 

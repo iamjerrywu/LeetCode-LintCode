@@ -1,2 +1,2 @@
-# S8. Memoization
+# S8. DP/Memoization
 
