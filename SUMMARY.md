@@ -57,4 +57,5 @@
   * [130. Heapify](algo_2021/s7.-hash-heap/130.-heapify.md)
 * [S8. Memoization](algo_2021/s8.-memoization/README.md)
   * [109. Triangle](algo_2021/s8.-memoization/untitled.md)
+* [S9. Dynamic Programming](algo_2021/s9.-dynamic-programming.md)
 
