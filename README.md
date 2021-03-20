@@ -17,9 +17,14 @@ Notes mainly comprises two parts:
 
 ### Algo\_2021
 
-* Chap8:
-* Chap9
-* Chap17
-* Chap14
-* Chap15
-* 
+* Chap 8:
+* Chap 9
+* Chap 17
+* Chap 14
+* Chap 15
+* Chap 20 \(word ladder II\)
+* Chap 21
+* Chap 25 \(video 4/5/6\)
+* Chap 26
+* Chap 27
+
