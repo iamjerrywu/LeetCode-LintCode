@@ -26,6 +26,7 @@
   * [148. Sort Colors \(M\)](algo_2021/s2.-two-pointer/148.-sort-colors.md)
   * [415. Valid Palindrome \(M\)](algo_2021/s2.-two-pointer/415.-valid-palindrome.md)
   * [610. Two Sum - Difference equals to target](algo_2021/s2.-two-pointer/610.-two-sum-difference-equals-to-target.md)
+  * [1870. Number of Substrings with All Zeros](algo_2021/s2.-two-pointer/1870.-number-of-substrings-with-all-zeros.md)
 * [S3. Dichotomy](algo_2021/s3.-dichotomy/README.md)
   * [14. First Position of Target \(E\)](algo_2021/s3.-dichotomy/14.-first-position-of-target.md)
   * [457. Classical Binary Search \(E\)](algo_2021/s3.-dichotomy/457.-classical-binary-search.md)
