@@ -1,2 +1,2 @@
-# Remove Duplicate Numbers in Array \(E\)
+# 521. Remove Duplicate Numbers in Array \(E\)
 

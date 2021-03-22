@@ -1,6 +1,7 @@
 # Table of contents
 
 * [LintCode notes](README.md)
+* [Template](template.md)
 
 ## Algo\_Basic\_Python\_Java
 
@@ -22,10 +23,10 @@
 
 * [S1. Basic](algo_2021/s1.-intro.md)
 * [S2. Two Pointer](algo_2021/s2.-two-pointer/README.md)
-  * [Remove Duplicate Numbers in Array \(E\)](algo_2021/s2.-two-pointer/remove-duplicate-numbers-in-array-e.md)
   * [56. Two Sum \(E\)](algo_2021/s2.-two-pointer/56.-two-sum.md)
   * [148. Sort Colors \(M\)](algo_2021/s2.-two-pointer/148.-sort-colors.md)
   * [415. Valid Palindrome \(M\)](algo_2021/s2.-two-pointer/415.-valid-palindrome.md)
+  * [521. Remove Duplicate Numbers in Array \(E\)](algo_2021/s2.-two-pointer/remove-duplicate-numbers-in-array-e.md)
   * [610. Two Sum - Difference equals to target](algo_2021/s2.-two-pointer/610.-two-sum-difference-equals-to-target.md)
   * [1870. Number of Substrings with All Zeros \(M\)](algo_2021/s2.-two-pointer/1870.-number-of-substrings-with-all-zeros.md)
 * [S3. Dichotomy](algo_2021/s3.-dichotomy/README.md)
