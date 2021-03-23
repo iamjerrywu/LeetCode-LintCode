@@ -6,7 +6,8 @@
 ## Algo\_Basic\_Python\_Java
 
 * [S1. Basic](algo_basic_python_java/s1.-basic.md)
-* [S2. String](algo_basic_python_java/s2.-string.md)
+* [S2. String](algo_basic_python_java/s2.-string/README.md)
+  * [1352. Compare Version Numbers \(M\)](algo_basic_python_java/s2.-string/1352.-compare-version-numbers-m.md)
 * [S3. LinkedList](algo_basic_python_java/s3.-linkedlist.md)
 * [S4. Stack and Queue](algo_basic_python_java/s4.-stack-and-queue.md)
 * [S5. Binary Tree](algo_basic_python_java/s5.-binary-tree.md)
