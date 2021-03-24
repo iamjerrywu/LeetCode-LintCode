@@ -36,6 +36,7 @@
   * [1870. Number of Substrings with All Zeros \(M\)](algo_2021/s2.-two-pointer/1870.-number-of-substrings-with-all-zeros.md)
 * [S3. Dichotomy](algo_2021/s3.-dichotomy/README.md)
   * [14. First Position of Target \(E\)](algo_2021/s3.-dichotomy/14.-first-position-of-target.md)
+  * [28. Search a 2D Matrix](algo_2021/s3.-dichotomy/28.-search-a-2d-matrix.md)
   * [457. Classical Binary Search \(E\)](algo_2021/s3.-dichotomy/457.-classical-binary-search.md)
   * [458. Last Position of Target \(E\)](algo_2021/s3.-dichotomy/458.-last-position-of-target.md)
   * [1536. Find First and Last Position of Element in Sorted Array \(M\)](algo_2021/s3.-dichotomy/1536.-find-first-and-last-position-of-element-in-sorted-array-m.md)
