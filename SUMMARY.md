@@ -30,6 +30,7 @@
   * [380. Intersection of Two Linked Lists \(M\)](algo_2021/s2.-two-pointer/380.-intersection-of-two-linked-lists-m.md)
   * [415. Valid Palindrome \(M\)](algo_2021/s2.-two-pointer/415.-valid-palindrome.md)
   * [521. Remove Duplicate Numbers in Array \(E\)](algo_2021/s2.-two-pointer/remove-duplicate-numbers-in-array-e.md)
+  * [600. Smallest Rectangle Enclosing Black Pixels](algo_2021/s2.-two-pointer/600.-smallest-rectangle-enclosing-black-pixels.md)
   * [604. Window Sum](algo_2021/s2.-two-pointer/604.-window-sum.md)
   * [610. Two Sum - Difference equals to target](algo_2021/s2.-two-pointer/610.-two-sum-difference-equals-to-target.md)
   * [1246. Longest Repeating Character Replacement](algo_2021/s2.-two-pointer/1246.-longest-repeating-character-replacement.md)
