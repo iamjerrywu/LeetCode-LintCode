@@ -38,7 +38,7 @@
   * [14. First Position of Target \(E\)](algo_2021/s3.-dichotomy/14.-first-position-of-target.md)
   * [28. Search a 2D Matrix](algo_2021/s3.-dichotomy/28.-search-a-2d-matrix.md)
   * [38. Search a 2D Matrix II \(M\)](algo_2021/s3.-dichotomy/38.-search-a-2d-matrix-ii-m.md)
-  * [65. Median of two Sorted Arrays](algo_2021/s3.-dichotomy/65.-median-of-two-sorted-arrays.md)
+  * [65. Median of two Sorted Arrays \(H\)](algo_2021/s3.-dichotomy/65.-median-of-two-sorted-arrays.md)
   * [437. Copy Books \(M\)](algo_2021/s3.-dichotomy/437.-copy-books-m.md)
   * [457. Classical Binary Search \(E\)](algo_2021/s3.-dichotomy/457.-classical-binary-search.md)
   * [458. Last Position of Target \(E\)](algo_2021/s3.-dichotomy/458.-last-position-of-target.md)
