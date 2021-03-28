@@ -27,4 +27,7 @@ Notes mainly comprises two parts:
 * Chap 25 \(video 4/5/6\)
 * Chap 26
 * Chap 27
+* Chap32
+* Chap33
+* Chap34
 
