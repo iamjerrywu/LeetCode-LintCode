@@ -50,6 +50,7 @@
   * [492. Implement Queue by Linked List \(E\)](algo_2021/s4.-queue-bfs-graph/457.-implement-queue-by-linked-list.md)
   * [1179. Friend Circles \(M\)](algo_2021/s4.-queue-bfs-graph/1179.-friend-circles.md)
 * [S5. Traverse/D&C](algo_2021/s5.-traverse-d-and-c/README.md)
+  * [11. Search Range in Binary Search Tree](algo_2021/s5.-traverse-d-and-c/11.-search-range-in-binary-search-tree.md)
   * [86. Binary Search Tree Iterator \(H\)](algo_2021/s5.-traverse-d-and-c/86.-binary-search-tree-iterator-h.md)
   * [93. Balanced Binary Tree \(E\)](algo_2021/s5.-traverse-d-and-c/93.-balanced-binary-tree.md)
   * [480. Binary Tree Paths \(E\)](algo_2021/s5.-traverse-d-and-c/480.-binary-tree-paths-e.md)
