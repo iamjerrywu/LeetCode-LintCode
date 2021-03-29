@@ -57,6 +57,7 @@
   * [448. Inorder Successor in BST](algo_2021/s5.-traverse-d-and-c/448.-inorder-successor-in-bst.md)
   * [480. Binary Tree Paths \(E\)](algo_2021/s5.-traverse-d-and-c/480.-binary-tree-paths-e.md)
   * [596 Minimum Subtree \(E\)](algo_2021/s5.-traverse-d-and-c/596-minimum-subtree-e.md)
+  * [689. Two Sum IV - Input is a BST](algo_2021/s5.-traverse-d-and-c/689.-two-sum-iv-input-is-a-bst.md)
   * [701. Trim a Binary Search Tree](algo_2021/s5.-traverse-d-and-c/701.-trim-a-binary-search-tree.md)
   * [915. Inorder Predecessor in BST](algo_2021/s5.-traverse-d-and-c/915.-inorder-predecessor-in-bst.md)
 * [S6. DFS/Comb/Perm](algo_2021/s6.-dfs-comb-perm/README.md)
