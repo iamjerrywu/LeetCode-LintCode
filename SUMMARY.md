@@ -35,6 +35,7 @@
   * [1246. Longest Repeating Character Replacement](algo_2021/s2.-two-pointer/1246.-longest-repeating-character-replacement.md)
   * [1870. Number of Substrings with All Zeros \(M\)](algo_2021/s2.-two-pointer/1870.-number-of-substrings-with-all-zeros.md)
 * [S3. Dichotomy](algo_2021/s3.-dichotomy/README.md)
+  * [235. Prime Factorization \(E\)](algo_2021/s3.-dichotomy/235.-prime-factorization-e.md)
   * [14. First Position of Target \(E\)](algo_2021/s3.-dichotomy/14.-first-position-of-target.md)
   * [28. Search a 2D Matrix](algo_2021/s3.-dichotomy/28.-search-a-2d-matrix.md)
   * [38. Search a 2D Matrix II \(M\)](algo_2021/s3.-dichotomy/38.-search-a-2d-matrix-ii-m.md)
