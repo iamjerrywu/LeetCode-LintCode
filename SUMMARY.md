@@ -7,6 +7,7 @@
 
 * [S1. Basic](algo_basic_python_java/s1.-basic.md)
 * [S2. String](algo_basic_python_java/s2.-string/README.md)
+  * [656. Multiple Strings](algo_basic_python_java/s2.-string/656.-multiple-strings.md)
   * [1352. Compare Version Numbers \(M\)](algo_basic_python_java/s2.-string/1352.-compare-version-numbers-m.md)
 * [S3. LinkedList](algo_basic_python_java/s3.-linkedlist.md)
 * [S4. Stack and Queue](algo_basic_python_java/s4.-stack-and-queue.md)
