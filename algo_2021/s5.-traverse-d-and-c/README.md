@@ -65,5 +65,32 @@ public returntype divideConquer(TreeNode root) {
 {% endtab %}
 {% endtabs %}
 
+## BST  CRUD
 
+### Tree Node Definition 
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+```
+{% endtab %}
+
+{% tab title="java" %}
+```java
+class TreeNode{
+	int val;
+	TreeNode left;
+	TreeNode right;
+	pubic TreeNode(int val) {
+		this.val = val;
+		this.left = this.right = null;
+	}
+}
+```
+{% endtab %}
+{% endtabs %}
 
