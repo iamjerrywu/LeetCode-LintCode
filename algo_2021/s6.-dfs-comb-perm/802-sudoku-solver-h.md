@@ -6,7 +6,7 @@
 
 ### Example
 
-## Approach
+## Approach - Brute Force DFS
 
 ### Intuition
 
