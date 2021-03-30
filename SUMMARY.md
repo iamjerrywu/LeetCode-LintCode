@@ -62,6 +62,7 @@
   * [701. Trim a Binary Search Tree](algo_2021/s5.-traverse-d-and-c/701.-trim-a-binary-search-tree.md)
   * [915. Inorder Predecessor in BST](algo_2021/s5.-traverse-d-and-c/915.-inorder-predecessor-in-bst.md)
 * [S6. DFS/Comb/Perm](algo_2021/s6.-dfs-comb-perm/README.md)
+  * [197. Permutation Index](algo_2021/s6.-dfs-comb-perm/197.-permutation-index.md)
   * [10. String Permutations II \(M\)](algo_2021/s6.-dfs-comb-perm/10.-string-permutations-ii-m.md)
   * [15. Permutations \(M\)](algo_2021/s6.-dfs-comb-perm/15.-permutations-m.md)
   * [16. Permutations II \(M\)](algo_2021/s6.-dfs-comb-perm/16.-permutations-ii-m.md)
