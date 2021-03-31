@@ -77,6 +77,7 @@
   * [802 · Sudoku Solver \(H\)](algo_2021/s6.-dfs-comb-perm/802-sudoku-solver-h.md)
   * [816. Traveling Salesman Problem \(H\)](algo_2021/s6.-dfs-comb-perm/816.-traveling-salesman-problem-h.md)
 * [S7. Hash/Heap](algo_2021/s7.-hash-heap/README.md)
+  * [12. Min Stack](algo_2021/s7.-hash-heap/12.-min-stack.md)
   * [128. Hash Function \(E\)](algo_2021/s7.-hash-heap/untitled-1.md)
   * [129. Rehashing \(M\)](algo_2021/s7.-hash-heap/129.-rehashing-m.md)
   * [130. Heapify](algo_2021/s7.-hash-heap/130.-heapify.md)
