@@ -1,4 +1,4 @@
-# S7. Hash/Heap
+# S7. DS Design
 
 ## Hash \(Java\)
 
