@@ -10,6 +10,8 @@
 
 ### Intuition
 
+Brute force DFS traverse every place on the board.
+
 ### Algorithm
 
 #### Step by Step
