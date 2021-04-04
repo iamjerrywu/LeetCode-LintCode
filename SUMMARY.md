@@ -21,6 +21,7 @@
   * [6. Merge Two Sorted Arrays \(E\)](algo_basic_python_java/s9.-sorting/6.-merge-two-sorted-arrays-e.md)
   * [104. Merge K Sorted Lists \(M\)](algo_basic_python_java/s9.-sorting/104.-merge-k-sorted-lists.md)
   * [464. Sort Integers II \(E\)](algo_basic_python_java/s9.-sorting/464.-sort-integers-ii.md)
+  * [486. Merge K Sorted Arrays \(M\)](algo_basic_python_java/s9.-sorting/486.-merge-k-sorted-arrays-m.md)
   * [532. Reverse Pairs \(M\)](algo_basic_python_java/s9.-sorting/532.-reverse-pairs.md)
 
 ## Algo\_2021
