@@ -24,6 +24,7 @@
   * [464. Sort Integers II \(E\)](algo_basic_python_java/s9.-sorting/464.-sort-integers-ii.md)
   * [486. Merge K Sorted Arrays \(M\)](algo_basic_python_java/s9.-sorting/486.-merge-k-sorted-arrays-m.md)
   * [532. Reverse Pairs \(M\)](algo_basic_python_java/s9.-sorting/532.-reverse-pairs.md)
+  * [547. Intersection of Two Arrays \(E\)](algo_basic_python_java/s9.-sorting/547.-intersection-of-two-arrays-e.md)
   * [577. Merge K Sorted Interval Lists \(M\)](algo_basic_python_java/s9.-sorting/577.-merge-k-sorted-interval-lists-m.md)
   * [839. Merge Two Sorted Interval Lists](algo_basic_python_java/s9.-sorting/839.-merge-two-sorted-interval-lists.md)
 
