@@ -17,6 +17,8 @@
 * [S7. Divide and Conquer](algo_basic_python_java/s7.-divide-and-conquer.md)
 * [S8. Hash](algo_basic_python_java/s8.-hash.md)
 * [S9. Sorting](algo_basic_python_java/s9.-sorting/README.md)
+  * [839. Merge Two Sorted Interval Lists](algo_basic_python_java/s9.-sorting/839.-merge-two-sorted-interval-lists.md)
+  * [64. Merge Sorted Array \(E\)](algo_basic_python_java/s9.-sorting/64.-merge-sorted-array-e.md)
   * [5. Kth Largest Element \(M\)](algo_basic_python_java/s9.-sorting/5.-kth-largest-element.md)
   * [6. Merge Two Sorted Arrays \(E\)](algo_basic_python_java/s9.-sorting/6.-merge-two-sorted-arrays-e.md)
   * [104. Merge K Sorted Lists \(M\)](algo_basic_python_java/s9.-sorting/104.-merge-k-sorted-lists.md)
