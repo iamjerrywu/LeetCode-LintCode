@@ -27,6 +27,7 @@
   * [547. Intersection of Two Arrays \(E\)](algo_basic_python_java/s9.-sorting/547.-intersection-of-two-arrays-e.md)
   * [548. Intersection of Two Arrays II \(E\)](algo_basic_python_java/s9.-sorting/548.-intersection-of-two-arrays-ii-e.md)
   * [577. Merge K Sorted Interval Lists \(M\)](algo_basic_python_java/s9.-sorting/577.-merge-k-sorted-interval-lists-m.md)
+  * [793. Intersection of Arrays \(M\)](algo_basic_python_java/s9.-sorting/793.-intersection-of-arrays-m.md)
   * [839. Merge Two Sorted Interval Lists](algo_basic_python_java/s9.-sorting/839.-merge-two-sorted-interval-lists.md)
 
 ## Algo\_2021
