@@ -10,14 +10,14 @@
 
 #### Backpack DP vs DFS
 
-Time complexity: 
+**Time complexity:** 
 
 * Backpack DP: O\(n \* m\)
   * n = total items, m = key value
 * DFS: O\(n\*2^n\)
   * n = total items
 
-Which is better?
+**Which is better?**
 
 * Ans: It depends!
 * Normally DP is faster, however consider of following conditions:
