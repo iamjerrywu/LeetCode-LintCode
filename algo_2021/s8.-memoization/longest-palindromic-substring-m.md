@@ -1,3 +1,7 @@
+---
+description: Interval DP
+---
+
 # 200. Longest Palindromic Substring \(M\)
 
 ## Problem

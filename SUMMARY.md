@@ -92,6 +92,7 @@
   * [130. Heapify](algo_2021/s7.-ds-design/130.-heapify.md)
   * [859 · Max Stack \(H\)](algo_2021/s7.-ds-design/859-max-stack-h.md)
 * [S8. DP/Memoization](algo_2021/s8.-memoization/README.md)
+  * [741. Calculate Maximum Value II \(M\)](algo_2021/s8.-memoization/741.-calculate-maximum-value-ii-m.md)
   * [168. Burst Balloons \(H\)](algo_2021/s8.-memoization/168.-burst-balloons-h.md)
   * [107. Word Break \(M\)](algo_2021/s8.-memoization/107.-word-break.md)
   * [109. Triangle \(M\)](algo_2021/s8.-memoization/untitled.md)
