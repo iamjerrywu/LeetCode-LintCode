@@ -92,6 +92,8 @@
   * [130. Heapify](algo_2021/s7.-ds-design/130.-heapify.md)
   * [859 · Max Stack \(H\)](algo_2021/s7.-ds-design/859-max-stack-h.md)
 * [S8. DP/Memoization](algo_2021/s8.-memoization/README.md)
-  * [107. Word Break](algo_2021/s8.-memoization/107.-word-break.md)
-  * [109. Triangle](algo_2021/s8.-memoization/untitled.md)
+  * [107. Word Break \(M\)](algo_2021/s8.-memoization/107.-word-break.md)
+  * [109. Triangle \(M\)](algo_2021/s8.-memoization/untitled.md)
+  * [200. Longest Palindromic Substring \(M\)](algo_2021/s8.-memoization/longest-palindromic-substring-m.md)
+  * [472. Stone Game \(M\)](algo_2021/s8.-memoization/472.-stone-game-m.md)
 
