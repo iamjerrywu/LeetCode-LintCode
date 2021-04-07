@@ -32,7 +32,8 @@
 
 ## Algo\_2021
 
-* [S1. Basic](algo_2021/s1.-intro.md)
+* [S1. Basic](algo_2021/s1.-intro/README.md)
+  * [627 · Longest Palindrome \(E\)](algo_2021/s1.-intro/627-longest-palindrome-e.md)
 * [S2. Two Pointer](algo_2021/s2.-two-pointer/README.md)
   * [56. Two Sum \(E\)](algo_2021/s2.-two-pointer/56.-two-sum.md)
   * [102. Linked List Cycle](algo_2021/s2.-two-pointer/102.-linked-list-cycle.md)
