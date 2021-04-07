@@ -25,6 +25,8 @@ One longest palindrome that can be built is "dccaccd", whose length is `7`.
 
 ### Intuition
 
+Total length - those numbers \(appear odd times - max even times\) - 1\(if odd times existed
+
 ### Algorithm
 
 #### Step by Step
@@ -48,6 +50,7 @@ class Solution:
             else:
                 hash[c] = True
         remove = len(hash)
+        # when odd times existed
         if remove > 0:
             remove-=1
         return len(s) - remove
