@@ -19,7 +19,7 @@ Notes mainly comprises two parts:
 
 * Chap 8:
 * Chap 9
-* Chap 17
+* Chap 17 \(TSP\)
 * Chap 14
 * Chap 15
 * Chap 20 \(word ladder II\)
