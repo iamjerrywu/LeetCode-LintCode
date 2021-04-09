@@ -19,6 +19,15 @@ For example, see XXX
 
 ## Dynamic Programming \(DP\) 
 
+Big Scale problems depends on small scale problem's result
+
+* Similar concept as recursion, divide and conquer
+
+### Dynamic Programming vs Greedy Algorithm
+
+* DP pursue the long term benefit and sacrifice the short term ones
+* Greedy algorithm pursue the maximum benefit
+
 ### Coordination:
 
 ### Backpack: 
