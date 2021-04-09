@@ -1,5 +1,22 @@
 # S8. DP/Memoization
 
+## Memoization
+
+During DFS or Divide Conquer, use list to memorize the path have been traversed, so next time when traverse on same path no need to go through the entire path from head to end but directly takes the values from memorized array 
+
+### Constraint
+
+When n is large and dfs depth reach O\(n\)
+
+For example, see XXX
+
+{% hint style="danger" %}
+1. When both time complexity and dfs depth reach O\(n\), then would stack overflow
+   * Since when n reach big, at the same time dfs reach n, would overflow 
+2. When time complexity is O\(n^2\) and dfs depth reach O\(n\), then would not overflow
+   * Since when n reach big, at the same time dfs reach only sqrt\(n\), it's acceptable
+{% endhint %}
+
 ## Dynamic Programming \(DP\) 
 
 ### Coordination:
