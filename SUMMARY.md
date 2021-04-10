@@ -96,6 +96,7 @@
   * [130. Heapify](lintcode_algo_2021/s7.-ds-design/130.-heapify.md)
   * [859 · Max Stack \(H\)](lintcode_algo_2021/s7.-ds-design/859-max-stack-h.md)
 * [S8. DP/Memoization](lintcode_algo_2021/s8.-dp-memoization/README.md)
+  * [116. Jump Game \(M\)](lintcode_algo_2021/s8.-dp-memoization/116.-jump-game-m.md)
   * [630. Knight Shortest Path II](lintcode_algo_2021/s8.-dp-memoization/630.-knight-shortest-path-ii.md)
   * [76. Longest Increasing Sequence \(M\)](lintcode_algo_2021/s8.-dp-memoization/76.-longest-increasing-sequence-m.md)
   * [77. Longest Common Subsequence \(M\)](lintcode_algo_2021/s8.-dp-memoization/77.-longest-common-subsequence-m.md)
