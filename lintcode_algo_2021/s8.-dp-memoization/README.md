@@ -44,7 +44,29 @@ Big Scale problems depends on small scale problem's result
 
 #### Coordination:
 
+* 1-D: dp\[i\] represents from start - ith's optimal value/solution num/feasibility
+* 2-D: dp\[i\]\[j\] represents from start - ith, jth's optimal value/solution num/feasibility
+  * Problem: [Triangle](109.-triangle-m.md), [Unique Paths](114.-unique-paths-e.md)
+
+#### Suffix:
+
+* Partition \(劃分/接龍\):
+  * 1-D: dp\[i\] represents first i characters optimal value/solution num/feasibility
+  * 2-D: dp\[i\]\[j\] represents first ith charaters can partition j's parts of optimal value/solution num/feasibility
+    * Problem: [word break](107.-word-break--m.md)
+* Two Sequence \(匹配\): 
+  * 2-D: dp\[i\]\[j\] represents string 1's first ith charaters can match string2's first j's parts of optimal value/solution num/feasibility
+    * Problem: [Longest Common Subsequence](76.-longest-increasing-sequence-m.md), [Wildcard Matching](192.-wildcard-matching-h.md)
+
+#### Interval:
+
+* dp\[i\]\[j\] represents interval btw i/j's optimal value/solutions num/feasibility
+  * Problem: [stone games](472.-stone-game-m.md), [burst balloons](168.-burst-balloons-h.md)
+
 #### Backpack: 
+
+* dp\[i\]\[j\] represents the optimal value/solutions num/feasibility that pick up first ith items to comprise as value j
+  * Problem: backpack
 
 **Backpack DP vs DFS**
 
