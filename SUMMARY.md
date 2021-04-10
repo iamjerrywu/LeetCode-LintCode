@@ -126,7 +126,7 @@
 
 ## LeetCode
 
-* [S1. Math](leetcode/untitled.md)
+* [S1. Math](leetcode/s1.-math.md)
 * [S2. String](leetcode/s2.-string.md)
 * [S3. LinkedList](leetcode/s3.-linkedlist.md)
 * [S4. Stack/Queue](leetcode/s4.-stack-queue.md)
