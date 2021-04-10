@@ -18,6 +18,7 @@
 * [S7. Divide and Conquer](lintcode_algo_basic_python_java/s7.-divide-and-conquer.md)
 * [S8. Hash](lintcode_algo_basic_python_java/s8.-hash.md)
 * [S9. Sorting](lintcode_algo_basic_python_java/s9.-sorting/README.md)
+  * [654. Sparse Matrix Multiplication \(M\)](lintcode_algo_basic_python_java/s9.-sorting/654.-sparse-matrix-multiplication-m.md)
   * [5. Kth Largest Element \(M\)](lintcode_algo_basic_python_java/s9.-sorting/5.-kth-largest-element.md)
   * [6. Merge Two Sorted Arrays \(E\)](lintcode_algo_basic_python_java/s9.-sorting/6.-merge-two-sorted-arrays-e.md)
   * [64. Merge Sorted Array \(E\)](lintcode_algo_basic_python_java/s9.-sorting/64.-merge-sorted-array-e.md)
