@@ -79,6 +79,7 @@
   * [16. Permutations II \(M\)](lintcode_algo_2021/s6.-dfs-comb-perm/16.-permutations-ii-m.md)
   * [17. Subsets \(M\)](lintcode_algo_2021/s6.-dfs-comb-perm/17.-subsets-m.md)
   * [18. Subsets II \(M\)](lintcode_algo_2021/s6.-dfs-comb-perm/18.-subsets-ii-m.md)
+  * [52. Next Permutation](lintcode_algo_2021/s6.-dfs-comb-perm/52.-next-permutation.md)
   * [33. N-Queens \(M\)](lintcode_algo_2021/s6.-dfs-comb-perm/33.-n-queens-m.md)
   * [34. N-Queens II \(M\)](lintcode_algo_2021/s6.-dfs-comb-perm/34.-n-queens-ii-m.md)
   * [90. k Sum II \(M\)](lintcode_algo_2021/s6.-dfs-comb-perm/90.-k-sum-ii-m.md)
