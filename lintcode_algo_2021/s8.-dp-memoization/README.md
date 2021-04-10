@@ -28,13 +28,25 @@ Big Scale problems depends on small scale problem's result
 * DP pursue the long term benefit and sacrifice the short term ones
 * Greedy algorithm pursue the maximum benefit
 
-### Coordination:
+### Four factors for Dynamic Programming
 
-### Backpack: 
+![](../../.gitbook/assets/screen-shot-2021-04-10-at-12.23.16-pm.png)
 
-#### dsd
+### Applications for Dynamic Programming
 
-#### Backpack DP vs DFS
+#### Applicable Scenarios
+
+![](../../.gitbook/assets/screen-shot-2021-04-10-at-1.10.04-pm.png)
+
+### Types of Dynamic Programming 
+
+![](../../.gitbook/assets/screen-shot-2021-04-10-at-1.11.31-pm.png)
+
+#### Coordination:
+
+#### Backpack: 
+
+**Backpack DP vs DFS**
 
 **Time complexity:** 
 
