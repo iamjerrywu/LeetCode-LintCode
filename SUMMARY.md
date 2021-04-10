@@ -112,3 +112,7 @@
   * [741. Calculate Maximum Value II \(M\)](lintcode_algo_2021/s8.-dp-memoization/741.-calculate-maximum-value-ii-m.md)
   * [1300. Bash Game \(E\)](lintcode_algo_2021/s8.-dp-memoization/1300.-bash-game.md)
 
+## LintCode\_Algo\_High\_Freq
+
+* [Untitled](lintcode_algo_high_freq/untitled.md)
+
