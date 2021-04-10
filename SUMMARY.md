@@ -114,7 +114,7 @@
 
 ## LintCode\_Algo\_High\_Freq
 
-* [S1. Two Pointer](lintcode_algo_high_freq/untitled.md)
+* [S1. Two Pointer](lintcode_algo_high_freq/s1.-two-pointer.md)
 * [S2. Suffix Sum](lintcode_algo_high_freq/s2.-suffix-sum.md)
 * [S3. BFS](lintcode_algo_high_freq/s3.-bfs.md)
 * [S4. DFS](lintcode_algo_high_freq/s4.-dfs.md)
