@@ -37,6 +37,7 @@
 * [S1. Basic](lintcode_algo_2021/s1.-intro/README.md)
   * [627 · Longest Palindrome \(E\)](lintcode_algo_2021/s1.-intro/627-longest-palindrome-e.md)
 * [S2. Two Pointer](lintcode_algo_2021/s2.-two-pointer/README.md)
+  * [223. Palindrome Linked List \(M\)](lintcode_algo_2021/s2.-two-pointer/223.-palindrome-linked-list-m.md)
   * [56. Two Sum \(E\)](lintcode_algo_2021/s2.-two-pointer/56.-two-sum.md)
   * [102. Linked List Cycle](lintcode_algo_2021/s2.-two-pointer/102.-linked-list-cycle.md)
   * [148. Sort Colors \(M\)](lintcode_algo_2021/s2.-two-pointer/148.-sort-colors.md)
@@ -96,7 +97,6 @@
   * [130. Heapify](lintcode_algo_2021/s7.-ds-design/130.-heapify.md)
   * [859 · Max Stack \(H\)](lintcode_algo_2021/s7.-ds-design/859-max-stack-h.md)
 * [S8. DP/Memoization](lintcode_algo_2021/s8.-dp-memoization/README.md)
-  * [724. Minimum Partition](lintcode_algo_2021/s8.-dp-memoization/724.-minimum-partition.md)
   * [76. Longest Increasing Sequence \(M\)](lintcode_algo_2021/s8.-dp-memoization/76.-longest-increasing-sequence-m.md)
   * [77. Longest Common Subsequence \(M\)](lintcode_algo_2021/s8.-dp-memoization/77.-longest-common-subsequence-m.md)
   * [92. Backpack \(M\)](lintcode_algo_2021/s8.-dp-memoization/92.-backpack-m.md)
@@ -115,6 +115,7 @@
   * [602. Russian Doll Envelopes](lintcode_algo_2021/s8.-dp-memoization/602.-russian-doll-envelopes.md)
   * [603 · Largest Divisible Subset \(M\)](lintcode_algo_2021/s8.-dp-memoization/603-largest-divisible-subset-m.md)
   * [630. Knight Shortest Path II](lintcode_algo_2021/s8.-dp-memoization/630.-knight-shortest-path-ii.md)
+  * [724. Minimum Partition](lintcode_algo_2021/s8.-dp-memoization/724.-minimum-partition.md)
   * [741. Calculate Maximum Value II \(M\)](lintcode_algo_2021/s8.-dp-memoization/741.-calculate-maximum-value-ii-m.md)
   * [1300. Bash Game \(E\)](lintcode_algo_2021/s8.-dp-memoization/1300.-bash-game.md)
 
