@@ -101,7 +101,7 @@
   * [76. Longest Increasing Sequence \(M\)](lintcode_algo_2021/s8.-dp-memoization/76.-longest-increasing-sequence-m.md)
   * [77. Longest Common Subsequence \(M\)](lintcode_algo_2021/s8.-dp-memoization/77.-longest-common-subsequence-m.md)
   * [107. Word Break \(M\)](lintcode_algo_2021/s8.-dp-memoization/107.-word-break.md)
-  * [109. Triangle \(M\)](lintcode_algo_2021/s8.-dp-memoization/untitled.md)
+  * [109. Triangle](lintcode_algo_2021/s8.-dp-memoization/untitled.md)
   * [119. Edit Distance \(M\)](lintcode_algo_2021/s8.-dp-memoization/119.-edit-distance-m.md)
   * [154. Regular Expression Matching \(H\)](lintcode_algo_2021/s8.-dp-memoization/154.-regular-expression-matching-h.md)
   * [168. Burst Balloons \(H\)](lintcode_algo_2021/s8.-dp-memoization/168.-burst-balloons-h.md)
