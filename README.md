@@ -1,17 +1,22 @@
 ---
-description: >-
-  Notes taking from LintCode ladders practice during Jiuzhang Algorithm on-line
-  courses
+description: 'LintCode: 213 (N:17/E:98/M:80/H:13) / LeetCode: 4 (E:3)'
 ---
 
-# LintCode notes
+# Lint/LeeCode notes
 
 ## Guideline 
 
 Notes mainly comprises two parts:
 
-* Topic / category summary 
+### LintCode:
+
+* Topic / category summary from "Jiuzhang Algorithm" course
 * Related ladders practice and solution 
+
+### LeetCode:
+
+* Cover problems not in LintCode
+* Weekly Challenges
 
 ## Unfinished Chapter 
 
