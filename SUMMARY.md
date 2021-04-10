@@ -96,7 +96,7 @@
   * [130. Heapify](lintcode_algo_2021/s7.-ds-design/130.-heapify.md)
   * [859 · Max Stack \(H\)](lintcode_algo_2021/s7.-ds-design/859-max-stack-h.md)
 * [S8. DP/Memoization](lintcode_algo_2021/s8.-dp-memoization/README.md)
-  * [1300. Bash Game](lintcode_algo_2021/s8.-dp-memoization/1300.-bash-game.md)
+  * [1300. Bash Game \(E\)](lintcode_algo_2021/s8.-dp-memoization/1300.-bash-game.md)
   * [603 · Largest Divisible Subset \(M\)](lintcode_algo_2021/s8.-dp-memoization/603-largest-divisible-subset-m.md)
   * [76. Longest Increasing Sequence \(M\)](lintcode_algo_2021/s8.-dp-memoization/76.-longest-increasing-sequence-m.md)
   * [77. Longest Common Subsequence \(M\)](lintcode_algo_2021/s8.-dp-memoization/77.-longest-common-subsequence-m.md)
