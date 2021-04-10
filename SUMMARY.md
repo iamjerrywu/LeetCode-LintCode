@@ -114,5 +114,13 @@
 
 ## LintCode\_Algo\_High\_Freq
 
-* [Untitled](lintcode_algo_high_freq/untitled.md)
+* [S1. Two Pointer](lintcode_algo_high_freq/untitled.md)
+* [S2. Suffix Sum](lintcode_algo_high_freq/s2.-suffix-sum.md)
+* [S3. BFS](lintcode_algo_high_freq/s3.-bfs.md)
+* [S4. DFS](lintcode_algo_high_freq/s4.-dfs.md)
+* [S5. Union Find](lintcode_algo_high_freq/s5.-union-find.md)
+* [S6. Dict Tree](lintcode_algo_high_freq/s6.-dict-tree.md)
+* [S7. Queue/Stack](lintcode_algo_high_freq/s7.-queue-stack.md)
+* [S8. Heap](lintcode_algo_high_freq/s8.-heap.md)
+* [S9. Dynamic Programming](lintcode_algo_high_freq/s9.-dynamic-programming.md)
 
