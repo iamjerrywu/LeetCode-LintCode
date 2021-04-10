@@ -1,4 +1,4 @@
-# 109. Triangle
+# 109. Triangle \(M\)
 
 ## Problem
 
