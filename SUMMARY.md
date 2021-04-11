@@ -101,6 +101,7 @@
   * [76. Longest Increasing Sequence \(M\)](lintcode_algo_2021/s8.-dp-memoization/76.-longest-increasing-sequence-m.md)
   * [77. Longest Common Subsequence \(M\)](lintcode_algo_2021/s8.-dp-memoization/77.-longest-common-subsequence-m.md)
   * [92. Backpack \(M\)](lintcode_algo_2021/s8.-dp-memoization/92.-backpack-m.md)
+  * [440. Backpack III \(M\)](lintcode_algo_2021/s8.-dp-memoization/440.-backpack-iii-m.md)
   * [107. Word Break \(M\)](lintcode_algo_2021/s8.-dp-memoization/107.-word-break--m.md)
   * [109. Triangle \(M\)](lintcode_algo_2021/s8.-dp-memoization/109.-triangle-m.md)
   * [114. Unique Paths \(E\)](lintcode_algo_2021/s8.-dp-memoization/114.-unique-paths-e.md)
