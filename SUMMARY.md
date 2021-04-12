@@ -38,7 +38,7 @@
   * [Kth Largest Element 5 \(M\)](lintcode_algo_2021/sorting/5.-kth-largest-element.md)
   * [Merge Sort](lintcode_algo_2021/sorting/merge-sort/README.md)
     * [Merge Two Sorted Interval Lists 839 \(E\)](lintcode_algo_2021/sorting/merge-sort/839.-merge-two-sorted-interval-lists.md)
-    * [577. Merge K Sorted Interval Lists \(M\)](lintcode_algo_2021/sorting/merge-sort/577.-merge-k-sorted-interval-lists-m.md)
+    * [Merge K Sorted Interval Lists 577 \(M\)](lintcode_algo_2021/sorting/merge-sort/577.-merge-k-sorted-interval-lists-m.md)
     * [464. Sort Integers II \(E\)](lintcode_algo_2021/sorting/merge-sort/464.-sort-integers-ii.md)
     * [486. Merge K Sorted Arrays \(M\)](lintcode_algo_2021/sorting/merge-sort/486.-merge-k-sorted-arrays-m.md)
     * [104. Merge K Sorted Lists \(M\)](lintcode_algo_2021/sorting/merge-sort/104.-merge-k-sorted-lists.md)
