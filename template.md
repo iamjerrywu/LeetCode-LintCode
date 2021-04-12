@@ -2,17 +2,7 @@
 
 ## Problem
 
-### Description
-
-### Example
-
-## Approach
-
-### Intuition
-
-### Algorithm
-
-#### Step by Step
+## Solution
 
 ### Code
 
