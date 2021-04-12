@@ -76,7 +76,7 @@
   * [Median of two Sorted Arrays 65 \(H\)](lintcode_algo_2021/binary_search/65.-median-of-two-sorted-arrays.md)
   * [Prime Factorization 235 \(E\)](lintcode_algo_2021/binary_search/235.-prime-factorization-e.md)
   * [Copy Books 437 \(M\)](lintcode_algo_2021/binary_search/437.-copy-books-m.md)
-  * [600. Smallest Rectangle Enclosing Black Pixels](lintcode_algo_2021/binary_search/600.-smallest-rectangle-enclosing-black-pixels.md)
+  * [Smallest Rectangle Enclosing Black Pixels 600 \(H\)](lintcode_algo_2021/binary_search/600.-smallest-rectangle-enclosing-black-pixels.md)
   * [1807. Fibonacci \(E\)](lintcode_algo_2021/binary_search/1807.-fibonacci-e.md)
 * [S4. Queue/BFS/Graph](lintcode_algo_2021/s4.-queue-bfs-graph/README.md)
   * [69. Binary Tree Level Order Traversal \(E\)](lintcode_algo_2021/s4.-queue-bfs-graph/69.-binary-tree-level-order-traversal.md)
