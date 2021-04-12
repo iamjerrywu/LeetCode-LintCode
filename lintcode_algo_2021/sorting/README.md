@@ -1,4 +1,4 @@
-# S9. Sorting
+# Sorting
 
 ## External Sorting 
 
