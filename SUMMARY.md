@@ -81,7 +81,7 @@
 * [Divide Conquer](lintcode_algo_2021/divide-conquer.md)
 * [BFS](lintcode_algo_2021/s4.-queue-bfs-graph/README.md)
   * [Binary Tree Level Order Traversal 69 \(E\)](lintcode_algo_2021/s4.-queue-bfs-graph/69.-binary-tree-level-order-traversal.md)
-  * [1179. Friend Circles \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/1179.-friend-circles.md)
+  * [Friend Circles 1179 \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/1179.-friend-circles.md)
 * [S5. Traverse/D&C](lintcode_algo_2021/s5.-traverse-d-and-c/README.md)
   * [11. Search Range in Binary Search Tree](lintcode_algo_2021/s5.-traverse-d-and-c/11.-search-range-in-binary-search-tree.md)
   * [86. Binary Search Tree Iterator \(H\)](lintcode_algo_2021/s5.-traverse-d-and-c/86.-binary-search-tree-iterator-h.md)
