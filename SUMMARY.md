@@ -12,7 +12,7 @@
   * [Suffix](data_structure/array/suffix.md)
   * [Matrix](data_structure/array/matrix.md)
 * [Linked List](data_structure/linked_list/README.md)
-  * [165. Merge Two Sorted Lists \(E\)](data_structure/linked_list/165.-merge-two-sorted-lists-e.md)
+  * [Merge Two Sorted Lists 165 \(E\)](data_structure/linked_list/165.-merge-two-sorted-lists-e.md)
 * [Stack](data_structure/stack.md)
 * [Queue](data_structure/s4.-stack-and-queue/README.md)
   * [Deque](data_structure/s4.-stack-and-queue/deque.md)
