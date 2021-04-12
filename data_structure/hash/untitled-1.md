@@ -1,4 +1,4 @@
-# 128. Hash Function \(E\)
+# Hash Function 128 \(E\)
 
 ## Problem
 
