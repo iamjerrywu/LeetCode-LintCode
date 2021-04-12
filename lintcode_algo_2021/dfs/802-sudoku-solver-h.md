@@ -1,4 +1,4 @@
-# 802 · Sudoku Solver \(H\)
+# Sudoku Solver 802 \(H\)
 
 ## Problem
 
