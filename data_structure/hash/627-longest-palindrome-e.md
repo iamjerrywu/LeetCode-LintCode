@@ -1,4 +1,4 @@
-# 627 · Longest Palindrome \(E\)
+# Longest Palindrome 627 \(E\)
 
 ## Problem
 
@@ -23,13 +23,7 @@ One longest palindrome that can be built is "dccaccd", whose length is `7`.
 
 ## Approach - HashSet
 
-### Intuition
-
 Total length - those numbers \(appear odd times - max even times\) - 1\(if odd times existed
-
-### Algorithm
-
-#### Step by Step
 
 ### Code
 
