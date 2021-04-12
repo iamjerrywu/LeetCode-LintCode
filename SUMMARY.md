@@ -20,7 +20,7 @@
 * [Tree](data_structure/tree/README.md)
   * [Binary Tree](data_structure/tree/binary_tree/README.md)
     * [175. Invert Binary Tree \(E\)](data_structure/tree/binary_tree/175.-invert-binary-tree-e.md)
-  * [S6. BST](data_structure/tree/s6.-bst.md)
+  * [BST](data_structure/tree/s6.-bst.md)
 * [S7. Divide and Conquer](data_structure/s7.-divide-and-conquer.md)
 * [S9. Sorting](data_structure/s9.-sorting/README.md)
   * [654. Sparse Matrix Multiplication \(M\)](data_structure/s9.-sorting/654.-sparse-matrix-multiplication-m.md)
