@@ -92,6 +92,7 @@
   * [Number of Islands 433 \(E\)](lintcode_algo_2021/s4.-queue-bfs-graph/number-of-islands-433-e.md)
   * [Friend Circles 1179 \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/1179.-friend-circles.md)
 * [DFS](lintcode_algo_2021/dfs/README.md)
+  * [Permutations](lintcode_algo_2021/dfs/permutations.md)
   * [Search Range in Binary Search Tree 11 \(M\)](lintcode_algo_2021/dfs/11.-search-range-in-binary-search-tree.md)
   * [10. String Permutations II \(M\)](lintcode_algo_2021/dfs/10.-string-permutations-ii-m.md)
   * [15. Permutations \(M\)](lintcode_algo_2021/dfs/15.-permutations-m.md)
