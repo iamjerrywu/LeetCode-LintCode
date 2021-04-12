@@ -15,7 +15,7 @@
   * [Merge Two Sorted Lists 165 \(E\)](data_structure/linked_list/165.-merge-two-sorted-lists-e.md)
 * [Stack](data_structure/stack/README.md)
   * [Max Stack 859 \(H\)](data_structure/stack/859-max-stack-h.md)
-  * [12. Min Stack \(M\)](data_structure/stack/12.-min-stack.md)
+  * [Min Stack 12 \(M\)](data_structure/stack/12.-min-stack.md)
 * [Queue](data_structure/s4.-stack-and-queue/README.md)
   * [Deque](data_structure/s4.-stack-and-queue/deque.md)
 * [Hash](data_structure/hash/README.md)
