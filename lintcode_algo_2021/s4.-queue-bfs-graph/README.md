@@ -1,4 +1,4 @@
-# S4. Queue/BFS/Graph
+# BFS
 
 ## BFS
 
