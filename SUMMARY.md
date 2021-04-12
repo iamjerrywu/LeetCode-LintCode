@@ -143,21 +143,3 @@
 * [S8. Heap](lintcode_algo_high_freq/s8.-heap.md)
 * [S9. Dynamic Programming](lintcode_algo_high_freq/s9.-dynamic-programming.md)
 
-## LeetCode
-
-* [S1. Math](leetcode/s1.-math.md)
-* [S2. String](leetcode/s2.-string.md)
-* [S3. LinkedList](leetcode/s3.-linkedlist.md)
-* [S4. Stack/Queue](leetcode/s4.-stack-queue.md)
-* [S5. Tree](leetcode/s5.-tree.md)
-* [S6. Hash](leetcode/s6.-hash.md)
-* [S7. Sorting](leetcode/s7.-sorting.md)
-* [S8. Two Pointer](leetcode/s8.-two-pointer.md)
-* [S9. Binary Search](leetcode/s9.-binary-search.md)
-* [S10. BFS](leetcode/s10.-bfs.md)
-* [S11. DFS](leetcode/s11.-dfs.md)
-* [S12. Dynamic Programming](leetcode/s12.-dynamic-programming.md)
-* [S13. Heap](leetcode/s13.-heap.md)
-* [S14. Graph/Union Find](leetcode/s14.-graph-union-find.md)
-* [S15. Greedy](leetcode/s15.-greedy.md)
-
