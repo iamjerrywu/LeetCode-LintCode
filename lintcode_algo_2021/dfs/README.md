@@ -1,4 +1,4 @@
-# S6. DFS/Comb/Perm
+# DFS
 
 ## SubSets \(Non-recursion / Iteration\)
 
