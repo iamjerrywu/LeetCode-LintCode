@@ -79,7 +79,7 @@
   * [Smallest Rectangle Enclosing Black Pixels 600 \(H\)](lintcode_algo_2021/binary_search/600.-smallest-rectangle-enclosing-black-pixels.md)
 * [Divide Conquer](lintcode_algo_2021/divide-conquer.md)
 * [BFS](lintcode_algo_2021/s4.-queue-bfs-graph/README.md)
-  * [69. Binary Tree Level Order Traversal \(E\)](lintcode_algo_2021/s4.-queue-bfs-graph/69.-binary-tree-level-order-traversal.md)
+  * [Binary Tree Level Order Traversal 69 \(E\)](lintcode_algo_2021/s4.-queue-bfs-graph/69.-binary-tree-level-order-traversal.md)
   * [492. Implement Queue by Linked List \(E\)](lintcode_algo_2021/s4.-queue-bfs-graph/457.-implement-queue-by-linked-list.md)
   * [1179. Friend Circles \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/1179.-friend-circles.md)
 * [S5. Traverse/D&C](lintcode_algo_2021/s5.-traverse-d-and-c/README.md)
