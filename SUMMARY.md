@@ -39,7 +39,7 @@
   * [Merge Sort](lintcode_algo_2021/sorting/merge-sort/README.md)
     * [Sort Integers II 464 \(E\)](lintcode_algo_2021/sorting/merge-sort/464.-sort-integers-ii.md)
     * [Merge Sorted Array 64 \(E\)](lintcode_algo_2021/sorting/merge-sort/64.-merge-sorted-array-e.md)
-    * [486. Merge K Sorted Arrays \(M\)](lintcode_algo_2021/sorting/merge-sort/486.-merge-k-sorted-arrays-m.md)
+    * [Merge K Sorted Arrays 486 \(M\)](lintcode_algo_2021/sorting/merge-sort/486.-merge-k-sorted-arrays-m.md)
     * [Merge Two Sorted Interval Lists 839 \(E\)](lintcode_algo_2021/sorting/merge-sort/839.-merge-two-sorted-interval-lists.md)
     * [Merge K Sorted Interval Lists 577 \(M\)](lintcode_algo_2021/sorting/merge-sort/577.-merge-k-sorted-interval-lists-m.md)
     * [104. Merge K Sorted Lists \(M\)](lintcode_algo_2021/sorting/merge-sort/104.-merge-k-sorted-lists.md)
