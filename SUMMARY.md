@@ -86,7 +86,7 @@
   * [Binary Tree Level Order Traversal 69 \(E\)](lintcode_algo_2021/s4.-queue-bfs-graph/69.-binary-tree-level-order-traversal.md)
   * [Friend Circles 1179 \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/1179.-friend-circles.md)
 * [S5. Traverse/D&C](lintcode_algo_2021/s5.-traverse-d-and-c/README.md)
-  * [480. Binary Tree Paths \(E\)](lintcode_algo_2021/s5.-traverse-d-and-c/480.-binary-tree-paths-e.md)
+  * [Binary Tree Paths 480 \(E\)](lintcode_algo_2021/s5.-traverse-d-and-c/480.-binary-tree-paths-e.md)
   * [596 Minimum Subtree \(E\)](lintcode_algo_2021/s5.-traverse-d-and-c/596-minimum-subtree-e.md)
   * [689. Two Sum IV - Input is a BST](lintcode_algo_2021/s5.-traverse-d-and-c/689.-two-sum-iv-input-is-a-bst.md)
   * [701. Trim a Binary Search Tree](lintcode_algo_2021/s5.-traverse-d-and-c/701.-trim-a-binary-search-tree.md)
