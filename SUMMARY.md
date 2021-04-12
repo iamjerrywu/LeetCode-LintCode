@@ -142,4 +142,5 @@
   * [91. Minimum Adjustment Cost \(M\)](lintcode_algo_2021/dynamic_programming/91.-minimum-adjustment-cost-m.md)
   * [724. Minimum Partition](lintcode_algo_2021/dynamic_programming/724.-minimum-partition.md)
   * [1300. Bash Game \(E\)](lintcode_algo_2021/dynamic_programming/1300.-bash-game.md)
+* [Greedy](lintcode_algo_2021/greedy.md)
 
