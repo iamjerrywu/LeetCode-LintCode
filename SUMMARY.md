@@ -22,6 +22,10 @@
     * [Invert Binary Tree 175 \(E\)](data_structure/tree/binary_tree/175.-invert-binary-tree-e.md)
   * [BST](data_structure/tree/bst.md)
   * [Segment Tree](data_structure/tree/segment_tree.md)
+* [Untitled](data_structure/untitled.md)
+* [Untitled](data_structure/untitled-1.md)
+* [Untitled](data_structure/untitled-2.md)
+* [Untitled](data_structure/untitled-3.md)
 
 ## LintCode\_Algo\_2021
 
