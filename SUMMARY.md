@@ -62,7 +62,7 @@
     * [Intersection of Two Linked Lists 380 \(M\)](lintcode_algo_2021/two_pointer/same-direction/380.-intersection-of-two-linked-lists-m.md)
     * [Remove Duplicate Numbers in Array 521 \(E\)](lintcode_algo_2021/two_pointer/same-direction/remove-duplicate-numbers-in-array-e.md)
     * [Window Sum 604 \(E\)](lintcode_algo_2021/two_pointer/same-direction/604.-window-sum.md)
-  * [1246. Longest Repeating Character Replacement](lintcode_algo_2021/two_pointer/1246.-longest-repeating-character-replacement.md)
+  * [Longest Repeating Character Replacement 1246 \(M\)](lintcode_algo_2021/two_pointer/1246.-longest-repeating-character-replacement.md)
   * [1870. Number of Substrings with All Zeros \(M\)](lintcode_algo_2021/two_pointer/1870.-number-of-substrings-with-all-zeros.md)
 * [S3. Dichotomy](lintcode_algo_2021/s3.-dichotomy/README.md)
   * [Two Sum - Difference equals to target 610 \(M\)](lintcode_algo_2021/s3.-dichotomy/610.-two-sum-difference-equals-to-target.md)
