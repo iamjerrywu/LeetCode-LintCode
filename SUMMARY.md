@@ -47,7 +47,7 @@
     * [Merge K Sorted Interval Lists 577 \(M\)](lintcode_algo_2021/sorting/merge-sort/577.-merge-k-sorted-interval-lists-m.md)
   * [Reverse Pairs 532 \(M\)](lintcode_algo_2021/sorting/532.-reverse-pairs.md)
   * [Intersection of Two Arrays  547\(E\)](lintcode_algo_2021/sorting/547.-intersection-of-two-arrays-e.md)
-  * [548. Intersection of Two Arrays II \(E\)](lintcode_algo_2021/sorting/548.-intersection-of-two-arrays-ii-e.md)
+  * [Intersection of Two Arrays II 548 \(E\)](lintcode_algo_2021/sorting/548.-intersection-of-two-arrays-ii-e.md)
   * [Sparse Matrix Multiplication 654 \(M\)](lintcode_algo_2021/sorting/654.-sparse-matrix-multiplication-m.md)
   * [793. Intersection of Arrays \(M\)](lintcode_algo_2021/sorting/793.-intersection-of-arrays-m.md)
 * [S1. Basic](lintcode_algo_2021/s1.-intro/README.md)
