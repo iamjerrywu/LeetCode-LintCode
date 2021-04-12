@@ -85,6 +85,7 @@
   * [Minimum Subtree 596 \(E\)](lintcode_algo_2021/divide-conquer/596-minimum-subtree-e.md)
 * [BFS](lintcode_algo_2021/s4.-queue-bfs-graph/README.md)
   * [Binary Tree Level Order Traversal 69 \(E\)](lintcode_algo_2021/s4.-queue-bfs-graph/69.-binary-tree-level-order-traversal.md)
+  * [Number of Islands 433 \(E\)](lintcode_algo_2021/s4.-queue-bfs-graph/number-of-islands-433-e.md)
   * [Friend Circles 1179 \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/1179.-friend-circles.md)
 * [S5. Traverse/D&C](lintcode_algo_2021/s5.-traverse-d-and-c/README.md)
   * [689. Two Sum IV - Input is a BST](lintcode_algo_2021/s5.-traverse-d-and-c/689.-two-sum-iv-input-is-a-bst.md)
