@@ -35,7 +35,7 @@
 ## LintCode\_Algo\_2021
 
 * [Sorting](lintcode_algo_2021/sorting/README.md)
-  * [654. Sparse Matrix Multiplication \(M\)](lintcode_algo_2021/sorting/654.-sparse-matrix-multiplication-m.md)
+  * [Sparse Matrix Multiplication 654 \(M\)](lintcode_algo_2021/sorting/654.-sparse-matrix-multiplication-m.md)
   * [5. Kth Largest Element \(M\)](lintcode_algo_2021/sorting/5.-kth-largest-element.md)
   * [6. Merge Two Sorted Arrays \(E\)](lintcode_algo_2021/sorting/6.-merge-two-sorted-arrays-e.md)
   * [64. Merge Sorted Array \(E\)](lintcode_algo_2021/sorting/64.-merge-sorted-array-e.md)
