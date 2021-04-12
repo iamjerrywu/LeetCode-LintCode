@@ -72,7 +72,7 @@
   * [Median of two Sorted Arrays 65 \(H\)](lintcode_algo_2021/binary_search/65.-median-of-two-sorted-arrays.md)
   * [Prime Factorization 235 \(E\)](lintcode_algo_2021/binary_search/235.-prime-factorization-e.md)
   * [Copy Books 437 \(M\)](lintcode_algo_2021/binary_search/437.-copy-books-m.md)
-  * [457. Classical Binary Search \(E\)](lintcode_algo_2021/binary_search/457.-classical-binary-search.md)
+  * [Classical Binary Search 457 \(E\)](lintcode_algo_2021/binary_search/457.-classical-binary-search.md)
   * [458. Last Position of Target \(E\)](lintcode_algo_2021/binary_search/458.-last-position-of-target.md)
   * [600. Smallest Rectangle Enclosing Black Pixels](lintcode_algo_2021/binary_search/600.-smallest-rectangle-enclosing-black-pixels.md)
   * [1536. Find First and Last Position of Element in Sorted Array \(M\)](lintcode_algo_2021/binary_search/1536.-find-first-and-last-position-of-element-in-sorted-array-m.md)
