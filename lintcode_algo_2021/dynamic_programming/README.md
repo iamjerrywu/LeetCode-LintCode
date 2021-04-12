@@ -56,12 +56,12 @@ Big Scale problems depends on small scale problem's result
     * Problem: [word break](partition/107.-word-break--m.md)
 * Two Sequence \(匹配\): 
   * 2-D: dp\[i\]\[j\] represents string 1's first ith charaters can match string2's first j's parts of optimal value/solution num/feasibility
-    * Problem: [Longest Common Subsequence](partition/76.-longest-increasing-sequence-m.md), [Wildcard Matching](192.-wildcard-matching-h.md)
+    * Problem: [Longest Common Subsequence](partition/76.-longest-increasing-sequence-m.md), [Wildcard Matching](sequence/192.-wildcard-matching-h.md)
 
 #### Interval:
 
 * dp\[i\]\[j\] represents interval btw i/j's optimal value/solutions num/feasibility
-  * Problem: [stone games](472.-stone-game-m.md), [burst balloons](168.-burst-balloons-h.md)
+  * Problem: [stone games](interval/472.-stone-game-m.md), [burst balloons](interval/168.-burst-balloons-h.md)
 
 #### Backpack: 
 
