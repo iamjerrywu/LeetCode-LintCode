@@ -89,7 +89,7 @@
   * [Number of Islands 433 \(E\)](lintcode_algo_2021/s4.-queue-bfs-graph/number-of-islands-433-e.md)
   * [Friend Circles 1179 \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/1179.-friend-circles.md)
 * [S5. Traverse/D&C](lintcode_algo_2021/s5.-traverse-d-and-c/README.md)
-  * [701. Trim a Binary Search Tree](lintcode_algo_2021/s5.-traverse-d-and-c/701.-trim-a-binary-search-tree.md)
+  * [Trim a Binary Search Tree 701 \(M\)](lintcode_algo_2021/s5.-traverse-d-and-c/701.-trim-a-binary-search-tree.md)
   * [915. Inorder Predecessor in BST](lintcode_algo_2021/s5.-traverse-d-and-c/915.-inorder-predecessor-in-bst.md)
 * [S6. DFS/Comb/Perm](lintcode_algo_2021/s6.-dfs-comb-perm/README.md)
   * [Binary Tree Paths 480 \(E\)](lintcode_algo_2021/s6.-dfs-comb-perm/480.-binary-tree-paths-e.md)
