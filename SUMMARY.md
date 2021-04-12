@@ -65,6 +65,7 @@
     * [Window Sum 604 \(E\)](lintcode_algo_2021/two_pointer/same-direction/604.-window-sum.md)
     * [1870. Number of Substrings with All Zeros \(M\)](lintcode_algo_2021/two_pointer/same-direction/1870.-number-of-substrings-with-all-zeros.md)
 * [Binary Search](lintcode_algo_2021/binary_search/README.md)
+  * [Classical](lintcode_algo_2021/binary_search/classical.md)
   * [Two Sum - Difference equals to target 610 \(M\)](lintcode_algo_2021/binary_search/610.-two-sum-difference-equals-to-target.md)
   * [First Position of Target 14 \(E\)](lintcode_algo_2021/binary_search/14.-first-position-of-target.md)
   * [Search a 2D Matrix 28 \(E\)](lintcode_algo_2021/binary_search/28.-search-a-2d-matrix.md)
