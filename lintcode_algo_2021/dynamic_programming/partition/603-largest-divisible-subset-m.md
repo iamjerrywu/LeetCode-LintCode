@@ -6,27 +6,72 @@ description: Partition DP
 
 ## Problem
 
-### Description
+Given a set of `distinct positive` integers, find the largest subset which has the most elements, and every pair of two elements `(Si, Sj)` in this subset satisfies: `Si % Sj = 0` or `Sj % Si = 0`.
 
-### Example
+If there are multiple solutions, return any subset is fine.  
+1 \leq len\(nums\) \leq 500001≤len\(nums\)≤50000Example
+
+Example 1:
+
+```text
+Input: nums =  [1,2,3], 
+Output: [1,2] or [1,3]
+```
+
+Example 2:
+
+```text
+Input: nums = [1,2,4,8], 
+Output: [1,2,4,8]
+```
 
 ## Approach - DP \(Brute Force\)
 
-### Intuition
-
-### Algorithm
-
-#### Step by Step
-
 ### Code
 
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param nums: a set of distinct positive integers
+    @return: the largest subset 
+    """
+    def largestDivisibleSubset(self, nums):
+        # write your code here
+        nums = sorted(nums)
+        n = len(nums)
+        dp = [1] * n
+        prev = [-1] * n
+
+        last_index = 0
+
+        for i in range(1, n):
+            for j in range(i):
+                if nums[i]%nums[j] == 0 and dp[i] < dp[j] + 1:
+                    dp[i] = dp[j] + 1
+                    # need to record the prev index because later if we want to trace back the set values
+                    prev[i] = j
+            if dp[i] > dp[last_index]:
+                last_index = i
+        
+        subset = []
+        while last_index != -1:
+            subset.append(nums[last_index])
+            last_index = prev[last_index]
+
+        return subset[::-1]
+```
+{% endtab %}
+
+{% tab title="java" %}
+```java
+
+```
+{% endtab %}
+{% endtabs %}
+
 ## Approach - DP with Hashset Optimization
-
-### Intuition
-
-### Algorithm
-
-#### Step by Step
 
 ### Code
 
