@@ -89,5 +89,5 @@ Big Scale problems depends on small scale problem's result
   * For the first 10 elements's sum should be 10, and there are 5 combinations
   * In DP, don't care about what values inside combinations, only care about whether first n elements can constitute or not! That's the reason it's faster than DFS
 
-
+### 
 
