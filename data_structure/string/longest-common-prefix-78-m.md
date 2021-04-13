@@ -19,6 +19,8 @@ Example 2:
 
 ## Solution - Vertical Scan
 
+Scan each word from start to end
+
 ### Code
 
 {% tabs %}
@@ -100,4 +102,6 @@ class Solution:
 * **Time Complexity: O\(s\)**
   * s = length of total strs
 * **Space Complexity: O\(1\)**
+
+\*\*\*\*
 
