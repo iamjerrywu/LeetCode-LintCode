@@ -17,7 +17,7 @@ Example 2:
 	Output:  "ABC"
 ```
 
-## Solution
+## Solution - Vertical Scan
 
 ### Code
 
@@ -37,6 +37,7 @@ Example 2:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(s\)**
+  * s = length of total strs
+* **Space Complexity: O\(1\)**
 
