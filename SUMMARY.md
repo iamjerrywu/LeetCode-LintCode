@@ -132,7 +132,7 @@
     * [Russian Doll Envelopes 602 \(H\)](lintcode_algo_2021/dynamic_programming/partition/602.-russian-doll-envelopes.md)
   * [Sequence](lintcode_algo_2021/dynamic_programming/sequence/README.md)
     * [Longest Common Subsequence 77 \(M\)](lintcode_algo_2021/dynamic_programming/sequence/77.-longest-common-subsequence-m.md)
-    * [119. Edit Distance \(M\)](lintcode_algo_2021/dynamic_programming/sequence/119.-edit-distance-m.md)
+    * [Edit Distance 119 \(M\)](lintcode_algo_2021/dynamic_programming/sequence/119.-edit-distance-m.md)
     * [154. Regular Expression Matching \(H\)](lintcode_algo_2021/dynamic_programming/sequence/154.-regular-expression-matching-h.md)
     * [192. Wildcard Matching \(H\)](lintcode_algo_2021/dynamic_programming/sequence/192.-wildcard-matching-h.md)
   * [Interval](lintcode_algo_2021/dynamic_programming/interval/README.md)
