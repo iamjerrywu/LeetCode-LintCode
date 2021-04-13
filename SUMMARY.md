@@ -120,7 +120,7 @@
     * [Backpack II 125 \(M\)](lintcode_algo_2021/dynamic_programming/backpack/125.-backpack-ii-m.md)
     * [440. Backpack III \(M\)](lintcode_algo_2021/dynamic_programming/backpack/440.-backpack-iii-m.md)
   * [Coordination](lintcode_algo_2021/dynamic_programming/coordination/README.md)
-    * [630. Knight Shortest Path II](lintcode_algo_2021/dynamic_programming/coordination/630.-knight-shortest-path-ii.md)
+    * [Knight Shortest Path II 630 \(M\)](lintcode_algo_2021/dynamic_programming/coordination/630.-knight-shortest-path-ii.md)
     * [116. Jump Game \(M\)](lintcode_algo_2021/dynamic_programming/coordination/116.-jump-game-m.md)
     * [115. Unique Paths II \(E\)](lintcode_algo_2021/dynamic_programming/coordination/115.-unique-paths-ii-e.md)
     * [114. Unique Paths \(E\)](lintcode_algo_2021/dynamic_programming/coordination/114.-unique-paths-e.md)
