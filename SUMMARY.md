@@ -6,6 +6,7 @@
 ## Data\_Structure
 
 * [String](data_structure/string/README.md)
+  * [Longest Common Prefix 78 \(M\)](data_structure/string/longest-common-prefix-78-m.md)
   * [Multiple Strings 656 \(M\)](data_structure/string/656.-multiple-strings.md)
   * [Compare Version Numbers 1352 \(M\)](data_structure/string/1352.-compare-version-numbers-m.md)
 * [Array](data_structure/array/README.md)
