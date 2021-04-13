@@ -113,7 +113,7 @@
   * [Traveling Salesman Problem 816 \(H\)](lintcode_algo_2021/dfs/816.-traveling-salesman-problem-h.md)
 * [Dynamic Programming](lintcode_algo_2021/dynamic_programming/README.md)
   * [Memoization](lintcode_algo_2021/dynamic_programming/memoization/README.md)
-    * [109. Triangle \(M\)](lintcode_algo_2021/dynamic_programming/memoization/109.-triangle-m.md)
+    * [Triangle 109 \(M\)](lintcode_algo_2021/dynamic_programming/memoization/109.-triangle-m.md)
     * [1807. Fibonacci \(E\)](lintcode_algo_2021/dynamic_programming/memoization/1807.-fibonacci-e.md)
   * [Backpack](lintcode_algo_2021/dynamic_programming/backpack/README.md)
     * [125. Backpack II \(M\)](lintcode_algo_2021/dynamic_programming/backpack/125.-backpack-ii-m.md)
