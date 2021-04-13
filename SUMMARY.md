@@ -126,7 +126,7 @@
     * [Knight Shortest Path II 630 \(M\)](lintcode_algo_2021/dynamic_programming/coordination/630.-knight-shortest-path-ii.md)
   * [Partition](lintcode_algo_2021/dynamic_programming/partition/README.md)
     * [Largest Divisible Subset 603 \(M\)](lintcode_algo_2021/dynamic_programming/partition/603-largest-divisible-subset-m.md)
-    * [602. Russian Doll Envelopes](lintcode_algo_2021/dynamic_programming/partition/602.-russian-doll-envelopes.md)
+    * [Russian Doll Envelopes 602 \(H\)](lintcode_algo_2021/dynamic_programming/partition/602.-russian-doll-envelopes.md)
     * [512. Decode Ways \(M\)](lintcode_algo_2021/dynamic_programming/partition/512.-decode-ways-m.md)
     * [107. Word Break \(M\)](lintcode_algo_2021/dynamic_programming/partition/107.-word-break--m.md)
     * [76. Longest Increasing Sequence \(M\)](lintcode_algo_2021/dynamic_programming/partition/76.-longest-increasing-sequence-m.md)
