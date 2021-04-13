@@ -2,7 +2,7 @@
 description: Partition DP
 ---
 
-# 603 · Largest Divisible Subset \(M\)
+# Largest Divisible Subset 603 \(M\)
 
 ## Problem
 
