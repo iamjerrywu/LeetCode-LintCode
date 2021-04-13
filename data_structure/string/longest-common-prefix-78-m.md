@@ -64,6 +64,8 @@ class Solution:
 
 ## Solution - Horizontal Scan
 
+Scan each word in full length comparing to first one, then scan the next word
+
 ### Code
 
 {% tabs %}
