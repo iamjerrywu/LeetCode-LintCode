@@ -60,6 +60,7 @@
   * [Sparse Matrix Multiplication 654 \(M\)](lintcode_algo_2021/sorting/654.-sparse-matrix-multiplication-m.md)
 * [Two Pointer](lintcode_algo_2021/two_pointer/README.md)
   * [Opposite Direction](lintcode_algo_2021/two_pointer/opposite-direction/README.md)
+    * [Partition Array 31 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/partition-array-31-m.md)
     * [Two Sum 56 \(E\)](lintcode_algo_2021/two_pointer/opposite-direction/56.-two-sum.md)
     * [Sort Colors 148 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/148.-sort-colors.md)
     * [Valid Palindrome 415 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/415.-valid-palindrome.md)
