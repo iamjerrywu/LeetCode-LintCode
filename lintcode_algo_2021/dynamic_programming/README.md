@@ -30,6 +30,8 @@ Big Scale problems depends on small scale problem's result
 
 ### Four factors for Dynamic Programming
 
+![](../../.gitbook/assets/capture%20%281%29.png)
+
 ![](../../.gitbook/assets/screen-shot-2021-04-10-at-12.23.16-pm.png)
 
 ### Applications for Dynamic Programming
@@ -88,6 +90,18 @@ Big Scale problems depends on small scale problem's result
   * \[1,2,3,4,5,5,6,7,8,9,10000\], m = 10010
   * For the first 10 elements's sum should be 10, and there are 5 combinations
   * In DP, don't care about what values inside combinations, only care about whether first n elements can constitute or not! That's the reason it's faster than DFS
+
+### Time Complexity
+
+* O\(State amounts \* each state processing time\) = O\(State amounts \* solutions amount\)
+
+#### Strolling Arrays 
+
+Use to optimize Dynamic Programming time complexity
+
+{% hint style="warning" %}
+If the state only depends on adjacent level, than can apply strolling arrays to reduce space complexity
+{% endhint %}
 
 ### 
 
