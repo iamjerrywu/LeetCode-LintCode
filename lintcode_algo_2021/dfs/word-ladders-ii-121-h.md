@@ -37,6 +37,10 @@ Explanation：
 
 ## Solution
 
+This problem cannot be done by either BFS or DFS individually, since both would have too large time complexity. 
+
+* BFS: 
+
 ### Code
 
 {% tabs %}
