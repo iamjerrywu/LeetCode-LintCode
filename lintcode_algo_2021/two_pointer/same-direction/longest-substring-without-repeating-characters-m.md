@@ -1,4 +1,4 @@
-# Longest Substring Without Repeating Characters \(M\)
+# Longest Substring Without Repeating Characters 384 \(M\)
 
 ## Problem
 
