@@ -40,6 +40,8 @@ Big Scale problems depends on small scale problem's result
 
 ![](../../.gitbook/assets/screen-shot-2021-04-10-at-1.10.04-pm.png)
 
+![](../../.gitbook/assets/screen-shot-2021-04-17-at-9.58.35-pm.png)
+
 ### Types of Dynamic Programming 
 
 ![](../../.gitbook/assets/screen-shot-2021-04-10-at-1.11.31-pm.png)
