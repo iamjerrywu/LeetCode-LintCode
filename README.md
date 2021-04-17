@@ -27,7 +27,6 @@ Notes mainly comprises two parts:
 * Chap 17 \(TSP\)
 * Chap 14
 * Chap 15
-* Chap 20 \(word ladder II\)
 * Chap 21
 * Chap 25 \(video 4/5/6\)
 * Chap 26
