@@ -133,6 +133,7 @@
     * [Longest Increasing Sequence 76 \(M\)](lintcode_algo_2021/dynamic_programming/partition/76.-longest-increasing-sequence-m.md)
     * [Word Break 107 \(M\)](lintcode_algo_2021/dynamic_programming/partition/107.-word-break--m.md)
     * [Word Break II 582 \(H\)](lintcode_algo_2021/dynamic_programming/partition/word-break-ii-582-h.md)
+    * [Word Break III \(M\)](lintcode_algo_2021/dynamic_programming/partition/word-break-iii-m.md)
     * [Decode Ways 512 \(M\)](lintcode_algo_2021/dynamic_programming/partition/512.-decode-ways-m.md)
     * [Largest Divisible Subset 603 \(M\)](lintcode_algo_2021/dynamic_programming/partition/603-largest-divisible-subset-m.md)
     * [Russian Doll Envelopes 602 \(H\)](lintcode_algo_2021/dynamic_programming/partition/602.-russian-doll-envelopes.md)
