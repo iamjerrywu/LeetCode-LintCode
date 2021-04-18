@@ -124,5 +124,6 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Space Complexity: O\(m + n\)**
+  * stack call frame: O\(m + n\)
 
