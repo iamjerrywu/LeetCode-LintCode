@@ -1,7 +1,5 @@
 # Word Break II 582 \(H\)
 
-
-
 ## Problem
 
 ## Solution
