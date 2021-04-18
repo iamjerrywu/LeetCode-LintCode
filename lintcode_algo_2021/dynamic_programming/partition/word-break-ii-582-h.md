@@ -67,6 +67,11 @@ class Solution:
     # dict: ['a', 'aa', 'aaa', 'aaaa']
     # since last b is not in dict, no matter how the first n's a can be break, doesn't matter at all
     # therefore, need to record to avoid the same operation
+
+    # however, in extreme case like
+    # input: aaaa
+    # dict: ['a', 'aa', 'aaa', 'aaaa']
+    # still require 2^n times
     def is_possible(self, s, index, max_len, word_set, memo):
         if index in memo:
             return memo[index]
