@@ -10,6 +10,7 @@
   * [Multiple Strings 656 \(M\)](data_structure/string/656.-multiple-strings.md)
   * [Compare Version Numbers 1352 \(M\)](data_structure/string/1352.-compare-version-numbers-m.md)
 * [Array](data_structure/array/README.md)
+  * [Prefix Sum](data_structure/array/prefix-sum.md)
   * [Suffix](data_structure/array/suffix.md)
   * [Matrix](data_structure/array/matrix.md)
 * [Linked List](data_structure/linked_list/README.md)
