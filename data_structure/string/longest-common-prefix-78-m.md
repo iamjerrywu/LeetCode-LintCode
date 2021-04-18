@@ -33,17 +33,16 @@ class Solution:
     """
     def longestCommonPrefix(self, strs):
         # write your code here
+        res = ''
         if not strs:
-            return ''
-        res, start = '', 0
-        while start < len(strs[0]):
-            ref = strs[0][start]
+            return res
+        ref = strs[0]
+        for start in range(len(ref)):
             for i in range(1, len(strs)):
-                if start >= len(strs[i]) or ref != strs[i][start]:
+                if start >= len(strs[i]) or ref[start] != strs[i][start]:
                     return res
-            res+=strs[0][start]
-            start+=1
-        return res
+            res+=ref[start]
+        return res 
 ```
 {% endtab %}
 
@@ -80,15 +79,13 @@ class Solution:
         # write your code here
         if not strs:
             return ''
-        res, start = '', 0
-        while start < len(strs[0]):
-            ref = strs[0][start]
-            for i in range(1, len(strs)):
-                if start >= len(strs[i]) or ref != strs[i][start]:
-                    return res
-            res+=strs[0][start]
-            start+=1
-        return res
+        res = strs[0]
+        for i in range(1, len(strs)):
+            for j in range(0, len(ref)):
+                if j >= len(strs[i]) or res[j] != strs[i][j]:
+                    res = res[:j]
+                    break
+        return ref
 ```
 {% endtab %}
 
