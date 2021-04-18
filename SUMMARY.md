@@ -62,6 +62,7 @@
   * [Opposite Direction](lintcode_algo_2021/two_pointer/opposite-direction/README.md)
     * [Partition Array 31 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/partition-array-31-m.md)
     * [Two Sum 56 \(E\)](lintcode_algo_2021/two_pointer/opposite-direction/56.-two-sum.md)
+    * [Two Sum II - Input array is sorted 608 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/two-sum-ii-input-array-is-sorted-608-m.md)
     * [Sort Colors 148 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/148.-sort-colors.md)
     * [Valid Palindrome 415 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/415.-valid-palindrome.md)
     * [Longest Repeating Character Replacement 1246 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/1246.-longest-repeating-character-replacement.md)
