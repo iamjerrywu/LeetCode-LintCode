@@ -101,3 +101,10 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
+{% hint style="danger" %}
+This question cannot use memoization, since it's previous decision would impact the later decision of problems, therefore have to record a lot of information 
+
+* mapping, used, i \(source start point\), j \(pattern start point\)
+* Those information can no longer be constant size of hashmap
+{% endhint %}
+
