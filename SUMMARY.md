@@ -118,6 +118,7 @@
 * [Dynamic Programming](lintcode_algo_2021/dynamic_programming/README.md)
   * [Memoization](lintcode_algo_2021/dynamic_programming/memoization/README.md)
     * [Triangle 109 \(M\)](lintcode_algo_2021/dynamic_programming/memoization/109.-triangle-m.md)
+    * [Word Pattern II 829 \(M\)](lintcode_algo_2021/dynamic_programming/memoization/word-pattern-ii-829-m.md)
     * [Fibonacci 1807 \(E\)](lintcode_algo_2021/dynamic_programming/memoization/1807.-fibonacci-e.md)
   * [Backpack](lintcode_algo_2021/dynamic_programming/backpack/README.md)
     * [Backpack 92 \(M\)](lintcode_algo_2021/dynamic_programming/backpack/92.-backpack-m.md)
