@@ -96,6 +96,7 @@
   * [Number of Islands 433 \(E\)](lintcode_algo_2021/s4.-queue-bfs-graph/number-of-islands-433-e.md)
   * [Friend Circles 1179 \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/1179.-friend-circles.md)
 * [DFS](lintcode_algo_2021/dfs/README.md)
+  * [Palindrome Partitioning 136 \(M\)](lintcode_algo_2021/dfs/palindrome-partitioning-136-m.md)
   * [Subsets](lintcode_algo_2021/dfs/subsets/README.md)
     * [Subsets 17 \(M\)](lintcode_algo_2021/dfs/subsets/17.-subsets-m.md)
     * [Subsets II 18 \(M\)](lintcode_algo_2021/dfs/subsets/18.-subsets-ii-m.md)
