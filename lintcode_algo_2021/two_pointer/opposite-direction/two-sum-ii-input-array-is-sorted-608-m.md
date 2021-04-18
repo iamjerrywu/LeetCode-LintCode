@@ -41,8 +41,6 @@ class Solution:
     """
     def twoSum(self, nums, target):
         # write your code here
-        if not nums:
-            return [-1, -1]
         start, end = 0, len(nums) - 1
 
         while start < end:
