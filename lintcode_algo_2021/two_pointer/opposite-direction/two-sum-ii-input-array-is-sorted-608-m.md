@@ -77,7 +77,32 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param nums: an array of Integer
+    @param target: target = nums[index1] + nums[index2]
+    @return: [index1 + 1, index2 + 1] (index1 < index2)
+    """
+    def twoSum(self, nums, target):
+        # write your code here
+        for i in range(len(nums)):
+            idx = self.binary_search(nums, i + 1, len(nums) - 1, target - nums[i])
+            if idx != -1:
+                return [i + 1, idx + 1]
+        
+    
+    def binary_search(self, nums, start, end, target):
+        while start + 1 < end:
+            mid = (start + end)// 2
+            if nums[mid] >= target:
+                end = mid
+            else:
+                start = mid
+        if nums[start] == target:
+            return start
+        if nums[end] == target:
+            return end
+        return -1
 ```
 {% endtab %}
 
