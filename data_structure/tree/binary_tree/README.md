@@ -39,3 +39,7 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
+## Morris Algorithm
+
+
+
