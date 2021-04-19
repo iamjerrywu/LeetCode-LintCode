@@ -35,7 +35,7 @@ Explanation：
 2."hit"->"hot"->"lot"->"log"->"cog"
 ```
 
-## Solution
+## Solution - DFS + BFS
 
 This problem cannot be done by either BFS or DFS individually, since both would have too large time complexity. 
 
