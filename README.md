@@ -28,7 +28,5 @@ Notes mainly comprises two parts:
 * Chap 14
 * Chap 15
 * Chap 21
-* Chap32
-* Chap33
 * Chap34
 
