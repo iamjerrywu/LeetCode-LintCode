@@ -130,6 +130,7 @@
     * [Backpack II 125 \(M\)](lintcode_algo_2021/dynamic_programming/backpack/125.-backpack-ii-m.md)
     * [Backpack III 440 \(M\)](lintcode_algo_2021/dynamic_programming/backpack/440.-backpack-iii-m.md)
   * [Coordination](lintcode_algo_2021/dynamic_programming/coordination/README.md)
+    * [Word Ladder 120 \(H\)](lintcode_algo_2021/dynamic_programming/coordination/word-ladder-120-h.md)
     * [Unique Paths 114 \(E\)](lintcode_algo_2021/dynamic_programming/coordination/114.-unique-paths-e.md)
     * [Unique Paths II 115 \(E\)](lintcode_algo_2021/dynamic_programming/coordination/115.-unique-paths-ii-e.md)
     * [Jump Game 116 \(M\)](lintcode_algo_2021/dynamic_programming/coordination/116.-jump-game-m.md)
