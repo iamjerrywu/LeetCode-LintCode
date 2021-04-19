@@ -2,6 +2,8 @@
 
 ## Post-Order Traversal \(Non-recursion\)
 
+![](../../../.gitbook/assets/screen-shot-2021-04-20-at-12.56.00-am.png)
+
 {% tabs %}
 {% tab title="python" %}
 ```python
