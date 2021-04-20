@@ -27,6 +27,8 @@ Output: [0,1,2,3] or [0,2,1,3]
 
 ![](../../../.gitbook/assets/screen-shot-2021-04-20-at-11.09.22-pm.png)
 
+![](../../../.gitbook/assets/screen-shot-2021-04-20-at-11.17.52-pm.png)
+
 ### Code
 
 {% tabs %}
