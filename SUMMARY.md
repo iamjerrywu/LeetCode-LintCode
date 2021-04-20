@@ -98,6 +98,7 @@
 * [BFS](lintcode_algo_2021/s4.-queue-bfs-graph/README.md)
   * [Topological Sorting](lintcode_algo_2021/s4.-queue-bfs-graph/topological-sorting/README.md)
     * [Topological Sorting 127 \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/topological-sorting/topological-sorting-127-m.md)
+    * [Course Schedule II 616 \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/topological-sorting/course-schedule-ii-616-m.md)
   * [Binary Tree Level Order Traversal 69 \(E\)](lintcode_algo_2021/s4.-queue-bfs-graph/69.-binary-tree-level-order-traversal.md)
   * [Word Ladder 120 \(H\)](lintcode_algo_2021/s4.-queue-bfs-graph/word-ladder-120-h.md)
   * [Clone Graph 137 \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/clone-graph-137-m.md)
