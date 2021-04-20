@@ -40,7 +40,7 @@ queue = collections.deque([node[)
 distance ={node : 0}
 
 # Keep visiting queue
-# Time Complexity: O(m * n)
+# Time Complexity: O(2m * n)
 # m: node's aount / n: edge's amount 
 while queue:
     node = queue.popleft()
@@ -55,7 +55,22 @@ while queue:
 {% endtab %}
 {% endtabs %}
 
-### 
+### Time Complexity
+
+#### Graph vs Matrix
+
+Graph: 
+
+* n vertices, m edges
+* m largest can be O\(n^2\)
+* BFS Time Complexity = O\(n + m\)
+  * Can say it's O\(m\) as well, since m &gt;&gt; n
+
+Matrix:
+
+* R columns / C rows
+* R\*C vertices, R\*C\*2 edges
+* BFS Time Complexity = O\(R\*C\)
 
 ## Queue
 
