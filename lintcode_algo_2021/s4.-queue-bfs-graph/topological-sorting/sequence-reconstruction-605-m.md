@@ -98,6 +98,7 @@ class Solution:
         
         topo_order = []
         while queue:
+            # the lengh of queue can only be one, if there is only one topo order exist
             if len(queue) > 1:
                 # there must exist more than one topo orders
                 return None
