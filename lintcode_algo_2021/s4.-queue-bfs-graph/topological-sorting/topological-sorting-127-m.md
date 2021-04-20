@@ -2,10 +2,6 @@
 
 ## Problem
 
-#### Description
-
-中文
-
 Given an directed graph, a topological order of the graph nodes is defined as follow:
 
 * For each directed edge `A -> B` in graph, A must before B in the order list.
