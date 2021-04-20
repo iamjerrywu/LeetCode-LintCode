@@ -68,6 +68,7 @@ class Solution:
                 if in_degree[next_course] == 0:
                     queue.append(next_course)
         
+        # if valid topo order exist, then it's length must == num of courses
         if num_choose == numCourses:
             # here would return any of the topo_order 
             return topo_order
