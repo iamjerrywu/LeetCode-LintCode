@@ -46,6 +46,8 @@ Output:true
 
 ## Solution
 
+![](../../../.gitbook/assets/screen-shot-2021-04-21-at-12.46.32-am.png)
+
 ### Code
 
 {% tabs %}
