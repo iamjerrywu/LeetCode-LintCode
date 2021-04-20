@@ -14,6 +14,8 @@ Application domain:
 * Tropological sorting 
   * Easier than BFS
 
+![](../../.gitbook/assets/capture%20%283%29.png)
+
 ## Queue
 
 Queue is a FIFO \(first in first out\) data structure, and widely used in BFS \(breadth-first-search\)
@@ -223,7 +225,7 @@ adjacency_list = {x:set() for x in nodes}
 
 ### Template 
 
-![](../../.gitbook/assets/capture%20%283%29.png)
+![](../../.gitbook/assets/capture%20%284%29.png)
 
 
 
