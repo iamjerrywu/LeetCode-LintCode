@@ -270,6 +270,8 @@ adjacency_list = {x:set() for x in nodes}
 
 ### Template 
 
+
+
 ![](../../.gitbook/assets/capture%20%284%29.png)
 
 
