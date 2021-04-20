@@ -40,6 +40,8 @@ queue = collections.deque([node[)
 distance ={node : 0}
 
 # Keep visiting queue
+# Time Complexity: O(m * n)
+# m: node's aount / n: edge's amount 
 while queue:
     node = queue.popleft()
     # extend the queue
