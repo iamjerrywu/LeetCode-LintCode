@@ -2,6 +2,41 @@
 
 ## Problem
 
+#### Description
+
+中文
+
+Given an directed graph, a topological order of the graph nodes is defined as follow:
+
+* For each directed edge `A -> B` in graph, A must before B in the order list.
+* The first node in the order can be any node in the graph with no nodes direct to it.
+
+Find any topological order for the given graph.
+
+You can assume that there is at least one topological order in the graph.Have you met this question in a real interview?  YesProblem Correction
+
+#### Clarification
+
+[Learn more about representation of graphs](http://www.lintcode.com/help/graph)
+
+#### Example
+
+For graph as follow:
+
+![&#x56FE;&#x7247;](https://media-cdn.jiuzhang.com/markdown/images/8/6/91cf07d2-b7ea-11e9-bb77-0242ac110002.jpg)
+
+The topological order can be:
+
+```text
+[0, 1, 2, 3, 4, 5]
+[0, 2, 3, 1, 5, 4]
+...
+```
+
+#### Challenge
+
+Can you do it in both BFS and DFS?
+
 ## Solution
 
 ### Code
