@@ -16,6 +16,17 @@ Application domain:
 
 ![](../../.gitbook/assets/capture%20%283%29.png)
 
+### Applicable Scenarios
+
+#### Shortest Path:
+
+* BFS
+
+#### Longest Path:
+
+* DP: if graph can be stratified \(path is directional and no loop\)
+* DFS: If graph cannot be stratified
+
 ## Queue
 
 Queue is a FIFO \(first in first out\) data structure, and widely used in BFS \(breadth-first-search\)
