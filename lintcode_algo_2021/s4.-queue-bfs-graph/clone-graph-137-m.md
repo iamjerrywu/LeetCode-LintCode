@@ -67,7 +67,7 @@ class Solution:
             for neighbor in cur_node.neighbors:
                 if neighbor in visited:
                     continue
-                # need to add to set once it's visited
+                # should add to set once neighbor is visited
                 visited.add(neighbor)
                 queue.append(neighbor)
         return list(visited)
