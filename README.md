@@ -1,7 +1,3 @@
----
-description: 'LintCode: 213 (N:17/E:98/M:80/H:13) / LeetCode: 4 (E:3)'
----
-
 # Lint/LeeCode notes
 
 ## Guideline 
