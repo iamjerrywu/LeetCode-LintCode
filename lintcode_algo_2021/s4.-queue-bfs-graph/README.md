@@ -27,7 +27,31 @@ Application domain:
 * DP: if graph can be stratified \(path is directional and no loop\)
 * DFS: If graph cannot be stratified
 
+### Template
 
+{% tabs %}
+{% tab title="Python" %}
+```python
+# init
+# put first node into queue (if multiple nodes, put them inside as well)
+# first node distance as 0
+# the distance record two things: 1: whether is visited / 2: the distance to that node
+queue = collections.deque([node[)
+distance ={node : 0}
+
+# Keep visiting queue
+while queue:
+    node = queue.popleft()
+    # extend the queue
+    # pop out node's neighbors, then add them into queue and also update the distance
+    for neighbor in node.get_neighbors():
+        if neighbor in distance:
+            continue
+        distance[neighbor] = distance[node] + 1
+        queue.append(neighbor)
+```
+{% endtab %}
+{% endtabs %}
 
 ## Queue
 
