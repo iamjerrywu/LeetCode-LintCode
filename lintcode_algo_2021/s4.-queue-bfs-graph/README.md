@@ -39,7 +39,11 @@ There are two ways to implement queue:
 * **LinkedList**: Better in insert/delete elements in queue
 
 {% hint style="danger" %}
+**Python:**  
+Recommend to use `deque` instead of `Queue`, Since `Queue` implemented mutex \(lock\) for multi-threading
 
+**Java:**  
+Recommend to use `new ArrayDeque` , but not `new LinkedList`, Since LinkedList is slower
 {% endhint %}
 
 ## Java Interface 
