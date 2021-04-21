@@ -122,7 +122,7 @@ class Solution:
 
 Use two lists to record all the values, than find the last same values from both
 
-
+![](../../../.gitbook/assets/screen-shot-2021-04-22-at-1.10.40-am.png)
 
 ### Code
 
