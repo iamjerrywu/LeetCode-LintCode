@@ -122,6 +122,8 @@ class Solution:
 
 Use two lists to record all the values, than find the last same values from both
 
+
+
 ### Code
 
 {% tabs %}
