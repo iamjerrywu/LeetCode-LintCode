@@ -70,7 +70,94 @@ LCA(5, 6) = 7
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+Definition of ParentTreeNode:
+class ParentTreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.parent, self.left, self.right = None, None, None
+"""
 
+
+class Solution:
+    """
+    @param: root: The root of the tree
+    @param: A: node in the tree
+    @param: B: node in the tree
+    @return: The lowest common ancestor of A and B
+    """
+    def lowestCommonAncestorII(self, root, A, B):
+        # write your code 
+        parent_set = set()
+        
+        curr = A
+        while curr:
+            parent_set.add(curr)
+            curr = curr.parent
+        
+        curr = B
+        while curr:
+            if curr in parent_set:
+                return curr
+            curr = curr.parent
+        return None
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
+## Solution - List
+
+Use two lists to record all the values, than find the last same values from both
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+"""
+Definition of ParentTreeNode:
+class ParentTreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.parent, self.left, self.right = None, None, None
+"""
+
+
+class Solution:
+    """
+    @param: root: The root of the tree
+    @param: A: node in the tree
+    @param: B: node in the tree
+    @return: The lowest common ancestor of A and B
+    """
+    def lowestCommonAncestorII(self, root, A, B):
+        # write your code 
+        parent_set = set()
+        
+        curr = A
+        while curr:
+            parent_set.add(curr)
+            curr = curr.parent
+        
+        curr = B
+        while curr:
+            if curr in parent_set:
+                return curr
+            curr = curr.parent
+        return None
 ```
 {% endtab %}
 
