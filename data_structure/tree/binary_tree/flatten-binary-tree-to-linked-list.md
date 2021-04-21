@@ -47,13 +47,44 @@ Challenge
 
 Do it in-place without any extra memory.
 
-## Solution
+## Solution - Divide Conquer \(Wrong Example using Global variable\)
 
 ### Code
+
+{% hint style="danger" %}
+Following case would lead to error, since using global variable, might change the root.right value
+{% endhint %}
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
+
+class Solution:
+    """
+    @param root: a TreeNode, the root of the binary tree
+    @return: nothing
+    """
+    prev_node = None
+    def flatten(self, root):
+        # write your code here
+        if not root:
+            return 
+        
+        if self.prev_node:
+            self.prev_node.left = None
+            self.prev_node.right = root
+        
+        self.prev_node = root
+        self.flatten(root.left)
+        # here the root.right might be modified due to global variable: self.prev_node.right
+        self.flatten(root.right)
 
 ```
 {% endtab %}
