@@ -33,7 +33,7 @@
     * [Serialize and Deserialize Binary Tree 7 \(M\)](data_structure/tree/binary_tree/serialize-and-deserialize-binary-tree-7-m.md)
     * [Invert Binary Tree 175 \(E\)](data_structure/tree/binary_tree/175.-invert-binary-tree-e.md)
     * [Binary Tree Paths 480 \(E\)](data_structure/tree/binary_tree/480.-binary-tree-paths-e.md)
-    * [Subtree with Maximum Average 597 \(M\)](data_structure/tree/binary_tree/subtree-with-maximum-average-597-m.md)
+    * [Subtree with Maximum Average 597 \(E\)](data_structure/tree/binary_tree/subtree-with-maximum-average-597-m.md)
   * [BST](data_structure/tree/bst/README.md)
     * [Validate Binary Search Tree 95 \(M\)](data_structure/tree/bst/validate-binary-tree-95-m.md)
     * [Inorder Successor in BST 448 \(M\)](data_structure/tree/bst/448.-inorder-successor-in-bst.md)

@@ -1,4 +1,4 @@
-# Subtree with Maximum Average 597 \(M\)
+# Subtree with Maximum Average 597 \(E\)
 
 ## Problem
 
