@@ -38,7 +38,32 @@ Explanation：
 LCA(5, 6) = 7
 ```
 
-## Solution
+## Solution - List
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
+## Solution - HashSet
 
 ### Code
 
