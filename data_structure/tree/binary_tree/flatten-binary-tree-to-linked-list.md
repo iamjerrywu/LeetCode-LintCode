@@ -101,3 +101,61 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
+## Solution - Divide Conquer
+
+### Code
+
+![](../../../.gitbook/assets/screen-shot-2021-04-22-at-12.27.58-am.png)
+
+{% tabs %}
+{% tab title="python" %}
+```python
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
+
+class Solution:
+    """
+    @param root: a TreeNode, the root of the binary tree
+    @return: nothing
+    """
+    def flatten(self, root):
+        # write your code here
+        self.flatten_and_return_last_node(root)
+    
+    def flatten_and_return_last_node(self, root):
+        if not root:
+            return None
+        
+        left_last = self.flatten_and_return_last_node(root.left)
+        right_last = self.flatten_and_return_last_node(root.right)
+
+        # connect
+        if left_last:
+            left_last.right = root.right
+            root.right = root.left
+            root.left = None
+        # in-order to return right_last -> left_last -> root
+        return right_last or left_last or root
+
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+
+
