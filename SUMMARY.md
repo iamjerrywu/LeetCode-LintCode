@@ -23,6 +23,7 @@
 * [Queue](data_structure/s4.-stack-and-queue/README.md)
   * [Implement Queue by Linked List 492 \(E\)](data_structure/s4.-stack-and-queue/457.-implement-queue-by-linked-list.md)
   * [Deque](data_structure/s4.-stack-and-queue/deque.md)
+  * [Priority Queue](data_structure/s4.-stack-and-queue/priority_queue.md)
 * [Hash](data_structure/hash/README.md)
   * [Hash Function 128 \(E\)](data_structure/hash/untitled-1.md)
   * [Rehashing 129 \(M\)](data_structure/hash/129.-rehashing-m.md)
@@ -40,7 +41,6 @@
   * [Segment Tree](data_structure/tree/segment_tree.md)
 * [Heap](data_structure/heap/README.md)
   * [Heapify 130 \(M\)](data_structure/heap/130.-heapify.md)
-* [Priority Queue](data_structure/priority_queue.md)
 * [Trie](data_structure/trie.md)
 * [Union Find](data_structure/union_find.md)
 
