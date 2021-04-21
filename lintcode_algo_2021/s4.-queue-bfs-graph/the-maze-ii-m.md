@@ -1,2 +1,2 @@
-# The Maze II \(M\)
+# The Maze II 788 \(M\)
 
