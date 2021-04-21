@@ -16,6 +16,10 @@ Definition:
   * The time complexity is O\(n^2\)
     * Even BST height is logn, but that's in **balanced** condition
 
+## BST CRUD
+
+
+
 ## Red-Black Tree
 
 A balanced BST
