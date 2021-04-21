@@ -96,6 +96,7 @@
   * [Minimum Subtree 596 \(E\)](lintcode_algo_2021/divide-conquer/596-minimum-subtree-e.md)
   * [Trim a Binary Search Tree 701 \(M\)](lintcode_algo_2021/divide-conquer/701.-trim-a-binary-search-tree.md)
 * [BFS](lintcode_algo_2021/s4.-queue-bfs-graph/README.md)
+  * [The Maze II \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/the-maze-ii-m.md)
   * [Topological Sorting](lintcode_algo_2021/s4.-queue-bfs-graph/topological-sorting/README.md)
     * [Topological Sorting 127 \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/topological-sorting/topological-sorting-127-m.md)
     * [Sequence Reconstruction 605 \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/topological-sorting/sequence-reconstruction-605-m.md)
