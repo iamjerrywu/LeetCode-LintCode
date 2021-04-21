@@ -103,6 +103,7 @@
   * [Trim a Binary Search Tree 701 \(M\)](lintcode_algo_2021/divide-conquer/701.-trim-a-binary-search-tree.md)
 * [BFS](lintcode_algo_2021/s4.-queue-bfs-graph/README.md)
   * [Topological Sorting](lintcode_algo_2021/s4.-queue-bfs-graph/topological-sorting/README.md)
+    * [Alien Dictionary 892 \(H\)](lintcode_algo_2021/s4.-queue-bfs-graph/topological-sorting/alien-dictionary-892-h.md)
     * [Topological Sorting 127 \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/topological-sorting/topological-sorting-127-m.md)
     * [Sequence Reconstruction 605 \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/topological-sorting/sequence-reconstruction-605-m.md)
     * [Course Schedule II 616 \(M\)](lintcode_algo_2021/s4.-queue-bfs-graph/topological-sorting/course-schedule-ii-616-m.md)
