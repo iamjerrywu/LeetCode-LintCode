@@ -36,7 +36,7 @@ Explanation：
  LCA(3, 5) = 4
 ```
 
-## Solution
+## Solution - Divide Conquer
 
 ### Code
 
