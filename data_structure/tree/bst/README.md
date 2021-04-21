@@ -21,4 +21,9 @@ Definition:
 A balanced BST
 
 * O\(logn\) to do **CRUD**
-* 
+* O\(logn\) to find max/min
+* O\(logn\) to find the max that smaller than x / min that larger than x
+* In Java 1.8 HashMap use both TreeMap/LinkedList to implement
+  * If length &gt; 8, than TreeMap is more effective than linked list
+    * Since log8 &lt; 8
+
