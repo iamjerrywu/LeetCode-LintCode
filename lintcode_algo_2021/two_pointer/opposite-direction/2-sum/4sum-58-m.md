@@ -50,9 +50,11 @@ class Solution:
         numbers.sort()
 
         for i in range(0, len(numbers) - 3):
+            # skip duplicate
             if i > 0 and numbers[i - 1] == numbers[i]:
                 continue
             for j in range(len(numbers) - 1, i + 2, -1):
+                # skip duplicate
                 if j + 1 < len(numbers) and numbers[j + 1] == numbers[j]:
                     continue
                 base = target - (numbers[i] + numbers[j])
@@ -66,6 +68,7 @@ class Solution:
                         res.append([numbers[i], numbers[left], numbers[right], numbers[j]])
                         left+=1
                         right-=1
+                        # skip duplicate
                         while left < right and numbers[left - 1] == numbers[left]:
                             left+=1
                         while left < right and numbers[right + 1] == numbers[right]:
