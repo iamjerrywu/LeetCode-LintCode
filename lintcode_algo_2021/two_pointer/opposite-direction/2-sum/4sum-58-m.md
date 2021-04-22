@@ -29,6 +29,8 @@ Output:
 
 ## Solution
 
+
+
 ### Code
 
 {% tabs %}
@@ -83,6 +85,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(n^3\)**
 * **Space Complexity:**
 
