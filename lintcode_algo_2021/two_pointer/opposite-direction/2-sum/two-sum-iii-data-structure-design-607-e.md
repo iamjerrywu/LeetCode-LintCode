@@ -84,33 +84,7 @@ Couldn't use hashset here, because we also want to record the occurrence time of
 {% tabs %}
 {% tab title="python" %}
 ```python
-class TwoSum:
-    """
-    @param number: An integer
-    @return: nothing
-    """
-    def __init__(self):
-        self.counter = {}
-    
-    def add(self, number):
-        # write your code here
-        self.counter[number] = self.counter.get(number, 0) + 1
 
-    """
-    @param value: An integer
-    @return: Find if there exists any pair of numbers which sum is equal to the value.
-    """
-    def find(self, value):
-        # write your code here
-        
-        for num1 in self.counter:
-            num2 = value - num1
-            if num2 in self.counter:
-                if num1 == num2 and self.counter[num1] < 2:
-                    return False
-                return True
-                
-        return False
 ```
 {% endtab %}
 
@@ -124,8 +98,5 @@ class TwoSum:
 ### Complexity Analysis
 
 * **Time Complexity:**
-  * AddNumber: O\(1\)
-  * FindTwoSum: O\(n\)
-* **Space Complexity: O\(n\)**
-  * Create hashmap
+* **Space Complexity:**
 
