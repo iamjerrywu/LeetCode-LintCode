@@ -2,6 +2,10 @@
 
 ## Problem
 
+{% hint style="warning" %}
+For this question, should ask which method would be called more often!
+{% endhint %}
+
 Design and implement a TwoSum class. It should support the following operations: `add` and `find`.
 
 `add` - Add the number to an internal data structure.  
