@@ -44,7 +44,38 @@ Binary tree {3,2,4,1},  denote the following structure:
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
 
+class Solution:
+    """
+    @param root: the given BST
+    @param target: the given target
+    @return: the value in the BST that is closest to the target
+    """
+    def closestValue(self, root, target):
+        # write your code here
+        if not root:
+            return 
+        return self.helper(root, target)
+    
+    def helper(self, node, target):
+        if not node:
+            return float('inf')
+        
+        left_min = self.helper(node.left, target)
+        right_min = self.helper(node.right, target)
+        if abs(left_min - target) < abs(right_min - target) and abs(left_min - target) < abs(node.val - target):
+            return left_min
+        elif abs(right_min - target) < abs(left_min - target) and abs(right_min - target) < abs(node.val - target):
+            return right_min
+        else:
+            return node.val
 ```
 {% endtab %}
 
