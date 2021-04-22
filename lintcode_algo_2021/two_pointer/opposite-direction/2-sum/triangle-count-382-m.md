@@ -29,12 +29,31 @@ So the answer is C(3, 4) = 4
 
 ## Solution
 
+![](../../../../.gitbook/assets/screen-shot-2021-04-22-at-11.48.54-pm.png)
+
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param S: A list of integers
+    @return: An integer
+    """
+    def triangleCount(self, S):
+        # write your code here
+        S.sort()
+        cnt = 0
+        for i in range(len(S)):
+            left, right = 0, i - 1
+            while left < right:
+                if S[left] + S[right] > S[i]:
+                    cnt += right - left
+                    right-=1
+                else:
+                    left+=1
+        return cnt
 ```
 {% endtab %}
 
