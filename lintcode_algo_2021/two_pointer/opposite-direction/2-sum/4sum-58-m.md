@@ -31,7 +31,7 @@ Output:
 
 
 
-### Code
+### Code - Two Pointer
 
 {% tabs %}
 {% tab title="python" %}

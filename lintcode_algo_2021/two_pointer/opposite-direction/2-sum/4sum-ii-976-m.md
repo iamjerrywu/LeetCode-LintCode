@@ -37,7 +37,7 @@ Output:
 1
 ```
 
-## Solution
+## Solution - HashMap
 
 ### Code
 
