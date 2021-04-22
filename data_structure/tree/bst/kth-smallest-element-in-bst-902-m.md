@@ -41,7 +41,41 @@ What if the BST is modified \(insert/delete operations\) often and you need to f
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
 
+class Solution:
+    """
+    @param root: the given BST
+    @param k: the given k
+    @return: the kth smallest element in BST
+    """
+    def kthSmallest(self, root, k):
+        # write your code here
+        stack = []
+
+        while root:
+            stack.append(root)
+            root = root.left
+
+        for i in range(k - 1):
+            node = stack[-1]
+
+            if not node.right:
+                node = stack.pop(-1)
+                while len(stack) != 0 and stack[-1].right == node:
+                    node = stack.pop(-1) 
+            else:
+                node = node.right
+                while node != None:
+                    stack.append(node)
+                    node = node.left
+        return stack[-1].val         
 ```
 {% endtab %}
 
