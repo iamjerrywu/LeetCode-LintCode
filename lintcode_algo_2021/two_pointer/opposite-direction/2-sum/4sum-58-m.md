@@ -55,7 +55,6 @@ class Solution:
             for j in range(len(numbers) - 1, i + 2, -1):
                 if j + 1 < len(numbers) and numbers[j + 1] == numbers[j]:
                     continue
-                print(i, j, numbers[i], numbers[j])
                 base = target - (numbers[i] + numbers[j])
                 left, right = i + 1, j - 1
                 while left < right:
