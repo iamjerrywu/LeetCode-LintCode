@@ -40,6 +40,7 @@
     * [Minimum Subtree 596 \(M\)](data_structure/tree/binary_tree/minimum-subtree-596-m.md)
     * [Subtree with Maximum Average 597 \(E\)](data_structure/tree/binary_tree/subtree-with-maximum-average-597-m.md)
   * [BST](data_structure/tree/bst/README.md)
+    * [Kth Smallest Element in BST 902 \(M\)](data_structure/tree/bst/kth-smallest-element-in-bst-902-m.md)
     * [Validate Binary Search Tree 95 \(M\)](data_structure/tree/bst/validate-binary-tree-95-m.md)
     * [Inorder Successor in BST 448 \(M\)](data_structure/tree/bst/448.-inorder-successor-in-bst.md)
     * [Two Sum IV - Input is a BST 689 \(M\)](data_structure/tree/bst/689.-two-sum-iv-input-is-a-bst.md)
