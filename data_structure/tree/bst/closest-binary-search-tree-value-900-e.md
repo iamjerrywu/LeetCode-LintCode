@@ -37,7 +37,32 @@ Binary tree {3,2,4,1},  denote the following structure:
 1
 ```
 
-## Solution
+## Solution - Divide Conquer 
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
+## Solution - Iteration with Upper/Lower  
 
 ### Code
 
