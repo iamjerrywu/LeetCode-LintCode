@@ -84,6 +84,41 @@ Couldn't use hashset here, because we also want to record the occurrence time of
 {% tabs %}
 {% tab title="python" %}
 ```python
+class TwoSum:
+    """
+    @param number: An integer
+    @return: nothing
+    """
+    def __init__(self):
+        self.nums = []
+    def add(self, number):
+        # write your code here
+        self.nums.append(number)
+        index = len(self.nums) - 1
+        while index > 0 and self.nums[index - 1] > self.nums[index]:
+            self.nums[index - 1], self.nums[index] = self.nums[index], self.nums[index - 1]
+            # tmp = self.nums[index - 1]
+            # self.nums[index - 1] = self.nums[index]
+            # self.nums[index] = tmp
+            index-=1
+
+
+    """
+    @param value: An integer
+    @return: Find if there exists any pair of numbers which sum is equal to the value.
+    """
+    def find(self, value):
+        # write your code here
+        left, right = 0, len(self.nums) - 1
+        while left < right:
+            two_sum = self.nums[left] + self.nums[right]
+            if two_sum < value:
+                left+=1
+            elif two_sum > value:
+                right-=1
+            else:
+                return True
+        return False
 
 ```
 {% endtab %}
@@ -100,6 +135,11 @@ Couldn't use hashset here, because we also want to record the occurrence time of
 * **Time Complexity:**
   * AddNumber: O\(n\)
   * FindTwoSum: O\(n\)
+
+{% hint style="danger" %}
+This would cause time limit exceed, since `Add` take O\(n\) is too slow
+{% endhint %}
+
 * **Space Complexity: O\(n\)**
   * Create array
 

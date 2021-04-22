@@ -73,7 +73,7 @@
   * [Sparse Matrix Multiplication 654 \(M\)](lintcode_algo_2021/sorting/654.-sparse-matrix-multiplication-m.md)
 * [Two Pointer](lintcode_algo_2021/two_pointer/README.md)
   * [Opposite Direction](lintcode_algo_2021/two_pointer/opposite-direction/README.md)
-    * [2 Sum](lintcode_algo_2021/two_pointer/opposite-direction/2-sum/README.md)
+    * [N Sum](lintcode_algo_2021/two_pointer/opposite-direction/2-sum/README.md)
       * [Two Sum III - Data Structure Design 607 \(E\)](lintcode_algo_2021/two_pointer/opposite-direction/2-sum/two-sum-iii-data-structure-design-607-e.md)
       * [Two Sum 56 \(E\)](lintcode_algo_2021/two_pointer/opposite-direction/2-sum/56.-two-sum.md)
       * [Two Sum II - Input array is sorted 608 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/2-sum/two-sum-ii-input-array-is-sorted-608-m.md)
