@@ -19,7 +19,9 @@ find(4) // return true
 find(7) // return false
 ```
 
-## Solution - HashSet
+## Solution - HashMap
+
+Couldn't use hashset here, because we also want to record the occurrence time of each input
 
 ### Code
 
@@ -68,6 +70,6 @@ class TwoSum:
 * **Time Complexity:**
   * AddNumber: O\(1\)
   * FindTwoSum: O\(n\)
-* **Space Complexity:**
-  * O\(n\)
+* **Space Complexity: O\(n\)**
+  * Create hashmap
 
