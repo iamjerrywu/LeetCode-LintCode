@@ -98,5 +98,8 @@ Couldn't use hashset here, because we also want to record the occurrence time of
 ### Complexity Analysis
 
 * **Time Complexity:**
-* **Space Complexity:**
+  * AddNumber: O\(n\)
+  * FindTwoSum: O\(n\)
+* **Space Complexity: O\(n\)**
+  * Create array
 
