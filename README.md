@@ -21,6 +21,5 @@ Notes mainly comprises two parts:
 * Chap 8:
 * Chap 9
 * Chap 17 \(TSP\)
-* Chap 15
 * Chap 21
 
