@@ -77,9 +77,10 @@ class Solution:
                 left+=1
             while left < right and nums[right] >= k:
                 right-=1
-            nums[left], nums[right] = nums[right], nums[left]
-        if nums[left] < k:
-            left+=1
+            if left <= right:
+                nums[left], nums[right] = nums[right], nums[left]
+                left+=1
+                right-=1
         return left
 ```
 {% endtab %}
@@ -95,4 +96,45 @@ class Solution:
 
 * **Time Complexity: O\(n\)**
 * **Space Complexity:**
+
+## Appendix: Partition Array vs Quick Sort/Select
+
+### Partition Array:
+
+```python
+while left <= right:
+    while left <= right and nums[left] < k:
+        left+=1
+    while left <= right and nums[right] >= k:
+        right-=1
+    
+    if left <= right:
+        nums[left], nums[right] = nums[right], nums[left]
+        left+=1
+        right-=1
+        
+```
+
+### Quick Select/Sort
+
+```python
+while left <= right:
+    while left <= right and nums[left] < pivot:
+        left+=1
+    while left <= right and nums[right] > pivot:
+        right-=1
+    
+    if left <= right:
+        nums[left], nums[right] = nums[right], nums[left]
+        left+=1
+        right-=1
+    
+    
+```
+
+### Conclusion: 
+
+Partition Array need to strictly set two parts that left half &lt; k, while right &gt;= k
+
+Quick Sort/Select only need to let left parts &lt;= right part. If quick sort comparing == pivot, then in extreme case like \[1,1,1,1,1\], the time complexity would be O\(n^2\) -&gt; stack overflow
 
