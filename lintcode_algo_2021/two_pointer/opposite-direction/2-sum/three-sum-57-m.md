@@ -79,6 +79,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(n^2\)**
 * **Space Complexity:**
 
