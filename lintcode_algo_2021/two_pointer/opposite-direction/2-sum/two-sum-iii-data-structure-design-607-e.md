@@ -66,5 +66,8 @@ class TwoSum:
 ### Complexity Analysis
 
 * **Time Complexity:**
+  * AddNumber: O\(1\)
+  * FindTwoSum: O\(n\)
 * **Space Complexity:**
+  * O\(n\)
 
