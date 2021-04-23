@@ -30,6 +30,8 @@ O\(logn\) time, n is the first index of the given target number.
 
 ## Solution - Binary Search
 
+![](../../.gitbook/assets/screen-shot-2021-04-24-at-12.11.13-am.png)
+
 ### Code
 
 {% tabs %}
