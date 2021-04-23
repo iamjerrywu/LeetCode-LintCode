@@ -22,6 +22,8 @@ Output: 10
 
 ## Solution
 
+![](../../.gitbook/assets/screen-shot-2021-04-24-at-1.04.44-am.png)
+
 ### Code
 
 {% tabs %}
