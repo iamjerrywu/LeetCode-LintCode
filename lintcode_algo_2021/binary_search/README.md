@@ -8,6 +8,8 @@ Arguably one of the most frequent interview question
 
 To find certain number in a sorted array, its time complexity is O\(logn\), better than regular O\(n\)
 
+![](../../.gitbook/assets/screen-shot-2021-04-23-at-10.34.54-pm.png)
+
 ### Template
 
 {% tabs %}
