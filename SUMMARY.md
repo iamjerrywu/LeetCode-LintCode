@@ -110,6 +110,7 @@
   * [Copy Books 437 \(M\)](lintcode_algo_2021/binary_search/437.-copy-books-m.md)
   * [Search in a Big Sorted Array 447 \(M\)](lintcode_algo_2021/binary_search/search-in-a-big-sorted-array-447-m.md)
   * [Find K Closest Elements 460 \(M\)](lintcode_algo_2021/binary_search/find-k-closest-elements-460-m.md)
+  * [Maximum Number in Mountain Sequence 585 \(M\)](lintcode_algo_2021/binary_search/maximum-number-in-mountain-sequence-585-m.md)
   * [Smallest Rectangle Enclosing Black Pixels 600 \(H\)](lintcode_algo_2021/binary_search/600.-smallest-rectangle-enclosing-black-pixels.md)
 * [Divide Conquer](lintcode_algo_2021/divide-conquer/README.md)
   * [Balanced Binary Tree 93 \(E\)](lintcode_algo_2021/divide-conquer/93.-balanced-binary-tree.md)
