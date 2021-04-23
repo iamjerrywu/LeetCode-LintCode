@@ -28,7 +28,6 @@ Notes mainly comprises two parts:
 
 ### Algo\_2021
 
-* Chap 8:
 * Chap 9
 * Chap 17 \(TSP\)
 * Chap 21
