@@ -27,6 +27,23 @@ Output: 10
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param nums: a rotated sorted array
+    @return: the minimum number in the array
+    """
+    def findMin(self, nums):
+        # write your code here
+        start, end = 0, len(nums) - 1
+        while start + 1 < end:
+            mid = (start + end) // 2
+            # left parts
+            if nums[mid] > nums[0] and nums[mid] > nums[-1]:
+                start = mid
+            # right parts
+            else:
+                end = mid
+        return min(nums[start], nums[end])
 
 ```
 {% endtab %}
@@ -40,6 +57,6 @@ Output: 10
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(logn\)**
+* **Space Complexity: O\(1\)**
 
