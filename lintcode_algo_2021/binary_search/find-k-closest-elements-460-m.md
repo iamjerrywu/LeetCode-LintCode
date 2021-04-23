@@ -32,7 +32,7 @@ O\(logn + k\) time
 
 ## Solution
 
-
+![](../../.gitbook/assets/screen-shot-2021-04-24-at-12.13.52-am.png)
 
 ### Code
 
@@ -106,6 +106,9 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(nlogn\)**
+  * Binary Search: O\(nlogn\)
+  * Two Pointer: O\(k\)
+    * k &lt;= n
+* **Space Complexity: O\(1\)**
 
