@@ -84,6 +84,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(nlogk\)**
+  * n: numbers amount, k: color amount
 * **Space Complexity:**
 
