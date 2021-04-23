@@ -84,7 +84,7 @@
     * [Partition Array 31 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/partition-array-31-m.md)
     * [Interleaving Positive and Negative Numbers 144 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/interleaving-positive-and-negative-numbers-144-m.md)
     * [Sort Colors 148 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/148.-sort-colors.md)
-    * [Sort Colors II \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/sort-colors-ii-m.md)
+    * [Sort Colors II 143 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/sort-colors-ii-m.md)
     * [Valid Palindrome 415 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/415.-valid-palindrome.md)
     * [Longest Repeating Character Replacement 1246 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/1246.-longest-repeating-character-replacement.md)
   * [Same Direction](lintcode_algo_2021/two_pointer/same-direction/README.md)
