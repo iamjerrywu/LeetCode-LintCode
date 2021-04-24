@@ -111,14 +111,31 @@ class Solution:
 
 \*\*\*\*
 
-## Solution - Top Down Search 
+## Solution - DP
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param n: An integer
+    @return: An integer
+    """
+    def climbStairs(self, n):
+        # write your code here
+        if n < 3:
+            return n
+        
+        # dp[i]: the total solutions num for first ith number
+        dp = [0] * (n + 1)
 
+        dp[1] = 1
+        dp[2] = 2
+        for i in range(3, n + 1):
+            dp[i] = dp[i - 1] + dp[i - 2]
+        return dp[n]
 ```
 {% endtab %}
 
@@ -136,14 +153,31 @@ class Solution:
 
 \*\*\*\*
 
-## Solution - Top Down Search 
+## Solution - DP with Strolling Arrays
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param n: An integer
+    @return: An integer
+    """
+    def climbStairs(self, n):
+        # write your code here
+        if n < 3:
+            return n
+        # dp solution (strolling array optimization)
+        # dp[i]: the total solutions num for first ith number
+        dp = [0] * (3)
 
+        dp[1] = 1
+        dp[2] = 2
+        for i in range(3, n + 1):
+            dp[i%3] = dp[(i - 1)%3] + dp[(i - 2)%3]
+        return dp[n%3]
 ```
 {% endtab %}
 
