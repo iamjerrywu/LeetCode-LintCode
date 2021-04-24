@@ -26,7 +26,7 @@ Example 2:
 	only 1 way.
 ```
 
-## Solution - Top Down Search 
+## Solution - Top Down Searc
 
 ### Code
 
