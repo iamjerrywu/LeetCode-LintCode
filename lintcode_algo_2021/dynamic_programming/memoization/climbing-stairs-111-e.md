@@ -65,7 +65,8 @@ class Solution:
 
 * **Time Complexity: O\(2^n\) \(Roughly\)**
 * **Space Complexity: O\(n\)**
-  * call stack frame
+  * call stack frame: O\(n\)
+  * HashMap: O\(n\)
 
 ## Solution - Top Down Search with Memoization
 
