@@ -100,3 +100,60 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
+\*\*\*\*
+
+## Solution - One Time Binary Search
+
+To judge whether target is on the mid's left side or not?
+
+![](../../.gitbook/assets/screen-shot-2021-04-25-at-1.28.41-am.png)
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param A: an integer rotated sorted array
+    @param target: an integer to be searched
+    @return: an integer
+    """
+    def search(self, A, target):
+        # write your code here
+        if not A:
+            return -1
+        start, end = 0, len(A) - 1
+        while start + 1 < end:
+            mid = (start + end)//2
+            if self.target_is_left(A, mid, target):
+                end = mid
+            else:
+                start = mid
+        if A[start] == target:
+            return start
+        if A[end] == target:
+            return end
+        return -1
+    
+    def target_is_left(self, A, mid, target):
+        if A[mid] > A[0] and A[0] < target < A[mid]:
+            return True
+        if A[mid] < A[-1] and (A[mid] > target or target > A[-1]):
+            return True
+        return False      
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
