@@ -112,7 +112,7 @@ class Solution:
 
 ## Solution - Recursion with Memoization
 
-
+![](../../../.gitbook/assets/screen-shot-2021-04-25-at-12.27.11-am.png)
 
 ### Code
 
