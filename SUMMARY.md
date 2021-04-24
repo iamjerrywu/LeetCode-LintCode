@@ -90,6 +90,7 @@
     * [Longest Repeating Character Replacement 1246 \(M\)](lintcode_algo_2021/two_pointer/opposite-direction/1246.-longest-repeating-character-replacement.md)
   * [Same Direction](lintcode_algo_2021/two_pointer/same-direction/README.md)
     * [Linked List Cycle 102 \(M\)](lintcode_algo_2021/two_pointer/same-direction/102.-linked-list-cycle.md)
+    * [Linked List Cycle II 103 \(H\)](lintcode_algo_2021/two_pointer/same-direction/linked-list-cycle-ii-103-h.md)
     * [Palindrome Linked List 223 \(M\)](lintcode_algo_2021/two_pointer/same-direction/223.-palindrome-linked-list-m.md)
     * [Intersection of Two Linked Lists 380 \(M\)](lintcode_algo_2021/two_pointer/same-direction/380.-intersection-of-two-linked-lists-m.md)
     * [Longest Substring Without Repeating Characters 384 \(M\)](lintcode_algo_2021/two_pointer/same-direction/longest-substring-without-repeating-characters-m.md)
