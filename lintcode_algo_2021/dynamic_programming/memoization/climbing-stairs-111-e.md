@@ -148,8 +148,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
 
 \*\*\*\*
 
@@ -190,19 +190,84 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
 \*\*\*\*
 
-## Solution - 
+## Solution - Search 2
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param n: An integer
+    @return: An integer
+    """
+    def climbStairs(self, n):
+        # write your code here
+        if n < 3:
+            return n
+        res = [0]
+        self.search(n, res)
+        return res[0]
+    
+    def search(self, n, res):
+        if n == 0:
+            res[0]+=1
+            return 
+        if n < 0:
+            return
+        self.search(n - 1, res)
+        self.search(n - 2, res)
+```
+{% endtab %}
 
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
+## Solution - Search 2
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param n: An integer
+    @return: An integer
+    """
+    def climbStairs(self, n):
+        # write your code here
+        if n < 3:
+            return n
+        res = [0]
+        self.search(n, res)
+        return res[0]
+    
+    def search(self, n, res):
+        if n == 0:
+            res[0]+=1
+            return 
+        if n < 0:
+            return
+        self.search(n - 1, res)
+        self.search(n - 2, res)
 ```
 {% endtab %}
 
