@@ -153,6 +153,7 @@
   * [Traveling Salesman Problem 816 \(H\)](lintcode_algo_2021/dfs/816.-traveling-salesman-problem-h.md)
 * [Dynamic Programming](lintcode_algo_2021/dynamic_programming/README.md)
   * [Memoization](lintcode_algo_2021/dynamic_programming/memoization/README.md)
+    * [Climbing Stairs 111 \(E\)](lintcode_algo_2021/dynamic_programming/memoization/climbing-stairs-111-e.md)
     * [Triangle 109 \(M\)](lintcode_algo_2021/dynamic_programming/memoization/109.-triangle-m.md)
     * [Word Pattern II 829 \(M\)](lintcode_algo_2021/dynamic_programming/memoization/word-pattern-ii-829-m.md)
     * [Fibonacci 1807 \(E\)](lintcode_algo_2021/dynamic_programming/memoization/1807.-fibonacci-e.md)
