@@ -222,13 +222,33 @@ class Solution:
         if n < 0:
             return
         self.search(n - 1, res)
-        self.search(n - 2, res)
+        self.search(n - 2, res)`
 ```
 {% endtab %}
 
-{% tab title="java" %}
-```
-
+{% tab title="Python" %}
+```python
+class Solution:
+    """
+    @param n: An integer
+    @return: An integer
+    """
+    def climbStairs(self, n):
+        # write your code here
+        if n < 3:
+            return n
+        res = [0]
+        self.search(0, n, res)
+        return res[0]
+    
+    def search(self, index, n, res):
+        if index == n:
+            res[0]+=1
+            return 
+        if index > n:
+            return
+        self.search(index + 1, n, res)
+        self.search(index + 2, n, res)
 ```
 {% endtab %}
 {% endtabs %}
