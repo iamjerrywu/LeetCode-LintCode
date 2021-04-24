@@ -28,6 +28,8 @@ Example 2:
 
 ## Solution - Recursion
 
+![](../../../.gitbook/assets/screen-shot-2021-04-25-at-12.12.10-am.png)
+
 ### Code
 
 {% tabs %}
@@ -75,7 +77,7 @@ class Solution:
 ```
 {% endtab %}
 
-{% tab title="" %}
+{% tab title="python" %}
 ```python
 class Solution:
     """
@@ -109,6 +111,8 @@ class Solution:
   * HashMap: O\(n\)
 
 ## Solution - Recursion with Memoization
+
+
 
 ### Code
 
