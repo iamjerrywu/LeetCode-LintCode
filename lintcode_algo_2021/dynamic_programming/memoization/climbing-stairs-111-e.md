@@ -108,6 +108,8 @@ class Solution:
 
 * **Time Complexity: O\(n\)**
 * **Space Complexity: O\(n\)**
+  * Call stack frame: O\(n\)
+  * HashMap: O\(n\)
 
 \*\*\*\*
 
