@@ -2,25 +2,31 @@
 
 ## Problem
 
-Given a mountain sequence of `n` integers which increase firstly and then decrease, find the mountain top\(Maximum\).
+You are climbing a stair case. It takes **n** steps to reach to the top.
 
-Arrays are strictly incremented, strictly decreasingExample
-
-Example 1:
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?Example
 
 ```text
-Input: nums = [1, 2, 4, 8, 6, 3] 
-Output: 8
-```
+Example 1:
+	Input:  n = 3
+	Output: 3
+	
+	Explanation:
+	1) 1, 1, 1
+	2) 1, 2
+	3) 2, 1
+	total 3.
+
 
 Example 2:
-
-```text
-Input: nums = [10, 9, 8, 7], 
-Output: 10
+	Input:  n = 1
+	Output: 1
+	
+	Explanation:  
+	only 1 way.
 ```
 
-## Solution
+## Solution - Top Down Search 
 
 ### Code
 
