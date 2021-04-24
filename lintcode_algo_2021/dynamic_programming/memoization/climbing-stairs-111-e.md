@@ -28,7 +28,7 @@ Example 2:
 
 ## Solution - Recursion
 
-![](../../../.gitbook/assets/screen-shot-2021-04-25-at-12.12.10-am.png)
+![](../../../.gitbook/assets/screen-shot-2021-04-25-at-12.20.26-am.png)
 
 ### Code
 
