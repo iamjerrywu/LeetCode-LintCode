@@ -74,6 +74,31 @@ class Solution:
         return self.search(i + 1, n) + self.search(i + 2, n)
 ```
 {% endtab %}
+
+{% tab title="" %}
+```python
+class Solution:
+    """
+    @param n: An integer
+    @return: An integer
+    """
+    def climbStairs(self, n):
+        # write your code here
+        if n < 3:
+             return n
+        cnt = [0]
+        res = self.search(0, n, cnt)
+        print(cnt[0])
+        return res
+    def search(self, i, n, cnt):
+        cnt[0]+=1
+        if i > n:
+            return 0
+        if i == n:
+            return 1
+        return self.search(i + 1, n, cnt) + self.search(i + 2, n, cnt)
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
@@ -133,6 +158,35 @@ class Solution:
         if i in memory:
             return memory[i]
         memory[i] = self.search(i + 1, n, memory) + self.search(i + 2, n, memory)
+        return memory[i]
+```
+{% endtab %}
+
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param n: An integer
+    @return: An integer
+    """
+    def climbStairs(self, n):
+        # write your code here
+        if n < 3:
+             return n
+        memory = {}
+        cnt = [0]
+        res = self.search(0, n, memory, cnt)
+        print(cnt[0]) # input: 10 / cnt = 21
+        return res
+    def search(self, i, n, memory, cnt):
+        cnt[0]+=1
+        if i > n:
+            return 0
+        if i == n:
+            return 1
+        if i in memory:
+            return memory[i]
+        memory[i] = self.search(i + 1, n, memory, cnt) + self.search(i + 2, n, memory, cnt)
         return memory[i]
 ```
 {% endtab %}
