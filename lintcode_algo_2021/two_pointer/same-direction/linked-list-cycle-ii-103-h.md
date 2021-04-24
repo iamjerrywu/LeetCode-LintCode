@@ -28,7 +28,7 @@ Challenge
 
 Can you solve it without using extra space?
 
-## Solution
+## Solution - Two Pointer 
 
 ### Code
 
