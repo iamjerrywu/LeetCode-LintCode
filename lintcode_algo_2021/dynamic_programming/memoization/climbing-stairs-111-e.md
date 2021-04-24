@@ -63,11 +63,9 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(2^n\)**
+* **Time Complexity: O\(2^n\) \(Roughly\)**
 * **Space Complexity: O\(n\)**
   * call stack frame
-
-\*\*\*\*
 
 ## Solution - Top Down Search with Memoization
 
@@ -107,8 +105,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
 
 \*\*\*\*
 
