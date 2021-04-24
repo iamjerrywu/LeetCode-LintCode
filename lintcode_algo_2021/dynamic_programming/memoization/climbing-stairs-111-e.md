@@ -63,8 +63,9 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(2^n\)**
+* **Space Complexity: O\(n\)**
+  * call stack frame
 
 \*\*\*\*
 
