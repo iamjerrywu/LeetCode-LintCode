@@ -32,6 +32,8 @@ O\(logN\) time
 
 ## Solution - Two Time Binary Search
 
+![](../../.gitbook/assets/screen-shot-2021-04-25-at-12.48.55-am.png)
+
 ### Code
 
 {% tabs %}
