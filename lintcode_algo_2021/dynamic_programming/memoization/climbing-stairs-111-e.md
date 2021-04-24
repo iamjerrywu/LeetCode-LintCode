@@ -88,7 +88,7 @@ class Solution:
              return n
         cnt = [0]
         res = self.search(0, n, cnt)
-        print(cnt[0])
+        print(cnt[0]) # input: 5 / cnt = 25
         return res
     def search(self, i, n, cnt):
         cnt[0]+=1
@@ -176,7 +176,7 @@ class Solution:
         memory = {}
         cnt = [0]
         res = self.search(0, n, memory, cnt)
-        print(cnt[0]) # input: 10 / cnt = 21
+        print(cnt[0]) # input: 5 / cnt = 11
         return res
     def search(self, i, n, memory, cnt):
         cnt[0]+=1
