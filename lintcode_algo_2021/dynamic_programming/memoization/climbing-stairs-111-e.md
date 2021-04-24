@@ -54,9 +54,24 @@ class Solution:
 ```
 {% endtab %}
 
-{% tab title="java" %}
-```
-
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param n: An integer
+    @return: An integer
+    """
+    def climbStairs(self, n):
+        # write your code here
+        if n < 3:
+             return n
+        return self.search(0, n)
+    def search(self, i, n):
+        if i > n:
+            return 0
+        if i == n:
+            return 1
+        return self.search(i + 1, n) + self.search(i + 2, n)
 ```
 {% endtab %}
 {% endtabs %}
@@ -97,9 +112,28 @@ class Solution:
 ```
 {% endtab %}
 
-{% tab title="java" %}
-```
-
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param n: An integer
+    @return: An integer
+    """
+    def climbStairs(self, n):
+        # write your code here
+        if n < 3:
+             return n
+        memory = {}
+        return self.search(0, n, memory)
+    def search(self, i, n, memory):
+        if i > n:
+            return 0
+        if i == n:
+            return 1
+        if i in memory:
+            return memory[i]
+        memory[i] = self.search(i + 1, n, memory) + self.search(i + 2, n, memory)
+        return memory[i]
 ```
 {% endtab %}
 {% endtabs %}
