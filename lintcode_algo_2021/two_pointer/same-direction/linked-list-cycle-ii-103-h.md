@@ -60,9 +60,9 @@ class Solution:
 
             if fast is slow:
                 break
+        
         if not fast or not fast.next:
             return None
-        
         
         while head is not slow:
             head = head.next
@@ -81,6 +81,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
