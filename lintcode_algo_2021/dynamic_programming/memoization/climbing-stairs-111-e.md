@@ -33,7 +33,24 @@ Example 2:
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param n: An integer
+    @return: An integer
+    """
+    def climbStairs(self, n):
+        # write your code here
+        memory = {}
+        res = self.search(n, memory)
+        return res
+    def search(self, n, memory):
+        if n in memory:
+            return memory[n]
+        if n < 3:
+            return n
+        res = self.search(n - 1, memory) + self.search(n - 2, memory)
+        memory[n] = res
+        return res
 ```
 {% endtab %}
 
@@ -58,7 +75,25 @@ Example 2:
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param n: An integer
+    @return: An integer
+    """
+    def climbStairs(self, n):
+        # write your code here
+        # memoization
+        memory = {}
+        res = self.search(n, memory)
+        return res
+    def search(self, n, memory):
+        if n in memory:
+            return memory[n]
+        if n < 3:
+            return n
+        res = self.search(n - 1, memory) + self.search(n - 2, memory)
+        memory[n] = res
+        return res
 ```
 {% endtab %}
 
