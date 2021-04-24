@@ -26,7 +26,7 @@ Example 2:
 	only 1 way.
 ```
 
-## Solution - Top Down Searc
+## Solution - Recursion
 
 ### Code
 
@@ -83,7 +83,7 @@ class Solution:
   * call stack frame: O\(n\)
   * HashMap: O\(n\)
 
-## Solution - Top Down Search with Memoization
+## Solution - Recursion with Memoization
 
 ### Code
 
