@@ -51,6 +51,7 @@
     * [Inorder Successor in BST 448 \(M\)](data_structure/tree/bst/448.-inorder-successor-in-bst.md)
     * [Inorder Predecessor in BST 915 \(M\)](data_structure/tree/bst/915.-inorder-predecessor-in-bst.md)
     * [Serialize and Deserialize BST 1235 \(M\)](data_structure/tree/bst/serialize-and-deserialize-bst-1235-m.md)
+    * [Range Sum of BST 1704 \(M\)](data_structure/tree/bst/range-sum-of-bst-1704-m.md)
   * [Segment Tree](data_structure/tree/segment_tree.md)
 * [Heap](data_structure/heap/README.md)
   * [Heapify 130 \(M\)](data_structure/heap/130.-heapify.md)
