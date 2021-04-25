@@ -19,6 +19,7 @@
   * [Merge Two Sorted Lists 165 \(E\)](data_structure/linked_list/165.-merge-two-sorted-lists-e.md)
 * [Stack](data_structure/stack/README.md)
   * [Monotone Stack](data_structure/stack/monotone-stack.md)
+  * [Valid Parenthese 423 \(E\)](data_structure/stack/valid-parenthese-423-e.md)
   * [Binary Search Tree Iterator 86 \(H\)](data_structure/stack/86.-binary-search-tree-iterator-h.md)
   * [Min Stack 12 \(M\)](data_structure/stack/12.-min-stack.md)
   * [Max Stack 859 \(H\)](data_structure/stack/859-max-stack-h.md)
