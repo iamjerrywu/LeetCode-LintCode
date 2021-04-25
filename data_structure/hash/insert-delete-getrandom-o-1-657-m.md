@@ -38,6 +38,12 @@ randomSet.getRandom();
 
 ## Solution
 
+To O\(1\) access the specific val in list, use a hashmap to store their index \(from val to index\)
+
+Also, when ever remove specific value, place the last value in list in the target location, then pop out last element \(can achieve O\(1\)\)
+
+![](../../.gitbook/assets/screen-shot-2021-04-26-at-12.39.46-am.png)
+
 ### Code
 
 {% tabs %}
