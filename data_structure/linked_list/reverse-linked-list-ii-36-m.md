@@ -52,7 +52,7 @@ Reverse it in-place and in one-pass
 
 ## Solution
 
-
+![](../../.gitbook/assets/screen-shot-2021-04-25-at-4.29.48-pm.png)
 
 ### Code
 
