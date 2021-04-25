@@ -11,6 +11,7 @@
   * [Compare Version Numbers 1352 \(M\)](data_structure/string/1352.-compare-version-numbers-m.md)
 * [Array](data_structure/array/README.md)
   * [Prefix Sum](data_structure/array/prefix-sum/README.md)
+    * [Maximum Subarray 41 \(E\)](data_structure/array/prefix-sum/maximum-subarray-41-e.md)
     * [Product of Array Except Self 1310 \(M\)](data_structure/array/prefix-sum/product-of-array-except-self-1310-m.md)
   * [Suffix](data_structure/array/suffix.md)
   * [Matrix](data_structure/array/matrix.md)
