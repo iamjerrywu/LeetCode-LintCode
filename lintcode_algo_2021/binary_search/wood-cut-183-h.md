@@ -54,7 +54,7 @@ class Solution:
         # if even sum(L) divided by L < 1, then defintly can't have solution here
         if start > end:
             return 0
-
+        # O(loglength)
         while start + 1 < end:
             mid = (start + end)//2
             if self.get_pieces(L, mid) < k:
@@ -84,6 +84,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(nloglength\)**
+  * n: total nums of L
+  * Max length of L's element 
+* **Space Complexity: O\(1\)**
 
