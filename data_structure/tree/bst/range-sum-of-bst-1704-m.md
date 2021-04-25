@@ -23,7 +23,32 @@ Input: root = [10,5,15,3,7,13,18,1,null,6], L = 6, R = 10
 Output: 23
 ```
 
-## Solution
+## Solution - Divide Conquer
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
+## Solution - DFS
 
 ### Code
 
