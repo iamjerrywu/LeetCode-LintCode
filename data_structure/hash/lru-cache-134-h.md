@@ -44,7 +44,9 @@ cache cap is 1，set(2,1)，get(2) and return 1，set(3,2) and delete (2,1)，ge
 
 Using singly-linkedlist and hashmap to record the previous node
 
-* Since linked list access O\(1\), and with hashmap don't need to implement doubly linkedlist
+* Since linked list access O\(1\) \(with hashmap\), and if out of size, linkedlist can do in O\(1\) deleting node as well
+  * Even array can do O\(1\) access, but deleting first node require O\(n\) adjusting values in rest positions
+* With hashmap don't need to implement doubly linkedlist
 
 ![](../../.gitbook/assets/screen-shot-2021-04-25-at-11.57.55-pm.png)
 
@@ -136,6 +138,6 @@ class LRUCache:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(1\)**
+* **Space Complexity: O\(1\)**
 
