@@ -54,7 +54,7 @@ getRandom()
 remove(1)
 ```
 
-## Solution
+## Solution - HashMap + List \(Brute Force\)
 
 ### Code
 
@@ -78,11 +78,11 @@ class RandomizedCollection(object):
         """
         self.nums.append(val)
         if val not in self.val_to_index:
-            index_set = set([len(self.nums) - 1])
-            self.val_to_index[val] = index_set
+            self.val_to_index[val] = []
+            self.val_to_index[val].append(len(self.nums) - 1)
             return True
         else:
-            self.val_to_index[val].add(len(self.nums) - 1)
+            self.val_to_index[val].append(len(self.nums) - 1)
             return True
         
     def remove(self, val):
@@ -91,26 +91,17 @@ class RandomizedCollection(object):
         :type val: int
         :rtype: bool
         """
-        if val not in self.val_to_index:
+        if val not in self.val_to_index or len(self.val_to_index[val]) == 0:
             return False
         index = self.val_to_index[val].pop()
-        if len(self.val_to_index[val]) == 0:
-            del self.val_to_index[val]
-
         last = self.nums[-1]
         
         # move last element to index
         self.nums[index] = last
-        if last not in self.val_to_index:
-            index_set = set([index])
-            self.val_to_index[last] = index_set
-        else:
-            self.val_to_index[last].add(index)
+        self.val_to_index[last].append(index)
         
         # remove last element in nums
         self.val_to_index[last].remove(len(self.nums) - 1)
-        if len(self.val_to_index[last]) == 0:
-            del self.val_to_index[last]
         self.nums.pop()
         
         return True
