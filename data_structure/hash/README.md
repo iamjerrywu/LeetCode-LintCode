@@ -17,3 +17,8 @@ Ans: Key is O\(1\), to strictly speaking, hash operation require O\(size of key\
 
 Do Rehashing, expand the hash table
 
+### HashSet vs HashMap
+
+* HashSet: `value`= None, only use `key`
+* HashMap: Use both `value` and `key`
+
