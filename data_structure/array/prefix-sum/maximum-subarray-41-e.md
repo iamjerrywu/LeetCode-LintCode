@@ -54,24 +54,7 @@ Can you do it in time complexity O\(n\)?
 {% tabs %}
 {% tab title="python" %}
 ```python
-class Solution:
-    """
-    @param nums: A list of integers
-    @return: A integer indicate the sum of max subarray
-    """
-    def maxSubArray(self, nums):
-        # write your code here
-        n = len(nums)
-        # dp[i] means the longest contigous array sum that end with nums[ith]
-        dp = [-float("inf")] * (n + 1)
-        
-        # init state
-        dp[1] = nums[0]
-        
-        # function 
-        for i in range(1, n + 1):
-            dp[i] = nums[i - 1] + max(0, dp[i - 1])
-        return max(dp)
+
 ```
 {% endtab %}
 
