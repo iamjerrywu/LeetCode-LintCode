@@ -28,6 +28,10 @@ Use O\(n\) time, n is the number of parentheses.
 
 ## Solution
 
+Only the latest input and the top of stack should be a pair
+
+* i.e: input: '\(', top: '\)'
+
 ### Code
 
 {% tabs %}
