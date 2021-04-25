@@ -31,6 +31,7 @@
 * [Hash](data_structure/hash/README.md)
   * [Hash Function 128 \(E\)](data_structure/hash/untitled-1.md)
   * [Rehashing 129 \(M\)](data_structure/hash/129.-rehashing-m.md)
+  * [LRU Cache 134 \(H\)](data_structure/hash/lru-cache-134-h.md)
   * [Longest Palindrome 627 \(E\)](data_structure/hash/627-longest-palindrome-e.md)
 * [Tree](data_structure/tree/README.md)
   * [Binary Tree](data_structure/tree/binary_tree/README.md)
