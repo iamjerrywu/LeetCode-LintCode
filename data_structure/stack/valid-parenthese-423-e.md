@@ -2,6 +2,30 @@
 
 ## Problem
 
+Given a string containing just the characters `'(', ')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.
+
+The brackets must close in the correct order, `"()"` and `"()[]{}"` are all valid but `"(]"` and `"([)]"` are not.Have you met this question in a real interview?  YesProblem Correction
+
+#### Example
+
+**Example 1:**
+
+```text
+Input: "([)]"
+Output: False
+```
+
+**Example 2:**
+
+```text
+Input: "()[]{}"
+Output: True
+```
+
+#### Challenge
+
+Use O\(n\) time, n is the number of parentheses.
+
 ## Solution
 
 ### Code
@@ -9,6 +33,25 @@
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param s: A string
+    @return: whether the string is a valid parentheses
+    """
+    def isValidParentheses(self, s):
+        # write your code here
+        stack = []
+        for c in s:
+            if c == '(':
+                stack.append(')')
+            elif c == '[':
+                stack.append(']')
+            elif c == '{':
+                stack.append('}')
+            else: 
+                if not stack or c != stack.pop():
+                    return False
+        return not stack
 
 ```
 {% endtab %}
@@ -22,6 +65,6 @@
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
 
