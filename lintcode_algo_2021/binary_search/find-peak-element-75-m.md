@@ -39,6 +39,8 @@ Example 2:
 
 ## Solution
 
+![](../../.gitbook/assets/screen-shot-2021-04-25-at-1.41.16-am.png)
+
 ### Code
 
 {% tabs %}
