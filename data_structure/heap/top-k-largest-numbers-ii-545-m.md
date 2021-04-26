@@ -75,7 +75,7 @@ s.topk()
 >> return [10]
 ```
 
-## Solution
+## Solution - Min Heap
 
 ### Code
 
