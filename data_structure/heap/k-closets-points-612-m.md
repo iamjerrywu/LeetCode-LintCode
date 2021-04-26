@@ -93,12 +93,43 @@ class Solution:
 
 ## Solution - Max Heap
 
+Since python heapq is default a min-heap, so need to `values  *(-1)` inorder to make it act as max\_heap 
+
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+"""
+Definition for a point.
+class Point:
+    def __init__(self, a=0, b=0):
+        self.x = a
+        self.y = b
+"""
+import heapq
+class Solution:
+    """
+    @param points: a list of points
+    @param origin: a point
+    @param k: An integer
+    @return: the k closest points
+    """
+    def kClosest(self, points, origin, k):
+        # write your code here
+        self.heap = []
+        for point in points:
+            dist = self.get_distance(point, origin)
+            heapq.heappush(self.heap, (-dist, -point.x, -point.y))
+            
+            if len(self.heap) > k:
+                heapq.heappop(self.heap)
+        
+        self.heap.sort(key = lambda item:(-item[0], -item[1], -item[2]))
+        return [(-x, -y) for _, x, y in self.heap]
+  
+    def get_distance(self, point, origin):
+        return (point.x - origin.x)**2 + (point.y - origin.y)**2
 ```
 {% endtab %}
 
