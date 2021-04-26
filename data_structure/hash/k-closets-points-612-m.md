@@ -22,7 +22,30 @@ Challenge
 
 O\(nlogn\) is OK, but can you think of a solution to O\(nlogk\)？
 
-## Solution
+## Solution - Quick Select
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n + klogk\)**
+* **Space Complexity:**
+
+## Solution - Min Heap
 
 ### Code
 
