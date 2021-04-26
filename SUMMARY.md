@@ -63,7 +63,7 @@
 * [Heap](data_structure/heap/README.md)
   * [Heapify 130 \(M\)](data_structure/heap/130.-heapify.md)
   * [Top k Largest Numbers II 545 \(M\)](data_structure/heap/top-k-largest-numbers-ii-545-m.md)
-  * [K Closets Points 612 \(M\)](data_structure/heap/k-closets-points-612-m.md)
+  * [K Closests Points 612 \(M\)](data_structure/heap/k-closets-points-612-m.md)
 * [Trie](data_structure/trie.md)
 * [Union Find](data_structure/union_find.md)
 
