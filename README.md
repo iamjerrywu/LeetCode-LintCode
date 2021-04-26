@@ -24,6 +24,10 @@ Notes mainly comprises two parts:
 * O\(2^n\): Combination search
 * O\(n!\): Permutation Search 
 
+## Common Data Structure in Interview
+
+
+
 ## Unfinished Chapter 
 
 ### Algo\_2021
