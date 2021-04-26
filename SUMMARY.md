@@ -35,6 +35,7 @@
   * [Longest Palindrome 627 \(E\)](data_structure/hash/627-longest-palindrome-e.md)
   * [Insert Delete GetRandom O\(1\) 657 \(M\)](data_structure/hash/insert-delete-getrandom-o-1-657-m.md)
   * [Insert Delete GetRandom O\(1\) - Duplicates Allowed 954 \(H\)](data_structure/hash/insert-delete-getrandom-o-1-duplicates-allowed-954-h.md)
+  * [First Unique Number in Data Stream 685 \(M\)](data_structure/hash/first-unique-number-in-data-stream-685-m.md)
 * [Tree](data_structure/tree/README.md)
   * [Binary Tree](data_structure/tree/binary_tree/README.md)
     * [Lowest Common Ancestor 88 \(M\)](data_structure/tree/binary_tree/lowest-common-ancestor-88-m.md)
