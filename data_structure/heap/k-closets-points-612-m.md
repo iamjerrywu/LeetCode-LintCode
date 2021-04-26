@@ -123,7 +123,37 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+"""
+Definition for a point.
+class Point:
+    def __init__(self, a=0, b=0):
+        self.x = a
+        self.y = b
+"""
+import heapq
+class Solution:
+    """
+    @param points: a list of points
+    @param origin: a point
+    @param k: An integer
+    @return: the k closest points
+    """
+    def kClosest(self, points, origin, k):
+        # write your code here
+        # min heap solution
+        self.heap = []
+        for point in points:
+            dist = self.get_distance(point, origin)
+            heapq.heappush(self.heap, (dist, point.x, point.y))
+        
+        res = []
+        for _ in range(k):
+            _, x, y = heapq.heappop(self.heap)
+            res.append(Point(x, y))
+        
+        return res
+    def get_distance(self, point, origin):
+        return (point.x - origin.x)**2 + (point.y - origin.y)**2
 ```
 {% endtab %}
 
