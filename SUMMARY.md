@@ -32,6 +32,7 @@
   * [Implementation](data_structure/hash/implementation/README.md)
     * [Hash Function 128 \(E\)](data_structure/hash/implementation/untitled-1.md)
     * [Rehashing 129 \(M\)](data_structure/hash/implementation/129.-rehashing-m.md)
+  * [K Closets Points 612 \(M\)](data_structure/hash/k-closets-points-612-m.md)
   * [Ugly Number II 4 \(M\)](data_structure/hash/4.md)
   * [LRU Cache 134 \(H\)](data_structure/hash/lru-cache-134-h.md)
   * [Longest Palindrome 627 \(E\)](data_structure/hash/627-longest-palindrome-e.md)
