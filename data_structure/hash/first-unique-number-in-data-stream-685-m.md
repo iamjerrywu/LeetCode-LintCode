@@ -38,7 +38,32 @@ Output: 3
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param nums: a continuous stream of numbers
+    @param number: a number
+    @return: returns the first unique number
+    """
+    def firstUniqueNumber(self, nums, number):
+        # Write your code here
+        counter = {}
 
+        is_break = False
+        # first loop to set up hashmap, count all the num appearance before number
+        for num in nums:
+            counter[num] = counter.get(num, 0) + 1
+            if num == number:
+                is_break = True
+                break
+        if not is_break:
+            return -1
+        
+        # second loop, pop out the first number that only appear once 
+        for num in nums:
+            if counter[num] == 1:
+                return num
+            if num == number:
+                return -1
 ```
 {% endtab %}
 
