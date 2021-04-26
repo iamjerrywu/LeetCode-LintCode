@@ -29,6 +29,7 @@
   * [Deque](data_structure/s4.-stack-and-queue/deque.md)
   * [Priority Queue](data_structure/s4.-stack-and-queue/priority_queue.md)
 * [Hash](data_structure/hash/README.md)
+  * [4](data_structure/hash/4.md)
   * [Hash Function 128 \(E\)](data_structure/hash/untitled-1.md)
   * [Rehashing 129 \(M\)](data_structure/hash/129.-rehashing-m.md)
   * [LRU Cache 134 \(H\)](data_structure/hash/lru-cache-134-h.md)
