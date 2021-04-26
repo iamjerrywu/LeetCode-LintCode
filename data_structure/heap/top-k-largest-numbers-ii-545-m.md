@@ -123,3 +123,10 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
+## Comparison Conclusion
+
+|  | Quick Select | Max Heap | Min Heap |
+| :--- | :--- | :--- | :--- |
+| Add\(\) | O\(1\) | O\(logn\) | O\(logk\) |
+| Top\_K\(\) | O\(n + klogk\) | O\(klogn\) | O\(klogk\) |
+
