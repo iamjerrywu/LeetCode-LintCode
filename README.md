@@ -26,7 +26,7 @@ Notes mainly comprises two parts:
 
 ## Common Data Structure in Interview
 
-
+![](.gitbook/assets/screen-shot-2021-04-26-at-11.00.34-pm.png)
 
 ## Unfinished Chapter 
 
