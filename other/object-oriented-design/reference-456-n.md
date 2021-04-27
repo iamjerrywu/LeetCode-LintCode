@@ -34,8 +34,32 @@ ref.node; // will be the same with obj2
 {% endtab %}
 
 {% tab title="java" %}
-```
+```java
+/**
+ * Definition of Node:
+ * class Node {
+ *     public int val;
+ *     public Node(int val) {
+ *         this.val = val;
+ *     }
+ * }
+ */
+public class ReferenceManager {
+    public Node node;
 
+    public void copyValue(Node obj) {
+        // copy value from obj to node
+        if (obj == null) return;
+        if (node == null) node = new Node(obj.val);
+        // obj.val = node.val;
+        
+    }
+
+    public void copyReference(Node obj) {
+        // copy reference from obj to node
+        node = obj;
+    }
+}
 ```
 {% endtab %}
 {% endtabs %}
