@@ -8,6 +8,7 @@
 * [String](data_structure/string/README.md)
   * [Longest Common Prefix 78 \(M\)](data_structure/string/longest-common-prefix-78-m.md)
   * [Multiple Strings 656 \(M\)](data_structure/string/656.-multiple-strings.md)
+  * [Bold Words in String 812 \(E\)](data_structure/string/bold-words-in-string-812-e.md)
   * [Compare Version Numbers 1352 \(M\)](data_structure/string/1352.-compare-version-numbers-m.md)
   * [Ambiguous Coordinates 1372 \(M\)](data_structure/string/ambiguous-coordinates-1372-m.md)
 * [Array](data_structure/array/README.md)
