@@ -31,6 +31,44 @@ Output：23
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param s: the given expression
+    @return: the result of expression
+    """
+    def calculate(self, s):
+        # Write your code here
+        stack = []
+        res, num, sign = 0, 0, 1
+
+        for c in s:
+            if c in '1234567890':
+                num = num*10 + int(c)
+            elif c == '+':
+                res+= sign * num
+                num = 0
+                sign = 1
+            elif c == '-':
+                res +=sign * num
+                num = 0
+                sign = -1
+            elif c == '(':
+                # save the res and sign before (operation)
+                stack.append(res)
+                stack.append(sign)
+                sign = 1
+                res = 0
+            elif c == ')':
+                res += sign * num
+                num = 0
+                # first the res inside(), should tranfer to signed before ()
+                res *= stack[-1]
+                # then do either "+" or "-" with res before ()
+                res += stack[-2]
+                stack = stack[:-2]
+        res += sign * num
+        return res
+
 
 ```
 {% endtab %}
