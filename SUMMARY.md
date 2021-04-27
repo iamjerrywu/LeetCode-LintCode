@@ -211,6 +211,7 @@
 ## Other
 
 * [Mathmatics](other/mathmatics/README.md)
+  * [Fizz Buzz 9 \(E\)](other/mathmatics/fizz-buzz-9-e.md)
   * [Reverse Integer 413 \(E\)](other/mathmatics/reverse-integer-413-e.md)
 * [Binary](other/binary.md)
 * [Object-Oriented Design](other/object-oriented-design/README.md)
