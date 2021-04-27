@@ -210,6 +210,6 @@
 
 ## Other
 
-* [Binary](other/binary.md)
 * [Mathmatics](other/mathmatics.md)
+* [Binary](other/binary.md)
 
