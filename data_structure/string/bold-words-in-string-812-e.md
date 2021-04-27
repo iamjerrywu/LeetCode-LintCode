@@ -54,6 +54,7 @@ class Solution:
         # Write your code here
         n = len(S)
         bold = [0] * n
+        # bold list same length as S, and mark those need to bold as 1 (0 if not need)
         for word in words:
             start = 0
             while True:
