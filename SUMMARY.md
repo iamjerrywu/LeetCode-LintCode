@@ -213,4 +213,5 @@
 * [Mathmatics](other/mathmatics/README.md)
   * [Reverse Integer 413 \(E\)](other/mathmatics/reverse-integer-413-e.md)
 * [Binary](other/binary.md)
+* [Object-Oriented Design](other/object-oriented-design.md)
 
