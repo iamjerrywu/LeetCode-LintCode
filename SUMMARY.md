@@ -40,6 +40,7 @@
   * [Insert Delete GetRandom O\(1\) 657 \(M\)](data_structure/hash/insert-delete-getrandom-o-1-657-m.md)
   * [Insert Delete GetRandom O\(1\) - Duplicates Allowed 954 \(H\)](data_structure/hash/insert-delete-getrandom-o-1-duplicates-allowed-954-h.md)
   * [First Unique Number in Data Stream 685 \(M\)](data_structure/hash/first-unique-number-in-data-stream-685-m.md)
+  * [Word Pattern 828 \(E\)](data_structure/hash/word-pattern-828-e.md)
   * [First Unique Number in Data Stream II 960 \(M\)](data_structure/hash/first-unique-number-in-data-stream-ii-960-m.md)
 * [Tree](data_structure/tree/README.md)
   * [Binary Tree](data_structure/tree/binary_tree/README.md)
