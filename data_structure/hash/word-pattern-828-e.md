@@ -47,14 +47,36 @@ Explanation:
 The pattern of str is abbc
 ```
 
-## Solution
+## Solution - HashMap + HashSet
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param pattern: a string, denote pattern string
+    @param teststr: a string, denote matching string
+    @return: an boolean, denote whether the pattern string and the matching string match or not
+    """
+    def wordPattern(self, pattern, teststr):
+        # write your code here
+        test_strings = teststr.split(" ")
+        if len(pattern) != len(test_strings):
+            return False
 
+        ref, appeared = {}, set()
+        for i in range(len(pattern)):
+            if pattern[i] not in ref:
+                if test_strings[i] not in appeared:
+                    appeared.add(test_strings[i])
+                else:
+                    return False
+                ref[pattern[i]] = test_strings[i]
+            elif ref[pattern[i]] != test_strings[i]:
+                return False
+        return True
 ```
 {% endtab %}
 
@@ -67,6 +89,6 @@ The pattern of str is abbc
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
 
