@@ -57,6 +57,7 @@ class Solution:
         for word in words:
             start = 0
             while True:
+                # need to keep find since there might be multiple word in S
                 idx = S[start:].find(word)
                 if idx < 0:
                     break
@@ -66,13 +67,17 @@ class Solution:
         
         ans = []
         for i in range(0, n):
+            #1...
             if i == 0 and bold[i] == 1:
                 ans.append('<b>')
+            #..01..
             elif i > 0 and bold[i - 1] == 0 and bold[i] == 1:
                 ans.append('<b>')
             ans.append(S[i])
+            #..10..
             if i < n - 1 and bold[i] == 1 and bold[i + 1] == 0:
                 ans.append('</b>')
+            #..1
             elif i == n - 1 and bold[i] == 1:
                 ans.append('</b>')
         return ''.join(ans) 
