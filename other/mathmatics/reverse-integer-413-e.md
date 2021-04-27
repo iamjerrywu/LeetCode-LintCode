@@ -47,7 +47,7 @@ class Solution:
 {% endtab %}
 
 {% tab title="java" %}
-```
+```java
 
 ```
 {% endtab %}
