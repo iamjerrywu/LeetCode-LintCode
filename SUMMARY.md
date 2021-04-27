@@ -9,6 +9,7 @@
   * [Longest Common Prefix 78 \(M\)](data_structure/string/longest-common-prefix-78-m.md)
   * [Multiple Strings 656 \(M\)](data_structure/string/656.-multiple-strings.md)
   * [Compare Version Numbers 1352 \(M\)](data_structure/string/1352.-compare-version-numbers-m.md)
+  * [Ambiguous Coordinates 1372 \(M\)](data_structure/string/ambiguous-coordinates-1372-m.md)
 * [Array](data_structure/array/README.md)
   * [Prefix Sum](data_structure/array/prefix-sum/README.md)
     * [Maximum Subarray 41 \(E\)](data_structure/array/prefix-sum/maximum-subarray-41-e.md)
