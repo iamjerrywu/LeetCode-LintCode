@@ -25,7 +25,7 @@
   * [Min Stack 12 \(M\)](data_structure/stack/12.-min-stack.md)
   * [Max Stack 859 \(H\)](data_structure/stack/859-max-stack-h.md)
   * [Basic Calculator 978 \(M\)](data_structure/stack/basic-calculator-978-m.md)
-  * [Basuc Cakcykatir II 980 \(M\)](data_structure/stack/basuc-cakcykatir-ii-980-m.md)
+  * [Basuc Calculator II 980 \(M\)](data_structure/stack/basuc-cakcykatir-ii-980-m.md)
 * [Queue](data_structure/s4.-stack-and-queue/README.md)
   * [Implement Queue by Linked List 492 \(E\)](data_structure/s4.-stack-and-queue/457.-implement-queue-by-linked-list.md)
   * [Deque](data_structure/s4.-stack-and-queue/deque.md)
