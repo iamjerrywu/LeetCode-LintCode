@@ -208,3 +208,8 @@
   * [Bash Game 1300 \(E\)](algorithm/dynamic_programming/1300.-bash-game.md)
 * [Greedy](algorithm/greedy.md)
 
+## Other
+
+* [Binary](other/binary.md)
+* [Mathmatics](other/mathmatics.md)
+
