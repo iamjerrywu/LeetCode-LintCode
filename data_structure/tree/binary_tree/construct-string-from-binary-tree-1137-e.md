@@ -41,14 +41,45 @@ Explanation: Almost the same as the first example,
 except we can't omit the first parenthesis pair to break the one-to-one mapping relationship between the input and the output.
 ```
 
-## Solution
+## Solution - Stright Forward Search
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
 
+class Solution:
+    """
+    @param t: the root of tree
+    @return: return a string
+    """
+    def tree2str(self, t):
+        # write your code here
+        res = ['']
+        
+        right_exist = True if t.right else False
+        self.helper(t, res, right_exist)
+        return res[0][1:-1]
+    
+    def helper(self, node, res, right_exist):
+        if not node:
+            if right_exist:
+                res[0]+="()"
+            return 
+        res[0]+='(' + str(node.val)
+        right_exist = True if node.right else False
+        self.helper(node.left, res, right_exist)
+        right_exist = False
+        self.helper(node.right, res, right_exist)
+        res[0]+=')'
 ```
 {% endtab %}
 
@@ -61,6 +92,6 @@ except we can't omit the first parenthesis pair to break the one-to-one mapping 
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(h\)**
 * **Space Complexity:**
 
