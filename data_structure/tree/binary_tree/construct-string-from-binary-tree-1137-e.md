@@ -95,3 +95,7 @@ class Solution:
 * **Time Complexity: O\(h\)**
 * **Space Complexity:**
 
+## Solution - Stright Forward Search
+
+
+
