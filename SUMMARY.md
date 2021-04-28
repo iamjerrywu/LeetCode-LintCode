@@ -56,6 +56,7 @@
     * [Binary Tree Paths 480 \(E\)](data_structure/tree/binary_tree/480.-binary-tree-paths-e.md)
     * [Minimum Subtree 596 \(M\)](data_structure/tree/binary_tree/minimum-subtree-596-m.md)
     * [Subtree with Maximum Average 597 \(E\)](data_structure/tree/binary_tree/subtree-with-maximum-average-597-m.md)
+    * [Construct String from Binary Tree 1137 \(E\)](data_structure/tree/binary_tree/construct-string-from-binary-tree-1137-e.md)
   * [BST](data_structure/tree/bst/README.md)
     * [Closest Binary Search Tree Value 900 \(E\)](data_structure/tree/bst/closest-binary-search-tree-value-900-e.md)
     * [Validate Binary Search Tree 95 \(M\)](data_structure/tree/bst/validate-binary-tree-95-m.md)
