@@ -51,6 +51,7 @@
       * [Lowest Common Ancestor II 474 \(E\)](data_structure/tree/binary_tree/lowest-common-ancestor-lca/lowest-common-ancestor-ii-474-e.md)
       * [Lowest Common Ancestor III 578 \(M\)](data_structure/tree/binary_tree/lowest-common-ancestor-lca/lowest-common-ancestor-iii-578-m.md)
     * [Serialize and Deserialize Binary Tree 7 \(M\)](data_structure/tree/binary_tree/serialize-and-deserialize-binary-tree-7-m.md)
+    * [Minimum Depth of Binary Tree 155 \(E\)](data_structure/tree/binary_tree/minimum-depth-of-binary-tree-155-e.md)
     * [Invert Binary Tree 175 \(E\)](data_structure/tree/binary_tree/175.-invert-binary-tree-e.md)
     * [Flatten Binary Tree to Linked List 453 \(E\)](data_structure/tree/binary_tree/flatten-binary-tree-to-linked-list.md)
     * [Binary Tree Paths 480 \(E\)](data_structure/tree/binary_tree/480.-binary-tree-paths-e.md)
