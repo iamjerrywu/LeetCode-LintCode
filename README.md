@@ -28,7 +28,7 @@ Notes mainly comprises two parts:
 
 ![](.gitbook/assets/screen-shot-2021-04-26-at-11.00.34-pm.png)
 
-## Unfinished Chapter 
+## Unfinished Chapter
 
 ### Algo\_2021
 
