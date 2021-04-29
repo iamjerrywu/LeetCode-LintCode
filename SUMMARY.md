@@ -184,6 +184,7 @@
     * [Climbing Stairs 111 \(E\)](algorithm/dynamic_programming/memoization/climbing-stairs-111-e.md)
     * [Triangle 109 \(M\)](algorithm/dynamic_programming/memoization/109.-triangle-m.md)
     * [Word Pattern II 829 \(M\)](algorithm/dynamic_programming/memoization/word-pattern-ii-829-m.md)
+    * [Bash Game 1300 \(E\)](algorithm/dynamic_programming/memoization/1300.-bash-game.md)
     * [Fibonacci 1807 \(E\)](algorithm/dynamic_programming/memoization/1807.-fibonacci-e.md)
   * [Backpack](algorithm/dynamic_programming/backpack/README.md)
     * [Backpack 92 \(M\)](algorithm/dynamic_programming/backpack/92.-backpack-m.md)
@@ -214,7 +215,6 @@
     * [Calculate Maximum Value II 741 \(M\)](algorithm/dynamic_programming/interval/741.-calculate-maximum-value-ii-m.md)
   * [Minimum Adjustment Cost 91 \(M\)](algorithm/dynamic_programming/91.-minimum-adjustment-cost-m.md)
   * [Minimum Partition 724 \(M\)](algorithm/dynamic_programming/724.-minimum-partition.md)
-  * [Bash Game 1300 \(E\)](algorithm/dynamic_programming/1300.-bash-game.md)
 * [Greedy](algorithm/greedy.md)
 
 ## Other

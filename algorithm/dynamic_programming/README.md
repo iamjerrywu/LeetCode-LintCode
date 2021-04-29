@@ -1,3 +1,7 @@
+---
+description: 29 (5E/19M/5H)
+---
+
 # Dynamic Programming
 
 ## Memoization
