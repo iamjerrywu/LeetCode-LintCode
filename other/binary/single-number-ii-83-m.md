@@ -48,6 +48,28 @@ One-pass, constant extra space.
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param A: An integer array
+    @return: An integer
+    """
+    def singleNumberII(self, A):
+        # write your code here
+        
+        # ones: the total sum of bits that only appear onces 
+        # twos: the total sum of bits that appear twice
+        ones, twos = 0, 0
+        
+        for a in A:
+            # would record appeard once only
+            # when twice "xor" would eliminate, when three times since &(~twos)
+            ones = (ones ^ a) & (~twos)
+            # would record only twice 
+            # when appear first times, would eliminate by &(~ones)
+            # when twice, appear
+            # when third times, due two 'xor', would eliminate 
+            twos = (twos ^ a) & (~ones)
+        return ones 
 
 ```
 {% endtab %}
