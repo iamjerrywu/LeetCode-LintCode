@@ -1,3 +1,7 @@
+---
+description: 10 (3E/5M/2H)
+---
+
 # Hash
 
 ## Introduction
