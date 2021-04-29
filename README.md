@@ -1,5 +1,5 @@
 ---
-description: 168 (44E/103M/19H)
+description: 172 (1N/47E/105M/19H)
 ---
 
 # Lint/LeeCode notes
@@ -8,11 +8,15 @@ description: 168 (44E/103M/19H)
 
 ### Data Structure: 54
 
-* Easy: 21 / Medium: 29 / Hard: 4
+* **Naive: 0 / Easy: 21 / Medium: 29 / Hard: 4**
 
-### Algorithm: 112
+### **Algorithm: 112**
 
-* Easy: 23 / Medium: 74 / Hard: 15
+* **Naive: 0 / Easy: 23 / Medium: 74 / Hard: 15**
+
+### **Others: 6**
+
+* **Naive: 1 / Easy: 3 / Medium: 2 / Hard: 0**
 
 ## Guideline 
 
