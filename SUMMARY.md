@@ -224,6 +224,7 @@
   * [Fizz Buzz 9 \(E\)](other/mathmatics/fizz-buzz-9-e.md)
   * [Reverse Integer 413 \(E\)](other/mathmatics/reverse-integer-413-e.md)
 * [Binary](other/binary/README.md)
+  * [Single Number II 83 \(M\)](other/binary/single-number-ii-83-m.md)
   * [Single Number III 84 \(M\)](other/binary/single-number-iii-84-m.md)
 * [Object-Oriented Design](other/object-oriented-design/README.md)
   * [Student ID 455 \(E\)](other/object-oriented-design/student-id-455-e.md)
