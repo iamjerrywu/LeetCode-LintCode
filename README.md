@@ -1,5 +1,5 @@
 ---
-description: 'DS:'
+description: 'DS: 51 (18E/29M/4H)'
 ---
 
 # Lint/LeeCode notes
