@@ -6,9 +6,9 @@ description: 'DS: 51 (18E/29M/4H)'
 
 ## Problem Counts:
 
-### Data Structure: 51
+### Data Structure: 54
 
-* Easy: 18 / Medium: 29 / Hard: 4
+* Easy: 21 / Medium: 29 / Hard: 4
 
 ### Algorithm: 
 
