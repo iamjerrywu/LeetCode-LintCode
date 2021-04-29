@@ -35,7 +35,18 @@ Output: False
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param flowerbed: an array
+    @param n: an Integer
+    @return: if n new flowers can be planted in it without violating the no-adjacent-flowers rule
+    """
+    def canPlaceFlowers(self, flowerbed, n):
+        # Write your code here
+        for i in range(len(flowerbed)):
+            if flowerbed[i] == 0 and (i == 0 or flowerbed[i - 1] == 0) and (i == len(flowerbed) - 1 or flowerbed[i + 1] == 0):
+                flowerbed
+        return n <= 0
 ```
 {% endtab %}
 
@@ -48,6 +59,6 @@ Output: False
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
