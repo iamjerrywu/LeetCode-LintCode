@@ -64,14 +64,22 @@ class Solution:
 
 \*\*\*\*
 
-## Solution - Sorting
+## Solution - Brute Force Sort
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param nums: An integer array
+    @return: The second max number in the array.
+    """
+    def secondMax(self, nums):
+        # write your code here
+        nums.sort()
+        return nums[len(nums) - 2]
 ```
 {% endtab %}
 
