@@ -14,8 +14,6 @@ description: 'DS: 51 (18E/29M/4H)'
 
 * Easy: 23 / Medium: 74 / Hard: 15
 
-
-
 ## Guideline 
 
 Notes mainly comprises two parts:
