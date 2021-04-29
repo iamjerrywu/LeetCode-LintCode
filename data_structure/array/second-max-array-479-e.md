@@ -64,7 +64,7 @@ class Solution:
 
 \*\*\*\*
 
-## Solution - 
+## Solution - Sorting
 
 ### Code
 
