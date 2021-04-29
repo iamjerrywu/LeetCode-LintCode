@@ -1,14 +1,14 @@
 ---
-description: 173 (1N/47E/106M/19H)
+description: 175 (1N/47E/108M/19H)
 ---
 
 # Lint/LeeCode notes
 
 ## Problem Counts:
 
-### Data Structure: 54
+### Data Structure: 56
 
-* **Naive: 0 / Easy: 21 / Medium: 29 / Hard: 4**
+* **Naive: 0 / Easy: 21 / Medium: 31 / Hard: 4**
 
 ### **Algorithm: 113**
 
