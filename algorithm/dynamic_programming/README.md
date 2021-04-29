@@ -1,5 +1,5 @@
 ---
-description: 29 (5E/19M/5H)
+description: 30 (5E/20M/5H)
 ---
 
 # Dynamic Programming

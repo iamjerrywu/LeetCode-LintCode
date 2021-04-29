@@ -1,5 +1,5 @@
 ---
-description: 172 (1N/47E/105M/19H)
+description: 173 (1N/47E/106M/19H)
 ---
 
 # Lint/LeeCode notes
@@ -10,9 +10,9 @@ description: 172 (1N/47E/105M/19H)
 
 * **Naive: 0 / Easy: 21 / Medium: 29 / Hard: 4**
 
-### **Algorithm: 112**
+### **Algorithm: 113**
 
-* **Naive: 0 / Easy: 23 / Medium: 74 / Hard: 15**
+* **Naive: 0 / Easy: 23 / Medium: 75 / Hard: 15**
 
 ### **Others: 6**
 
