@@ -1,3 +1,7 @@
+---
+description: 18 (5E/10M/3H)
+---
+
 # Binary Search
 
 ## Binary Selection 
