@@ -4,6 +4,16 @@ description: 'DS: 51 (18E/29M/4H)'
 
 # Lint/LeeCode notes
 
+## Problem Counts:
+
+### Data Structure: 51
+
+* Easy: 18 / Medium: 29 / Hard: 4
+
+### Algorithm: 
+
+
+
 ## Guideline 
 
 Notes mainly comprises two parts:
