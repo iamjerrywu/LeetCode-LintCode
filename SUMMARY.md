@@ -17,6 +17,7 @@
     * [Product of Array Except Self 1310 \(M\)](data_structure/array/prefix-sum/product-of-array-except-self-1310-m.md)
   * [Suffix](data_structure/array/suffix.md)
   * [Matrix](data_structure/array/matrix.md)
+  * [Second Max Array 479 \(E\)](data_structure/array/second-max-array-479-e.md)
   * [Can Place Flowers 1138 \(E\)](data_structure/array/can-place-flowers-1138-e.md)
 * [Linked List](data_structure/linked_list/README.md)
   * [Reverse Linked List II 36 \(M\)](data_structure/linked_list/reverse-linked-list-ii-36-m.md)
