@@ -65,6 +65,7 @@ class Solution:
     """
     def isSubtree(self, s, t):
         # Write your code here
+        # corner case identify
         if not t:
             return True
         if not s:
