@@ -100,16 +100,14 @@ class Solution:
     def maxSubArray(self, nums):
         # write your code here
         n = len(nums)
-        # dp[i] means the longest contigous array sum that end with nums[ith]
-        dp = [-float("inf")] * n
-        
-        # init state
+        dp = [-float('inf')] * n
         dp[0] = nums[0]
-        
-        # function 
+        ans = dp[0]
+        # dp[i] state means the longest length that end with nums[i]
         for i in range(1, n):
-            dp[i] = nums[i - 1] + max(0, dp[i - 1])
-        return max(dp)
+            dp[i] = nums[i] + max(0, dp[(i - 1)])
+            ans = dp[i] if dp[i] > ans else ans
+        return ans
 ```
 {% endtab %}
 
