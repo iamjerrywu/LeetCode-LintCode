@@ -70,13 +70,6 @@ class Solution:
             min_sum = min(min_sum, prefix_sum)
         
         return max_sum
-        
-
-        
-        
-        
-
-
 ```
 {% endtab %}
 
@@ -108,7 +101,7 @@ class Solution:
         # write your code here
         n = len(nums)
         # dp[i] means the longest contigous array sum that end with nums[ith]
-        dp = [-float("inf")] * (n + 1)
+        dp = [-float("inf")] * n
         
         # init state
         dp[1] = nums[0]
@@ -117,6 +110,46 @@ class Solution:
         for i in range(1, n + 1):
             dp[i] = nums[i - 1] + max(0, dp[i - 1])
         return max(dp)
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
+
+\*\*\*\*
+
+## Solution - DP - Strolling Array
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param nums: A list of integers
+    @return: A integer indicate the sum of max subarray
+    """
+    def maxSubArray(self, nums):
+        # write your code here
+        n = len(nums)
+        dp = [float('inf')] * 2
+        dp[0] = nums[0]
+        ans = dp[0]
+        # dp[i] state means the longest length that end with nums[i]
+        for i in range(1, n):
+            dp[i%2] = nums[i] + max(0, dp[(i - 1)%2])
+            ans = dp[i%2] if dp[i%2] > ans else ans
+        return ans
 ```
 {% endtab %}
 
