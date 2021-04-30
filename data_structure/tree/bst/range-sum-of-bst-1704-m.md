@@ -69,6 +69,7 @@ class Solution:
 * **Time Complexity: O\(n\)**
   * n: total amounts of nodes
 * **Space Complexity: O\(h\)**
+  * h: height of the tree \(can be worst as n\), call stack frame
 
 \*\*\*\*
 
@@ -122,4 +123,5 @@ class Solution:
 * **Time Complexity: O\(h\)**
   * h is the BST height
 * **Space Complexity: O\(h\)**
+  * h: height of the tree, 
 
