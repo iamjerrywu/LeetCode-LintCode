@@ -104,10 +104,10 @@ class Solution:
         dp = [-float("inf")] * n
         
         # init state
-        dp[1] = nums[0]
+        dp[0] = nums[0]
         
         # function 
-        for i in range(1, n + 1):
+        for i in range(1, n):
             dp[i] = nums[i - 1] + max(0, dp[i - 1])
         return max(dp)
 ```
