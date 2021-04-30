@@ -83,7 +83,7 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
 ## Solution - DP
 
