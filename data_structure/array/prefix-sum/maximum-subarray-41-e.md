@@ -61,6 +61,8 @@ class Solution:
     """
     def maxSubArray(self, nums):
         # write your code here
+        # min_sum: 0 ~ k (contigous subarray minimum sum)
+        # max_sum: the max (ans, contigous subarray maximum sum))
         min_sum, max_sum = 0, -float('inf')
         prefix_sum = 0
 
