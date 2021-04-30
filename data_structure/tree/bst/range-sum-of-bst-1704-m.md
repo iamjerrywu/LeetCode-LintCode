@@ -66,8 +66,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(h\)**
+* **Space Complexity: O\(1\)**
 
 \*\*\*\*
 
@@ -120,5 +120,5 @@ class Solution:
 
 * **Time Complexity: O\(h\)**
   * h is the BST height
-* **Space Complexity:**
+* **Space Complexity: O\(1\)**
 
