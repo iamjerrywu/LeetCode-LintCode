@@ -11,6 +11,7 @@
   * [Bold Words in String 812 \(E\)](data_structure/string/bold-words-in-string-812-e.md)
   * [Compare Version Numbers 1352 \(M\)](data_structure/string/1352.-compare-version-numbers-m.md)
   * [Ambiguous Coordinates 1372 \(M\)](data_structure/string/ambiguous-coordinates-1372-m.md)
+  * [Count Email Groups 1632 \(E\)](data_structure/string/count-email-groups-1632-e.md)
 * [Array](data_structure/array/README.md)
   * [Prefix Sum](data_structure/array/prefix-sum/README.md)
     * [Maximum Subarray 41 \(E\)](data_structure/array/prefix-sum/maximum-subarray-41-e.md)
