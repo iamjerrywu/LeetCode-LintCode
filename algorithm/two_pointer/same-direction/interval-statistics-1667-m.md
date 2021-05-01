@@ -27,12 +27,45 @@ Explanation: [3, 3], [4, 4], [3, 4] (The interval [i, j] means the elements betw
 
 ## Solution
 
+Two pointers \(left, right\), and always move the right pointer, and record how many 1 between right / left pointer. Right pointer should stop once encounter 0, and if 1 just continue traverse toward right
+
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param arr: the 01 array
+    @param k: the limit 
+    @return: the sum of the interval
+    """
+    def intervalStatistics(self, arr, k):
+        # Write your code here.
+        if not arr:
+            return 0
 
+        left, right = 0, 0
+        num_of_one, res = 0, 0
+
+        while right < len(arr):
+            # if 1, keep traverse toward right
+            if arr[right] == 1:
+                right+=1
+                num_of_one+=1
+                continue
+            
+            # once encounter 0, judge how many 1 btw right/left pointer            
+            while num_of_one > k:
+                if arr[left] == 1:
+                    num_of_one-=1
+                left+=1
+            
+            # add res
+            res+= right - left + 1 - num_of_one
+            right+=1
+        return res
+        
 ```
 {% endtab %}
 
