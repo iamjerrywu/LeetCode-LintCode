@@ -88,8 +88,9 @@
 ## Algorithm
 
 * [Sorting](algorithm/sorting/README.md)
-  * [Quick Sort](algorithm/sorting/quick-sort.md)
-  * [Kth Largest Element 5 \(M\)](algorithm/sorting/5.-kth-largest-element.md)
+  * [Quick Sort](algorithm/sorting/quick-sort/README.md)
+    * [Second Max of Array 479 \(E\)](algorithm/sorting/quick-sort/second-max-of-array-479-e.md)
+    * [Kth Largest Element 5 \(M\)](algorithm/sorting/quick-sort/5.-kth-largest-element.md)
   * [Merge Sort](algorithm/sorting/merge-sort/README.md)
     * [Sort Integers II 464 \(E\)](algorithm/sorting/merge-sort/464.-sort-integers-ii.md)
     * [Merge Sorted Array 64 \(E\)](algorithm/sorting/merge-sort/64.-merge-sorted-array-e.md)
