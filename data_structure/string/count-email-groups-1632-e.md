@@ -35,6 +35,8 @@ There is no group meet the conditions.
 
 ## Solution
 
+Simply process 
+
 ### Code
 
 {% tabs %}
@@ -56,11 +58,13 @@ class Solution:
             email_lists = email.split('@')
             processed_email = ''
             for i in range(len(email_lists)):
+                # text before '@'
                 for c in email_lists[0]:
                     if c == '+':
                         break
                     if c!='.':
                         processed_email+=c
+                # text after '@'
                 for c in email_lists[1]:
                     processed_email+=c
             ref[processed_email] = ref.get(processed_email, 0) + 1
