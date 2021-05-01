@@ -88,6 +88,7 @@
 ## Algorithm
 
 * [Sorting](algorithm/sorting/README.md)
+  * [Quick Sort](algorithm/sorting/quick-sort.md)
   * [Kth Largest Element 5 \(M\)](algorithm/sorting/5.-kth-largest-element.md)
   * [Merge Sort](algorithm/sorting/merge-sort/README.md)
     * [Sort Integers II 464 \(E\)](algorithm/sorting/merge-sort/464.-sort-integers-ii.md)
@@ -99,9 +100,10 @@
     * [Merge Two Sorted Interval Lists 839 \(E\)](algorithm/sorting/merge-sort/839.-merge-two-sorted-interval-lists.md)
     * [Merge K Sorted Interval Lists 577 \(M\)](algorithm/sorting/merge-sort/577.-merge-k-sorted-interval-lists-m.md)
     * [Reverse Pairs 532 \(M\)](algorithm/sorting/merge-sort/532.-reverse-pairs.md)
-  * [Intersection of Two Arrays  547\(E\)](algorithm/sorting/547.-intersection-of-two-arrays-e.md)
-  * [Intersection of Two Arrays II 548 \(E\)](algorithm/sorting/548.-intersection-of-two-arrays-ii-e.md)
-  * [Intersection of Arrays 793 \(M\)](algorithm/sorting/793.-intersection-of-arrays-m.md)
+  * [Intersection](algorithm/sorting/intersection/README.md)
+    * [Intersection of Two Arrays  547\(E\)](algorithm/sorting/intersection/547.-intersection-of-two-arrays-e.md)
+    * [Intersection of Two Arrays II 548 \(E\)](algorithm/sorting/intersection/548.-intersection-of-two-arrays-ii-e.md)
+    * [Intersection of Arrays 793 \(M\)](algorithm/sorting/intersection/793.-intersection-of-arrays-m.md)
   * [Sparse Matrix Multiplication 654 \(M\)](algorithm/sorting/654.-sparse-matrix-multiplication-m.md)
 * [Two Pointer](algorithm/two_pointer/README.md)
   * [Opposite Direction](algorithm/two_pointer/opposite-direction/README.md)
