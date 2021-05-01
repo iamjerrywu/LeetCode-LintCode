@@ -41,6 +41,7 @@
     * [Hash Function 128 \(E\)](data_structure/hash/implementation/untitled-1.md)
     * [Rehashing 129 \(M\)](data_structure/hash/implementation/129.-rehashing-m.md)
   * [Ugly Number II 4 \(M\)](data_structure/hash/4.md)
+  * [Longest Consecutive Sequence 124 \(M\)](data_structure/hash/longest-consecutive-sequence-124-m.md)
   * [LRU Cache 134 \(H\)](data_structure/hash/lru-cache-134-h.md)
   * [Longest Palindrome 627 \(E\)](data_structure/hash/627-longest-palindrome-e.md)
   * [Insert Delete GetRandom O\(1\) 657 \(M\)](data_structure/hash/insert-delete-getrandom-o-1-657-m.md)
@@ -89,8 +90,9 @@
 
 * [Sorting](algorithm/sorting/README.md)
   * [Quick Sort](algorithm/sorting/quick-sort/README.md)
-    * [Second Max of Array 479 \(E\)](algorithm/sorting/quick-sort/second-max-of-array-479-e.md)
     * [Kth Largest Element 5 \(M\)](algorithm/sorting/quick-sort/5.-kth-largest-element.md)
+    * [Second Max of Array 479 \(E\)](algorithm/sorting/quick-sort/second-max-of-array-479-e.md)
+    * [Largest Number 184 \(M\)](algorithm/sorting/quick-sort/largest-number-184-m.md)
   * [Merge Sort](algorithm/sorting/merge-sort/README.md)
     * [Sort Integers II 464 \(E\)](algorithm/sorting/merge-sort/464.-sort-integers-ii.md)
     * [Merge Sorted Array 64 \(E\)](algorithm/sorting/merge-sort/64.-merge-sorted-array-e.md)
