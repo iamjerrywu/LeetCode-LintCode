@@ -40,6 +40,36 @@ There is no group meet the conditions.
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param emails: Original email
+    @return: Return the count of groups which has more than one email address in it.
+    """
+    def countGroups(self, emails):
+        # Write your code here
+        ref, appeared = {}, set()
+        
+        for email in emails:
+            if email in appeared:
+                continue
+            appeared.add(email)
+            email_lists = email.split('@')
+            processed_email = ''
+            for i in range(len(email_lists)):
+                for c in email_lists[0]:
+                    if c == '+':
+                        break
+                    if c!='.':
+                        processed_email+=c
+                for c in email_lists[1]:
+                    processed_email+=c
+            ref[processed_email] = ref.get(processed_email, 0) + 1
+            
+        cnt = 0
+        for val in ref.values():
+            if val > 1:
+                cnt+=1
+        return cnt        
 
 ```
 {% endtab %}
@@ -53,6 +83,9 @@ There is no group meet the conditions.
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n \* l\)**
+  * n: total mail's amount
+  * l: max length of the mail
+* **Space Complexity: O\(n\)**
+  * Might need the max length of  
 
