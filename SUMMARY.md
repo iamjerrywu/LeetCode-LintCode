@@ -108,6 +108,7 @@
     * [Intersection of Two Arrays II 548 \(E\)](algorithm/sorting/intersection/548.-intersection-of-two-arrays-ii-e.md)
     * [Intersection of Arrays 793 \(M\)](algorithm/sorting/intersection/793.-intersection-of-arrays-m.md)
   * [Sparse Matrix Multiplication 654 \(M\)](algorithm/sorting/654.-sparse-matrix-multiplication-m.md)
+  * [Relative Ranks 1200 \(E\)](algorithm/sorting/relative-ranks-1200-e.md)
 * [Two Pointer](algorithm/two_pointer/README.md)
   * [Opposite Direction](algorithm/two_pointer/opposite-direction/README.md)
     * [N Sum](algorithm/two_pointer/opposite-direction/2-sum/README.md)
