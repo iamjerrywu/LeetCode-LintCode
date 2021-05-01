@@ -98,7 +98,7 @@
     * [Merge K Sorted Lists 104 \(M\)](algorithm/sorting/merge-sort/104.-merge-k-sorted-lists.md)
     * [Merge Two Sorted Interval Lists 839 \(E\)](algorithm/sorting/merge-sort/839.-merge-two-sorted-interval-lists.md)
     * [Merge K Sorted Interval Lists 577 \(M\)](algorithm/sorting/merge-sort/577.-merge-k-sorted-interval-lists-m.md)
-  * [Reverse Pairs 532 \(M\)](algorithm/sorting/532.-reverse-pairs.md)
+    * [Reverse Pairs 532 \(M\)](algorithm/sorting/merge-sort/532.-reverse-pairs.md)
   * [Intersection of Two Arrays  547\(E\)](algorithm/sorting/547.-intersection-of-two-arrays-e.md)
   * [Intersection of Two Arrays II 548 \(E\)](algorithm/sorting/548.-intersection-of-two-arrays-ii-e.md)
   * [Intersection of Arrays 793 \(M\)](algorithm/sorting/793.-intersection-of-arrays-m.md)
