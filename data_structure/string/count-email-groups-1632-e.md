@@ -35,7 +35,10 @@ There is no group meet the conditions.
 
 ## Solution
 
-Simply process 
+Simply process the email string \(required splitting based on '@'\)
+
+* Need to used set\(\) to avoid same raw input
+* Need to use dict to record each groups member counts after processing the raw data 
 
 ### Code
 
