@@ -87,5 +87,5 @@ class Solution:
   * n: total mail's amount
   * l: max length of the mail
 * **Space Complexity: O\(n\)**
-  * Might need the max length of  
+  * Might need the max length n of hashmap or set
 
