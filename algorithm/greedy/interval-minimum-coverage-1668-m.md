@@ -34,7 +34,7 @@ Explanation: All intervals contain 5
 
 ## Solution
 
-
+![](../../.gitbook/assets/screen-shot-2021-05-01-at-11.43.40-pm.png)
 
 ### Code
 

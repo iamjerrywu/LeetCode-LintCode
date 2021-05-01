@@ -29,6 +29,8 @@ Explanation: [3, 3], [4, 4], [3, 4] (The interval [i, j] means the elements betw
 
 Two pointers \(left, right\), and always move the right pointer, and record how many 1 between right / left pointer. Right pointer should stop once encounter 0, and if 1 just continue traverse toward right
 
+![](../../../.gitbook/assets/screen-shot-2021-05-01-at-11.44.03-pm.png)
+
 ### Code
 
 {% tabs %}
