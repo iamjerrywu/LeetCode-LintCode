@@ -191,6 +191,7 @@
   * [Letter Combinations of a Phone Number 425 \(M\)](algorithm/dfs/425.-letter-combinations-of-a-phone-number-m.md)
   * [Sudoku Solver 802 \(H\)](algorithm/dfs/802-sudoku-solver-h.md)
   * [Traveling Salesman Problem 816 \(H\)](algorithm/dfs/816.-traveling-salesman-problem-h.md)
+  * [Splitting a String Into Descending Consecutive Values \(LeetCode 1849\) \(M\) \(](algorithm/dfs/splitting-a-string-into-descending-consecutive-values-leetcode-1849-m.md)
 * [Dynamic Programming](algorithm/dynamic_programming/README.md)
   * [Memoization](algorithm/dynamic_programming/memoization/README.md)
     * [Climbing Stairs 111 \(E\)](algorithm/dynamic_programming/memoization/climbing-stairs-111-e.md)
