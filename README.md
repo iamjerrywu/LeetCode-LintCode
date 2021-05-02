@@ -46,6 +46,10 @@ Notes mainly comprises two parts:
 
 ![](.gitbook/assets/screen-shot-2021-04-26-at-11.00.34-pm.png)
 
+![](.gitbook/assets/screen-shot-2021-05-02-at-11.40.34-pm.png)
+
+![](.gitbook/assets/screen-shot-2021-05-02-at-11.41.07-pm.png)
+
 ## Unfinished Chapter
 
 ### Algo\_2021
