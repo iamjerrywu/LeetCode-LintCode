@@ -23,7 +23,6 @@
 * [Linked List](data_structure/linked_list/README.md)
   * [Add Two Numbers 167 \(E\)](data_structure/linked_list/add-two-numbers-167-e.md)
   * [Reverse Linked List II 36 \(M\)](data_structure/linked_list/reverse-linked-list-ii-36-m.md)
-  * [Merge Two Sorted Lists 165 \(E\)](data_structure/linked_list/165.-merge-two-sorted-lists-e.md)
   * [Implement Queue by Linked List II 493 \(E\)](data_structure/linked_list/implement-queue-by-linked-list-ii-493-e.md)
 * [Stack](data_structure/stack/README.md)
   * [Monotone Stack](data_structure/stack/monotone-stack.md)
