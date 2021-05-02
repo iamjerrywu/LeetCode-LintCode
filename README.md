@@ -50,6 +50,22 @@ Notes mainly comprises two parts:
 
 ![](.gitbook/assets/screen-shot-2021-05-02-at-11.41.07-pm.png)
 
+## Time Complexity
+
+### Polynomial: 
+
+* O\(n\)m, O\(n^2\), O\(n^3\), O\(n + m\), O\(sqrt\(n\)\), O\(1\), O\(logn\), O\(nlogn\)
+
+### Nondeterministic Polynomial \(NP\)
+
+* O\(2^n\), O\(n^n\), O\(n!\)
+
+### O\(n + m\) vs O\(max\(n, m\)\)
+
+n + m  &gt; max\(n, m\) &gt; \(n + m\) / 2
+
+O\(n + m\) &gt; O\(max\(n, m\)\) &gt; O\(\(n + m\) / 2\)
+
 ## Unfinished Chapter
 
 ### Algo\_2021
