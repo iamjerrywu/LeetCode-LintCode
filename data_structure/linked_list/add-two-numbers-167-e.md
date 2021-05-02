@@ -79,6 +79,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(max\(m, n\)\)**
+  * m, n is the two linked list length respectively
 * **Space Complexity:**
 
