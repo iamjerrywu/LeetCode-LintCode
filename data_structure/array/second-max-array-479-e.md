@@ -62,8 +62,6 @@ class Solution:
 * **Time Complexity: O\(n\)**
 * **Space Complexity:**
 
-\*\*\*\*
-
 ## Solution - Brute Force Sort
 
 ### Code
