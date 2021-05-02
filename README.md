@@ -66,6 +66,8 @@ n + m  &gt; max\(n, m\) &gt; \(n + m\) / 2
 
 O\(n + m\) &gt; O\(max\(n, m\)\) &gt; O\(\(n + m\) / 2\)
 
+O\(max\(n, m\)\) == O\(n + m\)
+
 ## Unfinished Chapter
 
 ### Algo\_2021
