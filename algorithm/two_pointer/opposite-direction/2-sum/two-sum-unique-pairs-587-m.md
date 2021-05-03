@@ -32,7 +32,36 @@ Explanation:
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param nums: an array of integer
+    @param target: An integer
+    @return: An integer
+    """
+    def twoSum6(self, nums, target):
+        # write your code here
+        nums.sort()
+        if not nums:
+            return 0
+        left, right = 0, len(nums) - 1
+        cnt = 0
+        while left < right:
+            sum_val = nums[left] + nums[right]
+            if sum_val > target:
+                right-=1
+            elif sum_val < target:
+                left+=1
+            else:
+                cnt+=1
+                left+=1
+                right-=1
+            # bypass the duplicated ones
+            while left <= right and left > 0 and nums[left] == nums[left - 1]:
+                left+=1
+            # bypass the duplicated ones
+            while left <= right and right < len(nums) - 1 and nums[right] == nums[right + 1]:
+                right-=1
+        return cnt
 ```
 {% endtab %}
 
@@ -45,6 +74,8 @@ Explanation:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(nlogn\)**
+  * Sort: O\(nlogn0
+  * Two pointer scan: O\(n\)
 * **Space Complexity:**
 
