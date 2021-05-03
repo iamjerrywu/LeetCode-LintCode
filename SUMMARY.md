@@ -24,6 +24,7 @@
   * [Prefix Sum](data_structure/array/prefix-sum/README.md)
     * [Maximum Subarray 41 \(E\)](data_structure/array/prefix-sum/maximum-subarray-41-e.md)
     * [Product of Array Except Self 1310 \(M\)](data_structure/array/prefix-sum/product-of-array-except-self-1310-m.md)
+    * [Subarray Sum Equals to k II \(1844\)](data_structure/array/prefix-sum/subarray-sum-equals-to-k-ii-1844.md)
   * [Suffix](data_structure/array/suffix.md)
   * [Matrix](data_structure/array/matrix.md)
   * [Second Max Array 479 \(E\)](data_structure/array/second-max-array-479-e.md)
