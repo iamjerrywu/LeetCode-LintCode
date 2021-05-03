@@ -146,5 +146,50 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-## Solution
+## Solution - In Place
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param str: An array of char
+    @param offset: An integer
+    @return: nothing
+    """
+    def rotateString(self, s, offset):
+        # write your code here
+        if not s:
+            return ''
+
+        offset = offset%len(s)
+
+        self.reverse(s, 0, len(s) - 1)
+        self.reverse(s, 0, offset - 1)
+        self.reverse(s, offset, len(s) - 1)
+        return s
+    
+    def reverse(self, s, start, end):
+        while start < end:
+            s[start], s[end] = s[end], s[start]
+            start+=1
+            end-=1
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+## 
 
