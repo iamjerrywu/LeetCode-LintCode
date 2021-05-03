@@ -22,7 +22,7 @@ Output: 7
 Explanation: 1 + 1 + 1 + 1 = 1 + 1 + 2 = 1 + 2 + 1 = 2 + 1 + 1 = 2 + 2 = 1 + 3 = 3 + 1 = 4 , there are 7 ways.
 ```
 
-## Solution 
+## Solution - Memoization 
 
 ### Code
 
@@ -44,4 +44,78 @@ Explanation: 1 + 1 + 1 + 1 = 1 + 1 + 2 = 1 + 2 + 1 = 2 + 1 + 1 = 2 + 2 = 1 + 3 =
 
 * **Time Complexity:**
 * **Space Complexity:**
+
+\*\*\*\*
+
+## Solution - DP
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param n: An integer
+    @return: An Integer
+    """
+    def climbStairs2(self, n):
+        # write your code here
+        
+        if n == 0:
+            return 1
+        if n < 3:
+            return n
+        if n == 3:
+            return 4
+
+        # dp[i]: the total solutions for first ith numbers
+        dp = [0] * (n + 1)
+        
+        # init
+        dp[1] = 1
+        dp[2] = 2
+        dp[3] = 4
+        for i in range(4, n + 1):
+            dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]
+        return dp[n]
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
+
+\*\*\*\*
+
+## Solution - DP with Strolling Array
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
