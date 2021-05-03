@@ -12,6 +12,7 @@
   * [Multiply Strings 656 \(M\)](data_structure/string/656.-multiple-strings.md)
   * [Bold Words in String 812 \(E\)](data_structure/string/bold-words-in-string-812-e.md)
   * [Palindrome Data Stream 958 \(E\)](data_structure/string/palindrome-data-stream-958-e.md)
+  * [Attendance Judgment 1154 \(E\)](data_structure/string/attendance-judgment-1154-e.md)
   * [Compare Version Numbers 1352 \(M\)](data_structure/string/1352.-compare-version-numbers-m.md)
   * [Ambiguous Coordinates 1372 \(M\)](data_structure/string/ambiguous-coordinates-1372-m.md)
   * [Count Email Groups 1632 \(E\)](data_structure/string/count-email-groups-1632-e.md)
