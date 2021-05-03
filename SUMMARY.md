@@ -8,6 +8,7 @@
 * [String](data_structure/string/README.md)
   * [Anagrams 171 \(M\)](data_structure/string/anagrams-171-m.md)
   * [Longest Common Prefix 78 \(M\)](data_structure/string/longest-common-prefix-78-m.md)
+  * [Longest Palindrome 627 \(E\)](data_structure/string/longest-palindrome-627-e.md)
   * [Multiply Strings 656 \(M\)](data_structure/string/656.-multiple-strings.md)
   * [Bold Words in String 812 \(E\)](data_structure/string/bold-words-in-string-812-e.md)
   * [Compare Version Numbers 1352 \(M\)](data_structure/string/1352.-compare-version-numbers-m.md)
