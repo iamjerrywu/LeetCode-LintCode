@@ -134,6 +134,7 @@
     * [Sort Colors II 143 \(M\)](algorithm/two_pointer/opposite-direction/sort-colors-ii-m.md)
     * [Valid Palindrome 415 \(M\)](algorithm/two_pointer/opposite-direction/415.-valid-palindrome.md)
     * [Valid Palindrome II 891 \(M\)](algorithm/two_pointer/opposite-direction/valid-palindrome-ii-891-m.md)
+    * [Decrease To Be Palindrome 1784 \(E\)](algorithm/two_pointer/opposite-direction/decrease-to-be-palindrome-1784-e.md)
     * [Move Zeros 539 \(M\)](algorithm/two_pointer/opposite-direction/move-zeros-539-m.md)
     * [Longest Repeating Character Replacement 1246 \(M\)](algorithm/two_pointer/opposite-direction/1246.-longest-repeating-character-replacement.md)
   * [Same Direction](algorithm/two_pointer/same-direction/README.md)
