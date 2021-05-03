@@ -15,6 +15,7 @@
   * [Attendance Judgment 1154 \(E\)](data_structure/string/attendance-judgment-1154-e.md)
   * [Compare Version Numbers 1352 \(M\)](data_structure/string/1352.-compare-version-numbers-m.md)
   * [Ambiguous Coordinates 1372 \(M\)](data_structure/string/ambiguous-coordinates-1372-m.md)
+  * [Buddy Strings 1510 \(E\)](data_structure/string/buddy-strings-1510-e.md)
   * [Count Email Groups 1632 \(E\)](data_structure/string/count-email-groups-1632-e.md)
 * [Array](data_structure/array/README.md)
   * [Prefix Sum](data_structure/array/prefix-sum/README.md)
