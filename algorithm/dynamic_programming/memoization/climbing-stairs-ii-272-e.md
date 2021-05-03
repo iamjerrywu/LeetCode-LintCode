@@ -29,7 +29,33 @@ Explanation: 1 + 1 + 1 + 1 = 1 + 1 + 2 = 1 + 2 + 1 = 2 + 1 + 1 = 2 + 2 = 1 + 3 =
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param n: An integer
+    @return: An Integer
+    """
+    def climbStairs2(self, n):
+        # write your code here
+        
+        if n == 0:
+            return 1
+        if n < 3:
+            return n
+        if n == 3:
+            return 4
+        memory = {}
+        return self.search(n, memory)
+    
+    def search(self, n, memory):
+        if n in memory:
+            return memory[n]
+        if n == 0:
+            return 1
+        if n < 0:
+            return 0
+        total = self.search(n - 1, memory) + self.search(n - 2, memory) + self.search(n - 3, memory) 
+        memory[n] = total
+        return memory[n]
 ```
 {% endtab %}
 
@@ -103,7 +129,31 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param n: An integer
+    @return: An Integer
+    """
+    def climbStairs2(self, n):
+        # write your code here
+        
+        if n == 0:
+            return 1
+        if n < 3:
+            return n
+        if n == 3:
+            return 4
 
+        # dp[i]: the total solutions for first ith numbers
+        dp = [0] * 4
+        
+        # init
+        dp[1] = 1
+        dp[2] = 2
+        dp[3] = 4
+        for i in range(4, n + 1):
+            dp[i%4] = dp[(i - 1)%4] + dp[(i - 2)%4] + dp[(i - 3)%4]
+        return dp[n%4]
 ```
 {% endtab %}
 
