@@ -1,4 +1,4 @@
-# Subarray Sum Equals to k II \(1844\)
+# Subarray Sum Equals to k II 1844 \(M\)
 
 ## Problem
 
