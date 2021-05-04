@@ -142,6 +142,7 @@
     * [Move Zeros 539 \(M\)](algorithm/two_pointer/opposite-direction/move-zeros-539-m.md)
     * [Longest Repeating Character Replacement 1246 \(M\)](algorithm/two_pointer/opposite-direction/1246.-longest-repeating-character-replacement.md)
   * [Same Direction](algorithm/two_pointer/same-direction/README.md)
+    * [3Sum Closest 59 \(M\)](algorithm/two_pointer/same-direction/3sum-closest-59-m.md)
     * [Linked List Cycle 102 \(M\)](algorithm/two_pointer/same-direction/102.-linked-list-cycle.md)
     * [Linked List Cycle II 103 \(H\)](algorithm/two_pointer/same-direction/linked-list-cycle-ii-103-h.md)
     * [Palindrome Linked List 223 \(M\)](algorithm/two_pointer/same-direction/223.-palindrome-linked-list-m.md)
