@@ -150,6 +150,7 @@
     * [Longest Semi Alternating Substring 1819 \(E\)](algorithm/two_pointer/same-direction/longest-semi-alternating-substring-1819-e.md)
     * [Remove Duplicate Numbers in Array 521 \(E\)](algorithm/two_pointer/same-direction/remove-duplicate-numbers-in-array-e.md)
     * [Window Sum 604 \(E\)](algorithm/two_pointer/same-direction/604.-window-sum.md)
+    * [Sum of Two Strings 1343 \(E\)](algorithm/two_pointer/same-direction/sum-of-two-strings-1343-e.md)
     * [Interval Statistics 1667 \(M\)](algorithm/two_pointer/same-direction/interval-statistics-1667-m.md)
     * [1870. Number of Substrings with All Zeros \(M\)](algorithm/two_pointer/same-direction/1870.-number-of-substrings-with-all-zeros.md)
 * [Binary Search](algorithm/binary_search/README.md)
