@@ -12,6 +12,7 @@
   * [Longest Common Prefix 78 \(M\)](data_structure/string/longest-common-prefix-78-m.md)
   * [Longest Palindrome 627 \(E\)](data_structure/string/longest-palindrome-627-e.md)
   * [Multiply Strings 656 \(M\)](data_structure/string/656.-multiple-strings.md)
+  * [Group Anagrams 772 \(M\)](data_structure/string/group-anagrams-772-m.md)
   * [Bold Words in String 812 \(E\)](data_structure/string/bold-words-in-string-812-e.md)
   * [Palindrome Data Stream 958 \(E\)](data_structure/string/palindrome-data-stream-958-e.md)
   * [Attendance Judgment 1154 \(E\)](data_structure/string/attendance-judgment-1154-e.md)
