@@ -29,7 +29,38 @@ Challenge
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+Definition of ListNode
+class ListNode(object):
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+"""
 
+class Solution:
+    """
+    @param head: The first node of linked list.
+    @return: Head node.
+    """
+    def removeDuplicates(self, head):
+        # write your code here
+        ref = set()
+        dummy = ListNode(0)
+        dummy.next = head
+        prev = head
+        while head:
+            if head.val not in ref:
+                ref.add(head.val)
+                prev = head
+                head = head.next
+            else: 
+                if head.next:
+                    prev.next = head.next
+                    head = head.next
+                else:
+                    prev.next = None
+                    head = None
+        return dummy.next
 ```
 {% endtab %}
 
