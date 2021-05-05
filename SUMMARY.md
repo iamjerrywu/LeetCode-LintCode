@@ -35,6 +35,7 @@
   * [Reverse Linked List II 36 \(M\)](data_structure/linked_list/reverse-linked-list-ii-36-m.md)
   * [Add Two Numbers 167 \(E\)](data_structure/linked_list/add-two-numbers-167-e.md)
   * [Rotate List 170 \(M\)](data_structure/linked_list/rotate-list-170-m.md)
+  * [Remove Nth Node From End of List 174 \(E\)](data_structure/linked_list/remove-nth-node-from-end-of-list-174-e.md)
   * [Insert Node in Sorted Linked List 219 \(E\)](data_structure/linked_list/insert-node-in-sorted-linked-list-219-e.md)
   * [Implement Queue by Linked List II 493 \(E\)](data_structure/linked_list/implement-queue-by-linked-list-ii-493-e.md)
 * [Stack](data_structure/stack/README.md)
