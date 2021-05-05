@@ -122,6 +122,8 @@ public class Solution {
 
 ## Solution - Slow Fast Pointer
 
+Fast pointer go first for n steps, then both slow/fast pointers move. Once fast.next reach Null, then remove slow.next
+
 ### Code
 
 {% tabs %}
