@@ -41,6 +41,7 @@
   * [Delete Node in a LinkedList 372 \(E\)](data_structure/linked_list/delete-node-in-a-linkedlist-372-e.md)
   * [Insert Node in Sorted Linked List 219 \(E\)](data_structure/linked_list/insert-node-in-sorted-linked-list-219-e.md)
   * [Swap Nodes in Pairs 451 \(E\)](data_structure/linked_list/swap-nodes-in-pairs-451-e.md)
+  * [Swap Two Nodes in LinkedList 511 \(M\)](data_structure/linked_list/swap-two-nodes-in-linkedlist-511-m.md)
   * [Convert Array List to Linked List 489 \(E\)](data_structure/linked_list/convert-array-list-to-linked-list-489-e.md)
   * [Implement Queue by Linked List II 493 \(E\)](data_structure/linked_list/implement-queue-by-linked-list-ii-493-e.md)
 * [Stack](data_structure/stack/README.md)
