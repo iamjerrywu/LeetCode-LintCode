@@ -37,6 +37,7 @@
   * [Rotate List 170 \(M\)](data_structure/linked_list/rotate-list-170-m.md)
   * [Remove Nth Node From End of List 174 \(E\)](data_structure/linked_list/remove-nth-node-from-end-of-list-174-e.md)
   * [Insert Node in Sorted Linked List 219 \(E\)](data_structure/linked_list/insert-node-in-sorted-linked-list-219-e.md)
+  * [Convert Array List to Linked List 489 \(E\)](data_structure/linked_list/convert-array-list-to-linked-list-489-e.md)
   * [Implement Queue by Linked List II 493 \(E\)](data_structure/linked_list/implement-queue-by-linked-list-ii-493-e.md)
 * [Stack](data_structure/stack/README.md)
   * [Monotone Stack](data_structure/stack/monotone-stack.md)
