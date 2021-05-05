@@ -124,6 +124,8 @@ public class Solution {
 
 Fast pointer go first for n steps, then both slow/fast pointers move. Once fast.next reach Null, then remove slow.next
 
+![](../../.gitbook/assets/screen-shot-2021-05-06-at-12.47.03-am.png)
+
 ### Code
 
 {% tabs %}
