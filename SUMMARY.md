@@ -33,6 +33,7 @@
   * [Can Place Flowers 1138 \(E\)](data_structure/array/can-place-flowers-1138-e.md)
 * [Linked List](data_structure/linked_list/README.md)
   * [Add Two Numbers 167 \(E\)](data_structure/linked_list/add-two-numbers-167-e.md)
+  * [Rotate List 170 \(M\)](data_structure/linked_list/rotate-list-170-m.md)
   * [Reverse Linked List II 36 \(M\)](data_structure/linked_list/reverse-linked-list-ii-36-m.md)
   * [Implement Queue by Linked List II 493 \(E\)](data_structure/linked_list/implement-queue-by-linked-list-ii-493-e.md)
 * [Stack](data_structure/stack/README.md)
