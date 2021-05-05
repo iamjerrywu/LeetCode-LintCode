@@ -37,6 +37,7 @@
   * [Add Two Numbers 167 \(E\)](data_structure/linked_list/add-two-numbers-167-e.md)
   * [Rotate List 170 \(M\)](data_structure/linked_list/rotate-list-170-m.md)
   * [Remove Nth Node From End of List 174 \(E\)](data_structure/linked_list/remove-nth-node-from-end-of-list-174-e.md)
+  * [Delete Node in a LinkedList 372 \(E\)](data_structure/linked_list/delete-node-in-a-linkedlist-372-e.md)
   * [Insert Node in Sorted Linked List 219 \(E\)](data_structure/linked_list/insert-node-in-sorted-linked-list-219-e.md)
   * [Swap Nodes in Pairs 451 \(E\)](data_structure/linked_list/swap-nodes-in-pairs-451-e.md)
   * [Convert Array List to Linked List 489 \(E\)](data_structure/linked_list/convert-array-list-to-linked-list-489-e.md)
