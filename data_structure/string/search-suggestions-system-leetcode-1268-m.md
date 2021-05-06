@@ -110,6 +110,7 @@ class Solution:
             prefix_string+=c
             search_res = []
             index = self.binary_search(0, len(products) - 1, products, prefix_string) #O(logn)
+            # WARNING! Doing boundary and corner case check
             while index != -1 and index < len(products) and len(search_res) < 3:
                 if products[index][:len(prefix_string)] == prefix_string:
                     search_res.append(products[index])
