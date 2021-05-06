@@ -43,6 +43,15 @@ Input: products = ["havana"], searchWord = "tatiana"
 Output: [[],[],[],[],[],[],[]]
 ```
 
+**Constraints:**
+
+* `1 <= products.length <= 1000`
+* There are no repeated elements in `products`.
+* `1 <= Σ products[i].length <= 2 * 10^4`
+* All characters of `products[i]` are lower-case English letters.
+* `1 <= searchWord.length <= 1000`
+* All characters of `searchWord` are lower-case English letters.
+
 ## Solution 
 
 ### Code
