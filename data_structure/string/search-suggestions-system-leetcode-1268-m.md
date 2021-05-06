@@ -89,7 +89,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(**
 * **Space Complexity:**
 
 \*\*\*\*
