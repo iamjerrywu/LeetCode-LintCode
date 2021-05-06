@@ -52,7 +52,7 @@ Output: [[],[],[],[],[],[],[]]
 * `1 <= searchWord.length <= 1000`
 * All characters of `searchWord` are lower-case English letters.
 
-## Solution 
+## Solution - Brute Force 
 
 ### Code
 
