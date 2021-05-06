@@ -59,7 +59,24 @@ Output: [[],[],[],[],[],[],[]]
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    def suggestedProducts(self, products: List[str], searchWord: str) -> List[List[str]]:
+        
+        products.sort() # O(nlogn) sorting
+        
+        res = []
+        prefix_string = '' # O(m * n)
+        for c in searchWord: #O(m)
+            prefix_string+=c
+            search_res = []
+            for product in products: #O(n)
+                if product[0:len(prefix_string)] == prefix_string :
+                    search_res.append(product)
+                if len(search_res) == 3:
+                    break
+            res.append(search_res)
+        return res
+        
 ```
 {% endtab %}
 
