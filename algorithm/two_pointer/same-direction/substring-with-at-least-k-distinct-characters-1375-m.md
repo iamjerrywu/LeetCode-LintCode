@@ -73,3 +73,32 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
+## Solution - Two Pointer Brute Force
+
+### Code
+
+```python
+class Solution:
+    """
+    @param s: a string
+    @param k: an integer
+    @return: the number of substrings there are that contain at least k distinct characters
+    """
+    def kDistinctCharacters(self, s, k):
+        # Write your code here
+        unique = {}
+        ans, right = 0, 0
+        for left in range(len(s)):
+            while len(unique) < k and right < len(s):
+                unique[s[right]] = unique.get(s[right], 0) + 1
+                right+=1
+            if len(unique) == k:
+                # because previous right already + 1, so need to + 1 here
+                ans+=len(s) - right + 1
+                unique[s[left]]-=1
+            if unique[s[left]] == 0:
+                del unique[s[left]]
+        return ans
+
+```
+
