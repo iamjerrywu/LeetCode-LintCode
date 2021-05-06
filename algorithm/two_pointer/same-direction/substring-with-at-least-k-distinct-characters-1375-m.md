@@ -32,13 +32,31 @@ Explanation: Any substring whose length is not smaller than 3 contains a, b, c.
     So the answer is 1 + 2 + ... + 10 = 55.
 ```
 
-## Solution 
+## Solution - Two Pointer Brute Force
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param s: a string
+    @param k: an integer
+    @return: the number of substrings there are that contain at least k distinct characters
+    """
+    def kDistinctCharacters(self, s, k):
+        # Write your code here
+        unique = set()
+        ans = 0
+        for left in range(len(s)):
+            for right in range(left, len(s)):
+                unique.add(s[right])
+                if len(unique) >= k:
+                    ans+=len(s) - right
+                    unique.clear()
+                    break
+        return ans
 
 ```
 {% endtab %}
