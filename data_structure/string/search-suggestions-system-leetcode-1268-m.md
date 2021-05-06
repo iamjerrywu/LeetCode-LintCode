@@ -92,8 +92,6 @@ class Solution:
 * **Time Complexity: O\(nlogn\) + O\(m\*n\)**
 * **Space Complexity:**
 
-\*\*\*\*
-
 ## Solution - Binary Search
 
 ### Code
