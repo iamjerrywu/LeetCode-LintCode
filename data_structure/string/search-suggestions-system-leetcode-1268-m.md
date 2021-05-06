@@ -99,7 +99,39 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    def suggestedProducts(self, products: List[str], searchWord: str) -> List[List[str]]:
+        
+        products.sort() # O(nlogn) sorting
+        
+        res = []
+        prefix_string = '' # O(m * logn)
+        for c in searchWord: #O(m)
+            prefix_string+=c
+            search_res = []
+            index = self.binary_search(0, len(products) - 1, products, prefix_string) #O(logn)
+            while index != -1 and index < len(products) and len(search_res) < 3:
+                if products[index][:len(prefix_string)] == prefix_string:
+                    search_res.append(products[index])
+                index+=1
+            res.append(search_res)
+        return res
+    
+    def binary_search(self, start, end, products, prefix_string):
+        if start >= end:
+            return start
+        n = len(prefix_string)
+        while start + 1 < end:
+            mid = (start + end)//2
+            if products[mid][:n] < prefix_string:
+                start = mid
+            else:
+                end = mid
+        if products[start][:n] == prefix_string:
+            return start
+        if products[end][:n] == prefix_string:
+            return end
+        return -1
 ```
 {% endtab %}
 
