@@ -77,7 +77,7 @@ Output: [[],[],[],[],[],[],[]]
 
 \*\*\*\*
 
-## Solution 
+## Solution - Binary Search
 
 ### Code
 
