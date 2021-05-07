@@ -25,12 +25,29 @@ Do it in-place.
 
 ## Solution 
 
-### Code
+### Code - In-Place
 
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param matrix: a lists of integers
+    @return: nothing
+    """
+    def rotate(self, matrix):
+        # write your code here
+        n = len(matrix)
+        for start in range(n//2):
+            end = n - start - 1
+            k = 0
+            for _ in range(start, end):
+                tmp = matrix[start][start + k]
+                matrix[start][start + k] = matrix[end - k][start]
+                matrix[end - k][start] = matrix[end][end - k]
+                matrix[end][end - k] = matrix[start + k][end]
+                matrix[start + k][end] = tmp
+                k+=1
 ```
 {% endtab %}
 
