@@ -70,8 +70,6 @@ class Solution:
   * k: maximum length of string in strs
 * **Space Complexity: O\(nk\)**
 
-\*\*\*\*
-
 ## Solution - Categorized by counts
 
 ### Code

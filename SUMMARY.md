@@ -245,7 +245,7 @@
     * [Jump Game 116 \(M\)](algorithm/dynamic_programming/coordination/116.-jump-game-m.md)
     * [Knight Shortest Path II 630 \(M\)](algorithm/dynamic_programming/coordination/630.-knight-shortest-path-ii.md)
   * [Partition](algorithm/dynamic_programming/partition/README.md)
-    * [Longest Increasing Sequence 76 \(M\)](algorithm/dynamic_programming/partition/76.-longest-increasing-sequence-m.md)
+    * [Longest Increasing Subsequence 76 \(M\)](algorithm/dynamic_programming/partition/76.-longest-increasing-sequence-m.md)
     * [Word Break 107 \(M\)](algorithm/dynamic_programming/partition/107.-word-break--m.md)
     * [Word Break II 582 \(H\)](algorithm/dynamic_programming/partition/word-break-ii-582-h.md)
     * [Word Break III \(M\)](algorithm/dynamic_programming/partition/word-break-iii-m.md)
