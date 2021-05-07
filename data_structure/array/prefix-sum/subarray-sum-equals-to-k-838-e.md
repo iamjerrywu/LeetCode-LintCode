@@ -22,7 +22,47 @@ Explanation:
 subarray [0,1], [1,4], [0,3] and [3,4]
 ```
 
-## Solution 
+## Solution - Brute Force Count
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param nums: a list of integer
+    @param k: an integer
+    @return: return an integer, denote the number of continuous subarrays whose sum equals to k
+    """
+    def subarraySumEqualsK(self, nums, k):
+        # write your code here
+        cnt = 0
+        for start in range(len(nums)):
+            summ = 0
+            for end in range(start, len(nums)):
+                summ+=nums[end]
+                if summ == k:
+                    cnt+=1
+        return cnt
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n^2\)**
+* **Space Complexity: O\(1\)**
+
+\*\*\*\*
+
+## Solution - Prefix Sum
 
 ### Code
 
@@ -66,42 +106,4 @@ class Solution:
 
 * **Time Complexity: O\(n\)**
 * **Space Complexity: O\(n\)**
-
-## Solution - Brute Force Count
-
-### Code
-
-{% tabs %}
-{% tab title="python" %}
-```python
-class Solution:
-    """
-    @param nums: a list of integer
-    @param k: an integer
-    @return: return an integer, denote the number of continuous subarrays whose sum equals to k
-    """
-    def subarraySumEqualsK(self, nums, k):
-        # write your code here
-        cnt = 0
-        for start in range(len(nums)):
-            summ = 0
-            for end in range(start, len(nums)):
-                summ+=nums[end]
-                if summ == k:
-                    cnt+=1
-        return cnt
-```
-{% endtab %}
-
-{% tab title="java" %}
-```
-
-```
-{% endtab %}
-{% endtabs %}
-
-### Complexity Analysis
-
-* **Time Complexity: O\(n^2\)**
-* **Space Complexity: O\(1\)**
 
