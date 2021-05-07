@@ -39,17 +39,21 @@ class Solution:
     """
     def rotate(self, matrix):
         # write your code here
-        n = len(matrix)
-        for start in range(n//2):
-            end = n - start - 1
-            k = 0
-            for _ in range(start, end):
-                tmp = matrix[start][start + k]
-                matrix[start][start + k] = matrix[end - k][start]
-                matrix[end - k][start] = matrix[end][end - k]
-                matrix[end][end - k] = matrix[start + k][end]
-                matrix[start + k][end] = tmp
-                k+=1
+        if not matrix:
+            return None
+        if not matrix[0]:
+            return []
+        new_arr = []
+        # copy rotation to new array
+        for i in range(len(matrix[0])):
+            tmp = []
+            for j in range(len(matrix) - 1, -1, -1):
+                tmp.append(matrix[j][i])
+            new_arr.append(tmp)
+        # assign new array values back to matrix
+        for i in range(len(new_arr)):
+            for j in range(len(new_arr[0])):
+                matrix[i][j] = new_arr[i][j]
 ```
 {% endtab %}
 
