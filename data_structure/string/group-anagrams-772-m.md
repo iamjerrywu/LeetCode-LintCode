@@ -27,7 +27,7 @@ Output:
  ["nowhere"]]
 ```
 
-## Solution 
+## Solution - Categroized by sorted strings
 
 ### Code
 
@@ -45,8 +45,8 @@ class Solution:
             return []
         
         anagrams = {}
-        for str in strs:
-            str_sort = ''.join(sorted(str))
+        for str in strs: #O(n)
+            str_sort = ''.join(sorted(str)) #O(klogk)
             if str_sort not in anagrams:
                 anagrams[str_sort] = [str]
             else:
@@ -65,6 +65,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(nklogk\)**
+  * n: length of strs
+  * k: maximum length of string in strs
+* **Space Complexity: O\(nk\)**
 
