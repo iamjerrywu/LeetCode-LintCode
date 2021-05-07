@@ -70,3 +70,48 @@ class Solution:
   * k: maximum length of string in strs
 * **Space Complexity: O\(nk\)**
 
+\*\*\*\*
+
+## Solution - Categorized by counts
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param strs: the given array of strings
+    @return: The anagrams which have been divided into groups
+    """
+    def groupAnagrams(self, strs):
+        # write your code here
+        # ans = collections.defaultdict(list)
+        ans = {}
+        for s in strs: #O(n)
+            count = [0] * 26
+            for c in s: #O(k)
+                count[ord(c) - ord('a')]+=1
+            # since list is unhashable 
+            if tuple(count) not in ans:
+                ans[tuple(count)] = [s]
+            else:
+                ans[tuple(count)].append(s)
+        return ans.values()
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(nk\)**
+  * n: length of strs
+  * k: maximum length of string in strs
+* **Space Complexity: O\(nk\)**
+
