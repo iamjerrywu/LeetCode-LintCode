@@ -67,7 +67,7 @@ class Solution:
 * **Time Complexity: O\(n\)**
 * **Space Complexity: O\(n\)**
 
-## Solution 
+## Solution - Brute Force Count
 
 ### Code
 
@@ -82,21 +82,14 @@ class Solution:
     """
     def subarraySumEqualsK(self, nums, k):
         # write your code here
-        if not nums:
-            return 0
-
-        prefix_sum = 0
-        prefix_sum_to_times = {0:1}
-        
         cnt = 0
-        for num in nums:
-            prefix_sum+=num
-            if prefix_sum - k in prefix_sum_to_times:
-               cnt+=prefix_sum_to_times[prefix_sum - k] 
-            prefix_sum_to_times[prefix_sum] = prefix_sum_to_times.get(prefix_sum, 0) + 1
-
-        return cnt            
-
+        for start in range(len(nums)):
+            summ = 0
+            for end in range(start, len(nums)):
+                summ+=nums[end]
+                if summ == k:
+                    cnt+=1
+        return cnt
 ```
 {% endtab %}
 
@@ -109,6 +102,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O\(n^2\)**
+* **Space Complexity: O\(1\)**
 
