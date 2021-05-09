@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Lint/LeeCode notes](README.md)
-* [Template](template.md)
 
 ## Data\_Structure
 
@@ -112,6 +111,10 @@
   * [K Closests Points 612 \(M\)](data_structure/heap/k-closets-points-612-m.md)
 * [Trie](data_structure/trie.md)
 * [Union Find](data_structure/union_find.md)
+
+---
+
+* [Template](template.md)
 
 ## Algorithm
 
