@@ -73,7 +73,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-## Solution - Two Pointer Brute Force
+## Solution - Two Pointer 
 
 ### Code
 
@@ -101,4 +101,9 @@ class Solution:
         return ans
 
 ```
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(\|s\|\)**
 
