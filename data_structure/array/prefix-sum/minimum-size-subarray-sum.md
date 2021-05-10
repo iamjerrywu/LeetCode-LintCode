@@ -23,7 +23,7 @@ Challenge
 
 If you have figured out the O\(nlog n\) solution, try coding another solution of which the time complexity is O\(n\).
 
-## Solution 
+## Solution - Prefix Sum
 
 ### Code
 
@@ -40,7 +40,26 @@ If you have figured out the O\(nlog n\) solution, try coding another solution of
 * **Time Complexity:**
 * **Space Complexity:**
 
-## Solution 
+## Solution - Prefix Sum \(2\)
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+## 
+
+## Solution - Prefix Sum + Binary Search
 
 ### Code
 
