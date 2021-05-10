@@ -29,6 +29,59 @@ Output: 1
 Explanation: The two heater was placed in the position 1 and 4. We need to use radius 1 standard, then all the houses can be warmed.
 ```
 
+## Solution - Binary Search
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param houses: positions of houses
+    @param heaters: positions of heaters
+    @return: the minimum radius standard of heaters
+    """
+    def findRadius(self, houses, heaters):
+        # Write your code here
+        
+        # sort the heaters, since we want to find the house position inside heaters 
+        heaters.sort()
+
+        heat_radius = 0
+        for house in houses:
+            radius = self.get_minimum_radius(house, heaters)
+            heat_radius = max(heat_radius, radius)
+        return heat_radius
+    
+    def get_minimum_radius(self, house, heaters):
+        left, right = 0, len(heaters) - 1
+        while left + 1 < right:
+            mid = (left + right)//2
+            if heaters[mid] <= house:
+                left = mid
+            else:
+                right = mid
+        
+        # find answer btw left/right
+        left_distance = abs(heaters[left] - house)
+        right_distance = abs(heaters[right] - house)
+
+        return min(left_distance, right_distance)
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(\(n+m\)\*logm\)**
+  * Sort: O\(mlogm\)
+  * Traverse + Binary search: O\(n \* logm\)
+* **Space Complexity: O\(n\)**
+
+\*\*\*\*
+
 ## Solution 
 
 ### Code
