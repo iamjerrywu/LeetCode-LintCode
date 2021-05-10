@@ -72,8 +72,6 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-## 
-
 ## Solution - Prefix Sum + Binary Search
 
 ### Code
