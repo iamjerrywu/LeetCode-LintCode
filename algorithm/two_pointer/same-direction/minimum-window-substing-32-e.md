@@ -1,4 +1,4 @@
-# Minimum Window Substing 32 \(E\)
+# Minimum Window Substring 32 \(M\)
 
 ## Problem
 
