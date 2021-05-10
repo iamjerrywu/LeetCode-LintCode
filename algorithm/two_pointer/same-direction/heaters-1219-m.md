@@ -87,8 +87,6 @@ class Solution:
   * Traverse + Binary search: O\(n \* logm\)
 * **Space Complexity: O\(n\)**
 
-\*\*\*\*
-
 ## Solution 
 
 ### Code
