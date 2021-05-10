@@ -96,6 +96,30 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param nums: an array of integers
+    @param s: An integer
+    @return: an integer representing the minimum size of subarray
+    """
+    def minimumSize(self, nums, s):
+        # write your code here
+        if not nums:
+            return -1
+        
+        n = len(nums)
+        min_length = float('inf')
+        sum_of_subarray = 0
+        j = 0
+        for i in range(len(nums)):
+            while j < n and sum_of_subarray < s:
+                sum_of_subarray+=nums[j]
+                j+=1
+            if sum_of_subarray >= s:
+                # j + 1 already previously 
+                min_length = min(min_length, j - i)
+            sum_of_subarray-=nums[i]
+        return min_length if min_length != float('inf') else -1
 
 ```
 {% endtab %}
@@ -103,6 +127,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
