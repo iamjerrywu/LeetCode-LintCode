@@ -30,15 +30,30 @@ If you have figured out the O\(nlog n\) solution, try coding another solution of
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param nums: an array of integers
+    @param s: An integer
+    @return: an integer representing the minimum size of subarray
+    """
+    def minimumSize(self, nums, s):
+        # write your code here
+        ans = float('inf')
+        for start in range(len(nums)):
+            sum_val = 0
+            for end in range(start, len(nums)):
+                sum_val+=nums[end]
+                if sum_val >= s:
+                    ans = min(ans, end - start + 1)
+        return ans if ans != float('inf') else -1
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n^2\)**
+* **Space Complexity: O\(1\)**
 
 ## Solution - Prefix Sum \(2\)
 
