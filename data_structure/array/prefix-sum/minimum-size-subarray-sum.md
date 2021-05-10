@@ -76,7 +76,7 @@ If you have figured out the O\(nlog n\) solution, try coding another solution of
 * **Time Complexity:**
 * **Space Complexity:**
 
-## Solution 
+## Solution - Two Pointers
 
 ### Code
 
