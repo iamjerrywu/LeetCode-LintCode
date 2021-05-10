@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Lint/LeeCode notes](README.md)
+* [Template](template-1.md)
 
 ## Data\_Structure
 
@@ -24,6 +25,7 @@
 * [Array](data_structure/array/README.md)
   * [Prefix Sum](data_structure/array/prefix-sum/README.md)
     * [Maximum Subarray 41 \(E\)](data_structure/array/prefix-sum/maximum-subarray-41-e.md)
+    * [Minimum Size Subarray Sum](data_structure/array/prefix-sum/minimum-size-subarray-sum.md)
     * [Product of Array Except Self 1310 \(M\)](data_structure/array/prefix-sum/product-of-array-except-self-1310-m.md)
     * [Subarray Sum Equals to k 838 \(E\)](data_structure/array/prefix-sum/subarray-sum-equals-to-k-838-e.md)
     * [Shortest Subarray with Sum at Least K 1507 \(H\)](data_structure/array/prefix-sum/shortest-subarray-with-sum-at-least-k-1507-h.md)
