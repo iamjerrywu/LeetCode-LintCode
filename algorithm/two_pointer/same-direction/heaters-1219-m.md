@@ -31,6 +31,13 @@ Explanation: The two heater was placed in the position 1 and 4. We need to use r
 
 ## Solution - Binary Search
 
+When house choosing heater, must be following two cases:
+
+* Left last one heater &lt;= house location 
+* Right first one heater &gt;= house location
+
+![](../../../.gitbook/assets/screen-shot-2021-05-10-at-11.04.46-pm.png)
+
 ### Code
 
 {% tabs %}
