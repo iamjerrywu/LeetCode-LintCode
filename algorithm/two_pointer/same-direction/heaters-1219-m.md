@@ -89,6 +89,11 @@ class Solution:
 
 ## Solution - Two Pointer
 
+Consider if heaters\[j\] can provide heat to house\[i\]
+
+* If heaters\[j\] is closer to house\[i\] than heaters\[j+1\] =&gt; then i+1
+* If heaters\[j + 1\] is closer to house\[i\] then heaters\[j\] =&gt; then j + 1
+
 ### Code
 
 {% tabs %}
