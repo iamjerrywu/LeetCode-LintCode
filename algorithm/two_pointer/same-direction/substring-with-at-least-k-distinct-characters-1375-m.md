@@ -106,4 +106,5 @@ class Solution:
 
 * **Time Complexity: O\(n\)**
 * **Space Complexity: O\(\|s\|\)**
+  * The different characters amount in `s`
 
