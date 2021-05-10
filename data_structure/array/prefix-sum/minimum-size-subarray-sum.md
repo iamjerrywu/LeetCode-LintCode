@@ -40,7 +40,22 @@ If you have figured out the O\(nlog n\) solution, try coding another solution of
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+## Solution 
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
 
 ## Solution 
 
@@ -57,5 +72,5 @@ If you have figured out the O\(nlog n\) solution, try coding another solution of
 ### Complexity Analysis
 
 * **Time Complexity:**
-* **Space Complexity**
+* **Space Complexity:**
 
