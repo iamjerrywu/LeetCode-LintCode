@@ -63,8 +63,8 @@ class Solution:
         visited = set()
         ans = 0
         while True:
-            move_max = -1
-            nxt_x, nxt_y = -1, -1
+            move_max = 0
+            nxt_x, nxt_y = None, None
             ans+=carrot[x][y]
             visited.add((x, y))
             
@@ -75,7 +75,7 @@ class Solution:
                     move_max = carrot[x + dx][y + dy]
                     nxt_x, nxt_y = x + dx, y + dy
            
-            if move_max == -1:
+            if move_max == 0:
                 break
             x, y = nxt_x, nxt_y
         return ans
@@ -86,7 +86,6 @@ class Solution:
         if (x, y) in visited:
             return False
         return True
-            
 ```
 {% endtab %}
 {% endtabs %}
