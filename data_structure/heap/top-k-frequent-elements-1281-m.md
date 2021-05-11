@@ -32,7 +32,22 @@ Output: [1]
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param nums: the given array
+    @param k: the given k
+    @return: the k most frequent elements
+    """
+    def topKFrequent(self, nums, k):
+        # Write your code here
+        cnt = {}
+        # Time: O(n), Space: O(n)
+        for num in nums:
+            cnt[num] = cnt.get(num, 0) + 1
+        keys_vals = [(key, val) for key, val in cnt.items()]
+        # Time: O(nlogn), Space: O(n)
+        keys_vals.sort(reverse = True, key = lambda n : n[1])
+        return [key for key, val in keys_vals[:k]]
 ```
 {% endtab %}
 {% endtabs %}
@@ -48,7 +63,7 @@ Output: [1]
 
 \*\*\*\*
 
-## Solution 
+## Solution - Heap
 
 ### Code
 
