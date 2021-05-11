@@ -38,16 +38,39 @@ Notes mainly comprises two parts:
 
 ## Time Complexity
 
-### Polynomial: 
+### Polynomial vs Nondeterministic Polynomial \(NP\)
+
+#### Polynomial: 
 
 * O\(n\)m, O\(n^2\), O\(n^3\), O\(n + m\), O\(sqrt\(n\)\), O\(1\), O\(logn\), O\(nlogn\)
 
-### Nondeterministic Polynomial \(NP\)
+#### Nondeterministic Polynomial \(NP\)
 
 * O\(2^n\), O\(n^n\), O\(n!\)
 * Question: 
   * O\(n + m\) vs O\(max\(n, m\)\)?
     * n + m  &gt; max\(n, m\) &gt; \(n + m\) / 2 O\(n + m\) &gt; O\(max\(n, m\)\) &gt; O\(\(n + m\) / 2\) O\(max\(n, m\)\) == O\(n + m\)
+
+### Boundary Condition:
+
+* Normally the evaluation system can run executions up to **10^7 ~ 10^9** times
+* Therefore, if input is length of 10^5, then O\(n\) approach can pass, o\(n^2\) may LTE
+
+#### Derive Algorithm from Input range
+
+* n = 10^4
+  * O\(n\) -&gt; Two Pointer, Prefix Sum, Traverse, 1-D DP
+  * O\(nlogn\) -&gt; Sort, Binary Search
+* n = 10^3
+  * O\(n^2\) -&gt; 2-D array, double for loop, 2-D DP
+* n = 10 ^2
+  * O\(n^3\) -&gt; Triple for loop
+* n = 10
+  * O\(2^n\), O\(n!\) -&gt; DFS Brute Force
+* n = 10 ^9
+  * Don't use extra memory \(like list, dict\) to store input, or O\(n\) appraoch
+  * Might be O\(logn\), Binary Search
+  * Might be O\(sqrt\(n\)\), Factorization
 
 ## Unfinished Chapter
 
