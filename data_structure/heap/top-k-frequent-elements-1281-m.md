@@ -70,15 +70,32 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+import heapq
+class Solution:
+    """
+    @param nums: the given array
+    @param k: the given k
+    @return: the k most frequent elements
+    """
+    def topKFrequent(self, nums, k):
+        # Write your code here
+        cnt = {}
+        # Time: O(n), Space: O(n)
+        for num in nums:
+            cnt[num] = cnt.get(num, 0) + 1
+        
+        # Time: O(n*logk), Space: O(n)
+        # The heap remained k size, and traverse those n elements and do heappushpop one at a time (each takes O(logk) times)
+        # so the time complexity is O(n*logk)
+        return heapq.nlargest(k, cnt.keys(), key = cnt.get)
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(nlogk\)**
+* **Space Complexity: O\(n + k\)**
 
 \*\*\*\*
 
