@@ -30,6 +30,10 @@ O\(n\) time and O\(1\) extra space
 
 ## Solution 
 
+If total sum of gas is less than total cost, then end of comparison. 
+
+Traverse the gas station, and calculate the gas remaining \(gas\[i\] - cost\[i\]\), if start from one certain index, and after that the gas remaining always remained positive, then that index is the start point. \(The answer must exist in these gas stations\)
+
 ### Code
 
 {% tabs %}
