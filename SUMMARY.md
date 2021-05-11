@@ -274,6 +274,7 @@
   * [Minimum Adjustment Cost 91 \(M\)](algorithm/dynamic_programming/91.-minimum-adjustment-cost-m.md)
   * [Minimum Partition 724 \(M\)](algorithm/dynamic_programming/724.-minimum-partition.md)
 * [Greedy](algorithm/greedy/README.md)
+  * [Gas Station 187 \(M\)](algorithm/greedy/gas-station-187-m.md)
   * [Interval Minimum Coverage 1668 \(M\)](algorithm/greedy/interval-minimum-coverage-1668-m.md)
 
 ## Other
