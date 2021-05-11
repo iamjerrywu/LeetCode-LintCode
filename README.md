@@ -45,14 +45,9 @@ Notes mainly comprises two parts:
 ### Nondeterministic Polynomial \(NP\)
 
 * O\(2^n\), O\(n^n\), O\(n!\)
-
-### O\(n + m\) vs O\(max\(n, m\)\)
-
-n + m  &gt; max\(n, m\) &gt; \(n + m\) / 2
-
-O\(n + m\) &gt; O\(max\(n, m\)\) &gt; O\(\(n + m\) / 2\)
-
-O\(max\(n, m\)\) == O\(n + m\)
+* Question: 
+  * O\(n + m\) vs O\(max\(n, m\)\)?
+    * n + m  &gt; max\(n, m\) &gt; \(n + m\) / 2 O\(n + m\) &gt; O\(max\(n, m\)\) &gt; O\(\(n + m\) / 2\) O\(max\(n, m\)\) == O\(n + m\)
 
 ## Unfinished Chapter
 
