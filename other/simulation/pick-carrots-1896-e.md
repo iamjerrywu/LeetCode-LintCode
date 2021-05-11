@@ -47,7 +47,46 @@ carrot =
 {% tabs %}
 {% tab title="python" %}
 ```python
+DIRECTIONS = [(1, 0), (0, 1), (-1, 0), (0, -1)]
+class Solution:
+    """
+    @param carrot: an integer matrix
+    @return: Return the number of steps that can be moved.
+    """
+    def PickCarrots(self, carrot):
+        # write your code here
+        n, m = len(carrot), len(carrot[0])
 
+        # processing the start point
+        x, y = (n + 1)//2 - 1, (m + 1)//2 - 1
+        
+        visited = set()
+        ans = 0
+        while True:
+            move_max = -1
+            nxt_x, nxt_y = -1, -1
+            ans+=carrot[x][y]
+            visited.add((x, y))
+            
+            for dx, dy in DIRECTIONS:
+                if not self.is_valid(x + dx, y + dy, carrot, visited):
+                    continue
+                if carrot[x + dx][y + dy] > move_max:
+                    move_max = carrot[x + dx][y + dy]
+                    nxt_x, nxt_y = x + dx, y + dy
+           
+            if move_max == -1:
+                break
+            x, y = nxt_x, nxt_y
+        return ans
+    
+    def is_valid(self, x, y, carrot, visited):
+        if x < 0 or x >= len(carrot) or y < 0 or y >= len(carrot[0]):
+            return False
+        if (x, y) in visited:
+            return False
+        return True
+            
 ```
 {% endtab %}
 {% endtabs %}
