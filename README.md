@@ -4,20 +4,6 @@ description: 175 (1N/47E/108M/19H)
 
 # Lint/LeeCode notes
 
-## Problem Counts:
-
-### Data Structure: 56
-
-* **Naive: 0 / Easy: 21 / Medium: 31 / Hard: 4**
-
-### **Algorithm: 113**
-
-* **Naive: 0 / Easy: 23 / Medium: 75 / Hard: 15**
-
-### **Others: 6**
-
-* **Naive: 1 / Easy: 3 / Medium: 2 / Hard: 0**
-
 ## Guideline 
 
 Notes mainly comprises two parts:
