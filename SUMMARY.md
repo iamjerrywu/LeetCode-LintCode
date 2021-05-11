@@ -124,7 +124,6 @@
 * [Sorting](algorithm/sorting/README.md)
   * [Quick Sort](algorithm/sorting/quick-sort/README.md)
     * [Kth Largest Element 5 \(M\)](algorithm/sorting/quick-sort/5.-kth-largest-element.md)
-    * [Untitled](algorithm/sorting/quick-sort/untitled.md)
     * [Second Max of Array 479 \(E\)](algorithm/sorting/quick-sort/second-max-of-array-479-e.md)
     * [Largest Number 184 \(M\)](algorithm/sorting/quick-sort/largest-number-184-m.md)
   * [Merge Sort](algorithm/sorting/merge-sort/README.md)
