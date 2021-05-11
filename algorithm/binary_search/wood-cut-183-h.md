@@ -30,7 +30,7 @@ Challenge
 
 O\(n log Len\), where Len is the longest length of the wood.
 
-## Solution
+## Solution -Binary Search
 
 ![](../../.gitbook/assets/screen-shot-2021-04-25-at-1.37.15-pm.png)
 
