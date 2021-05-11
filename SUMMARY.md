@@ -111,6 +111,7 @@
   * [Top k Largest Numbers 544 \(M\)](data_structure/heap/top-k-largest-numbers-544-m.md)
   * [Top k Largest Numbers II 545 \(M\)](data_structure/heap/top-k-largest-numbers-ii-545-m.md)
   * [K Closests Points 612 \(M\)](data_structure/heap/k-closets-points-612-m.md)
+  * [Top K Frequent Elements 1281 \(M\)](data_structure/heap/top-k-frequent-elements-1281-m.md)
 * [Trie](data_structure/trie.md)
 * [Union Find](data_structure/union_find.md)
 
