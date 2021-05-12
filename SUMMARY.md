@@ -211,6 +211,7 @@
   * [Number of Islands 433 \(E\)](algorithm/s4.-queue-bfs-graph/number-of-islands-433-e.md)
   * [Knight Shortest Path 611 \(M\)](algorithm/s4.-queue-bfs-graph/knight-shortest-path-611-m.md)
   * [The Maze II 788 \(M\)](algorithm/s4.-queue-bfs-graph/the-maze-ii-m.md)
+  * [Number of Provinces 547 \(M\)](algorithm/s4.-queue-bfs-graph/number-of-provinces-547-m.md)
   * [Friend Circles 1179 \(M\)](algorithm/s4.-queue-bfs-graph/1179.-friend-circles.md)
 * [DFS](algorithm/dfs/README.md)
   * [Subsets](algorithm/dfs/subsets/README.md)
