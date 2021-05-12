@@ -27,7 +27,7 @@ Output: 4
 Explanation: Use the same strategy as example 1 and the forth person does nothing.
 ```
 
-## Solution 
+## Solution - Binary Search
 
 ### Code
 
