@@ -51,6 +51,8 @@ class Solution:
         if not head:
             return None
         slow, fast = head, head
+        # WARNING!
+        # find the first middle point, should be fast.next / fast.next.next
         while fast.next and fast.next.next:
             slow = slow.next
             fast = fast.next.next
