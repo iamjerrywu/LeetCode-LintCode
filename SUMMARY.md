@@ -36,6 +36,7 @@
   * [Second Max Array 479 \(E\)](data_structure/array/second-max-array-479-e.md)
   * [Can Place Flowers 1138 \(E\)](data_structure/array/can-place-flowers-1138-e.md)
 * [Linked List](data_structure/linked_list/README.md)
+  * [Middle of Linked List 228 \(N\)](data_structure/linked_list/middle-of-linked-list-228-n.md)
   * [Remove Duplicates from Unsorted List 217 \(E\)](data_structure/linked_list/remove-duplicates-from-unsorted-list-217-e.md)
   * [Remove Duplicates from Sorted List 112 \(E\)](data_structure/linked_list/remove-duplicates-from-sorted-list-112-e.md)
   * [Remove Duplicates from Sorted List II 113 \(M\)](data_structure/linked_list/remove-duplicates-from-sorted-list-ii-113-m.md)
