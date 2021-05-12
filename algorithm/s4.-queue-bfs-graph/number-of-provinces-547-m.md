@@ -53,6 +53,7 @@ class Solution:
                 self.dfs(isConnected, visited, i)
                 cnt+=1
         return cnt
+    
     def dfs(self, isConnected, visited, i):
         for j in range(len(isConnected)):
             if isConnected[i][j] == 1 and not visited[j]:
@@ -66,5 +67,7 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity: O\(n\)**
+  * Call stack depth: O\(n\)
+  * Loop: O\(n\), since set would avoid the next loop, each city would only be visited once 
 * **Space Complexity: O\(n\)**
 
