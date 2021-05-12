@@ -67,6 +67,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(logn\)**
-* **Space Complexity:**
+* **Time Complexity: O\(logx\)**
+  * x = min\(times\) \* n
+* **Space Complexity: O\(1\)**
 
