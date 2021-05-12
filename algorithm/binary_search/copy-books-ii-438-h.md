@@ -29,6 +29,8 @@ Explanation: Use the same strategy as example 1 and the forth person does nothin
 
 ## Solution - Binary Search
 
+![](../../.gitbook/assets/screen-shot-2021-05-12-at-11.57.10-pm.png)
+
 ### Code
 
 {% tabs %}
