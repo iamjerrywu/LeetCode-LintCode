@@ -71,3 +71,41 @@ class Solution:
   * Loop: O\(n\), since set would avoid the next loop, each city would only be visited once 
 * **Space Complexity: O\(n\)**
 
+\*\*\*\*
+
+## Solution - BFS
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    def findCircleNum(self, isConnected: List[List[int]]) -> int:
+        visited = [False] * len(isConnected)
+        cnt = 0
+        for i in range(len(isConnected)):
+            if not visited[i]:
+                # this line can be ignored since later would not visited this city again
+                visited[i] = True
+                self.dfs(isConnected, visited, i)
+                cnt+=1
+        return cnt
+    
+    def dfs(self, isConnected, visited, i):
+        for j in range(len(isConnected)):
+            if isConnected[i][j] == 1 and not visited[j]:
+                # mark as visited, since later would visited that city
+                visited[j] = True
+                self.dfs(isConnected, visited, j)
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n\)**
+  * Call stack depth: O\(n\)
+  * Loop: O\(n\), since set would avoid the next loop, each city would only be visited once 
+* **Space Complexity: O\(n\)**
+
