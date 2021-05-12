@@ -191,6 +191,7 @@
   * [Median of two Sorted Arrays 65 \(H\)](algorithm/binary_search/65.-median-of-two-sorted-arrays.md)
   * [Prime Factorization 235 \(E\)](algorithm/binary_search/235.-prime-factorization-e.md)
   * [Copy Books 437 \(M\)](algorithm/binary_search/437.-copy-books-m.md)
+  * [Copy Books II 438 \(H\)](algorithm/binary_search/copy-books-ii-438-h.md)
   * [Search in a Big Sorted Array 447 \(M\)](algorithm/binary_search/search-in-a-big-sorted-array-447-m.md)
   * [Find K Closest Elements 460 \(M\)](algorithm/binary_search/find-k-closest-elements-460-m.md)
   * [Maximum Number in Mountain Sequence 585 \(M\)](algorithm/binary_search/maximum-number-in-mountain-sequence-585-m.md)
