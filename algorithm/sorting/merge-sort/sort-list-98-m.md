@@ -116,7 +116,84 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+Definition of ListNode
+class ListNode(object):
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+"""
 
+class Solution:
+    """
+    @param head: The head of linked list.
+    @return: You should return the head of the sorted linked list, using constant space complexity.
+    """
+    def sortList(self, head):
+        # write your code here
+        if not head or not head.next:
+            return head
+
+        mid = self.find_mid(head)
+
+        left_dummy = ListNode(0)
+        left_tail = left_dummy
+        right_dummy = ListNode(0)
+        right_tail = right_dummy
+        mid_dummy = ListNode(0)
+        mid_tail = mid_dummy
+        
+        # if value < mid, put behind left.dummy
+        # if value == mid, put behind mid.dummy
+        # if vlaue > mid, put behind right.dummy
+        while head:
+            if head.val < mid.val:
+                left_tail.next = head
+                left_tail = head
+            elif head.val > mid.val:
+                right_tail.next = head
+                right_tail = head
+            else:
+                mid_tail.next = head
+                mid_tail = head
+            head = head.next
+        
+        left_tail.next = None
+        right_tail.next = None
+        mid_tail.next = None
+
+        left = self.sortList(left_dummy.next)
+        right = self.sortList(right_dummy.next)
+        
+        return self.concat(left, mid_dummy.next, right)
+
+    def find_mid(self, head):
+        slow, fast = head, head
+        while fast.next and fast.next.next:
+            slow = slow.next
+            fast = fast.next.next
+        return slow
+    
+    def concat(self, left, mid, right):
+        dummy = ListNode(0)
+        tail = dummy
+        
+        tail.next = left
+        tail = self.get_tail(tail)
+        tail.next = mid
+        tail = self.get_tail(tail)
+        tail.next = right
+        tail = self.get_tail(tail)
+        return dummy.next
+    
+    def get_tail(self, head):
+        if not head:
+            return None
+        # WARNING!
+        # since want to get the tail node, cannot write as 'while not head'
+        while head.next:
+            head = head.next
+        return head
 ```
 {% endtab %}
 {% endtabs %}
