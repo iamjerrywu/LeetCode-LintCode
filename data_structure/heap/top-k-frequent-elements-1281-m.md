@@ -61,8 +61,6 @@ class Solution:
   * Hash: O\(n\)
   * Tuple: O\(n\)
 
-\*\*\*\*
-
 ## Solution - Heap
 
 ### Code
@@ -97,22 +95,53 @@ class Solution:
 * **Time Complexity: O\(nlogk\)**
 * **Space Complexity: O\(n + k\)**
 
-\*\*\*\*
-
-## Solution 
+## Solution - Quick Select
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+import heapq
+class Solution:
+    """
+    @param nums: the given array
+    @param k: the given k
+    @return: the k most frequent elements
+    """
+    def topKFrequent(self, nums, k):
+        # Write your code here
+        cnt = collections.Counter(nums)
+        keys = list(cnt.keys())
+        self.quick_select(keys, cnt, 0, len(keys) - 1, k)
+        return keys[:k]
+    
+    def quick_select(self, keys, cnt, start, end, k):
+        left, right = start, end
+        if left >= right:
+            return
+        pivot = cnt[keys[(left + right)//2]]
+        while left <= right:
+            while left <= right and cnt[keys[left]] > pivot:
+                left+=1
+            while left <= right and cnt[keys[right]] < pivot:
+                right-=1
+            if left <= right:
+                keys[left], keys[right] = keys[right], keys[left]
+                left+=1
+                right-=1
+        if k - 1 <= right:
+            return self.quick_select(keys, cnt, start, right, k)
+        if k - 1 >= left:
+            return self.quick_select(keys, cnt, left, end, k)
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\) ~ O\(n^2\)**
+  * Best: O\(n\)
+  * Worst: O\(n^2\)
+* **Space Complexity: O\(n\)**
 
