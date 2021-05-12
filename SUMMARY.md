@@ -128,6 +128,7 @@
     * [Largest Number 184 \(M\)](algorithm/sorting/quick-sort/largest-number-184-m.md)
   * [Merge Sort](algorithm/sorting/merge-sort/README.md)
     * [Sort Integers II 464 \(E\)](algorithm/sorting/merge-sort/464.-sort-integers-ii.md)
+    * [Sort List 98 \(M\)](algorithm/sorting/merge-sort/sort-list-98-m.md)
     * [Merge Sorted Array 64 \(E\)](algorithm/sorting/merge-sort/64.-merge-sorted-array-e.md)
     * [Merge Two Sorted Arrays 6 \(E\)](algorithm/sorting/merge-sort/6.-merge-two-sorted-arrays-e.md)
     * [Merge K Sorted Arrays 486 \(M\)](algorithm/sorting/merge-sort/486.-merge-k-sorted-arrays-m.md)
