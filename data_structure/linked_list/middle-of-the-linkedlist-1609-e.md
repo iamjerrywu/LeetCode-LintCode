@@ -29,7 +29,28 @@ Output: 4->5->6->null
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+Definition of ListNode
+class ListNode(object):
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+"""
 
+class Solution:
+    """
+    @param head: the head node
+    @return: the middle node
+    """
+    def middleNode(self, head):
+        # write your code here.
+        slow, fast = head, head
+        # WARNING!
+        # it ask the second of middle, shuold be fast/fast.next
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+        return slow
 ```
 {% endtab %}
 {% endtabs %}
