@@ -66,6 +66,8 @@ class Solution:
     """
     def houseRobber(self, A):
         # write your code here
+        if not A:
+            return 0
         n = len(A)
         dp = [0] * (n + 1)
         dp[1] = A[0]
@@ -79,6 +81,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
