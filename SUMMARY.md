@@ -276,6 +276,7 @@
     * [Longest Palindromic Substring 200 \(M\)](algorithm/dynamic_programming/interval/200.-longest-palindromic-substring-m.md)
     * [Stone Game 476 \(M\)](algorithm/dynamic_programming/interval/472.-stone-game-m.md)
     * [Calculate Maximum Value II 741 \(M\)](algorithm/dynamic_programming/interval/741.-calculate-maximum-value-ii-m.md)
+  * [House Robbe 392 \(M\)](algorithm/dynamic_programming/house-robbe-392-m.md)
   * [Minimum Adjustment Cost 91 \(M\)](algorithm/dynamic_programming/91.-minimum-adjustment-cost-m.md)
   * [Minimum Partition 724 \(M\)](algorithm/dynamic_programming/724.-minimum-partition.md)
 * [Greedy](algorithm/greedy/README.md)
