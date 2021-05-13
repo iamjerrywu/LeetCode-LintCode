@@ -90,7 +90,31 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param nums: An array of non-negative integers.
+    @return: The maximum amount of money you can rob tonight
+    """
+    def houseRobber2(self, nums):
+        # write your code here
 
+        if not nums:
+            return 0 
+        
+        if len(nums) < 2:
+            return nums[0]
+
+        n = len(nums)
+        dp_left = [0] * 3
+        dp_right = [0] * 3
+
+        dp_left[1] = nums[0]
+        dp_right[1] = nums[1]
+
+        for i in range(2, n):
+            dp_left[i%3] = max(dp_left[(i - 1)%3], nums[i - 1] + dp_left[(i - 2)%3])
+            dp_right[i%3] = max(dp_right[(i - 1)%3], nums[i] + dp_right[(i - 2)%3])
+        return max(dp_left[(n - 1)%3], dp_right[(n - 1)%3])
 ```
 {% endtab %}
 {% endtabs %}
