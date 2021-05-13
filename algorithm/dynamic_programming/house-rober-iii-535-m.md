@@ -38,6 +38,8 @@ Maximum amount of money the thief can rob = 4 + 5 = 9.
 
 ## Solution - DP
 
+Based on that root \(rob or not rob\), then do divide and conquer in left\__subtree/ right\_subtree_
+
 ### Code
 
 {% tabs %}
@@ -78,6 +80,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(n\)**
 * **Space Complexity:**
 
