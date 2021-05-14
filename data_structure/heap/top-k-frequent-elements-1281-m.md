@@ -81,11 +81,15 @@ class Solution:
         # Time: O(n), Space: O(n)
         for num in nums:
             cnt[num] = cnt.get(num, 0) + 1
-        
-        # Time: O(n*logk), Space: O(n)
-        # The heap remained k size, and traverse those n elements and do heappushpop one at a time (each takes O(logk) times)
-        # so the time complexity is O(n*logk)
-        return heapq.nlargest(k, cnt.keys(), key = cnt.get)
+        res = []
+        for val, cnt in cnt.items():
+            # since python default heap act as min heap
+            # so those smaller cnt would on the top
+            heapq.heappush(res, (cnt, val))
+            if len(res) > k:
+                # pop out those least frequent elements out
+                heapq.heappop(res)
+        return [val for count, val in res]
 ```
 {% endtab %}
 {% endtabs %}
@@ -115,17 +119,11 @@ class Solution:
         # Time: O(n), Space: O(n)
         for num in nums:
             cnt[num] = cnt.get(num, 0) + 1
-        res = []
-        for val, cnt in cnt.items():
-            # since python default heap act as min heap
-            # so those smaller cnt would on the top
-            heapq.heappush(res, (cnt, val))
-            if len(res) > k:
-                # pop out those least frequent elements out
-                heapq.heappop(res)
-        return [val for count, val in res]
         
-
+        # Time: O(n*logk), Space: O(n)
+        # The heap remained k size, and traverse those n elements and do heappushpop one at a time (each takes O(logk) times)
+        # so the time complexity is O(n*logk)
+        return heapq.nlargest(k, cnt.keys(), key = cnt.get)
 ```
 {% endtab %}
 {% endtabs %}
