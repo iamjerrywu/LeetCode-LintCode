@@ -69,9 +69,6 @@ class Solution:
                 queue.append((node.left, col_idx - 1))
                 queue.append((node.right, col_idx + 1))
         return [records[i] for i in sorted(records)]
-        
-
-
 ```
 {% endtab %}
 {% endtabs %}
