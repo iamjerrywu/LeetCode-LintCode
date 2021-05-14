@@ -61,7 +61,7 @@ class Solution:
   * Hash: O\(n\)
   * Tuple: O\(n\)
 
-## Solution - Heap
+## Solution - Heap \(2\)
 
 ### Code
 
