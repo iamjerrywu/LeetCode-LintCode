@@ -83,6 +83,7 @@
       * [Lowest Common Ancestor II 474 \(E\)](data_structure/tree/binary_tree/lowest-common-ancestor-lca/lowest-common-ancestor-ii-474-e.md)
       * [Lowest Common Ancestor III 578 \(M\)](data_structure/tree/binary_tree/lowest-common-ancestor-lca/lowest-common-ancestor-iii-578-m.md)
     * [Serialize and Deserialize Binary Tree 7 \(M\)](data_structure/tree/binary_tree/serialize-and-deserialize-binary-tree-7-m.md)
+    * [Binary Tree Zigzag Level Order Traversal 71 \(M\)](data_structure/tree/binary_tree/binary-tree-zigzag-level-order-traversal-71-m.md)
     * [Balanced Binary Tree 93 \(E\)](data_structure/tree/binary_tree/93.-balanced-binary-tree.md)
     * [Maximum Depth of Binary Tree 97 \(E\)](data_structure/tree/binary_tree/maximum-depth-of-binary-tree-97-e.md)
     * [Minimum Depth of Binary Tree 155 \(E\)](data_structure/tree/binary_tree/minimum-depth-of-binary-tree-155-e.md)
