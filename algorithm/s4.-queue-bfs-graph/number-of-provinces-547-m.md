@@ -48,6 +48,7 @@ class Solution:
         cnt = 0
         for i in range(len(isConnected)):
             if not visited[i]:
+                # in here all the connected graph would be traversed (connect to 'i' city, count than add one)
                 # this line can be ignored since later would not visited this city again
                 visited[i] = True
                 self.dfs(isConnected, visited, i)
