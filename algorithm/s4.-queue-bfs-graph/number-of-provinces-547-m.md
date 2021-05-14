@@ -88,6 +88,7 @@ class Solution:
         for i in range(len(isConnected)):
             if not visited[i]:
                 queue.append(i)
+                # in here the connected graph would all be traversed, and only count as one
                 while queue:
                     city = queue.popleft()
                     visited[city] = True
