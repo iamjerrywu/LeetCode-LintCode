@@ -20,7 +20,7 @@ the length of str &gt;= 0
 Input:
 
 ```text
-str = ""abcdefg"
+str = "abcdefg"
 offset = 3
 ```
 
