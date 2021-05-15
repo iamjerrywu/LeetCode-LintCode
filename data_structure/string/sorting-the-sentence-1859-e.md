@@ -56,6 +56,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+  * n is the amount of word
+* **Space Complexity: O\(n\)**
+  * n is the amount of word
 
