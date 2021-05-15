@@ -23,7 +23,7 @@
   * [Buddy Strings 1510 \(E\)](data_structure/string/buddy-strings-1510-e.md)
   * [Count Email Groups 1632 \(E\)](data_structure/string/count-email-groups-1632-e.md)
   * [Reverse ASCII Encoded Strings 1781 \(E\)](data_structure/string/reverse-ascii-encoded-strings-1781-e.md)
-  * [Sorting the Sentence 1859 \(E\)](data_structure/string/sorting-the-sentence-1859-e.md)
+  * [Sorting the Sentence \(LeetCode 1859\) \(E\)](data_structure/string/sorting-the-sentence-1859-e.md)
 * [Array](data_structure/array/README.md)
   * [Prefix Sum](data_structure/array/prefix-sum/README.md)
     * [Maximum Subarray 41 \(E\)](data_structure/array/prefix-sum/maximum-subarray-41-e.md)

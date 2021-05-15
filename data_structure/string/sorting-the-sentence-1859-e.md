@@ -1,4 +1,4 @@
-# Sorting the Sentence 1859 \(E\)
+# Sorting the Sentence \(LeetCode 1859\) \(E\)
 
 ## Problem
 
