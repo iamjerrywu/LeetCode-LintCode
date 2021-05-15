@@ -32,6 +32,7 @@
     * [Subarray Sum Equals to k 838 \(E\)](data_structure/array/prefix-sum/subarray-sum-equals-to-k-838-e.md)
     * [Shortest Subarray with Sum at Least K 1507 \(H\)](data_structure/array/prefix-sum/shortest-subarray-with-sum-at-least-k-1507-h.md)
     * [Subarray Sum Equals to k II 1844 \(M\)](data_structure/array/prefix-sum/subarray-sum-equals-to-k-ii-1844.md)
+    * [Sum of Floored Pairs \(LeetCode 1862\) \(M\)](data_structure/array/prefix-sum/sum-of-floored-pairs-leetcode-1862-m.md)
   * [Suffix](data_structure/array/suffix.md)
   * [Matrix](data_structure/array/matrix/README.md)
     * [Rotate Image 161 \(M\)](data_structure/array/matrix/rotate-image-161-m.md)
