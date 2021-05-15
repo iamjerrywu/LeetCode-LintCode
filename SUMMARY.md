@@ -277,6 +277,7 @@
     * [Burst Balloons 168 \(H\)](algorithm/dynamic_programming/interval/168.-burst-balloons-h.md)
     * [Longest Palindromic Substring 200 \(M\)](algorithm/dynamic_programming/interval/200.-longest-palindromic-substring-m.md)
     * [Stone Game 476 \(M\)](algorithm/dynamic_programming/interval/472.-stone-game-m.md)
+    * [Longest Palindromic Subsequence 667 \(M\)](algorithm/dynamic_programming/interval/longest-palindromic-subsequence-667-m.md)
     * [Calculate Maximum Value II 741 \(M\)](algorithm/dynamic_programming/interval/741.-calculate-maximum-value-ii-m.md)
   * [House Robbe 392 \(M\)](algorithm/dynamic_programming/house-robbe-392-m.md)
   * [House Robber II 534 \(M\)](algorithm/dynamic_programming/house-robber-ii-534.md)
