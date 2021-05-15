@@ -281,7 +281,7 @@
     * [Stone Game 476 \(M\)](algorithm/dynamic_programming/interval/472.-stone-game-m.md)
     * [Longest Palindromic Subsequence 667 \(M\)](algorithm/dynamic_programming/interval/longest-palindromic-subsequence-667-m.md)
     * [Calculate Maximum Value II 741 \(M\)](algorithm/dynamic_programming/interval/741.-calculate-maximum-value-ii-m.md)
-  * [House Robbe 392 \(M\)](algorithm/dynamic_programming/house-robbe-392-m.md)
+  * [House Robber 392 \(M\)](algorithm/dynamic_programming/house-robbe-392-m.md)
   * [House Robber II 534 \(M\)](algorithm/dynamic_programming/house-robber-ii-534.md)
   * [House Rober III 535 \(M\)](algorithm/dynamic_programming/house-rober-iii-535-m.md)
   * [Minimum Adjustment Cost 91 \(M\)](algorithm/dynamic_programming/91.-minimum-adjustment-cost-m.md)

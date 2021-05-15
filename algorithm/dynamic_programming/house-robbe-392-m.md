@@ -1,4 +1,4 @@
-# House Robbe 392 \(M\)
+# House Robber 392 \(M\)
 
 ## Problem
 
