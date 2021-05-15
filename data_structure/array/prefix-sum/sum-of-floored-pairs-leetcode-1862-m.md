@@ -32,7 +32,7 @@ Output: 49
 * `1 <= nums.length <= 105`
 * `1 <= nums[i] <= 105`
 
-## Solution - Brute Force
+## Solution 
 
 ### Code
 
