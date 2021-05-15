@@ -68,7 +68,47 @@ Output: [[".","#","#"],
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    def rotateTheBox(self, box: List[List[str]]) -> List[List[str]]:
+        if not box:
+            return box
+        for row in range(len(box)):
+            self.move_to_right(box[row])     
+        return self.rotate_ninety_degrees(box)
+    
+    def move_to_right(self, box_row):
+        cnt = {}
+        start = 0
+        for i in range(len(box_row)):
+            if box_row[i] == '*':
+                # only if '*' appears later than position 1, then need to relocate
+                if i > 1:
+                    self.relocate(start, i - 1, box_row, cnt)
+                cnt.clear()
+                start = i + 1
+                continue
+            cnt[box_row[i]] = cnt.get(box_row[i], 0) + 1
+        # check on last one, since may not encounter "*"
+        self.relocate(start, i, box_row, cnt)
+    
+    # Relocate both the "#", "." locations
+    def relocate(self, start, end, box_row, cnt):
+        for obj, nums in cnt.items():
+            while nums > 0:
+                if obj == '.':
+                    box_row[start] = obj
+                    start+=1
+                else:
+                    box_row[end] = obj
+                    end-=1
+                nums-=1
+            
+    def rotate_ninety_degrees(self, box):
+        rotate_box = [[0] * len(box) for _ in range(len(box[0]))]
+        for i in range(len(box)):
+            for j in range(len(box[0])):
+                rotate_box[j][len(box) - i - 1] = box[i][j]
+        return rotate_box
 ```
 {% endtab %}
 {% endtabs %}
