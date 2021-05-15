@@ -156,6 +156,7 @@
       * [Two Sum II - Input array is sorted 608 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/two-sum-ii-input-array-is-sorted-608-m.md)
       * [Two Sum III - Data Structure Design 607 \(E\)](algorithm/two_pointer/opposite-direction/2-sum/two-sum-iii-data-structure-design-607-e.md)
       * [Two Sum - Greater than target 443 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/two-sum-greater-than-target-443-m.md)
+      * [Two Sum - Closest to Target 533 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/two-sum-closest-to-target-533-m.md)
       * [Two Sum - Unique Pairs 587 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/two-sum-unique-pairs-587-m.md)
       * [Three Sum 57 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/three-sum-57-m.md)
       * [3Sum Closest 59 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/3sum-closest-59-m.md)
