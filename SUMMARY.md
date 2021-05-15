@@ -35,6 +35,7 @@
   * [Suffix](data_structure/array/suffix.md)
   * [Matrix](data_structure/array/matrix/README.md)
     * [Rotate Image 161 \(M\)](data_structure/array/matrix/rotate-image-161-m.md)
+    * [Rotating the Box \(LeetCode 1861\) \(M\)](data_structure/array/matrix/rotating-the-box-leetcode-1861-m.md)
   * [Second Max Array 479 \(E\)](data_structure/array/second-max-array-479-e.md)
   * [Can Place Flowers 1138 \(E\)](data_structure/array/can-place-flowers-1138-e.md)
 * [Linked List](data_structure/linked_list/README.md)
