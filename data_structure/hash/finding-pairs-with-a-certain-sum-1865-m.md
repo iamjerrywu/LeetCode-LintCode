@@ -95,3 +95,55 @@ class FindSumPairs:
   * Count: O\(1\)
 * **Space Complexity:**
 
+\*\*\*\*
+
+## Solution - Hash \(2\)
+
+HashMap storing pairsum as key, and their appearance time as val 
+
+{% hint style="danger" %}
+LTE
+{% endhint %}
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class FindSumPairs:
+
+    def __init__(self, nums1: List[int], nums2: List[int]):
+        self.nums1 = nums1
+        self.nums2 = nums2
+        self.pairs_sum = {}
+        for i in range(len(self.nums1)):
+            for j in range(len(self.nums2)):
+                self.pairs_sum[self.nums1[i] + self.nums2[j]] = self.pairs_sum.get(self.nums1[i] + self.nums2[j], 0) + 1
+        
+
+    def add(self, index: int, val: int) -> None:
+        for num1 in self.nums1:
+            self.pairs_sum[num1 + self.nums2[index]]-=1
+        self.nums2[index]+=val
+        for num1 in self.nums1:
+            self.pairs_sum[num1 + self.nums2[index]] = self.pairs_sum.get(num1 + self.nums2[index], 0) + 1
+    
+    def count(self, tot: int) -> int:
+        if tot in self.pairs_sum:
+            return self.pairs_sum[tot]
+        else:
+            return 0
+                    
+        
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+  * Add: O\(n\)
+    * n = total pair sum amounts
+  * Count: O\(1\)
+* **Space Complexity:**
+
