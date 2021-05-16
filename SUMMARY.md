@@ -230,6 +230,7 @@
   * [Subsets](algorithm/dfs/subsets/README.md)
     * [Subsets 17 \(M\)](algorithm/dfs/subsets/17.-subsets-m.md)
     * [Subsets II 18 \(M\)](algorithm/dfs/subsets/18.-subsets-ii-m.md)
+    * [Sum of All Subset XOR Totals \(LeetCode1863\) \(E\)](algorithm/dfs/subsets/sum-of-all-subset-xor-totals-leetcode1863-e.md)
   * [Permutations](algorithm/dfs/permutations/README.md)
     * [Permutations 15 \(M\)](algorithm/dfs/permutations/15.-permutations-m.md)
     * [Permutations II 16 \(M\)](algorithm/dfs/permutations/16.-permutations-ii-m.md)
