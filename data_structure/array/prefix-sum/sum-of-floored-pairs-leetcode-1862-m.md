@@ -59,3 +59,32 @@ class Solution:
 * **Time Complexity: O\(n^2\)**
 * **Space Complexity: O\(n\)**
 
+\*\*\*\*
+
+## Solution -Prefix\_Sum
+
+{% hint style="danger" %}
+Would LTE
+{% endhint %}
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    def sumOfFlooredPairs(self, nums: List[int]) -> int:
+        record = {}
+        for num1 in nums:
+            for num2 in nums:
+                reco rd[floor(num1/num2)] = record.get(floor(num1/num2), 0) + 1
+        return sum([k * v for k, v in record.items()])
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n^2\)**
+* **Space Complexity: O\(n\)**
+
