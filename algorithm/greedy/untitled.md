@@ -44,7 +44,38 @@ Output: -1
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    def minSwaps(self, s: str) -> int:
+        s = list(s)
+        count = Counter(s)
+        
+        # impossible to make it alternating string
+        if abs(count['0'] - count['1']) > 1:
+            return -1
+        
+        if abs(count['0'] - count['1']) > 1:
+            zero_start = False
+            if count['0'] > count['1']:
+                return self.swap_cnt(s, zero_start = True)
+            else:
+                return self.swap_cnt(s, zero_start = False)
+        if abs(count['0'] - count['1']) == 0:
+            return min(self.swap_cnt(s, zero_start = True), self.swap_cnt(s, zero_start = False))
+    def swap_cnt(self, s, zero_start):
+        cnt = 0
+        if zero_start:
+            for i in range(len(s)):
+                if i%2 == 0 and s[i] != 0:
+                    cnt+=1
+                if i%2 == 1 and s[i] != 1:
+                    cnt+=1
+        else:
+            for i in range(len(s)):
+                if i%2 == 0 and s[i] != 1:
+                    cnt+=1
+                if i%2 == 1 and s[i] != 0:
+                    cnt+=1
+        return cnt//2
 ```
 {% endtab %}
 {% endtabs %}
