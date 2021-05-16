@@ -32,20 +32,30 @@ Output: 49
 * `1 <= nums.length <= 105`
 * `1 <= nums[i] <= 105`
 
-## Solution 
+## Solution - Brute Force
+
+{% hint style="danger" %}
+Would LTE
+{% endhint %}
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    def sumOfFlooredPairs(self, nums: List[int]) -> int:
+        record = {}
+        for num1 in nums:
+            for num2 in nums:
+                reco rd[floor(num1/num2)] = record.get(floor(num1/num2), 0) + 1
+        return sum([k * v for k, v in record.items()])
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n^2\)**
+* **Space Complexity: O\(n\)**
 
