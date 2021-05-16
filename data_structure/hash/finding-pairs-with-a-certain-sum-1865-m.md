@@ -1,4 +1,4 @@
-# Finding Pairs With a Certain Sum 1865 \(M\)
+# Finding Pairs With a Certain Sum \(LeetCode1865\) \(M\)
 
 ## Problem
 
@@ -93,17 +93,14 @@ class FindSumPairs:
   * Add: O\(n\)
     * n = total pair sum amounts
   * Count: O\(1\)
-* **Space Complexity:**
+* **Space Complexity: O\(n\)**
+  * n = total pair sum amounts
 
 \*\*\*\*
 
 ## Solution - Hash \(2\)
 
-HashMap storing pairsum as key, and their appearance time as val 
-
-{% hint style="danger" %}
-LTE
-{% endhint %}
+Store the appearance time of element in nums1, nums2 
 
 ### Code
 
@@ -133,8 +130,6 @@ class FindSumPairs:
             return self.pairs_sum[tot]
         else:
             return 0
-                    
-        
 ```
 {% endtab %}
 {% endtabs %}
@@ -142,8 +137,11 @@ class FindSumPairs:
 ### Complexity Analysis
 
 * **Time Complexity:**
-  * Add: O\(n\)
+  * Add: O\(1\)
     * n = total pair sum amounts
-  * Count: O\(1\)
-* **Space Complexity:**
+  * Count: O\(n\)
+    * n: The identical elements amount in n1
+* **Space Complexity: O\(n + m\)**
+  * n: The identical elements amount in n1
+  * m: The identical elements amount in 2
 

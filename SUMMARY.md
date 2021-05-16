@@ -80,7 +80,7 @@
   * [First Unique Number in Data Stream 685 \(M\)](data_structure/hash/first-unique-number-in-data-stream-685-m.md)
   * [Word Pattern 828 \(E\)](data_structure/hash/word-pattern-828-e.md)
   * [First Unique Number in Data Stream II 960 \(M\)](data_structure/hash/first-unique-number-in-data-stream-ii-960-m.md)
-  * [Finding Pairs With a Certain Sum 1865 \(M\)](data_structure/hash/finding-pairs-with-a-certain-sum-1865-m.md)
+  * [Finding Pairs With a Certain Sum \(LeetCode1865\) \(M\)](data_structure/hash/finding-pairs-with-a-certain-sum-1865-m.md)
 * [Tree](data_structure/tree/README.md)
   * [Binary Tree](data_structure/tree/binary_tree/README.md)
     * [Lowest Common Ancestor \(LCA\)](data_structure/tree/binary_tree/lowest-common-ancestor-lca/README.md)
