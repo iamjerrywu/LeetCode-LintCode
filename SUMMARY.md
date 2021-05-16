@@ -147,6 +147,7 @@
     * [Merge K Sorted Interval Lists 577 \(M\)](algorithm/sorting/merge-sort/577.-merge-k-sorted-interval-lists-m.md)
     * [Reverse Pairs 532 \(M\)](algorithm/sorting/merge-sort/532.-reverse-pairs.md)
   * [Intersection](algorithm/sorting/intersection/README.md)
+    * [Meeting Rooms 920 \(E\)](algorithm/sorting/intersection/meeting-rooms-920-e.md)
     * [Intersection of Two Arrays  547\(E\)](algorithm/sorting/intersection/547.-intersection-of-two-arrays-e.md)
     * [Intersection of Two Arrays II 548 \(E\)](algorithm/sorting/intersection/548.-intersection-of-two-arrays-ii-e.md)
     * [Intersection of Arrays 793 \(M\)](algorithm/sorting/intersection/793.-intersection-of-arrays-m.md)
