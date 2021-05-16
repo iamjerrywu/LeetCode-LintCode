@@ -74,11 +74,45 @@ Would LTE
 ```python
 class Solution:
     def sumOfFlooredPairs(self, nums: List[int]) -> int:
-        record = {}
-        for num1 in nums:
-            for num2 in nums:
-                reco rd[floor(num1/num2)] = record.get(floor(num1/num2), 0) + 1
-        return sum([k * v for k, v in record.items()])
+        # can write 'max_num = 10 ** 5' as well
+        # the reason to * 2, is because eventually the max(nums), need to have range when calculating [max(nums):max(nums) * 2 - 1]
+        max_num = max(nums) * 2
+        MOD = 10**9 + 7
+        
+        cnt = [0 for _ in range(max_num + 1)]
+        prefix_cnt = [0 for _ in range(max_num + 1)]
+        n = len(nums)
+        
+        # init cnt array
+        for num in nums:
+            cnt[num]+=1
+        print(cnt)
+        
+        # init prefix
+        for index in range(1, max_num + 1):
+            prefix_cnt[index] = prefix_cnt[index - 1] + cnt[index]
+        print(prefix_cnt)
+        
+        ans = 0
+        for index in range(1, max_num + 1):
+            if cnt[index] == 0:
+                continue
+            
+            index2 = index + index # skip the '0 ~ index - 1' parts
+            # index = 7
+            # 0 ~ 6   (answer = 0) can skip
+            # 7 ~ 13  (answer = 1) index(14)//7 - 1
+            # 14 ~ 20 (answer = 2) index(21)//7 - 1
+            ...
+            while index2 <= max_num:
+                count = prefix_cnt[index2 - 1] - prefix_cnt[index2 - index - 1]
+                ans += count * (index2 // index - 1) * cnt[index]
+                print(index, index2, ans)
+                ans%=MOD
+                
+                index2+=index
+        
+        return ans%MOD
 ```
 {% endtab %}
 {% endtabs %}
