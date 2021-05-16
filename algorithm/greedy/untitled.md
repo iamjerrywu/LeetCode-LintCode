@@ -61,6 +61,7 @@ class Solution:
                 return self.swap_cnt(s, zero_start = False)
         if abs(count['0'] - count['1']) == 0:
             return min(self.swap_cnt(s, zero_start = True), self.swap_cnt(s, zero_start = False))
+    
     def swap_cnt(self, s, zero_start):
         cnt = 0
         if zero_start:
