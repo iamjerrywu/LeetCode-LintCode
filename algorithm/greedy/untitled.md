@@ -39,6 +39,19 @@ Output: -1
 
 ## Solution 
 
+Greedy thoughts:
+
+* If abs\(count\[0\] - count\[1\]\) &gt; 1
+  * Impossible to make it alternative stirng
+* If count\[0\] &gt; count\[1\]
+  * compare it with 0101...0
+* elif count\[0\] &lt; count\[1\]
+  * compare it with 1010..1
+* else \(count\[0\] == count\[1\]\):
+  * compare it with 0101...0
+  * compare it with 1010...1
+  * Then pick the min vlaue
+
 ### Code
 
 {% tabs %}
