@@ -295,6 +295,7 @@
 * [Greedy](algorithm/greedy/README.md)
   * [Gas Station 187 \(M\)](algorithm/greedy/gas-station-187-m.md)
   * [Interval Minimum Coverage 1668 \(M\)](algorithm/greedy/interval-minimum-coverage-1668-m.md)
+  * [Untitled](algorithm/greedy/untitled.md)
 
 ## Other
 
