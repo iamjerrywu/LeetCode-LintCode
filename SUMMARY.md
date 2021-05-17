@@ -227,6 +227,7 @@
     * [1870. Number of Substrings with All Zeros \(M\)](algorithm/two_pointer/same-direction/1870.-number-of-substrings-with-all-zeros.md)
 * [Binary Search](algorithm/binary_search/README.md)
   * [Classical](algorithm/binary_search/classical/README.md)
+    * [Search Insert Position 60 \(E\)](algorithm/binary_search/classical/search-insert-position-60-e.md)
     * [Classical Binary Search 457 \(E\)](algorithm/binary_search/classical/457.-classical-binary-search.md)
     * [First Position of Target 14 \(E\)](algorithm/binary_search/classical/14.-first-position-of-target.md)
     * [Last Position of Target 458 \(E\)](algorithm/binary_search/classical/458.-last-position-of-target.md)
