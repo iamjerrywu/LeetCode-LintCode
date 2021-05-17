@@ -58,6 +58,7 @@
   * [Implement Queue by Linked List II 493 \(E\)](data_structure/linked_list/implement-queue-by-linked-list-ii-493-e.md)
 * [Stack](data_structure/stack/README.md)
   * [Monotone Stack](data_structure/stack/monotone-stack.md)
+  * [Implement Stack 495 \(E\)](data_structure/stack/implement-stack-495-e.md)
   * [Valid Parenthese 423 \(E\)](data_structure/stack/valid-parenthese-423-e.md)
   * [Binary Search Tree Iterator 86 \(H\)](data_structure/stack/86.-binary-search-tree-iterator-h.md)
   * [Min Stack 12 \(M\)](data_structure/stack/12.-min-stack.md)
