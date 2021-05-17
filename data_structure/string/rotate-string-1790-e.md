@@ -1,4 +1,4 @@
-# Rotate String 1790 \(E\)
+# Rotate String II 1790 \(E\)
 
 ## Problem
 

@@ -7,7 +7,7 @@
 
 * [String](data_structure/string/README.md)
   * [Rotate String 8 \(E\)](data_structure/string/rotate-string-8-e.md)
-  * [Rotate String 1790 \(E\)](data_structure/string/rotate-string-1790-e.md)
+  * [Rotate String II 1790 \(E\)](data_structure/string/rotate-string-1790-e.md)
   * [Unique Characters 157 \(E\)](data_structure/string/unique-characters-157-e.md)
   * [Anagrams 171 \(M\)](data_structure/string/anagrams-171-m.md)
   * [Longest Common Prefix 78 \(M\)](data_structure/string/longest-common-prefix-78-m.md)
