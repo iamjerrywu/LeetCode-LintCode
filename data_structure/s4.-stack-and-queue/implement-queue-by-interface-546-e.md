@@ -62,6 +62,12 @@ class MyQueue(InterfaceQueue):
 # queue.pop(); will return 123 and pop the first element in the queue
 ```
 {% endtab %}
+
+{% tab title="" %}
+```
+
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
