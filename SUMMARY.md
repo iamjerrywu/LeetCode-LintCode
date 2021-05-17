@@ -70,6 +70,7 @@
 * [Queue](data_structure/s4.-stack-and-queue/README.md)
   * [Implement Queue by Linked List 492 \(E\)](data_structure/s4.-stack-and-queue/457.-implement-queue-by-linked-list.md)
   * [Implement Queue by Interface 546 \(E\)](data_structure/s4.-stack-and-queue/implement-queue-by-interface-546-e.md)
+  * [Zigzag Iterator II 541 \(M\)](data_structure/s4.-stack-and-queue/zigzag-iterator-ii-541-m.md)
   * [Deque](data_structure/s4.-stack-and-queue/deque.md)
 * [Hash](data_structure/hash/README.md)
   * [Implementation](data_structure/hash/implementation/README.md)
