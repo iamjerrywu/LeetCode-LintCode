@@ -1,4 +1,4 @@
-# K-Difference 1796 \(E\)
+# K-Difference 1796 \(M\)
 
 ## Problem
 

@@ -25,7 +25,32 @@ Output: null
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+Definition of ListNode
+class ListNode(object):
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+"""
 
+class Solution:
+    """
+    @param head: a ListNode
+    @param val: An integer
+    @return: a ListNode
+    """
+    def removeElements(self, head, val):
+        # write your code here
+        dummy = ListNode(None, head)
+        cur = dummy
+        while cur.next != None: 
+            if cur.next.val == val:
+                cur.next = cur.next.next
+            else:
+                cur = cur.next
+        return dummy.next
+                
+        
 ```
 {% endtab %}
 {% endtabs %}
