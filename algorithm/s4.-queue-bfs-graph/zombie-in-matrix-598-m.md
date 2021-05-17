@@ -35,7 +35,50 @@ Output:
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param grid: a 2D integer grid
+    @return: an integer
+    """
+    def zombie(self, grid):
+        # write your code here
+        # cannot write as 'if not grid:
+        # since if grid = [[]], it won't be effective
 
+        n = len(grid)
+        if n == 0:
+            return 0
+        
+        m = len(grid[0])
+        if m == 0:
+            return 0
+        
+        queue = collections.deque()
+        # every grid[x][y] can be the start points
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j] == 1:
+                    queue.append((i, j))
+        
+        DIRECTIONS = [[0, -1], [0, 1], [-1, 0], [1, 0]]
+        days = 0
+        while queue:
+            days+=1
+            for _ in range(len(queue)):
+                node = queue.popleft()
+                for k in range(4):
+                    x = node[0] + DIRECTIONS[k][0]
+                    y = node[1] + DIRECTIONS[k][1]
+                    if x >= 0 and x < n and y >= 0 and y < m and grid[x][y] == 0:
+                        grid[x][y] = 1
+                        queue.append((x, y))
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j] == 0:
+                    return -1
+        # need to -1
+        # since the last round, grid[x][y] already = 1, but put in the queue so would execute one more time (to let queue = 0)
+        return days - 1   
 ```
 {% endtab %}
 {% endtabs %}
