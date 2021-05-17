@@ -132,6 +132,7 @@
     * [Construct String from Binary Tree 1137 \(E\)](data_structure/tree/binary_tree/construct-string-from-binary-tree-1137-e.md)
     * [Subtree of Another Tree 1165 \(E\)](data_structure/tree/binary_tree/subtree-of-another-tree-1165-e.md)
   * [BST](data_structure/tree/bst/README.md)
+    * [Insert Node in a Binary Search Tree 85 \(E\)](data_structure/tree/bst/insert-node-in-a-binary-search-tree-85-e.md)
     * [Validate Binary Search Tree 95 \(M\)](data_structure/tree/bst/validate-binary-tree-95-m.md)
     * [Kth Smallest Element in BST 902 \(M\)](data_structure/tree/bst/kth-smallest-element-in-bst-902-m.md)
     * [Two Sum IV - Input is a BST 689 \(M\)](data_structure/tree/bst/689.-two-sum-iv-input-is-a-bst.md)
