@@ -34,7 +34,28 @@ Explanation: There is no Narcissistic Number with 2 digits.
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param n: The number of digits
+    @return: All narcissistic numbers with n digits
+    """
+    def getNarcissisticNumbers(self, n):
+        # write your code here
+        
+        ans = []
+        if n == 1:
+            start = 0
+        else: 
+            start = 10 **(n-1)
+        for i in range(start, 10**n):
+            ref = i
+            tmp = 0
+            while i > 0:
+                tmp +=(i%10)**(n)
+                i = i//10
+            if tmp == ref:
+                ans.append(ref)
+        return ans
 ```
 {% endtab %}
 {% endtabs %}
