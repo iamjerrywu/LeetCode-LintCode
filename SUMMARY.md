@@ -39,6 +39,7 @@
     * [Sum of Floored Pairs \(LeetCode 1862\) \(M\)](data_structure/array/prefix-sum/sum-of-floored-pairs-leetcode-1862-m.md)
   * [Suffix](data_structure/array/suffix.md)
   * [Matrix](data_structure/array/matrix/README.md)
+    * [ArrayList 385 \(E\)](data_structure/array/matrix/arraylist-385-e.md)
     * [Rotate Image 161 \(M\)](data_structure/array/matrix/rotate-image-161-m.md)
     * [Rotating the Box \(LeetCode 1861\) \(M\)](data_structure/array/matrix/rotating-the-box-leetcode-1861-m.md)
   * [Second Max Array 479 \(E\)](data_structure/array/second-max-array-479-e.md)
