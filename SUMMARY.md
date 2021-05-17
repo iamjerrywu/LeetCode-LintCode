@@ -91,6 +91,7 @@
 * [Tree](data_structure/tree/README.md)
   * [Binary Tree](data_structure/tree/binary_tree/README.md)
     * [Basic Traversal](data_structure/tree/binary_tree/basic-traversal/README.md)
+      * [Binary Tree Inorder Traversal 67 \(E\)](data_structure/tree/binary_tree/basic-traversal/binary-tree-inorder-traversal-67-e.md)
       * [Binary Tree Postorder Traversal 68 \(E\)](data_structure/tree/binary_tree/basic-traversal/binary-tree-postorder-traversal-68-e.md)
     * [Lowest Common Ancestor \(LCA\)](data_structure/tree/binary_tree/lowest-common-ancestor-lca/README.md)
       * [Lowest Common Ancestor 88 \(M\)](data_structure/tree/binary_tree/lowest-common-ancestor-lca/lowest-common-ancestor-88-m.md)
