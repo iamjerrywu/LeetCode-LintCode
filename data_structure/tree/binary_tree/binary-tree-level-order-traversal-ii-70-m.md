@@ -60,7 +60,39 @@ it will be serialized {3,9,20,\#,\#,15,7}
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
 
+class Solution:
+    """
+    @param root: A tree
+    @return: buttom-up level order a list of lists of integer
+    """
+    def levelOrderBottom(self, root):
+        # write your code her
+        res = []
+        if not root:
+            return res
+        
+        tmp = []
+        tmp.append(root)
+        
+        while tmp:
+            new_tmp = []
+            res.append([n.val for n in tmp])
+            for node in tmp:
+                if node.left:
+                    new_tmp.append(node.left)
+                if node.right:
+                    new_tmp.append(node.right)
+            tmp = new_tmp
+        res.reverse()
+        return res
 ```
 {% endtab %}
 {% endtabs %}
