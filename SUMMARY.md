@@ -134,6 +134,7 @@
   * [BST](data_structure/tree/bst/README.md)
     * [Insert Node in a Binary Search Tree 85 \(E\)](data_structure/tree/bst/insert-node-in-a-binary-search-tree-85-e.md)
     * [Validate Binary Search Tree 95 \(M\)](data_structure/tree/bst/validate-binary-tree-95-m.md)
+    * [Convert Sorted Array to Binary Search Tree With Minimal Height 177 \(E\)](data_structure/tree/bst/convert-sorted-array-to-binary-search-tree-with-minimal-height-177-e.md)
     * [Kth Smallest Element in BST 902 \(M\)](data_structure/tree/bst/kth-smallest-element-in-bst-902-m.md)
     * [Two Sum IV - Input is a BST 689 \(M\)](data_structure/tree/bst/689.-two-sum-iv-input-is-a-bst.md)
     * [Inorder Successor in BST 448 \(M\)](data_structure/tree/bst/448.-inorder-successor-in-bst.md)
