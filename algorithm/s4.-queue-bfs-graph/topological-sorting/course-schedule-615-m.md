@@ -68,6 +68,11 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(E + V\)**
+  * E: Number of dependencies
+  * V: Number of Courses
+* **Space Complexity:** 
+  * **O\(E + V\)**
+    * E: Number of dependencies
+    * V: Number of Courses
 
