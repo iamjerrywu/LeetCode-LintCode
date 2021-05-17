@@ -218,6 +218,7 @@
     * [Alien Dictionary 892 \(H\)](algorithm/s4.-queue-bfs-graph/topological-sorting/alien-dictionary-892-h.md)
     * [Topological Sorting 127 \(M\)](algorithm/s4.-queue-bfs-graph/topological-sorting/topological-sorting-127-m.md)
     * [Sequence Reconstruction 605 \(M\)](algorithm/s4.-queue-bfs-graph/topological-sorting/sequence-reconstruction-605-m.md)
+    * [Course Schedule 615 \(M\)](algorithm/s4.-queue-bfs-graph/topological-sorting/course-schedule-615-m.md)
     * [Course Schedule II 616 \(M\)](algorithm/s4.-queue-bfs-graph/topological-sorting/course-schedule-ii-616-m.md)
   * [Binary Tree Level Order Traversal 69 \(E\)](algorithm/s4.-queue-bfs-graph/69.-binary-tree-level-order-traversal.md)
   * [Word Ladder 120 \(H\)](algorithm/s4.-queue-bfs-graph/word-ladder-120-h.md)
