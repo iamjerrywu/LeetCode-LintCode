@@ -352,6 +352,7 @@
 * [Mathmatics](other/mathmatics/README.md)
   * [Trailing Zeros 2 \(E\)](other/mathmatics/trailing-zeros-2-e.md)
   * [Fizz Buzz 9 \(E\)](other/mathmatics/fizz-buzz-9-e.md)
+  * [Fast Power 140 \(M\)](other/mathmatics/fast-power-140-m.md)
   * [Reverse Integer 413 \(E\)](other/mathmatics/reverse-integer-413-e.md)
   * [Greatest Common Divisor 845 \(E\)](other/mathmatics/greatest-common-divisor-845-e.md)
 * [Binary](other/binary/README.md)
