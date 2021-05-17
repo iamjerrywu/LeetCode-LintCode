@@ -66,6 +66,7 @@
   * [Basuc Calculator II 980 \(M\)](data_structure/stack/basuc-cakcykatir-ii-980-m.md)
 * [Queue](data_structure/s4.-stack-and-queue/README.md)
   * [Implement Queue by Linked List 492 \(E\)](data_structure/s4.-stack-and-queue/457.-implement-queue-by-linked-list.md)
+  * [Implement Queue by Interface 546 \(E\)](data_structure/s4.-stack-and-queue/implement-queue-by-interface-546-e.md)
   * [Deque](data_structure/s4.-stack-and-queue/deque.md)
 * [Hash](data_structure/hash/README.md)
   * [Implementation](data_structure/hash/implementation/README.md)
