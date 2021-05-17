@@ -103,6 +103,7 @@
     * [Minimum Depth of Binary Tree 155 \(E\)](data_structure/tree/binary_tree/minimum-depth-of-binary-tree-155-e.md)
     * [Invert Binary Tree 175 \(E\)](data_structure/tree/binary_tree/175.-invert-binary-tree-e.md)
     * [Binary Tree Path Sum 376 \(E\)](data_structure/tree/binary_tree/binary-tree-path-sum-376-e.md)
+    * [Binary Tree Leaf Sum 481 \(E\)](data_structure/tree/binary_tree/binary-tree-leaf-sum-481-e.md)
     * [Binary Tree Level Sum 482 \(E\)](data_structure/tree/binary_tree/binary-tree-level-sum-482-e.md)
     * [Flatten Binary Tree to Linked List 453 \(E\)](data_structure/tree/binary_tree/flatten-binary-tree-to-linked-list.md)
     * [Binary Tree Paths 480 \(E\)](data_structure/tree/binary_tree/480.-binary-tree-paths-e.md)
