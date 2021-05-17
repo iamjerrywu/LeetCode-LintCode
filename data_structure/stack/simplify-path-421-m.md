@@ -40,7 +40,35 @@ Explanation: "/" has no parent directory, so "/../" equals "/".
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param path: the original path
+    @return: the simplified path
+    """
+    def simplifyPath(self, path):
+        # write your code here
+        
+        #use list as stack
+        stack = []
+        # split the path based on '/', and return list (array)
+        arr = path.split('/')
+        
+        for s in arr:
+            #if empty s or '.', do nothing
+            if s == '.' or s == '':
+                continue
+            #if '..', should back to previous folder
+            if s == '..':
+                if stack:
+                    stack.pop()
+                continue
+            stack.append(s)
+        if not stack:
+            return '/'
+        answer = ''
+        while stack:
+            answer = '/' + stack.pop() + answer
+        return answer
 ```
 {% endtab %}
 {% endtabs %}
