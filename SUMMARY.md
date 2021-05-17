@@ -63,6 +63,7 @@
   * [Valid Parenthese 423 \(E\)](data_structure/stack/valid-parenthese-423-e.md)
   * [Binary Search Tree Iterator 86 \(H\)](data_structure/stack/86.-binary-search-tree-iterator-h.md)
   * [Min Stack 12 \(M\)](data_structure/stack/12.-min-stack.md)
+  * [Simplify Path 421 \(M\)](data_structure/stack/simplify-path-421-m.md)
   * [Decode String 575 \(M\)](data_structure/stack/decode-string-575-m.md)
   * [Max Stack 859 \(H\)](data_structure/stack/859-max-stack-h.md)
   * [Basic Calculator 978 \(M\)](data_structure/stack/basic-calculator-978-m.md)
