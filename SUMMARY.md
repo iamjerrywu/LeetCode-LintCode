@@ -197,6 +197,7 @@
     * [Merge Intervals 156 \(E\)](algorithm/sorting/intersection/merge-intervals-156-e.md)
     * [Insertion Sort List 173 \(E\)](algorithm/sorting/intersection/insertion-sort-list-173-e.md)
     * [Meeting Rooms 920 \(E\)](algorithm/sorting/intersection/meeting-rooms-920-e.md)
+    * [Meeting Rooms II 919 \(M\)](algorithm/sorting/intersection/meeting-rooms-ii-919-m.md)
     * [Intersection of Two Arrays  547\(E\)](algorithm/sorting/intersection/547.-intersection-of-two-arrays-e.md)
     * [Intersection of Two Arrays II 548 \(E\)](algorithm/sorting/intersection/548.-intersection-of-two-arrays-ii-e.md)
     * [Intersection of Arrays 793 \(M\)](algorithm/sorting/intersection/793.-intersection-of-arrays-m.md)
