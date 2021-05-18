@@ -24,7 +24,7 @@ Explanation:
 Only need one meeting room
 ```
 
-## Solution 
+## Solution - Sweep Line
 
 ### Code
 
