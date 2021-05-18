@@ -104,5 +104,32 @@ Two pass:
 * 2nd traversal: Eliminate all invalid '\('
   * Only '\)\(' is eligible
 
+### Code
 
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    def minRemoveToMakeValid(self, s: str) -> str:
+        s = self.delete_invalid_closing(s, '(', ')')
+        s = self.delete_invalid_closing(s[::-1], ')', '(')
+        return s[::-1]
+    
+    def delete_invalid_closing(self, s, open_symbol, close_symbol):
+        sb = []
+        balance = 0
+        for c in s:
+            if c == open_symbol:
+                balance+=1
+            if c == close_symbol:
+                if balance == 0:
+                    continue
+                balance-=1
+            sb.append(c)
+        return ''.join(sb) 
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
 
