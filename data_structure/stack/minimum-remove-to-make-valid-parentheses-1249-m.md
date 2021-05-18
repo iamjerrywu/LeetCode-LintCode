@@ -49,20 +49,41 @@ Output: "a(b(c)d)"
 * `1 <= s.length <= 10^5`
 * `s[i]` is one of  `'('` , `')'` and lowercase English letters`.`
 
-## Solution 
+## Solution - Stack / String Builder
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    def minRemoveToMakeValid(self, s: str) -> str:
+        stack = []
+        id_stack = []
+        for i, c in enumerate(s):
+            if c == '(':
+                stack.append(c)
+                id_stack.append(i)
+            elif c == ')' and stack:
+                stack.pop()
+                id_stack.pop()
+            elif c == ')' and not stack:
+                id_stack.append(i)   
+        
+        s_list = list(s)
+        # remove the id
+        while id_stack:
+            del s_list[id_stack.pop()]
+        return ''.join(s_list)
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+  * Traverse String O\(n\)
+  * Traver id\_stack O\(i\)
+    * i: those id that need to be removed 
+* **Space Complexity: O\(n\)**
 
