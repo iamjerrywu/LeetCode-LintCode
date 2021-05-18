@@ -60,6 +60,7 @@
   * [Remove Nth Node From End of List 174 \(E\)](data_structure/linked_list/remove-nth-node-from-end-of-list-174-e.md)
   * [Delete Node in a LinkedList 372 \(E\)](data_structure/linked_list/delete-node-in-a-linkedlist-372-e.md)
   * [Insert Node in Sorted Linked List 219 \(E\)](data_structure/linked_list/insert-node-in-sorted-linked-list-219-e.md)
+  * [Insert into a Sorted Circular Linked List](data_structure/linked_list/insert-into-a-sorted-circular-linked-list.md)
   * [Swap Nodes in Pairs 451 \(E\)](data_structure/linked_list/swap-nodes-in-pairs-451-e.md)
   * [Remove Linked List Elements 452 \(E\)](data_structure/linked_list/remove-linked-list-elements-452-e.md)
   * [Swap Two Nodes in LinkedList 511 \(M\)](data_structure/linked_list/swap-two-nodes-in-linkedlist-511-m.md)
