@@ -51,6 +51,10 @@ Output: "a(b(c)d)"
 
 ## Solution - Stack / String Builder
 
+Stack store '\(', id\_stack stores those need to be removed \(either the '\(' or '\)'\)
+
+If '\(' already in there, then it can compensate the latest '\)'
+
 ### Code
 
 {% tabs %}
