@@ -2,6 +2,8 @@
 
 ## Problem
 
+[https://www.lintcode.com/problem/958/](https://www.lintcode.com/problem/958/)
+
 Description
 
 There is a data stream coming in, one lowercase letter at a time. Can the **arrangement** of the current data stream form palindrome string？
