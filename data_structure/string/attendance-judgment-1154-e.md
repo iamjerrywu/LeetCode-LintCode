@@ -2,6 +2,8 @@
 
 ## Problem
 
+[https://www.lintcode.com/problem/1154/](https://www.lintcode.com/problem/1154/)
+
 Given A string representing a student's attendance, 'A' stands for attendance, 'D' for default, and 'L' for lateness. If the student is default for two and more times or he is late for three and more consecutive times, he should be punished. Please judge whether the student should be punished or not and return a Boolean type.
 
 The string contains only 'A ',' D' and 'L' three types uppercase letters.  
