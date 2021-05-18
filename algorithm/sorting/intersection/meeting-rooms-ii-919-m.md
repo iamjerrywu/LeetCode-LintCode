@@ -68,3 +68,22 @@ class Solution:
   * Sort: O\(nlogn\)
 * **Space Complexity: O\(n\)**
 
+
+
+## Solution - Prefix Sum
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
