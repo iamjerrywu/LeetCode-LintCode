@@ -31,7 +31,32 @@ Only need one meeting room
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+Definition of Interval.
+class Interval(object):
+    def __init__(self, start, end):
+        self.start = start
+        self.end = end
+"""
 
+class Solution:
+    """
+    @param intervals: an array of meeting time intervals
+    @return: the minimum number of conference rooms required
+    """
+    def minMeetingRooms(self, intervals):
+        # Write your code here
+        time_table = []
+        for interval in intervals:
+            time_table.append((interval.start, 1))
+            time_table.append((interval.end, -1))
+        
+        time_table.sort(key = lambda n : n[0])
+        cnt, max_cnt = 0, 0
+        for time in time_table:
+            cnt+=time[1]
+            max_cnt = max(max_cnt, cnt)
+        return max_cnt
 ```
 {% endtab %}
 {% endtabs %}
