@@ -48,43 +48,7 @@ Output: [1,0]
 {% tabs %}
 {% tab title="python" %}
 ```python
-"""
-# Definition for a Node.
-class Node:
-    def __init__(self, val=None, next=None):
-        self.val = val
-        self.next = next
-"""
 
-class Solution:
-    def insert(self, head: 'Node', insertVal: int) -> 'Node':
-        if not head:
-            head = Node(insertVal)
-            head.next = head
-            return head
-        
-        cur = head
-        
-        while True:
-            if cur.val <= insertVal <= cur.next.val:
-                break
-            
-            # last element 
-            if cur.val > cur.next.val:
-                if cur.val <= insertVal >= cur.next.val:
-                    break
-                elif cur.val >= insertVal <= cur.next.val:
-                    break
-            cur = cur.next
-            # only one element
-            if cur == head:
-                break
-        
-        new_node = Node(insertVal)
-        nxt = cur.next
-        cur.next = new_node
-        new_node.next = nxt
-        return head   
 ```
 {% endtab %}
 {% endtabs %}
