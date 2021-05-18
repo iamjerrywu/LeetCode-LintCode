@@ -64,6 +64,7 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity: O\(nlogn\)**
+  * n: the length of the intervals 
   * Traverse: O\(n\)
   * Sort: O\(nlogn\)
 * **Space Complexity: O\(n\)**
