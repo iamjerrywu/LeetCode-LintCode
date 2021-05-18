@@ -94,5 +94,15 @@ class Solution:
   * id\_stack: worst case O\(n\)
   * list: O\(n\)
 
-d
+## Solution - Balance Calculating 
+
+Two pass: 
+
+* 1st traversal: Eliminate all invalid '\)' 
+  * Only '\(\)' is eligible
+* then reverse string
+* 2nd traversal: Eliminate all invalid '\('
+  * Only '\)\(' is eligible
+
+
 
