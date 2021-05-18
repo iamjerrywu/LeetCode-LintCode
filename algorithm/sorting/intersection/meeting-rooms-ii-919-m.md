@@ -63,6 +63,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(nlogn\)**
+  * Traverse: O\(n\)
+  * Sort: O\(nlogn\)
+* **Space Complexity: O\(n\)**
 
