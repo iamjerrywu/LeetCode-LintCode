@@ -90,4 +90,7 @@ class Solution:
   * Traver id\_stack O\(i\)
     * i: those id that need to be removed 
 * **Space Complexity: O\(n\)**
+  * Stack: worst case O\(n\)
+  * id\_stack: worst case O\(n\)
+  * list: O\(n\)
 
