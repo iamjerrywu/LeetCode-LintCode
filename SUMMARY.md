@@ -246,6 +246,7 @@
     * [Substring With At Least K Distinct Characters 1375 \(M\)](algorithm/two_pointer/same-direction/substring-with-at-least-k-distinct-characters-1375-m.md)
     * [Interval Statistics 1667 \(M\)](algorithm/two_pointer/same-direction/interval-statistics-1667-m.md)
     * [Grumpy Bookstore Owner 1849 \(M\)](algorithm/two_pointer/same-direction/grumpy-bookstore-owner-1849-m.md)
+    * [Pick Apples 1850 \(M\)](algorithm/two_pointer/same-direction/pick-apples-1850-m.md)
     * [1870. Number of Substrings with All Zeros \(M\)](algorithm/two_pointer/same-direction/1870.-number-of-substrings-with-all-zeros.md)
 * [Binary Search](algorithm/binary_search/README.md)
   * [Classical](algorithm/binary_search/classical/README.md)
