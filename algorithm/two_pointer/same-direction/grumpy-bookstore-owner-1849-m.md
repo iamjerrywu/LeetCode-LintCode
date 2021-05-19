@@ -50,11 +50,14 @@ class Solution:
         # write your code here
         n = len(customers)
         sum_val = 0
+        # init sum_val (X: 0 ~ X - 1)
         for i in range(n):
             if i < X:
                 sum_val+=customers[i]
             else:
                 sum_val += (1 - grumpy[i]) * customers[i]
+        
+        # traverse the window 
         max_val = 0
         left, right = 0, X
         while right < n:
