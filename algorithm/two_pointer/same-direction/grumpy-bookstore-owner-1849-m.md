@@ -32,20 +32,48 @@ The bookstore owner keeps themselves not grumpy for the last 3 days.
 The maximum number of customers that can be satisfied = 1 + 1 + 1 + 1 + 7 + 5 = 16.
 ```
 
-## Solution 
+## Solution - Sliding Window
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param customers: the number of customers
+    @param grumpy: the owner's temper every day
+    @param X: X days
+    @return: calc the max satisfied customers
+    """
+    def maxSatisfied(self, customers, grumpy, X):
+        # write your code here
+        n = len(customers)
+        sum_val = 0
+        for i in range(n):
+            if i < X:
+                sum_val+=customers[i]
+            else:
+                sum_val += (1 - grumpy[i]) * customers[i]
+        max_val = 0
+        left, right = 0, X
+        while right < n:
+            if grumpy[right] == 1:
+                sum_val+=customers[right]
+            if grumpy[left] == 1:
+                sum_val-=customers[left]
 
+            max_val = max(max_val, sum_val)
+            right+=1
+            left+=1
+
+        return max_val
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
