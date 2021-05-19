@@ -40,6 +40,8 @@ beacause it is not possible for Alice and Bob to choose two disjoint intervals.
 
 ## Solution 
 
+![](../../../.gitbook/assets/screen-shot-2021-05-19-at-4.31.11-pm.png)
+
 ### Code
 
 {% tabs %}
