@@ -61,8 +61,6 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
-
 ## Solution - DP
 
 ### Code
