@@ -30,7 +30,7 @@ Output: 0
 Explanation: You can do nothing and get nothing.
 ```
 
-## Solution 
+## Solution - Greedy 
 
 ### Code
 
@@ -58,7 +58,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(n\)**
 * **Space Complexity:**
 
 ## Solution - DP
