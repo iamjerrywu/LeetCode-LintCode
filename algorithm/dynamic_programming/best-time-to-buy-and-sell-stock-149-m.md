@@ -37,7 +37,21 @@ Explanation: You can do nothing and get nothing.
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param prices: Given an integer array
+    @return: Maximum profit
+    """
+    def maxProfit(self, prices):
+        # write your code here
+        cost = float('inf')
+        start, end = 0, len(prices)
+        profit = float('-inf')
+        while start < end:
+            cost = min(cost, prices[start])
+            profit = max(profit, prices[start] - cost)
+            start+=1
+        return profit
 ```
 {% endtab %}
 {% endtabs %}
