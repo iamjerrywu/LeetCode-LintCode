@@ -47,33 +47,49 @@ beacause it is not possible for Alice and Bob to choose two disjoint intervals.
 ```python
 class Solution:
     """
-    @param customers: the number of customers
-    @param grumpy: the owner's temper every day
-    @param X: X days
-    @return: calc the max satisfied customers
+    @param A: a list of integer
+    @param K: a integer
+    @param L: a integer
+    @return: return the maximum number of apples that they can collect.
     """
-    def maxSatisfied(self, customers, grumpy, X):
+    def PickApples(self, A, K, L):
         # write your code here
-        n = len(customers)
-        sum_val = 0
+        n = len(A)
+        max_apples = float('-inf')
         for i in range(n):
-            if i < X:
-                sum_val+=customers[i]
-            else:
-                sum_val += (1 - grumpy[i]) * customers[i]
-        max_val = 0
-        left, right = 0, X
-        while right < n:
-            if grumpy[right] == 1:
-                sum_val+=customers[right]
-            if grumpy[left] == 1:
-                sum_val-=customers[left]
+            left_max_l = self.find_max(A, L, 0, i)
+            right_max_l = self.find_max(A, L, i, n)
+            left_max_k = self.find_max(A, K, 0, i)
+            right_max_k = self.find_max(A, K, i, n)
 
-            max_val = max(max_val, sum_val)
-            right+=1
+            if left_max_l != -1 and right_max_k != -1:
+                max_apples = max(max_apples, left_max_l + right_max_k)
+            if left_max_k != -1 and right_max_l != -1:
+                max_apples = max(max_apples, left_max_k + right_max_l)
+        if max_apples == float('-inf'):
+            return -1
+        return max_apples
+
+    def find_max(self, A, k, start, end):
+        if k > end - start:
+            return -1
+
+        apples, max_apples = 0, 0
+        for i in range(start, start + k):
+            apples += A[i]
+        max_apples = apples
+
+        left, right = start, start + k
+        while right < end:
+            apples+=A[right]
+            apples-=A[left]
+            max_apples = max(max_apples, apples)
+
             left+=1
+            right+=1
+        return max_apples    
+    
 
-        return max_val
 ```
 {% endtab %}
 {% endtabs %}
