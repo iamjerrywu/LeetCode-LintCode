@@ -117,6 +117,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n + m \* logn\)**
+  * n: total nodes
+  * m: edges amount
+* **Space Complexity: O\(n\)**
 
