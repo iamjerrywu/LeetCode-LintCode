@@ -75,7 +75,7 @@ while queue:
     now = queue.popleft()
     
     for next_point in self.find_next(now):
-        if not self.is_valid(now):
+        if not self.is_valid(next_point):
             continue
         queue.append(next_point)
         visited.add(next_point)
@@ -101,6 +101,58 @@ while (!queue.isEmpty()) {
         
         queue.offer(next_point);
         visited.add(next_point);
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### Template \(3\) - Level Order BFS
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+queue = collections.deque()
+visited = set()
+
+# init 
+queue.append(0)
+visited.add(0)
+
+while queue:
+    # len(queue)
+    for i in range(len(queue)):
+        now = queue.popleft()
+        
+        for next_point in self.find_next(now):
+            if not self.is_valid(next_point):
+                continue
+            
+            queue.append(next_point)
+            visited.add(next_point)
+    
+```
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+Queue<Integer> queue = new LinkedList<>();
+HashSet<Integer> visited = new HashSet<>();
+
+queue.offer(0)
+visited.add(0);
+
+while (!queue.isEmpty()) {
+    int queueSize = queue.size();
+    for (int i = 0; i < queueSize; i++ ) {
+        int now = queue.poll();
+        for (int next_point : finsNext(now)) {
+            if !isValid(next_point) {
+                continue;
+            }
+            queue.offer(next_point)
+            visited.add(next_point)
+        }
     }
 }
 ```
