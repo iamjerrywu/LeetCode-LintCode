@@ -72,6 +72,10 @@ Notes mainly comprises two parts:
   * Might be O\(logn\), Binary Search
   * Might be O\(sqrt\(n\)\), Factorization
 
+## Top 75 Questions
+
+[https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
+
 ## Unfinished Chapter
 
 ### Algo\_2021
