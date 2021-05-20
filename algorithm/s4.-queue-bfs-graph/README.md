@@ -31,7 +31,7 @@ Application domain:
 * DP: if graph can be stratified \(path is directional and no loop\)
 * DFS: If graph cannot be stratified
 
-### Template
+### Template \(1\)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -55,6 +55,54 @@ while queue:
             continue
         distance[neighbor] = distance[node] + 1
         queue.append(neighbor)
+```
+{% endtab %}
+{% endtabs %}
+
+### Template \(2\)
+
+{% tabs %}
+{% tab title="python" %}
+```python
+queue = collections.deque()
+visited = set()
+
+# init
+queue.append(0)
+visited.add(0)
+
+while queue:
+    now = queue.popleft()
+    
+    for next_point in self.find_next(now):
+        if not self.is_valid(now):
+            continue
+        queue.append(next_point)
+        visited.add(next_point)
+```
+{% endtab %}
+
+{% tab title="java" %}
+```java
+Queue<Integer> queue = new LinkedList<>();
+HashSet<Integer> visited = new HashSet<>();
+
+// init queue
+queue.offer(0);
+visited.add(0);
+
+while (!queue.isEmpty()) {
+    int now = queue.poll();
+    
+    for (int next_point : findNext(now)) {
+        if !isValid(next_point) {
+            continue;
+        }
+        
+        queue.offer(next_point);
+        visited.add(next_point);
+    }
+}
 ```
 {% endtab %}
 {% endtabs %}
