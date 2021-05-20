@@ -88,10 +88,10 @@ class Solution:
     def countComponents(self, n: int, edges: List[List[int]]) -> int:
         ids = []
         # initially, point all node to themselves
-        for i in range(n):
+        for i in range(n): # O(n)
             ids.append(i)
         
-        for edge in edges:
+        for edge in edges: #O(m)
             # merge the edges, and set to only one parent
             self.union(edge[0], edge[1], ids)
         sets = set()
@@ -106,7 +106,7 @@ class Solution:
         ids[parent1] = parent2
         
     
-    def find(self, edge, ids):
+    def find(self, edge, ids): # O(logn)
         if ids[edge] != edge:
             # path compression
             ids[edge] = self.find(ids[edge], ids)
