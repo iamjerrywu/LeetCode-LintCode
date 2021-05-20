@@ -121,7 +121,8 @@ queue.append(0)
 visited.add(0)
 
 while queue:
-    # len(queue)
+    # len(queue) would be init in the first round of the for loop
+    # rest of the loop use the same size (exacly the level size we want)
     for i in range(len(queue)):
         now = queue.popleft()
         # take first element
@@ -158,6 +159,49 @@ while (!queue.isEmpty()) {
         }
     }
 }
+```
+{% endtab %}
+{% endtabs %}
+
+### Template\(4\) - Dict BFS
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+queue = collections.deque()
+distance = {}
+
+# init 
+queue.append(0)
+distance[0] = 0
+
+while queue:
+    now = queue.popleft()
+    for next_point in self.find_next(now):
+        if not self.is_valid(now):
+            continue
+        queue.append(next_point)
+        distance[next_point] = distance[now] + 1
+        
+```
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+Queue<Integer> queue = new LinkedList<>();
+HashMap<Integer, Integer> distance = new HashMap<>();
+
+queue.offer(0);
+distance.put(0, 0);
+
+while !(queue.isEmpty()) {
+    int now = queue.poll();
+    for (int next_point : findNext(now)) {
+        if !isValid(next_point) {
+            continue;
+        }
+        queue.offer(next_point);
+        distance.put(next_point, distance.get(now) + 1);
 ```
 {% endtab %}
 {% endtabs %}

@@ -45,7 +45,61 @@ Output:
 {% tabs %}
 {% tab title="python" %}
 ```python
+class MaxStack:
+    
+    def __init__(self):
+        # do intialization if necessary
+        self.stack = []
+        self.max_stack = []
+    
+    """
+    @param: number: An integer
+    @return: nothing
+    """
+    def push(self, x):
+        # write your code here
+        self.stack.append(x)
+        if not self.max_stack or self.max_stack[-1] <= x:
+            self.max_stack.append(x)
+ 
 
+    """
+    @return: An integer
+    """
+    def pop(self):
+        # write your code here
+        if self.stack[-1] == self.max_stack[-1]:
+            self.max_stack.pop()
+        return self.stack.pop()
+
+    """
+    @return: An integer
+    """
+    def top(self):
+        # write your code here
+        return self.stack[-1]
+
+    """
+    @return: An integer
+    """
+    def peekMax(self):
+        # write your code here
+        return self.max_stack[-1]
+
+    """
+    @return: An integer
+    """
+    def popMax(self):
+        # write your code here
+        max_val = self.peekMax()
+        tmp = []
+        while self.top() != max_val:
+            tmp.append(self.stack.pop())
+        self.stack.pop()
+        self.max_stack.pop()
+        while tmp:
+            self.push(tmp.pop())
+        return max_val
 ```
 {% endtab %}
 

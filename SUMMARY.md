@@ -85,7 +85,6 @@
   * [Implement Queue by Linked List 492 \(E\)](data_structure/s4.-stack-and-queue/457.-implement-queue-by-linked-list.md)
   * [Implement Queue by Interface 546 \(E\)](data_structure/s4.-stack-and-queue/implement-queue-by-interface-546-e.md)
   * [Zigzag Iterator II 541 \(M\)](data_structure/s4.-stack-and-queue/zigzag-iterator-ii-541-m.md)
-  * [Deque](data_structure/s4.-stack-and-queue/deque.md)
 * [Hash](data_structure/hash/README.md)
   * [Implementation](data_structure/hash/implementation/README.md)
     * [Hash Function 128 \(E\)](data_structure/hash/implementation/untitled-1.md)
@@ -358,6 +357,7 @@
 * [Greedy](algorithm/greedy/README.md)
   * [Gas Station 187 \(M\)](algorithm/greedy/gas-station-187-m.md)
   * [Smallest Subset 761 \(M\)](algorithm/greedy/smallest-subset-761-m.md)
+  * [Task Scheduler 945 \(M\)](algorithm/greedy/task-scheduler-945-m.md)
   * [Interval Minimum Coverage 1668 \(M\)](algorithm/greedy/interval-minimum-coverage-1668-m.md)
   * [Minimum Number of Swaps to Make the Binary String Alternating \(LeetCode 1864\) \(M\)](algorithm/greedy/untitled.md)
 
