@@ -75,20 +75,23 @@ class Solution:
     """
     def maxProfit(self, prices):
         # write your code here
-        cost = float('inf')
-        start, end = 0, len(prices)
-        profit = float('-inf')
-        while start < end:
-            cost = min(cost, prices[start])
-            profit = max(profit, prices[start] - cost)
-            start+=1
-        return profit
+        n = len(prices)
+    
+        # dp state:
+        # dp[i] = the maximum profit can get if sell stock on ith date
+        dp = [0] * n
+        ans = 0
+        for i in range(1, n):
+            dp[i] = max(dp[i - 1] + prices[i] - prices[i - 1], prices[i] - prices[i - 1])
+            ans = max(ans, dp[i])
+        return ans
+             
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(n\)**
 * **Space Complexity:**
 
