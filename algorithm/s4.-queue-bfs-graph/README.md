@@ -59,7 +59,7 @@ while queue:
 {% endtab %}
 {% endtabs %}
 
-### Template \(2\)
+### Template \(2\) - Basic BFS
 
 {% tabs %}
 {% tab title="python" %}
