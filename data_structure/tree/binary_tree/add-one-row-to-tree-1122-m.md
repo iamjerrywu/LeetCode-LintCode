@@ -60,7 +60,38 @@ Output:
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
 
+class Solution:
+    """
+    @param root: the root of binary tree
+    @param v: a integer
+    @param d: a integer
+    @return: return a TreeNode
+    """
+    def addOneRow(self, root, v, d):
+        # write your code here
+        return self.dfs(root, v, d, True)
+    
+    def dfs(self, root, v, d, is_left):
+        if d == 1:
+            node = TreeNode(v)
+            if is_left:
+                node.left = root
+            else:
+                node.right = root
+            return node
+        if not root:
+            return
+        root.left = self.dfs(root.left, v, d - 1, True)
+        root.right = self.dfs(root.right, v, d- 1, False)
+        return root
 ```
 {% endtab %}
 
