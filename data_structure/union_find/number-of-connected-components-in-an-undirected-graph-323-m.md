@@ -75,6 +75,10 @@ class Solution:
 
 ## Solution - Union Find
 
+First init an array of n, and each value stores that index's parent \(initially every parent is itself\), later traverse the edges, and union the edges pairs. Like \[0,1\], then set both of their parents to 0
+
+
+
 ### Code
 
 {% tabs %}
