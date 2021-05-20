@@ -148,6 +148,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+  * n: the totals amount of tasks need to be executed
+* **Space Complexity: O\(1\)**
 
