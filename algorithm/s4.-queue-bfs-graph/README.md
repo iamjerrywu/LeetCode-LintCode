@@ -72,6 +72,7 @@ queue.append(0)
 visited.add(0)
 
 while queue:
+    # take 1st element 
     now = queue.popleft()
     
     for next_point in self.find_next(now):
@@ -123,7 +124,7 @@ while queue:
     # len(queue)
     for i in range(len(queue)):
         now = queue.popleft()
-        
+        # take first element
         for next_point in self.find_next(now):
             if not self.is_valid(next_point):
                 continue
@@ -144,6 +145,8 @@ visited.add(0);
 
 while (!queue.isEmpty()) {
     int queueSize = queue.size();
+    // for Java since everytime it execute for loop, will look on queueSize
+    // so the queueSize would change dynamically, but we only want that level size
     for (int i = 0; i < queueSize; i++ ) {
         int now = queue.poll();
         for (int next_point : finsNext(now)) {
