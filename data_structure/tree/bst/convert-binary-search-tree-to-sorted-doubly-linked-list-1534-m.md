@@ -54,7 +54,50 @@ Output: "left:1->3->2  right:1->2->3"
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
 
+class Solution:
+    """
+    @param root: root of a tree
+    @return: head node of a doubly linked list
+    """
+    
+    def inorder(self, node):
+        if not node:
+            return 
+        self.inorder(node.left)
+        
+        if not self.head:
+            self.head = node
+        
+        if self.curr:
+            self.curr.right = node
+            node.left = self.curr
+        
+        self.curr = node
+        
+        self.inorder(node.right)
+    
+    def treeToDoublyList(self, root):
+        # Write your code here.
+        if not root:
+            return None
+        
+        self.head = None
+        self.curr = None
+        
+        self.inorder(root)
+        
+        self.head.left = self.curr
+        self.curr.right = self.head
+        
+        return self.head
 ```
 {% endtab %}
 {% endtabs %}
