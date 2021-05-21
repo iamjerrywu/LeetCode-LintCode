@@ -32,7 +32,7 @@ Explanation:
 1
 ```
 
-## Solution 
+## Solution - DFS
 
 ### Code
 
