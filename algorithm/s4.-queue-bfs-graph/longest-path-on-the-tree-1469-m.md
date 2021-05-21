@@ -33,6 +33,10 @@ Explanation:
 
 ## Solution - DFS
 
+{% hint style="danger" %}
+Maximum Recursion Depth Exceeded 
+{% endhint %}
+
 ### Code
 
 {% tabs %}
