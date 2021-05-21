@@ -127,7 +127,60 @@ Find the 2nd longest path
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param n: The number of nodes
+    @param starts: One point of the edge
+    @param ends: Another point of the edge
+    @param lens: The length of the edge
+    @return: Return the length of longest path on the tree.
+    """
+    def longestPath(self, n, starts, ends, lens):
+        # Write your code here
+        
+        # construct graph
+        neighbors = {}
+        for i in range(n - 1):
+            start = starts[i]
+            end = ends[i]
+            dist = lens[i]
 
+            if start not in neighbors:
+                neighbors[start] = []
+            if end not in neighbors:
+                neighbors[end] = []
+            
+            neighbors[start].append((end, dist))
+            neighbors[end].append((start, dist))
+        
+        # return: the farthest point to root, and the distance
+        # first time to find the farthest point, as start for next round
+        start, _ = self.bfs(0, neighbors)
+        # second time to find the distance
+        end, answer = self.bfs(start, neighbors)
+        return answer 
+    
+    def bfs(self, root, neighbors):
+        queue = collections.deque()
+        distance_to_root = {}
+
+        queue.append(root)
+        distance_to_root[root] = 0
+
+        max_distance, max_node = 0, -1
+        while queue:
+            now = queue.popleft()
+
+            if max_distance < distance_to_root[now]:
+                max_distance = distance_to_root[now]
+                max_node = now
+
+            for neighbor, edge_length in neighbors[now]:
+                if neighbor in distance_to_root:
+                    continue
+                queue.append(neighbor)
+                distance_to_root[neighbor] = distance_to_root[now] + edge_length
+        return max_node, max_distance
 ```
 {% endtab %}
 {% endtabs %}
