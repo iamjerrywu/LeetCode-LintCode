@@ -68,7 +68,9 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(N + E\)**
+  * Graph: O\(n\)
+  * Edges: O\(E\)
 * **Space Complexity:**
 
 \*\*\*\*
