@@ -257,7 +257,7 @@
   * [Two Sum - Difference equals to target 610 \(M\)](algorithm/binary_search/610.-two-sum-difference-equals-to-target.md)
   * [Search a 2D Matrix 28 \(E\)](algorithm/binary_search/28.-search-a-2d-matrix.md)
   * [Search a 2D Matrix II 38 \(M\)](algorithm/binary_search/38.-search-a-2d-matrix-ii-m.md)
-  * [Median of two Sorted Arrays 65 \(H\)](algorithm/binary_search/65.-median-of-two-sorted-arrays.md)
+  * [Median of Two Sorted Arrays 65 \(H\)](algorithm/binary_search/65.-median-of-two-sorted-arrays.md)
   * [Prime Factorization 235 \(E\)](algorithm/binary_search/235.-prime-factorization-e.md)
   * [Copy Books 437 \(M\)](algorithm/binary_search/437.-copy-books-m.md)
   * [Copy Books II 438 \(H\)](algorithm/binary_search/copy-books-ii-438-h.md)
