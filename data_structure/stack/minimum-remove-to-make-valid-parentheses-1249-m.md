@@ -74,11 +74,12 @@ class Solution:
             elif c == ')' and not stack:
                 id_stack.append(i)   
         
-        s_list = list(s)
-        # remove the id
-        while id_stack:
-            del s_list[id_stack.pop()]
-        return ''.join(s_list)
+        id_set = set(id_stack)
+        ans = ''
+        for i, c in enumerate(s):
+            if i not in id_set:
+                ans+=c
+        return ans
 ```
 {% endtab %}
 {% endtabs %}
@@ -132,4 +133,9 @@ class Solution:
 {% endtabs %}
 
 ### Complexity Analysis
+
+* **Time Complexity: O\(1\)**
+  * 
+* **Space Complexity: O\(1\)**
+  * 
 
