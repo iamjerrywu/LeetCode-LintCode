@@ -115,6 +115,13 @@ class Solution:
 2. 2nd BFS:
    1. From the start, find the end that is farthest to the start
 
+#### Follow-up: 
+
+Find the 2nd longest path
+
+* Longest Path: Start -&gt; End
+* 2nd Longest Path: Start - &gt; End' or Start' -&gt; End \(must be same in one of the ends\)
+
 ### Code
 
 {% tabs %}
