@@ -110,6 +110,11 @@ class Solution:
 
 ## Solution -BFS
 
+1. 1st BFS: 
+   1. Find the start point that the farthest to the root
+2. 2nd BFS:
+   1. From the start, find the end that is farthest to the start
+
 ### Code
 
 {% tabs %}
