@@ -78,7 +78,18 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+def minMeetingRooms(self, intervals):
+        # Write your code here
+        room = {}
+        for i in intervals:
+            room[i.start] = room.get(i.start, 0) + 1
+            room[i.end] = room.get(i.end, 0) - 1
+        ans = 0
+        tmp = 0
+        for i in sorted(room.keys()):
+            tmp = tmp + room[i]
+            ans = max(ans, tmp)
+        return ans
 ```
 {% endtab %}
 {% endtabs %}
