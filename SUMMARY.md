@@ -283,6 +283,7 @@
   * [Number of Provinces 547 \(M\)](algorithm/s4.-queue-bfs-graph/number-of-provinces-547-m.md)
   * [Zombie in Matrix 598 \(M\)](algorithm/s4.-queue-bfs-graph/zombie-in-matrix-598-m.md)
   * [Friend Circles 1179 \(M\)](algorithm/s4.-queue-bfs-graph/1179.-friend-circles.md)
+  * [Longest Path On The Tree 1469 \(M\)](algorithm/s4.-queue-bfs-graph/longest-path-on-the-tree-1469-m.md)
 * [DFS](algorithm/dfs/README.md)
   * [Subsets](algorithm/dfs/subsets/README.md)
     * [Subsets 17 \(M\)](algorithm/dfs/subsets/17.-subsets-m.md)
