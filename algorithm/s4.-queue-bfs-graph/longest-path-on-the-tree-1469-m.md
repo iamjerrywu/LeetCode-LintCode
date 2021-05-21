@@ -38,7 +38,61 @@ Explanation:
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param n: The number of nodes
+    @param starts: One point of the edge
+    @param ends: Another point of the edge
+    @param lens: The length of the edge
+    @return: Return the length of longest path on the tree.
+    """
+    def longestPath(self, n, starts, ends, lens):
+        # Write your code here
+        
+        # construct graph
+        neighbors = {}
+        for i in range(n - 1):
+            start = starts[i]
+            end = ends[i]
+            dist = lens[i]
 
+            if start not in neighbors:
+                neighbors[start] = []
+            if end not in neighbors:
+                neighbors[end] = []
+            
+            neighbors[start].append((end, dist))
+            neighbors[end].append((start, dist))
+        
+        # return maximum_chain, maximum_path
+        chain, path = self.dfs(0, -1, neighbors)
+        return path
+    
+    def dfs(self, root, parent, neighbors):
+        # would not have 'not root'
+        # since the all nodes construct in graph are existed
+        
+        max_chain = 0
+        max_path = 0
+
+        child_max_chain = 0
+        child_second_max_chain = 0
+
+        for neighbor, dist in neighbors[root]:
+            if neighbor == parent:
+                continue
+            
+            child_chain, child_path = self.dfs(neighbor, root, neighbors)
+            child_chain += dist
+
+            max_path = max(child_path, max_path)
+            max_chain = max(child_chain, max_chain)
+
+            _, child_second_max_chain, child_max_chain = sorted([child_max_chain, child_second_max_chain, child_chain])
+        
+        max_path = max(child_max_chain + child_second_max_chain, max_path)
+
+        return [max_chain, max_path]
 ```
 {% endtab %}
 {% endtabs %}
