@@ -31,7 +31,7 @@ Explanation:
 (1→0→2→4)the length of this path is`13`,as well as(4→2→0→1)。
 ```
 
-## Solution 
+## Solution - DFS
 
 ### Code
 
