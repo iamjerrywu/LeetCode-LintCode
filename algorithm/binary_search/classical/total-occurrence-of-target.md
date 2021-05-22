@@ -1,4 +1,4 @@
-# Total Occurrence of Target
+# Total Occurrence of Target 462 \(E\)
 
 ## Problem
 
@@ -33,7 +33,51 @@ Time complexity in O\(logn\)
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param A: A an integer array sorted in ascending order
+    @param target: An integer
+    @return: An integer
+    """
+    def totalOccurrence(self, A, target):
+        # write your code here
+        if not A:
+            return 0
+        
+        first, last = -1, -1
+        
+        start, end = 0, len(A) - 1
+        while start + 1 < end:
+            mid = (start + end)//2
+            if A[mid] < target:
+                start = mid
+            elif A[mid] > target:
+                end = mid
+            else:
+                end = mid
+        if A[start] == target:
+            first = start
+        elif A[end] == target:
+            first = end
+        
+        start, end = 0, len(A) - 1
+        while start + 1 < end:
+            mid = (start + end)//2
+            if A[mid] < target:
+                start = mid
+            elif A[mid] > target:
+                end = mid
+            else:
+                start = mid
+        if A[end] == target:
+            last = end
+        elif A[first] == target:
+            last = start
 
+        if first == -1 or last == -1:
+            return 0
+        else:
+            return last - first + 1
 ```
 {% endtab %}
 {% endtabs %}
