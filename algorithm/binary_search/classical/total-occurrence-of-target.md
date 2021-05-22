@@ -1,4 +1,4 @@
-# Total Occurrence of Target
+# Total Occurrence of Target 462 \(E\)
 
 ## Problem
 
