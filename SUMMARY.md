@@ -255,7 +255,7 @@
     * [First Position of Target 14 \(E\)](algorithm/binary_search/classical/14.-first-position-of-target.md)
     * [Last Position of Target 458 \(E\)](algorithm/binary_search/classical/458.-last-position-of-target.md)
     * [Search for a Range 61 \(M\)](algorithm/binary_search/classical/search-for-a-range-61-m.md)
-    * [Total Occurrence of Target 462 \(E\)](algorithm/binary_search/classical/total-occurrence-of-target.md)
+    * [Total Occurrence of Target](algorithm/binary_search/classical/total-occurrence-of-target.md)
     * [Find First and Last Position of Element in Sorted Array 1536 \(M\)](algorithm/binary_search/classical/1536.-find-first-and-last-position-of-element-in-sorted-array-m.md)
   * [Two Sum - Difference equals to target 610 \(M\)](algorithm/binary_search/610.-two-sum-difference-equals-to-target.md)
   * [Search a 2D Matrix 28 \(E\)](algorithm/binary_search/28.-search-a-2d-matrix.md)
