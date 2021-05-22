@@ -250,6 +250,7 @@
 * [Binary Search](algorithm/binary_search/README.md)
   * [Classical](algorithm/binary_search/classical/README.md)
     * [Search Insert Position 60 \(E\)](algorithm/binary_search/classical/search-insert-position-60-e.md)
+    * [First Bad Version 74 \(M\)](algorithm/binary_search/classical/first-bad-version-74-m.md)
     * [Classical Binary Search 457 \(E\)](algorithm/binary_search/classical/457.-classical-binary-search.md)
     * [First Position of Target 14 \(E\)](algorithm/binary_search/classical/14.-first-position-of-target.md)
     * [Last Position of Target 458 \(E\)](algorithm/binary_search/classical/458.-last-position-of-target.md)
