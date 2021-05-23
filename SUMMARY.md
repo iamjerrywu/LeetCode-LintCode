@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Lint/LeeCode notes](README.md)
-* [Contest Record](contest-record.md)
 * [Template](template-1.md)
 
 ## Data\_Structure
