@@ -275,7 +275,7 @@
   * [Find Peak Element 75 \(M\)](algorithm/binary_search/find-peak-element-75-m.md)
   * [Wood Cut 183 \(H\)](algorithm/binary_search/wood-cut-183-h.md)
   * [Smallest Rectangle Enclosing Black Pixels 600 \(H\)](algorithm/binary_search/600.-smallest-rectangle-enclosing-black-pixels.md)
-  * [Minimum Speed to Arrive on Time 1870 \(M\)](algorithm/binary_search/minimum-speed-to-arrive-on-time-1870-m.md)
+  * [Minimum Speed to Arrive on Time \(LeetCode1870\) \(M\)](algorithm/binary_search/minimum-speed-to-arrive-on-time-1870-m.md)
 * [BFS](algorithm/s4.-queue-bfs-graph/README.md)
   * [Topological Sorting](algorithm/s4.-queue-bfs-graph/topological-sorting/README.md)
     * [Alien Dictionary 892 \(H\)](algorithm/s4.-queue-bfs-graph/topological-sorting/alien-dictionary-892-h.md)

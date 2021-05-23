@@ -1,4 +1,4 @@
-# Minimum Speed to Arrive on Time 1870 \(M\)
+# Minimum Speed to Arrive on Time \(LeetCode1870\) \(M\)
 
 ## Problem
 
