@@ -2,6 +2,25 @@
 
 ## Problem
 
+mplement a method to perform basic string compression using the counts of repeated characters. For example, the string `aabcccccaaa` would become `a2b1c5a3`.
+
+If the "compressed" string would not become smaller than the original string, your method should return the original string.
+
+You can assume the string has only upper and lower case letters \(a-z\).Example
+
+**Example 1:**
+
+```text
+Input: str = "aabcccccaaa"Output: "a2b1c5a3"
+```
+
+**Example 2:**
+
+```text
+Input: str = "aabbcc"Output: "aabbcc"
+
+```
+
 ## Solution 
 
 ### Code
@@ -37,7 +56,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
+* **Time Complexity: O\(n\)**
 * **Space Complexity: O\(m\)**
   * m: the amount of inorder group of characters
   * Stack: string use m times
