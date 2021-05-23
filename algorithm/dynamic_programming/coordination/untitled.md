@@ -119,6 +119,14 @@ class Solution:
 
 
 
+## Solution - DP with Prefix Sum + Sliding Window
+
+dp\[i\]: records if we can jump to index i ct: records the number of points we can reach in s\[i-maxJ:i-minJump+1\]. if ct&gt;0 and s\[i\]=='0', we can reach index i. Initially, ct=1 because s\[0\]==0. The left boundary of s\[i-maxJ:i-minJump+1\] is always 0 until i&gt;maxJ.
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
 ```python
 class Solution:
     def canReach(self, s: str, minJump: int, maxJump: int) -> bool:
@@ -138,4 +146,13 @@ class Solution:
         return dp[n - 1]
                 
 ```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n\)**
+  * n: length of s
+  * m: maxJump - minJump
+* **Space Complexity: O\(2n\)**
 
