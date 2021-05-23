@@ -53,13 +53,27 @@ The segment of 1s is not longer, so return false.
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    def checkZeroOnes(self, s: str) -> bool:
+        max_one, max_zero = 0, 0
+        cnt = 0
+        for i in range(len(s)):
+            if i == 0 or s[i] == s[i - 1]:
+                cnt+=1
+            else:
+                cnt = 1
+            
+            if s[i] == '0':
+                max_zero = max(max_zero, cnt)
+            else:
+                max_one = max(max_one, cnt)
+        return max_one > max_zero
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
