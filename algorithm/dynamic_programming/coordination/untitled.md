@@ -1,9 +1,9 @@
-# Untitled
+# Jump Game VII 5765 \(M\)
 
 ```python
 class Solution:
     def canReach(self, s: str, minJump: int, maxJump: int) -> bool:
-        return self.dfs(0, s, minJump, maxJump)
+        return self.dfs(0, s, minJump, maxJump, set(0))
     
     def dfs(self, index, s, minJump, maxJump):
         if index < len(s):
@@ -14,7 +14,7 @@ class Solution:
         else:
             return 
         for inc in range(minJump, maxJump + 1):
-            if self.dfs(index + inc, s, minJump, maxJump):
+            if self.dfs(index + inc, s, minJump, maxJump, visited):
                 return True
         return False
 ```
@@ -38,6 +38,26 @@ class Solution:
             for j in range(start, i - minJump + 1):
                 if dp[j] == True and s[i] == '0':
                     dp[i] = True
+        return dp[n - 1]
+                
+```
+
+```python
+class Solution:
+    def canReach(self, s: str, minJump: int, maxJump: int) -> bool:
+        if not s:
+            return False
+        
+        n = len(s)
+        dp = [False] * n
+        dp[0] = True
+        cnt = 1
+        
+        for i in range(minJump, n):
+            if cnt and s[i] == '0':
+                dp[i] = True
+            cnt+=dp[i + 1 - minJump] - dp[i - maxJump] * (i >= maxJump)
+            
         return dp[n - 1]
                 
 ```

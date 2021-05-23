@@ -331,7 +331,7 @@
     * [Unique Paths 114 \(E\)](algorithm/dynamic_programming/coordination/114.-unique-paths-e.md)
     * [Unique Paths II 115 \(E\)](algorithm/dynamic_programming/coordination/115.-unique-paths-ii-e.md)
     * [Jump Game 116 \(M\)](algorithm/dynamic_programming/coordination/116.-jump-game-m.md)
-    * [Untitled](algorithm/dynamic_programming/coordination/untitled.md)
+    * [Jump Game VII 5765 \(M\)](algorithm/dynamic_programming/coordination/untitled.md)
     * [Knight Shortest Path II 630 \(M\)](algorithm/dynamic_programming/coordination/630.-knight-shortest-path-ii.md)
   * [Partition](algorithm/dynamic_programming/partition/README.md)
     * [Longest Increasing Subsequence 76 \(M\)](algorithm/dynamic_programming/partition/76.-longest-increasing-sequence-m.md)
