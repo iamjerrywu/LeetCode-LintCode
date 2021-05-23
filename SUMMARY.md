@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Lint/LeeCode notes](README.md)
+* [Contest Record](contest-record.md)
 * [Template](template-1.md)
 
 ## Data\_Structure
@@ -12,6 +13,7 @@
   * [Unique Characters 157 \(E\)](data_structure/string/unique-characters-157-e.md)
   * [Anagrams 171 \(M\)](data_structure/string/anagrams-171-m.md)
   * [Longest Common Prefix 78 \(M\)](data_structure/string/longest-common-prefix-78-m.md)
+  * [String Compression 213 \(E\)](data_structure/string/string-compression-213-e.md)
   * [Longest Palindrome 627 \(E\)](data_structure/string/longest-palindrome-627-e.md)
   * [Multiply Strings 656 \(M\)](data_structure/string/656.-multiple-strings.md)
   * [Group Anagrams 772 \(M\)](data_structure/string/group-anagrams-772-m.md)
