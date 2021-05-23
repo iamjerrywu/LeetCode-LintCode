@@ -2,8 +2,6 @@
 
 ## Problem
 
-
-
 You are given a **0-indexed** binary string `s` and two integers `minJump` and `maxJump`. In the beginning, you are standing at index `0`, which is equal to `'0'`. You can move from index `i` to index `j` if the following conditions are fulfilled:
 
 * `i + minJump <= j <= min(i + maxJump, s.length - 1)`, and
