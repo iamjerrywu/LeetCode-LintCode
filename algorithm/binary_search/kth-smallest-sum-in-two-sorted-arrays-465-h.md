@@ -91,7 +91,7 @@ class Solution:
 
 ## Solution - Greedy + Heap
 
-First put in the A\[0\] + B\[i\] \(i = 0 ~ len\(B\) - 1\) of element in to heap, then pop and put A\[i\] + B\[
+First put in the A\[0\] + B\[i\] \(i = 0 ~ len\(B\) - 1\) of element in to heap, then pop and put A\[i + 1\] + B\[b\_id\] for k times, then would reach the kth smallest sum of value on the heap top
 
 ### Code
 
@@ -109,9 +109,9 @@ class Solution:
     def kthSmallestSum(self, A, B, k):
         # write your code here
         heap = []
-        for i in range(len(B)):
+        for i in range(len(B)): #O(mlogm), m = len(BB)
             heapq.heappush(heap, [A[0] + B[i], 0, i])
-        while k > 1:
+        while k > 1: #O(klogm)
             k -= 1
             
             point = heapq.heappop(heap)
@@ -131,8 +131,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(\(m+n\)logmax\)**
-  * m: len\(A\), n: len\(B\)
-  * max: the max\(A, B\)
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O\(klogm\)**
+  * k times: O\(k\)
+  * Heap push, pop: O\(logm\), m = len\(B\)
+* **Space Complexity: O\(n\)**
 
