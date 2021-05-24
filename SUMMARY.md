@@ -148,6 +148,7 @@
     * [Find Leaves of Binary Tree 650 \(M\)](data_structure/tree/binary_tree/find-leaves-of-binary-tree-650-m.md)
     * [Binary Tree Right Side View 760 \(M\)](data_structure/tree/binary_tree/binary-tree-right-side-view-760-m.md)
     * [Equal Tree Partition 864 \(M\)](data_structure/tree/binary_tree/equal-tree-partition-864-m.md)
+    * [Cousins in Binary Tree \(LeetCode993\) \(E\)](data_structure/tree/binary_tree/cousins-in-binary-tree-leetcode993-e.md)
     * [Add One Row to Tree 1122 \(M\)](data_structure/tree/binary_tree/add-one-row-to-tree-1122-m.md)
     * [Construct String from Binary Tree 1137 \(E\)](data_structure/tree/binary_tree/construct-string-from-binary-tree-1137-e.md)
     * [Diameter of Binary Tree 1181 \(E\)](data_structure/tree/binary_tree/diameter-of-binary-tree-1181-e-1.md)
