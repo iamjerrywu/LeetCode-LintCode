@@ -29,7 +29,7 @@ Do it in either of the following time complexity:
 1. O\(k log min\(n, m, k\)\). where n is the size of A, and m is the size of B.
 2. O\( \(m + n\) log maxValue\). where maxValue is the max number in A and B.
 
-## Solution 
+## Solution - Binary Search + Two Pointer
 
 ### Code
 
