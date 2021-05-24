@@ -50,7 +50,7 @@ class Solution:
         m = len(B)
         left = A[0] + B[0] - 1
         right = A[n - 1] + B[m - 1] + 1
-        while left + 1 < right:
+        while left + 1 < right: # O(logmx)
             # count how many numbers that are smaller than or equal to k
             # if exceed, right = mid
             # if lower, left = mid
@@ -67,7 +67,7 @@ class Solution:
         cnt = 0
         start = 0
         end = m - 1
-        while start <= n -1:
+        while start <= n -1: #O(m + n)
             while end >= 0:
                 if A[start] + B[end] > mid:
                     end -=1
@@ -82,6 +82,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(\(m+n\)logmax\)**
+  * m: len\(A\), n: len\(B\)
+  * max: the max\(A, B\)
+* **Space Complexity: O\(1\)**
 
