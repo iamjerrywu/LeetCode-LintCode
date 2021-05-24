@@ -87,3 +87,50 @@ class Solution:
   * max: the max\(A, B\)
 * **Space Complexity: O\(1\)**
 
+\*\*\*\*
+
+## Solution - Greedy + Heap
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+import heapq
+class Solution:
+    """
+    @param A: an integer arrays sorted in ascending order
+    @param B: an integer arrays sorted in ascending order
+    @param k: An integer
+    @return: An integer
+    """
+    def kthSmallestSum(self, A, B, k):
+        # write your code here
+        heap = []
+        for i in range(len(B)):
+            heapq.heappush(heap, [A[0] + B[i], 0, i])
+        while k > 1:
+            k -= 1
+            
+            point = heapq.heappop(heap)
+            value = point[0]
+            a_id = point[1]
+            b_id = point[2]
+
+            if a_id == len(A) - 1:
+                continue
+            else:
+                new_value = A[a_id + 1] + B[b_id]
+                heapq.heappush(heap, [new_value, a_id + 1, b_id])
+        return heapq.heappop(heap)[0]
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(\(m+n\)logmax\)**
+  * m: len\(A\), n: len\(B\)
+  * max: the max\(A, B\)
+* **Space Complexity: O\(1\)**
+
