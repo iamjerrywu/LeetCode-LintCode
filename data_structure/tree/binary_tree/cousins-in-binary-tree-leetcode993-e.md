@@ -1,4 +1,4 @@
-# Cousins in Binary Tree \(LeetCode993\) \(E\)
+# Cousins in Binary Tree \(LeetCode 993\) \(E\)
 
 ## Problem
 
