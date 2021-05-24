@@ -332,6 +332,7 @@
     * [Backpack V 563 \(M\)](algorithm/dynamic_programming/backpack/backpack-v-563-m.md)
     * [Partition Equal Subset Sum 588 \(M\)](algorithm/dynamic_programming/backpack/partition-equal-subset-sum-588-m.md)
   * [Coordination](algorithm/dynamic_programming/coordination/README.md)
+    * [Minimum Path Sum 110 \(E\)](algorithm/dynamic_programming/coordination/minimum-path-sum-110-e.md)
     * [Unique Paths 114 \(E\)](algorithm/dynamic_programming/coordination/114.-unique-paths-e.md)
     * [Unique Paths II 115 \(E\)](algorithm/dynamic_programming/coordination/115.-unique-paths-ii-e.md)
     * [Jump Game 116 \(M\)](algorithm/dynamic_programming/coordination/116.-jump-game-m.md)
