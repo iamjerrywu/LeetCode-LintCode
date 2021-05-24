@@ -51,6 +51,9 @@ class Solution:
         left = A[0] + B[0] - 1
         right = A[n - 1] + B[m - 1] + 1
         while left + 1 < right:
+            # count how many numbers that are smaller than or equal to k
+            # if exceed, right = mid
+            # if lower, left = mid
             mid = (left + right)//2
             if self.cal(mid, A, B) >= k:
                 right = mid
