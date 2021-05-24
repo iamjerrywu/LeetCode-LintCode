@@ -36,7 +36,43 @@ Do it in either of the following time complexity:
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+import heapq
+class Solution:
+    """
+    @param A: an integer arrays sorted in ascending order
+    @param B: an integer arrays sorted in ascending order
+    @param k: An integer
+    @return: An integer
+    """
+    def kthSmallestSum(self, A, B, k):
+        # write your code here
+        n = len(A)
+        m = len(B)
+        left = A[0] + B[0] - 1
+        right = A[n - 1] + B[m - 1] + 1
+        while left + 1 < right:
+            mid = (left + right)//2
+            if self.cal(mid, A, B) >= k:
+                right = mid
+            else:
+                left = mid
+        return right
+    
+    def cal(self, mid, A, B):
+        n = len(A)
+        m = len(B)
+        cnt = 0
+        start = 0
+        end = m - 1
+        while start <= n -1:
+            while end >= 0:
+                if A[start] + B[end] > mid:
+                    end -=1
+                else:
+                    break
+            cnt += end + 1
+            start +=1
+        return cnt
 ```
 {% endtab %}
 {% endtabs %}
