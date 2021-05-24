@@ -31,8 +31,6 @@ Do it in either of the following time complexity:
 
 ## Solution - Binary Search + Two Pointer
 
-First put in the \(A\[0\] + B\[i\]\) sum of element in to heap. 
-
 ### Code
 
 {% tabs %}
@@ -92,6 +90,8 @@ class Solution:
 \*\*\*\*
 
 ## Solution - Greedy + Heap
+
+First put in the A\[0\] + B\[i\] \(i = 0 ~ len\(B\) - 1\) of element in to heap, then pop and put A\[i\] + B\[
 
 ### Code
 
