@@ -24,6 +24,26 @@ Challenge
 
 ## Solution 
 
+Since the numbers is in absolute sorted order \(i.e: -1, 2, 3, -4, 8, 9, -10\)
+
+First find out left \(min\), right\(max\), then use opposite two pointer solution
+
+* nums\[left\] + nums\[right\] &lt; target: move left
+* nums\[left\] + nums\[right\] &gt; target: move right
+* nums\[left\] + nums\[right\] == target, append to ans
+
+Note:
+
+when move left, should find the next bigger left
+
+* if nums\[left\] &lt; 0
+  * First i from left - 1 to 0, if nums\[i\] &lt; 0, return i
+  * Second, \(if first don't return, means next left &gt; 0\), i from 0 to n - 1, if nums\[i\] &gt;= 0, then return i
+* If nums\[left\] &gt; 0
+  * i from left + 1 to n - 1, if nums\[i\] &gt;= 0, then return i
+
+If all no, then return -1
+
 ### Code
 
 {% tabs %}
@@ -105,6 +125,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
