@@ -44,6 +44,8 @@ when move left, should find the next bigger left
 
 If all no, then return -1
 
+Same approach using for finding next right \(next smaller right\)
+
 ### Code
 
 {% tabs %}
