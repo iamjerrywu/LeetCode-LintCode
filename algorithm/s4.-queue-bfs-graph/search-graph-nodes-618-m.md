@@ -67,6 +67,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n + e\)**
+  * n: Nodes amount
+  * e: Edges amount
+* **Space Complexity: O\(n\)**
 
