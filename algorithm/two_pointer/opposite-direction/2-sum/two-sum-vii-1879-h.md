@@ -130,3 +130,58 @@ class Solution:
 * **Time Complexity: O\(n\)**
 * **Space Complexity: O\(1\)**
 
+\*\*\*\*
+
+## Solution - Binary Search
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param nums: the input array
+    @param target: the target number
+    @return: return the target pair
+    """
+    def twoSumVII(self, nums, target):
+        # write your code here
+        ans = []
+        for i in range(len(nums)):
+            prev = target - nums[i]
+            if abs(nums[0]) <= abs(prev) and abs(prev) <= abs(nums[i - 1]):
+                idx = self.binary_search(nums, 0, i, abs(prev))
+                if idx != -1:
+                    if prev == nums[idx]:
+                        ans.append((idx, i))
+                    # consider target may be +/- exist in list at the same time
+                    # since already find the first one, then 'first + 1' might also be the target
+                    if idx < (i - 1) and prev == nums[idx + 1]:
+                        ans.append((idx + 1, i))
+        return ans        
+    
+    def binary_search(self, nums, start, end, target):
+        while start + 1 < end:
+            mid = (start + end)//2
+            if abs(nums[mid]) < target:
+                start = mid
+            elif abs(nums[mid]) > target:
+                end = mid
+            # trying to find the first one
+            else:
+                end = mid
+        if abs(nums[start]) == target:
+            return start
+        elif abs(nums[end]) == target:
+            return end
+        return -1
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(nlogn\)**
+* **Space Complexity: O\(1\)**
+
