@@ -292,6 +292,7 @@
   * [Clone Graph 137 \(M\)](algorithm/s4.-queue-bfs-graph/clone-graph-137-m.md)
   * [Number of Islands 433 \(E\)](algorithm/s4.-queue-bfs-graph/number-of-islands-433-e.md)
   * [Knight Shortest Path 611 \(M\)](algorithm/s4.-queue-bfs-graph/knight-shortest-path-611-m.md)
+  * [Search Graph Nodes 618 \(M\)](algorithm/s4.-queue-bfs-graph/search-graph-nodes-618-m.md)
   * [The Maze II 788 \(M\)](algorithm/s4.-queue-bfs-graph/the-maze-ii-m.md)
   * [Number of Provinces 547 \(M\)](algorithm/s4.-queue-bfs-graph/number-of-provinces-547-m.md)
   * [Zombie in Matrix 598 \(M\)](algorithm/s4.-queue-bfs-graph/zombie-in-matrix-598-m.md)
