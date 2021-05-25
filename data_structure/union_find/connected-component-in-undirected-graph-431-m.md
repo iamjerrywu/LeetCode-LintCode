@@ -132,6 +132,49 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+class UndirectedGraphNode:
+     def __init__(self, x):
+         self.label = x
+         self.neighbors = []
+"""
+
+class Solution:
+    """
+    @param nodes: a array of Undirected graph node
+    @return: a connected set of a Undirected graph
+    """
+    def connectedSet(self, nodes):
+        # write your code here
+        if not nodes:
+            return []
+        
+        ans = []
+        self.roots = {node : node for node in nodes}
+        for node in nodes:
+            for neighbor in node.neighbors:
+                self.union(node, neighbor)
+        groups = collections.defaultdict(list)
+        for node in nodes:
+            root = self.find(node)
+            groups[root].append(node.label)
+            
+        for val in groups.values():
+            val.sort()
+            ans.append(val)
+        return ans    
+    
+    def find(self, node):
+        if self.roots[node] != node:
+            self.roots[node] = self.find(self.roots[node])
+        return self.roots[node]
+    
+    def union(self, node1, node2):
+        node1_root = self.find(node1)
+        node2_root = self.find(node2)
+        if node1_root != node2_root:
+            self.roots[node1_root] = node2_root
+
 
 ```
 {% endtab %}
