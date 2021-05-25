@@ -83,7 +83,37 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+class UndirectedGraphNode:
+     def __init__(self, x):
+         self.label = x
+         self.neighbors = []
+"""
 
+class Solution:
+    """
+    @param nodes: a array of Undirected graph node
+    @return: a connected set of a Undirected graph
+    """
+    def connectedSet(self, nodes):
+        # write your code here
+        visited = set()
+        ans = []
+        for node in nodes:
+            if node in visited:
+               continue
+            res = []
+            self.dfs(node, res, visited)
+            res.sort()
+            ans.append(res)
+        return ans
+    
+    def dfs(self, node, res, visited):
+        visited.add(node)
+        res.append(node.label)
+        for neighbor in node.neighbors:
+            if neighbor not in visited:
+                self.dfs(neighbor, res, visited)
 ```
 {% endtab %}
 {% endtabs %}
