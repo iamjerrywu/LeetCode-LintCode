@@ -219,6 +219,7 @@
       * [Two Sum - Closest to Target 533 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/two-sum-closest-to-target-533-m.md)
       * [Two Sum - Unique Pairs 587 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/two-sum-unique-pairs-587-m.md)
       * [Two Sum - Less than or equal to target 609 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/two-sum-less-than-or-equal-to-target-609-m.md)
+      * [Two Sum VII 1879 \(H\)](algorithm/two_pointer/opposite-direction/2-sum/two-sum-vii-1879-h.md)
       * [Three Sum 57 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/three-sum-57-m.md)
       * [3Sum Closest 59 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/3sum-closest-59-m.md)
       * [Triangle Count 382 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/triangle-count-382-m.md)
