@@ -178,6 +178,7 @@
 * [Trie](data_structure/trie.md)
 * [Union Find](data_structure/union_find/README.md)
   * [Number of Connected Components in an Undirected Graph \(LeetCode323\) \(M\)](data_structure/union_find/number-of-connected-components-in-an-undirected-graph-323-m.md)
+  * [Connected Component in Undirected Graph 431 \(M\)](data_structure/union_find/connected-component-in-undirected-graph-431-m.md)
 
 ## Algorithm
 
