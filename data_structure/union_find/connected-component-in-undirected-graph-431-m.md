@@ -76,8 +76,6 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
-
 ## Solution - DFS
 
 ### Code
