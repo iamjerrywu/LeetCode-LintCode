@@ -106,6 +106,8 @@ class Solution:
 
 ## Solution - BFS \(2\)
 
+Start from each houese, and from that house, do BFS to find out every empty place that it can reach \(for those it can reach, record how many it can be reached from houses, and the distance\). Eventually just calculate to have the min\_dist sum to have the answer.
+
 ### Code
 
 {% tabs %}
