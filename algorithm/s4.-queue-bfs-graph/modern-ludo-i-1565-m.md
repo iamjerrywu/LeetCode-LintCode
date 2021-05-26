@@ -23,7 +23,7 @@ Input: length = 10 and connections = [[2, 10]]Output: 1Explanation: 1->2 (dice)2
 Input: length = 15 and connections = [[2, 8],[6, 9]]Output: 2Explanation: 1->6 (dice)6->9 (for free)9->15(dice)
 ```
 
-## Solution 
+## Solution - BFS + BFS
 
 ### Code
 
@@ -82,6 +82,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(N + E\)**
+  * N: nodes amount
+  * E: edges amount
+* **Space Complexity:** 
 
