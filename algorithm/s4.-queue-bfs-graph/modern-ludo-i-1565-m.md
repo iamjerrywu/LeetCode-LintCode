@@ -151,7 +151,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-## Solution 
+## Solution - SPFA
 
 ### Code
 
