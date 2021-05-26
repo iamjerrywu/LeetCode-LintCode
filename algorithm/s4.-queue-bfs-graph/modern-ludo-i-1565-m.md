@@ -93,3 +93,63 @@ class Solution:
   * E: edges amount
 * **Space Complexity:** 
 
+\*\*\*\*
+
+## Solution - Double Queue
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param length: the length of board
+    @param connections: the connections of the positions
+    @return: the minimum steps to reach the end
+    """
+    # total time complexity: O(n + m)
+    def modernLudo(self, length, connections):
+        # Write your code here
+        graph = self.build_graph(length, connections)
+        
+        # index start from 1
+        queue = [1]
+        distance = {1 : 0}
+        while queue:
+            next_queue = []
+            for node in queue:
+                # find all the connected nodes, for the same level
+                for direct_node in graph[node]:
+                    if direct_node in distance:
+                        continue
+                    distance[direct_node] = distance[node]
+                    queue.append(direct_node)
+            
+            # find the next level and put nodes into next_queue
+            for node in queue:
+                for next_node in range(node + 1, min(node + 7, length + 1)):
+                    if next_node in distance:
+                        continue
+                    distance[next_node] = distance[node] + 1
+                    next_queue.append(next_node)
+            queue = next_queue
+        
+        return distance[length]
+        
+    def build_graph(self, length, connections):
+        graph = {i : set() for i in range(1, length + 1)}
+        for a, b in connections:
+            graph[a].add(b)
+        return graph
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+
+
