@@ -25,6 +25,8 @@ Input：[[0,1,0],[1,0,1],[0,1,0]]Output：4Explanation： Placing a post office 
 
 ## Solution - BFS
 
+#### Enumerate Post Office Location
+
 Start from every empty space in grid, and calculate whether it can reach every house or not, meanwhile maintain the min\_dist sum
 
 ### Code
@@ -99,8 +101,12 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(space \* n \* m\)**
+  * Space: the empty space amounts
+  * n: len\(grid\), m: len\(grid\[0\]\)
+  * Calculate all point's distance to post office: O\(n\*m\)
+  * Worst case: O\(n^2 \* m^2\)
+* **Space Complexity:** 
 
 \*\*\*\*
 
