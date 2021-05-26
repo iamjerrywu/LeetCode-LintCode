@@ -23,7 +23,7 @@ Input：[[0,1,0,0,0],[1,0,0,2,1],[0,1,0,0,0]]Output：8Explanation： Placing a 
 Input：[[0,1,0],[1,0,1],[0,1,0]]Output：4Explanation： Placing a post office at (1,1), th
 ```
 
-## Solution 
+## Solution - BFS
 
 ### Code
 
@@ -47,7 +47,9 @@ class Solution:
         
         n, m = len(grid), len(grid[0])
         min_dist = float('inf')
-
+        
+        # traverse every empty point (as start point)
+        # then calculate the distance dict (containing each point it can reach, and the distance)
         for i in range(n):
             for j in range(m):
                 if grid[i][j] == GridType.EMPTY:
