@@ -210,12 +210,49 @@ class Solution:
 
 ## Solution - SPFA Optimization
 
+To even faster find the shortest path, use min\_heap to reduce the searching time
+
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+import heapq
+class Solution:
+    """
+    @param length: the length of board
+    @param connections: the connections of the positions
+    @return: the minimum steps to reach the end
+    """
+    # total time complexity: O(n + m)
+    def modernLudo(self, length, connections):
+        # Write your code here
+        graph = self.build_graph(length, connections)
+        
+        # index start from 1
+        queue = [(0, 1)]
+        distance = { i: float('inf') for i in range(1, length + 1)}
 
+        distance[1] = 0
+
+        while queue:
+            dist, node = heapq.heappop(queue)
+            for next_node in graph[node]:
+                if distance[next_node] > dist:
+                    distance[next_node] = dist
+                    heapq.heappush(queue, (dist, next_node))
+            for next_node in range(node + 1, min(node + 7, length + 1)):
+                if distance[next_node] > dist + 1:
+                    distance[next_node] = dist + 1
+                    heapq.heappush(queue, (dist + 1, next_node))
+        
+        return distance[length]
+        
+    def build_graph(self, length, connections):
+        graph = {i : set() for i in range(1, length + 1)}
+        for a, b in connections:
+            graph[a].add(b)
+        return graph
 ```
 {% endtab %}
 {% endtabs %}
