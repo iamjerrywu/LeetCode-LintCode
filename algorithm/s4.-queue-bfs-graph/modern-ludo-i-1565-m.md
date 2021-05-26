@@ -182,10 +182,12 @@ class Solution:
         while queue:
             node = queue.popleft()
             for next_node in graph[node]:
+                # only when the distance get shorter, than put back to queue
                 if distance[next_node] > distance[node]:
                     distance[next_node] = distance[node]
                     queue.append(next_node)
             for next_node in range(node + 1, min(node + 7, length + 1)):
+                # only when the distance get shorter, than put back to queue
                 if distance[next_node] > distance[node] + 1:
                     distance[next_node] = distance[node] + 1
                     queue.append(next_node)
