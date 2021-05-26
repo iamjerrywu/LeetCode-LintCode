@@ -111,7 +111,68 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+class GridType:
+    EMPTY = 0
+    HOUSE = 1
+    WALL = 2
 
+class Solution:
+    """
+    @param grid: a 2D grid
+    @return: An integer
+    """
+    def shortestDistance(self, grid):
+        # write your code here
+        if not grid or not grid[0]:
+            return 0
+        
+        n, m = len(grid), len(grid[0])
+        distance_sum = {}
+        reachable_cnt = {}
+        houses = 0
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j] == GridType.HOUSE:
+                    self.bfs(grid, i, j, distance_sum, reachable_cnt)
+                    houses+=1
+        
+        min_dist = float('inf')
+        for i in range(n):
+            for j in range(m):
+                if (i, j) not in reachable_cnt:
+                    continue
+                if reachable_cnt[(i, j)] != houses:
+                    continue
+                min_dist = min(min_dist, distance_sum[(i, j)])
+            
+        return min_dist if min_dist != float('inf') else -1
+    
+    def bfs(self, grid, i, j, distance_sum, reachable_cnt):
+        distance = {(i, j) : 0}
+        queue = collections.deque([(i, j)])
+
+        while queue:
+            x, y = queue.popleft()
+            for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                adj_x, adj_y = x + dx, y + dy
+                if not self.is_valid(adj_x, adj_y, grid):
+                    continue
+                if (adj_x, adj_y) not in distance:
+                    queue.append((adj_x, adj_y))
+                    distance[(adj_x, adj_y)] = distance[(x, y)] + 1
+
+                    # add up into distance_sum & reachable_cnt
+                    if (adj_x, adj_y) not in reachable_cnt:
+                        distance_sum[(adj_x, adj_y)] = 0
+                        reachable_cnt[(adj_x, adj_y)] = 0
+                    distance_sum[(adj_x, adj_y)] += distance[(adj_x, adj_y)]
+                    reachable_cnt[(adj_x, adj_y)] +=1
+    
+    def is_valid(self, x, y, grid):
+        n, m = len(grid), len(grid[0])
+        if x < 0 or x >= n or y < 0 or y >= m:
+            return False
+        return grid[x][y] == GridType.EMPTY
 ```
 {% endtab %}
 {% endtabs %}
