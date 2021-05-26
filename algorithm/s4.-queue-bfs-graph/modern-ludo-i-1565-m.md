@@ -205,7 +205,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: Can reach O\(n^2 \* m\)**
 * **Space Complexity:**
 
 ## Solution - SPFA Optimization
