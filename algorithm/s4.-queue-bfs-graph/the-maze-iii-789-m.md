@@ -1,4 +1,4 @@
-# The Maze III 789 \(M\)
+# The Maze III 789 \(H\)
 
 ## Problem
 
@@ -107,14 +107,80 @@ class Solution:
 
 \*\*\*\*
 
-## Solution - BFS with Heap Optimization
+## Solution - BFS with Heap Optimization \(SPFA\)
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+DIRECTION_HASH = {
+    'd': (1, 0),
+    'l': (0, -1),
+    'r': (0, 1),
+    'u': (-1, 0),
+}
 
+class MazeGridType:
+    SPACE = 0
+    WALL = 1
+import heapq
+class Solution:
+    """
+    @param maze: the maze
+    @param ball: the ball position
+    @param hole: the hole position
+    @return: the lexicographically smallest way
+    """
+    def findShortestWay(self, maze, ball, hole):
+        # write your code here
+        
+        # corner case check
+        if not ball or not hole:
+            return 'impossible'
+        if not maze or not maze[0]:
+            return 'impossible'
+        
+        hole = (hole[0], hole[1])
+
+        #(distance, x, y, path)
+        queue = [(0, '', ball[0], ball[1])]
+        distance = {(ball[0], ball[1]): (0, '')}
+
+        while queue:
+            dist, path, x, y = heapq.heappop(queue)
+            for direction in DIRECTION_HASH:
+                # if previous action is 'l', then cannot choose 'l' again
+                if path and path[-1] == direction:
+                    continue
+                new_x, new_y = self.kick_ball(x, y, direction, maze, hole)
+                new_dist = dist + abs(new_x - x) + abs(new_y - y)
+                new_path = path + direction 
+                if (new_x, new_y) in distance and distance[(new_x, new_y)] <= (new_dist, new_path):
+                    continue
+                
+                heapq.heappush(queue, (new_dist, new_path, new_x, new_y))
+                distance[(new_x, new_y)] = (new_dist, new_path)
+        
+        return distance[hole][1] if hole in distance else 'impossible'
+
+    def kick_ball(self, x, y, direction, maze, hole):
+        # kick ball through direction from x, y and return the stopped position
+        dx, dy = DIRECTION_HASH[direction]
+        while (x, y) != hole and not self.is_wall(x, y, maze):
+            x+=dx
+            y+=dy
+        if (x, y) == hole:
+            return x, y
+        
+        return x - dx, y - dy
+    
+    def is_wall(self, x, y, maze):
+        # when position out of boundary, counsider as well as well
+        if not (0 <= x < len(maze)) or not (0 <= y < len(maze[0])):
+            return True
+        
+        return maze[x][y] == MazeGridType.WALL
 ```
 {% endtab %}
 {% endtabs %}
