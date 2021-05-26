@@ -25,6 +25,10 @@ Input: length = 15 and connections = [[2, 8],[6, 9]]Output: 2Explanation: 1->6 (
 
 ## Solution - BFS + BFS
 
+The outer BFS determine the shortest path 
+
+The inner BFS do the traverse \(and take care those visited/unvisited\) path
+
 ### Code
 
 {% tabs %}
