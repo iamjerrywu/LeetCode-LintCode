@@ -262,14 +262,42 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-## Solution 
+## Solution - DP
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+import heapq
+class Solution:
+    """
+    @param length: the length of board
+    @param connections: the connections of the positions
+    @return: the minimum steps to reach the end
+    """
+    # total time complexity: O(n + m)
+    def modernLudo(self, length, connections):
+        # Write your code here
+        graph = self.build_graph(length, connections)
+        
+        # dp state: from i to j, how many minimum steps required
+        dp = [float('inf')] * (length + 1)
+        dp[length] = 0
+        for i in range(length - 1, 0, -1):
+            # via dice (1 ~ 6)
+            for j in range(i + 1, min(i + 7, length + 1)):
+                dp[i] = min(dp[i], dp[j] + 1)
+            # via connections
+            for j in graph[i]:
+                dp[i] = min(dp[i], dp[j])
+        return dp[1]
+        
+    def build_graph(self, length, connections):
+        graph = {i : set() for i in range(1, length + 1)}
+        for a, b in connections:
+            graph[a].add(b)
+        return graph
 ```
 {% endtab %}
 {% endtabs %}
