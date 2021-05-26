@@ -25,6 +25,8 @@ Input：[[0,1,0],[1,0,1],[0,1,0]]Output：4Explanation： Placing a post office 
 
 ## Solution - BFS
 
+Start from every empty space in grid, and calculate whether it can reach every house or not, meanwhile maintain the min\_dist sum
+
 ### Code
 
 {% tabs %}
