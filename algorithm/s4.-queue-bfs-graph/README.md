@@ -206,6 +206,13 @@ while !(queue.isEmpty()) {
 {% endtab %}
 {% endtabs %}
 
+### SPFA
+
+Still based on BFS structure
+
+* Each point can put in queue multiple times, in order to find shortest path
+* Can use heapq/priority queue to replace queue
+
 ### Time Complexity
 
 #### Graph vs Matrix
