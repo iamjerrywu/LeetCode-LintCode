@@ -27,7 +27,7 @@ Challenge
 * How to optimize the memory?
 * Can you solve it with A\* algorithm?
 
-## Solution 
+## Solution - BFS
 
 ### Code
 
