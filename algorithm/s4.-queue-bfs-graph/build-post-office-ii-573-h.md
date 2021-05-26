@@ -112,6 +112,8 @@ class Solution:
 
 ## Solution - BFS \(2\)
 
+#### Enumerate House Location
+
 Start from each houese, and from that house, do BFS to find out every empty place that it can reach \(for those it can reach, record how many it can be reached from houses, and the distance\). Eventually just calculate to have the min\_dist sum to have the answer.
 
 ### Code
@@ -187,8 +189,12 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(House \* n \* m\)**
+  * HOuse: the empty House amounts
+  * n: len\(grid\), m: len\(grid\[0\]\)
+  * Calculate all point's distance to post office: O\(n\*m\)
+  * Worst case: O\(n^2 \* m^2\)
+* **Space Complexity:** 
 
 \*\*\*\*
 
