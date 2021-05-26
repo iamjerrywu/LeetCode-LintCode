@@ -29,6 +29,8 @@ The outer BFS determine the shortest path
 
 The inner BFS do the traverse \(and take care those visited/unvisited\) path
 
+![](../../.gitbook/assets/screen-shot-2021-05-26-at-12.02.04-pm.png)
+
 ### Code
 
 {% tabs %}
