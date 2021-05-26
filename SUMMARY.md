@@ -291,6 +291,7 @@
   * [Word Ladder 120 \(H\)](algorithm/s4.-queue-bfs-graph/word-ladder-120-h.md)
   * [Clone Graph 137 \(M\)](algorithm/s4.-queue-bfs-graph/clone-graph-137-m.md)
   * [Number of Islands 433 \(E\)](algorithm/s4.-queue-bfs-graph/number-of-islands-433-e.md)
+  * [Build Post Office II 573 \(H\)](algorithm/s4.-queue-bfs-graph/build-post-office-ii-573-h.md)
   * [Knight Shortest Path 611 \(M\)](algorithm/s4.-queue-bfs-graph/knight-shortest-path-611-m.md)
   * [Search Graph Nodes 618 \(M\)](algorithm/s4.-queue-bfs-graph/search-graph-nodes-618-m.md)
   * [The Maze II 788 \(M\)](algorithm/s4.-queue-bfs-graph/the-maze-ii-m.md)
