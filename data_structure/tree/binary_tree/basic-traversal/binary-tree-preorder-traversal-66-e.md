@@ -123,16 +123,19 @@ class Solution:
     """
     def preorderTraversal(self, root):
         # write your code here
-        res = []
-        self.helper(root, res)
-        return res
-    def helper(self,node, res):
-        if not node:
-            return
-        res.append(node.val)
-        self.helper(node.left, res)
-        self.helper(node.right, res)
+        if not root:
+            return []
+        stack = [root]
+        preorder = []
 
+        while stack:
+            node = stack.pop()
+            preorder.append(node.val)
+            if node.right:
+                stack.append(node.right)
+            if node.left:
+                stack.append(node.left)
+        return preorder
 
 ```
 {% endtab %}
