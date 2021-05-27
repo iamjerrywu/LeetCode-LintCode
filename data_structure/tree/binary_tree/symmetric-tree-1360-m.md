@@ -44,27 +44,34 @@ class Solution:
         # Write your code here
         if not root:
             return True
-        return self._is_symmetric(root.left, root.right)
+
+        queue = [root]
+        while queue:
+            next_queue = []
+            for i in range(len(queue)):
+                if not queue[i]:
+                    continue                                                                                        
+                next_queue.append(queue[i].left)
+                next_queue.append(queue[i].right)
+            if not self.is_mirror(next_queue):
+                return False
+            queue = next_queue
+        return True
     
-    def _is_symmetric(self, left_root, right_root):
-        if not left_root and not right_root:
-            return True
-        if not left_root or not right_root:
-            return False
-        if left_root.val != right_root.val:
-            return False
-        
-        # WARNING!
-        # the symmetric policy!
-        # left_root.left <-> right_root.right
-        # left_root.right <-> right_root.left
-        left_symmetric = self._is_symmetric(left_root.left, right_root.right)
-        right_symmetric = self._is_symmetric(left_root.right, right_root.left)
+    def is_mirror(self, queue):
+        left, right = 0, len(queue) - 1
+        while left < right:
+            if not self.is_same(queue[left], queue[right]):
+                return False
+            left+=1
+            right-=1
+        return True
+    
+    def is_same(self, node1, node2):
+        if node1 and node2:
+            return node1.val == node2.val
 
-        return left_symmetric and right_symmetric
-        
-
-
+        return not node1 and not node2
 ```
 {% endtab %}
 {% endtabs %}
