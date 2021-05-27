@@ -1,6 +1,6 @@
 # Search in Rotated Sorted Array II 63 \(M\)
 
-Description
+## Description
 
 Follow up for [Search in Rotated Sorted Array](http://www.lintcode.com/problem/search-in-rotated-sorted-array/):
 
@@ -43,4 +43,59 @@ true
 Explanation:
 
 4 is in the array
+
+
+
+## Problem
+
+## Solution - BFS
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param A: an integer ratated sorted array and duplicates are allowed
+    @param target: An integer
+    @return: a boolean 
+    """
+    def search(self, A, target):
+        # write your code here
+        if not A:
+             return False
+        start, end = 0, len(A) - 1
+        
+        while start + 1 < end:
+            mid = (start + end)//2
+            if A[mid] == target:
+                return True
+            if A[mid] > A[start]:
+                if A[start] <= target <= A[mid]:
+                    end = mid
+                else:
+                    start = mid
+            elif A[mid] < A[start]:
+                if A[mid] <= target <= A[end]:
+                    start = mid
+                else:
+                    end = mid
+            else:
+                start+=1
+        
+        if A[start] == target:
+            return True
+        if A[end] == target:
+            return True
+        return False
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
 
