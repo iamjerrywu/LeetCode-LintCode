@@ -147,6 +147,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(n + logn\)**
+  * Establish Prefix\_Sum: O\(n\)
+  * Binary Search: O\(n\)
 * **Space Complexity:**
 
