@@ -95,3 +95,56 @@ class Solution:
 * **Time Complexity: O\(n\)**
 * **Space Complexity: O\(n\)**
 
+\*\*\*\*
+
+## Solution - Binary Search
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+
+    def __init__(self, w: List[int]):
+        self.prefix_sum = []
+        cur_sum = 0
+        for weight in w:
+            cur_sum+=weight
+            self.prefix_sum.append(cur_sum)
+        self.total = cur_sum
+        
+        
+
+    def pickIndex(self) -> int:
+        target = self.total * random.random()
+        # binary search search
+        return self.binary_search(self.prefix_sum, 0, len(self.prefix_sum) - 1, target) 
+    
+    def binary_search(self, arr, start, end, target):
+        while start + 1 < end:
+            mid = (start + end)//2
+            
+            if arr[mid] <= target:
+                start = mid
+            else:
+                end = mid
+            
+        if arr[start] > target:
+            return start
+        elif arr[end] > target:
+            return end
+
+
+# Your Solution object will be instantiated and called as such:
+# obj = Solution(w)
+# param_1 = obj.pickIndex()
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
