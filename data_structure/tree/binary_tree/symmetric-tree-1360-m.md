@@ -20,7 +20,7 @@ Challenge
 
 Could you solve it both recursively and iteratively?
 
-## Solution 
+## Solution - Recursion DFS
 
 ### Code
 
