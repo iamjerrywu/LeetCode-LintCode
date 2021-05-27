@@ -92,7 +92,9 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
+* **Time Complexity: O\(2n\)**
+  * Establish Prefix\_Sum: O\(n\)
+  * Linear Search: O\(n\)
 * **Space Complexity: O\(n\)**
 
 \*\*\*\*
