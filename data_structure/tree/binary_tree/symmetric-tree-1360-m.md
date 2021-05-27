@@ -143,6 +143,15 @@ class Solution:
 
 ## Solution - Iteration DFS
 
+To ensure a tree's structure:
+
+* Preorder traversal + inorder traversal
+* Postorder traversal + inorder traversal
+
+{% hint style="danger" %}
+Preordere + Postorder traversal cannot ensure tree's structure
+{% endhint %}
+
 ### Code
 
 {% tabs %}
