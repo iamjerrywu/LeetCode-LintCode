@@ -153,6 +153,7 @@
     * [Add One Row to Tree 1122 \(M\)](data_structure/tree/binary_tree/add-one-row-to-tree-1122-m.md)
     * [Construct String from Binary Tree 1137 \(E\)](data_structure/tree/binary_tree/construct-string-from-binary-tree-1137-e.md)
     * [Diameter of Binary Tree 1181 \(E\)](data_structure/tree/binary_tree/diameter-of-binary-tree-1181-e-1.md)
+    * [Symmetric Tree 1360 \(M\)](data_structure/tree/binary_tree/symmetric-tree-1360-m.md)
   * [BST](data_structure/tree/bst/README.md)
     * [Search Range in Binary Search Tree 11 \(M\)](data_structure/tree/bst/11.-search-range-in-binary-search-tree.md)
     * [Insert Node in a Binary Search Tree 85 \(E\)](data_structure/tree/bst/insert-node-in-a-binary-search-tree-85-e.md)
