@@ -280,6 +280,7 @@
   * [Maximum Number in Mountain Sequence 585 \(M\)](algorithm/binary_search/maximum-number-in-mountain-sequence-585-m.md)
   * [Find Minimum in Rotated Sorted Array 159 \(M\)](algorithm/binary_search/find-minimum-in-rotated-sorted-array-159-m.md)
   * [Search in Rotated Sorted Array 62 \(M\)](algorithm/binary_search/search-in-rotated-sorted-array-62-m.md)
+  * [Search in Rotated Sorted Array II 63 \(M\)](algorithm/binary_search/search-in-rotated-sorted-array-ii-63-m.md)
   * [Find Peak Element 75 \(M\)](algorithm/binary_search/find-peak-element-75-m.md)
   * [Wood Cut 183 \(H\)](algorithm/binary_search/wood-cut-183-h.md)
   * [Smallest Rectangle Enclosing Black Pixels 600 \(H\)](algorithm/binary_search/600.-smallest-rectangle-enclosing-black-pixels.md)
