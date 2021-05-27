@@ -150,5 +150,5 @@ class Solution:
 * **Time Complexity: O\(n + logn\)**
   * Establish Prefix\_Sum: O\(n\)
   * Binary Search: O\(n\)
-* **Space Complexity:**
+* **Space Complexity: O\(n\)**
 
