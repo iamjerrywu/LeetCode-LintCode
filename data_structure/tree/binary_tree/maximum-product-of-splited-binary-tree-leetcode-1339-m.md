@@ -45,7 +45,7 @@ Output: 1
 * Each tree has at most `50000` nodes and at least `2` nodes.
 * Each node's value is between `[1, 10000]`.
 
-## Solution 
+## Solution - DFS
 
 ### Code
 
@@ -83,6 +83,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(2n\)**
+  * 1st traverse to find all subtree sum: O\(n\)
+  * Later find max of product O\(n\)
+* **Space Complexity: O\(n\)**
 
