@@ -34,6 +34,7 @@
     * [Product of Array Except Self 1310 \(M\)](data_structure/array/prefix-sum/product-of-array-except-self-1310-m.md)
     * [Subarray Sum 138 \(E\)](data_structure/array/prefix-sum/subarray-sum-138-e.md)
     * [Subarray Sum Closest 139 \(M\)](data_structure/array/prefix-sum/subarray-sum-closest-139-m.md)
+    * [Random Pick with Weight 528 \(M\)](data_structure/array/prefix-sum/random-pick-with-weight-528-m.md)
     * [Subarray Sum Equals to k 838 \(E\)](data_structure/array/prefix-sum/subarray-sum-equals-to-k-838-e.md)
     * [Subarray Sum Equals to k II 1844 \(M\)](data_structure/array/prefix-sum/subarray-sum-equals-to-k-ii-1844.md)
     * [Search Subarray 1457 \(M\)](data_structure/array/prefix-sum/search-subarray-1457-m.md)
