@@ -99,3 +99,49 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
+\*\*\*\*
+
+## Solution - Iteration using Stack
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
+
+class Solution:
+    """
+    @param root: A Tree
+    @return: Preorder in ArrayList which contains node values.
+    """
+    def preorderTraversal(self, root):
+        # write your code here
+        res = []
+        self.helper(root, res)
+        return res
+    def helper(self,node, res):
+        if not node:
+            return
+        res.append(node.val)
+        self.helper(node.left, res)
+        self.helper(node.right, res)
+
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
