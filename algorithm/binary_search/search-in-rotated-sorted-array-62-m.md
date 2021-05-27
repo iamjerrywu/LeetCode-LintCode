@@ -102,7 +102,7 @@ class Solution:
 
 \*\*\*\*
 
-## Solution - One Time Binary Search
+## Solution - One Time Binary Search \(1\)
 
 To judge whether target is on the mid's left side or not?
 
