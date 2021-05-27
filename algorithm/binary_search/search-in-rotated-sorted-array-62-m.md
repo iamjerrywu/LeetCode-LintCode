@@ -159,9 +159,7 @@ class Solution:
 
 ## Solution - One Time Binary Search \(2\)
 
-To judge whether target is on the mid's left side or not?
-
-![](../../.gitbook/assets/screen-shot-2021-04-25-at-1.28.41-am.png)
+![](../../.gitbook/assets/screen-shot-2021-05-27-at-9.32.26-pm.png)
 
 ### Code
 
