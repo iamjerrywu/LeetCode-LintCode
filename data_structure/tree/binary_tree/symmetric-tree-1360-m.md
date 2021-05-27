@@ -1,8 +1,24 @@
 # Symmetric Tree 1360 \(M\)
 
-
-
 ## Problem
+
+Given a binary tree, check whether it is a mirror of itself \(ie, symmetric around its center\).Example
+
+**Example1**
+
+```text
+Input: {1,2,2,3,4,4,3}Output: trueExplanation:    1   / \  2   2 / \ / \3  4 4  3This binary tree {1,2,2,3,4,4,3} is symmetric
+```
+
+**Example2**
+
+```text
+Input: {1,2,2,#,3,#,3}Output: falseExplanation:    1   / \  2   2   \   \   3    3This is not a symmetric tree
+```
+
+Challenge
+
+Could you solve it both recursively and iteratively?
 
 ## Solution 
 
