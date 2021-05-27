@@ -157,3 +157,63 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
+## Solution - One Time Binary Search \(2\)
+
+To judge whether target is on the mid's left side or not?
+
+![](../../.gitbook/assets/screen-shot-2021-04-25-at-1.28.41-am.png)
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param A: an integer ratated sorted array and duplicates are allowed
+    @param target: An integer
+    @return: a boolean 
+    """
+    def search(self, A, target):
+        # write your code here
+        if not A:
+             return -1
+        start, end = 0, len(A) - 1
+        
+        while start + 1 < end:
+            mid = (start + end)//2
+            if A[mid] == target:
+                return mid
+            if A[mid] > A[start]:
+                if A[start] <= target <= A[mid]:
+                    end = mid
+                else:
+                    start = mid
+            elif A[mid] < A[start]:
+                if A[mid] <= target <= A[end]:
+                    start = mid
+                else:
+                    end = mid
+        
+        if A[start] == target:
+            return start
+        if A[end] == target:
+            return end
+        return -1
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
