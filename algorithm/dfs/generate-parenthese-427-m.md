@@ -65,7 +65,19 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    def generateParenthesis(self, n: int) -> List[str]:
+        left, right = n, n
+        allCom = []
+        self.dfs(left, right, allCom, '')
+        return allCom
+    def dfs(self, left, right, allCom, com):     
+        if left < 0 or right < 0 or left > right:
+            return 
+        if left == 0 and right == 0:
+            allCom.append(com)
+        self.dfs(left - 1, right, allCom, com + '(')
+        self.dfs(left, right - 1, allCom, com + ')')
 ```
 {% endtab %}
 {% endtabs %}
