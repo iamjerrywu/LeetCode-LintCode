@@ -16,7 +16,7 @@ Input: 3Output: ["((()))", "(()())", "(())()", "()(())", "()()()"]
 Input: 2Output: ["()()", "(())"]
 ```
 
-## Solution 
+## Solution - DFS \(1\)
 
 ### Code
 
