@@ -79,7 +79,7 @@ class Solution:
         upd_id = 0
         cur_char, cnt = chars[0], 0
         
-        for i in range(len(chars)):
+        for i in range(len(chars)): #O(n)
             if i == 0 or chars[i - 1] == chars[i]:
                 cnt+=1
             else:
@@ -104,7 +104,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
+* **Time Complexity: O\(nlogn\)**
 * **Space Complexity: O\(m\)**
   * m: the amount of inorder group of characters
   * Stack: string use m times
