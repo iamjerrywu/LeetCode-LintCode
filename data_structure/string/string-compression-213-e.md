@@ -21,7 +21,7 @@ Input: str = "aabbcc"Output: "aabbcc"
 
 ```
 
-## Solution 
+## Solution - Iteration
 
 ### Code
 
@@ -61,4 +61,54 @@ class Solution:
   * m: the amount of inorder group of characters
   * Stack: string use m times
   * Heap: no heap used
+
+## Solution - Iteration In-Place update
+
+If Question changes to update input array \(chars\) in place
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    def compress(self, chars: List[str]) -> int:
+        if not chars:
+            return ''
+        
+        upd_id = 0
+        cur_char, cnt = chars[0], 0
+        
+        for i in range(len(chars)):
+            if i == 0 or chars[i - 1] == chars[i]:
+                cnt+=1
+            else:
+                upd_id = self.update_chars(chars, upd_id, cur_char, cnt)
+                cur_char = chars[i]
+                cnt = 1
+        upd_id = self.update_chars(chars, upd_id, cur_char, cnt)
+        
+        return upd_id
+    
+    def update_chars(self, chars, upd_id, cur_char, cnt):
+        chars[upd_id] = cur_char
+        upd_id+=1
+        if cnt > 1:
+            for c in str(cnt):
+                chars[upd_id] = c
+                upd_id+=1
+        return upd_id
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(m\)**
+  * m: the amount of inorder group of characters
+  * Stack: string use m times
+  * Heap: no heap used
+
+
 
