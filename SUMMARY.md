@@ -326,6 +326,7 @@
   * [Palindrome Partitioning 136 \(M\)](algorithm/dfs/palindrome-partitioning-136-m.md)
   * [Letter Combinations of a Phone Number 425 \(M\)](algorithm/dfs/425.-letter-combinations-of-a-phone-number-m.md)
   * [Generate Parenthese 427 \(M\)](algorithm/dfs/generate-parenthese-427-m.md)
+  * [Word Squares 634 \(H\)](algorithm/dfs/word-squares-634-h.md)
   * [Sudoku Solver 802 \(H\)](algorithm/dfs/802-sudoku-solver-h.md)
   * [Traveling Salesman Problem 816 \(H\)](algorithm/dfs/816.-traveling-salesman-problem-h.md)
   * [Longest Path On The Tree 1469 \(M\)](algorithm/dfs/longest-path-on-the-tree-1469-m.md)
