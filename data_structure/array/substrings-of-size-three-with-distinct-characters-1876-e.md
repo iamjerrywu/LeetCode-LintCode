@@ -1,4 +1,4 @@
-# Substrings of Size Three with DIstinct Characters 1876 \(E\)
+# Substrings of Size Three with DIstinct Characters \(LeetCode1876\) \(E\)
 
 ## Problem
 
