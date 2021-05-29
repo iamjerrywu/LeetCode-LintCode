@@ -239,7 +239,7 @@
     * [Decrease To Be Palindrome 1784 \(E\)](algorithm/two_pointer/opposite-direction/decrease-to-be-palindrome-1784-e.md)
     * [Move Zeros 539 \(M\)](algorithm/two_pointer/opposite-direction/move-zeros-539-m.md)
     * [Longest Repeating Character Replacement 1246 \(M\)](algorithm/two_pointer/opposite-direction/1246.-longest-repeating-character-replacement.md)
-    * [Untitled](algorithm/two_pointer/opposite-direction/untitled.md)
+    * [Minimize Maximum Pair Sum in Array \(LeetCode 1877\) \(M\)](algorithm/two_pointer/opposite-direction/untitled.md)
     * [Squares of a Sorted Array 1901 \(E\)](algorithm/two_pointer/opposite-direction/squares-of-a-sorted-array-1901-e.md)
   * [Same Direction](algorithm/two_pointer/same-direction/README.md)
     * [Minimum Window Substring 32 \(M\)](algorithm/two_pointer/same-direction/minimum-window-substing-32-e.md)
