@@ -54,7 +54,53 @@ Explanation: All three possible rhombus sums are the same, so return [7].
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+import heapq
+class Solution:
+    def getBiggestThree(self, grid: List[List[int]]) -> List[int]:
+        queue = []
+        unique = set()
+        m = len(grid)
+        n = len(grid[0])
+        for i in range(m):
+            for j in range(n):
+                for rhombus in self.find_rohombus(grid, i, j):
+                    # only record distinct values
+                    if rhombus not in unique:
+                        heapq.heappush(queue, rhombus)
+                        unique.add(rhombus)
+                        if len(queue) > 3:
+                            heapq.heappop(queue)
+        return sorted(queue, reverse = True)
+    
+    def find_rohombus(self, grid, x, y):
+        rohombuses = []
+        # first add single point
+        rohombuses.append(grid[x][y])
+        length = 1
+        # based on length, find all the points on diagnosed lines
+        while length <= min(len(grid), len(grid[0]))//2:
+            sums = []
+            DIRECTIONS = ((-1, -1), (1, -1), (1, 1), (-1, 1))
+            new_x = x
+            new_y = y
+            for (dx, dy) in DIRECTIONS:
+                tmp_length = 0
+                while tmp_length < length:
+                    new_x = new_x + dx
+                    new_y = new_y + dy
+                    # early prunning
+                    if not self.is_valid(grid, new_x, new_y):
+                        return rohombuses
+                    sums.append(grid[new_x][new_y])
+                    tmp_length+=abs(dx)
+            rohombuses.append(sum(sums))
+            length+=1
+        return rohombuses
+    
+    def is_valid(self, grid, x, y):
+        if x < 0 or x >= len(grid) or y < 0 or y >= len(grid[0]):
+            return False
+        return True
 ```
 {% endtab %}
 {% endtabs %}
