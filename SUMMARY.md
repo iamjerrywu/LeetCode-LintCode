@@ -308,6 +308,7 @@
   * [Open the Lock 796 \(H\)](algorithm/s4.-queue-bfs-graph/untitled.md)
   * [Friend Circles 1179 \(M\)](algorithm/s4.-queue-bfs-graph/1179.-friend-circles.md)
   * [Modern Ludo I 1565 \(M\)](algorithm/s4.-queue-bfs-graph/modern-ludo-i-1565-m.md)
+  * [Get Biggest Three Rhombus Sums in a Grid \(LeetCode 1878\) \(M\)](algorithm/s4.-queue-bfs-graph/get-biggest-three-rhombus-sums-in-a-grid-leetcode-1878-m.md)
 * [DFS](algorithm/dfs/README.md)
   * [Subsets](algorithm/dfs/subsets/README.md)
     * [Subsets 17 \(M\)](algorithm/dfs/subsets/17.-subsets-m.md)
