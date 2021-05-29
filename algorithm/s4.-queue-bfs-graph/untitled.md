@@ -54,13 +54,63 @@ Output: -1
 * target **will not be** in the list `deadends`.
 * `target` and `deadends[i]` consist of digits only.
 
-## Solution 
+## Solution - BFS
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param deadends: the list of deadends
+    @param target: the value of the wheels that will unlock the lock
+    @return: the minimum total number of turns 
+    """
+    def openLock(self, deadends, target):
+        dead = set(deadends)
+        if '0000' in dead: return -1
+        # neighbors = set(self.adjacent(target))
+        # if neighbors & dead == neighbors: return -1
+        visited = set()
+        queue = collections.deque(['0000'])
+        step = 0
+        while queue:
+            for _ in range(len(queue)):
+                now = queue.popleft()
+                if now == target: 
+                    return step
+                visited.add(now)
+                for n in self.get_next(now):
+                    if n in dead or n in visited: 
+                        continue
+                    queue.append(n)
+                    visited.add(n)
+            step += 1
+        return -1
+    
+    def get_next(self, now_str):
+        nexts = set()
+        for i in range(4):
+            now = list(now_str)
+            original = now[i]
+            # add 1 on wheel
+            now[i] = str((int(original) + 1) % 10)
+            nexts.add(''.join(now))
+            # minus 1 on wheel
+            now[i] = str((int(original) + 10 - 1) % 10)
+            nexts.add(''.join(now))
+        return nexts
+    
+    ''' 
+     Another tricky way to get next door number
+    '''   
+    # def get_next(self, now):
+    #     res = []
+    #     for i in range(4):
+    #         left, mid, right = now[:i], int(now[i]), now[i + 1:]
+    #         for m in [(mid + 1) % 10, (mid - 1) % 10]: res.append(left + str(m) + right)
+    #     return res
 
 ```
 {% endtab %}
