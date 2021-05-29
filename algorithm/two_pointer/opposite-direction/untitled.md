@@ -45,13 +45,23 @@ The maximum pair sum is max(3+5, 4+4, 6+2) = max(8, 8, 8) = 8.
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    def minPairSum(self, nums: List[int]) -> int:
+        nums.sort()
+        start, end = 0, len(nums) - 1
+        max_val = -float('inf')
+        while start < end:
+            print(nums[start], nums[end])
+            max_val = max(max_val, nums[start] + nums[end])
+            start+=1
+            end-=1
+        return max_val
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
