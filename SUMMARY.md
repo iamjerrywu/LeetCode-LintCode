@@ -50,6 +50,7 @@
   * [Can Place Flowers 1138 \(E\)](data_structure/array/can-place-flowers-1138-e.md)
   * [Legal Number Statistics II 1659 \(E\)](data_structure/array/legal-number-statistics-ii-1659-e.md)
   * [Longer Contiguous Segments of Ones than Zeros \(LeetCode 1869\) \(E\)](data_structure/array/longer-contiguous-segments-of-ones-than-zeros-leetcode-1869-e.md)
+  * [Substrings of Size Three with DIstinct Characters 1876 \(E\)](data_structure/array/substrings-of-size-three-with-distinct-characters-1876-e.md)
 * [Linked List](data_structure/linked_list/README.md)
   * [Middle of Linked List 228 \(N\)](data_structure/linked_list/middle-of-linked-list-228-n.md)
   * [Middle of the LinkedList 1609 \(E\)](data_structure/linked_list/middle-of-the-linkedlist-1609-e.md)
