@@ -303,7 +303,7 @@
   * [Zombie in Matrix 598 \(M\)](algorithm/s4.-queue-bfs-graph/zombie-in-matrix-598-m.md)
   * [The Maze III 789 \(H\)](algorithm/s4.-queue-bfs-graph/the-maze-iii-789-m.md)
   * [Sliding Puzzle II 794 \(H\)](algorithm/s4.-queue-bfs-graph/sliding-puzzle-ii-794-h.md)
-  * [Untitled](algorithm/s4.-queue-bfs-graph/untitled.md)
+  * [Open the Lock 796 \(H\)](algorithm/s4.-queue-bfs-graph/untitled.md)
   * [Friend Circles 1179 \(M\)](algorithm/s4.-queue-bfs-graph/1179.-friend-circles.md)
   * [Modern Ludo I 1565 \(M\)](algorithm/s4.-queue-bfs-graph/modern-ludo-i-1565-m.md)
 * [DFS](algorithm/dfs/README.md)

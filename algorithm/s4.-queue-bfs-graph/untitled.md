@@ -1,4 +1,4 @@
-# Untitled
+# Open the Lock 796 \(H\)
 
 ## Problem
 
