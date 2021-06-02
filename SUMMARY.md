@@ -27,6 +27,7 @@
   * [Count Email Groups 1632 \(E\)](data_structure/string/count-email-groups-1632-e.md)
   * [Reverse ASCII Encoded Strings 1781 \(E\)](data_structure/string/reverse-ascii-encoded-strings-1781-e.md)
   * [Sorting the Sentence \(LeetCode 1859\) \(E\)](data_structure/string/sorting-the-sentence-1859-e.md)
+  * [Check if Word Equals Summation of Two Words \(LeetCode 1880\) \(E\)](data_structure/string/check-if-word-equals-summation-of-two-words-leetcode-1880-e.md)
 * [Array](data_structure/array/README.md)
   * [Prefix Sum](data_structure/array/prefix-sum/README.md)
     * [Maximum Subarray 41 \(E\)](data_structure/array/prefix-sum/maximum-subarray-41-e.md)
