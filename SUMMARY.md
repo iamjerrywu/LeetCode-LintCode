@@ -359,6 +359,7 @@
     * [Jump Game 116 \(M\)](algorithm/dynamic_programming/coordination/116.-jump-game-m.md)
     * [Jump Game VII 5765 \(M\)](algorithm/dynamic_programming/coordination/untitled.md)
     * [Knight Shortest Path II 630 \(M\)](algorithm/dynamic_programming/coordination/630.-knight-shortest-path-ii.md)
+    * [Minimum Skips to Arrive at Meeting On Time \(LeetCode 1883\) \(H\)](algorithm/dynamic_programming/coordination/minimum-skips-to-arrive-at-meeting-on-time-leetcode-1883-h.md)
   * [Partition](algorithm/dynamic_programming/partition/README.md)
     * [Longest Increasing Subsequence 76 \(M\)](algorithm/dynamic_programming/partition/76.-longest-increasing-sequence-m.md)
     * [Word Break 107 \(M\)](algorithm/dynamic_programming/partition/107.-word-break--m.md)
