@@ -42,7 +42,30 @@ Explanation: You can make n one of {-213, -123, -132}, and the largest of those 
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    def maxValue(self, n: str, x: int) -> str:
+        val = 0
+        l = len(n)
+        if int(n) > 0:
+            i = 0
+            while i < l and int(n[i]) >= x:
+                i+=1
+            if n[:i]:
+                val+= int(n[:i]) * (10**(l - i + 1))
+            if n[i:]:
+                val+=int(n[i:])
+            val+= x * (10**(l - i))
+            return str(val)
+        else:
+            i = 1
+            while i < l and int(n[i]) <= x:
+                i+=1
+            if n[1:i]:
+                val+= int(n[1:i]) * (10**(l - i + 1))
+            if n[i:]:
+                val+=int(n[i:])
+            val+= x * (10**(l - i)) 
+            return str(-val)
 ```
 {% endtab %}
 {% endtabs %}
