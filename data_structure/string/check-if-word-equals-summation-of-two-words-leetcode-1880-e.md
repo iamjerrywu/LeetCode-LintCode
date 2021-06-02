@@ -66,7 +66,22 @@ We return true because 0 + 0 == 0.
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    def isSumEqual(self, firstWord: str, secondWord: str, targetWord: str) -> bool:
+        first_val, second_val, target_val = 0, 0, 0
+        first_val = self.word_to_val(firstWord)
+        second_val = self.word_to_val(secondWord)
+        target_val = self.word_to_val(targetWord)
+        
+        return target_val == first_val + second_val
+    
+    def word_to_val(self, word):
+        n = len(word)
+        val = 0
+        for c in word:
+            val = val + (ord(c) - ord('a')) * 10**(n - 1)
+            n-=1
+        return val
 ```
 {% endtab %}
 {% endtabs %}
