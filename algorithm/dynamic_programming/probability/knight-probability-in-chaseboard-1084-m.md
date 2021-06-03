@@ -69,6 +69,7 @@ class Solution:
                         last_x = i + delta_x
                         last_y = j + delta_y
                         if self.is_valid(last_x, last_y, N):
+                            # since the move is probability 1/8
                             dp[i][j][k]+=dp[last_x][last_y][k - 1]*0.125
         res = 0
         for i in range(N):
