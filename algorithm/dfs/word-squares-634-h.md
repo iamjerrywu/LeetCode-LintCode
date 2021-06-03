@@ -56,7 +56,6 @@ class Solution:
         return squares
     
     def search(self, prefix_to_words, square, squares):
-        print(square)
         cur_id = len(square)
         if cur_id == len(square[0]):
             squares.append(list(square))
