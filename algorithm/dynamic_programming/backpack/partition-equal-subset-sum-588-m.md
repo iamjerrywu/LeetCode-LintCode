@@ -84,6 +84,12 @@ class Solution:
 
 ## Solution - DP \(2\)
 
+Since every number whether it can be sums of subset or not, depend on previous state
+
+State function can write as :
+
+* dp\[j\] = dp\[j\] \| dp\[j - A\[i\]\]
+
 ### Code
 
 {% tabs %}
