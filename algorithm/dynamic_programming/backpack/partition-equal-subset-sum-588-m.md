@@ -25,7 +25,7 @@ Input: nums = [1, 2, 3, 9],
 Output: false
 ```
 
-## Solution
+## Solution - DP \(1\)
 
 In brute force, one way is to find all the subsets and then find whether any of it equals to sum\(total\)/2. However, that require O\(2^n\) times
 
@@ -82,7 +82,7 @@ class Solution:
 * **Time Complexity: O\(n \* m\)**
 * **Space Complexity: O\(n \* m\)**
 
-## Solution 
+## Solution - DP \(2\)
 
 ### Code
 
