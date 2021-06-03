@@ -89,7 +89,46 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param nums: a non-empty array only positive integers
+    @return: true if can partition or false
+    """
+    def canPartition(self, nums):
+        # write your code here
+        if not nums:
+            return False
+        total = sum(nums)
+        if total%2 == 1:
+            return False
+        
+        target = total//2
+        n = len(nums)
+        
+        # dp[i] means ith state, whether it can be the subset values or not
+        dp = [False] * (target + 1)
+        
+        # init dp[0] as true
+        dp[0] = True
 
+        for i in range(n):
+            for j in range(target, -1, -1):
+                if j >= nums[i]:
+                    dp[j] = dp[j] | dp[j - nums[i]]
+        return dp[target]
+            # should write as top down
+
+            # WARNING!
+            # if write as bottom up, would face that re-count the possibility
+            # i.e: 
+            # id: 0 1 2 3 4 5 6 7 8 
+            #     1 0 1 0 0 0 0 0 0. ----- 2
+            #     1 0 0 0 0 0 0 0 1. ----- 8
+            #     1 0 0 1 0 1 0 0 0. ----- 3
+            # the last line importing 3, if using bottom up solution, would count as
+            
+            #.    1 0 0 1 0 1 0 1 0, Here can see that 7 is mark as one
+            #. since we reuse the 3 in 5 to count total as 7, that's not allowed
 ```
 {% endtab %}
 {% endtabs %}
