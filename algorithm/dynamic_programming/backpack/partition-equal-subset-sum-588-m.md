@@ -88,7 +88,7 @@ Since every number whether it can be sums of subset or not, depend on previous s
 
 State function can write as :
 
-* dp\[j\] = dp\[j\] \| dp\[j - A\[i\]\]
+* dp\[j\] = dp\[j\] \| dp\[j - nums\[i\]\]
 
 ### Code
 
