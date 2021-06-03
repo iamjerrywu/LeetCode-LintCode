@@ -381,6 +381,7 @@
     * [Calculate Maximum Value II 741 \(M\)](algorithm/dynamic_programming/interval/741.-calculate-maximum-value-ii-m.md)
   * [Probability](algorithm/dynamic_programming/probability/README.md)
     * [Dices Sum 20 \(M\)](algorithm/dynamic_programming/probability/dices-sum-20-m.md)
+    * [Knight Probability in Chaseboard 1084 \(M\)](algorithm/dynamic_programming/probability/knight-probability-in-chaseboard-1084-m.md)
   * [Best Time to Buy and Sell Stock 149 \(M\)](algorithm/dynamic_programming/best-time-to-buy-and-sell-stock-149-m.md)
   * [House Robber 392 \(M\)](algorithm/dynamic_programming/house-robbe-392-m.md)
   * [Paint House 515 \(M\)](algorithm/dynamic_programming/paint-house-515-m.md)
