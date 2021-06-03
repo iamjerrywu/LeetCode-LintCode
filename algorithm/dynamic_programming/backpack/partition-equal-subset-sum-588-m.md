@@ -27,6 +27,8 @@ Output: false
 
 ## Solution
 
+In brute force, one way is to find all the subsets and then find whether any of it equals to sum\(total\)/2. However, that require O\(2^n\) times
+
 ### Code
 
 {% tabs %}
