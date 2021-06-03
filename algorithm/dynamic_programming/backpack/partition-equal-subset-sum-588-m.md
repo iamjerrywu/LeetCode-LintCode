@@ -29,6 +29,10 @@ Output: false
 
 In brute force, one way is to find all the subsets and then find whether any of it equals to sum\(total\)/2. However, that require O\(2^n\) times
 
+If any num can be found, that mark as 1
+
+![](../../../.gitbook/assets/screen-shot-2021-06-03-at-5.59.53-pm.png)
+
 ### Code
 
 {% tabs %}
