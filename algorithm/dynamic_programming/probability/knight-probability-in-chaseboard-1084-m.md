@@ -46,7 +46,40 @@ Cannot depend on the valid points and invalid points based on Traverse \(BFS/DFS
 {% tabs %}
 {% tab title="python" %}
 ```python
+DIRECTIONS = [(1,2), (1, -2), (-1, 2), (-1, -2), (2, 1), (2, -1), (-2, 1), (-2, -1)]
+class Solution:
+    """
+    @param N: int
+    @param K: int
+    @param r: int
+    @param c: int
+    @return: the probability
+    """
+    def knightProbability(self, N, K, r, c):
+        # Write your code here.
+        dp = [[[0] * (K + 1) for i in range(N)] for j in range(N)]
 
+        # init
+        dp[r][c][0] = 1
+
+        for k in range(1, K + 1):
+            for i in range(N):
+                for j in range(N):
+                    for delta_x, delta_y in DIRECTIONS:
+                        last_x = i + delta_x
+                        last_y = j + delta_y
+                        if self.is_valid(last_x, last_y, N):
+                            dp[i][j][k]+=dp[last_x][last_y][k - 1]*0.125
+        res = 0
+        for i in range(N):
+            for j in range(N):
+                res+=dp[i][j][K]
+        return res
+    
+    def is_valid(self, i, j, N):
+        if i < 0 or i >= N or j < 0 or j >= N:
+            return False
+        return True
 ```
 {% endtab %}
 {% endtabs %}
