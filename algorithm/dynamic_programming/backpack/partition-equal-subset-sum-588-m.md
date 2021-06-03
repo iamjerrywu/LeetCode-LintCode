@@ -44,6 +44,7 @@ class Solution:
         if not nums:
             return False
         total = sum(nums)
+        # if total is odd, can never find it
         if total%2 == 1:
             return False
 
