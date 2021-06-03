@@ -381,6 +381,7 @@
     * [Calculate Maximum Value II 741 \(M\)](algorithm/dynamic_programming/interval/741.-calculate-maximum-value-ii-m.md)
   * [Best Time to Buy and Sell Stock 149 \(M\)](algorithm/dynamic_programming/best-time-to-buy-and-sell-stock-149-m.md)
   * [House Robber 392 \(M\)](algorithm/dynamic_programming/house-robbe-392-m.md)
+  * [Paint House 515 \(M\)](algorithm/dynamic_programming/paint-house-515-m.md)
   * [House Robber II 534 \(M\)](algorithm/dynamic_programming/house-robber-ii-534.md)
   * [House Rober III 535 \(M\)](algorithm/dynamic_programming/house-rober-iii-535-m.md)
   * [Minimum Adjustment Cost 91 \(M\)](algorithm/dynamic_programming/91.-minimum-adjustment-cost-m.md)
