@@ -97,9 +97,9 @@ class TweetCounts:
 ### Complexity Analysis
 
 * **Time Complexity:**
-* **Space Complexity:**
-
-\*\*\*\*
+  * recordTweet\(\):  O\(1\)
+  * getTweetCountsPerFrequency\(\): O\(n\)
+* **Space Complexity: O\(n\)**
 
 ## Solution - Hash + Binary Serach
 
