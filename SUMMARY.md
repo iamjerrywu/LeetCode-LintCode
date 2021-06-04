@@ -112,6 +112,7 @@
   * [Subdomain Visit Count 1006 \(E\)](data_structure/hash/subdomain-visit-count-1006-e.md)
   * [Rabbits in Forest 1035 \(M\)](data_structure/hash/rabbits-in-forest-1035-m.md)
   * [Bulls and Cows 1299 \(M\)](data_structure/hash/bulls-and-cows-1299-m.md)
+  * [Tweet Counts Per Frequency 1348 \(M\)](data_structure/hash/tweet-counts-per-frequency-1348-m.md)
   * [Can Convert 1540 \(E\)](data_structure/hash/can-convert-1540-e.md)
   * [Distinguish Username 1789 \(E\)](data_structure/hash/distinguish-username-1789-e.md)
   * [K-Difference 1796 \(M\)](data_structure/hash/k-difference-1796-e.md)
