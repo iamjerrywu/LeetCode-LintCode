@@ -101,14 +101,74 @@ class TweetCounts:
 
 \*\*\*\*
 
-## Solution 
+## Solution - Hash + Binary Serach
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+class TweetCounts:
 
+    def __init__(self):
+        self.dict = {}
+        
+
+    def recordTweet(self, tweetName: str, time: int) -> None:
+        if (tweetName not in self.dict):
+            self.dict[tweetName] = [time]
+        else:
+            self.dict[tweetName].append(time)
+            # depend on which functions called more frequently
+            # if recordTweet() is more frequently called, sort here
+            self.dict[tweetName].sort()
+
+    def getTweetCountsPerFrequency(self, freq: str, tweetName: str, startTime: int, endTime: int) -> List[int]:
+        if tweetName not in self.dict:
+            return []
+        chunk = 1
+        if freq == 'minute':
+            chunk = 60
+        if freq == 'hour':
+            chunk = 3600
+        if freq == 'day':
+            chunk = 86400
+        size = int((endTime - startTime)/chunk) + 1
+        res = [0 for _ in range(size)]
+        times = self.dict[tweetName]
+        # depend on which functions called more frequently
+        # if getTweetCountsPerFrequency is more frequent, don't sort here
+        # times.sort()
+
+        if startTime > times[-1]:
+            return res
+        start_id = self.binary_search(0, len(times) - 1, times, startTime)
+        for id in range(start_id, len(times)):
+            if times[id] > endTime:
+                break
+            time_id = int((times[id] - startTime)/chunk)
+            res[time_id]+=1
+        return res
+    
+    def binary_search(self, start, end, times, target):
+        while start + 1 < end:
+            mid = start + (end - start)//2
+            if times[mid] > target:
+                end = mid
+            elif times[mid] < target:
+                start = mid
+            else:
+                return mid
+        if times[start] >= target:
+            return start
+        if times[end] >= target:
+            return end
+
+
+# Your TweetCounts object will be instantiated and called as such:
+# obj = TweetCounts()
+# obj.recordTweet(tweetName,time)
+# param_2 = obj.getTweetCountsPerFrequency(freq,tweetName,startTime,endTime)
 ```
 {% endtab %}
 {% endtabs %}
