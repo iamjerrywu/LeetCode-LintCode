@@ -55,7 +55,41 @@ tweetCounts.getTweetCountsPerFrequency("hour", "tweet3", 0, 210);  // return [4]
 {% tabs %}
 {% tab title="python" %}
 ```python
+class TweetCounts:
 
+    def __init__(self):
+        self.dict = {}
+        
+
+    def recordTweet(self, tweetName: str, time: int) -> None:
+        if (tweetName not in self.dict):
+            self.dict[tweetName] = [time]
+        else:
+            self.dict[tweetName].append(time)
+
+    def getTweetCountsPerFrequency(self, freq: str, tweetName: str, startTime: int, endTime: int) -> List[int]:
+        if tweetName not in self.dict:
+            return []
+        chunk = 1
+        if freq == 'minute':
+            chunk = 60
+        if freq == 'hour':
+            chunk = 3600
+        if freq == 'day':
+            chunk = 86400
+        size = int((endTime - startTime)/chunk) + 1
+        res = [0 for _ in range(size)]
+        for time in self.dict[tweetName]:
+            if startTime <= time <= endTime:
+                time_id = int((time - startTime)/chunk)
+                res[time_id]+=1
+        return res
+
+
+# Your TweetCounts object will be instantiated and called as such:
+# obj = TweetCounts()
+# obj.recordTweet(tweetName,time)
+# param_2 = obj.getTweetCountsPerFrequency(freq,tweetName,startTime,endTime)
 ```
 {% endtab %}
 {% endtabs %}
