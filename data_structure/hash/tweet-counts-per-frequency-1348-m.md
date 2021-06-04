@@ -48,7 +48,7 @@ tweetCounts.getTweetCountsPerFrequency("hour", "tweet3", 0, 210);  // return [4]
 * `0 <= endTime - startTime <= 104`
 * There will be at most `104` calls **in total** to `recordTweet` and `getTweetCountsPerFrequency`.
 
-## Solution 
+## Solution - Hash + Linear Search
 
 ### Code
 
