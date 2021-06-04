@@ -176,5 +176,7 @@ class TweetCounts:
 ### Complexity Analysis
 
 * **Time Complexity:**
-* **Space Complexity:**
+  * recordTweet\(\):  O\(nlogn\)
+  * getTweetCountsPerFrequency\(\): O\(logn\)
+* **Space Complexity: O\(n\)**
 
