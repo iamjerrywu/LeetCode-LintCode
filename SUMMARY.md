@@ -49,7 +49,7 @@
   * [ArrayList 385 \(E\)](data_structure/array/arraylist-385-e.md)
   * [Longest Continuous Increasing Subsequence 397 \(E\)](data_structure/array/longest-continuous-increasing-subsequence-397-e.md)
   * [Second Max Array 479 \(E\)](data_structure/array/second-max-array-479-e.md)
-  * [Find the Duplicate Number 633 \(M\)](data_structure/array/find-the-duplicate-number-633-m.md)
+  * [Find the Duplicate Number 633 \(H\)](data_structure/array/find-the-duplicate-number-633-m.md)
   * [Can Place Flowers 1138 \(E\)](data_structure/array/can-place-flowers-1138-e.md)
   * [Legal Number Statistics II 1659 \(E\)](data_structure/array/legal-number-statistics-ii-1659-e.md)
   * [Longer Contiguous Segments of Ones than Zeros \(LeetCode 1869\) \(E\)](data_structure/array/longer-contiguous-segments-of-ones-than-zeros-leetcode-1869-e.md)

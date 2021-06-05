@@ -1,4 +1,4 @@
-# Find the Duplicate Number 633 \(M\)
+# Find the Duplicate Number 633 \(H\)
 
 ## Problem
 
@@ -117,6 +117,33 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param nums: an array containing n + 1 integers which is between 1 and n
+    @return: the duplicate one
+    """
+    def findDuplicate(self, nums):
+        # write your code here
+        left, right = 1, len(nums) - 1
+        
+        while left + 1 < right:
+            mid = left + (right - left)//2
+            if self.count(nums, mid) <= mid:
+                left = mid
+            else:
+                right = mid
+        # because that number might appeared multiple times, should <= left
+        if self.count(nums, left) <= left:
+            return right
+        return left
+    
+    # count how many number <= mid
+    def count(self, nums, mid):
+        cnt = 0
+        for num in nums:
+            if num <= mid:
+                cnt+=1
+        return cnt
 
 ```
 {% endtab %}
@@ -124,12 +151,12 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(nlogn\)**
+* **Space Complexity: O\(1\)**
 
 \*\*\*\*
 
-## Solution 
+## Solution - Two Pointers
 
 ### Code
 
