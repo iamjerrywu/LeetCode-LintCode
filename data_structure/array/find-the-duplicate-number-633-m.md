@@ -158,18 +158,39 @@ class Solution:
 
 ## Solution - Two Pointers
 
+![](../../.gitbook/assets/screen-shot-2021-06-05-at-7.28.05-pm.png)
+
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        slow = nums[0]
+        fast = nums[0]
+        
+        while True:
+            slow = nums[slow]
+            fast = nums[nums[fast]]
 
+            if slow == fast:
+                break
+        
+        slow = nums[0]
+        print(slow, fast)
+        while True:
+            
+            if slow == fast:
+                return slow
+            slow = nums[slow]
+            fast = nums[fast]
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
