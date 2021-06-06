@@ -46,6 +46,7 @@
   * [Matrix](data_structure/array/matrix/README.md)
     * [Rotate Image 161 \(M\)](data_structure/array/matrix/rotate-image-161-m.md)
     * [Rotating the Box \(LeetCode 1861\) \(M\)](data_structure/array/matrix/rotating-the-box-leetcode-1861-m.md)
+    * [Determine Whether Matrix Can Be Obtained By Rotation \(LeetCode 1886\) \(E\)](data_structure/array/matrix/determine-whether-matrix-can-be-obtained-by-rotation-leetcode-1886-e.md)
   * [ArrayList 385 \(E\)](data_structure/array/arraylist-385-e.md)
   * [Longest Continuous Increasing Subsequence 397 \(E\)](data_structure/array/longest-continuous-increasing-subsequence-397-e.md)
   * [Second Max Array 479 \(E\)](data_structure/array/second-max-array-479-e.md)
