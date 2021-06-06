@@ -57,7 +57,35 @@ The total waste is (5-3) + (5-5) + (10-8) + (10-10) + (14-11) + (14-12) = 9.
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    def minWastedSpace(self, packages: List[int], boxes: List[List[int]]) -> int:
+        packages.sort()
+        packages_space = sum(packages)
+        box_space = float('inf')
+        wasted_space = float('inf')
+        
+        for box_list in boxes:
+            box_list.sort()
+            # if biggest box cannot hold largest package, then continue
+            if box_list[-1] < packages[-1]:
+                continue
+            
+            pre_id, cur_id, box_space = 0, 0, 0
+            
+            for box in box_list:
+                # if box too small for even the smallest package
+                if box < packages[0]:
+                    continue
+                # find the id that located in the package list 
+                # those left to cur_id's package can be contained in the box
+                cur_id = bisect.bisect_right(packages, box)
+                box_space+=(cur_id - pre_id) * box
+                if cur_id >= len(packages):
+                    break
+                pre_id = cur_id
+            wasted_space = min(wasted_space, box_space - packages_space)
+        
+        return wasted_space % (10 ** 9 + 7) if wasted_space != float('inf') else -
 ```
 {% endtab %}
 {% endtabs %}
