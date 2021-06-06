@@ -92,6 +92,11 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(nlogn + mlogk\)**
+  * n: length of packages
+  * m: length of box\_list in boxes
+  * k: length of box\_list
 * **Space Complexity:**
+  * O\(n + m\)
+    * Timsort\(\)
 
