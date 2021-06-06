@@ -264,6 +264,7 @@
     * [Grumpy Bookstore Owner 1849 \(M\)](algorithm/two_pointer/same-direction/grumpy-bookstore-owner-1849-m.md)
     * [Pick Apples 1850 \(M\)](algorithm/two_pointer/same-direction/pick-apples-1850-m.md)
     * [1870. Number of Substrings with All Zeros \(M\)](algorithm/two_pointer/same-direction/1870.-number-of-substrings-with-all-zeros.md)
+    * [Minimum Number of Flips to Make the Binary String Alternating \(LeetCode 1888\) \(M\)](algorithm/two_pointer/same-direction/minimum-number-of-flips-to-make-the-binary-string-alternating-leetcode-1888-m.md)
 * [Binary Search](algorithm/binary_search/README.md)
   * [Classical](algorithm/binary_search/classical/README.md)
     * [Search Insert Position 60 \(E\)](algorithm/binary_search/classical/search-insert-position-60-e.md)
@@ -398,6 +399,7 @@
   * [Task Scheduler 945 \(M\)](algorithm/greedy/task-scheduler-945-m.md)
   * [Interval Minimum Coverage 1668 \(M\)](algorithm/greedy/interval-minimum-coverage-1668-m.md)
   * [Minimum Number of Swaps to Make the Binary String Alternating \(LeetCode 1864\) \(M\)](algorithm/greedy/untitled.md)
+  * [Reduction Operations to Make the Array Elements Equal （LeetCode 1887\) \(M\)](algorithm/greedy/reduction-operations-to-make-the-array-elements-equal-leetcode-1887-m.md)
 
 ## Other
 
