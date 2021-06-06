@@ -50,7 +50,7 @@ The total waste is (5-3) + (5-5) + (10-8) + (10-10) + (14-11) + (14-12) = 9.
 * `sum(boxes[j].length) <= 105`
 * The elements in `boxes[j]` are **distinct**.
 
-## Solution 
+## Solution - Binary Search
 
 ### Code
 
