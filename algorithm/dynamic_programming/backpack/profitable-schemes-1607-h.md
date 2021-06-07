@@ -93,3 +93,20 @@ class Solution:
   * P: minimum profit
 * **Space Complexity: O\(n \* G \* P\)**
 
+## Solution - DP with strolling arrays
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
