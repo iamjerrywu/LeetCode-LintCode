@@ -395,6 +395,7 @@
   * [House Rober III 535 \(M\)](algorithm/dynamic_programming/house-rober-iii-535-m.md)
   * [Minimum Adjustment Cost 91 \(M\)](algorithm/dynamic_programming/91.-minimum-adjustment-cost-m.md)
   * [Minimum Partition 724 \(M\)](algorithm/dynamic_programming/724.-minimum-partition.md)
+  * [Distinct Subsequences II 1702 \(H\)](algorithm/dynamic_programming/distinct-subsequences-ii-1702-h.md)
 * [Greedy](algorithm/greedy/README.md)
   * [Gas Station 187 \(M\)](algorithm/greedy/gas-station-187-m.md)
   * [Smallest Subset 761 \(M\)](algorithm/greedy/smallest-subset-761-m.md)
