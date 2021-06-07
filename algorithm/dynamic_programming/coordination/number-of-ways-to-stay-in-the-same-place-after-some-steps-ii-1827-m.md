@@ -35,7 +35,7 @@ Input: 42Output: 8
 
 ## Solution - DP
 
-
+![](../../../.gitbook/assets/screen-shot-2021-06-07-at-3.26.48-pm.png)
 
 ### Code
 
