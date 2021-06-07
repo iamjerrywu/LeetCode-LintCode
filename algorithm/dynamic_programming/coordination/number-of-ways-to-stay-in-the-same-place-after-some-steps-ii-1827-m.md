@@ -35,6 +35,8 @@ Input: 42Output: 8
 
 ## Solution - DP
 
+
+
 ### Code
 
 {% tabs %}
@@ -76,7 +78,9 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\*m\)**
+* **Time Complexity: O\(m\*n\)**
+  * m: steps
+  * n: max distance
 * **Space Complexity: O\(n\*m\)**
 
 ## Solution - DP with strolling arrays
@@ -86,13 +90,44 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+MOD = 10**9 + 7
+class Solution:
+    """
+    @param steps: steps you can move
+    @param arrLen: the length of the array
+    @return: Number of Ways to Stay in the Same Place After Some Steps
+    """
+    def numWays(self, steps, arrLen):
+        # write your code here
+        if arrLen == 1:
+            return 1
+        
+        # calculate the farest distance you can go
+        n = min(steps//2 + 1, arrLen)
 
+        # state: dp[i][j] means how many ways you stay at j, after waking i steps
+        dp = [[0] * n for _ in range(2)]
+
+        # init
+        dp[0][0] = 1
+
+        #dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j] + dp[i - 1][j + 1]
+        for i in range(1, steps + 1):
+            # first point and last point need to additionally consider
+            dp[i%2][0] = (dp[(i - 1)%2][0] + dp[(i - 1)%2][1])%MOD
+            dp[i%2][n - 1] = (dp[(i - 1)%2][n - 1] + dp[(i - 1)%2][n - 2])%MOD
+
+            for j in range(1, n - 1):
+                dp[i%2][j] = (dp[(i - 1)%2][j - 1] + dp[(i - 1)%2][j] + dp[(i - 1)%2][j + 1])%MOD
+        return dp[steps%2][0]
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n \* m\)**
+  * m: steps
+  * n: max distance
+* **Space Complexity: O\(n\)**
 
