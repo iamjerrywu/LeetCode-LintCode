@@ -357,6 +357,7 @@
     * [Backpack III 440 \(M\)](algorithm/dynamic_programming/backpack/440.-backpack-iii-m.md)
     * [Backpack V 563 \(M\)](algorithm/dynamic_programming/backpack/backpack-v-563-m.md)
     * [Partition Equal Subset Sum 588 \(M\)](algorithm/dynamic_programming/backpack/partition-equal-subset-sum-588-m.md)
+    * [Profitable Schemes 1607 \(H\)](algorithm/dynamic_programming/backpack/profitable-schemes-1607-h.md)
   * [Coordination](algorithm/dynamic_programming/coordination/README.md)
     * [Minimum Path Sum 110 \(E\)](algorithm/dynamic_programming/coordination/minimum-path-sum-110-e.md)
     * [Unique Paths 114 \(E\)](algorithm/dynamic_programming/coordination/114.-unique-paths-e.md)
