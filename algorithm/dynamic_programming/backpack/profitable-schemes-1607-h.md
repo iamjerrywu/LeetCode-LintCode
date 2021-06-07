@@ -100,13 +100,54 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param G: The people in a gang.
+    @param P: A profitable scheme any subset of these crimes that generates at least P profit.
+    @param group: The i-th crime requires group[i] gang members to participate.
+    @param profit: The i-th crime generates a profit[i].
+    @return: Return how many schemes can be chosen.
+    """
+    def profitableSchemes(self, G, P, group, profit):
+        # Write your code here.
+        n = len(group)
+        # dp[i][j][k]: the amount of solution, that in first ith crimes, used j people to get at least k profit
+        dp = [
+            [
+                [0] * (P + 1)
+                for _ in range(G + 1)
+            ]
+            for _ in range(2)
+        ]
 
+        # init
+        dp[0][0][0] = 1
+        
+        # function:
+        # dp[i][j][k] = dp[i - 1][j][k] (not execut crimes[i -1])
+        #             + dp[i - 1][j - groups[i-1]][k - profit[i - 1]] (execute crime[i - 1])
+        # when k - profit[i - 1] < 0, then let it = 0
+        for i in range(1, n + 1):
+            for j in range(G + 1):
+                for k in range(P + 1):
+                    dp[i%2][j][k] = dp[(i - 1)%2][j][k]
+                    if j >= group[i - 1]:
+                        prev_k = max(k - profit[i - 1], 0)
+                        dp[i%2][j][k]+=dp[(i - 1)%2][j - group[i - 1]][prev_k]
+        
+        total = 0
+        for g in range(G + 1):
+            total +=dp[n%2][g][P]
+        return total
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n \* G \* P\)**
+  * n: crimes length
+  * G: people number
+  * P: minimum profit
+* **Space Complexity: O\(G \* P\)**
 
