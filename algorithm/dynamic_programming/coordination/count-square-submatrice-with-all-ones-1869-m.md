@@ -1,4 +1,4 @@
-# Count Square Submatrice with All Ones 1869 \(M\)
+# Count Square Submatrices with All Ones 1869 \(M\)
 
 ## Problem
 
@@ -85,13 +85,54 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param matrix: a matrix
+    @return: return how many square submatrices have all ones
+    """
+    def countSquares(self, matrix):
+        # write your code here
+        n, m = len(matrix), len(matrix[0])
+        
+        # state: dp[i][j] means how 1*1 squares that i, j as right bottom square
+        # state: left[i][j] means i, j to left, the longest length of consecutive 1
+        # state: left[i][j] means i, j to up, the longest length of consecutive 1
 
+        dp = [[0] * m for _ in range(2)]
+        left = [[0] * m for _ in range(2)]
+        up = [[0] * m for _ in range(2)]
+        
+        # init: init first line
+        # for i in range(n):
+        #     dp[i][0] = left[i][0] = up[i][0] = matrix[i][0]
+        
+        # init first row
+        for j in range(m):
+            dp[0][j] = left[0][j] = up[0][j] = matrix[0][j]
+        ans = sum(dp[0])
+        
+        # function: if matrix[i][j] = 0, then dp[i][j] = 0; otherwise, 
+        #    dp[i][j] = min(left[i][j - 1], up[i - 1][j], dp[i - 1][j - 1]) + 1
+        #    can also write as:
+        #    dp[i][j] = min(left[i][j], up[i][j], dp[i - 1][j - 1] + 1)
+
+        for i in range(1, n):
+            dp[i%2][0] = left[i%2][0] = up[i%2][0] = matrix[i][0]
+            for j in range(1, m):
+                if matrix[i][j] == 0:
+                    dp[i%2][j] = left[i%2][j] = up[i%2][j] = 0
+                    continue
+                left[i%2][j] = left[i%2][j - 1] + 1
+                up[i%2][j] = up[(i - 1)%2][j] + 1
+                dp[i%2][j] = min(left[i%2][j - 1], up[(i - 1)%2][j], dp[(i - 1)%2][j - 1]) + 1
+            ans+=sum(dp[i%2])
+        return ans
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n \* m\)**
+* **Space Complexity: O\(m\)**
 
