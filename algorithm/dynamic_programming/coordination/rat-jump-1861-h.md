@@ -22,7 +22,7 @@ Input:[0,0,0]Output:5Explanation:There are 3 steps.The step 2  is the starting p
 Input:[0,0,1,0]Output:3Explanation:There are 4 steps.The step 3  is the starting point without glue.Step 2, no glue.Step 1, have glue.Step 0, no glue.
 ```
 
-## Solution 
+## Solution - DP
 
 ### Code
 
@@ -86,4 +86,76 @@ class Solution:
 
 * **Time Complexity: O\(n\)**
 * **Space Complexity: O\(n\)**
+
+## Solution **- DP with strolling arrays**
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+MOD = 10**9 + 7
+class Solution:
+    """
+    @param arr: the steps whether have glue
+    @return: the sum of the answers
+    """
+    def ratJump(self, arr):
+        # Write your code here.
+        
+        n = len(arr)
+        
+        # dp state: dp[i][0]: total solutions that from 0 jump even steps to reach ith position
+        #           dp[i][1]: total solutions taht from 0 jump odd steps to reach ith position
+        dp = [[0, 0] for _ in range(5)]
+
+        # init: begin at position 0, and jump 0 steps (even)
+
+        dp[0][0] = 1
+
+        even_jumps = [1, 3, 4]
+        odd_jumps = [1,2,4]
+
+        # function: dp[i][0] = dp[i - 1][1] + dp[i - 3][1] + dp[i - 4][1]
+        #           dp[i][1] = dp[i - 1][0] + dp[i - 2][0] + dp[i - 4][0]
+        for i in range(1, n - 1):
+            # WARNING!
+            # notice that in strolling array
+            # should init as 0 in the beginning, otherwise, based on previous dp[i%5][1/0] would add extra values
+            dp[i%5][0] = dp[i%5][1] = 0
+            for jump in odd_jumps:
+                if i - jump >= 0:
+                    dp[i%5][1]
+            # can't jump
+            if arr[i] == 1:
+                continue
+            for jump in even_jumps:
+                if i - jump >= 0:
+                    dp[i%5][0] = (dp[i%5][0] + dp[(i - jump)%5][1]) % MOD
+            for jump in odd_jumps:
+                if i - jump >= 0:
+                    dp[i%5][1] = (dp[i%5][1] + dp[(i - jump)%5][0]) % MOD
+        
+        # ans:
+        # accumulate the solutions
+        # notice that since destination exceed n - 1 can also be count as solution
+        # example: if last jump = 3
+        # the valid range of previous jump would be (n-1-jump  ~  n-1-1
+        ans = 0
+        for jump in even_jumps:
+            for i in range(max(0, n - jump - 1), n - 1):
+                ans = (ans + dp[i%5][1]) % MOD
+        for jump in odd_jumps:
+            for i in range(max(0, n - jump - 1), n - 1):
+                ans = (ans + dp[i%5][0]) % MOD
+        
+        return ans
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
