@@ -23,6 +23,8 @@ Input: matrix = [  [1,0,1],  [1,1,0],  [1,1,0]]Output: 7Explanation: There are 6
 
 ## Solution - DP
 
+
+
 ### Code
 
 {% tabs %}
