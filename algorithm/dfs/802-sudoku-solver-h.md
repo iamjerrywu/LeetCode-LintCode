@@ -48,10 +48,13 @@ class Solution:
     
     def is_valid(self, board, x, y, val):
         for i in range(9):
+            # traverse the same row
             if board[x][i] == val:
                 return False
+            # traverse the same column
             if board[i][y] == val:
                 return False
+            # check the 3 * 3 block, whether same value exist already
             if board[x//3 * 3 + i//3][y//3 * 3 + i%3] == val:
                 return False
         return True       
