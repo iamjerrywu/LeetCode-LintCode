@@ -87,22 +87,7 @@ class Solution:
 * **Time Complexity: O\(n \* target\)**
 * **Space Complexity: O\(n \* target\)**
 
-\*\*\*\*
-
-## Solution 
-
-### Code
-
-{% tabs %}
-{% tab title="python" %}
-```python
-
-```
-{% endtab %}
-{% endtabs %}
-
-### Complexity Analysis
-
-* **Time Complexity:**
-* **Space Complexity:**
+{% hint style="warning" %}
+Can't use strolling array to optimize the space complextiy, please in this question the answer is asked to provide the details of solution, rather that just the amount. In this case, the `prev`array cannot be optimized. Even dp arr is optimized to length of target, however prev array remain the same, so space complexity is still O\(n\*target\)
+{% endhint %}
 
