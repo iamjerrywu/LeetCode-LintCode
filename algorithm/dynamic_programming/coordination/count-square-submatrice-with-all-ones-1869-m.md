@@ -78,7 +78,7 @@ class Solution:
 * **Time Complexity: O\(n \* m\)**
 * **Space Complexity: O\(n \* m\)**
 
-## Solution 
+## Solution - DP with strolling arrays
 
 ### Code
 
