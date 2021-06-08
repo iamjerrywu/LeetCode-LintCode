@@ -84,8 +84,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n \* target\)**
+* **Space Complexity: O\(n \* target\)**
 
 \*\*\*\*
 
