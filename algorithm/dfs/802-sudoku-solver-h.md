@@ -60,6 +60,7 @@ class Solution:
         if index == 81:
             return True
         x, y = index//9, index%9
+        # if not zero, continue to next point (index + 1)
         if board[x][y] != 0:
             return self.dfs(board, index + 1)
         # 1 ~ 9 value
