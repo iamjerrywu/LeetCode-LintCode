@@ -26,6 +26,69 @@ Input：A=[1.2,1.3,2.3,4.2],target=9Output：[1,1,3,4]Explanation：1.2->1,1.3->
 Input：A=[2.5,2.5],target=5Output：[2,3]Explanation：2.5->2,2.5->3.
 ```
 
+## Solution - DP
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param A: A float array
+    @param target: A non-negative integer
+    @return: Return an integer array which sum equals target
+    """
+    def getArray(self, A, target):
+        # write your code here
+        n = len(A)
+
+        # state: st[i][j] means the cost for first ith number that adjust to be sum of j
+        # prev[i][j] record when dp[i][j] is optimized
+        # for A[i - 1], record 1 (ceil), record 0 (floor)
+
+        dp = [[float('inf')] * (target + 1) for _ in range(n + 1)]
+        prev = [[-1] * (target + 1) for _ in range(n + 1)]
+
+        # init 
+        dp[0][0] = 0
+
+        # function: dp[i][j] = min(
+        #      dp[i - 1][j - ceil] + ceil - A[i - 1],
+        #      dp[i - 1][j - floor] + A[i - 1] - floor)
+        # record whether do ceil / floor at the same time
+        for i in range(1, n + 1):
+            ceil = int(math.ceil(A[i - 1]))
+            floor = int(math.floor(A[i - 1]))
+            for j in range(target + 1):
+                if j >= ceil and dp[i - 1][j - ceil] + ceil - A[i - 1] < dp[i][j]:
+                    dp[i][j] = dp[i - 1][j - ceil] + ceil - A[i - 1]
+                    prev[i][j] = 1
+                if j >= floor and dp[i - 1][j - floor] + A[i - 1] - floor < dp[i][j]:
+                    dp[i][j] = dp[i - 1][j - floor] + A[i - 1] - floor
+                    prev[i][j] = 0
+        
+        # backtrack the answer
+        ans = list(A)
+        for i in range(n, 0, -1):
+            if prev[i][target] == 1:
+                ans[i - 1] = int(math.ceil(A[i - 1]))
+            else:
+                ans[i - 1] = int(math.floor(A[i - 1]))
+            target-=ans[i - 1]
+        
+        return ans
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
 ## Solution 
 
 ### Code
