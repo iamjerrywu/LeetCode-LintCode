@@ -78,8 +78,6 @@ class Solution:
 * **Time Complexity: O\(n \* m\)**
 * **Space Complexity: O\(n \* m\)**
 
-\*\*\*\*
-
 ## Solution 
 
 ### Code
