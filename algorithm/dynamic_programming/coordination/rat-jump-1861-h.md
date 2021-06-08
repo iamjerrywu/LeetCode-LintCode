@@ -24,6 +24,8 @@ Input:[0,0,1,0]Output:3Explanation:There are 4 steps.The step 3  is the starting
 
 ## Solution - DP
 
+![](../../../.gitbook/assets/screen-shot-2021-06-08-at-5.28.41-pm.png)
+
 ### Code
 
 {% tabs %}
