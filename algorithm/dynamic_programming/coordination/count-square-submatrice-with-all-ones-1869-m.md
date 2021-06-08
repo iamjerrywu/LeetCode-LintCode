@@ -63,7 +63,6 @@ class Solution:
                 left[i][j] = left[i][j - 1] + 1
                 up[i][j] = up[i - 1][j] + 1
                 dp[i][j] = min(left[i][j - 1], up[i - 1][j], dp[i - 1][j - 1]) + 1
-        print(dp)
         
         ans = 0
         for i in range(n):
@@ -76,6 +75,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n \* m\)**
+* **Space Complexity: O\(n \* m\)**
 
