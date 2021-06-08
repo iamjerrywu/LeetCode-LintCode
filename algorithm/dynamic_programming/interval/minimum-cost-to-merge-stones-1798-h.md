@@ -28,6 +28,8 @@ Input: stones = [3,2,4,1], K = 3Output: -1Explanation: After any merge operation
 
 ## Solution - DP
 
+![](../../../.gitbook/assets/screen-shot-2021-06-08-at-5.30.50-pm.png)
+
 ### Code
 
 {% tabs %}
