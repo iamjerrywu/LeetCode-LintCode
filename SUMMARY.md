@@ -190,6 +190,7 @@
   * [Classics](data_structure/union_find/classics/README.md)
     * [Connecting Graph 589 \(M\)](data_structure/union_find/classics/connecting-graph-589-m.md)
     * [Connecting Graph 590 II \(M\)](data_structure/union_find/classics/connecting-graph-ii-m.md)
+    * [Connecting Graph 591 III \(M\)](data_structure/union_find/classics/connecting-graph-591-iii-m.md)
   * [Graph Valid Tree 178 \(M\)](data_structure/union_find/graph-valid-tree-178-m.md)
   * [Graph Valid Tree II 444 \(M\)](data_structure/union_find/graph-valid-tree-ii-444-m.md)
   * [Number of Connected Components in an Undirected Graph \(LeetCode323\) \(M\)](data_structure/union_find/number-of-connected-components-in-an-undirected-graph-323-m.md)
