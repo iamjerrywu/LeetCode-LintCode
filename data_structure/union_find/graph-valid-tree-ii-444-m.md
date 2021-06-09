@@ -182,6 +182,8 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity:**
-* \*\*\*\*
+  * addEdge\(\): O\(log\*n\) == O\(1\)
+  * isValidTree: O\(1\)
 * **Space Complexity:**
+  * O\(n\)
 
