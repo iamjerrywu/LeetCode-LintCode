@@ -187,7 +187,7 @@
   * [Process Tasks Using Servers \(LeetCode1835\) \(M\)](data_structure/heap/process-tasks-using-servers-1835-m.md)
 * [Trie](data_structure/trie.md)
 * [Union Find](data_structure/union_find/README.md)
-  * [Classics](data_structure/union_find/classics/README.md)
+  * [Classical](data_structure/union_find/classics/README.md)
     * [Connecting Graph 589 \(M\)](data_structure/union_find/classics/connecting-graph-589-m.md)
     * [Connecting Graph 590 II \(M\)](data_structure/union_find/classics/connecting-graph-ii-m.md)
     * [Connecting Graph 591 III \(M\)](data_structure/union_find/classics/connecting-graph-591-iii-m.md)
