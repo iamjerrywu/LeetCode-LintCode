@@ -107,7 +107,6 @@ class Solution:
     def union(self, x, y):
         root_x = self.find(x)
         root_y = self.find(y)
-        print(root_x, root_y)
         if root_x != root_y:
             self.size-=1
             self.father[root_x] = root_y
@@ -125,5 +124,62 @@ class Solution:
 
 * **Time Complexity: O\(n\)**
   * Length of the graph \(worst case as a list\)
+* **Space Complexity: O\(n\)**
+
+## Solution - Union Find with Path Compression
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param n: An integer
+    @param edges: a list of undirected edges
+    @return: true if it's a valid tree, or false
+    """
+    def validTree(self, n, edges):
+        # write your code here
+        if n == 0 or len(edges) != n - 1:
+            return False
+        
+        self.father = {i: None for i in range(n)}
+        self.size = n
+        
+        for src, dst in edges:
+            self.union(src, dst)
+        print(self.size)
+        return self.size == 1        
+
+    def union(self, x, y):
+        root_x = self.find(x)
+        root_y = self.find(y)
+        if root_x != root_y:
+            self.size-=1
+            self.father[root_x] = root_y
+        
+    def find(self, node):
+        root = node
+        while self.father[root]:
+            root = self.father[root]
+        while node != root:
+            original_father = self.father[node]
+            self.father[node] = root
+            node = original_father
+
+        return root
+        
+        
+        
+
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(log\*n\)**
 * **Space Complexity: O\(n\)**
 
