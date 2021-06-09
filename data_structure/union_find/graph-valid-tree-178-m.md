@@ -70,4 +70,6 @@ class Solution:
     * O\(N + E\)
 * **Space Complexity:** 
   * Graph: O\(N + E\)
+  * BFS O\(N\):
+    * The queue would have worst case of length N
 
