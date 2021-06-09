@@ -100,6 +100,7 @@ class Solution:
     * In worst case, the nodes act as list with length n
   * isValidTree: O\(1\)
 * **Space Complexity:**
+  * O\(n\)
 
 ## Solution - Union Find with Path Compression
 
@@ -181,5 +182,6 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity:**
+* \*\*\*\*
 * **Space Complexity:**
 
