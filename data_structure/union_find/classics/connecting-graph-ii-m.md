@@ -1,4 +1,4 @@
-# Connecting Graph II \(M\)
+# Connecting Graph 590 II \(M\)
 
 ## Problem
 
