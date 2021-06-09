@@ -19,7 +19,13 @@ Input:addEdge(1, 2)isValidTree()addEdge(1, 3)isValidTree()addEdge(1, 5)isValidTr
 
 ## Solution 
 
-### Code
+If this problem is solved using BFS, then the time complexity would be too large.
+
+* If called `isValidTree()` m times, then time complexity would be O\(m \* \(N + E\)\)
+
+Therefore, should use UnionFind in this case
+
+### Code - Union Find
 
 {% tabs %}
 {% tab title="python" %}
