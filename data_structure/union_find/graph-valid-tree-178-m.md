@@ -78,3 +78,51 @@ class Solution:
   * BFS O\(N\):
     * The queue would have worst case of length N
 
+## Solution - Union Find
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param n: An integer
+    @param edges: a list of undirected edges
+    @return: true if it's a valid tree, or false
+    """
+    def validTree(self, n, edges):
+        # write your code here
+        if n == 0 or len(edges) != n - 1:
+            return False
+        
+        self.father = {i: None for i in range(n)}
+        self.size = n
+        
+        for src, dst in edges:
+            self.union(src, dst)
+        print(self.size)
+        return self.size == 1        
+
+    def union(self, x, y):
+        root_x = self.find(x)
+        root_y = self.find(y)
+        print(root_x, root_y)
+        if root_x != root_y:
+            self.size-=1
+            self.father[root_x] = root_y
+    
+    def find(self, node):
+        root = node
+        while self.father[root]:
+            root = self.father[root]
+        return root
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
