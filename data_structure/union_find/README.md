@@ -58,6 +58,8 @@ Time Complexity:
 * merge\(\): O\(n\)
 * is\_connected\(\): O\(1\)
 
+![](../../.gitbook/assets/screen-shot-2021-06-09-at-1.25.16-pm.png)
+
 ![](../../.gitbook/assets/screen-shot-2021-06-09-at-1.22.07-pm.png)
 
 
