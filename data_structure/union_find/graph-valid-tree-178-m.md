@@ -68,5 +68,6 @@ class Solution:
   * Construct Graph: O\(E\)
   * BFS traverse:
     * O\(N + E\)
-* **Space Complexity:**
+* **Space Complexity:** 
+  * Graph: O\(N + E\)
 
