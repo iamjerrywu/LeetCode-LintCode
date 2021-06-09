@@ -20,6 +20,11 @@ Input: n = 5 edges = [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]Output: false.
 
 ## Solution - BFS
 
+If a graph is a valid tree, then it should comply following attributes:
+
+1. N nodes with \(N - 1\) Edges
+2. No circle in the graph 
+
 ![](../../.gitbook/assets/screen-shot-2021-06-09-at-11.08.20-am.png)
 
 ### Code
