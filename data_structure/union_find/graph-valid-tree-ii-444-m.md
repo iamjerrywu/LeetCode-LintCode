@@ -96,5 +96,8 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity:**
+  * addEdge\(\): O\(n\)
+    * In worst case, the nodes act as list with length n
+  * isValidTree: O\(1\)
 * **Space Complexity:**
 
