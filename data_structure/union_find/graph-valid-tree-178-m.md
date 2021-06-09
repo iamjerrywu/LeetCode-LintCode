@@ -20,6 +20,8 @@ Input: n = 5 edges = [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]Output: false.
 
 ## Solution - BFS
 
+![](../../.gitbook/assets/screen-shot-2021-06-09-at-11.08.20-am.png)
+
 ### Code
 
 {% tabs %}
@@ -62,5 +64,9 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity: O\(N + E\)**
+  * N: nodes amount / E: Edges amount
+  * Construct Graph: O\(E\)
+  * BFS traverse:
+    * O\(N + E\)
 * **Space Complexity:**
 
