@@ -189,6 +189,7 @@
 * [Union Find](data_structure/union_find/README.md)
   * [Graph Valid Tree 178 \(M\)](data_structure/union_find/graph-valid-tree-178-m.md)
   * [Graph Valid Tree II 444 \(M\)](data_structure/union_find/graph-valid-tree-ii-444-m.md)
+  * [Connecting Graph 589 \(M\)](data_structure/union_find/connecting-graph-589-m.md)
   * [Number of Connected Components in an Undirected Graph \(LeetCode323\) \(M\)](data_structure/union_find/number-of-connected-components-in-an-undirected-graph-323-m.md)
   * [Connected Component in Undirected Graph 431 \(M\)](data_structure/union_find/connected-component-in-undirected-graph-431-m.md)
 
