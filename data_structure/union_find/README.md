@@ -85,6 +85,8 @@ class UnionFind:
         if x in self.father:
             return 
         self.father[x] = None
+        self.size_of_set[x] = 1
+        self.num_of_set+=1
     def find(self, x):
         # root point to x
         # and recursively traverse back to find it's father 
@@ -105,6 +107,8 @@ class UnionFind:
         # if they are not in the same component, let root_x point to root_y
         if root_x != root_y:
             self.father[x] = root_y
+            self.num_of_set-=1
+            self.size_of_set[root_y]+=self.size_of_set[root_x]
     # is_connected can check on following condition
     # 1. two nodes in same set?
     # 2. two nodes belongs to same component?
@@ -112,6 +116,10 @@ class UnionFind:
     
     def is_connected(self, x, y):
         return self.find(x) == self.find(y)
+    def get_num_of_set(self):
+        return self.num_of_set
+    def get_size_of_set(self, node):
+        return self.size_of_size[self.find(node)]
 ```
 {% endtab %}
 {% endtabs %}
