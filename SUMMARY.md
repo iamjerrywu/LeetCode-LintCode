@@ -184,7 +184,7 @@
   * [Top k Largest Numbers II 545 \(M\)](data_structure/heap/top-k-largest-numbers-ii-545-m.md)
   * [K Closests Points 612 \(M\)](data_structure/heap/k-closets-points-612-m.md)
   * [Top K Frequent Elements 1281 \(M\)](data_structure/heap/top-k-frequent-elements-1281-m.md)
-* [Process Tasks Using Servers \(LeetCode1835\) \(M\)](data_structure/process-tasks-using-servers-1835-m.md)
+  * [Process Tasks Using Servers \(LeetCode1835\) \(M\)](data_structure/heap/process-tasks-using-servers-1835-m.md)
 * [Trie](data_structure/trie.md)
 * [Union Find](data_structure/union_find/README.md)
   * [Number of Connected Components in an Undirected Graph \(LeetCode323\) \(M\)](data_structure/union_find/number-of-connected-components-in-an-undirected-graph-323-m.md)
