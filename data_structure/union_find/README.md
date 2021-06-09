@@ -7,6 +7,7 @@ It's a data structure supports following features:
 * O\(1\): Merge\(x, y\), merge x, y two sets
 * O\(1\): Find\(x\), find the set that x belongs to
 * O\(1\): isConnected\(x, y\), find whether x, y are in the same set or not
+* O\(1\): get size of set
 
 ## Template:
 
@@ -55,7 +56,7 @@ class UnionFind:
     def get_num_of_set(self):
         return self.num_of_set
     def get_size_of_set(self, node):
-        return self.size_of_size[self.find(node)]
+        return self.size_of_set[self.find(node)]
 ```
 
 ## Template with Path Compression
@@ -119,7 +120,7 @@ class UnionFind:
     def get_num_of_set(self):
         return self.num_of_set
     def get_size_of_set(self, node):
-        return self.size_of_size[self.find(node)]
+        return self.size_of_set[self.find(node)]
 ```
 {% endtab %}
 {% endtabs %}
