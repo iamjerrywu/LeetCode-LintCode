@@ -101,14 +101,79 @@ class Solution:
   * isValidTree: O\(1\)
 * **Space Complexity:**
 
-## Solution 
+## Solution - Union Find with Path Compression
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+class UnionFind:
+    def __init__(self):
+        # father pointer
+        self.father = {}
+    def add(self, x):
+        # if node alreay exist
+        if x in self.father:
+            return 
+        self.father[x] = None
+    def find(self, x):
+        # root point to x
+        # and recursively traverse back to find it's father 
+        root = x
+        while self.father[root]:
+            root = self.father[root]
+        # path compression
+        # to let every nodes on the path (evetually point to root), directly point to root instead
+        while x!= root:
+            original_father = self.father[x]
+            self.father[x] = root
+            x = original_father
 
+        return root
+    def merge(self, x, y):
+        root_x, root_y = self.find(x), self.find(y)
+        
+        # if they are not in the same component, let root_x point to root_y
+        if root_x != root_y:
+            self.father[x] = root_y
+    # is_connected can check on following condition
+    # 1. two nodes in same set?
+    # 2. two nodes belongs to same component?
+    # 3. two nodes are connected?
+    
+    def is_connected(self, x, y):
+        return self.find(x) == self.find(y)
+
+class Solution:
+    """
+    @param a: the node a
+    @param b: the node b
+    @return: nothing
+    """
+    def __init__(self):
+        self.uf = UnionFind()
+        self.has_cycle = False
+        self.edges = 0
+    
+    def addEdge(self, a, b):
+        # write your code here
+        self.uf.add(a)
+        self.uf.add(b)
+        self.edges+=1
+        if self.uf.is_connected(a, b):
+            self.has_cycle = True
+        #because it's adding edge, a, b should connected
+        self.uf.merge(a, b) 
+
+    """
+    @return: check whether these edges make up a valid tree
+    """
+    def isValidTree(self):
+        # write your code here
+        if len(self.uf.father) != self.edges + 1:
+            return False
+        return not self.has_cycle
 ```
 {% endtab %}
 {% endtabs %}
