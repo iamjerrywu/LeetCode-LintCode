@@ -62,7 +62,7 @@ Notes mainly comprises two parts:
   * O\(n\) -&gt; Two Pointer, Prefix Sum, Traverse, 1-D DP
   * O\(nlogn\) -&gt; Sort, Binary Search
 * n = 10^3
-  * O\(n^2\) -&gt; 2-D array, double for loop, 2-D DP
+  * O\(n^2\) -&gt; 2-D array, double for loop, 2-D DDo P
 * n = 10 ^2
   * O\(n^3\) -&gt; Triple for loop
 * n = 10
