@@ -123,6 +123,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+  * Length of the graph \(worst case as a list\)
+* **Space Complexity: O\(n\)**
 
