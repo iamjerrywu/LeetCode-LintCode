@@ -41,7 +41,7 @@ Input:  addWord("bad")  addWord("dad")  addWord("mad")  search("pad")    search(
 
 \*\*\*\*
 
-## Solution - Trie \(1\)
+## Solution - Trie \(Complete\)
 
 ### Code
 
@@ -122,14 +122,54 @@ class WordDictionary:
 
 \*\*\*\*
 
-## Solution - Trie\(2\)
+## Solution - Trie\(Simple\)
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+class WordDictionary:
+    """
+    @param: word: Adds a word into the data structure.
+    @return: nothing
+    """
+    def __init__(self):
+        self.trie = {}
 
+    def addWord(self, word):
+        # write your code here
+        node = self.trie
+
+        for letter in word:
+            if letter not in node:
+                node[letter] = {}
+            node = node[letter]
+        node['$'] = True
+        
+
+    """
+    @param: word: A word could contain the dot character '.' to represent any one letter.
+    @return: if the word is in the data structure.
+    """
+    def search(self, word):
+        # write your code here
+        return self.dfs(self.trie, word, 0)
+    
+    def dfs(self, node, word, index):
+        if index == len(word):
+            return node.get('$', False)
+        
+        letter = word[index]
+        if letter == '.':
+            for child in node:
+                if child != '$' and self.dfs(node[child], word, index + 1):
+                    return True
+            return False
+        # if not '.'
+        if letter in node:
+            return self.dfs(node[letter], word, index + 1)
+        return False
 ```
 {% endtab %}
 {% endtabs %}
