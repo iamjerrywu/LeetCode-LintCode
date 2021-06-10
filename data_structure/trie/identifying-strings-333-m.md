@@ -48,8 +48,6 @@ class Solution:
                 cur_string = string[:i + 1]
                 prefix_sum_cnt[cur_string] = prefix_sum_cnt.get(cur_string, 0) + 1
         return prefix_sum_cnt
-
-
 ```
 {% endtab %}
 {% endtabs %}
