@@ -186,6 +186,7 @@
   * [Top K Frequent Elements 1281 \(M\)](data_structure/heap/top-k-frequent-elements-1281-m.md)
   * [Process Tasks Using Servers \(LeetCode1835\) \(M\)](data_structure/heap/process-tasks-using-servers-1835-m.md)
 * [Trie](data_structure/trie/README.md)
+  * [Identifying Strings 333 \(M\)](data_structure/trie/identifying-strings-333-m.md)
   * [Add and Search Word - Data structure design 473 \(M\)](data_structure/trie/add-and-search-word-data-structure-design-473-m.md)
 * [Union Find](data_structure/union_find/README.md)
   * [Classical](data_structure/union_find/classics/README.md)
