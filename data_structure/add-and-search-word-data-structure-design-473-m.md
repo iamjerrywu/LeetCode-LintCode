@@ -43,6 +43,8 @@ Input:  addWord("bad")  addWord("dad")  addWord("mad")  search("pad")    search(
 
 ## Solution - Trie \(Complete\)
 
+Construct Trie Node data structure 
+
 ### Code
 
 {% tabs %}
@@ -123,6 +125,8 @@ class WordDictionary:
 \*\*\*\*
 
 ## Solution - Trie\(Simple\)
+
+Construct trie in a simpler way
 
 ### Code
 
