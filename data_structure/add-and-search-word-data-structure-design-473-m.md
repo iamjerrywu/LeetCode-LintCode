@@ -22,7 +22,104 @@ Input:  addWord("a")  search(".")Output:  true
 Input:  addWord("bad")  addWord("dad")  addWord("mad")  search("pad")    search("bad")    search(".ad")    search("b..")  Output:  false  true  true  true
 ```
 
-## Solution 
+## Solution - Set
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
+## Solution - Trie \(1\)
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_word = False
+        self.word = None
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+    
+    def get_root(self):
+        return self.root
+    
+    def insert(self, word):
+        node = self.root
+        # traverse word
+        for i in range(len(word)):
+            if word[i] not in node.children:
+                # if child not exist that char, need to init new child node
+                node.children[word[i]] = TrieNode()
+            # point to current char
+            node = node.children[word[i]]
+        # since we insert a valid vocabulary, should update is_word and word, when reaching the last node
+        node.is_word = True
+        node.word = word
+    
+
+class WordDictionary:
+    """
+    @param: word: Adds a word into the data structure.
+    @return: nothing
+    """
+    def __init__(self):
+        self.trie = Trie()
+
+    def addWord(self, word):
+        # write your code here
+        self.trie.insert(word)
+
+    """
+    @param: word: A word could contain the dot character '.' to represent any one letter.
+    @return: if the word is in the data structure.
+    """
+    def search(self, word):
+        # write your code here
+        return self.dfs(self.trie.get_root(), word, 0)
+    
+    def dfs(self, root, word, index):
+        if index == len(word):
+            return root.is_word
+        letter = word[index]
+        if letter == '.':
+            for child in root.children:
+                if self.dfs(root.children[child], word, index + 1):
+                    return True
+            return False
+        # if not '.'
+        if letter in root.children:
+            return self.dfs(root.children[letter], word, index + 1)
+        return False
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
+## Solution - Trie\(2\)
 
 ### Code
 
