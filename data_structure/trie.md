@@ -12,10 +12,33 @@ If using hashmap we need to store 26^3 of possibilities, and mark all the ones t
 
 ## Template:
 
-Time Complexity:
 
-* add\(\): O\(1\)
-* find\(\): O\(n\), n as the worst case that x reach the root length \(as a list\)
-* merge\(\): O\(n\)
-* is\_connected\(\): O\(1\)
+
+```python
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_word = False
+        self.word = None
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+    
+    def get_root(self):
+        return self.root
+    
+    def insert(self, word):
+        node = self.root
+        # traverse word
+        for i in range(len(word)):
+            if word[i] not in node.children:
+                # if child not exist that char, need to init new child node
+                node.children[word[i]] = TrieNode()
+            # point to current char
+            node = node.children[word[i]]
+        # since we insert a valid vocabulary, should update is_word and word, when reaching the last node
+        node.is_word = True
+        node.word = word
+```
 
