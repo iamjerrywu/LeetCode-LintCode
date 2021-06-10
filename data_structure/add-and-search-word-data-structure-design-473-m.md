@@ -115,6 +115,9 @@ class WordDictionary:
 ### Complexity Analysis
 
 * **Time Complexity:**
+  * Search: 
+    * Best Case: O\(L\), L is the word length
+    * Worst Case: need to traverse the whole trie
 * **Space Complexity:**
 
 \*\*\*\*
