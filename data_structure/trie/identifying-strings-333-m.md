@@ -115,18 +115,14 @@ class Solution:
                 return word[:i]
             node = node.children[word[i]]
         return word
-    
-
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n \* \(L^2\)\)**
+* **Time Complexity: O\(n \* L\)**
   * n: len\(stringArray\)
-  * get cur\_string: O\(L\)
-  * traverse char n string: O\(L\)
+  * traverse char n string to get unique: O\(L\)
 * **Space Complexity: O\(n \* L\)**
 
