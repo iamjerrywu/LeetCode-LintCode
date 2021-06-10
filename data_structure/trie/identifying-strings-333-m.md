@@ -67,6 +67,56 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_word = False
+        self.word = None
+        self.prefix_count = 0
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+    
+    def get_root(self):
+        return self.root
+    
+    def insert(self, word):
+        node = self.root
+        for letter in word:
+            if letter not in node.children:
+                node.children[letter] = TrieNode()
+            node = node.children[letter]
+            node.prefix_count+=1
+        node.is_word = True
+        node.word = word
+
+class Solution:
+    """
+    @param stringArray: a string array
+    @return: return every strings'short peifix
+    """
+    def ShortPerfix(self, stringArray):
+        # write your code here
+        trie = Trie()
+        res = []
+        for word in stringArray:
+            trie.insert(word)
+        for word in stringArray:
+            res.append(self.get_unique_prefix(trie.get_root(), word))
+        return res
+    
+    def get_unique_prefix(self, root, word):
+        node = root
+        for i in range(len(word)):
+            if node.prefix_count == 1:
+                # when i = 0, node.prefix_count = 0  
+                # when i = 1, node.prefix_count = 1, then word[:i] = word[0]
+                return word[:i]
+            node = node.children[word[i]]
+        return word
+    
+
 
 ```
 {% endtab %}
