@@ -124,6 +124,9 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n \* \(L^2\)\)**
+  * n: len\(stringArray\)
+  * get cur\_string: O\(L\)
+  * traverse char n string: O\(L\)
+* **Space Complexity: O\(n \* L\)**
 
