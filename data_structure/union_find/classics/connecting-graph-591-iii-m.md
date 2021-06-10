@@ -1,4 +1,4 @@
-# Connecting Graph 591 III \(M\)
+# Connecting Graph III 591 \(M\)
 
 ## Problem
 

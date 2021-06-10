@@ -2,7 +2,9 @@
 
 ## What's Union / Find?
 
-It's a data structure supports following features:
+It's a data structure that accelerate in solving graph problems, faster than BFS and DFS
+
+Supports following features:
 
 * O\(1\): Merge\(x, y\), merge x, y two sets
 * O\(1\): Find\(x\), find the set that x belongs to
