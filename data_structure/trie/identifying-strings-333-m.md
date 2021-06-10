@@ -60,3 +60,20 @@ class Solution:
   * traverse char n string: O\(L\)
 * **Space Complexity: O\(n \* L\)**
 
+## Solution - Trie
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
