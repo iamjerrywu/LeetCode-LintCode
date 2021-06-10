@@ -83,5 +83,8 @@ class Trie:
 ### Complexity Analysis
 
 * **Time Complexity:**
-* **Space Complexity:**
+  * insert\(\): O\(L\)
+  * has\_word\(\): O\(L\)
+  * startWith\(\): O\(L\)
+* **Space Complexity: O\(L\)**
 
