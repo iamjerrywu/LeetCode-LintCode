@@ -31,7 +31,79 @@ For every BFS operation can be O\(n \* m\), so the total time complexity can be 
 {% tabs %}
 {% tab title="python" %}
 ```python
+class UnionFind:
+    def __init__(self):
+        self.father = {}
+        self.num_of_set = 0
+    def add(self, point):
+        self.father[point] = point
+        self.num_of_set+=1
+    def merge(self, a, b):
+        root_a = self.find(a)
+        root_b = self.find(b)
+        if root_a != root_b:
+            self.father[root_a] = root_b
+            self.num_of_set-=1 
+    def find(self, point):
+        root = point
+        while root != self.father[root]:
+            root = self.father[root]
+        # path compresion
+        while root != point:
+            original_father = self.father[point]
+            self.father[point] = root
+            point = original_father
+        return root
+    def get_num_of_set(self):
+        return self.num_of_set
 
+"""
+Definition for a point.
+class Point:
+    def __init__(self, a=0, b=0):
+        self.x = a
+        self.y = b
+"""
+
+class Solution:
+    """
+    @param n: An integer
+    @param m: An integer
+    @param operators: an array of point
+    @return: an integer array
+    """
+    def numIslands2(self, n, m, operators):
+        # write your code here
+        if not operators:
+            return []
+        
+        uf = UnionFind()
+        islands = set()
+        num_of_lands = []
+
+        for operator in operators:
+            if (operator.x, operator.y) in islands:
+                num_of_lands.append(uf.get_num_of_set())
+                continue
+
+            islands.add((operator.x, operator.y))
+            uf.add((operator.x, operator.y))
+
+            for delta_x, delta_y in DIRECTIONS:
+                neighbor_x = operator.x + delta_x
+                neighbor_y = operator.y + delta_y
+
+                if self.is_valid(neighbor_x, neighbor_y, n, m, islands):
+                    uf.merge((operator.x, operator.y), (neighbor_x, neighbor_y))
+          
+            num_of_lands.append(uf.get_num_of_set())
+
+        return num_of_lands
+    
+    def is_valid(self, x, y, n, m, islands):
+        if x < 0 or x >= n or y < 0 or y >= m:
+            return False
+        return (x, y) in islands
 ```
 {% endtab %}
 {% endtabs %}
