@@ -18,7 +18,13 @@ Input: n = 4, m = 5, A = [[1,1],[0,1],[3,3],[3,4]]Output: [1,1,2,2]Explanation:0
 Input: n = 3, m = 3, A = [[0,0],[0,1],[2,2],[2,1]]Output: [1,1,2,2]
 ```
 
-## Solution 
+## Solution - Union Find
+
+If we use BFS here \(solution for 'Number of Islands'\), then the time complexity would be huge!
+
+The max amount of operators can be \(n \* m\)
+
+For every BFS operation can be O\(n \* m\), so the total time complexity can be O\(n^2 \* m ^2\), if n = m, then it would be O\(n^4\), too slow!
 
 ### Code
 
