@@ -196,6 +196,8 @@
     * [Connecting Graph III 591 \(M\)](data_structure/union_find/classics/connecting-graph-591-iii-m.md)
   * [Graph Valid Tree 178 \(M\)](data_structure/union_find/graph-valid-tree-178-m.md)
   * [Graph Valid Tree II 444 \(M\)](data_structure/union_find/graph-valid-tree-ii-444-m.md)
+  * [Number of Islands 433 \(E\)](data_structure/union_find/number-of-islands-433-e.md)
+  * [Number of Islands 434 \(M\)](data_structure/union_find/number-of-islands-434-m.md)
   * [Number of Connected Components in an Undirected Graph \(LeetCode323\) \(M\)](data_structure/union_find/number-of-connected-components-in-an-undirected-graph-323-m.md)
   * [Connected Component in Undirected Graph 431 \(M\)](data_structure/union_find/connected-component-in-undirected-graph-431-m.md)
 
@@ -313,7 +315,6 @@
     * [Alien Dictionary 892 \(H\)](algorithm/s4.-queue-bfs-graph/topological-sorting/alien-dictionary-892-h.md)
   * [Word Ladder 120 \(H\)](algorithm/s4.-queue-bfs-graph/word-ladder-120-h.md)
   * [Clone Graph 137 \(M\)](algorithm/s4.-queue-bfs-graph/clone-graph-137-m.md)
-  * [Number of Islands 433 \(E\)](algorithm/s4.-queue-bfs-graph/number-of-islands-433-e.md)
   * [Build Post Office II 573 \(H\)](algorithm/s4.-queue-bfs-graph/build-post-office-ii-573-h.md)
   * [Knight Shortest Path 611 \(M\)](algorithm/s4.-queue-bfs-graph/knight-shortest-path-611-m.md)
   * [Search Graph Nodes 618 \(M\)](algorithm/s4.-queue-bfs-graph/search-graph-nodes-618-m.md)
