@@ -164,7 +164,63 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+DIRECTIONS = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
+class Solution:
+    """
+    @param grid: a boolean 2D matrix
+    @return: an integer
+    """
+    # dfs solution
+    def numIslands(self, grid):
+        # write your code here
+        if not grid or not grid[0]:
+            return 0
+        
+        self.father = {}
+        self.size = 0
+
+        for i in range(len(grid)):
+            for j in range(len(grid[0])):
+                if grid[i][j]:
+                    self.father[(i, j)] = (i, j)
+                    self.size+=1
+        
+        for x in range(len(grid)):
+            for y in range(len(grid[0])):
+                if grid[x][y]:
+                    for delta_x, delta_y in DIRECTIONS:
+                        new_x = x + delta_x
+                        new_y = y + delta_y
+                        if self.is_valid(grid, new_x, new_y):
+                            self.union((x, y), (new_x, new_y))
+        return self.size
+
+    def union(self, a, b):
+        root_a = self.find(a)
+        root_b = self.find(b)
+
+        if root_a != root_b:
+            self.father[root_a] = root_b
+            self.size-=1
+
+    def find(self, point):
+        root = point
+        while root != self.father[root]:
+            root = self.father[root]
+        
+        while point != root:
+            original_father = self.father[point]
+            self.father[point] = root
+            point = original_father
+        return root
+    
+    def is_valid(self, grid, x, y):
+        if x < 0 or x >= len(grid) or y < 0 or y >= len(grid[0]):
+            return False
+        return grid[x][y]
+
+        
 ```
 {% endtab %}
 {% endtabs %}
