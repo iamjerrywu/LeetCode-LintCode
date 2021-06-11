@@ -110,6 +110,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n \* m\)**
+  * n \* m is the max amount of operators
+* **Space Complexity: O\(n \* m\)**
 
