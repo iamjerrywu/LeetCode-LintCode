@@ -46,7 +46,7 @@ class UnionFind:
         
         # if they are not in the same component, let root_x point to root_y
         if root_x != root_y:
-            self.father[x] = root_y
+            self.father[root_x] = root_y
             self.num_of_set-=1
             self.size_of_set[root_y]+=self.size_of_set[root_x]
     # is_connected can check on following condition
@@ -109,7 +109,7 @@ class UnionFind:
         
         # if they are not in the same component, let root_x point to root_y
         if root_x != root_y:
-            self.father[x] = root_y
+            self.father[root_x] = root_y
             self.num_of_set-=1
             self.size_of_set[root_y]+=self.size_of_set[root_x]
     # is_connected can check on following condition
