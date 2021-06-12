@@ -30,20 +30,34 @@ O\(n\) time and O\(1\) extra space
 
 ## Solution - Brute Force
 
+Two for loops do the simulation checking out whether the remained gas can always stays &gt;=0 or not during whole trip
+
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
+        n = len(gas)
+        for start in range(n):
+            remained_gas = 0
+            for j in range(start, start + n):
+                remained_gas += gas[j%n] - cost[j%n]
+                if remained_gas < 0:
+                    break
+            if remained_gas >= 0:
+                return start
+        return -1
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n^2\)**
+  * n: len\(route\)
+* **Space Complexity: O\(1\)**
 
 ## Solution - Greedy
 
