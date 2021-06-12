@@ -40,19 +40,13 @@ Input:words = ["Science","is","what","we","understand","well","enough","to","exp
 {% tab title="python" %}
 ```python
 class Solution:
-    """
-    @param words: an array of string
-    @param maxWidth: a integer
-    @return: format the text such that each line has exactly maxWidth characters and is fully
-    """
-    def fullJustify(self, words, maxWidth):
+    def fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
         # write your code here
         res = []
         if len(words) == 1:
             res.append(self.format(words, maxWidth, False))
             return res
-        idx = 0
-        len_cnt = 0
+        idx, len_cnt =0, 0
         str_arr = []
         while idx < len(words):
             len_cnt+=len(words[idx])
@@ -75,8 +69,7 @@ class Solution:
         if n == 1:
             return str_arr[0] + space_len * ' '
         if n > 1:
-            space_cnt = 0
-            idx = 0
+            idx, space_cnt =0, 0
             if end is True:
                 space_list = [0] * n
                 for i in range(len(space_list)):
@@ -88,8 +81,6 @@ class Solution:
                     str_ans+=space_list[i] * ' '
             else:
                 space_list = [0] * (n - 1)
-                space_cnt = 0
-                idx = 0
                 while space_cnt < space_len:
                     space_list[idx%(n - 1)]+=1
                     space_cnt+=1
@@ -105,6 +96,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(n \* L\) or O\(sum\(words\)\)**
+  * n: len\(words\)
+  * L: len\(word\) for word in words
 * **Space Complexity:**
 
