@@ -28,7 +28,7 @@ Challenge
 
 O\(n\) time and O\(1\) extra space
 
-## Solution 
+## Solution - Greedy
 
 If total sum of gas is less than total cost, then end of comparison. 
 
