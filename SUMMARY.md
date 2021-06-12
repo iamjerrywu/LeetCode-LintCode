@@ -22,6 +22,7 @@
   * [Attendance Judgment 1154 \(E\)](data_structure/string/attendance-judgment-1154-e.md)
   * [Search Suggestions System \(LeetCode 1268\) M](data_structure/string/search-suggestions-system-leetcode-1268-m.md)
   * [Compare Version Numbers 1352 \(M\)](data_structure/string/1352.-compare-version-numbers-m.md)
+  * [Text Justification 1361 \(H\)](data_structure/string/text-justification-1361-h.md)
   * [Ambiguous Coordinates 1372 \(M\)](data_structure/string/ambiguous-coordinates-1372-m.md)
   * [Buddy Strings 1510 \(E\)](data_structure/string/buddy-strings-1510-e.md)
   * [Count Email Groups 1632 \(E\)](data_structure/string/count-email-groups-1632-e.md)
