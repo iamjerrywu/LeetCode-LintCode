@@ -101,14 +101,51 @@ class Solution:
   * L: len\(word\) for word in words
 * **Space Complexity:**
 
-## Solution 
+## Solution - Concise 
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param words: an array of string
+    @param maxWidth: a integer
+    @return: format the text such that each line has exactly maxWidth characters and is fully
+    """
+    def fullJustify(self, words, maxWidth):
+        # write your code here
+        line, length = [], 0
+        res = []
+        for w in words:
+            # here add len(line), equals to the effect of adding space
+            if length + len(w) + len(line) <= maxWidth:
+                length += len(w)
+                line.append(w)
+            else:
+                res.append(self.format(line, maxWidth))
+                length = len(w)
+                line = [w]
+        if len(line):
+            res.append(self.format_last(line, maxWidth))
+        return res
+    
+    def format(self, line, maxWidth):
+        if len(line) == 1:
+            return line[0] + " " * (maxWidth - len(line[0]))
+        length = sum([len(w) for w in line])
+        s, gaps = line[0], len(line) - 1
+        for index, w in enumerate(line[1:]):
+            if index < (maxWidth - length) % gaps:
+                s = s + " " + " " * ((maxWidth - length) // gaps) + w
+            else:
+                s = s + " " * ((maxWidth - length) // gaps) + w
+        return s
+    
+    def format_last(self, line, maxWidth):
+        s = " ".join(line)
+        return s + " " * (maxWidth - len(s))
 ```
 {% endtab %}
 {% endtabs %}
