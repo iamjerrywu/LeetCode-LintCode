@@ -27,7 +27,11 @@ Input: grid = [[1,0,0,0],[1,1,1,0]], hits = [[1,0]]Output: [2]Explanation: If we
 Input: grid = [[1,0,0,0],[1,1,0,0]], hits = [[1,1],[1,0]]Output: [0,0]Explanation: When we erase the brick at (1, 0), the brick at (1, 1) has already disappeared due to the last move.
 ```
 
-## Solution 
+## Solution - Union Find
+
+Using Backward solution \(from the end situation to refer back to initial condition\), calculating how many blocks are added back, then that's the answer
+
+![](../../.gitbook/assets/screen-shot-2021-06-12-at-1.31.24-pm.png)
 
 ### Code
 
