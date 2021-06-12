@@ -28,6 +28,23 @@ Challenge
 
 O\(n\) time and O\(1\) extra space
 
+## Solution - Brute Force
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
 ## Solution - Greedy
 
 If total sum of gas is less than total cost, then end of comparison. 
