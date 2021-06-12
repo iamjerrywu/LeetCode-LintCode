@@ -101,3 +101,20 @@ class Solution:
   * L: len\(word\) for word in words
 * **Space Complexity:**
 
+## Solution 
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
