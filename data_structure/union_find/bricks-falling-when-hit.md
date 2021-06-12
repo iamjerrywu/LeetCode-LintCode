@@ -1,4 +1,4 @@
-# Bricks Falling When Hit
+# Bricks Falling When Hit 1014 \(H\)
 
 ## Problem
 
