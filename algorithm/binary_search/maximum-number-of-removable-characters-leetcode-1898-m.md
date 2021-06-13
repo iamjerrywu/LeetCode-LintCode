@@ -47,7 +47,7 @@ Explanation: If you remove the first index in the array removable, "abc" is no l
 * `s` and `p` both consist of lowercase English letters.
 * The elements in `removable` are **distinct**.
 
-## Solution 
+## Solution - Binary Search
 
 ### Code
 
@@ -87,6 +87,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(nlogn\)**
+* **Space Complexity: O\(nlogn\)**
 
