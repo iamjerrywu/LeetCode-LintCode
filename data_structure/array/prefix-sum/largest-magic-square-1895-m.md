@@ -34,7 +34,25 @@ Output: 2
 * `1 <= m, n <= 50`
 * `1 <= grid[i][j] <= 106`
 
-## Solution 
+## Solution - Prefix Sum
+
+If using brute force, the time complexity would be:
+
+* O\(n^5\)m \(n ~= m\)
+  * Traverse square: O\(n\*m\)
+  * Find valid length: O\(min\(n, m\)\)
+  * Verify whether magic: O\(min\(n, m\) ^2\)
+    * For rows, columns would need O\(min\(n, m\) ^2\)
+    * For diagnose line, only need O\(min\(n, m\)\)
+
+If we apply using prefix sum, it can be reduced to O\(n^4\)
+
+* O\(n^4\), \(n ~= m\)
+  * Traverse square: O\(n\*m\)
+  * Find valid length: O\(min\(n, m\)\)
+  * Verify whether magic: O\(min\(n, m\)\)
+    * For rows, columns would need O\(\(n, m\)\)
+    * For diagnose line, only need O\(min\(n, m\)\)
 
 ### Code
 
@@ -86,6 +104,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n^4\)**
+* **Space Complexity: O\(n^2\)**
 
