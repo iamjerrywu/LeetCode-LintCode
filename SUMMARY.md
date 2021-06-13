@@ -422,6 +422,7 @@
   * [Minimum Number of Swaps to Make the Binary String Alternating \(LeetCode 1864\) \(M\)](algorithm/greedy/untitled.md)
   * [Reduction Operations to Make the Array Elements Equal （LeetCode 1887\) \(M\)](algorithm/greedy/reduction-operations-to-make-the-array-elements-equal-leetcode-1887-m.md)
   * [Check if All the Integers in a Range Are Covered 1893 \(E\)](algorithm/greedy/check-if-all-the-integers-in-a-range-are-covered-1893-e.md)
+  * [Find the Student that Will Replace the Chalk \(LeetCode 1894\) M](algorithm/greedy/find-the-student-that-will-replace-the-chalk-leetcode-1894-m.md)
 
 ## Other
 
