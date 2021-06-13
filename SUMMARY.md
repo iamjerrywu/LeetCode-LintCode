@@ -424,6 +424,7 @@
   * [Check if All the Integers in a Range Are Covered 1893 \(E\)](algorithm/greedy/check-if-all-the-integers-in-a-range-are-covered-1893-e.md)
   * [Find the Student that Will Replace the Chalk \(LeetCode 1894\) M](algorithm/greedy/find-the-student-that-will-replace-the-chalk-leetcode-1894-m.md)
   * [Redistribute Character to Make All Strings Equal \(LeetCode 1897\)](algorithm/greedy/redistribute-character-to-make-all-strings-equal-leetcode-1897.md)
+  * [Merge Triplets to Form Target Triplet \(LeetCode 1899\) M](algorithm/greedy/merge-triplets-to-form-target-triplet-leetcode-1899-m.md)
 
 ## Other
 
