@@ -53,5 +53,5 @@ class Solution:
 
 * **Time Complexity: O\(n^2\)**
   * n: len\(prices\)
-* **Space Complexity:**
+* **Space Complexity: O\(n\)**
 
