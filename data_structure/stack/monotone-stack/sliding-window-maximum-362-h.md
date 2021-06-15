@@ -51,7 +51,79 @@ class Solution:
 * **Time Complexity: O\(n \* k\)**
 * **Space Complexity: O\(n\)**
 
-## Solution 
+## Solution - Heap
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+from heapq import heappush, heappop
+
+class Heap:
+    def __init__(self):
+        self.minheap = []
+        self.deleted_set = set()
+    #O(logk)
+    def push(self, index, val):
+        heappush(self.minheap, (val, index))
+    
+    #O(logk)
+    def _lazy_delete(self):
+        while self.minheap and self.minheap[0][1] in self.deleted_set:
+            heappop(self.minheap)
+    
+    #O(logk)
+    def top(self):
+        self._lazy_delete()
+        return self.minheap[0]
+    #O(logk)
+    def pop(self):
+        self._lazy_delete()
+        heappop(self.minheap)
+    
+    # O(1)
+    def delete(self, index):
+        self.deleted_set.add(index)
+    
+    #O(1)
+    def is_empty(self):
+        return not bool(self.minheap)
+
+class Solution:
+    """
+    @param nums: A list of integers.
+    @param k: An integer
+    @return: The maximum number inside the window at each moving.
+    """
+    def maxSlidingWindow(self, nums, k):
+        # write your code here
+        if not nums:
+            return []
+        
+        max_values = []
+        maxheap = Heap()
+        for i in range(len(nums)):
+            maxheap.push(i, -nums[i])
+            if (i < k - 1):
+                continue
+            max_values.append(-maxheap.top()[0])
+            maxheap.delete(i - k + 1)
+        return max_value
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(nlogk\)**
+  * Traverse nums
+  * Push, Delete: O\(logk\), O\(1\)
+* **Space Complexity: O\(k\)**
+
+\*\*\*\*
+
+## Solution - Heap
 
 ### Code
 
