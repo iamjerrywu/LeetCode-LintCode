@@ -11,6 +11,6 @@ for i in range(n):
     while stack and condition of monotone stack is True:
         record current ans
         stack.pop()
-    stack.push(i)
+    stack.push(i) # record the index instead of value
 ```
 
