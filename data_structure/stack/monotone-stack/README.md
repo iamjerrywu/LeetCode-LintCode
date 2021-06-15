@@ -1,2 +1,16 @@
 # Monotone Stack
 
+## What's Monotone Stack?
+
+O\(n\) algorithm, use to solve problem like finding the nearest element in the list that's is bigger or smaller than current element.
+
+## Template:
+
+```python
+for i in range(n):
+    while stack and condition of monotone stack is True:
+        record current ans
+        stack.pop()
+    stack.push(i)
+```
+
