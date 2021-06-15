@@ -14,7 +14,7 @@ Example 1:
 Input:[5,3,8,3,2,5]Output:[3,3,5,4,4,4]Explanation:When Xiao Q is at position 0, he can see 3 tall buildings at positions 0, 1, and 2.When Xiao Q is at position 1, he can see  3 tall buildings at positions 0, 1, and 2.When Xiao Q is at position 2, he can see the building at position 0, 1 forward, and the building at position 3, 5 backward, plus the third building, a total of 5 buildings can be seen.When Xiao Q is at position 3, he can see 4 tall buildings in positions 2, 3, 4, and 5.When Xiao Q is at position 4, he can see 4 tall buildings in positions 2, 3, 4, and 5.When Xiao Q is at position 5, he can see 4 tall buildings in positions 2, 3, 4, and 5.
 ```
 
-## Solution 
+## Solution - Brute Force
 
 ### Code
 
