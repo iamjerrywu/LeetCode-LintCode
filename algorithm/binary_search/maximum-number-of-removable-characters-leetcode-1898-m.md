@@ -49,6 +49,8 @@ Explanation: If you remove the first index in the array removable, "abc" is no l
 
 ## Solution - Binary Search
 
+![](../../.gitbook/assets/screen-shot-2021-06-13-at-3.21.09-pm.png)
+
 ### Code
 
 {% tabs %}
