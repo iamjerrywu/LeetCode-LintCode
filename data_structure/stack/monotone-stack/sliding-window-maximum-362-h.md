@@ -121,8 +121,6 @@ class Solution:
   * Push, Delete: O\(logk\), O\(1\)
 * **Space Complexity: O\(k\)**
 
-\*\*\*\*
-
 ## Solution - Monotonic Queue
 
 ### Code
