@@ -123,7 +123,7 @@ class Solution:
 
 \*\*\*\*
 
-## Solution - Heap
+## Solution - Monotonic Stack
 
 ### Code
 
