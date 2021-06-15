@@ -82,3 +82,7 @@ Notes mainly comprises two parts:
 
 * Chap 17 \(TSP\)
 
+### Algo\_HF\_2021
+
+* Chap16 \(Trie vedio\)
+* 
