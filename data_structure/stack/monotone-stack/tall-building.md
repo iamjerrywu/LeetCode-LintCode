@@ -56,6 +56,8 @@ class Solution:
 
 ## Solution - Monotoic Stack
 
+![](../../../.gitbook/assets/screen-shot-2021-06-15-at-11.37.37-am.png)
+
 ### Code
 
 {% tabs %}
