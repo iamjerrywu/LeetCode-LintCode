@@ -55,7 +55,7 @@ class Solution:
   * n: len\(prices\)
 * **Space Complexity: O\(n\)**
 
-## Solution - Monotone Stack
+## Solution - Monotonic Stack
 
 In this case, we maintain a monotone stack that the value inside should always be ascending
 

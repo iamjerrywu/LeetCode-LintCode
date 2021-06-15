@@ -78,7 +78,7 @@
   * [Implement Queue by Linked List II 493 \(E\)](data_structure/linked_list/implement-queue-by-linked-list-ii-493-e.md)
   * [Odd Even Linked List 1292 \(M\)](data_structure/linked_list/odd-even-linked-list-1292-m.md)
 * [Stack](data_structure/stack/README.md)
-  * [Monotone Stack](data_structure/stack/monotone-stack/README.md)
+  * [Monotonic Stack](data_structure/stack/monotone-stack/README.md)
     * [Tall Building](data_structure/stack/monotone-stack/tall-building.md)
     * [Final Discounted Price 1852 \(M\)](data_structure/stack/monotone-stack/final-discounted-price.md)
   * [Implement Stack by Two Queues 494 \(E\)](data_structure/stack/implement-stack-by-two-queues-494-e.md)

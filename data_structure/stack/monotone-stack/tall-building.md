@@ -54,3 +54,22 @@ class Solution:
 * **Time Complexity: O\(n^2\)**
 * **Space Complexity: O\(n\)**
 
+\*\*\*\*
+
+## Solution - Monotoic Stack
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+

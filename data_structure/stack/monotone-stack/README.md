@@ -1,4 +1,4 @@
-# Monotone Stack
+# Monotonic Stack
 
 ## What's Monotone Stack?
 
