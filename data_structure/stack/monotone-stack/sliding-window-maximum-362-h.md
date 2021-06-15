@@ -123,20 +123,43 @@ class Solution:
 
 \*\*\*\*
 
-## Solution - Monotonic Stack
+## Solution - Monotonic Queue
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param nums: A list of integers.
+    @param k: An integer
+    @return: The maximum number inside the window at each moving.
+    """
+    def maxSlidingWindow(self, nums, k):
+        # write your code here
+        queue = collections.deque()
+        res = []
+        for i in range(len(nums)):
+            print(queue)
+            while queue and nums[queue[-1]] < nums[i]:
+                queue.pop()
+            queue.append(i)
 
+            if i >= k - 1:
+                print(i, queue)
+                res.append(nums[queue[0]])
+            
+            if i - k + 1 == queue[0]:
+                queue.popleft()
+        
+        return res
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
 
