@@ -1,4 +1,4 @@
-# Final Discounted Price
+# Final Discounted Price 1852 \(M\)
 
 ## Problem
 
@@ -59,7 +59,7 @@ class Solution:
 
 In this case, we maintain a monotone stack that the value inside should always be ascending
 
-
+![](../../../.gitbook/assets/screen-shot-2021-06-15-at-10.19.27-am.png)
 
 ### Code
 
