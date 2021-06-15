@@ -61,7 +61,35 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param arr: the height of all buildings
+    @return: how many buildings can he see at the location of each building
+    """
+    def tallBuilding(self, arr):
+        # Write your code here.
+        
+        # cur build must can be seen
+        res = [1] * len(arr)
+        # see left
+        self.count_buildings(arr, res, range(0, len(arr)))
+        # see right
+        self.count_buildings(arr, res, range(len(arr) - 1, -1, -1))
+        print(res)
+        return res
+    
+    def count_buildings(self, arr, res, id_list):
+        # should be descending
+        stack = []
+        can_be_seen = 0
+        for i in id_list:
+            res[i]+=can_be_seen
+            can_be_seen+=1
+            # when the later building is taller or equal to cur building, then it can block cur
+            while stack and arr[stack[-1]] <= arr[i]:
+                stack.pop()
+                can_be_seen-=1
+            stack.append(i)
 ```
 {% endtab %}
 {% endtabs %}
