@@ -24,7 +24,7 @@ Input:Prices = [2, 3, 1, 2, 4, 2]Output: [1, 2, 1, 0, 2, 2]Explanation: The item
 Input:Prices = [1, 2, 3, 4, 5]Output:[1, 2, 3, 4, 5]Explanation: each item should keep full price beacause there are not equal or lower priced items to the right
 ```
 
-## Solution - Brute Force
+## Solution - Brute Force \(Simulation\)
 
 ### Code
 
