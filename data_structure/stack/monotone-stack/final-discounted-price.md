@@ -55,3 +55,42 @@ class Solution:
   * n: len\(prices\)
 * **Space Complexity: O\(n\)**
 
+## Solution - Monotone Stack
+
+In this case, we maintain a monotone stack that the value inside should always be ascending
+
+
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param prices: a list of integer
+    @return: return the actual prices
+    """
+    def FinalDiscountedPrice(self, prices):
+        # write your code here
+        stack = []
+        res = list(prices)
+
+        for i in range(len(prices)):
+            while stack and prices[stack[-1]] >= prices[i]:
+                res[stack[-1]] = prices[stack[-1]] - prices[i]
+                stack.pop()
+            stack.append(i)
+        
+        return res
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(2n\) = O\(n\)**
+  * n: len\(prices\)
+  * Every element is visited twice
+* **Space Complexity: O\(n\)**
+
