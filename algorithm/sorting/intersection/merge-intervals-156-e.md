@@ -22,7 +22,7 @@ Challenge
 
 O\(_n_ log _n_\) time and O\(1\) extra space.
 
-## Solution 
+## Solution - Greedy \(1\)
 
 ### Code
 
