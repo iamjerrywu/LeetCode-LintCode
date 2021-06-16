@@ -75,6 +75,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(nlogn\)**
+  * n: len\(employee\)
+* **Space Complexity: O\(n\)**
 
