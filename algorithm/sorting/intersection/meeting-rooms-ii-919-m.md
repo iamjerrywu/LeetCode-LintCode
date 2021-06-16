@@ -100,3 +100,44 @@ def minMeetingRooms(self, intervals):
   * T: the max end time 
 * **Space Complexity: O\(n\)**
 
+## Solution - Heap
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+"""
+Definition of Interval.
+class Interval(object):
+    def __init__(self, start, end):
+        self.start = start
+        self.end = end
+"""
+import heapq
+class Solution:
+    """
+    @param intervals: an array of meeting time intervals
+    @return: the minimum number of conference rooms required
+    """
+    def minMeetingRooms(self, intervals):
+        # Write your code here
+        heap = []
+        for interval in intervals:
+            heapq.heappush(heap, (interval.start, 1))
+            heapq.heappush(heap, (interval.end, -1))
+        meeting_cnt, res = 0, 0
+        while heap:
+            meeting_cnt += heapq.heappop(heap)[1]
+            res = max(meeting_cnt, res)
+        return res
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(nlogn\)**
+  * n: len\(intervals\)
+* **Space Complexity: O\(n\)**
+
