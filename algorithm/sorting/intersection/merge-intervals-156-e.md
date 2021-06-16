@@ -108,7 +108,7 @@ class Solution:
 
 \*\*\*\*
 
-## Solution 
+## Solution - Line Sweep
 
 ### Code
 
