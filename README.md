@@ -84,5 +84,8 @@ Notes mainly comprises two parts:
 
 ### Algo\_HF\_2021
 
+* Chap15 \(Union Find last two problem, 40 minutes left\)
 * Chap16 \(Trie vedio\)
-* 
+
+
+
