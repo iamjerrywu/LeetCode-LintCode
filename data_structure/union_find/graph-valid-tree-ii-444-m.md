@@ -51,7 +51,7 @@ class UnionFind:
         
         # if they are not in the same component, let root_x point to root_y
         if root_x != root_y:
-            self.father[x] = root_y
+            self.father[root_x] = root_y
     # is_connected can check on following condition
     # 1. two nodes in same set?
     # 2. two nodes belongs to same component?
