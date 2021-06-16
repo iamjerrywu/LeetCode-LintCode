@@ -115,7 +115,45 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+"""
+Definition of Interval.
+class Interval(object):
+    def __init__(self, start, end):
+        self.start = start
+        self.end = end
+"""
 
+class Solution:
+    """
+    @param intervals: interval list.
+    @return: A new interval list.
+    """
+    def merge(self, intervals):
+        # write your code here
+        boundaries = []
+        for interval in intervals:
+            boundaries.append((interval.start, -1))
+            boundaries.append((interval.end, 1))
+        boundaries.sort(key = lambda n :(n[0], n[1]))
+        
+        '''
+            boundaries.append((interval.start, 1))
+            boundaries.append((interval.end, -1))
+        boundaries.sort(key = lambda n :(n[0], -n[1]))
+        '''
+        
+        print(boundaries)
+
+        res = []
+        is_matched = 0
+        for boundary in boundaries:
+            if is_matched == 0:
+                left = boundary[0]
+            is_matched +=boundary[1]
+            if is_matched == 0:
+                right = boundary[0]
+                res.append(Interval(left, right))
+        return res
 ```
 {% endtab %}
 {% endtabs %}
