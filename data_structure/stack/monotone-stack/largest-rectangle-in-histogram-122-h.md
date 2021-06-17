@@ -94,7 +94,13 @@ class Solution:
 * **Time Complexity: O\(n^2\)**
 * **Space Complexity: O\(1\)**
 
-## Solution 
+## Solution - Monotonic Stack
+
+Characteristic for monotonic stack is that the first value smaller than cur value in left/right.
+
+Since we try to enumerate the max height, which means the max retangle can be find at height\[i\]. Therefore, toward left, and toward right, we need to find the first element that's smaller than it.
+
+![](../../../.gitbook/assets/screen-shot-2021-06-17-at-10.56.21-am.png)
 
 ### Code
 
