@@ -16,5 +16,5 @@ for i in range(n):
 
 ## Applicable Scenario
 
-
+![](../../../.gitbook/assets/screen-shot-2021-06-17-at-10.07.27-am.png)
 
