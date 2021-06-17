@@ -1,6 +1,6 @@
 # Monotonic Stack
 
-## What's Monotone Stack?
+## What's Monotonic Stack?
 
 O\(n\) algorithm, use to solve problem like finding the nearest element in the list that's is bigger or smaller than current element.
 
