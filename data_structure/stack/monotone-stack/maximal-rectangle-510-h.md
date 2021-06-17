@@ -88,7 +88,7 @@ class Solution:
 
 * **Time Complexity: O\(n^6\)**
   * Enumerate the up, down, left, right, and judge whether the bounded area is filled with 1
-* **Space Complexity:**
+* **Space Complexity: O\(1\)**
 
 \*\*\*\*
 
@@ -99,7 +99,54 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param matrix: a boolean 2D matrix
+    @return: an integer
+    """
+    def maximalRectangle(self, matrix):
+        # write your code here
+        if not matrix or not matrix[0]:
+            return 0
+        
+        n, m = len(matrix), len(matrix[0])
+        heights = [0] * m
+        
+        max_matrix_area = 0
+        for i in range(n):
+            for j in range(m):
+                # if true, then keep go vertical straight, height + 1
+                # if not, then stop, set height = 0
+                if matrix[i][j]:
+                    heights[j] +=1
+                else:
+                    heights[j] = 0
+            #update max area
+            max_matrix_area = max(max_matrix_area, self.largestRectangleArea(heights))
+        return max_matrix_area
+        
+    def largestRectangleArea(self, heights):
+        # write your code here
+        if not heights:
+            return 0
+        
+        n = len(heights)
+        max_area = 0
+        stack = []
+        for i in range(n + 1):
+            # set speical value -1, for heights[n]
+            value = -1 if i == n else heights[i]
+            # should be ascending
+            while stack and heights[stack[-1]] > value:
+                top = stack.pop(-1)
 
+                left = stack[-1] if stack else -1
+                # i would be the first one smaller than cur on the right side
+                width = i - left - 1
+                max_area = max(max_area, width * heights[top])
+            stack.append(i)
+        return max_area
+      
 ```
 {% endtab %}
 {% endtabs %}
