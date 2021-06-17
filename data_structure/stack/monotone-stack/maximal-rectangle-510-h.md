@@ -94,6 +94,10 @@ class Solution:
 
 ## Solution - Monotonic Stack
 
+For each row, update the height row and use the monotonic stack solution in problm 122
+
+![](../../../.gitbook/assets/screen-shot-2021-06-17-at-12.59.17-pm.png)
+
 ### Code
 
 {% tabs %}
@@ -153,6 +157,9 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n \* \(m + m\)\) = O\(n \* m\)**
+  * Traverse from top to down: O\(n\)
+  * Update each row the height list: O\(m\)
+  * Monotonic stack: O\(m\)
+* **Space Complexity: O\(m\)**
 
