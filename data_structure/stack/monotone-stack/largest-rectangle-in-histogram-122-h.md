@@ -115,7 +115,32 @@ Example here:
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param height: A list of integer
+    @return: The area of largest rectangle in the histogram
+    """
+    def largestRectangleArea(self, heights):
+        # write your code here
+        if not heights:
+            return 0
+        
+        n = len(heights)
+        max_area = 0
+        stack = []
+        for i in range(n + 1):
+            # set speical value -1, for heights[n]
+            value = -1 if i == n else heights[i]
+            # should be ascending
+            while stack and heights[stack[-1]] > value:
+                top = stack.pop(-1)
 
+                left = stack[-1] if stack else -1
+                # i would be the first one smaller than cur on the right side
+                width = i - left - 1
+                max_area = max(max_area, width * heights[top])
+            stack.append(i)
+        return max_area
 ```
 {% endtab %}
 {% endtabs %}
