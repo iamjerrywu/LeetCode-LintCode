@@ -25,6 +25,25 @@ Output: 4
 * `1 <= heights.length <= 105`
 * `0 <= heights[i] <= 104`
 
+## Solution - Enumeration Brute Force
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
 ## Solution 
 
 ### Code
