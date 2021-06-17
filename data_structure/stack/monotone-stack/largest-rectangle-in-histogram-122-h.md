@@ -60,6 +60,42 @@ class Solution:
 * **Time Complexity: O\(n^3\)**
 * **Space Complexity: O\(1\)**
 
+## Solution - Enumeration Brute Force with optimization
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param height: A list of integer
+    @return: The area of largest rectangle in the histogram
+    """
+    def largestRectangleArea(self, heights):
+        # write your code here
+        if not heights:
+            return 0
+        
+        max_area, n = 0, len(heights)
+        for start in range(n):
+            height = float('inf')
+            for end in range(start, n):
+                height = min(height, heights[end])
+                width = end - start + 1
+                max_area = max(max_area, height * width)
+        return max_area
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n^2\)**
+* **Space Complexity: O\(1\)**
+
+\*\*\*\*
+
 ## Solution 
 
 ### Code
