@@ -14,3 +14,7 @@ for i in range(n):
     stack.push(i) # record the index instead of value
 ```
 
+## Applicable Scenario
+
+
+
