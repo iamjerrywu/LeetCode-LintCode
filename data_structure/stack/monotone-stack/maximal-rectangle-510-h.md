@@ -86,6 +86,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(n^6\)**
+  * Enumerate the up, down, left, right, and judge whether the bounded area is filled with 1
 * **Space Complexity:**
 
