@@ -100,7 +100,15 @@ Characteristic for monotonic stack is that the first value smaller than cur valu
 
 Since we try to enumerate the max height, which means the max retangle can be find at height\[i\]. Therefore, toward left, and toward right, we need to find the first element that's smaller than it.
 
+Example of illustrating L list / R list 
+
 ![](../../../.gitbook/assets/screen-shot-2021-06-17-at-10.56.21-am.png)
+
+Example here:
+
+![](../../../.gitbook/assets/screen-shot-2021-06-17-at-11.24.10-am.png)
+
+![](../../../.gitbook/assets/screen-shot-2021-06-17-at-11.24.51-am.png)
 
 ### Code
 
