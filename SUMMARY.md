@@ -82,6 +82,7 @@
     * [Largest Rectangle in Histogram 122 \(H\)](data_structure/stack/monotone-stack/largest-rectangle-in-histogram-122-h.md)
     * [Tall Building 285 \(M\)](data_structure/stack/monotone-stack/tall-building.md)
     * [Sliding Window Maximum 362 \(H\)](data_structure/stack/monotone-stack/sliding-window-maximum-362-h.md)
+    * [Maximal Rectangle 510 \(H\)](data_structure/stack/monotone-stack/maximal-rectangle-510-h.md)
     * [Final Discounted Price 1852 \(M\)](data_structure/stack/monotone-stack/final-discounted-price.md)
   * [Implement Stack by Two Queues 494 \(E\)](data_structure/stack/implement-stack-by-two-queues-494-e.md)
   * [Implement Stack 495 \(E\)](data_structure/stack/implement-stack-495-e.md)
