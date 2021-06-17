@@ -79,6 +79,7 @@
   * [Odd Even Linked List 1292 \(M\)](data_structure/linked_list/odd-even-linked-list-1292-m.md)
 * [Stack](data_structure/stack/README.md)
   * [Monotonic Stack](data_structure/stack/monotone-stack/README.md)
+    * [Largest Rectangle in Histogram 122 \(H\)](data_structure/stack/monotone-stack/largest-rectangle-in-histogram-122-h.md)
     * [Tall Building 285 \(M\)](data_structure/stack/monotone-stack/tall-building.md)
     * [Sliding Window Maximum 362 \(H\)](data_structure/stack/monotone-stack/sliding-window-maximum-362-h.md)
     * [Final Discounted Price 1852 \(M\)](data_structure/stack/monotone-stack/final-discounted-price.md)
