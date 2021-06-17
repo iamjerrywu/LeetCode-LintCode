@@ -90,3 +90,22 @@ class Solution:
   * Enumerate the up, down, left, right, and judge whether the bounded area is filled with 1
 * **Space Complexity:**
 
+\*\*\*\*
+
+## Solution - Monotonic Stack
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
