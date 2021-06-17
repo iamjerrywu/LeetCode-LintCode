@@ -25,24 +25,40 @@ Output: 4
 * `1 <= heights.length <= 105`
 * `0 <= heights[i] <= 104`
 
-## Solution - Enumeration Brute Force
+## Solution - Enumeration Brute Force no optimization
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param height: A list of integer
+    @return: The area of largest rectangle in the histogram
+    """
+    def largestRectangleArea(self, heights):
+        # write your code here
+        if not heights:
+            return 0
+        
+        max_area, n = 0, len(heights)
+        for start in range(n):
+            for end in range(start, n):
+                height = float('inf')
+                for i in range(start, end + 1):
+                    height = min(height, heights[i])
+                width = end - start + 1
+                max_area = max(max_area, height * width)
+        return max_area
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
-
-\*\*\*\*
+* **Time Complexity: O\(n^3\)**
+* **Space Complexity: O\(1\)**
 
 ## Solution 
 
