@@ -39,7 +39,7 @@ Output: [2.00000,3.00000,3.00000,3.00000,2.00000,3.00000,2.00000]
 * `1 <= k <= nums.length <= 105`
 * `231 <= nums[i] <= 231 - 1`
 
-## Solution 
+## Solution - Brute Force \(Sorting\)
 
 ### Code
 
