@@ -103,7 +103,41 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+import heapq
+class Solution:
+    def __init__(self):
+        # do initialize if it is necessary
+        # self.nums = []
+        self.min_heap = []
+        self.max_heap = [] # median always put in here, 0 <= len(max_heap) - len(min_heap) <= 1
 
+    """
+    @param val: An integer
+    @return: nothing
+    """
+    def add(self, val):
+        # write your code here
+        if not self.max_heap:
+            heapq.heappush(self.max_heap, -val)
+            return
+        mid = -self.max_heap[0]
+        if val <= mid:
+            heapq.heappush(self.max_heap, -val)
+        else:
+            heapq.heappush(self.min_heap, val)
+        
+        # 0 <= len(max_heap) - len(min_heap) <= 1
+        if len(self.max_heap) > len(self.min_heap) + 1:
+            heapq.heappush(self.min_heap, -heapq.heappop(self.max_heap))
+        elif len(self.max_heap) < len(self.min_heap):
+            heapq.heappush(self.max_heap, -heapq.heappop(self.min_heap))
+
+    """
+    @return: return the median of the data stream
+    """
+    def getMedian(self):
+        # write your code here
+        return -self.max_heap[0]
 ```
 {% endtab %}
 {% endtabs %}
@@ -111,5 +145,8 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity:**
+  * add\(\): logn
+  * getMedian\(\): O\(1\)
 * **Space Complexity:**
+  * O\(n\)
 
