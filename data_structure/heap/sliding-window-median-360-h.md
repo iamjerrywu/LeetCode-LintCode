@@ -81,6 +81,10 @@ class Solution:
 
 ## Solution - Heap
 
+0 &lt;= len\(max-heap\) - len\(min-heap\) &lt;= 1
+
+![](../../.gitbook/assets/screen-shot-2021-06-19-at-2.13.13-am.png)
+
 ### Code
 
 {% tabs %}
