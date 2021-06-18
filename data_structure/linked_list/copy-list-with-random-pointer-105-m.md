@@ -7,6 +7,52 @@ Return a deep copy of the list.Challenge
 
 Could you solve it with O\(1\) space?
 
+## Solution - HashTable
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+"""
+Definition for singly-linked list with a random pointer.
+class RandomListNode:
+    def __init__(self, x):
+        self.label = x
+        self.next = None
+        self.random = None
+"""
+
+
+class Solution:
+    # @param head: A RandomListNode
+    # @return: A RandomListNode
+    def copyRandomList(self, head):
+        # write your code here
+        if not head:
+            return None
+        
+        cur = head
+        mapping = {}
+        while cur:
+            mapping[cur] = RandomListNode(cur.label)
+            cur = cur.next
+        
+        for node in mapping:
+            if node.next:
+                mapping[node].next = mapping[node.next]
+            if node.random:
+                mapping[node].random = mapping[node.random]
+        return mapping[head]
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
+
 ## Solution 
 
 ![](../../.gitbook/assets/screen-shot-2021-05-06-at-1.18.45-am.png)
@@ -62,6 +108,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
