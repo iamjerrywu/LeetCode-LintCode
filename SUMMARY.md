@@ -186,6 +186,7 @@
     * [Range Sum of BST 1704 \(M\)](data_structure/tree/bst/range-sum-of-bst-1704-m.md)
   * [Segment Tree](data_structure/tree/segment_tree.md)
 * [Heap](data_structure/heap/README.md)
+  * [Find Median from Data Stream 81 \(H\)](data_structure/heap/find-median-from-data-stream-81-h.md)
   * [Heapify 130 \(M\)](data_structure/heap/130.-heapify.md)
   * [Top k Largest Numbers 544 \(M\)](data_structure/heap/top-k-largest-numbers-544-m.md)
   * [Top k Largest Numbers II 545 \(M\)](data_structure/heap/top-k-largest-numbers-ii-545-m.md)
