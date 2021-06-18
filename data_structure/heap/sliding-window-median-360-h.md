@@ -46,7 +46,28 @@ Output: [2.00000,3.00000,3.00000,3.00000,2.00000,3.00000,2.00000]
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param nums: A list of integers
+    @param k: An integer
+    @return: The median of the element inside the window at each moving
+    """
+    def medianSlidingWindow(self, nums, k):
+        # write your code here
+        res = []
+        if not nums:
+            return res
+        for i in range(len(nums) - k + 1):
+            window = sorted(nums[i : i + k])
+            res.append(self.get_median(window))
+        return res
 
+    def get_median(self, window):
+        n = len(window)
+        if n%2 == 0:
+            return window[n//2 - 1]
+        else:
+            return window[n//2]
 ```
 {% endtab %}
 {% endtabs %}
