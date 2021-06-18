@@ -188,6 +188,7 @@
 * [Heap](data_structure/heap/README.md)
   * [Find Median from Data Stream 81 \(H\)](data_structure/heap/find-median-from-data-stream-81-h.md)
   * [Heapify 130 \(M\)](data_structure/heap/130.-heapify.md)
+  * [Sliding Window Median 360 \(H\)](data_structure/heap/sliding-window-median-360-h.md)
   * [Top k Largest Numbers 544 \(M\)](data_structure/heap/top-k-largest-numbers-544-m.md)
   * [Top k Largest Numbers II 545 \(M\)](data_structure/heap/top-k-largest-numbers-ii-545-m.md)
   * [K Closests Points 612 \(M\)](data_structure/heap/k-closets-points-612-m.md)
