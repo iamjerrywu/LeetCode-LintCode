@@ -80,6 +80,9 @@ class Solution:
     """
     def getMedian(self):
         # write your code here
+        if not self.nums:
+            return 0
+        
         n = len(self.nums)
         return sorted(self.nums)[(n - 1)//2]
 ```
