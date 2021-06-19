@@ -61,6 +61,7 @@ class Solution:
                 return heights[cur]
         else:
             if cur > 0:
+                # WARNING! should not write as [cur - 1:-1:-1]
                 return max(max(heights[cur - 1::-1]), heights[cur])
             else:
                 return heights[cur]
