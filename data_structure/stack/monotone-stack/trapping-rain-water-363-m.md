@@ -73,3 +73,20 @@ class Solution:
 * **Time Complexity: O\(n^2\)**
 * **Space Complexity: O\(1\)**
 
+## Solution 
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
