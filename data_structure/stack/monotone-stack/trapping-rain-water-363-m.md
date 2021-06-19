@@ -70,6 +70,7 @@ class Solution:
 
 {% tab title="Python" %}
 ```python
+# Cleaner Solution!
 class Solution:
     """
     @param heights: a list of integers
