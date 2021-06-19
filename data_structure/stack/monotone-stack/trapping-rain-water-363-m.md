@@ -24,7 +24,13 @@ O\(n\) time and O\(1\) memory
 
 O\(n\) time and O\(n\) memory is also acceptable.
 
-## Solution 
+## Solution - Brute Force 
+
+Traverse every position, and that position's possible water area would be:
+
+* min\(right_max, leftmax\)  - heights\[i\] \* 1 \(the width\)_
+* Right Max: from current position looks right, the max value
+* Left Max: from current position looks left, the max value
 
 ### Code
 
@@ -64,6 +70,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n^2\)**
+* **Space Complexity: O\(1\)**
 
