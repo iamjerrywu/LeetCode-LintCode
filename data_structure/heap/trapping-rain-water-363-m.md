@@ -185,3 +185,48 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
+## Solution - Monotonic Stack
+
+![](../../.gitbook/assets/screen-shot-2021-06-19-at-1.45.06-pm.png)
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param heights: a list of integers
+    @return: a integer
+    """
+    def trapRainWater(self, heights):
+        # write your code here
+        if not heights:
+            return 0
+        
+        n = len(heights)
+        area = 0
+        stack = []
+        for i in range(n):
+            # maintain a monotonic descending stack
+            while stack and heights[stack[-1]] < heights[i]:
+                top = stack.pop(-1)
+
+                if stack:
+                    # width = i - last smaller id - 1
+                    width = i - stack[-1] - 1
+                    # height = min(heights[last smaller id], heights[i]) - heights[cur]
+                    height = min(heights[stack[-1]], heights[i])
+                    height -= heights[top]
+                    area+=width * height
+            stack.append(i)
+        return area
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
+
