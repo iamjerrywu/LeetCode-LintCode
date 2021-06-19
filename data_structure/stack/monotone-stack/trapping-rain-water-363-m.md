@@ -97,6 +97,10 @@ class Solution:
 * **Time Complexity: O\(n^2\)**
 * **Space Complexity: O\(1\)**
 
+{% hint style="danger" %}
+In this approach, actually when finding max, we redundantly traverse the elements in list
+{% endhint %}
+
 ## Solution 
 
 ### Code
