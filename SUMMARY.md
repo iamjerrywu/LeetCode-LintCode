@@ -190,6 +190,7 @@
   * [Heapify 130 \(M\)](data_structure/heap/130.-heapify.md)
   * [Sliding Window Median 360 \(H\)](data_structure/heap/sliding-window-median-360-h.md)
   * [Trapping Rain Water 363 \(M\)](data_structure/heap/trapping-rain-water-363-m.md)
+  * [Trapping Rain Water II 364 \(H\)](data_structure/heap/trapping-rain-water-ii-364-h.md)
   * [Top k Largest Numbers 544 \(M\)](data_structure/heap/top-k-largest-numbers-544-m.md)
   * [Top k Largest Numbers II 545 \(M\)](data_structure/heap/top-k-largest-numbers-ii-545-m.md)
   * [K Closests Points 612 \(M\)](data_structure/heap/k-closets-points-612-m.md)
