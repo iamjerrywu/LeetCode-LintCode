@@ -101,7 +101,7 @@ class Solution:
 In this approach, actually when finding max, we redundantly traverse the elements in list
 {% endhint %}
 
-## Solution 
+## Solution - Prefix Max 
 
 ### Code
 
