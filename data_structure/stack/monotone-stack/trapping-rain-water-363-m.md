@@ -67,6 +67,28 @@ class Solution:
                 return heights[cur]
 ```
 {% endtab %}
+
+{% tab title="Python" %}
+```python
+class Solution:
+    """
+    @param heights: a list of integers
+    @return: a integer
+    """
+    def trapRainWater(self, heights):
+        # write your code here
+        area = 0
+        for i in range(len(heights)):
+            right_max = heights[i]
+            for j in range(i + 1, len(heights)):
+                right_max = max(right_max, heights[j])
+            left_max = heights[i]
+            for j in range(i - 1, -1, -1):
+                left_max = max(left_max, heights[j])
+            area += min(right_max,left_max) - heights[i]
+        return area
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
