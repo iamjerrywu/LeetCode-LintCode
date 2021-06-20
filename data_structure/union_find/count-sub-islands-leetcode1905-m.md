@@ -4,6 +4,8 @@
 
 ## Solution 
 
+Similar to 'Number of Islands 433' problem, however need to additionally check whether grid1 island is sub-island of grid2. 
+
 ### Code
 
 {% tabs %}

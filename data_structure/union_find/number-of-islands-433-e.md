@@ -93,8 +93,11 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(m \* n\)**
+  * m: len\(grid\)
+  * n: len\(grid\[0\]\)
+* **Space Complexity: O\(m \* n\)**
+  * Max recursion depth O\(m \* n\)
 
 ## Solution - DFS
 
@@ -154,8 +157,11 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(m \* n\)**
+  * m: len\(grid\)
+  * n: len\(grid\[0\]\)
+* **Space Complexity: O\(m \* n\)**
+  * Max recursion depth O\(m \* n\)
 
 ## Solution - Union Find
 
