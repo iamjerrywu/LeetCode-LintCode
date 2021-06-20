@@ -1,4 +1,4 @@
-# The Number of Full Rounds You Have Played \(M\)
+# The Number of Full Rounds You Have Played \(LeetCode 1904\) \(M\)
 
 ## Problem
 
