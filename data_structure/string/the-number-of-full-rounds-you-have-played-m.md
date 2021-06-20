@@ -63,9 +63,12 @@ class Solution:
         hour, minute = finishTime.split(':')
         end = int(hour) * 60 + int(minute)
         
+        # if end in next day, update end time
         if start > end:
             end += 24 * 60
         
+        # make start be the next closest game start time
+        # make end be the previous closest game end time
         start = start + (15 - start%15) if start%15 != 0 else start
         end = end - (end%15) if end%15 != 0 else end
         
