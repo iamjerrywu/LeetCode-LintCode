@@ -32,7 +32,7 @@ Input:words = ["What","must","be","acknowledgment","shall","be"]maxWidth = 16Out
 Input:words = ["Science","is","what","we","understand","well","enough","to","explain",         "to","a","computer.","Art","is","everything","else","we","do"]maxWidth = 20Output:[  "Science  is  what we",  "understand      well",  "enough to explain to",  "a  computer.  Art is",  "everything  else  we",  "do                  "]
 ```
 
-## Solution 
+## Solution - Simulation
 
 ### Code
 
