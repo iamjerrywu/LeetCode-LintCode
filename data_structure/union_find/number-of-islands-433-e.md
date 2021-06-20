@@ -96,8 +96,7 @@ class Solution:
 * **Time Complexity: O\(m \* n\)**
   * m: len\(grid\)
   * n: len\(grid\[0\]\)
-* **Space Complexity: O\(m \* n\)**
-  * Max recursion depth O\(m \* n\)
+* **Space Complexity: O\(min\(m, n\)**
 
 ## Solution - DFS
 
