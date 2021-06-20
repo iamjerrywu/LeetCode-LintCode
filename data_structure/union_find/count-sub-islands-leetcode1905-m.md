@@ -55,6 +55,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(m \* n\)**
+  * m: len\(grid\)
+  * n: len\(grid\[0\]\)
+* **Space Complexity: O\(min\(m, n\)**
 
