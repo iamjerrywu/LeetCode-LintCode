@@ -60,7 +60,7 @@ class Solution:
 
 ## Solution 
 
-Since in python arr\[-1\] means the last value, therefore with tricks that add 0 in both row/column, we can directly refer the before arr from after arr, without worriyng about the boundary condition.
+Since in python arr\[-1\] means the last value, therefore with tricks that add 0 in both row/column, we can directly refer the before arr from after arr, without worryng about the boundary condition.
 
 ### Code
 
