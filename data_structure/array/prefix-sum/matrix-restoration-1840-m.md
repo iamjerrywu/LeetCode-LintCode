@@ -25,15 +25,38 @@ Input:22[[1,3],[4,10]]Output: [[1,2],[3,4]]Explanation:before:1 23 4after:1 34 1
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param n: the row of the matrix
+    @param m: the column of the matrix
+    @param after: the matrix
+    @return: restore the matrix
+    """
+    def matrixRestoration(self, n, m, after):
+        # write your code here
+        # after[i][j] = after[i - 1][j] + after[i][j - 1] + before[i][j] - after[i - 1][j - 1]
+        # before[i][j] = after[i][j] − after[i − 1][j] − after[i][j − 1] + after[i − 1][j − 1]
+        for i in range(n - 1, -1, -1):
+            for j in range(m - 1, -1, -1):
+                # after[i][j] − after[i − 1][j]
+                if i > 0:
+                    after[i][j] -= after[i - 1][j]
+                # after[i][j] − after[i][j − 1]  
+                if j > 0:
+                    after[i][j] -= after[i][j - 1]
+                # after[i][j] + after[i − 1][j − 1]
+                if i > 0 and j > 0:
+                    after[i][j]+=after[i - 1][j - 1]            
+        return after
+        
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n \* m\)**
+* **Space Complexity: O\(1\)**
 
 ## Solution 
 
@@ -70,6 +93,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n \* m\)**
+* **Space Complexity: O\(n + m\)** 
 
