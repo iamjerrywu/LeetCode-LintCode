@@ -43,6 +43,7 @@
     * [Subarray Sum Equals to k II 1844 \(M\)](data_structure/array/prefix-sum/subarray-sum-equals-to-k-ii-1844.md)
     * [Search Subarray 1457 \(M\)](data_structure/array/prefix-sum/search-subarray-1457-m.md)
     * [Shortest Subarray with Sum at Least K 1507 \(H\)](data_structure/array/prefix-sum/shortest-subarray-with-sum-at-least-k-1507-h.md)
+    * [Matrix Restoration 1840 \(M\)](data_structure/array/prefix-sum/matrix-restoration-1840-m.md)
     * [Sum of Floored Pairs \(LeetCode 1862\) \(M\)](data_structure/array/prefix-sum/sum-of-floored-pairs-leetcode-1862-m.md)
     * [Largest Magic Square 1895 \(M\)](data_structure/array/prefix-sum/largest-magic-square-1895-m.md)
   * [Suffix](data_structure/array/suffix.md)
