@@ -34,6 +34,7 @@
 * [Array](data_structure/array/README.md)
   * [Prefix Sum](data_structure/array/prefix-sum/README.md)
     * [Maximum Subarray 41 \(E\)](data_structure/array/prefix-sum/maximum-subarray-41-e.md)
+    * [Find Words 194 \(M\)](data_structure/array/prefix-sum/find-words-194-m.md)
     * [Minimum Size Subarray Sum 406 \(M\)](data_structure/array/prefix-sum/minimum-size-subarray-sum.md)
     * [Product of Array Except Self 1310 \(M\)](data_structure/array/prefix-sum/product-of-array-except-self-1310-m.md)
     * [Subarray Sum 138 \(E\)](data_structure/array/prefix-sum/subarray-sum-138-e.md)
