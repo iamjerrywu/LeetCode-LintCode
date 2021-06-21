@@ -30,6 +30,46 @@ Output: 0
 Explanation: You can do nothing and get nothing.
 ```
 
+
+
+## Solution - Two Pointer
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    """
+    @param prices: Given an integer array
+    @return: Maximum profit
+    """
+    def maxProfit(self, prices):
+        # write your code here
+        n = len(prices)
+        if n <= 1:
+            return 0
+        
+        buy, sell = 0, 1
+        profit = 0
+        # only need to care about sell_id reach ing end, since buy_id would never surpass sell_id
+        while sell < n:
+            if prices[buy] > prices[sell]:
+                buy = sell
+                sell+=1
+                continue
+            profit = max(profit, prices[sell] - prices[buy])
+            sell+=1
+        return profit
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n\)**
+* **Space Complexity:**
+
 ## Solution - Greedy 
 
 ### Code
