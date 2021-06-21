@@ -320,6 +320,7 @@
   * [Find Peak Element 75 \(M\)](algorithm/binary_search/find-peak-element-75-m.md)
   * [Wood Cut 183 \(H\)](algorithm/binary_search/wood-cut-183-h.md)
   * [Smallest Rectangle Enclosing Black Pixels 600 \(H\)](algorithm/binary_search/600.-smallest-rectangle-enclosing-black-pixels.md)
+  * [Count Good Nodes in Binary Tree 1448 \(M\)](algorithm/binary_search/count-good-nodes-in-binary-tree-1448-m.md)
   * [Minimum Speed to Arrive on Time \(LeetCode1870\) \(M\)](algorithm/binary_search/minimum-speed-to-arrive-on-time-1870-m.md)
   * [Minimum Space Wasted From Packaging \(LeetCode 1889\) \(H\)](algorithm/binary_search/minimum-space-wasted-from-packaging-leetcode-1889-h.md)
   * [Maximum Number of Removable Characters \(LeetCode 1898\) M](algorithm/binary_search/maximum-number-of-removable-characters-leetcode-1898-m.md)
