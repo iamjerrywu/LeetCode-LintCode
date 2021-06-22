@@ -1,4 +1,4 @@
-# Count Good Nodes in Binary Tree 1448 \(M\)
+# Count Good Nodes in Binary Tree \(LeetCode1448\) \(M\)
 
 ## Problem
 
