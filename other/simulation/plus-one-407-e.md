@@ -41,9 +41,6 @@ class Solution:
             res.append(1)
         res.reverse()
         return res
-
-
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -51,5 +48,5 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity: O\(n\)**
-* **Space Complexity:**
+* **Space Complexity: O\(1\)**
 
