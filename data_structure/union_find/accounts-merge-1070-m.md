@@ -18,6 +18,19 @@ Example 1:	Input:	[		["John", "johnsmith@mail.com", "john00@mail.com"],		["John"
 
 ## Solution 
 
+* Step1: 
+  * dict: meails -&gt; \[id\]
+    * 123@hello.com -&gt; \[1,3,5\]
+    * 456@hello.com -&gt; \[2,4\]
+    * 789@hello.com -&gt; \[4, 9\]
+* Step2:
+  * Union: for same mail's id, merge to one group
+    * \(1,3,5\), \(2,4,9\)
+* Step3:
+  * merge id's emails to the root\_id
+* Step4:
+  * Mapping to people's names
+
 ### Code
 
 {% tabs %}
