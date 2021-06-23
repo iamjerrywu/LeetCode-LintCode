@@ -24,6 +24,8 @@ Explanation:
 
 ## Solution 
 
+![](../../.gitbook/assets/screen-shot-2021-06-23-at-1.42.19-pm.png)
+
 ### Code
 
 {% tabs %}
