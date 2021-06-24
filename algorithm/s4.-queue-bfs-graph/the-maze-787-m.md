@@ -76,6 +76,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(m \* n\)**
+  * m: len\(maze\)
+  * n: len\(maze\[0\]\)
+* **Space Complexity: O\(m \* n\)**
 
