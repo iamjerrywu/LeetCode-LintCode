@@ -52,7 +52,53 @@ Example 2:
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param maze: the maze
+    @param start: the start
+    @param destination: the destination
+    @return: the shortest distance for the ball to stop at the destination
+    """
+    def shortestDistance(self, maze, start, destination):
+        # write your code here
+        if not maze or not maze[0]:
+            return -1
+        ans = float('inf')
+        
+        start = (start[0], start[1])
+        destination = (destination[0], destination[1])
+        distances = {start : 0}
+        queue = collections.deque([start])
+        while queue:
+            point = queue.popleft()
+            if point == destination:
+                ans = min(ans, distances[point])
+            next_points = self.get_next_points(maze, point, distances[point])
+            for next_point in next_points:
+                if next_point in distances:
+                    if next_points[next_point] >= distances[next_point]:
+                        continue
+                distances[next_point] = next_points[next_point]
+                queue.append(next_point)
+        if ans != float('inf'):
+            return ans
+        return -1
+    
+    def get_next_points(self, maze, point, pre_steps):
+        next_points= {}
+        x, y = point
+        m, n = len(maze), len(maze[0])
+        directions = [(0, 1), (0, -1), (-1, 0), (1, 0)]
+        
+        for dx, dy in directions:
+            new_x, new_y = x, y
+            steps = 0
+            while 0 <= new_x < m and 0 <= new_y < n and maze[new_x][new_y] == 0:
+                new_x, new_y = new_x + dx, new_y + dy
+                steps+=1
+            next_points[(new_x - dx, new_y - dy)] = pre_steps + steps - 1
 
+        return next_points
 ```
 {% endtab %}
 
