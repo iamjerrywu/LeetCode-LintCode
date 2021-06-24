@@ -88,5 +88,90 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
+\*\*\*\*
+
+## Solution - Memorization
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+from sys import maxsize
+
+class Solution:
+    """
+    @param stones: 
+    @param K: 
+    @return: return a integer 
+    """
+    def mergeStones(self, stones, K):
+        n = len(stones)
+        
+        #memo[i][j][k]: means from i to j, the minimum efforts for merging stones till k piles left
+        memo = [[[maxsize for _ in range(K + 1)] for _ in range(n)] for _ in range(n)]
+        
+        # prefix sum of the stones
+        range_sum = self.get_range_sum(stones, n)
+        print(range_sum)
+        
+        return self.memo_search(range_sum, 0, n - 1, 1, K, memo)
+        
+        
+    def memo_search(self, range_sum, left, right, k, K, memo):
+        if memo[left][right][k] != maxsize:
+            return memo[left][right][k]
+        
+        if left == right:
+            if k == 1: return 0 
+            return -1 
+        
+        # if want to merge to final as 1 pile, need to first make stones within [left, right] become K piles
+        #i.e: [3,4,5,6,7,8,9,10,11] (9), k = 3 -> [12, 21, 30] (3) -> [63] (1)
+        if k == 1:
+            result = self.memo_search(range_sum, left, right, K, K, memo)
+            if result == -1:
+                return -1
+            return result + range_sum[left][right]
+        
+        minimum = maxsize
+        # right at least should be right - k + 1
+        # since [i + 1th, right] at least k - 1 
+        # right - i >= k - 1
+        # i <= right - k + 1 
+        for i in range(left, right - k + 2):
+            # emumerate split point
+            # left ~ ith, 1 pile / ith + 1 ~ right, k - 1piles
+            first_part = self.memo_search(range_sum, left, i, 1, K, memo)
+            rest_parts = self.memo_search(range_sum, i + 1, right, k - 1, K, memo)
+            if first_part == -1 or rest_parts == -1:
+                continue
+            minimum = min(minimum, first_part + rest_parts)
+            
+        if minimum == maxsize: minimum = -1 
+        memo[left][right][k] = minimum
+        return minimum
+
+    # calculate range sum btw ith / jth    
+    def get_range_sum(self, stones, n):
+        range_sum = [[0 for _ in range(n)] for _ in range(n)]
+        
+        for i in range(n):
+            range_sum[i][i] = stones[i]
+        
+        for i in range(n - 1, -1, -1):
+            for j in range(i + 1, n):
+                range_sum[i][j] = range_sum[i][j - 1] + stones[j]
+        
+        return range_sum
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
 
 
