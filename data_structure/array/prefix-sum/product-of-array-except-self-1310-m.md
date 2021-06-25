@@ -33,7 +33,43 @@ Challenge
 
 Could you solve it with constant space complexity? \(Note: The output array does not count as extra space for the purpose of space complexity analysis.\)
 
-## Solution
+## Solution - Simulation
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        total_product = 1
+        zero_cnt = 0
+        for num in nums:
+            if num != 0:
+                total_product*=num
+            else:
+                zero_cnt+=1
+        res = []
+        for num in nums:
+            if zero_cnt == 0:
+                res.append(total_product//num)
+                continue
+            if num == 0 and zero_cnt > 1 or num != 0:
+                res.append(0)
+            else:
+                res.append(total_product)
+                    
+        return res
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+## Solution - Prefix Product
 
 ### Code
 
