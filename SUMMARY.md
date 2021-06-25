@@ -391,6 +391,7 @@
     * [Backpack II 125 \(M\)](algorithm/dynamic_programming/backpack/125.-backpack-ii-m.md)
     * [Backpack III 440 \(M\)](algorithm/dynamic_programming/backpack/440.-backpack-iii-m.md)
     * [Backpack V 563 \(M\)](algorithm/dynamic_programming/backpack/backpack-v-563-m.md)
+    * [Test Strategy 273 \(M\)](algorithm/dynamic_programming/backpack/test-strategy-273-m.md)
     * [Partition Equal Subset Sum 588 \(M\)](algorithm/dynamic_programming/backpack/partition-equal-subset-sum-588-m.md)
     * [Profitable Schemes 1607 \(H\)](algorithm/dynamic_programming/backpack/profitable-schemes-1607-h.md)
     * [Float Combination Sum 1800 \(M\)](algorithm/dynamic_programming/backpack/float-combination-sum-1800-m.md)
