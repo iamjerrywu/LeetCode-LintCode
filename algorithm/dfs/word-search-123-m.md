@@ -52,7 +52,7 @@ Explanation:
 \[ z \]  
 \(0,0\)
 
-## Solution 
+## Solution - DFS
 
 ### Code
 
