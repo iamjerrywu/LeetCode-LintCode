@@ -367,6 +367,7 @@
   * [N-Queens II 34 \(M\)](algorithm/dfs/34.-n-queens-ii-m.md)
   * [k Sum II 90 \(M\)](algorithm/dfs/90.-k-sum-ii-m.md)
   * [Word Ladders II 121 \(H\)](algorithm/dfs/word-ladders-ii-121-h.md)
+  * [Word Search 123 \(M\)](algorithm/dfs/word-search-123-m.md)
   * [Word Search II 132 \(H\)](algorithm/dfs/132.-word-search-ii-h.md)
   * [Combination Sum 135 \(M\)](algorithm/dfs/135.-combination-sum-m.md)
   * [Palindrome Partitioning 136 \(M\)](algorithm/dfs/palindrome-partitioning-136-m.md)
