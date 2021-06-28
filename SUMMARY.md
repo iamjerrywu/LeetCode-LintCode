@@ -32,6 +32,7 @@
   * [Check if Word Equals Summation of Two Words \(LeetCode 1880\) \(E\)](data_structure/string/check-if-word-equals-summation-of-two-words-leetcode-1880-e.md)
   * [Maximum Value after Insertion \(LeetCode 1881\) \(M\)](data_structure/string/maximum-value-after-insertion-leetcode-1881-m.md)
   * [The Number of Full Rounds You Have Played \(LeetCode 1904\) \(M\)](data_structure/string/the-number-of-full-rounds-you-have-played-m.md)
+  * [Remove All Occurrences of a Substring \(LeetCode 1910\) \(M\)](data_structure/string/remove-all-occurrences-of-a-substring-leetcode-1910-m.md)
 * [Array](data_structure/array/README.md)
   * [Prefix Sum](data_structure/array/prefix-sum/README.md)
     * [Maximum Subarray 41 \(E\)](data_structure/array/prefix-sum/maximum-subarray-41-e.md)
