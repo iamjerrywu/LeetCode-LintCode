@@ -125,3 +125,20 @@ class Solution:
 * **Time Complexity: O\(n\)**
 * **Space Complexity: O\(n\)**
 
+## Solution - DP with scrolling arrays
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
