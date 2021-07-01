@@ -27,15 +27,26 @@ Input: [4, 3, 2, 1]Output: 0Explanation: No transaction, profit is 0.
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param prices: Given an integer array
+    @return: Maximum profit
+    """
+    def maxProfit(self, prices):
+        # write your code here
+        res = 0
+        for i in range(len(prices) - 1):
+            if prices[i] < prices[i + 1]:
+                res += prices[i + 1] - prices[i]
+        return res
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
 \*\*\*\*
 
