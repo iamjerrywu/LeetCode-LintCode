@@ -97,13 +97,31 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
-
+class Solution:
+    """
+    @param prices: Given an integer array
+    @return: Maximum profit
+    """
+    def maxProfit(self, prices):
+        # write your code here
+        if not prices:
+            return 0
+        
+        n = len(prices)
+        dp = [0] * n
+        
+        # dp state:
+        # dp[i]: the maximum profit could gain in ith day
+        for i in range(1, len(prices)):
+            dp[i] = max(dp[i - 1] + prices[i] - prices[i - 1], dp[i - 1])
+        
+        return dp[n - 1]
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
 
