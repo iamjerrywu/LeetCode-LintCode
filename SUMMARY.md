@@ -424,6 +424,7 @@
     * [Edit Distance 119 \(M\)](algorithm/dynamic_programming/sequence/119.-edit-distance-m.md)
     * [Regular Expression Matching 154 \(H\)](algorithm/dynamic_programming/sequence/154.-regular-expression-matching-h.md)
     * [Wildcard Matching 192 \(H\)](algorithm/dynamic_programming/sequence/192.-wildcard-matching-h.md)
+    * [Minimum Window Subsequence 857 \(H\)](algorithm/dynamic_programming/sequence/minimum-window-subsequence-857-h.md)
     * [Distinct Subsequences II 1702 \(H\)](algorithm/dynamic_programming/sequence/distinct-subsequences-ii-1702-h.md)
   * [Interval](algorithm/dynamic_programming/interval/README.md)
     * [Burst Balloons 168 \(H\)](algorithm/dynamic_programming/interval/168.-burst-balloons-h.md)

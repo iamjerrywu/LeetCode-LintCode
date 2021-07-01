@@ -25,12 +25,35 @@ Input:n = 3,m = 2Output:0Explanation:A circle is divided into 3 sectors and colo
 
 ## Solution 
 
+![](../../.gitbook/assets/screen-shot-2021-07-01-at-8.33.20-pm.png)
+
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+MOD = 1e9 + 7
+class Solution:
+    """
+    @param n: the number of sectors
+    @param m: the number of colors
+    @return: The total number of plans.
+    """
+    def getCount(self, n, m):
+        # Write your code here
+        
+        dp = [0] * (n + 3)
 
+        dp[1] = m % MOD
+        dp[2] = m * (m - 1) % MOD
+        dp[3] = m * (m - 1) * (m - 2) % MOD
+
+        for i in range(4, n + 1):
+            dp[i] += dp[i - 1] * (m - 2)
+            dp[i] += dp[i - 2] * (m - 1)
+            dp[i]%=MOD
+        
+        return int(dp[n])
 ```
 {% endtab %}
 {% endtabs %}
