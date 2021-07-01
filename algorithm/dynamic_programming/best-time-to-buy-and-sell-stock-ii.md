@@ -46,7 +46,30 @@ Input: [4, 3, 2, 1]Output: 0Explanation: No transaction, profit is 0.
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    """
+    @param prices: Given an integer array
+    @return: Maximum profit
+    """
+    def maxProfit(self, prices):
+        # write your code here
+        if not prices:
+            return 0
+        
+        peak, valley = prices[0], prices[0]
+        res = 0 
+        idx, n = 0, len(prices)
+        while idx < n - 1:
+            while idx < n - 1 and prices[idx] >= prices[idx + 1]:
+                idx+=1
+            valley = prices[idx]
 
+            while idx < n - 1 and prices[idx] <= prices[idx + 1]:
+                idx+=1
+            peak = prices[idx]
+
+            res+=peak - valley
+        return res
 ```
 {% endtab %}
 {% endtabs %}
