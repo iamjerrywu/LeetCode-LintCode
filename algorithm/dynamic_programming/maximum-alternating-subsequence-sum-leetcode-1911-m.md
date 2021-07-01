@@ -47,7 +47,6 @@ Explanation: It is optimal to choose the subsequence [6,1,5] with alternating su
 {% tabs %}
 {% tab title="python" %}
 ```python
-import heapq
 class Solution:
     def maxAlternatingSum(self, nums: List[int]) -> int:
         ans = 0
@@ -76,14 +75,50 @@ class Solution:
 
 \*\*\*\*
 
-## Solution 
+## Solution - DP
 
 ### Code
 
 {% tabs %}
 {% tab title="python" %}
 ```python
+class Solution:
+    def maxAlternatingSum(self, nums: List[int]) -> int:
+        n = len(nums)
+        dp = [0] * n
+        dp[0] = nums[0]
+        for i in range(1, n):
+            dp[i] = dp[i - 1] + max(0, nums[i] - nums[i - 1])
+        return dp[n - 1]
+```
+{% endtab %}
+{% endtabs %}
 
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
+## Solution - DP with scrolling arrays
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+import heapq
+class Solution:
+    def maxAlternatingSum(self, nums: List[int]) -> int:
+        n = len(nums)
+        dp = [0] * n
+        dp[0] = nums[0]
+        for i in range(1, n):
+            dp[i] = dp[i - 1] + max(0, nums[i] - nums[i - 1])
+        return dp[n - 1]
+            
+        
 ```
 {% endtab %}
 {% endtabs %}
