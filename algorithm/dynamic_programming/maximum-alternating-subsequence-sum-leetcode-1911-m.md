@@ -96,8 +96,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
 
 \*\*\*\*
 
@@ -112,19 +112,17 @@ import heapq
 class Solution:
     def maxAlternatingSum(self, nums: List[int]) -> int:
         n = len(nums)
-        dp = [0] * n
+        dp = [0] * 2
         dp[0] = nums[0]
         for i in range(1, n):
-            dp[i] = dp[i - 1] + max(0, nums[i] - nums[i - 1])
-        return dp[n - 1]
-            
-        
+            dp[i%2] = dp[(i - 1)%2] + max(0, nums[i] - nums[i - 1])
+        return dp[(n - 1)%2]
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
