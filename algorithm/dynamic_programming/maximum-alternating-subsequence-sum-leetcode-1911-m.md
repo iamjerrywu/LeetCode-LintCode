@@ -42,6 +42,8 @@ Explanation: It is optimal to choose the subsequence [6,1,5] with alternating su
 
 ## Solution - Peak / Valley
 
+![](../../.gitbook/assets/screen-shot-2021-07-01-at-12.22.44-pm.png)
+
 ### Code
 
 {% tabs %}
@@ -73,8 +75,6 @@ class Solution:
 * **Time Complexity: O\(n\)**
 * **Space Complexity: O\(1\)**
 
-\*\*\*\*
-
 ## Solution - DP
 
 ### Code
@@ -98,8 +98,6 @@ class Solution:
 
 * **Time Complexity: O\(n\)**
 * **Space Complexity: O\(n\)**
-
-\*\*\*\*
 
 ## Solution - DP with scrolling arrays
 
