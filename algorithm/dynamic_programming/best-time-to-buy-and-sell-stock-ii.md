@@ -1,4 +1,4 @@
-# Best Time to Buy and Sell Stock II
+# Best Time to Buy and Sell Stock II 150 \(M\)
 
 ## Problem
 
@@ -71,6 +71,11 @@ class Solution:
         res = 0 
         idx, n = 0, len(prices)
         while idx < n - 1:
+            # should check valley first
+            # ex: [4,3,2,1], here the valley would be valley first = 1, then peak = 1
+            
+            # if check peak first
+            # then would be first peak = 4, valley = 1
             while idx < n - 1 and prices[idx] >= prices[idx + 1]:
                 idx+=1
             valley = prices[idx]
