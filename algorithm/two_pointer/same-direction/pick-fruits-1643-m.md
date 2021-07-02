@@ -45,14 +45,37 @@ class Solution:
 * **Time Complexity: O\(n^3\)**
 * **Space Complexity: O\(n\)**
 
-## Solution 
+## Solution - Two Pointers
 
 ```python
-
+class Solution:
+    """
+    @param arr: the arr
+    @return: the length of the longset subarray
+    """
+    def pickFruits(self, arr):
+        # Write your code here.
+        j, different_nums = 0, 0
+        cnt, max_len = collections.defaultdict(int), 0
+        for i in range(len(arr)):
+            while j < len(arr) and different_nums < 3:
+                # cnt default values as all 0
+                cnt[arr[j]]+=1
+                if cnt[arr[j]] == 1:
+                    different_nums +=1
+                j+=1
+                if different_nums <= 2:
+                    max_len = max(max_len, j - i)
+            # once differnet nums too much, move i
+            cnt[arr[i]] -=1
+            if cnt[arr[i]] == 0:
+                different_nums -=1
+        
+        return max_len
 ```
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
 
