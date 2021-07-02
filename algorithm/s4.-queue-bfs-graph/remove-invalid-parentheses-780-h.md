@@ -85,3 +85,18 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
+## Solution - DFS
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
