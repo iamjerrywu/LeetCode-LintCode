@@ -1,4 +1,4 @@
-# Robot Bounded In Circle 1041 \(M\)
+# Robot Bounded In Circle \(LeetCode1041\) \(M\)
 
 ## Problem
 

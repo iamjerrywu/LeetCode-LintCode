@@ -480,7 +480,7 @@
 * [Simulation](other/simulation/README.md)
   * [Narcissistic Number 147 \(E\)](other/simulation/narcissistic-number-147-e.md)
   * [Plus One 407 \(E\)](other/simulation/plus-one-407-e.md)
-  * [Robot Bounded In Circle 1041 \(M\)](other/simulation/robot-bounded-in-circle-1041-m.md)
+  * [Robot Bounded In Circle \(LeetCode1041\) \(M\)](other/simulation/robot-bounded-in-circle-1041-m.md)
   * [Pick Carrots 1896 \(E\)](other/simulation/pick-carrots-1896-e.md)
 * [Object-Oriented Design](other/object-oriented-design/README.md)
   * [Student ID 455 \(E\)](other/object-oriented-design/student-id-455-e.md)
