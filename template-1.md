@@ -4,9 +4,13 @@
 
 ## Solution 
 
+{% tabs %}
+{% tab title="Python" %}
 ```python
 
 ```
+{% endtab %}
+{% endtabs %}
 
 ### Complexity Analysis
 
