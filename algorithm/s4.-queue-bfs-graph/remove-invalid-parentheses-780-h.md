@@ -82,21 +82,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
-
-## Solution - DFS
-
-{% tabs %}
-{% tab title="Python" %}
-```python
-
-```
-{% endtab %}
-{% endtabs %}
-
-### Complexity Analysis
-
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(2^n \* n\)**
+* **Space Complexity: O\(n\)**
 
