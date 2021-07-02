@@ -88,6 +88,10 @@ Notes mainly comprises two parts:
 * Chap16 \(Trie vedio\)
 * Chap19 \(Monotonic Stack last two problems, start at 1:05, around 55 mintues left\)
 * Chap23 \(A\* algorithm, watched but not clearly get it\)
+* Chap 27 \(spinning tree\)
+* Chap28 \(Trie hard questions\)
+* Chap29 \(Stack and expression\)
+* Chap30 \(Segment Tree\)
 
 
 
