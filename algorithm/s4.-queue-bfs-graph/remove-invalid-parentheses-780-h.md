@@ -24,7 +24,7 @@ Input:"(a)())()"Output: ["(a)()()", "(a())()"]
 Input:")(" Output: [""]
 ```
 
-## Solution 
+## Solution - BFS
 
 {% tabs %}
 {% tab title="Python" %}
