@@ -287,6 +287,7 @@
     * [Linked List Cycle 102 \(M\)](algorithm/two_pointer/same-direction/102.-linked-list-cycle.md)
     * [Linked List Cycle II 103 \(H\)](algorithm/two_pointer/same-direction/linked-list-cycle-ii-103-h.md)
     * [Palindrome Linked List 223 \(M\)](algorithm/two_pointer/same-direction/223.-palindrome-linked-list-m.md)
+    * [String Partition 328 \(M\)](algorithm/two_pointer/same-direction/string-partition-328-m.md)
     * [Intersection of Two Linked Lists 380 \(M\)](algorithm/two_pointer/same-direction/380.-intersection-of-two-linked-lists-m.md)
     * [Longest Substring Without Repeating Characters 384 \(M\)](algorithm/two_pointer/same-direction/longest-substring-without-repeating-characters-m.md)
     * [Remove Duplicate Numbers in Array 521 \(E\)](algorithm/two_pointer/same-direction/remove-duplicate-numbers-in-array-e.md)
