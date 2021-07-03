@@ -94,13 +94,53 @@ class Solution:
 {% tabs %}
 {% tab title="Python" %}
 ```python
+DIRECTIONS = ((0, 1), (0, -1), (-1, 0), (1, 0))
 
+class Solution:
+
+    def findPeakII(self, A):
+        return self.dfs(A, 1, len(A) - 2, 1, len(A[0]) - 2)
+
+    def dfs(self, A, up, down, left, right):
+        mid_x, mid_y = (up + down) // 2, (left + right) // 2
+        x, y = mid_x, mid_y
+        highest = A[x][y]
+
+        for i in range(up, down + 1):
+            if A[i][mid_y] > highest:
+                highest = A[i][mid_y]
+                x, y = i, mid_y
+        for i in range(left, right + 1):
+            if A[mid_x][i] > highest:
+                highest = A[mid_x][i]
+                x, y = mid_x, i
+
+        is_peak = True
+        for dx, dy in DIRECTIONS:
+            nx, ny = x + dx, y + dy
+            if A[nx][ny] > A[x][y]:
+                is_peak = False
+                x, y = nx, ny
+                break
+        if is_peak:
+            return [x, y]
+        # serach in the pointed direction
+        if up <= x < mid_x and left <= y < mid_y:
+            return self.dfs(A, up, mid_x - 1, left, mid_y - 1)
+        if up <= x < mid_x and mid_y < y <= right:
+            return self.dfs(A, up, mid_x - 1, mid_y + 1, right)
+        if mid_x < x <= down and left <= y < mid_y:
+            return self.dfs(A, mid_x + 1, down, left, mid_y - 1)
+        if mid_x < x <= down and mid_y < y <= right:
+            return self.dfs(A, mid_x + 1, down, mid_y + 1, right)
+
+        return []
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(m + n\)** 
+* **Space Complexity: O\(1\)**
 
