@@ -54,7 +54,7 @@ If you come up with an algorithm that you _thought_ it is O\(nlogm\) or O\(mlogn
 
 \*\*\*\*
 
-## Solution 
+## Solution - Recursion
 
 {% tabs %}
 {% tab title="Python" %}
