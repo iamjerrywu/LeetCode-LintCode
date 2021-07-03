@@ -328,6 +328,7 @@
   * [Search in Rotated Sorted Array 62 \(M\)](algorithm/binary_search/search-in-rotated-sorted-array-62-m.md)
   * [Search in Rotated Sorted Array II 63 \(M\)](algorithm/binary_search/search-in-rotated-sorted-array-ii-63-m.md)
   * [Find Peak Element 75 \(M\)](algorithm/binary_search/find-peak-element-75-m.md)
+  * [Find Peak Element II 390 \(H\)](algorithm/binary_search/find-peak-element-ii-390-h.md)
   * [Wood Cut 183 \(H\)](algorithm/binary_search/wood-cut-183-h.md)
   * [Smallest Rectangle Enclosing Black Pixels 600 \(H\)](algorithm/binary_search/600.-smallest-rectangle-enclosing-black-pixels.md)
   * [Minimum Speed to Arrive on Time \(LeetCode1870\) \(M\)](algorithm/binary_search/minimum-speed-to-arrive-on-time-1870-m.md)
