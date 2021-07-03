@@ -42,15 +42,50 @@ If you come up with an algorithm that you _thought_ it is O\(nlogm\) or O\(mlogn
 {% tabs %}
 {% tab title="Python" %}
 ```python
+class Solution:
+    """
+    @param A: An integer matrix
+    @return: The index of the peak
+    """
+    def findPeakII(self, A):
+        # write your code here
+        res = []
+        # since answer can never be 0, n - 1 (they must be small value)
+        up, down = 1, len(A) - 2
+        while up + 1 < down:
+            mid_row = up + (down - up)//2
+            col = self.find_col(mid_row, A)
+            if A[mid_row][col] < A[mid_row - 1][col]:
+                down = mid_row
+            elif A[mid_row][col] < A[mid_row + 1][col]:
+                up = mid_row
+            else:
+                res = [mid_row, col]
+                return res
 
+        col = self.find_col(up, A)
+        if A[up][col] > A[up - 1][col] and A[up][col] > A[up + 1][col]:
+            res = [up, col]
+            return res
+
+        col = self.find_col(down, A)
+        res = [down, col]
+        return res
+
+    def find_col(self, row, A):
+        col = 0
+        for i in range(len(A[row])):
+            if A[row][i] > A[row][col]:
+                col = i
+        return col            
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(mlogn\)**
+* **Space Complexity: O\(1\)**
 
 \*\*\*\*
 
