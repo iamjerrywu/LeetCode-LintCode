@@ -54,6 +54,12 @@ class Solution:
     def findPeak(self, A):
         # write your code here
         
+        # for corner cases (if len(A) < 3)
+        if len(nums) < 2:
+            return 0
+        if len(nums) == 2:
+            mid = 1
+        
         start, end = 0, len(A) - 1
         while start + 1 < end:
             mid = (start + end)//2
