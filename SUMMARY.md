@@ -465,6 +465,7 @@
   * [Redistribute Character to Make All Strings Equal \(LeetCode 1897\)](algorithm/greedy/redistribute-character-to-make-all-strings-equal-leetcode-1897.md)
   * [Merge Triplets to Form Target Triplet \(LeetCode 1899\) M](algorithm/greedy/merge-triplets-to-form-target-triplet-leetcode-1899-m.md)
   * [Largest Odd Number in String \(LeetCode1903\) \(E\)](algorithm/greedy/largest-odd-number-in-string-leetcode1903-e.md)
+  * [Eliminate Maximum Number of Monsters 1921 \(M\)](algorithm/greedy/eliminate-maximum-number-of-monsters-1921-m.md)
 
 ## Other
 
