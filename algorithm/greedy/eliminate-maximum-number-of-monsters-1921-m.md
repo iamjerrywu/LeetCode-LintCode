@@ -51,7 +51,11 @@ You can only eliminate 1 monster.
 * `1 <= n <= 105`
 * `1 <= dist[i], speed[i] <= 105`
 
-## Solution 
+## Solution - Greedy
+
+Simply do the simulation here would LTE, and can't use binary search \(finding the maximum time that can have monster in range &lt;= 0\) here either.
+
+Use a list to store the monster reaching timing and sort it, then find the one &lt;= index
 
 {% tabs %}
 {% tab title="Python" %}
@@ -74,6 +78,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(nlogn\)**
+* **Space Complexity: O\(n\)**
 
