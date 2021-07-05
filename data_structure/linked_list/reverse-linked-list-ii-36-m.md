@@ -50,6 +50,55 @@ Reverse the \[2,3\] position of the linked list.Challenge
 
 Reverse it in-place and in one-pass
 
+## Solution - Brute Force
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+"""
+Definition of ListNode
+class ListNode(object):
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+"""
+
+class Solution:
+    """
+    @param head: ListNode head is the head of the linked list 
+    @param m: An integer
+    @param n: An integer
+    @return: The head of the reversed ListNode
+    """
+    def reverseBetween(self, head, m, n):
+        # write your code here
+        record = []
+        cnt = 1
+        cur = head
+        while cur:
+            if m <= cnt <= n:
+                record.append(cur.val)
+            cur = cur.next
+            cnt+=1
+        record.reverse()
+        
+        cnt = 1
+        cur = head
+        while cur:
+            if m <= cnt <= n:
+                cur.val = record[cnt - m]
+            cnt+=1
+            cur = cur.next
+        return head
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n\)** 
+* **Space Complexity: O\(n\)**
+
 ## Solution
 
 ![](../../.gitbook/assets/screen-shot-2021-04-25-at-4.29.48-pm.png)
