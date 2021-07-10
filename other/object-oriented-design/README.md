@@ -41,5 +41,7 @@ pulbic class Printer
         
 ```
 
+### O: Open Close Principle
 
+A class should always be flexible to extencion, but close to modification
 
