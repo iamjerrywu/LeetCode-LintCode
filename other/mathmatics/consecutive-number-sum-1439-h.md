@@ -24,35 +24,74 @@ Input: 9Output: 3Explanation: 9 = 9 = 4 + 5 = 2 + 3 + 4
 Input: 15Output: 4Explanation: 15 = 15 = 8 + 7 = 4 + 5 + 6 = 1 + 2 + 3 + 4 + 5
 ```
 
-## Solution 
+## Solution - Brute Force
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+class Solution:
+    """
+    @param N: an integer
+    @return: how many ways can we write it as a sum of consecutive positive integers
+    """
+    def consecutiveNumbersSum(self, N):
+        # Write your code here
+        res = 0
+        for i in range(N + 1):
+            if self.have_consecutive(N, i):
+                res+=1
+        
+        return res
+    
+    def have_consecutive(self, N, num):
+        for start in range(N, -1 + num, -1):
+            total = 0
+            # print(start)
+            for j in range(num):
+                print("oh",j)
+                total += start - j
+            if num == 1:
+                print(total)
+            if total == N:
+                return True
+        return False
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n^3\)**
+* **Space Complexity: O\(1\)**
 
-\*\*\*\*
+## Solution - Factorization
 
-## Solution 
+![](../../.gitbook/assets/screen-shot-2021-07-10-at-1.34.00-pm.png)
+
+![](../../.gitbook/assets/screen-shot-2021-07-10-at-1.34.51-pm.png)
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+class Solution:
+    """
+    @param N: an integer
+    @return: how many ways can we write it as a sum of consecutive positive integers
+    """
+    def consecutiveNumbersSum(self, N):
+        # Write your code here
+        res = 0
+        upper_bnd = int(math.sqrt(2*N + 0.25) - 0.5)
+        for k in range(1, upper_bnd + 1):
+            if (N - k * (k + 1) / 2) % k == 0:
+                res+=1
+        return res
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(logn\)**
+* **Space Complexity: O\(1\)**
 
