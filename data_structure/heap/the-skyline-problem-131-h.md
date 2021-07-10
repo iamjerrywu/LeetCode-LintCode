@@ -93,5 +93,22 @@ class Solution:
   * Heap manipulation: 
     * Push: O\(logn\)
     * Remove: O\(n\)
+* **Space Complexity: O\(n\)**
+
+\*\*\*\*
+
+## Solution - Heap with Lazy Delete
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
 * **Space Complexity:**
 
