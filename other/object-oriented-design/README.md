@@ -43,5 +43,52 @@ pulbic class Printer
 
 ### O: Open Close Principle
 
-A class should always be flexible to extencion, but close to modification
+A class should always be flexible to extension, but close to modification
+
+```java
+// A bad example
+pulic class AreaCalculator
+{
+    public float calculateArea(Triangle t)
+    {
+        // calculate area of triangle
+    }
+    
+    public float calculateArea(Rectangle r)
+    {
+        // calculates the area for rectangle
+    }
+    // need to implmenet calculateArea when a new shape is added
+    // not flexible for extension
+```
+
+```java
+public interface Shape
+{
+    public float getArea();
+}
+
+public class Triangle implements Shape
+{
+    public float getArea()
+    {
+        return b * h / 2;
+    }
+}
+
+public class AreaCalculator
+{
+    private float result;
+    
+    public float getResult()
+    {
+        return this.result;
+    }
+    
+    public float calculateArea(Shape s)
+    {
+        this.result = s.getArea();
+    }
+}
+```
 
