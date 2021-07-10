@@ -55,7 +55,7 @@ class Solution:
         for left, right, height in buildings:
             # mark the height in start point as -height
             # since when sorting, for same left position, make the higher building in the front
-            # when same left, right position, also make the higher building in the front
+            # when same left, right position, also make the higher building in the front (since if the higher one need to popped, should pop first)
             points.append((left, -height, BuildingType.start))
             points.append((right, height, BuildingType.end))
         # sort based on position
