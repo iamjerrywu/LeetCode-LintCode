@@ -470,6 +470,7 @@
 ## Other
 
 * [Mathmatics](other/mathmatics/README.md)
+  * [Consecutive Number Sum 1439 \(H\)](other/mathmatics/consecutive-number-sum-1439-h.md)
   * [Trailing Zeros 2 \(E\)](other/mathmatics/trailing-zeros-2-e.md)
   * [Fizz Buzz 9 \(E\)](other/mathmatics/fizz-buzz-9-e.md)
   * [Fast Power 140 \(M\)](other/mathmatics/fast-power-140-m.md)
