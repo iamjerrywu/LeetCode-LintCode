@@ -45,13 +45,53 @@ Output: [[0,3],[5,0]]
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+class BuildingType:
+    start = 1
+    end = 0
+    
+class Solution:
+    def getSkyline(self, buildings):
+        points = []
+        for left, right, height in buildings:
+            # mark the height in start point as -height
+            # since when sorting, for same left position, make the higher building in the front
+            # when same left, right position, also make the higher building in the front
+            points.append((left, -height, BuildingType.start))
+            points.append((right, height, BuildingType.end))
+        # sort based on position
+        points.sort()
+        queue, max_height = [0], 0
+        res = []
+        for pos, height, status in points:
+            if status == BuildingType.start: # start point
+                if -height > max_height:
+                    max_height = -height
+                    res.append([pos, -height])
+                heapq.heappush(queue, height)
+            else: # end point
+                self.heap_remove(queue, -height)
+                queue_max = -queue[0]
+                if queue_max < max_height:
+                    max_height = queue_max
+                    res.append([pos, max_height])
+        return res
+    
+    def heap_remove(self, queue, height):
+        for val in queue:
+            if val == height:
+                queue.remove(height)
+                break
+        heapq.heapify(queue)
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(n^2\)**
+  * Traverse: O\(n\)
+  * Heap manipulation: 
+    * Push: O\(logn\)
+    * Remove: O\(n\)
 * **Space Complexity:**
 
