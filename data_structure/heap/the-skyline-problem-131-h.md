@@ -70,9 +70,9 @@ class Solution:
                 heapq.heappush(min_heap, height)
             else: # end point
                 self.heap_remove(min_heap, -height)
-                queue_max = -min_heap[0]
-                if queue_max < max_height:
-                    max_height = queue_max
+                heap_max = -min_heap[0]
+                if heap_max < max_height:
+                    max_height = heap_max
                     res.append([pos, max_height])
         return res
     
@@ -102,7 +102,73 @@ class Solution:
 {% tabs %}
 {% tab title="Python" %}
 ```python
+from heapq import heappush, heappop
 
+class Heap:
+    def __init__(self):
+        self.minheap = []
+        self.deleted_set = set()
+    #O(logk)
+    def push(self, val, index):
+        heappush(self.minheap, (val, index))
+    
+    #O(logk)
+    def _lazy_delete(self):
+        while self.minheap and self.minheap[0][1] in self.deleted_set:
+            heappop(self.minheap)
+    
+    #O(logk)
+    def top(self):
+        self._lazy_delete()
+        return self.minheap[0][0]
+    #O(logk)
+    def pop(self):
+        self._lazy_delete()
+        heappop(self.minheap)
+    
+    # O(1)
+    def delete(self, index):
+        self.deleted_set.add(index)
+    
+    #O(1)
+    def is_empty(self):
+        return not bool(self.minheap)
+
+
+class BuildingType:
+    start = 1
+    end = 0
+    
+class Solution:
+    def getSkyline(self, buildings):
+        points = []
+        index = 0
+        for left, right, height in buildings:
+            # mark the height in start point as -height
+            # since when sorting, for same left position, make the higher building in the front
+            # when same left, right position, also make the higher building in the front (since if the higher one need to popped, should pop first)
+            points.append((left, -height, BuildingType.start, index))
+            points.append((right, height, BuildingType.end, index))
+            index+=1
+        # sort based on position
+        points.sort()
+        # print(points)
+        min_heap, max_height = Heap(), 0
+        min_heap.push(0, -1)
+        res = []
+        for pos, height, status, index in points:
+            if status == BuildingType.start: # start point
+                if -height > max_height:
+                    max_height = -height
+                    res.append([pos, -height])
+                min_heap.push(height, index)
+            else: # end point
+                min_heap.delete(index)
+                heap_max = -min_heap.top()
+                if heap_max < max_height:
+                    max_height = heap_max
+                    res.append([pos, max_height])
+        return res
 ```
 {% endtab %}
 {% endtabs %}
