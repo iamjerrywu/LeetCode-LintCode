@@ -62,6 +62,8 @@ pulic class AreaCalculator
     // not flexible for extension
 ```
 
+Modified one
+
 ```java
 public interface Shape
 {
@@ -90,5 +92,78 @@ public class AreaCalculator
         this.result = s.getArea();
     }
 }
+```
+
+### Liskov substitution principle
+
+```java
+public class Shape
+{
+    abstract public float calculateVolumn();
+    abstract public float calculateArea();
+}
+
+// this is invalid, since rectagle can never have volumn 
+public class Rectangle extends Shape
+{
+    //...
+}
+
+// this is valid
+public class Cube extends Shape
+{
+    //...
+}
+```
+
+### Dependency Inversion Principle
+
+1. Abstract class should not depend on physical class, and physical class should depend on abstract
+2. High-Level class should not depend on low-level class
+
+```java
+public class AreaCalculator
+{
+    private float result;
+    private Triangle t; // bad usage here, it depends on class definiton outside
+    
+    public float getResult()
+    {
+        return this.result;
+    }
+    
+    public float calculateArea()
+    {
+        this.result = t.h * t.b / 2;
+    }
+}
+```
+
+```java
+public interface Shape
+{
+    public float getArea();
+}
+
+public class Triangle implements Shape
+{
+    public float getArea()
+    {
+        return b * h / 2;
+    }
+}
+
+public class AreaCalculator
+{
+    private float result;
+    public float getResult()
+    {
+        return this.result;
+    }
+    
+    public float calculateArea(Shape s)
+    {
+        this.result = s.getArea();
+    }
 ```
 
