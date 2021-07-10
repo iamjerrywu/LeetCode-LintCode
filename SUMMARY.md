@@ -198,6 +198,7 @@
 * [Heap](data_structure/heap/README.md)
   * [Find Median from Data Stream 81 \(H\)](data_structure/heap/find-median-from-data-stream-81-h.md)
   * [Heapify 130 \(M\)](data_structure/heap/130.-heapify.md)
+  * [The Skyline Problem 131 \(H\)](data_structure/heap/the-skyline-problem-131-h.md)
   * [Sliding Window Median 360 \(H\)](data_structure/heap/sliding-window-median-360-h.md)
   * [Trapping Rain Water 363 \(M\)](data_structure/heap/trapping-rain-water-363-m.md)
   * [Trapping Rain Water II 364 \(H\)](data_structure/heap/trapping-rain-water-ii-364-h.md)
