@@ -60,28 +60,28 @@ class Solution:
             points.append((right, height, BuildingType.end))
         # sort based on position
         points.sort()
-        queue, max_height = [0], 0
+        min_heap, max_height = [0], 0
         res = []
         for pos, height, status in points:
             if status == BuildingType.start: # start point
                 if -height > max_height:
                     max_height = -height
                     res.append([pos, -height])
-                heapq.heappush(queue, height)
+                heapq.heappush(min_heap, height)
             else: # end point
-                self.heap_remove(queue, -height)
-                queue_max = -queue[0]
+                self.heap_remove(min_heap, -height)
+                queue_max = -min_heap[0]
                 if queue_max < max_height:
                     max_height = queue_max
                     res.append([pos, max_height])
         return res
     
-    def heap_remove(self, queue, height):
-        for val in queue:
+    def heap_remove(self, heap, height):
+        for val in heap:
             if val == height:
-                queue.remove(height)
+                heap.remove(height)
                 break
-        heapq.heapify(queue)
+        heapq.heapify(heap)
 ```
 {% endtab %}
 {% endtabs %}
