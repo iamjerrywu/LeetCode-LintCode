@@ -39,7 +39,35 @@ For elevator:
 For building:
 
 1. When receiving requests, how many elevators can serve? \(For this problem, all elevator can serve\)
-2. 
+
+Elevator rules:
+
+1. Is there overweight detection? How to detect?
+2. When pushing buttons, which one will operate?
+3. When operating, how many buttons can react? 
+4. For this problem, same direction &gt; static &gt; opposite direction
+
+### Core Object
+
+Object as main character, and check for the objects matching relationship with others
+
+In URL diagram, 
+
+* symbol `-` means private type
+* symbol `*` means protected type
+
+![](../../.gitbook/assets/screen-shot-2021-07-11-at-10.11.51-pm.png)
+
+![](../../.gitbook/assets/screen-shot-2021-07-11-at-10.04.39-pm.png)
+
+### Uses Cases
+
+List the uses cases for every object, uses case only need one sentence to briefly describe
+
+* Elevator System:
+  * Handle Request \(External and Internal\)
+  *  Open gate
+
 ## Solution 
 
 {% tabs %}
