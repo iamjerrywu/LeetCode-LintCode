@@ -50,21 +50,30 @@ Explanation: The 4 palindromic subsequences of length 3 are:
 
 ## Solution 
 
+
+
 {% tabs %}
 {% tab title="Python" %}
 ```python
 class Solution:
     def countPalindromicSubsequence(self, s: str) -> int:
         # calculate length of string
-        res = set()
+        
+        # use set to record answer, since might have duplicate ones
+        res = set() # res = (c, middle), c is for left/right (since they should be the same)
         left = set()
+        # right should first be recorded
+        # and should use as dict, since later would need to remove elements
         right = collections.Counter(s)
         
         for c in s:
+            # when traversing, need to update the right dict as well
             right[c]-=1
             if right[c] == 0:
                 right.pop(c)
-        
+            
+            # only 26 possibilities in both left and right
+            # to find out if both left/right has same alphabat
             for i in range(26):
                 middle = chr(ord('a') + i)
                 if middle in left and middle in right:
@@ -78,6 +87,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(26n\)**
+  * n: traver string
+  * 26: possibility of left/right 
 * **Space Complexity:**
 
