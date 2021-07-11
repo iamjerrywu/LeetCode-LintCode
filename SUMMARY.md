@@ -494,4 +494,5 @@
 * [Object-Oriented Design](other/object-oriented-design/README.md)
   * [Student ID 455 \(E\)](other/object-oriented-design/student-id-455-e.md)
   * [Reference 456 \(N\)](other/object-oriented-design/reference-456-n.md)
+  * [Elevator System - OO Design](other/object-oriented-design/elevator-system-oo-design.md)
 

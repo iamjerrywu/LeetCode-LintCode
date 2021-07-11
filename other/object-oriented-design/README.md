@@ -167,3 +167,16 @@ public class AreaCalculator
     }
 ```
 
+## 5C Principle 
+
+* Clarify: 
+  * Clarify the question and its requirement, boundary and function
+* Core objects:
+  * What classes/objects are involved, and their relationships with others
+* Cases:
+  * The scenario and function for this problems
+* Classes:
+  * Make sure what class are required
+* Correctness
+  * Check the system you design, and make sure they fulfill the requirements
+
