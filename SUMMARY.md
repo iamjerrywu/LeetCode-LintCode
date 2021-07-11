@@ -135,6 +135,7 @@
   * [Distinguish Username 1789 \(E\)](data_structure/hash/distinguish-username-1789-e.md)
   * [K-Difference 1796 \(M\)](data_structure/hash/k-difference-1796-e.md)
   * [Finding Pairs With a Certain Sum \(LeetCode1865\) \(M\)](data_structure/hash/finding-pairs-with-a-certain-sum-1865-m.md)
+  * [Unique Length-3 Palindromic Subsequences \(LeetCode 1930\) \(M\)](data_structure/hash/unique-length-3-palindromic-subsequences-leetcode-1930-m.md)
 * [Tree](data_structure/tree/README.md)
   * [Binary Tree](data_structure/tree/binary_tree/README.md)
     * [Basic Traversal](data_structure/tree/binary_tree/basic-traversal/README.md)
