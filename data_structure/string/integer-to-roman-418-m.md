@@ -1,4 +1,4 @@
-# Roman to Integer 419 \(M\)
+# Integer to Roman 418 \(M\)
 
 ## Problem
 
@@ -23,92 +23,61 @@ Roman numerals are usually written largest to smallest from left to right. Howev
 * `X` can be placed before `L` \(50\) and `C` \(100\) to make 40 and 90. 
 * `C` can be placed before `D` \(500\) and `M` \(1000\) to make 400 and 900.
 
-Given a roman numeral, convert it to an integer.
+Given an integer, convert it to a roman numeral.
 
 **Example 1:**
 
 ```text
-Input: s = "III"
-Output: 3
+Input: num = 3
+Output: "III"
 ```
 
 **Example 2:**
 
 ```text
-Input: s = "IV"
-Output: 4
+Input: num = 4
+Output: "IV"
 ```
 
 **Example 3:**
 
 ```text
-Input: s = "IX"
-Output: 9
+Input: num = 9
+Output: "IX"
 ```
 
 **Example 4:**
 
 ```text
-Input: s = "LVIII"
-Output: 58
-Explanation: L = 50, V= 5, III = 3.
+Input: num = 58
+Output: "LVIII"
+Explanation: L = 50, V = 5, III = 3.
 ```
 
 **Example 5:**
 
 ```text
-Input: s = "MCMXCIV"
-Output: 1994
+Input: num = 1994
+Output: "MCMXCIV"
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 ```
 
 **Constraints:**
 
-* `1 <= s.length <= 15`
-* `s` contains only the characters `('I', 'V', 'X', 'L', 'C', 'D', 'M')`.
-* It is **guaranteed** that `s` is a valid roman numeral in the range `[1, 3999]`.
+* `1 <= num <= 3999`
 
 ## Solution 
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
-class Solution:
-    """
-    @param s: Roman representation
-    @return: an integer
-    """
-    def romanToInt(self, s):
-        # write your code here
-        ROMAN = {
-            'I': 1,
-            'V': 5,
-            'X': 10,
-            'L': 50,
-            'C': 100,
-            'D': 500,
-            'M': 1000
-        }
 
-        if s == " ":
-            return 0
-        
-        index = len(s) - 2
-        sum_val = ROMAN[s[-1]]
-        while index >= 0:
-            if ROMAN[s[index]] < ROMAN[s[index + 1]]:
-                sum_val -= ROMAN[s[index]]
-            else:
-                sum_val += ROMAN[s[index]]
-            index-=1
-        
-        return sum_val
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity:**
+* **Space Complexity:**
 
