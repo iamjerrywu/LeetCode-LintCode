@@ -71,7 +71,33 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+class Solution:
+    """
+    @param n: The integer
+    @return: Roman representation
+    """
+    def intToRoman(self, n):
+        # write your code here
+        ROMAN = {
+            1000:   'M', 
+             900:  'CM',
+             500:   'D', 
+             100:   'C',
+              90:  'XC',
+              50:   'L',
+              40:  'XL',
+              10:   'X', 
+               9:  'IX',
+               5:   'V',
+               4:  'IV',
+               1:   'I',
+        }
+        ans = ''
+        for k, v in ROMAN.items():
+            while n >= k:
+                n-=k
+                ans+=v
+        return ans
 ```
 {% endtab %}
 {% endtabs %}
