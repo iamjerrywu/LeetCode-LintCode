@@ -110,5 +110,5 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity: O\(n\)**
-* **Space Complexity:**
+* **Space Complexity: O\(1\)**
 
