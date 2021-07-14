@@ -496,6 +496,7 @@
 * [Object-Oriented Design](other/object-oriented-design/README.md)
   * [Student ID 455 \(E\)](other/object-oriented-design/student-id-455-e.md)
   * [Reference 456 \(N\)](other/object-oriented-design/reference-456-n.md)
+  * [Coffee Maker OO Design 747 \(M\)](other/object-oriented-design/coffee-maker-oo-design-747-m.md)
   * [Vending machine OO Design 712 \(H\)](other/object-oriented-design/vending-machine-oo-design-712-h.md)
   * [Elevator System - OO Design](other/object-oriented-design/elevator-system-oo-design.md)
 
