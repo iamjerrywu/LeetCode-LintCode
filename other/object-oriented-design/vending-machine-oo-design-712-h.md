@@ -106,7 +106,7 @@ public void refillItem(List<Item> items)
 
 ### State Design Pattern
 
-For uses cases, what if there is no item is selected, Insert coin\(\), Execute transaction\(\), Cancel transaction\(\) will all need to handle for exception. However, it's quite a redundant using if else condition like following:
+For uses cases, what if there is no item is selected, or no coins inserted....etc, Insert coin\(\), Execute transaction\(\), Cancel transaction\(\) will all need to handle for exception. However, it's quite a redundant using if else condition like following:
 
 {% tabs %}
 {% tab title="Java" %}
@@ -130,7 +130,9 @@ public void insertCoin(List<Coin> coins)
 {% endtab %}
 {% endtabs %}
 
+#### With state design
 
+![](../../.gitbook/assets/screen-shot-2021-07-14-at-11.24.33-am.png)
 
 ## Solution 
 
