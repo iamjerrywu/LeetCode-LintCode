@@ -54,6 +54,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n + m\)**
+  * n: len\(a\)
+  * m: len\(b\)
+* **Space Complexity: O\(1\)**
 
