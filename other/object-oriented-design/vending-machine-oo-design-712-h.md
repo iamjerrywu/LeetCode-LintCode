@@ -39,6 +39,32 @@ Vending Machine
 
 ![](../../.gitbook/assets/screen-shot-2021-07-14-at-10.56.13-am.png)
 
+### 
+
+### Inflexible Design 
+
+{% tabs %}
+{% tab title="Java" %}
+```java
+stock = new HashMap<ItemInfo, List<Item>>();
+public void refillItem(List<Item> items)
+{
+    for (Item item: items)
+    {
+        ItemInfo info = item.getInfo();
+        List<Item> itemsInStock = stock.get(info);
+        itemsInStock.add(item);
+        stock.put(info, itemsInStock);
+    }
+}
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
+
 ### Better Design on class
 
 {% tabs %}
@@ -69,10 +95,42 @@ public void refillItem(List<Item> items)
 ```
 {% endtab %}
 
+{% tab title="Python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+![](../../.gitbook/assets/screen-shot-2021-07-14-at-11.18.08-am.png)
+
+### State Design Pattern
+
+For uses cases, what if there is no item is selected, Insert coin\(\), Execute transaction\(\), Cancel transaction\(\) will all need to handle for exception. However, it's quite a redundant using if else condition like following:
+
+{% tabs %}
+{% tab title="Java" %}
+```java
+public void insertCoin(List<Coin> coins)
+{
+    if (selectedItem == null)
+    {
+        throw new Exception("You need to make a selection first");
+    }
+    else if (selectedItem != null)
+    {
+        currentCoins.add(coins);
+    }
+}
+```
+{% endtab %}
+
 {% tab title="Second Tab" %}
 
 {% endtab %}
 {% endtabs %}
+
+
 
 ## Solution 
 
