@@ -17,6 +17,7 @@
   * [Integer to Roman 418 \(M\)](data_structure/string/integer-to-roman-418-m.md)
   * [Roman to Integer 419 \(M\)](data_structure/string/roman-to-integer-419-e.md)
   * [Longest Palindrome 627 \(E\)](data_structure/string/longest-palindrome-627-e.md)
+  * [Add Strings 415 \(E\)](data_structure/string/add-strings-415-e.md)
   * [Multiply Strings 656 \(M\)](data_structure/string/656.-multiple-strings.md)
   * [Group Anagrams 772 \(M\)](data_structure/string/group-anagrams-772-m.md)
   * [Bold Words in String 812 \(E\)](data_structure/string/bold-words-in-string-812-e.md)
