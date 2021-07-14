@@ -488,6 +488,7 @@
 * [Binary](other/binary/README.md)
   * [Single Number II 83 \(M\)](other/binary/single-number-ii-83-m.md)
   * [Single Number III 84 \(M\)](other/binary/single-number-iii-84-m.md)
+  * [Add Binary 408 \(E\)](other/binary/add-binary-408-e.md)
 * [Simulation](other/simulation/README.md)
   * [Narcissistic Number 147 \(E\)](other/simulation/narcissistic-number-147-e.md)
   * [Plus One 407 \(E\)](other/simulation/plus-one-407-e.md)

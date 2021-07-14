@@ -1,0 +1,59 @@
+# Add Binary 408 \(E\)
+
+## Problem
+
+Given two binary strings, return their sum \(In binary notation\).Example
+
+**Example 1:**
+
+```text
+Input:a = "0", b = "0"Output:"0"
+```
+
+**Example 2:**
+
+```text
+Input:a = "11", b = "1"Output:"100"
+```
+
+## Solution 
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    """
+    @param a: a number
+    @param b: a number
+    @return: the result
+    """
+    def addBinary(self, a, b):
+        # write your code here
+
+        index_a = len(a) - 1
+        index_b = len(b) - 1
+        ans = ''
+        carry = 0
+        while index_a >= 0 or index_b >= 0:
+            a_val = int(a[index_a]) if index_a >= 0 else 0
+            b_val = int(b[index_b]) if index_b >= 0 else 0
+            print(a_val, b_val, carry)
+            if (a_val + b_val + carry)%2 == 0:
+                ans = '0' + ans
+            else:
+                ans = '1' + ans
+            carry = (a_val + b_val + carry)//2
+            index_a-=1
+            index_b-=1
+        if carry == 1:
+            ans = '1' + ans
+        return ans
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
