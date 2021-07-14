@@ -56,6 +56,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(m + n\)**
+  * m: len\(num1\)
+  * n: len\(num2\)
+* **Space Complexity: O\(1\)**
 
