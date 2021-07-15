@@ -40,7 +40,78 @@ Cost for this coffee is: 4.5Ingredients for this coffee is: Plain Coffee, Milk, 
 {% tabs %}
 {% tab title="Python" %}
 ```python
+import abc
 
+class CoffeeMaker(object):
+     def __init__(self, coffeePack, kindOfCoffee):
+        self.coffee = None
+        if kindOfCoffee == "DarkRoast":
+            self.coffee = DarkRoast()
+        elif kindOfCoffee == "Expresso":
+            self.coffee = Expresso()
+        for _ in range(coffeePack.needMilk):
+            self.coffee = WithMilk(self.coffee)
+        for _ in range(coffeePack.needSugar):
+            self.coffee = WithSugar(self.coffee)
+
+class CoffeePack(object):
+    def __init__(self, needMilk, needSugar):
+        self.needMilk = needMilk
+        self.needSugar = needSugar
+        
+class Coffee(metaclass=abc.ABCMeta):
+    def __init__(self, cost=1.99):
+        self.cost = cost
+        
+    @abc.abstractmethod
+    def get_cost(self):
+        pass
+    
+    @abc.abstractmethod
+    def getIngredients(self):
+        pass
+
+class DarkRoast(Coffee):
+    def __init__(self):
+        self.cost = 1.99
+    
+    def get_cost(self):
+        return self.cost
+    
+    def getIngredients(self):
+        return "DarkRoast"
+
+class Expresso(Coffee):
+    def __init__(self):
+        self.cost = 2.99
+    
+    def get_cost(self):
+        return self.cost
+    
+    def getIngredients(self):
+        return "Expresso"
+
+class Decorator(Coffee, metaclass=abc.ABCMeta):
+    def __init__(self, coffee):
+        self.coffee = coffee
+    
+    @abc.abstractmethod
+    def get_cost(self):
+        return self.cost
+
+class WithMilk(Decorator):
+    def get_cost(self):
+        return self.coffee.get_cost() + 0.2
+    
+    def getIngredients(self):
+        return self.coffee.getIngredients() + ", Milk"
+    
+class WithSugar(Decorator):
+    def get_cost(self):
+        return self.coffee.get_cost() + 0.5
+    
+    def getIngredients(self):
+        return self.coffee.getIngredients() + ", Sugar"
 ```
 {% endtab %}
 
