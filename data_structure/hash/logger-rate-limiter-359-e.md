@@ -1,4 +1,4 @@
-# Logger Rate Limiter 359 \(E\)
+# Logger Rate Limiter \(LeetCode359\) \(E\)
 
 ## Problem
 
