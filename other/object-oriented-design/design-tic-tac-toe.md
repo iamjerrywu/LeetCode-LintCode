@@ -1,4 +1,4 @@
-# Design Tic-Tac-Toe
+# Design Tic-Tac-Toe 746 \(M\)
 
 ## Problem
 
@@ -328,6 +328,60 @@ class AlreadyTakenException extends Exception {
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n^2\)**
+
+\*\*\*\*
+
+## Solution - Optimized 
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class TicTacToe:
+
+    def __init__(self, n: int):
+        """
+        Initialize your data structure here.
+        """
+        self.rows = [0] * n
+        self.cols = [0] * n
+        self.diag = 0
+        self.anti_diag = 0
+        
+    def move(self, row: int, col: int, player: int) -> int:
+        """
+        Player {player} makes a move at ({row}, {col}).
+        @param row The row of the board.
+        @param col The column of the board.
+        @param player The player, can be either 1 or 2.
+        @return The current winning condition, can be either:
+                0: No one wins.
+                1: Player 1 wins.
+                2: Player 2 wins.
+        """
+        current_player = 1 if player == 1 else -1
+        self.rows[row]+=current_player
+        self.cols[col]+=current_player
+        
+        if row == col:
+            self.diag += current_player
+        if col == (len(self.cols) - row - 1):
+            self.anti_diag+=current_player
+        n = len(self.rows)
+        
+        if abs(self.rows[row]) == n or abs(self.cols[col]) == n or abs(self.diag) == n or abs(self.anti_diag) == n:
+            return player
+        return 0
+# Your TicTacToe object will be instantiated and called as such:
+# obj = TicTacToe(n)
+# param_1 = obj.move(row,col,player)
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(1\)**
+* **Space Complexity: O\(n\)**
 
