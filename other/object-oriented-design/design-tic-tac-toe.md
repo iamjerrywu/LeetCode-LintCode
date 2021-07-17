@@ -109,6 +109,84 @@ class TicTacToe:
 ```
 {% endtab %}
 
+{% tab title="Python" %}
+```python
+# LeetCode 348 (Executeable Version)
+class TicTacToe:
+
+    def __init__(self, n: int):
+        """
+        Initialize your data structure here.
+        """
+        self.board = [[0] * n for _ in range(n)]
+        self.game_end = False
+        
+    def move(self, row: int, col: int, player: int) -> int:
+        """
+        Player {player} makes a move at ({row}, {col}).
+        @param row The row of the board.
+        @param col The column of the board.
+        @param player The player, can be either 1 or 2.
+        @return The current winning condition, can be either:
+                0: No one wins.
+                1: Player 1 wins.
+                2: Player 2 wins.
+        """
+        self.board[row][col] = player
+        win = False
+
+        # check row
+        win = True
+        for j in range(len(self.board)):
+            if self.board[row][j] != player:
+                win = False
+                break
+        
+        if win:
+            self.game_end = True
+            return player
+        
+        # check col
+        win = True
+        for i in range(len(self.board)):
+            if self.board[i][col] != player:
+                win = False
+                break
+        if win:
+            self.game_end = True
+            return player
+        
+        # check back diagonal
+        win = True
+        for i in range(len(self.board)):
+            if self.board[i][i] != player:
+                win = False
+                break
+        
+        if win:
+            self.game_end = True
+            return player
+        
+        # check forward diagonal
+        win = True
+        for i in range(len(self.board)):
+            if self.board[i][len(self.board) - i - 1] != player:
+                win = False
+                break
+        
+        if win:
+            self.game_end = True
+            return player
+        return int(win)
+        
+
+
+# Your TicTacToe object will be instantiated and called as such:
+# obj = TicTacToe(n)
+# param_1 = obj.move(row,col,player)
+```
+{% endtab %}
+
 {% tab title="Java" %}
 ```java
 public class TicTacToe {
