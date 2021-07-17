@@ -105,6 +105,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(4\***
-* **Space Complexity:**
+* **Time Complexity: O\(\(3\(n - 1\) + 1\) \* 4\)**
+  * n: digits of n
+* **Space Complexity: O\(3\(n - 1\) + 1\)**
 
