@@ -81,7 +81,8 @@ class Solution:
         ROMAN = {
             1000:   'M', 
              900:  'CM',
-             500:   'D', 
+             500:   'D',
+             400:  'CD', 
              100:   'C',
               90:  'XC',
               50:   'L',
@@ -104,6 +105,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(4\***
 * **Space Complexity:**
 
