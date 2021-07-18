@@ -84,7 +84,48 @@ class Solution:
 {% tabs %}
 {% tab title="Python" %}
 ```python
+DIRECTIONS = [[-1,0],[-1,1],[0,1],[1,1],[1,0],[1,-1],[0,-1],[-1,-1]]
+class Solution:
+    """
+    @param board: the given board
+    @return: nothing
+    """
+    def gameOfLife(self, board):
+        # Write your code here
+        
+        # Status Representation
+        #.    current.   next
+        # 00:    dead    dead
+        # 01:    live.   dead
+        # 10:    dead.   live
+        # 11:    live.   live
+        
+        m = len(board)
+        n = len(board[0])
 
+        for i in range(m):
+            for j in range(n):
+                live_cnt = 0
+                for dx, dy in DIRECTIONS:
+                    new_x = i + dx
+                    new_y = j + dy
+                    if self.is_live(new_x, new_y, board):
+                        live_cnt+=1
+                if board[i][j] == 0 and live_cnt == 3:
+                    board[i][j] = 2
+                elif board[i][j] == 1:
+                    if live_cnt == 2 or live_cnt == 3:
+                        board[i][j] = 3
+        
+        for i in range(m):
+            for j in range(n):
+                board[i][j] >>=1
+    
+    def is_live(self, x, y, board):
+        if x < 0 or x >= len(board) or y < 0 or y >= len(board[0]):
+            return False
+        return board[x][y]&1 == 1
+        
 ```
 {% endtab %}
 {% endtabs %}
