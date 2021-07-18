@@ -1,4 +1,4 @@
-# Design Tic-Tac-Toe 746 \(M\)
+# Design Tic-Tac-Toe 746 \(H\)
 
 ## Problem
 
