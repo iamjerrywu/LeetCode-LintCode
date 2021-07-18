@@ -55,7 +55,7 @@ This ladder can be climbed without adding additional rungs.
 * `1 <= dist <= 109`
 * `rungs` is **strictly increasing**.
 
-## Solution 
+## Solution - Greedy
 
 {% tabs %}
 {% tab title="Python" %}
