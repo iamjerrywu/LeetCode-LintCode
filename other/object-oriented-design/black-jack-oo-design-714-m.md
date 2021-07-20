@@ -24,13 +24,18 @@ playerid: 1 ;Cards: 1 , 1; Current best value is: 12, current bets: 10, total be
 ## Clarify
 
 * Player
-  * How many players can we support in table? 
-  * Is there a fixed dealer or players take turn to become dealer?
+  * How many players can we support in table?  \(no limit\)
+  * Is there a fixed dealer or players take turns to become dealer? \(fixed dealer per table\)
 * Rule
+  * What if run out of cards? \(always enough\)
+  * Can dealer run out of bets? \(always enough\)
 * Win/Lose
 * Scores
+  * How many initial bets players have \(the same\)
 
-## Solution 
+## Solution
+
+![](../../.gitbook/assets/screen-shot-2021-07-20-at-11.14.47-am.png)
 
 {% tabs %}
 {% tab title="Python" %}
