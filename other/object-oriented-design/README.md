@@ -180,3 +180,7 @@ public class AreaCalculator
 * Correctness
   * Check the system you design, and make sure they fulfill the requirements
 
+## Design Pattern 
+
+
+
