@@ -21,6 +21,13 @@ You should return below:
 playerid: 1 ;Cards: 1 , 1; Current best value is: 12, current bets: 10, total bets: 990playerid: 2 ;Cards: 4 , 4; Current best value is: 8, current bets: 100, total bets: 900playerid: 3 ;Cards: 2 , 2; Current best value is: 4, current bets: 500, total bets: 500Dealer Cards: 3 , 3; Current best value is: 6, total bets: 10000playerid: 1 ;Cards: 1 , 1; Current best value is: 12, current bets: 0, total bets: 1010playerid: 2 ;Cards: 4 , 4; Current best value is: 8, current bets: 0, total bets: 1100playerid: 3 ;Cards: 2 , 2; Current best value is: 4, current bets: 0, total bets: 500Dealer Cards: 3 , 3; Current best value is: 6, total bets: 10390
 ```
 
+## Clarify
+
+* Player
+* Rule
+* Win/Lose
+* Scores
+
 ## Solution 
 
 {% tabs %}
