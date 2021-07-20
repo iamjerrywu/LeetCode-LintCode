@@ -505,6 +505,7 @@
   * [Student ID 455 \(E\)](other/object-oriented-design/student-id-455-e.md)
   * [Reference 456 \(N\)](other/object-oriented-design/reference-456-n.md)
   * [Vending machine OO Design 712 \(H\)](other/object-oriented-design/vending-machine-oo-design-712-h.md)
+  * [Black Jack OO Design 714 \(M\)](other/object-oriented-design/black-jack-oo-design-714-m.md)
   * [Design Tic-Tac-Toe 746 \(H\)](other/object-oriented-design/design-tic-tac-toe.md)
   * [Coffee Maker OO Design 747 \(M\)](other/object-oriented-design/coffee-maker-oo-design-747-m.md)
   * [Kindle OO Design 748 \(M\)](other/object-oriented-design/kindle-oo-design-748-m.md)

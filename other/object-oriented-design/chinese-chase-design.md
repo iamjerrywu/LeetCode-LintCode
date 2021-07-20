@@ -33,13 +33,14 @@ Three status:
 * Win/Lose/Tie check 
   *  Check for win
     * Check if current player wins
-  * Increase steps 
+  * Increase steps
+    * If reach max steps, then it a tie
   * Calculate points
+    * If current player wins, reword current player and take one point off from other one
 
 ## Solution 
 
-### Complexity Analysis
+![](../../.gitbook/assets/screen-shot-2021-07-20-at-10.40.36-am.png)
 
-* **Time Complexity:**
-* **Space Complexity:**
+### 
 
