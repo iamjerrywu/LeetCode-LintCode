@@ -24,6 +24,8 @@ playerid: 1 ;Cards: 1 , 1; Current best value is: 12, current bets: 10, total be
 ## Clarify
 
 * Player
+  * How many players can we support in table? 
+  * Is there a fixed dealer or players take turn to become dealer?
 * Rule
 * Win/Lose
 * Scores
