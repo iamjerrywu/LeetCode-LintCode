@@ -509,4 +509,5 @@
   * [Coffee Maker OO Design 747 \(M\)](other/object-oriented-design/coffee-maker-oo-design-747-m.md)
   * [Kindle OO Design 748 \(M\)](other/object-oriented-design/kindle-oo-design-748-m.md)
   * [Elevator System - OO Design](other/object-oriented-design/elevator-system-oo-design.md)
+  * [Chinese Chase Design](other/object-oriented-design/chinese-chase-design.md)
 
