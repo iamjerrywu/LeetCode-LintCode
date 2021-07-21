@@ -56,6 +56,7 @@
   * [Suffix](data_structure/array/suffix.md)
   * [Matrix](data_structure/array/matrix/README.md)
     * [Rotate Image 161 \(M\)](data_structure/array/matrix/rotate-image-161-m.md)
+    * [Spiral Matrix 374 \(M\)](data_structure/array/matrix/spiral-matrix-374-m.md)
     * [Rotating the Box \(LeetCode 1861\) \(M\)](data_structure/array/matrix/rotating-the-box-leetcode-1861-m.md)
     * [Determine Whether Matrix Can Be Obtained By Rotation \(LeetCode 1886\) \(E\)](data_structure/array/matrix/determine-whether-matrix-can-be-obtained-by-rotation-leetcode-1886-e.md)
     * [Cyclically Rotating a Grid \(LeetCode 1914\) \(M\)](data_structure/array/matrix/cyclically-rotating-a-grid-leetcode-1914-m.md)
