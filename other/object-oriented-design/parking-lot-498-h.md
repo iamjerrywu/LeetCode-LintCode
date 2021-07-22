@@ -108,6 +108,80 @@ parkingLot.clearParkingSpot(ticket);
 
 Ensure a class has only one instance, and provide a global point of access to it
 
+![](../../.gitbook/assets/screen-shot-2021-07-22-at-12.28.07-pm.png)
+
+![](../../.gitbook/assets/screen-shot-2021-07-22-at-12.57.46-pm.png)
+
+#### Example \(will fail in concurrent situation\)
+
+{% tabs %}
+{% tab title="Java" %}
+```java
+public class ParkingLot
+{
+    private static ParkingLot _instance = null;
+    
+    private List<Level> levels;
+    
+    private ParkingLot()
+    {
+        levels = new ArrayList<Level>();
+    }
+    
+    // with static attribute, can call getInstance without creating instance
+    // static makes the function getInstance() no longer relate to instance, but related to class ParkingLot
+    public static ParkingLot getInstance()
+    {
+        // this will fail in multi-threading
+        // instance will probably create multiple (duplicated) times during context switches
+        if(_instance == null)
+        {
+            _instance = new ParkingLot();
+        }
+        return _instance;
+    }
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
+
+#### Example in parallel programming with synchronization
+
+{% tabs %}
+{% tab title="Java" %}
+```java
+public class ParkingLot
+{
+    private static ParkingLot _instance = null;
+    
+    private List<Level> levels;
+    
+    private ParkingLot()
+    {
+        levels = new ArrayList<Level>();
+    }
+    
+    // with synchronized attribute, will create mutex that don't allow other thead to call the same getInstance()
+    // after release the mutex, then can be retrieved
+    public static synchronized|ParkingLot getInstance()
+    {
+        if(_instance == null)
+        {
+            _instance = new ParkingLot();
+        }
+        return _instance;
+    }
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
+
 ## Solution 
 
 {% tabs %}
