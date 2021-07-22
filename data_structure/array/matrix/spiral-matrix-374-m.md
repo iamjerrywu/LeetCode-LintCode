@@ -25,7 +25,9 @@ Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 * `1 <= m, n <= 10`
 *   
 
-## Solution 
+## Solution - Simulation
+
+![](../../../.gitbook/assets/screen-shot-2021-07-21-at-12.40.38-pm.png)
 
 {% tabs %}
 {% tab title="Python" %}
