@@ -30,7 +30,7 @@ Input:level=1num_rows=1spots_per_row=14parkVehicle("Motorcycle_1")parkVehicle("M
 
 ## Procedure
 
-#### Clarify:
+### Clarify:
 
 * Multi-level parking lots
 * Vehicle: consider of 1. Bus 2. Car 3. Motorcycle
@@ -38,11 +38,11 @@ Input:level=1num_rows=1spots_per_row=14parkVehicle("Motorcycle_1")parkVehicle("M
 * Parking lots can show available spaces
 * Flat fee
 
-#### Core Object
+### Core Object
 
 ![](../../.gitbook/assets/screen-shot-2021-07-22-at-11.15.02-am.png)
 
-#### Cases
+### Cases
 
 Parking Lot:
 
@@ -57,9 +57,56 @@ Management user cases:
 * Serve: Park vehicle
 * Check out: Clear spot + Calculate price
 
-#### Class
+### Class
 
-![](../../.gitbook/assets/screen-shot-2021-07-22-at-11.17.24-am.png)
+![](../../.gitbook/assets/screen-shot-2021-07-22-at-11.54.36-am.png)
+
+#### Correctness
+
+{% tabs %}
+{% tab title="Java" %}
+```java
+// go through all levels'rows to get available spots count
+int availableSpots = parkingLot.getAvailableCount();
+System.out.print("There are" + availableSpots + " spots available.");
+
+// park vehicle will do the following:
+// - find open spots for htis vehicle
+// - update available count
+// - update spot availability and generate ticket
+Ticket ticket = parkingLot.parkVehicle(myVehicle);
+System.out.print("Remember to bring your ticket with you");
+
+// clear spot will do the following:
+// - calculate price based on start time
+// - process payment
+// - set the spot to empty and update available count
+parkingLot.clearSpot(ticket, payment)
+```
+{% endtab %}
+
+{% tab title="Python" %}
+
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
+{% tab title="Java" %}
+```java
+float fee = parkingLot.calculateParkingFee(ticket);
+parkingLot.processPayment(ticket, payment, fee);
+parkingLot.clearParkingSpot(ticket);
+```
+{% endtab %}
+
+{% tab title="Python" %}
+
+{% endtab %}
+{% endtabs %}
+
+### Design Pattern - Singleton
+
+Ensure a class has only one instance, and provide a global point of access to it
 
 ## Solution 
 
