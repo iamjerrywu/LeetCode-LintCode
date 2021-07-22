@@ -47,6 +47,7 @@
     * [Subarray Sum Closest 139 \(M\)](data_structure/array/prefix-sum/subarray-sum-closest-139-m.md)
     * [Random Pick with Weight 528 \(M\)](data_structure/array/prefix-sum/random-pick-with-weight-528-m.md)
     * [Subarray Sum Equals to k 838 \(E\)](data_structure/array/prefix-sum/subarray-sum-equals-to-k-838-e.md)
+    * [Range Sum Query - Immutable 943 \(E\)](data_structure/array/prefix-sum/range-sum-query-immutable-943-e.md)
     * [Subarray Sum Equals to k II 1844 \(M\)](data_structure/array/prefix-sum/subarray-sum-equals-to-k-ii-1844.md)
     * [Search Subarray 1457 \(M\)](data_structure/array/prefix-sum/search-subarray-1457-m.md)
     * [Shortest Subarray with Sum at Least K 1507 \(H\)](data_structure/array/prefix-sum/shortest-subarray-with-sum-at-least-k-1507-h.md)
