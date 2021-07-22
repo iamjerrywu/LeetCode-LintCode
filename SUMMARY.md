@@ -141,6 +141,7 @@
   * [Bulls and Cows 1299 \(M\)](data_structure/hash/bulls-and-cows-1299-m.md)
   * [Tweet Counts Per Frequency 1348 \(M\)](data_structure/hash/tweet-counts-per-frequency-1348-m.md)
   * [Can Convert 1540 \(E\)](data_structure/hash/can-convert-1540-e.md)
+  * [Slowest Key 1629 \(E\)](data_structure/hash/slowest-key-1629-e.md)
   * [Distinguish Username 1789 \(E\)](data_structure/hash/distinguish-username-1789-e.md)
   * [K-Difference 1796 \(M\)](data_structure/hash/k-difference-1796-e.md)
   * [Finding Pairs With a Certain Sum \(LeetCode1865\) \(M\)](data_structure/hash/finding-pairs-with-a-certain-sum-1865-m.md)
