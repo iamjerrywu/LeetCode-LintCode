@@ -167,8 +167,6 @@ public class AreaCalculator
     }
 ```
 
-## LoD \(Law of Demeter\)
-
 ## 5C Principle 
 
 * Clarify: 
