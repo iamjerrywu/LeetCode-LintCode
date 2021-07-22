@@ -53,7 +53,6 @@
     * [Matrix Restoration 1840 \(M\)](data_structure/array/prefix-sum/matrix-restoration-1840-m.md)
     * [Sum of Floored Pairs \(LeetCode 1862\) \(M\)](data_structure/array/prefix-sum/sum-of-floored-pairs-leetcode-1862-m.md)
     * [Largest Magic Square 1895 \(M\)](data_structure/array/prefix-sum/largest-magic-square-1895-m.md)
-  * [Suffix](data_structure/array/suffix.md)
   * [Matrix](data_structure/array/matrix/README.md)
     * [Rotate Image 161 \(M\)](data_structure/array/matrix/rotate-image-161-m.md)
     * [Spiral Matrix 374 \(M\)](data_structure/array/matrix/spiral-matrix-374-m.md)
