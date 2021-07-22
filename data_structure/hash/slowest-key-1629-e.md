@@ -1,4 +1,4 @@
-# Slowest Key 1629 \(E\)
+# Slowest Key \(LeetCode 1629\) \(E\)
 
 ## Problem
 
