@@ -30,7 +30,32 @@ Input:level=1num_rows=1spots_per_row=14parkVehicle("Motorcycle_1")parkVehicle("M
 
 ## Procedure
 
+#### Clarify:
 
+* Multi-level parking lots
+* Vehicle: consider of 1. Bus 2. Car 3. Motorcycle
+* No need to consider charging/handicapped parking
+* Parking lots can show available spaces
+* Flat fee
+
+#### Core Object
+
+![](../../.gitbook/assets/screen-shot-2021-07-22-at-11.15.02-am.png)
+
+#### Cases
+
+Parking Lot:
+
+* Get available count
+* Park vehicle
+* Clear spot
+* Calculate price
+
+Management user cases:
+
+* Reservation: X
+* Serve: Park vehicle
+* Check out: Clear spot + Calculate price
 
 ## Solution 
 
