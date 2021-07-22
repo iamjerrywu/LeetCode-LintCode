@@ -57,6 +57,10 @@ Management user cases:
 * Serve: Park vehicle
 * Check out: Clear spot + Calculate price
 
+#### Class
+
+![](../../.gitbook/assets/screen-shot-2021-07-22-at-11.17.24-am.png)
+
 ## Solution 
 
 {% tabs %}
