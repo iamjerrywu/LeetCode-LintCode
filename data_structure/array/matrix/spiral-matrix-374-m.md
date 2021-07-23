@@ -85,20 +85,3 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
-
-## Solution 
-
-{% tabs %}
-{% tab title="Python" %}
-```python
-
-```
-{% endtab %}
-{% endtabs %}
-
-### Complexity Analysis
-
-* **Time Complexity:**
-* **Space Complexity:**
-
