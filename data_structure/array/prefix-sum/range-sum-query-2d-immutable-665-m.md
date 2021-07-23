@@ -78,6 +78,6 @@ class NumMatrix:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(1\)**
+* **Space Complexity: O\(m \* n\)**
 

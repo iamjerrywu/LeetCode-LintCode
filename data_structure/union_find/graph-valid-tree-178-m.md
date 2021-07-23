@@ -169,11 +169,6 @@ class Solution:
             node = original_father
 
         return root
-        
-        
-        
-
-
 ```
 {% endtab %}
 {% endtabs %}
