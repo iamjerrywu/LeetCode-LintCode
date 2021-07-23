@@ -237,6 +237,7 @@
   * [Connected Component in Undirected Graph 431 \(M\)](data_structure/union_find/connected-component-in-undirected-graph-431-m.md)
   * [Bricks Falling When Hit 1014 \(H\)](data_structure/union_find/bricks-falling-when-hit.md)
   * [Accounts Merge 1070 \(M\)](data_structure/union_find/accounts-merge-1070-m.md)
+  * [Evaluate Division 1257 \(M\)](data_structure/union_find/evaluate-division-1257-m.md)
 
 ## Algorithm
 
