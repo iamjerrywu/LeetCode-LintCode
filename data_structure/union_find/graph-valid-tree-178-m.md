@@ -167,7 +167,6 @@ class Solution:
             original_father = self.father[node]
             self.father[node] = root
             node = original_father
-
         return root
 ```
 {% endtab %}
