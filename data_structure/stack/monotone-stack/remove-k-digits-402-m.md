@@ -34,6 +34,46 @@ Explanation: Remove all the digits from the number and it is left with nothing w
 * `num` consists of only digits.
 * `num` does not have any leading zeros except for the zero itself.
 
+## Solution - Brute Force
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def removeKdigits(self, num: str, k: int) -> str:
+        for i in range(k):
+            num = self.remove_digit(num)
+        num = self.remove_zeros(num)
+        return num
+    
+    def remove_digit(self, num):
+        for i in range(1, len(num)):
+            if num[i] < num[i - 1]:
+                return num[:i - 1] + num[i:]
+        # remove the last one
+        return num[:-1]
+    
+    
+    def remove_zeros(self, num):
+        cnt = 0
+        for i in range(len(num)):
+            if num[i] == '0':
+                cnt+=1
+            else:
+                break
+        if cnt == len(num):
+            return '0'
+        else:
+            return num[cnt:]
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
 ## Solution 
 
 {% tabs %}
