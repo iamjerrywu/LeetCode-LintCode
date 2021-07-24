@@ -74,12 +74,30 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-## Solution 
+## Solution - Monotonic stack
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+class Solution:
+    def removeKdigits(self, num: str, k: int) -> str:
+        stack = [num[0]]
+        # monotone stack
+        for i in range(1, len(num)):
+            while k > 0 and stack and stack[-1] > num[i]:
+                k-=1
+                stack.pop() 
+            stack.append(num[i])
+        
+        # remove leading zero
+        for i in range(len(stack)):
+            if stack[i] != '0':
+                break
+        res = ''.join(stack[i:len(stack) - k])
+        # if empty string, should return '0'
+        if not res:
+            return '0'
+        return res
 ```
 {% endtab %}
 {% endtabs %}
