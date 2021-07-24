@@ -92,7 +92,51 @@ class Solution:
 {% tabs %}
 {% tab title="Python" %}
 ```python
+from typing import (
+    List,
+)
 
+class Solution:
+    """
+    @param equations: 
+    @param values: 
+    @param queries: 
+    @return: return a double type array
+    """
+    def calcEquation(self, equations: List[List[str]], values: List[float], queries: List[List[str]]) -> List[float]:
+        # write your code here
+        graph = self.build_graph(equations, values)
+        ans = []
+        for query in queries:
+            start, end = query[0], query[1]
+            if start == end and start in graph:
+                ans.append(1.0)
+                continue
+            if not self.dfs(graph, ans, set(), 1, start, end):
+                ans.append(-1.0)
+        return ans
+    
+    def dfs(self, graph, ans, visited, res, start, end):
+        for neighbor, value in graph[start]:
+            if neighbor == end:
+                ans.append(res * value)
+                return True
+            if neighbor not in visited:
+                res *= value
+                visited.add(neighbor)
+                if self.dfs(graph, ans, visited, res, neighbor, end):
+                    return True
+                # backtrack
+                res/=value
+                visited.remove(neighbor)
+        return False
+
+    def build_graph(self, equations, values):
+        graph = collections.defaultdict(list)
+        for i in range(len(equations)):
+            graph[equations[i][0]].append((equations[i][1], values[i]))
+            graph[equations[i][1]].append((equations[i][0], 1 / values[i]))
+        return graph
 ```
 {% endtab %}
 {% endtabs %}
