@@ -34,23 +34,6 @@ Given a / b = 2.0, b / c = 3.0.queries are: a / c = ?, b / a = ?, a / e = ?, a /
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
-```
-{% endtab %}
-{% endtabs %}
-
-### Complexity Analysis
-
-* **Time Complexity:**
-* **Space Complexity:**
-
-\*\*\*\*
-
-## Solution - DFS
-
-{% tabs %}
-{% tab title="Python" %}
-```python
 from typing import (
     List,
 )
@@ -94,6 +77,23 @@ class Solution:
             graph[equations[i][0]].append((equations[i][1], values[i]))
             graph[equations[i][1]].append((equations[i][0], 1 / values[i]))
         return graph
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
+## Solution - DFS
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+
 ```
 {% endtab %}
 {% endtabs %}
