@@ -63,6 +63,8 @@ class Solution:
         for i in range(n):
             records.append((i, times[i][0], True))
             records.append((i, times[i][1], False))
+        # need to sort based on sit/leave, since if sit/leave happen at same time
+        # the sit can actually take the empty seat after the other left
         records.sort(key = lambda r : (r[1], r[2]))
         
         empty_chairs = []
