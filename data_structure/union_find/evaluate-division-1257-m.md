@@ -48,7 +48,6 @@ class Solution:
     def calcEquation(self, equations: List[List[str]], values: List[float], queries: List[List[str]]) -> List[float]:
         # write your code here
         graph = self.build_graph(equations, values)
-        print(graph)
         ans = []
         for q in queries:
             start, end = q[0], q[1]
