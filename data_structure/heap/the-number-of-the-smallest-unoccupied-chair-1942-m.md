@@ -88,6 +88,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(n\)**
 * **Space Complexity:**
 
