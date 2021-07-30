@@ -1,4 +1,4 @@
-# Count Binary Substrings 1079 \(E\)
+# The K Weakest Rows in a Matrix \(LeetCode1337\) \(E\)
 
 ## Problem
 
@@ -59,7 +59,7 @@ The rows ordered from weakest to strongest are [0,2,3,1].
 * `1 <= k <= m`
 * `matrix[i][j]` is either 0 or 1.
 
-## Solution 
+## Solution - Sorting
 
 {% tabs %}
 {% tab title="Python" %}
@@ -85,39 +85,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(m \* n\)**
-* **Space Complexity: O\(n\)**
-
-\*\*\*\*
-
-## Solution - group by characters
-
-{% tabs %}
-{% tab title="Python" %}
-```python
-class Solution:
-    def countBinarySubstrings(self, s: str) -> int:
-        cnt = 1
-        appears = []
-        res = 0
-        for i in range(1, len(s)):
-            if s[i - 1] == s[i]:
-                cnt+=1
-            else:
-                appears.append(cnt)
-                cnt = 1
-        appears.append(cnt)
-        for i in range(len(appears) - 1):
-            res+=(min(appears[i], appears[i + 1]))
-        return res
-            
-                
-```
-{% endtab %}
-{% endtabs %}
-
-### Complexity Analysis
-
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity:**
+* **Space Complexity:**
 

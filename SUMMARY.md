@@ -278,6 +278,7 @@
   * [Multi-keyword Sort 846 \(E\)](algorithm/sorting/multi-keyword-sort-846-e.md)
   * [Reorder Data in Log Files 937 \(E\)](algorithm/sorting/reorder-data-in-log-files-937-e.md)
   * [Relative Ranks 1200 \(E\)](algorithm/sorting/relative-ranks-1200-e.md)
+  * [The K Weakest Rows in a Matrix \(LeetCode1337\) \(E\)](algorithm/sorting/the-k-weakest-rows-in-a-matrix-leetcode1337-e.md)
   * [Car Fleet 1477 \(M\)](algorithm/sorting/car-fleet-1477-m.md)
 * [Two Pointer](algorithm/two_pointer/README.md)
   * [Opposite Direction](algorithm/two_pointer/opposite-direction/README.md)
