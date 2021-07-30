@@ -1,4 +1,4 @@
-# Describe the Painting 1943 \(M\)
+# Describe the Painting \(LeetCode1943\) \(M\)
 
 ## Problem
 
