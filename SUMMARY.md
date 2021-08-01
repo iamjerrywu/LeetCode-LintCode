@@ -494,7 +494,7 @@
   * [Largest Odd Number in String \(LeetCode1903\) \(E\)](algorithm/greedy/largest-odd-number-in-string-leetcode1903-e.md)
   * [Eliminate Maximum Number of Monsters 1921 \(M\)](algorithm/greedy/eliminate-maximum-number-of-monsters-1921-m.md)
   * [Sum Game \(LeetCode 1927\) \(M\)](algorithm/greedy/sum-game-leetcode-1927-m.md)
-  * [Maximum Number of Weeks for Which You Can Work \(LeetCode 1953\) E](algorithm/greedy/maximum-number-of-weeks-for-which-you-can-work-leetcode-1953-e.md)
+  * [Maximum Number of Weeks for Which You Can Work \(LeetCode 1953\) \(E\)](algorithm/greedy/maximum-number-of-weeks-for-which-you-can-work-leetcode-1953-e.md)
 
 ## Other
 

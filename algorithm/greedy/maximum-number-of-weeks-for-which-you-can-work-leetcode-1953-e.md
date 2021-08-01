@@ -1,4 +1,4 @@
-# Maximum Number of Weeks for Which You Can Work \(LeetCode 1953\) E
+# Maximum Number of Weeks for Which You Can Work \(LeetCode 1953\) \(E\)
 
 ## Problem
 
@@ -52,7 +52,9 @@ Thus, one milestone in project 0 will remain unfinished.
 * `1 <= n <= 105`
 * `1 <= milestones[i] <= 109`
 
-## Solution 
+## 
+
+## Solution - Greedy
 
 {% tabs %}
 {% tab title="Python" %}
@@ -73,6 +75,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+  * n: len\(milestones\)
+* **Space Complexity: O\(1\)**
 
