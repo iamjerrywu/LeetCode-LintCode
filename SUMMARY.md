@@ -495,6 +495,7 @@
   * [Eliminate Maximum Number of Monsters 1921 \(M\)](algorithm/greedy/eliminate-maximum-number-of-monsters-1921-m.md)
   * [Sum Game \(LeetCode 1927\) \(M\)](algorithm/greedy/sum-game-leetcode-1927-m.md)
   * [Maximum Number of Weeks for Which You Can Work \(LeetCode 1953\) \(E\)](algorithm/greedy/maximum-number-of-weeks-for-which-you-can-work-leetcode-1953-e.md)
+  * [Minimum Garden Perimeter to Collect Enough Apples \(LeetCode 1954\) \(M\)](algorithm/greedy/minimum-garden-perimeter-to-collect-enough-apples-leetcode-1954-m.md)
 
 ## Other
 
