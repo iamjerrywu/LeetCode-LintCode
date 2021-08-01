@@ -508,6 +508,7 @@
   * [Pow\(x, n\) 428 \(M\)](other/mathmatics/pow-x-n-428-m.md)
   * [Count Good Numbers \(LeetCode 1922\) \(M\)](other/mathmatics/count-good-numbers-leetcode-1922-m.md)
   * [Greatest Common Divisor 845 \(E\)](other/mathmatics/greatest-common-divisor-845-e.md)
+  * [Three Divisors 1952 \(E\)](other/mathmatics/three-divisors-1952-e.md)
 * [Binary](other/binary/README.md)
   * [Single Number II 83 \(M\)](other/binary/single-number-ii-83-m.md)
   * [Single Number III 84 \(M\)](other/binary/single-number-iii-84-m.md)
