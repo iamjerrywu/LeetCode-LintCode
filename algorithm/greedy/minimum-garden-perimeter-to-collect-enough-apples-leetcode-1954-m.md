@@ -46,7 +46,34 @@ Output: 5040
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+DIRECTIONS = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
+class Solution:
+    def minimumPerimeter(self, neededApples: int) -> int:
+        queue = collections.deque()
+        visited = set((0, 0))
+        cur_length, nxt_length = 0, 0
+        queue.append((0, 0))
+        apples = 0
+        while queue:
+            nxt_length+=2
+            for _ in range(len(queue)):
+                x, y = queue.popleft()
+                apples+=(abs(x) + abs(y))
+                for dx, dy in DIRECTIONS:
+                    new_x = x + dx
+                    new_y = y + dy
+                    if self.is_valid(new_x, new_y, visited, nxt_length):
+                        queue.append((new_x, new_y))
+                        visited.add((new_x, new_y))
+            if apples > neededApples:
+                return cur_length * 4
+            cur_length = nxt_length
+    
+    def is_valid(self, x, y, visited, length):
+        half_length = length/2
+        if abs(x) > half_length or abs(y) > half_length:
+            return False
+        return (x, y) not in visited
 ```
 {% endtab %}
 {% endtabs %}
@@ -55,8 +82,6 @@ Output: 5040
 
 * **Time Complexity:**
 * **Space Complexity:**
-
-\*\*\*\*
 
 ## Solution - Math
 
