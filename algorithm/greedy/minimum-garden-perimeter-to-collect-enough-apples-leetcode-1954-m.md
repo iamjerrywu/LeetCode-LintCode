@@ -85,6 +85,8 @@ class Solution:
 
 ## Solution - Math
 
+![](../../.gitbook/assets/screen-shot-2021-08-01-at-1.46.06-pm.png)
+
 {% tabs %}
 {% tab title="Python" %}
 ```python
