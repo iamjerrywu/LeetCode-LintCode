@@ -52,7 +52,40 @@ Thus, one milestone in project 0 will remain unfinished.
 * `1 <= n <= 105`
 * `1 <= milestones[i] <= 109`
 
-## 
+## Solution - Heap
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+import heapq
+class Solution:
+    def numberOfWeeks(self, milestones: List[int]) -> int:
+        ms_queue = []
+        for i in range(len(milestones)):
+            ms_queue.append(-milestones[i])
+        heapq.heapify(ms_queue)
+        
+        cur_ms = -heapq.heappop(ms_queue)
+        cnt = 0
+        
+        while True:
+            cur_ms-=1
+            cnt+=1
+            if len(ms_queue) == 0:
+                return cnt
+            
+            prev_ms = cur_ms
+            cur_ms = -heapq.heappop(ms_queue)
+            if prev_ms != 0:
+                heapq.heappush(ms_queue, -prev_ms)    
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
 
 ## Solution - Greedy
 
