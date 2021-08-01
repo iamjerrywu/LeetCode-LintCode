@@ -52,7 +52,7 @@ Thus, one milestone in project 0 will remain unfinished.
 * `1 <= n <= 105`
 * `1 <= milestones[i] <= 109`
 
-## Solution - Heap
+## Solution - Heap \(LTE\)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -84,7 +84,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(sum\(milestones\)\)**
 * **Space Complexity:**
 
 ## Solution - Greedy
