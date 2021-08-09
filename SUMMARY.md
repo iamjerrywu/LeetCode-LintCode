@@ -230,6 +230,7 @@
   * [Minimum Cost to Hire K Workers 1512 \(H\)](data_structure/heap/minimum-cost-to-hire-k-workers-1512-h.md)
   * [Process Tasks Using Servers \(LeetCode1835\) \(M\)](data_structure/heap/process-tasks-using-servers-1835-m.md)
   * [The Number of the Smallest Unoccupied Chair 1942 \(M\)](data_structure/heap/the-number-of-the-smallest-unoccupied-chair-1942-m.md)
+  * [Remove Stones to Minimize the Total \(LeetCode 1962\) \(M\)](data_structure/heap/remove-stones-to-minimize-the-total-leetcode-1962-m.md)
 * [Trie](data_structure/trie/README.md)
   * [Identifying Strings 333 \(M\)](data_structure/trie/identifying-strings-333-m.md)
   * [Implement Trie \(Prefix Tree\) 442 \(M\)](data_structure/trie/untitled.md)
