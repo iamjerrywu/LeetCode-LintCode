@@ -499,6 +499,7 @@
   * [Sum Game \(LeetCode 1927\) \(M\)](algorithm/greedy/sum-game-leetcode-1927-m.md)
   * [Maximum Number of Weeks for Which You Can Work \(LeetCode 1953\) \(E\)](algorithm/greedy/maximum-number-of-weeks-for-which-you-can-work-leetcode-1953-e.md)
   * [Minimum Garden Perimeter to Collect Enough Apples \(LeetCode 1954\) \(M\)](algorithm/greedy/minimum-garden-perimeter-to-collect-enough-apples-leetcode-1954-m.md)
+  * [Minimum Number of Swaps to Make the String Balanced \(LeetCode 1963\) \(M\)](algorithm/greedy/minimum-number-of-swaps-to-make-the-string-balanced-leetcode-1963-m.md)
 
 ## Other
 
