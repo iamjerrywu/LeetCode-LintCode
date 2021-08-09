@@ -41,6 +41,7 @@
   * [Sum of Digits of String After Convert 1945 \(E\)](data_structure/string/sum-of-digits-of-string-after-convert-1945-e.md)
   * [Largest Number After Mutating Substring 1946 \(M\)](data_structure/string/largest-number-after-mutating-substring-1946-m.md)
   * [Delete Characters to Make Fancy String \(LeetCode 1957\) \(E\)](data_structure/string/delete-characters-to-make-fancy-string-leetcode-1957-e.md)
+  * [Check If String is a Prefix of Array \(LeetCode 1961\) \(E\)](data_structure/string/check-if-string-is-a-prefix-of-array-leetcode-1961-e.md)
 * [Array](data_structure/array/README.md)
   * [Prefix Sum](data_structure/array/prefix-sum/README.md)
     * [Maximum Subarray 41 \(E\)](data_structure/array/prefix-sum/maximum-subarray-41-e.md)
