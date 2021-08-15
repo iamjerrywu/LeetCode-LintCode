@@ -274,6 +274,7 @@
   * [Intersection](algorithm/sorting/intersection/README.md)
     * [Merge Intervals 156 \(E\)](algorithm/sorting/intersection/merge-intervals-156-e.md)
     * [Insertion Sort List 173 \(E\)](algorithm/sorting/intersection/insertion-sort-list-173-e.md)
+    * [Wiggle Sort 508 \(M\)](algorithm/sorting/intersection/wiggle-sort-508-m.md)
     * [Describe the Painting \(LeetCode1943\) \(M\)](algorithm/sorting/intersection/describe-the-painting-1943-m.md)
     * [Meeting Rooms 920 \(E\)](algorithm/sorting/intersection/meeting-rooms-920-e.md)
     * [Meeting Rooms II 919 \(M\)](algorithm/sorting/intersection/meeting-rooms-ii-919-m.md)
