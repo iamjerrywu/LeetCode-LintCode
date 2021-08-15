@@ -99,8 +99,6 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
-
 ## Solution - Construct Substrings \(2\)
 
 Count the substring with start, and the length of substrings
