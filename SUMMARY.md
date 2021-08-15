@@ -300,6 +300,7 @@
       * [Three Sum 57 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/three-sum-57-m.md)
       * [3Sum Closest 59 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/3sum-closest-59-m.md)
       * [Triangle Count 382 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/triangle-count-382-m.md)
+      * [Container With Most Water 383 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/container-with-most-water-383-m.md)
       * [4Sum 58 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/4sum-58-m.md)
       * [4Sum II 976 \(M\)](algorithm/two_pointer/opposite-direction/2-sum/4sum-ii-976-m.md)
     * [Partition Array 31 \(M\)](algorithm/two_pointer/opposite-direction/partition-array-31-m.md)
