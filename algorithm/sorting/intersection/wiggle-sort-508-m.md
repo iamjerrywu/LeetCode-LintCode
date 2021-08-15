@@ -48,8 +48,6 @@ class Solution:
                 right-=1
         for i in range(len(nums)):
             nums[i] = ans[i]
-        
-        
 ```
 {% endtab %}
 {% endtabs %}
