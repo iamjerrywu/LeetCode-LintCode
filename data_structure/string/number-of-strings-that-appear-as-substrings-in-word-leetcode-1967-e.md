@@ -69,12 +69,62 @@ class Solution:
 
 \*\*\*\*
 
-## Solution - Construct Substrings
+## Solution - Construct Substrings \(1\)
+
+Count the substring with start, and the end point
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
+class Solution:
+    def numOfStrings(self, patterns: List[str], word: str) -> int:
+        substrings = self.build_substrings(word)
+        ans = 0
+        for pattern in patterns:
+            if pattern in substrings:
+                ans+=1
+        return ans
+    def build_substrings(self, word):
+        substrings = set()
+        for length in range(1, len(word) + 1):
+            for start in range(len(word) - length + 1):
+                substrings.add(word[start:start + length])
+        return substrings
+```
+{% endtab %}
+{% endtabs %}
 
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
+## Solution - Construct Substrings \(2\)
+
+Count the substring with start, and the length of substrings
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def numOfStrings(self, patterns: List[str], word: str) -> int:
+        substrings = self.build_substrings(word)
+        ans = 0
+        for pattern in patterns:
+            if pattern in substrings:
+                ans+=1
+        return ans
+    
+    def build_substrings(self, word):
+        substrings = set()
+        for start in range(len(word)):
+            for end in range(start, len(word) + 1): 
+            # if write like following, would not count "" as substring
+            # for end in range(start + 1, len(word) + 1): 
+                substrings.add(word[start:end])
+        return substrings
 ```
 {% endtab %}
 {% endtabs %}
