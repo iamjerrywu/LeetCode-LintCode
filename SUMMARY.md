@@ -132,6 +132,7 @@
     * [Rehashing 129 \(M\)](data_structure/hash/implementation/129.-rehashing-m.md)
   * [Ugly Number II 4 \(M\)](data_structure/hash/4.md)
   * [Majority Element 46 \(E\)](data_structure/hash/majority-element-46-e.md)
+  * [Majority Element II 47 \(M\)](data_structure/hash/majority-element-ii-47-m.md)
   * [Longest Consecutive Sequence 124 \(M\)](data_structure/hash/longest-consecutive-sequence-124-m.md)
   * [LRU Cache 134 \(H\)](data_structure/hash/lru-cache-134-h.md)
   * [First Unique Character in a String 209 \(E\)](data_structure/hash/first-unique-character-in-a-string-209-e.md)
