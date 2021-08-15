@@ -26,12 +26,23 @@ Output: 2
 * `1 <= n <= 5 * 104`
 * `-231 <= nums[i] <= 231 - 1`
 
-## Solution 
+## Solution - Hash Map
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        cnt = {}
+        for num in nums:
+            major_cnt = 0
+            major_ele = 0
+            cnt[num] = cnt.get(num, 0) + 1
+        for k, v in cnt.items():
+            if v > major_cnt:
+                major_ele = k
+                major_cnt = v
+        return major_ele
 ```
 {% endtab %}
 {% endtabs %}
