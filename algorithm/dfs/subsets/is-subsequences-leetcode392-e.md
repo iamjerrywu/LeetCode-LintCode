@@ -63,3 +63,29 @@ Will LTE!
 * **Time Complexity:**
 * **Space Complexity:**
 
+\*\*\*\*
+
+## Solution - Two Pointers
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        s_p, t_p = 0, 0
+        
+        while s_p < len(s) and t_p < len(t):
+            if s[s_p] == t[t_p]:
+                s_p+=1
+            t_p+=1
+        
+        return s_p == len(s)
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
+
