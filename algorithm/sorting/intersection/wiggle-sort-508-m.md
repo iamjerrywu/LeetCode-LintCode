@@ -24,6 +24,8 @@ Input: [1, 2, 3, 4]Output: [1, 4, 2, 3]
 
 ## Solution - Not In Place
 
+Put the maximum ones and the minimum ones alternatively
+
 {% tabs %}
 {% tab title="Python" %}
 ```python
@@ -61,10 +63,23 @@ class Solution:
 
 ## Solution - In Place
 
+First sort and exchange every two elements 
+
 {% tabs %}
 {% tab title="Python" %}
 ```python
+class Solution:
+    """
+    @param: nums: A list of integers
+    @return: nothing
+    """
+    def wiggleSort(self, nums):
+        # write your code here
+        nums.sort()
 
+        for i in range(1, len(nums), 2):
+            if i + 1 < len(nums):
+                nums[i], nums[i + 1] = nums[i + 1], nums[i]
 ```
 {% endtab %}
 {% endtabs %}
