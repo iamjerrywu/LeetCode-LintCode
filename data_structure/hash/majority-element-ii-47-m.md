@@ -32,12 +32,26 @@ Output: [1,2]
 * `1 <= nums.length <= 5 * 104`
 * `-109 <= nums[i] <= 109`
 
-## Solution 
+## Solution - Hash Map
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+class Solution:
+    def majorityElement(self, nums: List[int]) -> List[int]:
+        ref = len(nums)//3
+        cnt = {}
+        
+        for num in nums:
+            cnt[num] = cnt.get(num, 0) + 1
+        ans = []
+        for k, v in cnt.items():
+            if v > ref:
+                ans.append(k)
+        ans.sort()
+        return ans
+        
+        
 ```
 {% endtab %}
 {% endtabs %}
