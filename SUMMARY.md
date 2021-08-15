@@ -147,6 +147,7 @@
   * [Sentence Similarity 856 \(E\)](data_structure/hash/sentence-similarity-856-e.md)
   * [Subdomain Visit Count 1006 \(E\)](data_structure/hash/subdomain-visit-count-1006-e.md)
   * [Rabbits in Forest 1035 \(M\)](data_structure/hash/rabbits-in-forest-1035-m.md)
+  * [High Five \(LeetCode 1086\) \(E\)](data_structure/hash/high-five-leetcode-1086-e.md)
   * [Bulls and Cows 1299 \(M\)](data_structure/hash/bulls-and-cows-1299-m.md)
   * [Tweet Counts Per Frequency 1348 \(M\)](data_structure/hash/tweet-counts-per-frequency-1348-m.md)
   * [Can Convert 1540 \(E\)](data_structure/hash/can-convert-1540-e.md)
@@ -498,7 +499,6 @@
   * [Eliminate Maximum Number of Monsters 1921 \(M\)](algorithm/greedy/eliminate-maximum-number-of-monsters-1921-m.md)
   * [Sum Game \(LeetCode 1927\) \(M\)](algorithm/greedy/sum-game-leetcode-1927-m.md)
   * [Maximum Number of Weeks for Which You Can Work \(LeetCode 1953\) \(E\)](algorithm/greedy/maximum-number-of-weeks-for-which-you-can-work-leetcode-1953-e.md)
-  * [Minimum Garden Perimeter to Collect Enough Apples \(LeetCode 1954\) \(M\)](algorithm/greedy/minimum-garden-perimeter-to-collect-enough-apples-leetcode-1954-m.md)
   * [Minimum Number of Swaps to Make the String Balanced \(LeetCode 1963\) \(M\)](algorithm/greedy/minimum-number-of-swaps-to-make-the-string-balanced-leetcode-1963-m.md)
 
 ## Other
@@ -515,6 +515,7 @@
   * [Count Good Numbers \(LeetCode 1922\) \(M\)](other/mathmatics/count-good-numbers-leetcode-1922-m.md)
   * [Greatest Common Divisor 845 \(E\)](other/mathmatics/greatest-common-divisor-845-e.md)
   * [Three Divisors 1952 \(E\)](other/mathmatics/three-divisors-1952-e.md)
+  * [Minimum Garden Perimeter to Collect Enough Apples \(LeetCode 1954\) \(M\)](other/mathmatics/minimum-garden-perimeter-to-collect-enough-apples-leetcode-1954-m.md)
 * [Binary](other/binary/README.md)
   * [Single Number II 83 \(M\)](other/binary/single-number-ii-83-m.md)
   * [Single Number III 84 \(M\)](other/binary/single-number-iii-84-m.md)
