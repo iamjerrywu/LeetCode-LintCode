@@ -37,12 +37,39 @@ timeMap.get("foo", 5);         // return "bar2"
 * All the timestamps `timestamp` of `set` are strictly increasing.
 * At most `2 * 105` calls will be made to `set` and `get`.
 
-## Solution 
+## Solution - Linear Get\(\)
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
+class TimeMap:
 
+    def __init__(self):
+        """
+        Initialize your data structure here.
+        """
+        self.mapping = collections.defaultdict(list)
+        
+
+    def set(self, key: str, value: str, timestamp: int) -> None:
+        self.mapping[key].append([value, timestamp])
+        
+
+    def get(self, key: str, timestamp: int) -> str:
+        if key in self.mapping:
+            prev_key = ""
+            for val in self.mapping[key]:
+                if val[1] <= timestamp:
+                    prev_key = val[0]
+            return prev_key
+        else:
+            return ""
+
+
+# Your TimeMap object will be instantiated and called as such:
+# obj = TimeMap()
+# obj.set(key,value,timestamp)
+# param_2 = obj.get(key,timestamp)
 ```
 {% endtab %}
 {% endtabs %}
