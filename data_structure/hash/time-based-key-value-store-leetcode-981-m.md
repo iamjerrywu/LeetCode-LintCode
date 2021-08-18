@@ -79,3 +79,58 @@ class TimeMap:
 * **Time Complexity:**
 * **Space Complexity:**
 
+\*\*\*\*
+
+## Solution - Binary Search Get\(\)
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class TimeMap:
+
+    def __init__(self):
+        """
+        Initialize your data structure here.
+        """
+        self.mapping = collections.defaultdict(list)
+        
+
+    def set(self, key: str, value: str, timestamp: int) -> None:
+        self.mapping[key].append([value, timestamp])
+        
+
+    def get(self, key: str, timestamp: int) -> str:
+        if key in self.mapping:
+            return self.binary_search(timestamp, self.mapping[key])
+        else:
+            return ""
+    
+    def binary_search(self, timestamp, vals_times):
+        start, end = 0, len(vals_times) - 1
+        while start + 1 < end:
+            mid = start + (end - start)//2
+            if vals_times[mid][1] < timestamp:
+                start = mid
+            else:
+                end = mid
+        
+        if vals_times[end][1] <= timestamp:
+            return vals_times[end][0]
+        if vals_times[start][1] <= timestamp:
+            return vals_times[start][0]
+        return ""
+
+
+# Your TimeMap object will be instantiated and called as such:
+# obj = TimeMap()
+# obj.set(key,value,timestamp)
+# param_2 = obj.get(key,timestamp)
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
