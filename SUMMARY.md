@@ -148,6 +148,7 @@
   * [First Unique Number in Data Stream II 960 \(M\)](data_structure/hash/first-unique-number-in-data-stream-ii-960-m.md)
   * [Word Pattern 828 \(E\)](data_structure/hash/word-pattern-828-e.md)
   * [Sentence Similarity 856 \(E\)](data_structure/hash/sentence-similarity-856-e.md)
+  * [Time Based Key-Value Store \(LeetCode 981\) \(M\)](data_structure/hash/time-based-key-value-store-leetcode-981-m.md)
   * [Subdomain Visit Count 1006 \(E\)](data_structure/hash/subdomain-visit-count-1006-e.md)
   * [Rabbits in Forest 1035 \(M\)](data_structure/hash/rabbits-in-forest-1035-m.md)
   * [High Five \(LeetCode 1086\) \(E\)](data_structure/hash/high-five-leetcode-1086-e.md)
