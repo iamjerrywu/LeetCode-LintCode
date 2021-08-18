@@ -77,9 +77,9 @@ class TimeMap:
 ### Complexity Analysis
 
 * **Time Complexity:**
+  * Set\(\): O\(1\)
+  * Get\(\): O\(n\)
 * **Space Complexity:**
-
-\*\*\*\*
 
 ## Solution - Binary Search Get\(\)
 
@@ -132,5 +132,7 @@ class TimeMap:
 ### Complexity Analysis
 
 * **Time Complexity:**
+* * Set\(\): O\(1\)
+  * Get\(\): O\(logn\)
 * **Space Complexity:**
 
