@@ -48,6 +48,45 @@ The requirements are as follows:
 {% tabs %}
 {% tab title="Python" %}
 ```python
+class Solution:
+    """
+    @param S: a string
+    @param words: a list of strings
+    @return: return a integer
+    """
+    def expressiveWords(self, S, words):
+        # write your code here
+        cnt = 0
+        for word in words:
+            if self.is_stretchy(S, word):
+                cnt+=1
+        return cnt
+    
+    def is_stretchy(self, S, word):
+        S_p, word_p = 0, 0
+        S_cnt, word_cnt = 1, 1
+        while S_p < len(S) and word_p < len(word):
+            while S_p < len(S) - 1 and S[S_p] == S[S_p + 1]:
+                S_p+=1
+                S_cnt+=1
+            while word_p < len(word) - 1 and word[word_p] == word[word_p + 1]:
+                word_p+=1
+                word_cnt+=1
+
+            # if not the same, return False
+            if S[S_p] != word[word_p]:
+                return False
+            # two cases is valid:
+            #If a letter is not repeated in a word in the words list, the stretched word must contain either one such letter, or three or more such letters, but not two such letters.
+            #If a letter is repeated once (two same consecutive letters), the stretched word must contain two or more such letters.
+            if (word_cnt == 1 and (S_cnt == 1 or S_cnt >= word_cnt * 3)) or (word_cnt > 1 and S_cnt >= word_cnt):
+                S_p+=1
+                word_p+=1
+                S_cnt = 1
+                word_cnt = 1
+            else:
+                return False
+        return True
 
 ```
 {% endtab %}
