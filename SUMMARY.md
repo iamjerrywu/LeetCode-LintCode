@@ -330,6 +330,7 @@
     * [Is Subsequences \(LeetCode392\) \(E\)](algorithm/two_pointer/same-direction/is-subsequences-leetcode392-e.md)
     * [Remove Duplicate Numbers in Array 521 \(E\)](algorithm/two_pointer/same-direction/remove-duplicate-numbers-in-array-e.md)
     * [Window Sum 604 \(E\)](algorithm/two_pointer/same-direction/604.-window-sum.md)
+    * [Expressive Words 1008 \(M\)](algorithm/two_pointer/same-direction/expressive-words-1008-m.md)
     * [Heaters 1219 \(M\)](algorithm/two_pointer/same-direction/heaters-1219-m.md)
     * [Sum of Two Strings 1343 \(E\)](algorithm/two_pointer/same-direction/sum-of-two-strings-1343-e.md)
     * [Substring With At Least K Distinct Characters 1375 \(M\)](algorithm/two_pointer/same-direction/substring-with-at-least-k-distinct-characters-1375-m.md)
