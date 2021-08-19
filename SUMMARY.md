@@ -535,6 +535,7 @@
   * [Valid Sudoku 389 \(E\)](other/simulation/valid-sudoku-389-e.md)
   * [Plus One 407 \(E\)](other/simulation/plus-one-407-e.md)
   * [Robot Bounded In Circle \(LeetCode1041\) \(M\)](other/simulation/robot-bounded-in-circle-1041-m.md)
+  * [Design Parking System \(LeetCode 1603\) \(E\)](other/simulation/design-parking-system-leetcode-1603-e.md)
   * [Pick Carrots 1896 \(E\)](other/simulation/pick-carrots-1896-e.md)
   * [Check if Move is Legal \(LeetCode 1958\) \(M\)](other/simulation/check-if-move-is-legal-leetcode-1958-m.md)
 * [Object-Oriented Design](other/object-oriented-design/README.md)
