@@ -40,7 +40,9 @@ Output: 3
 
 ## Solution 
 
-The requirements are as follows:
+Update the two pointers and also count their appearances until the next character is not the same.
+
+Then go check the requirements as follows:
 
 1. If a letter is not repeated in a word in the **words** list, the stretched word must contain either one such letter, or three or more such letters, but not two such letters.
 2. If a letter is repeated once \(two same consecutive letters\), the stretched word must contain two or more such letters.
@@ -94,6 +96,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(1\)**
 
