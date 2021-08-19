@@ -76,6 +76,7 @@
   * [Can Place Flowers 1138 \(E\)](data_structure/array/can-place-flowers-1138-e.md)
   * [Game of Life 1301 \(M\)](data_structure/array/game-of-life-1301-m.md)
   * [Legal Number Statistics II 1659 \(E\)](data_structure/array/legal-number-statistics-ii-1659-e.md)
+  * [Sign of the Product of an Array \(LeetCode 1822\) \(E\)](data_structure/array/sign-of-the-product-of-an-array-leetcode-1822-e.md)
   * [Longer Contiguous Segments of Ones than Zeros \(LeetCode 1869\) \(E\)](data_structure/array/longer-contiguous-segments-of-ones-than-zeros-leetcode-1869-e.md)
   * [Substrings of Size Three with DIstinct Characters \(LeetCode1876\) \(E\)](data_structure/array/substrings-of-size-three-with-distinct-characters-1876-e.md)
   * [Remove One Element to Make the Array Strictly Increasing \(LeetCode1909\) \(E\)](data_structure/array/remove-one-element-to-make-the-array-strictly-increasing-leetcode1909-e.md)
