@@ -510,6 +510,7 @@
   * [Sum Game \(LeetCode 1927\) \(M\)](algorithm/greedy/sum-game-leetcode-1927-m.md)
   * [Maximum Number of Weeks for Which You Can Work \(LeetCode 1953\) \(E\)](algorithm/greedy/maximum-number-of-weeks-for-which-you-can-work-leetcode-1953-e.md)
   * [Minimum Number of Swaps to Make the String Balanced \(LeetCode 1963\) \(M\)](algorithm/greedy/minimum-number-of-swaps-to-make-the-string-balanced-leetcode-1963-m.md)
+  * [Minimum Time to Type Word Using Special Typewriter \(LeetCode 1974\) \(E\)](algorithm/greedy/minimum-time-to-type-word-using-special-typewriter-leetcode-1974-e.md)
 
 ## Other
 
