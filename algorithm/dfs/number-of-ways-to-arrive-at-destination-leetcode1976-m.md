@@ -96,7 +96,38 @@ Will result in LTE
 {% tabs %}
 {% tab title="Python" %}
 ```python
+import heapq
+MOD = 10**9 + 7
 
+class Solution:
+    def countPaths(self, n: int, roads: List[List[int]]) -> int:
+        graph = self.build_graph(roads)
+        min_dist = [float('inf')] * n
+        min_dist[0] = 0
+        min_dist_cnt = [0] * n
+        min_dist_cnt[0] = 1
+        min_heap = [(0, 0)]
+        
+        while min_heap:
+            # here the node_min_dist == min_dist[node]
+            node_min_dist, node = heapq.heappop(min_heap)
+            if node == n - 1:
+                return min_dist_cnt[node]%MOD
+            for neighbor, weight in graph[node]:
+                neighbor_min_dist = min_dist[node] + weight
+                if neighbor_min_dist == min_dist[neighbor]:
+                    min_dist_cnt[neighbor]+=min_dist_cnt[node]
+                elif neighbor_min_dist < min_dist[neighbor]:
+                    min_dist[neighbor] = neighbor_min_dist
+                    heapq.heappush(min_heap, (neighbor_min_dist, neighbor))
+                    min_dist_cnt[neighbor] = min_dist_cnt[node]
+                
+    def build_graph(self, roads):
+        graph = collections.defaultdict(list)
+        for road in roads:
+            graph[road[0]].append([road[1], road[2]])
+            graph[road[1]].append([road[0], road[2]])
+        return graph
 ```
 {% endtab %}
 {% endtabs %}
