@@ -40,19 +40,17 @@ Explanation: There is only one way to go from intersection 0 to intersection 1, 
 * There is at most one road connecting any two intersections.
 * You can reach any intersection from any other intersection.
 
-## Solution - DFS with global variable: min\_dist
+## Solution - DFS 
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
 class Solution:
-    def __init__(self):
-        self.min_dist = float('inf')
     def countPaths(self, n: int, roads: List[List[int]]) -> int:
         graph = self.build_graph(roads)
-        ans = {}
-        self.dfs(0, n - 1, 0, graph, ans, set(), self.min_dist)
-        return ans[self.min_dist]
+        min_dist_cnt = [float('inf'), 0]
+        self.dfs(0, n - 1, 0, graph, set(), min_dist_cnt)
+        return min_dist_cnt[1]
         
     def build_graph(self, roads):
         graph = collections.defaultdict(list)
@@ -61,19 +59,25 @@ class Solution:
             graph[road[1]].append([road[0], road[2]])
         return graph
 
-    def dfs(self, start, end, length, graph, ans, visited, min_dist):
+    def dfs(self, start, end, length, graph, visited, min_dist_cnt):
+        # DFS break condition
+        if start == end:
+            # update min_dist_cnt
+            if length < min_dist_cnt[0]:
+                min_dist_cnt[0] = length
+                min_dist_cnt[1] =1
+            else:
+                min_dist_cnt[1] +=1
+            return 
+        
         for neighbor, dist in graph[start]:
             if neighbor not in visited:
-                if length + dist > min_dist:
-                    continue
-                if neighbor == end:
-                    ans[length + dist] = ans.get(length + dist, 0) + 1
-                    self.min_dist = min(self.min_dist, length + dist)
+                # optmize path searching
+                if length + dist > min_dist_cnt[0]:
                     continue
                 visited.add(neighbor)
-                self.dfs(neighbor, end, length + dist, graph, ans, visited, self.min_dist)
-                visited.remove(neighbor)
-        
+                self.dfs(neighbor, end, length + dist, graph, visited, min_dist_cnt)
+                visited.remove(neighbor)        
 ```
 {% endtab %}
 {% endtabs %}
@@ -87,7 +91,7 @@ class Solution:
 Will result in LTE
 {% endhint %}
 
-## Solution 
+## Solution - \(Min\_Heap\)Djkstra + DFS
 
 {% tabs %}
 {% tab title="Python" %}
