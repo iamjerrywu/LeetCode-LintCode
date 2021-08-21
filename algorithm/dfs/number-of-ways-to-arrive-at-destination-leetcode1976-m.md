@@ -45,12 +45,13 @@ Explanation: There is only one way to go from intersection 0 to intersection 1, 
 {% tabs %}
 {% tab title="Python" %}
 ```python
+MOD = 10**9 + 7
 class Solution:
     def countPaths(self, n: int, roads: List[List[int]]) -> int:
         graph = self.build_graph(roads)
         min_dist_cnt = [float('inf'), 0]
         self.dfs(0, n - 1, 0, graph, set(), min_dist_cnt)
-        return min_dist_cnt[1]
+        return min_dist_cnt[1]%MOD
         
     def build_graph(self, roads):
         graph = collections.defaultdict(list)
