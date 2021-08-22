@@ -162,6 +162,7 @@
   * [Finding Pairs With a Certain Sum \(LeetCode1865\) \(M\)](data_structure/hash/finding-pairs-with-a-certain-sum-1865-m.md)
   * [Alien Dictionary\(easy\) 1876 \(E\)](data_structure/hash/alien-dictionary-easy-1876-e.md)
   * [Unique Length-3 Palindromic Subsequences \(LeetCode 1930\) \(M\)](data_structure/hash/unique-length-3-palindromic-subsequences-leetcode-1930-m.md)
+  * [Minimize the Difference Between Target and Chosen Elements \(LeetCode 1981\) \(M\)](data_structure/hash/minimize-the-difference-between-target-and-chosen-elements-leetcode-1981-m.md)
 * [Tree](data_structure/tree/README.md)
   * [Binary Tree](data_structure/tree/binary_tree/README.md)
     * [Basic Traversal](data_structure/tree/binary_tree/basic-traversal/README.md)
