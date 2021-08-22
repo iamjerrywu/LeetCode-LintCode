@@ -531,6 +531,7 @@
   * [Three Divisors 1952 \(E\)](other/mathmatics/three-divisors-1952-e.md)
   * [Minimum Garden Perimeter to Collect Enough Apples \(LeetCode 1954\) \(M\)](other/mathmatics/minimum-garden-perimeter-to-collect-enough-apples-leetcode-1954-m.md)
   * [Minimum Non-Zero Product of the Array Elements \(LeetCode 1969\) \(M\)](other/mathmatics/minimum-non-zero-product-of-the-array-elements-leetcode-1969-m.md)
+  * [Find Greatest Common Divisor of Array \(LeetCode 5850\) \(E\)](other/mathmatics/find-greatest-common-divisor-of-array-leetcode-5850-e.md)
 * [Binary](other/binary/README.md)
   * [Single Number II 83 \(M\)](other/binary/single-number-ii-83-m.md)
   * [Single Number III 84 \(M\)](other/binary/single-number-iii-84-m.md)
