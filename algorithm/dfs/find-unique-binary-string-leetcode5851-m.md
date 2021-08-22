@@ -45,9 +45,7 @@ Find all the binary combinations then compare with the nums list
 class Solution:
     def findDifferentBinaryString(self, nums: List[str]) -> str:
         appear = set(nums)
-        # print(appear)
         all_bi = self.find_binary(len(nums))
-        # print(all_bi)
         for bi in all_bi:
             if bi not in appear:
                 return bi
