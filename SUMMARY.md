@@ -389,6 +389,7 @@
   * [Build Post Office II 573 \(H\)](algorithm/s4.-queue-bfs-graph/build-post-office-ii-573-h.md)
   * [Knight Shortest Path 611 \(M\)](algorithm/s4.-queue-bfs-graph/knight-shortest-path-611-m.md)
   * [Search Graph Nodes 618 \(M\)](algorithm/s4.-queue-bfs-graph/search-graph-nodes-618-m.md)
+  * [Max Area of Island \(1080\) \(E\)](algorithm/s4.-queue-bfs-graph/max-area-of-island-1080-e.md)
   * [Remove Invalid Parentheses 780 \(H\)](algorithm/s4.-queue-bfs-graph/remove-invalid-parentheses-780-h.md)
   * [The Maze 787 \(M\)](algorithm/s4.-queue-bfs-graph/the-maze-787-m.md)
   * [The Maze II 788 \(M\)](algorithm/s4.-queue-bfs-graph/the-maze-ii-m.md)
