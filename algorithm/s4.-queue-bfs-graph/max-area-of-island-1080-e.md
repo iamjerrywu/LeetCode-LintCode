@@ -35,6 +35,70 @@ Output: 0
 {% tabs %}
 {% tab title="Python" %}
 ```python
+DIRECTIONS = [[1,0], [-1, 0], [0, 1], [0, -1]]
+class Solution:
+    def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
+        queue = collections.deque()
+        ans = 0
+        visited = set()
+        for i in range(len(grid)):
+            for j in range(len(grid[0])):
+                if grid[i][j] == 1 and (i, j) not in visited:
+                    queue.append((i, j))
+                    visited.add((i, j))
+                    ans = max(ans, self.bfs(queue, grid, visited))
+        return ans
+    
+    def bfs(self, queue, grid, visited):
+        area = 0
+        while queue:
+            x, y = queue.pop()
+            area+=1
+            for dx, dy in DIRECTIONS:
+                new_x = x + dx
+                new_y = y + dy
+                if self.is_valid(new_x, new_y, grid, visited):
+                    queue.append((new_x, new_y))
+                    visited.add((new_x, new_y))
+        return area
+    
+    def is_valid(self, x, y, grid, visited):
+        if 0 <= x < len(grid) and 0 <= y < len(grid[0]):
+            return grid[x][y] == 1 and (x, y) not in visited
+        return False
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
+## Solution 
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
+## Solution 
+
+{% tabs %}
+{% tab title="Python" %}
+```python
 
 ```
 {% endtab %}
