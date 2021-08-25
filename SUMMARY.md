@@ -123,6 +123,7 @@
   * [Max Stack 859 \(H\)](data_structure/stack/859-max-stack-h.md)
   * [Basic Calculator 978 \(M\)](data_structure/stack/basic-calculator-978-m.md)
   * [Basuc Calculator II 980 \(M\)](data_structure/stack/basuc-cakcykatir-ii-980-m.md)
+  * [Remove All Adjacent Duplicates In String \(LeetCode 1047\) \(E\)](data_structure/stack/remove-all-adjacent-duplicates-in-string-leetcode-1047-e.md)
   * [Minimum Remove to Make Valid Parentheses 1249 \(M\)](data_structure/stack/minimum-remove-to-make-valid-parentheses-1249-m.md)
 * [Queue](data_structure/s4.-stack-and-queue/README.md)
   * [Implement Queue by Two Stacks 40 \(M\)](data_structure/s4.-stack-and-queue/implement-queue-by-two-stacks-40-m.md)
