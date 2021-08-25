@@ -30,7 +30,7 @@ Output: 0
 * `1 <= m, n <= 50`
 * `grid[i][j]` is either `0` or `1`.
 
-## Solution 
+## Solution - BFS
 
 {% tabs %}
 {% tab title="Python" %}
