@@ -77,12 +77,37 @@ class Solution:
 
 \*\*\*\*
 
-## Solution 
+## Solution - DFS
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+DIRECTIONS = [[1,0], [-1, 0], [0, 1], [0, -1]]
+class Solution:
+    def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
+        queue = collections.deque()
+        ans = 0
+        visited = set()
+        for i in range(len(grid)):
+            for j in range(len(grid[0])):
+                if grid[i][j] == 1 and (i, j) not in visited:
+                    visited.add((i, j))
+                    ans = max(ans, self.dfs(i, j, 1, grid, visited))
+        return ans
+    
+    def dfs(self, x, y, area, grid, visited):
+        for dx, dy in DIRECTIONS:
+            new_x = x + dx
+            new_y = y + dy
+            if self.is_valid(new_x, new_y, grid, visited):
+                visited.add((new_x, new_y))
+                area = self.dfs(new_x, new_y, area + 1, grid, visited)
+        return area
+    
+    def is_valid(self, x, y, grid, visited):
+        if 0 <= x < len(grid) and 0 <= y < len(grid[0]):
+            return grid[x][y] == 1 and (x, y) not in visited
+        return False
 ```
 {% endtab %}
 {% endtabs %}
