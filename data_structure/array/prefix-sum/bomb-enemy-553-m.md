@@ -27,7 +27,7 @@ Output: 1
 * `1 <= m, n <= 500`
 * `grid[i][j]` is either `'W'`, `'E'`, or `'0'`.
 
-## Solution 
+## Solution - Brute Force Simulation
 
 {% tabs %}
 {% tab title="Python" %}
@@ -81,6 +81,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(m \* n \* max\(m, n\)\)**
+* **Space Complexity: O\(1\)**
 
