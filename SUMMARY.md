@@ -52,6 +52,7 @@
     * [Subarray Sum 138 \(E\)](data_structure/array/prefix-sum/subarray-sum-138-e.md)
     * [Subarray Sum Closest 139 \(M\)](data_structure/array/prefix-sum/subarray-sum-closest-139-m.md)
     * [Random Pick with Weight 528 \(M\)](data_structure/array/prefix-sum/random-pick-with-weight-528-m.md)
+    * [Bomb Enemy 553 \(M\)](data_structure/array/prefix-sum/bomb-enemy-553-m.md)
     * [Subarray Sum Equals to k 838 \(E\)](data_structure/array/prefix-sum/subarray-sum-equals-to-k-838-e.md)
     * [Range Sum Query - Immutable 943 \(E\)](data_structure/array/prefix-sum/range-sum-query-immutable-943-e.md)
     * [Range Sum Query 2D - Immutable 665 \(M\)](data_structure/array/prefix-sum/range-sum-query-2d-immutable-665-m.md)
