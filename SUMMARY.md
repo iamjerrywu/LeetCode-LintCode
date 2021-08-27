@@ -494,6 +494,7 @@
   * [Best Time to Buy and Sell Stock II 150 \(M\)](algorithm/dynamic_programming/best-time-to-buy-and-sell-stock-ii.md)
   * [Maximum Alternating Subsequence Sum \(LeetCode 1911\) \(M\)](algorithm/dynamic_programming/maximum-alternating-subsequence-sum-leetcode-1911-m.md)
   * [House Robber 392 \(M\)](algorithm/dynamic_programming/house-robbe-392-m.md)
+  * [Delete and Earn 1059 \(M\)](algorithm/dynamic_programming/delete-and-earn-1059-m.md)
   * [Paint House 515 \(M\)](algorithm/dynamic_programming/paint-house-515-m.md)
   * [House Robber II 534 \(M\)](algorithm/dynamic_programming/house-robber-ii-534.md)
   * [House Rober III 535 \(M\)](algorithm/dynamic_programming/house-rober-iii-535-m.md)
