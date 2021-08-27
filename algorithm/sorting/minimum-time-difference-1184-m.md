@@ -53,12 +53,36 @@ class Solution:
 
 ## Solution - Sorting
 
+First transfer all the time into sec format, then sort the list. Afterwards, pick every two time to compare with each other, then finally compare the first and the last one
+
 {% tabs %}
 {% tab title="Python" %}
 ```python
 class Solution:
-    def findMinDifference(self, timePoints: List[str]) -> int:
+    """
+    @param timePoints: a list of 24-hour clock time points
+    @return: the minimum minutes difference between any two time points in the list
+    """
+    def findMinDifference(self, timePoints):
+        # Write your code here
+        time_sec = []
+        for time in timePoints:
+            time_list = time.split(':')
+            time_sec.append(int(time_list[0]) * 60 + int(time_list[1]))
+        
+        time_sec.sort()
+        
+        ans = float('inf')
+        for i in range(len(time_sec) - 1):
+            ans = min(ans, self.cal_diff(time_sec[i], time_sec[i + 1]))
+        
+        ans = min(ans, self.cal_diff(time_sec[0], time_sec[-1]))
 
+        return ans
+    
+    def cal_diff(self, time1, time2):
+        day_sec = 24 * 60
+        return min((time1 - 0) + (day_sec - time2), time2 - time1)
 ```
 {% endtab %}
 {% endtabs %}
