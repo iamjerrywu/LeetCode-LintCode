@@ -37,6 +37,8 @@ class Solution:
     def houseRobber(self, A):
         # write your code here
         n = len(A)
+        
+        # dp[i] means the maximum amount of money can get when robering i amount of houses
         dp = [0] * (n + 1)
         dp[1] = A[0]
 
