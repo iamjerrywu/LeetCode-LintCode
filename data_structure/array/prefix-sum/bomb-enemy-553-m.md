@@ -158,6 +158,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(m \* n\)**
+  * Construct prefix sum: O\(m\* n\)
+  * Traverse grid: O\(m \* n\)
 * **Space Complexity:**
 
