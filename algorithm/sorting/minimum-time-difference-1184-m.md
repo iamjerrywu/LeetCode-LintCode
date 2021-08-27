@@ -19,11 +19,45 @@ Example 2:
 Input:["01:01","02:01"]Output:60
 ```
 
-## Solution 
+## Solution - Brute Force Enumeration
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
+class Solution:
+    def findMinDifference(self, timePoints: List[str]) -> int:
+        ans = float('inf')
+        for i in range(len(timePoints) - 1):
+            for j in range(i + 1, len(timePoints)):
+                ans = min(ans, self.cal_diff(timePoints[i], timePoints[j]))
+        return ans
+    
+    def cal_diff(self, time1, time2):
+        day_min = 24 * 60
+        time_list = time1.split(":")
+        time1_min = int(time_list[0]) * 60 + int(time_list[1])
+        time_list = time2.split(":")
+        time2_min = int(time_list[0]) * 60 + int(time_list[1])
+        if time1_min > time2_min:
+            time1_min, time2_min = time2_min, time1_min
+        diff = min(abs(0 - time1_min) + abs(day_min - time2_min), abs(time1_min - time2_min))
+        return diff
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n^2\)**
+* **Space Complexity: O\(1\)**
+
+## Solution - Sorting
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def findMinDifference(self, timePoints: List[str]) -> int:
 
 ```
 {% endtab %}
@@ -31,6 +65,10 @@ Input:["01:01","02:01"]Output:60
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(nlogn\)**
+* **Space Complexity: O\(n\)**
+
+{% hint style="danger" %}
+ LTE!
+{% endhint %}
 
