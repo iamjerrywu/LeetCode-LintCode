@@ -75,7 +75,7 @@ class Solution:
         ans = float('inf')
         for i in range(len(time_sec) - 1):
             ans = min(ans, self.cal_diff(time_sec[i], time_sec[i + 1]))
-        
+        # need to compare the fisrt one with the last one
         ans = min(ans, self.cal_diff(time_sec[0], time_sec[-1]))
 
         return ans
