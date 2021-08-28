@@ -295,6 +295,7 @@
   * [Relative Ranks 1200 \(E\)](algorithm/sorting/relative-ranks-1200-e.md)
   * [The K Weakest Rows in a Matrix \(LeetCode1337\) \(E\)](algorithm/sorting/the-k-weakest-rows-in-a-matrix-leetcode1337-e.md)
   * [Car Fleet 1477 \(M\)](algorithm/sorting/car-fleet-1477-m.md)
+  * [Maximum Unit on a Truck \(LeetCode 1710\) \(E\)](algorithm/sorting/maximum-unit-on-a-truck-leetcode-1710-e.md)
   * [Array With Elements Not Equal to Average of Neighbors \(LeetCode 1968\) \(M\)](algorithm/sorting/array-with-elements-not-equal-to-average-of-neighbors-leetcode-1968-m.md)
 * [Two Pointer](algorithm/two_pointer/README.md)
   * [Opposite Direction](algorithm/two_pointer/opposite-direction/README.md)
