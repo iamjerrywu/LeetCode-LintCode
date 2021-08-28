@@ -543,6 +543,7 @@
   * [Single Number II 83 \(M\)](other/binary/single-number-ii-83-m.md)
   * [Single Number III 84 \(M\)](other/binary/single-number-iii-84-m.md)
   * [Add Binary 408 \(E\)](other/binary/add-binary-408-e.md)
+  * [UTF-8 Validation 1262 \(M\)](other/binary/utf-8-validation-1262-m.md)
 * [Simulation](other/simulation/README.md)
   * [Narcissistic Number 147 \(E\)](other/simulation/narcissistic-number-147-e.md)
   * [Valid Sudoku 389 \(E\)](other/simulation/valid-sudoku-389-e.md)
