@@ -58,9 +58,48 @@ class Solution:
 LTE
 {% endhint %}
 
-\*\*\*\*
+## Solution - Binary Search with Sets
 
-## Solution 
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def findLength(self, nums1: List[int], nums2: List[int]) -> int:
+        k = min(len(nums1), len(nums2))
+        
+        left, right = 0, k
+        while left + 1 < right:
+            mid = left + (right - left)//2
+            if self.exist(mid, nums1, nums2):
+                left = mid
+            else:
+                right = mid
+        
+        if self.exist(right, nums1, nums2):
+            return right
+        if self.exist(left, nums1, nums2):
+            return left
+        return -1
+
+    def exist(self, k, nums1, nums2):
+        nums2_set = set()
+        for i in range(len(nums2) - k + 1):
+            nums2_set.add(tuple(nums2[i:i + k]))
+        
+        for i in range(len(nums1) - k + 1):
+            if tuple(nums1[i:i + k]) in nums2_set:
+                return True
+        return False
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:  O\(m \* n\)**
+* **Space Complexity: O\(m \* n\)**
+
+## Solution - DP
 
 {% tabs %}
 {% tab title="Python" %}
