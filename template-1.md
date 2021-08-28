@@ -34,6 +34,44 @@ Output: [[1,2,4]]
 {% tabs %}
 {% tab title="Python" %}
 ```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def delNodes(self, root: TreeNode, to_delete: List[int]) -> List[TreeNode]:
+        to_delete_set = set(to_delete)
+        print(to_delete_set)
+        res = []
+        self.dfs(root, to_delete_set, True, res)
+        return res
+    
+    def dfs(self, root, to_delete_set, is_root, res):
+        if not root:
+            return
+        root_deleted = root.val in to_delete_set
+        if is_root and not root_deleted:
+            res.append(root)
+        self.dfs(root.left, to_delete_set, root_deleted, res)
+        self.dfs(root.right, to_delete_set, root_deleted, res)
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+\*\*\*\*
+
+## Solution 
+
+{% tabs %}
+{% tab title="Python" %}
+```python
 
 ```
 {% endtab %}
