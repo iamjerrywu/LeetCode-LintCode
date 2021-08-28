@@ -32,7 +32,9 @@ Explanation:
 1
 ```
 
-## Solution - DFS
+## 
+
+## Solution - DFS without Global Variables
 
 ### Code
 
@@ -74,6 +76,55 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
+  * O\(n\) in worst case as tree like linkedlist
+  * O\(logn\) in best case as balanced tree
+
+## Solution - DFS without Global Variables
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
+
+class Solution:
+    """
+    @param root: a root of binary tree
+    @return: return a integer
+    """
+    def diameterOfBinaryTree(self, root):
+        # write your code here
+        
+        max_d, max_c = self.dfs(root)
+        return max_d
+    
+    def dfs(self, node):
+        if not node:
+            return 0, 0
+        left_max_d, left_max_c = self.dfs(node.left)
+        right_max_d, right_max_c = self.dfs(node.right)
+
+        max_d = max(left_max_d, right_max_d, left_max_c + right_max_c)
+        max_c = max(left_max_c, right_max_c) + 1
+
+        return max_d, max_c
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
+  * O\(n\) in worst case as tree like linkedlist
+  * O\(logn\) in best case as balanced tree
 
