@@ -36,7 +36,7 @@ Output: 0
 
 ## Solution - Brute Force
 
-
+![](../../../.gitbook/assets/screen-shot-2021-08-28-at-3.38.36-pm.png)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -78,6 +78,8 @@ class Solution:
 * **Space Complexity: O\(1\)**
 
 ## Solution - DP
+
+
 
 {% tabs %}
 {% tab title="Python" %}
