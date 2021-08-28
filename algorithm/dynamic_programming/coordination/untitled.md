@@ -1,4 +1,4 @@
-# Jump Game VII 5765 \(M\)
+# Jump Game VII \(LeetCode 5765\) \(M\)
 
 ## Problem
 
