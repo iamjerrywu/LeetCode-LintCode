@@ -59,6 +59,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
-* **Space Complexity:** 
+* **Time Complexity:  O\(nlogn\)**
+* **Space Complexity: O\(n\)**
 
