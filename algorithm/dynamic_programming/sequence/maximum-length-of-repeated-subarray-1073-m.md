@@ -58,7 +58,7 @@ class Solution:
 LTE
 {% endhint %}
 
-## Solution - Binary Search with Sets
+## Solution - Binary Search with Sets \(Best\)
 
 {% tabs %}
 {% tab title="Python" %}
