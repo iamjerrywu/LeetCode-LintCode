@@ -96,8 +96,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:  O\(m \* n\)**
-* **Space Complexity: O\(m \* n\)**
+* **Time Complexity:  O\(log\(m, n\) \* max\(m,n\)\)**
+* **Space Complexity: O\(log\(m, n\)\* max\(m, n\)\)**
 
 ## Solution - DP
 
