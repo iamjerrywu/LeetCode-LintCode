@@ -100,6 +100,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O\(1\)**
 * **Space Complexity:**
 
