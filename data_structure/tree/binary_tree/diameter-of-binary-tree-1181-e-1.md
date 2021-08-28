@@ -32,8 +32,6 @@ Explanation:
 1
 ```
 
-## 
-
 ## Solution - DFS without Global Variables
 
 ### Code
