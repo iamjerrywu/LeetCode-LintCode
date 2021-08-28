@@ -119,7 +119,7 @@ class Solution:
 
 \*\*\*\*
 
-## Solution 
+## Solution - Union Find
 
 {% tabs %}
 {% tab title="Python" %}
