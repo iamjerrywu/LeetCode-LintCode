@@ -84,7 +84,33 @@ class Solution:
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+class Solution:
+    def maximalSquare(self, matrix: List[List[str]]) -> int:
+        if not matrix or not matrix[0]:
+            return 0
+        
+        m, n = len(matrix), len(matrix[0])
+        
+        # init dp array
+        # dp[i][j] mean the maximum squares area with (i, j) as its bottome-right coordination
+        dp = [[0] * n for _ in range(m)]
+        for i in range(m):
+            dp[i][0] = int(matrix[i][0])
+        for j in range(n):
+            dp[0][j] = int(matrix[0][j])
+        
+        # the max edge can only be 1
+        edge = max([int(c) for c in matrix[0]])
+        
+        # dp[i][j] = min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]) + 1
+        for i in range(1, m):
+            for j in range(1, n):
+                if matrix[i][j] == '1':
+                    dp[i][j] = min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]) + 1
+                else:
+                    dp[i][j] = 0
+            edge = max(edge, max(dp[i]))
+        return edge * edge
 ```
 {% endtab %}
 {% endtabs %}
