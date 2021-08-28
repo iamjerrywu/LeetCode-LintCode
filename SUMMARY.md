@@ -187,7 +187,6 @@
     * [Minimum Depth of Binary Tree 155 \(E\)](data_structure/tree/binary_tree/minimum-depth-of-binary-tree-155-e.md)
     * [Invert Binary Tree 175 \(E\)](data_structure/tree/binary_tree/175.-invert-binary-tree-e.md)
     * [Subtree of Another Tree 1165 \(E\)](data_structure/tree/binary_tree/subtree-of-another-tree-1165-e.md)
-    * [Diameter of Binary Tree 1181 \(E\)](data_structure/tree/binary_tree/diameter-of-binary-tree-1181-e.md)
     * [Subtree 245 \(M\)](data_structure/tree/binary_tree/subtree-245-m.md)
     * [Binary Tree Path Sum 376 \(E\)](data_structure/tree/binary_tree/binary-tree-path-sum-376-e.md)
     * [Same Tree 469 \(E\)](data_structure/tree/binary_tree/same-tree-469-e.md)
