@@ -101,5 +101,5 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity: O\(1\)**
-* **Space Complexity:**
+* **Space Complexity: O\(1\)**
 
