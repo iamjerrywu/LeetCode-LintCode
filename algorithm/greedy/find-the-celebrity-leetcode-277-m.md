@@ -34,7 +34,42 @@ Explanation: There is no celebrity.
 * `graph[i][j]` is `0` or `1`.
 * `graph[i][i] == 1`
 
-## Solution 
+## Solution - Brute Force
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+# The knows API is already defined for you.
+# return a bool, whether a knows b
+# def knows(a: int, b: int) -> bool:
+
+class Solution:
+    def findCelebrity(self, n: int) -> int:
+        for i in range(n):
+            if self.is_celebrity(i, n):
+                return i
+        return -1
+
+    def is_celebrity(self, i, n):
+        for j in range(n):
+            if i == j:
+                continue
+            
+            if knows(i, j) or not knows(j, i):
+                return False
+        return True
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n^2\)**
+* **Space Complexity: O\(1\)**
+
+\*\*\*\*
+
+## Solution - Greedy
 
 {% tabs %}
 {% tab title="Python" %}
