@@ -86,6 +86,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
-* **Space Complexity:** 
+* **Time Complexity:  O\(nlogn\)**
+  * n: length of either keyName/keyTime
+* **Space Complexity:  O\(n\)**
 
