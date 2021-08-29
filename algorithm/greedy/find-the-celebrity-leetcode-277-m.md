@@ -69,12 +69,36 @@ class Solution:
 
 \*\*\*\*
 
-## Solution 
+## Solution - Greedy
+
+Details explanation here: [Link](https://leetcode.com/problems/find-the-celebrity/solution/)
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
+# The knows API is already defined for you.
+# return a bool, whether a knows b
+# def knows(a: int, b: int) -> bool:
 
+class Solution:
+    def findCelebrity(self, n: int) -> int:
+        pos_celebrity = 0
+        for i in range(n):
+            if knows(pos_celebrity, i):
+                pos_celebrity = i
+        if self.is_celebrity(pos_celebrity, n):
+            return pos_celebrity
+        return -1
+        
+
+    def is_celebrity(self, i, n):
+        for j in range(n):
+            if i == j:
+                continue
+            
+            if knows(i, j) or not knows(j, i):
+                return False
+        return True
 ```
 {% endtab %}
 {% endtabs %}
