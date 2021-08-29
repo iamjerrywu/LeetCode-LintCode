@@ -298,6 +298,7 @@
   * [Least Number of Unique Integers after K Removals \(LeetCode 1481\) \(M\)](algorithm/sorting/least-number-of-unique-integers-after-k-removals-leetcode-1481-m.md)
   * [Maximum Unit on a Truck \(LeetCode 1710\) \(E\)](algorithm/sorting/maximum-unit-on-a-truck-leetcode-1710-e.md)
   * [Array With Elements Not Equal to Average of Neighbors \(LeetCode 1968\) \(M\)](algorithm/sorting/array-with-elements-not-equal-to-average-of-neighbors-leetcode-1968-m.md)
+  * [Minimum Difference Between Highest and Lowest of K Scores \(LeetCode 1984\) \(E\)](algorithm/sorting/minimum-difference-between-highest-and-lowest-of-k-scores-leetcode-1984-e.md)
 * [Two Pointer](algorithm/two_pointer/README.md)
   * [Opposite Direction](algorithm/two_pointer/opposite-direction/README.md)
     * [N Sum](algorithm/two_pointer/opposite-direction/2-sum/README.md)
