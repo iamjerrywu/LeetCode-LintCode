@@ -69,7 +69,7 @@ class Solution:
 
 \*\*\*\*
 
-## Solution - Greedy
+## Solution 
 
 {% tabs %}
 {% tab title="Python" %}
