@@ -136,13 +136,17 @@ class Solution:
             boundaries.append((interval.end, 1))
         boundaries.sort(key = lambda n :(n[0], n[1]))
         
+        # cannot write like following
+        # since when sorting, we want to let the having same point
+        # the 'start' one would appear prior than the 'end' one
+        
+        #i.e: [1,4], [4,5], the later 4 in [4,5] should be first when sorting
         '''
             boundaries.append((interval.start, 1))
             boundaries.append((interval.end, -1))
         boundaries.sort(key = lambda n :(n[0], -n[1]))
         '''
         
-        print(boundaries)
 
         res = []
         is_matched = 0

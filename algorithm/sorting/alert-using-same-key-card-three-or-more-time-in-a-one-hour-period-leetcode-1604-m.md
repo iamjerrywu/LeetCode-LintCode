@@ -1,4 +1,4 @@
-# Alert Using Same Key-Card Three or More TIme in a One Hour Period \(LeetCode 1604\) \(M\)
+# Alert Using Same Key-Card Three or More Time in a One Hour Period \(LeetCode 1604\) \(M\)
 
 ## Problem
 
