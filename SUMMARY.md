@@ -438,6 +438,7 @@
   * [Longest Path On The Tree 1469 \(M\)](algorithm/dfs/longest-path-on-the-tree-1469-m.md)
   * [Splitting a String Into Descending Consecutive Values \(LeetCode 1849\) \(M\) \(](algorithm/dfs/splitting-a-string-into-descending-consecutive-values-leetcode-1849-m.md)
   * [Number of Ways to Arrive at Destination \(LeetCode1976\) \(M\)](algorithm/dfs/number-of-ways-to-arrive-at-destination-leetcode1976-m.md)
+  * [Minimum Number of Work Sessions to Finish the Tasks \(LeetCode 1986\) \(M\)](algorithm/dfs/minimum-number-of-work-sessions-to-finish-the-tasks-leetcode-1986-m.md)
   * [Find Unique Binary String \(LeetCode5851\) \(M\)](algorithm/dfs/find-unique-binary-string-leetcode5851-m.md)
 * [Dynamic Programming](algorithm/dynamic_programming/README.md)
   * [Memoization](algorithm/dynamic_programming/memoization/README.md)
