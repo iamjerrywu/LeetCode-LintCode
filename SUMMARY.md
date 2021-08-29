@@ -296,6 +296,7 @@
   * [The K Weakest Rows in a Matrix \(LeetCode1337\) \(E\)](algorithm/sorting/the-k-weakest-rows-in-a-matrix-leetcode1337-e.md)
   * [Car Fleet 1477 \(M\)](algorithm/sorting/car-fleet-1477-m.md)
   * [Least Number of Unique Integers after K Removals \(LeetCode 1481\) \(M\)](algorithm/sorting/least-number-of-unique-integers-after-k-removals-leetcode-1481-m.md)
+  * [Alert Using Same Key-Card Three or More TIme in a One Hour Period \(LeetCode 1604\) \(M\)](algorithm/sorting/alert-using-same-key-card-three-or-more-time-in-a-one-hour-period-leetcode-1604-m.md)
   * [Maximum Unit on a Truck \(LeetCode 1710\) \(E\)](algorithm/sorting/maximum-unit-on-a-truck-leetcode-1710-e.md)
   * [Array With Elements Not Equal to Average of Neighbors \(LeetCode 1968\) \(M\)](algorithm/sorting/array-with-elements-not-equal-to-average-of-neighbors-leetcode-1968-m.md)
   * [Minimum Difference Between Highest and Lowest of K Scores \(LeetCode 1984\) \(E\)](algorithm/sorting/minimum-difference-between-highest-and-lowest-of-k-scores-leetcode-1984-e.md)
