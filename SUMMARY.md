@@ -513,6 +513,7 @@
   * [Maximum Number of Points with Cost 1937 \(M\)](algorithm/dynamic_programming/maximum-number-of-points-with-cost-1937-m.md)
 * [Greedy](algorithm/greedy/README.md)
   * [Gas Station 187 \(M\)](algorithm/greedy/gas-station-187-m.md)
+  * [Find the Celebrity \(LeetCode 277\) \(M\)](algorithm/greedy/find-the-celebrity-leetcode-277-m.md)
   * [Smallest Subset 761 \(M\)](algorithm/greedy/smallest-subset-761-m.md)
   * [Task Scheduler 945 \(M\)](algorithm/greedy/task-scheduler-945-m.md)
   * [Interval Minimum Coverage 1668 \(M\)](algorithm/greedy/interval-minimum-coverage-1668-m.md)
