@@ -62,10 +62,9 @@ class Solution:
                 res += sign * num
                 num = 0
                 # first the res inside(), should tranfer to signed before ()
-                res *= stack[-1]
+                ans*=stack.pop() # the sign
                 # then do either "+" or "-" with res before ()
-                res += stack[-2]
-                stack = stack[:-2]
+                ans += stack.pop() # the ans before (operations)
         res += sign * num
         return res
 
