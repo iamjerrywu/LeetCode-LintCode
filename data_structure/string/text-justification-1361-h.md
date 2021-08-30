@@ -41,12 +41,12 @@ Input:words = ["Science","is","what","we","understand","well","enough","to","exp
 ```python
 class Solution:
     def fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
-        # write your code here
         res = []
         if len(words) == 1:
             res.append(self.format(words, maxWidth, False))
             return res
-        idx, len_cnt =0, 0
+        
+        idx, len_cnt = 0, 0
         str_arr = []
         while idx < len(words):
             len_cnt+=len(words[idx])
@@ -57,7 +57,9 @@ class Solution:
                 continue
             str_arr.append(words[idx])
             idx+=1
-            len_cnt+=1
+            len_cnt+=1 # add the space after
+        
+        # last line
         res.append(self.format(str_arr, maxWidth, True))
         return res
     
@@ -66,29 +68,30 @@ class Solution:
         ch_len = sum([len(w) for w in str_arr])
         space_len = maxWidth - ch_len
         str_ans = ''
+        # only one word
         if n == 1:
             return str_arr[0] + space_len * ' '
-        if n > 1:
-            idx, space_cnt =0, 0
-            if end is True:
+        # multiple words
+        else:
+            if end:
                 space_list = [0] * n
-                for i in range(len(space_list)):
+                for i in range(n):
                     space_list[i]+=1
                     space_len-=1
                 space_list[-1]+=space_len
                 for i in range(n):
-                    str_ans+=str_arr[i]
-                    str_ans+=space_list[i] * ' '
+                    str_ans = str_ans + str_arr[i] + space_list[i] * ' '
             else:
                 space_list = [0] * (n - 1)
-                while space_cnt < space_len:
+                idx = 0
+                while space_len > 0:
                     space_list[idx%(n - 1)]+=1
-                    space_cnt+=1
+                    space_len-=1
                     idx+=1
-                for i in range(n):
-                    str_ans+=str_arr[i]
-                    if i != n - 1:
-                        str_ans+=space_list[i] * ' '
+                for i in range(n - 1):
+                    str_ans = str_ans + str_arr[i] 
+                    str_ans = str_ans + space_list[i] * ' '
+                str_ans+=str_arr[-1]
         return str_ans
 ```
 {% endtab %}
