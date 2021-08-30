@@ -65,8 +65,9 @@ class Solution:
             time_list = keyTime[i].split(':')
             time_sec = int(time_list[0]) * 60 + int(time_list[1])
             time_record[keyName[i]].append(time_sec)
-            
-        ans = []
+        
+        # use set since we don't want to record the duplicated names    
+        ans = set()
         for key, time_list in time_record.items():
             # if shorter than 3, no way can alert happen
             if len(time_list) < 3:
@@ -76,10 +77,9 @@ class Solution:
             # compare every three between max and min
             for i in range(len(time_list) - 2):
                 if time_list[i + 2] - time_list[i] <= 60:
-                    ans.append(key)
+                    ans.add(key)
                     break
-        ans.sort()
-        return ans
+        return sorted(list(ans))
 ```
 {% endtab %}
 {% endtabs %}
