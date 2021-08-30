@@ -41,6 +41,7 @@ class Solution:
         in_degree = [0] * numCourses
 
         # construct graph
+        # [0, 1], 0 <- 1 (0: node_in / 1: node_out)
         for node_in, node_out in prerequisites:
             graph[node_out].append(node_in)
             in_degree[node_in]+=1
