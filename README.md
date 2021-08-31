@@ -30,7 +30,9 @@ Notes mainly comprises two parts:
 
 ## Common Data Structure in Interview
 
-![](.gitbook/assets/screen-shot-2021-04-26-at-11.00.34-pm.png)
+![](.gitbook/assets/screen-shot-2021-08-30-at-8.07.32-pm.png)
+
+![](.gitbook/assets/screen-shot-2021-08-30-at-8.07.42-pm.png)
 
 ![](.gitbook/assets/screen-shot-2021-05-02-at-11.40.34-pm.png)
 
