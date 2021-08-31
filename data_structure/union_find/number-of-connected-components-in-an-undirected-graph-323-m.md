@@ -33,7 +33,7 @@ Output: 1
 
 ![](../../.gitbook/assets/screen-shot-2021-05-20-at-4.49.12-pm.png)
 
-### Code
+### Code 
 
 {% tabs %}
 {% tab title="python" %}
@@ -72,6 +72,49 @@ class Solution:
   * Graph: O\(n\)
   * Edges: O\(E\)
 * **Space Complexity:**
+
+\*\*\*\*
+
+\*\*\*\*
+
+## Solution 
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def countComponents(self, n: int, edges: List[List[int]]) -> int:
+        # construct adjacent list
+        adj_list = [[] for _ in range(n)]
+        for i in range(len(edges)):
+            adj_list[edges[i][0]].append(edges[i][1])
+            adj_list[edges[i][1]].append(edges[i][0])
+        visited = set()
+        cnt = 0
+        queue = collections.deque()
+        for i in range(n):
+            if i not in visited:
+                cnt+=1
+                queue.append(i)
+                visited.add(i)
+                self.bfs(adj_list, visited, queue)
+        return cnt
+    
+    def bfs(self, adj_list, visited, queue):
+        while queue:
+            start = queue.popleft()
+            for neighbor in adj_list[start]:
+                if neighbor not in visited:
+                    queue.append(neighbor)
+                    visited.add(neighbor)
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:** 
+* **Space Complexity:** 
 
 ## Solution - Union Find
 
