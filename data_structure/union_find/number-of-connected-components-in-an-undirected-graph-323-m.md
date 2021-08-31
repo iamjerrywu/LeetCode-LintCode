@@ -41,7 +41,7 @@ Output: 1
 class Solution:
     def countComponents(self, n: int, edges: List[List[int]]) -> int:
         cnt = 0
-        visited = [0] * n
+        visited = set()
         
         adj_list = [[] for _ in range(n)]
         
@@ -51,16 +51,16 @@ class Solution:
             adj_list[edges[i][1]].append(edges[i][0])
         
         for i in range(n):
-            if not visited[i]:
+            if not visited:
                 cnt+=1
                 self.dfs(adj_list, visited, i)
         return cnt
     
     def dfs(self, adj_list, visited, start):
-        visited[start] = True
-        for i in range(len(adj_list[start])):
-            if not visited[adj_list[start][i]]:
-                self.dfs(adj_list, visited, adj_list[start][i])
+        visited.add(start)
+        for neighbor in adj_list[start]:
+            if neighbor not in visited:
+                self.dfs(adj_list, visited, neighbor)
     
 ```
 {% endtab %}
