@@ -58,15 +58,37 @@ Output: [[1,7]]
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+class Solution:
+    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+        intervals.append(newInterval)
+        
+        intervals.sort(key = lambda s:(s[0], s[1]))
+        
+        boundaries = []
+        for interval in intervals:
+            boundaries.append([interval[0], -1])
+            boundaries.append([interval[1], 1])
+        
+        boundaries.sort(key = lambda s:(s[0], s[1]))
+        res = []
+        cnt = 0
+        for boundary in boundaries:
+            if cnt == 0:
+                start = boundary[0]
+            cnt+=boundary[1]
+            if cnt == 0:
+                res.append([start, boundary[0]])
+        intervals = list(res)
+        return intervals
+                    
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
-* **Space Complexity:** 
+* **Time Complexity: O\(nlogn\)**
+* **Space Complexity: O\(n\)**
 
 ## Solution - In Place
 
