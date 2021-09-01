@@ -82,3 +82,64 @@ class Solution:
 * **Time Complexity: O\(n^2\)**
 * **Space Complexity:**
 
+```python
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+# Complete the triplets function below.
+
+# find the first bigger than target index
+def bi_search(target, arr):
+    start, end = 0, len(arr) - 1
+    
+    while start + 1 < end:
+        mid = start + (end - start)//2
+        if arr[mid] > target:
+            end = mid
+        else:
+            start = mid
+    if arr[start] > target:
+        return start
+    if arr[end] > target:
+        return end
+    return -1
+
+def find_three_sum(t, d):
+    cnt = 0
+    for b in range(0, len(d) - 2):
+        base = d[b]
+        for i in range(b + 1, len(d) - 1):
+            j = bi_search(t - base - d[i], d[i + 1:])
+            if j == -1:
+                cnt+=len(d) - i - 1
+                cnt+=0
+            else:
+                j = j + i + 1
+                cnt+=j - i - 1
+    return cnt
+        
+def triplets(t, d):
+    
+    d.sort()
+    if len(d) < 3:
+        return 0
+    
+    idx = bi_search(t - d[0] - d[1], d)
+    if idx == -1:
+        # if cannot find, means then entire list is smaller
+        ans = find_three_sum(t, d)
+    else:
+        ans = find_three_sum(t, d[:idx + 1])
+    return ans
+    
+    
+if __name__ == '__main__':
+```
+

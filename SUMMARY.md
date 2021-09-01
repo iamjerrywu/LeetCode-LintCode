@@ -279,6 +279,7 @@
     * [Merge K Sorted Interval Lists 577 \(M\)](algorithm/sorting/merge-sort/577.-merge-k-sorted-interval-lists-m.md)
     * [Reverse Pairs 532 \(M\)](algorithm/sorting/merge-sort/532.-reverse-pairs.md)
   * [Intersection](algorithm/sorting/intersection/README.md)
+    * [Insert Interval 30 \(M\)](algorithm/sorting/intersection/insert-interval-30-m.md)
     * [Merge Intervals 156 \(E\)](algorithm/sorting/intersection/merge-intervals-156-e.md)
     * [Insertion Sort List 173 \(E\)](algorithm/sorting/intersection/insertion-sort-list-173-e.md)
     * [Describe the Painting \(LeetCode1943\) \(M\)](algorithm/sorting/intersection/describe-the-painting-1943-m.md)
