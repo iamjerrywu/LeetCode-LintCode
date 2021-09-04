@@ -40,7 +40,35 @@ Output: [[2,2,2],[2,2,2]]
 {% tabs %}
 {% tab title="Python" %}
 ```python
+DIRECTIONS = [[1, 0], [-1, 0], [0, 1], [0, -1]]
+import collections
 
+class Solution:
+    def floodFill(self, image: List[List[int]], sr: int, sc: int, newColor: int) -> List[List[int]]:
+        start_color = image[sr][sc]
+        if start_color == newColor:
+            return image
+        
+        queue = collections.deque()        
+        queue.append([sr, sc])
+        image[sr][sc] = newColor
+        
+        while queue:
+            x, y = queue.popleft()
+            for dx, dy in DIRECTIONS:
+                new_x, new_y = x + dx, y + dy
+                if self.is_valid(new_x, new_y, image, start_color):
+                    queue.append([new_x, new_y])
+                    image[new_x][new_y] = newColor
+        
+        return image
+    
+    
+    def is_valid(self, x, y, image, start_color):
+        if 0 <= x < len(image) and 0 <= y < len(image[0]):
+            return image[x][y] == start_color
+        return False
+        
 ```
 {% endtab %}
 {% endtabs %}
