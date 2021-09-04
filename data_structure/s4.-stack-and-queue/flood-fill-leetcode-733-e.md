@@ -78,3 +78,41 @@ class Solution:
 * **Time Complexity:  O\(n\)**
 * **Space Complexity:  O\(n\)**
 
+
+
+## Solution - DFS
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+DIRECTIONS = [[1, 0], [-1, 0], [0, 1], [0, -1]]
+
+class Solution:
+    def floodFill(self, image: List[List[int]], sr: int, sc: int, newColor: int) -> List[List[int]]:
+        start_color = image[sr][sc]
+        if start_color == newColor:
+            return image
+        image[sr][sc] = newColor
+        self.dfs(sr, sc, start_color, newColor, image)
+        return image
+    
+    def dfs(self, x, y, start_color, new_color, image):
+        for dx, dy in DIRECTIONS:
+            new_x, new_y = x + dx, y + dy
+            if self.is_valid(new_x, new_y, image, start_color):
+                image[new_x][new_y] = new_color
+                self.dfs(new_x, new_y, start_color, new_color, image)
+
+    def is_valid(self, x, y, image, start_color):
+        if 0 <= x < len(image) and 0 <= y < len(image[0]):
+            return image[x][y] == start_color
+        return False
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:  O\(n\)**
+* **Space Complexity:  O\(n\)**
+
