@@ -36,12 +36,61 @@ Output: [[1,3,0,0,0],[3,4,0,5,2],[3,2,0,3,1],[2,4,0,5,2],[1,4,3,1,1]]
 * `3 <= m, n <= 50`
 * `1 <= board[i][j] <= 2000`
 
-## Solution 
+## Solution - Brute Force Simulation
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
+class Solution:
+    def candyCrush(self, board: List[List[int]]) -> List[List[int]]:
+        
+        if not board:
+            return baord
+        done = False
+        
+        while not done:
+        # tag rows
+            done = True
+            for row in range(len(board)):
+                for col in range(len(board[0]) - 2):
+                    num1 = abs(board[row][col])
+                    num2 = abs(board[row][col + 1])
+                    num3 = abs(board[row][col + 2])
+                    if num1 == num2 and num2 == num3 and num1 != 0:
+                        board[row][col] = -num1
+                        board[row][col + 1] = -num2
+                        board[row][col + 2] = -num3
+                        done = False
 
+            # tag cols
+            for col in range(len(board[0])):
+                for row in range(len(board) - 2):
+                    num1 = abs(board[row][col])
+                    num2 = abs(board[row + 1][col])
+                    num3 = abs(board[row + 2][col])
+                    if num1 == num2 and num2 == num3 and num1 != 0:
+                        board[row][col] = -num1
+                        board[row + 1][col] = -num2
+                        board[row + 2][col] = -num3
+                        done = False
+            # drop
+            for col in range(len(board[0])):
+                # move all positive numbers down
+                idx = len(board) - 1
+                for row in range(len(board) - 1, -1, -1):
+                    if board[row][col] > 0:
+                        board[idx][col] = board[row][col]
+                        idx-=1
+                # put zeros for missing places
+                for row in range(idx, -1, -1):
+                    board[row][col] = 0
+        return board
+                
+            
+        
+        
+                
+                
 ```
 {% endtab %}
 {% endtabs %}
