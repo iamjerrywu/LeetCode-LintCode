@@ -211,6 +211,7 @@
     * [Maximum Product of Splitted Binary Tree \(LeetCode 1339\) \(M\)](data_structure/tree/binary_tree/maximum-product-of-splited-binary-tree-leetcode-1339-m.md)
     * [Symmetric Tree 1360 \(M\)](data_structure/tree/binary_tree/symmetric-tree-1360-m.md)
     * [Count Good Nodes in Binary Tree \(LeetCode1448\) \(M\)](data_structure/tree/binary_tree/count-good-nodes-in-binary-tree-1448-m.md)
+    * [Operations on Tree \(LeetCode 1993\) \(M\)](data_structure/tree/binary_tree/operations-on-tree-leetcode-1993-m.md)
   * [BST](data_structure/tree/bst/README.md)
     * [Search Range in Binary Search Tree 11 \(M\)](data_structure/tree/bst/11.-search-range-in-binary-search-tree.md)
     * [Insert Node in a Binary Search Tree 85 \(E\)](data_structure/tree/bst/insert-node-in-a-binary-search-tree-85-e.md)

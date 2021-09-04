@@ -280,5 +280,30 @@ public class Solution {
 {% endtab %}
 {% endtabs %}
 
+## Find Descendatns \(including itself\) of balanced complete tree
 
+```python
+import collections
+n = 7 # total balanced tree nodes number
+
+descendants = {}
+for i in range(n):
+    descendant_list = []
+    queue = collections.deque()
+    queue.append(i)
+    idx = i
+    while queue:
+        node = queue.popleft()
+        if node != i:
+            descendant_list.append(node)
+        if node * 2 + 2 <= 7:
+            queue.append(node* 2 + 1)
+            queue.append(node * 2 + 2)
+    descendants[i] = sorted(list(descendant_list))
+print(descendants)
+```
+
+```text
+{0: [1, 2, 3, 4, 5, 6], 1: [3, 4], 2: [5, 6], 3: [], 4: [], 5: [], 6: []}
+```
 
