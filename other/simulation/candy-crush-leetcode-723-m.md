@@ -84,13 +84,7 @@ class Solution:
                 # put zeros for missing places
                 for row in range(idx, -1, -1):
                     board[row][col] = 0
-        return board
-                
-            
-        
-        
-                
-                
+        return board      
 ```
 {% endtab %}
 {% endtabs %}
