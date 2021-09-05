@@ -38,7 +38,100 @@ Explanation: The third character is weak because the second character has a stri
 * `properties[i].length == 2`
 * `1 <= attacki, defensei <= 105`
 
-## Solution 
+## Solution - Brute Force \(LTE\)
+
+Find the attack, defense pairs respectively, then find their intersections. 
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+import collections
+class Solution:
+    def numberOfWeakCharacters(self, properties: List[List[int]]) -> int:
+        mapping = {}
+        for i in range(len(properties)):
+            mapping[tuple(properties[i])] = i
+        properties = [tuple(property) for property in properties]
+        counter = collections.Counter(properties)
+        ori_properties = list(properties)
+        
+        # sort with attack
+        attack_ranges = []
+        properties.sort(key = lambda p:(p[0], p[1]))
+        for i in range(len(properties) - 1):
+            # linear search for larger
+            for j in range(i + 1, len(properties)):
+                if properties[i][0] < properties[j][0]:
+                    attack_ranges.append([i, j, len(properties)])
+                    break
+        attack_cnt = set()
+        for attack_range in attack_ranges:
+            for i in range(attack_range[1], attack_range[2]):
+                attack_cnt.add((mapping[properties[attack_range[0]]], mapping[properties[i]]))       
+        
+        # sort with defense
+        defense_ranges = []
+        properties.sort(key = lambda p:(p[1], p[0]))
+
+        for i in range(len(properties) - 1):
+            # linear search for larger
+            for j in range(i + 1, len(properties)):
+                if properties[i][1] < properties[j][1]:
+                    defense_ranges.append([i, j, len(properties)])
+                    break
+        defense_cnt = set()
+        for defense_range in defense_ranges:
+            for i in range(defense_range[1], defense_range[2]):
+                defense_cnt.add((mapping[properties[defense_range[0]]], mapping[properties[i]]))   
+        
+        
+        ans = 0
+        weak_set = set()
+        for item in attack_cnt:
+            if item in defense_cnt:
+                weak_set.add(item[0])
+        for weak in weak_set:
+            ans+=counter[ori_properties[weak]]
+        return ans
+        
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(nlogn\)**
+* **Space Complexity:** 
+
+## Solution - Brute Force with Binary Search
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def numberOfWeakCharacters(self, properties: List[List[int]]) -> int:
+        properties.sort(key = lambda x:(x[0], x[1]))
+        print(properties)
+        
+        stack = []
+        ans = 0
+        
+        for a, d in properties:
+            while stack and stack[-1][0] < a and stack[-1][1] < d:
+                stack.pop()
+                ans+=1
+            stack.append((a, d))
+        return ans
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(nlogn\)**
+* **Space Complexity:** 
+
+## Solution - Stack one pass
 
 {% tabs %}
 {% tab title="Python" %}
