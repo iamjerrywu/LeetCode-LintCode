@@ -86,6 +86,7 @@
   * [Remove One Element to Make the Array Strictly Increasing \(LeetCode1909\) \(E\)](data_structure/array/remove-one-element-to-make-the-array-strictly-increasing-leetcode1909-e.md)
   * [Add Minimum Number of Rungs 1936 \(M0](data_structure/array/add-minimum-number-of-rungs-1936-m0.md)
   * [Check if All Characters Have Equal Number of Occurrences 1941 \(E\)](data_structure/array/check-if-all-characters-have-equal-number-of-occurrences-1941-e.md)
+  * [Count Special Quadruplets \(LeetCode 1995\) \(E\)](data_structure/array/count-special-quadruplets-leetcode-1995-e.md)
 * [Linked List](data_structure/linked_list/README.md)
   * [Middle of Linked List 228 \(N\)](data_structure/linked_list/middle-of-linked-list-228-n.md)
   * [Middle of the LinkedList 1609 \(E\)](data_structure/linked_list/middle-of-the-linkedlist-1609-e.md)
