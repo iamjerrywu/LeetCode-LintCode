@@ -45,7 +45,7 @@ Explanation: Root is considered as good.
 * The number of nodes in the binary tree is in the range `[1, 10^5]`.
 * Each node's value is between `[-10^4, 10^4]`.
 
-## Solution 
+## Solution - Global Variables
 
 ### Code
 
@@ -74,6 +74,45 @@ class Solution:
         self.dfs(node.left, cur_max)
         self.dfs(node.right, cur_max)
         
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
+
+## Solution - **No Global Variables**
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def goodNodes(self, root: TreeNode) -> int:
+        cnt = 0
+        
+        cnt = self.dfs(root, root.val)
+        return cnt 
+
+    def dfs(self, node, max_val):
+        if not node:
+            return 0
+        cnt = 0
+        if node.val >= max_val:
+            cnt+=1
+            max_val = node.val
+        cnt+=self.dfs(node.left, max_val)
+        cnt+=self.dfs(node.right, max_val)
+        return cnt
 ```
 {% endtab %}
 {% endtabs %}
