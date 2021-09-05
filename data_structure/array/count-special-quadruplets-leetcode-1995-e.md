@@ -40,12 +40,56 @@ Explanation: The 4 quadruplets that satisfy the requirement are:
 * `4 <= nums.length <= 50`
 * `1 <= nums[i] <= 100`
 
-## Solution 
+## Solution - DFS
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
+class Solution:
+    def countQuadruplets(self, nums: List[int]) -> int:
+        ans = self.dfs(0, 0, 0, nums)
+        return ans
+    def dfs(self,idx, sum_val, cnt, nums):
+        ans = 0
+        if cnt > 3:
+            return 0
+        for i in range(idx, len(nums)):
+            if cnt == 3:
+                if sum_val == nums[i]:
+                    ans+=1 
+            sum_val+=nums[i]
+            if i + 1 < len(nums):
+                ans+=self.dfs(i + 1, sum_val, cnt+1, nums)
+            sum_val-=nums[i]
+        return ans
+        
+```
+{% endtab %}
+{% endtabs %}
 
+### Complexity Analysis
+
+* **Time Complexity:** 
+* **Space Complexity:** 
+
+\*\*\*\*
+
+## Solution - For Loop 
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def countQuadruplets(self, nums: List[int]) -> int:
+        ans = 0
+        for i in range(len(nums)):
+            for j in range(i + 1, len(nums)):
+                for k in range(j + 1, len(nums)):
+                    for l in range(k + 1, len(nums)):
+                        if nums[i] + nums[j] + nums[k] == nums[l]:
+                            print(i, j, k, l)
+                            ans+=1
+        return ans
 ```
 {% endtab %}
 {% endtabs %}
