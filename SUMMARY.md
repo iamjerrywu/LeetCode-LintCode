@@ -536,6 +536,7 @@
   * [Minimum Number of Swaps to Make the String Balanced \(LeetCode 1963\) \(M\)](algorithm/greedy/minimum-number-of-swaps-to-make-the-string-balanced-leetcode-1963-m.md)
   * [Minimum Time to Type Word Using Special Typewriter \(LeetCode 1974\) \(E\)](algorithm/greedy/minimum-time-to-type-word-using-special-typewriter-leetcode-1974-e.md)
   * [Maximum Matrix Sum \(LeetCode 1975\) \(M\)](algorithm/greedy/maximum-matrix-sum-leetcode-1975-m.md)
+  * [The Number of Weak Characters in the Game \(LeetCode 1996\) \(M\)](algorithm/greedy/the-number-of-weak-characters-in-the-game-leetcode-1996-m.md)
 
 ## Other
 
