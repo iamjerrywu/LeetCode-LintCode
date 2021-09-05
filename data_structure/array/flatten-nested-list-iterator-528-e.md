@@ -43,8 +43,6 @@ Explanation: By calling next repeatedly until hasNext returns false, the order o
 * `1 <= nestedList.length <= 500`
 * The values of the integers in the nested list is in the range `[-106, 106]`.
 
-
-
 ## Solution 
 
 {% tabs %}
