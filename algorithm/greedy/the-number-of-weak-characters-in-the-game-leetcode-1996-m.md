@@ -38,7 +38,7 @@ Explanation: The third character is weak because the second character has a stri
 * `properties[i].length == 2`
 * `1 <= attacki, defensei <= 105`
 
-## Solution - Brute Force \(LTE\)
+## Solution - Brute Force \(LTE, pass 39/44\)
 
 Find the attack, defense pairs respectively, then find their intersections. 
 
@@ -103,7 +103,7 @@ class Solution:
 * **Time Complexity: O\(nlogn\)**
 * **Space Complexity:** 
 
-## Solution - Brute Force with Binary Search \(LTE\)
+## Solution - Brute Force with Binary Search \(LTE, pass39/44\)
 
 {% tabs %}
 {% tab title="Python" %}
