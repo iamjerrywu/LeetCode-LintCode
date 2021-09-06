@@ -76,7 +76,7 @@
   * [ArrayList 385 \(E\)](data_structure/array/arraylist-385-e.md)
   * [Longest Continuous Increasing Subsequence 397 \(E\)](data_structure/array/longest-continuous-increasing-subsequence-397-e.md)
   * [Second Max Array 479 \(E\)](data_structure/array/second-max-array-479-e.md)
-  * [Flatten Nested List Iterator 528 \(E\)](data_structure/array/flatten-nested-list-iterator-528-e.md)
+  * [Flatten Nested List Iterator 528 \(M\)](data_structure/array/flatten-nested-list-iterator-528-e.md)
   * [Find the Duplicate Number 633 \(H\)](data_structure/array/find-the-duplicate-number-633-m.md)
   * [Can Place Flowers 1138 \(E\)](data_structure/array/can-place-flowers-1138-e.md)
   * [Game of Life 1301 \(M\)](data_structure/array/game-of-life-1301-m.md)

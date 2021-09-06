@@ -1,4 +1,4 @@
-# Flatten Nested List Iterator 528 \(E\)
+# Flatten Nested List Iterator 528 \(M\)
 
 ## Problem
 
