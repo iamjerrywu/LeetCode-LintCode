@@ -46,12 +46,8 @@ class Solution:
     def have_consecutive(self, N, num):
         for start in range(N, -1 + num, -1):
             total = 0
-            # print(start)
             for j in range(num):
-                print("oh",j)
                 total += start - j
-            if num == 1:
-                print(total)
             if total == N:
                 return True
         return False

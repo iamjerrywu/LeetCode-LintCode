@@ -542,7 +542,6 @@
 ## Other
 
 * [Mathmatics](other/mathmatics/README.md)
-  * [Consecutive Number Sum 1439 \(H\)](other/mathmatics/consecutive-number-sum-1439-h.md)
   * [Trailing Zeros 2 \(E\)](other/mathmatics/trailing-zeros-2-e.md)
   * [Fizz Buzz 9 \(E\)](other/mathmatics/fizz-buzz-9-e.md)
   * [Fast Power 140 \(M\)](other/mathmatics/fast-power-140-m.md)
@@ -550,6 +549,7 @@
   * [Reverse Integer 413 \(E\)](other/mathmatics/reverse-integer-413-e.md)
   * [Divide Two Integers 414 \(M\)](other/mathmatics/divide-two-integers-414-m.md)
   * [Pow\(x, n\) 428 \(M\)](other/mathmatics/pow-x-n-428-m.md)
+  * [Consecutive Number Sum 1439 \(H\)](other/mathmatics/consecutive-number-sum-1439-h.md)
   * [Count Good Numbers \(LeetCode 1922\) \(M\)](other/mathmatics/count-good-numbers-leetcode-1922-m.md)
   * [Greatest Common Divisor 845 \(E\)](other/mathmatics/greatest-common-divisor-845-e.md)
   * [Three Divisors 1952 \(E\)](other/mathmatics/three-divisors-1952-e.md)
