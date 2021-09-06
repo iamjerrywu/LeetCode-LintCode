@@ -546,6 +546,7 @@
   * [Fizz Buzz 9 \(E\)](other/mathmatics/fizz-buzz-9-e.md)
   * [Fast Power 140 \(M\)](other/mathmatics/fast-power-140-m.md)
   * [Prime Factorization 235 \(E\)](other/mathmatics/235.-prime-factorization-e.md)
+  * [Bulb Switcher 319 \(M\)](other/mathmatics/bulb-switcher-319-m.md)
   * [Reverse Integer 413 \(E\)](other/mathmatics/reverse-integer-413-e.md)
   * [Divide Two Integers 414 \(M\)](other/mathmatics/divide-two-integers-414-m.md)
   * [Pow\(x, n\) 428 \(M\)](other/mathmatics/pow-x-n-428-m.md)
