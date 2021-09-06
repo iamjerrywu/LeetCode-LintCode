@@ -523,6 +523,7 @@
   * [Find the Celebrity \(LeetCode 277\) \(M\)](algorithm/greedy/find-the-celebrity-leetcode-277-m.md)
   * [Smallest Subset 761 \(M\)](algorithm/greedy/smallest-subset-761-m.md)
   * [Task Scheduler 945 \(M\)](algorithm/greedy/task-scheduler-945-m.md)
+  * [Bulb Switcher III \(LeetCode 1375\) \(M\)](algorithm/greedy/bulb-switcher-iii-leetcode-1375-m.md)
   * [Interval Minimum Coverage 1668 \(M\)](algorithm/greedy/interval-minimum-coverage-1668-m.md)
   * [Minimum Number of Swaps to Make the Binary String Alternating \(LeetCode 1864\) \(M\)](algorithm/greedy/untitled.md)
   * [Reduction Operations to Make the Array Elements Equal （LeetCode 1887\) \(M\)](algorithm/greedy/reduction-operations-to-make-the-array-elements-equal-leetcode-1887-m.md)
