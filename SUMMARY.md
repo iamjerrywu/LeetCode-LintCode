@@ -147,6 +147,7 @@
   * [Longest Consecutive Sequence 124 \(M\)](data_structure/hash/longest-consecutive-sequence-124-m.md)
   * [LRU Cache 134 \(H\)](data_structure/hash/lru-cache-134-h.md)
   * [First Unique Character in a String 209 \(E\)](data_structure/hash/first-unique-character-in-a-string-209-e.md)
+  * [Contains Duplicate 1320 \(E\)](data_structure/hash/contains-duplicate-1320-e.md)
   * [Logger Rate Limiter \(LeetCode359\) \(E\)](data_structure/hash/logger-rate-limiter-359-e.md)
   * [Name Deduplication 487 \(E\)](data_structure/hash/name-deduplication-487-e.md)
   * [Count Characters 557 \(E\)](data_structure/hash/count-characters-556-e.md)
