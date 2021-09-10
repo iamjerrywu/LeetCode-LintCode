@@ -91,10 +91,52 @@ class Solution:
 
 ## Solution - Constant Space
 
+**Intuition**
+
+Let's look at the two types of `next` pointer connections we need to establish for a given tree.
+
+1. This first case is the one where we establish the next pointers between the two children of a given node. This is the easier of the two cases since both the children are accessible via the same node. We can simply do the following to establish this connection.
+
+   ```text
+    node.left.next = node.right
+   ```
+
+   ![](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/Figures/116/img6.png)
+
+2. This next case is not too straightforward to handle. In addition to establishing the next pointers between the nodes having a common parent, we also need to set-up the correct pointers between nodes which have a different parent.![](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/Figures/116/img7.png)
+
+If we simply had the parent pointers available with each node, this problem would have been trivial to solve. However, we don't have any such pointers available. The basic idea for this approach is based on the fact that:
+
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+"""
+# Definition for a Node.
+class Node:
+    def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):
+        self.val = val
+        self.left = left
+        self.right = right
+        self.next = next
+"""
+import collections
+class Solution:
+    def connect(self, root: 'Node') -> 'Node':
+        if not root:
+            return
+        
+        left_most = root
+        while left_most.left:
+            head = left_most
+            while head:
+                head.left.next = head.right
+                
+                if head.next:
+                    head.right.next = head.next.left
+                
+                head = head.next
+            left_most = left_most.left
+        return root
 ```
 {% endtab %}
 {% endtabs %}
