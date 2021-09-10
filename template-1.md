@@ -7,7 +7,7 @@
 {% tabs %}
 {% tab title="Python" %}
 ```python
-Time Complexity: 
+
 ```
 {% endtab %}
 {% endtabs %}
