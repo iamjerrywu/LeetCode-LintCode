@@ -43,13 +43,25 @@ Can you solve it in `O(N)` time and `O(1)` space?
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+class Solution:
+    def backspaceCompare(self, s: str, t: str) -> bool:        
+        return self.process(s) == self.process(t)
+    
+    def process(self, string):
+        stack = []
+        for c in string:
+            if c == '#':
+                if stack:
+                    stack.pop()
+            else:
+                stack.append(c)
+        return ''.join(stack)
 ```
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:**
-* **Space Complexity:** 
+* **Time Complexity: O\(n\)**
+* **Space Complexity:  O\(n\)**
 
 \*\*\*\*
 
