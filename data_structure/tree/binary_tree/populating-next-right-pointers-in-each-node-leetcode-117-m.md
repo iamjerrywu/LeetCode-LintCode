@@ -2,8 +2,6 @@
 
 ## Problem
 
-
-
 Given a binary tree
 
 ```text
