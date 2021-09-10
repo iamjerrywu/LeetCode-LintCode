@@ -131,6 +131,7 @@
   * [Basuc Calculator II 980 \(M\)](data_structure/stack/basuc-cakcykatir-ii-980-m.md)
   * [Remove All Adjacent Duplicates In String \(LeetCode 1047\) \(E\)](data_structure/stack/remove-all-adjacent-duplicates-in-string-leetcode-1047-e.md)
   * [Minimum Remove to Make Valid Parentheses 1249 \(M\)](data_structure/stack/minimum-remove-to-make-valid-parentheses-1249-m.md)
+  * [Backspace String Compare 1425 \(E\)](data_structure/stack/backspace-string-compare-1425-e.md)
 * [Queue](data_structure/s4.-stack-and-queue/README.md)
   * [Implement Queue by Two Stacks 40 \(M\)](data_structure/s4.-stack-and-queue/implement-queue-by-two-stacks-40-m.md)
   * [Implement Queue by Linked List 492 \(E\)](data_structure/s4.-stack-and-queue/457.-implement-queue-by-linked-list.md)
