@@ -60,6 +60,7 @@
     * [Range Sum Query 2D - Immutable 665 \(M\)](data_structure/array/prefix-sum/range-sum-query-2d-immutable-665-m.md)
     * [Find Pivot Index \(1068\) \(E\)](data_structure/array/prefix-sum/find-pivot-index-1068-e.md)
     * [Subarray Sum Equals to k II 1844 \(M\)](data_structure/array/prefix-sum/subarray-sum-equals-to-k-ii-1844.md)
+    * [Maximum Points You Can Obtain from Cards \(LeetCode 1423\) \(M\)](data_structure/array/prefix-sum/maximum-points-you-can-obtain-from-cards-leetcode-1423-m.md)
     * [Search Subarray 1457 \(M\)](data_structure/array/prefix-sum/search-subarray-1457-m.md)
     * [Shortest Subarray with Sum at Least K 1507 \(H\)](data_structure/array/prefix-sum/shortest-subarray-with-sum-at-least-k-1507-h.md)
     * [Matrix Restoration 1840 \(M\)](data_structure/array/prefix-sum/matrix-restoration-1840-m.md)
