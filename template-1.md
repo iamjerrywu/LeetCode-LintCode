@@ -2,7 +2,9 @@
 
 ## Problem
 
-## Solution
+## Solution 
+
+
 
 {% tabs %}
 {% tab title="Python" %}
@@ -12,6 +14,6 @@
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:**
+* **Time Complexity:** 
 * **Space Complexity:** 
 
