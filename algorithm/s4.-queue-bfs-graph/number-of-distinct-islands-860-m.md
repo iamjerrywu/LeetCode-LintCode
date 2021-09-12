@@ -29,11 +29,9 @@ Output: 3
 * `1 <= m, n <= 50`
 * `grid[i][j]` is either `0` or `1`.
 
-## Solution 
+## Solution - Brute Force DFS
 
-
-
-
+Find the possible island's coordination list, then sort them and transform them into new coordination list \(the left upper coordination now align to origin\). Then turn these new coordination list to sets and find the len\(sets\), then that's the distinct islands numbers
 
 {% tabs %}
 {% tab title="Python" %}
@@ -51,10 +49,14 @@ class Solution:
                     queue.append((i, j))
                     visited.add((i, j))
                     area, coord = self.search_islands(queue, grid, visited)
-                    islands[area].append(coord)
+                    new_coord = self.process(coord)
+                    if area not in islands:
+                        islands[area] = set([(new_coord)])
+                    else:
+                        islands[area].add(new_coord)
         ans = 0
-        for k, v_list in islands.items():
-            ans+=self.find_distinct(v_list)
+        for k, v_set in islands.items():
+            ans+= len(v_set)
         return ans
     
     def search_islands(self, queue, grid, visited):
@@ -76,19 +78,14 @@ class Solution:
             return (x, y) not in visited
         return False
     
-    def find_distinct(self, arr_list):
-        distinct = set()
-        arr_list = tuple(arr_list)
-        for arr in arr_list:
-            arr.sort()
-            diff_x, diff_y = arr[0][0], arr[0][1]
-            tmp = []
-            for x, y in arr:
-                x-=diff_x
-                y-=diff_y
-                tmp.append((x, y))
-            distinct.add(tuple(tmp))
-        return len(distinct)
+    def process(self, coord):
+        coord.sort()
+        new_coord = []
+        diff_x, diff_y = coord[0][0], coord[0][1]
+        for x, y in coord:
+            new_coord.append((x - diff_x, y - diff_y))
+        return tuple(new_coord)
+        
 ```
 {% endtab %}
 {% endtabs %}
