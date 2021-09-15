@@ -150,6 +150,7 @@
   * [Majority Element II 47 \(M\)](data_structure/hash/majority-element-ii-47-m.md)
   * [Longest Consecutive Sequence 124 \(M\)](data_structure/hash/longest-consecutive-sequence-124-m.md)
   * [LRU Cache 134 \(H\)](data_structure/hash/lru-cache-134-h.md)
+  * [Valid Anagram 158 \(E\)](data_structure/hash/valid-anagram-158-e.md)
   * [First Unique Character in a String 209 \(E\)](data_structure/hash/first-unique-character-in-a-string-209-e.md)
   * [Contains Duplicate 1320 \(E\)](data_structure/hash/contains-duplicate-1320-e.md)
   * [Contains Duplicate II 1319 \(E\)](data_structure/hash/contains-duplicate-ii-1319-e.md)
