@@ -52,13 +52,29 @@ class Solution:
             else:
                 anagrams[str_sort].append(str)
         return anagrams.values()
-
+class Solution {
 ```
 {% endtab %}
 
 {% tab title="java" %}
-```
-
+```java
+class Solution {
+    public List<List<String>> groupAnagrams(String[] strs) {
+        if (strs.length == 0)
+            return new ArrayList();
+        
+        Map<String, List> ans = new HashMap<String, List>();
+        for (String s : strs) {
+            char[] ch_arr = s.toCharArray();
+            Arrays.sort(ch_arr);
+            String key = new String(ch_arr);
+            if (!ans.containsKey(key))
+                ans.put(key, new ArrayList());
+            ans.get(key).add(s);
+        }
+        return new ArrayList(ans.values());
+    }
+}
 ```
 {% endtab %}
 {% endtabs %}
