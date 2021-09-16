@@ -23,6 +23,7 @@
   * [Multiply Strings 656 \(M\)](data_structure/string/656.-multiple-strings.md)
   * [Group Anagrams 772 \(M\)](data_structure/string/group-anagrams-772-m.md)
   * [Bold Words in String 812 \(E\)](data_structure/string/bold-words-in-string-812-e.md)
+  * [Unique Email Address \(LeetCode 929\) \(E\)](data_structure/string/unique-email-address-leetcode-929-e.md)
   * [Capitalizes The First Letter 936 \(E\)](data_structure/string/capitalizes-the-first-letter-936-e.md)
   * [Palindrome Data Stream 958 \(E\)](data_structure/string/palindrome-data-stream-958-e.md)
   * [Count Binary Substrings 1079 \(E\)](data_structure/string/count-binary-substrings-1079-e.md)
