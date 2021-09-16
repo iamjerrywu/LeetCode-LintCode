@@ -25,31 +25,41 @@ Output: false
 
 **Follow up:** What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
 
-## Solution 
-
-
+## Solution - Sorting
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        return sorted(s) == sorted(t)
+        
 ```
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
-* **Space Complexity:** 
-
-\*\*\*\*
+* **Time Complexity:  O\(nlogn\)**
+* **Space Complexity: O\(n\)**
 
 ## Solution 
-
-
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+import collections
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        counter = collections.Counter(s)
+        
+        for c in t:
+            if c not in counter or counter[c] == 0:
+                return False
+            counter[c]-=1
+        
+        for num in counter.values():
+            if num != 0:
+                return False
+        return True
 ```
 {% endtab %}
 {% endtabs %}
