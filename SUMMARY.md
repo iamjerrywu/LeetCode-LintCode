@@ -77,6 +77,7 @@
   * [Remove Duplicates from Sorted Array 100 \(E\)](data_structure/array/remove-duplicates-from-sorted-array-100-e.md)
   * [First Missing Positive 189 \(M\)](data_structure/array/first-missing-positive-189-m.md)
   * [Shortest Word Distance \(LeetCode 243\) \(E\)](data_structure/array/shortest-word-distance-leetcode-243-e.md)
+  * [Shortest Word Distance II \(LeetCode 244\) \(M\)](data_structure/array/shortest-word-distance-ii-leetcode-244-m.md)
   * [ArrayList 385 \(E\)](data_structure/array/arraylist-385-e.md)
   * [Longest Continuous Increasing Subsequence 397 \(E\)](data_structure/array/longest-continuous-increasing-subsequence-397-e.md)
   * [Second Max Array 479 \(E\)](data_structure/array/second-max-array-479-e.md)
