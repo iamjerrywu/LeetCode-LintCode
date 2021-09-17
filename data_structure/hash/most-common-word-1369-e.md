@@ -71,6 +71,6 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity:** 
+* **Space Complexity:**
 
