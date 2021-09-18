@@ -455,6 +455,7 @@
   * [Word Search II 132 \(H\)](algorithm/dfs/132.-word-search-ii-h.md)
   * [Combination Sum 135 \(M\)](algorithm/dfs/135.-combination-sum-m.md)
   * [Palindrome Partitioning 136 \(M\)](algorithm/dfs/palindrome-partitioning-136-m.md)
+  * [Longest String Chains 257 \(M\)](algorithm/dfs/longest-string-chains-257-m.md)
   * [Letter Combinations of a Phone Number 425 \(M\)](algorithm/dfs/425.-letter-combinations-of-a-phone-number-m.md)
   * [Generate Parenthese 427 \(M\)](algorithm/dfs/generate-parenthese-427-m.md)
   * [Beautiful Arrangement \(LeetCode 526\) \(M\)](algorithm/dfs/beautiful-arrangement-leetcode-526-m.md)
