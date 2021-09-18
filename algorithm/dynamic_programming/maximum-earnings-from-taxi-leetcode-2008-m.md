@@ -40,6 +40,42 @@ We earn 9 + 5 + 6 = 20 dollars in total.
 * `1 <= starti < endi <= n`
 * `1 <= tipi <= 105`
 
+## Solution - DFS \(LTE\)
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def maxTaxiEarnings(self, n: int, rides: List[List[int]]) -> int:
+        n = len(rides)
+        rides.sort(key = lambda r:(r[0], r[1]))
+        path = []
+        collec = []
+        self.dfs(0, path, collec, 0, n, rides)
+        return max(collec)
+    
+    def dfs(self, index, path, collec, tmp, n, rides):
+        if index == n:
+            collec.append(tmp)
+            return 
+        for i in range(index, n):
+            if path and path[-1][1] > rides[i][0]:
+                self.dfs(i + 1, path, collec, tmp, n, rides)
+                continue
+            path.append(rides[i])
+            tmp+=rides[i][1] - rides[i][0] + rides[i][2]
+            self.dfs(i + 1, path, collec, tmp, n, rides)
+            tmp-=rides[i][1] - rides[i][0] + rides[i][2]
+            path.pop()
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity:** 
+* **Space Complexity:**
+
+\*\*\*\*
+
 ## Solution
 
 {% tabs %}
