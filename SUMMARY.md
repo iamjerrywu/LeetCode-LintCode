@@ -540,6 +540,7 @@
   * [Minimum Partition 724 \(M\)](algorithm/dynamic_programming/724.-minimum-partition.md)
   * [Dyeing Problem 1444 \(M\)](algorithm/dynamic_programming/dyeing-problem-1444-m.md)
   * [Maximum Number of Points with Cost 1937 \(M\)](algorithm/dynamic_programming/maximum-number-of-points-with-cost-1937-m.md)
+  * [Maximum Earnings From Taxi \(LeetCode 2008\) \(M\)](algorithm/dynamic_programming/maximum-earnings-from-taxi-leetcode-2008-m.md)
 * [Greedy](algorithm/greedy/README.md)
   * [Gas Station 187 \(M\)](algorithm/greedy/gas-station-187-m.md)
   * [Find the Celebrity \(LeetCode 277\) \(M\)](algorithm/greedy/find-the-celebrity-leetcode-277-m.md)
