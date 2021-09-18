@@ -462,6 +462,7 @@
   * [Word Squares 634 \(H\)](algorithm/dfs/word-squares-634-h.md)
   * [Sudoku Solver 802 \(H\)](algorithm/dfs/802-sudoku-solver-h.md)
   * [Traveling Salesman Problem 816 \(H\)](algorithm/dfs/816.-traveling-salesman-problem-h.md)
+  * [Most Stones Removed with Same Row or Column \(LeetCode 947\) \(M\)](algorithm/dfs/most-stones-removed-with-same-row-or-column-leetcode-947-m.md)
   * [Critical Connections in a Network 1271 \(H\)](algorithm/dfs/critical-connections-in-a-network-1271-h.md)
   * [Longest Path On The Tree 1469 \(M\)](algorithm/dfs/longest-path-on-the-tree-1469-m.md)
   * [Splitting a String Into Descending Consecutive Values \(LeetCode 1849\) \(M\) \(](algorithm/dfs/splitting-a-string-into-descending-consecutive-values-leetcode-1849-m.md)

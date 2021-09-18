@@ -72,8 +72,6 @@ class Solution:
 * **Time Complexity:** 
 * **Space Complexity:**
 
-\*\*\*\*
-
 ## Solution - Graph Sol 2
 
 {% tabs %}
