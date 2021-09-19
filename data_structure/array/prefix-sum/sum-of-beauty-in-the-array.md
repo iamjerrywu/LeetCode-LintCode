@@ -1,4 +1,4 @@
-# Sum of Beauty in the Array
+# Sum of Beauty in the Array \(LeetCode 2012\) \(M\)
 
 ## Problem
 
