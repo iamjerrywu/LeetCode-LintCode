@@ -119,15 +119,12 @@ class DetectSquares:
         cnt = 0
         x, y = point[0], point[1]
         for new_y in self.x_point[x]:
-            # WARNING! Need to bypass when new_y is equal to y
+            # WARNING, if New_Y == cur_y, then bypass
             if new_y == y:
                 continue
-            new_x = x + (y - new_y)
-            if self.points[(new_x, new_y)] > 0 and self.points[(new_x, y)] > 0:
-                cnt +=self.points[(new_x, new_y)] * self.points[(new_x, y)]
-            new_x = x + (new_y - y)
-            if self.points[(new_x, new_y)] > 0 and self.points[(new_x, y)] > 0:
-                cnt +=self.points[(new_x, new_y)] * self.points[(new_x, y)]
+            for new_x in [x + (y - new_y), x + (new_y - y)]:
+                if self.points[(new_x, new_y)] > 0 and self.points[(new_x, y)] > 0:
+                    cnt +=self.points[(new_x, new_y)] * self.points[(new_x, y)]
         return cnt    
 
 # Your DetectSquares object will be instantiated and called as such:
