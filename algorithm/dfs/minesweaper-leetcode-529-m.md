@@ -51,7 +51,43 @@ Output: [["B","1","E","1","B"],["B","1","X","1","B"],["B","1","1","1","B"],["B",
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+DIRECTIONS = [[1, 0], [-1, 0], [0, 1], [0, -1], [1, 1], [-1, 1], [1, -1], [-1,-1]]
+class Solution:
+    def updateBoard(self, board: List[List[str]], click: List[int]) -> List[List[str]]:
+        if not board:
+            return board
+        
+        x, y = click
+        if board[x][y] == 'M':
+            board[x][y] = 'X'
+            return board
+        
+        self.dfs(x, y, board, set())
+        return board
+    
+    def dfs(self, x, y, board, visited):
+        adj_mines = 0
+        empty_list = []
+        for dx, dy in DIRECTIONS:
+            new_x, new_y = x + dx, y + dy
+            if self.is_valid(new_x, new_y, board, visited):
+                if board[new_x][new_y] == 'M':
+                    adj_mines+=1
+                else:
+                    empty_list.append((new_x, new_y))                
+        if adj_mines:
+            board[x][y] = str(adj_mines)
+            return 
+        else:
+            board[x][y] = 'B'
+            visited.add((x, y))
+            for x, y in empty_list:
+                self.dfs(x, y, board, visited)
+    
+    def is_valid(self, x, y, board, visited):
+        if 0 <= x < len(board) and 0 <= y < len(board[0]):
+            return (x, y) not in visited
+        return False
 ```
 {% endtab %}
 {% endtabs %}
