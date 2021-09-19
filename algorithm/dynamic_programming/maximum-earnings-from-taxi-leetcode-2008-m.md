@@ -76,12 +76,53 @@ class Solution:
 
 \*\*\*\*
 
+## Solution - Heap
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def maxTaxiEarnings(self, n: int, rides: List[List[int]]) -> int:
+        rides.sort()
+        for ele in rides:
+            ele[2] += ele[1] - ele[0]
+        print(rides)
+        cur_profit, max_profit = 0, 0
+        heap = []
+        for start, end, profit in rides:
+            while heap and heap[0][0] <= start:
+                _, tmp_profit = heapq.heappop(heap)
+                cur_profit = max(cur_profit, tmp_profit)
+            heapq.heappush(heap, (end, cur_profit + profit))
+            max_profit = max(max_profit, cur_profit + profit)
+        return max_profit
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity:** 
+* **Space Complexity:**
+
+\*\*\*\*
+
 ## Solution
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+import collections
+class Solution:
+    def maxTaxiEarnings(self, n: int, rides: List[List[int]]) -> int:
+        mapping = defaultdict(list)
+        for start, end, tips in rides:
+            mapping[start].append([end, end - start + tips])
+        
+        dp = [0] * (n + 1)
+        for i in range(n - 1, 0, -1):
+            for end, profit in mapping[i]:
+                dp[i] = max(dp[i], dp[end] + profit)
+            dp[i] = max(dp[i], dp[i + 1])
+        return dp[1]
 ```
 {% endtab %}
 {% endtabs %}
