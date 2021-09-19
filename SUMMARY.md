@@ -29,6 +29,7 @@
   * [Count Binary Substrings 1079 \(E\)](data_structure/string/count-binary-substrings-1079-e.md)
   * [Defanging an IP Address \(LeetCode 1080\) \(E\)](data_structure/string/defanging-an-ip-address-leetcode-1080-e.md)
   * [Attendance Judgment 1154 \(E\)](data_structure/string/attendance-judgment-1154-e.md)
+  * [Validate IP Address 1222 \(M\)](data_structure/string/validate-ip-address-1222-m.md)
   * [Search Suggestions System \(LeetCode 1268\) M](data_structure/string/search-suggestions-system-leetcode-1268-m.md)
   * [Compare Version Numbers 1352 \(M\)](data_structure/string/1352.-compare-version-numbers-m.md)
   * [Text Justification 1361 \(H\)](data_structure/string/text-justification-1361-h.md)
