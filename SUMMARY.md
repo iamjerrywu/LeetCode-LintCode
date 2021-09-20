@@ -182,6 +182,7 @@
   * [High Five \(LeetCode 1086\) \(E\)](data_structure/hash/high-five-leetcode-1086-e.md)
   * [Bulls and Cows 1299 \(M\)](data_structure/hash/bulls-and-cows-1299-m.md)
   * [Tweet Counts Per Frequency 1348 \(M\)](data_structure/hash/tweet-counts-per-frequency-1348-m.md)
+  * [Number of Good Pairs \(LeetCode 1512\) \(E\)](data_structure/hash/number-of-good-pairs-leetcode-1512-e.md)
   * [Can Convert 1540 \(E\)](data_structure/hash/can-convert-1540-e.md)
   * [Slowest Key \(LeetCode 1629\) \(E\)](data_structure/hash/slowest-key-1629-e.md)
   * [Distinguish Username 1789 \(E\)](data_structure/hash/distinguish-username-1789-e.md)
