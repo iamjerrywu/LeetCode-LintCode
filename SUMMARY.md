@@ -126,6 +126,7 @@
     * [Remove K Digits 402 \(M\)](data_structure/stack/monotone-stack/remove-k-digits-402-m.md)
     * [Maximal Rectangle 510 \(H\)](data_structure/stack/monotone-stack/maximal-rectangle-510-h.md)
     * [Daily Temperatures 1020 \(M\)](data_structure/stack/monotone-stack/daily-temperatures-1020-m.md)
+    * [Buildings With an Ocean View \(leetCode 1762\) \(M\)](data_structure/stack/monotone-stack/buildings-with-an-ocean-view-leetcode-1762-m.md)
     * [Final Discounted Price 1852 \(M\)](data_structure/stack/monotone-stack/final-discounted-price.md)
     * [Number of Visible People in a Queue \(LeetCode1944\) \(H\)](data_structure/stack/monotone-stack/number-of-visible-people-in-a-queue-1944-h.md)
   * [Implement Stack by Two Queues 494 \(E\)](data_structure/stack/implement-stack-by-two-queues-494-e.md)
