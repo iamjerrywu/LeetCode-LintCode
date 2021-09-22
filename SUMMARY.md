@@ -322,6 +322,7 @@
   * [Sparse Matrix Multiplication 654 \(M\)](algorithm/sorting/654.-sparse-matrix-multiplication-m.md)
   * [Multi-keyword Sort 846 \(E\)](algorithm/sorting/multi-keyword-sort-846-e.md)
   * [Reorder Data in Log Files 937 \(E\)](algorithm/sorting/reorder-data-in-log-files-937-e.md)
+  * [Analyze User Website Visit Pattern \(LeetCode 1152\) \(M\)](algorithm/sorting/analyze-user-website-visit-pattern-leetcode-1152-m.md)
   * [Minimum Time Difference 1184 \(M\)](algorithm/sorting/minimum-time-difference-1184-m.md)
   * [Relative Ranks 1200 \(E\)](algorithm/sorting/relative-ranks-1200-e.md)
   * [The K Weakest Rows in a Matrix \(LeetCode1337\) \(E\)](algorithm/sorting/the-k-weakest-rows-in-a-matrix-leetcode1337-e.md)
