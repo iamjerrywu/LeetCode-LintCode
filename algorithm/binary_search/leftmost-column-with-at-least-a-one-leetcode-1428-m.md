@@ -89,8 +89,8 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
-* **Space Complexity:**
+* **Time Complexity: O\(n \* m\)**
+* **Space Complexity:O\(1\)**
 
 \*\*\*\*
 
@@ -129,15 +129,22 @@ class Solution:
                 end = mid
             else:
                 start = mid
-        if start < ans and binaryMatrix.get(i, start) == 1:
+        
+        # early break
+        if start >= ans:
+            return float('inf')
+        if binaryMatrix.get(i, start) == 1:
             return start
-        if end < ans and binaryMatrix.get(i, end) == 1:
+        # early break
+        if end >= ans:
+            return float('inf')
+        if binaryMatrix.get(i, end) == 1:
             return end
         return float('inf')
 ```
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
-* **Space Complexity:**
+* **Time Complexity: O\(nlogm\)**
+* **Space Complexity: O\(1\)**
 
