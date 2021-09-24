@@ -61,7 +61,40 @@ Output: 1
 * `mat[i][j]` is either `0` or `1`.
 * `mat[i]` is sorted in non-decreasing order.
 
-## Solution
+## Solution - Brute Force
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+# """
+# This is BinaryMatrix's API interface.
+# You should not implement it, or speculate about its implementation
+# """
+#class BinaryMatrix(object):
+#    def get(self, row: int, col: int) -> int:
+#    def dimensions(self) -> list[]:
+
+class Solution:
+    def leftMostColumnWithOne(self, binaryMatrix: 'BinaryMatrix') -> int:
+        ans = float('inf')
+        
+        m, n = binaryMatrix.dimensions()
+        
+        for i in range(m):
+            for j in range(n):
+                if binaryMatrix.get(i, j) == 1:
+                    ans = min(ans, j)
+        return ans if ans != float('inf') else -1
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity:** 
+* **Space Complexity:**
+
+\*\*\*\*
+
+## Solution - Binary Search
 
 {% tabs %}
 {% tab title="Python" %}
