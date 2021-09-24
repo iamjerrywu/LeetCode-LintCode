@@ -137,6 +137,7 @@
   * [Min Stack 12 \(M\)](data_structure/stack/12.-min-stack.md)
   * [Simplify Path 421 \(M\)](data_structure/stack/simplify-path-421-m.md)
   * [Decode String 575 \(M\)](data_structure/stack/decode-string-575-m.md)
+  * [Longest Absolute File Path 643 \(M\)](data_structure/stack/longest-absolute-file-path-643-m.md)
   * [Max Stack 859 \(H\)](data_structure/stack/859-max-stack-h.md)
   * [Basic Calculator 978 \(M\)](data_structure/stack/basic-calculator-978-m.md)
   * [Basuc Calculator II 980 \(M\)](data_structure/stack/basuc-cakcykatir-ii-980-m.md)
