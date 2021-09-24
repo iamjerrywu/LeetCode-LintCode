@@ -99,7 +99,41 @@ class Solution:
 {% tabs %}
 {% tab title="Python" %}
 ```python
+# """
+# This is BinaryMatrix's API interface.
+# You should not implement it, or speculate about its implementation
+# """
+#class BinaryMatrix(object):
+#    def get(self, row: int, col: int) -> int:
+#    def dimensions(self) -> list[]:
 
+class Solution:
+    def leftMostColumnWithOne(self, binaryMatrix: 'BinaryMatrix') -> int:
+        ans = float('inf')
+        
+        m, n = binaryMatrix.dimensions()
+        
+        for i in range(m):
+            index = self.binary_search(binaryMatrix, i, n, ans)
+            ans = min(ans, index)
+        return ans if ans != float('inf') else -1
+    
+    def binary_search(self, binaryMatrix, i, n, ans):
+        start, end = 0, n - 1
+        while start + 1 < end:
+            # early break
+            if start >= ans:
+                return float('inf')
+            mid = start + (end - start)//2
+            if binaryMatrix.get(i, mid) == 1:
+                end = mid
+            else:
+                start = mid
+        if start < ans and binaryMatrix.get(i, start) == 1:
+            return start
+        if end < ans and binaryMatrix.get(i, end) == 1:
+            return end
+        return float('inf')
 ```
 {% endtab %}
 {% endtabs %}
