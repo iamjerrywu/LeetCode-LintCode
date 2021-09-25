@@ -442,6 +442,7 @@
   * [Sliding Puzzle II 794 \(H\)](algorithm/s4.-queue-bfs-graph/sliding-puzzle-ii-794-h.md)
   * [Open the Lock 796 \(H\)](algorithm/s4.-queue-bfs-graph/untitled.md)
   * [Number of Distinct Islands 860 \(M\)](algorithm/s4.-queue-bfs-graph/number-of-distinct-islands-860-m.md)
+  * [Untitled](algorithm/s4.-queue-bfs-graph/untitled-1.md)
   * [Friend Circles 1179 \(M\)](algorithm/s4.-queue-bfs-graph/1179.-friend-circles.md)
   * [Modern Ludo I 1565 \(M\)](algorithm/s4.-queue-bfs-graph/modern-ludo-i-1565-m.md)
   * [Lake Escape 1828 \(H\)](algorithm/s4.-queue-bfs-graph/lake-escape-1828-h.md)
