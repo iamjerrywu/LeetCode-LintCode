@@ -104,3 +104,30 @@ class Solution:
 * **Time Complexity:** 
 * **Space Complexity:**
 
+## Solution - Heap
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+import collections
+class Solution:
+    def sortString(self, s: str) -> str:
+        count = collections.Counter(s)
+        inc = True
+        res = ''
+        while count:
+            for c in sorted(count) if inc else reversed(sorted(count)):
+                if count[c] > 0:
+                    res+=c
+                    count[c]-=1
+                else:
+                    del count[c]
+            inc = not inc
+        return res
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity:** 
+* **Space Complexity:**
+
