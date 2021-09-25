@@ -64,12 +64,39 @@ Output: "ops"
 * `1 <= s.length <= 500`
 * `s` contains only lower-case English letters.
 
-## Solution
+## Solution - Heap
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
+import heapq
+class Solution:
+    def sortString(self, s: str) -> str:
+        count = collections.Counter(s)
+        
+        inc_heap = []
+        dec_heap = []
+        
+        for [k, v] in count.items():
+            heapq.heappush(inc_heap, [ord(k), v])
+        
+        res = ''
+        while inc_heap or dec_heap:
+            while inc_heap:
+                cur = heapq.heappop(inc_heap)
+                res+=chr(cur[0])
+                cur[1]-=1
+                if cur[1] != 0:
+                    heapq.heappush(dec_heap, [-cur[0], cur[1]])
+            
+            while dec_heap:
+                cur = heapq.heappop(dec_heap)
+                res+=chr(-cur[0])
+                cur[1]-=1
+                if cur[1] != 0:
+                    heapq.heappush(inc_heap, [-cur[0], cur[1]])
 
+        return res
 ```
 {% endtab %}
 {% endtabs %}
