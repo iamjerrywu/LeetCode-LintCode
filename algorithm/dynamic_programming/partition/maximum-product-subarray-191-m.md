@@ -35,13 +35,24 @@ Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+class Solution:
+    def maxProduct(self, nums: List[int]) -> int:
+        if not nums:
+            return None
+        
+        ans = -float('inf')
+        for i in range(len(nums)):
+            product = 1
+            for j in range(i, len(nums)):
+                product*=nums[j]
+                ans = max(ans, product)
+        return ans
 ```
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
-* **Space Complexity:**
+* **Time Complexity: O\(n^2\)**
+* **Space Complexity: O\(1\)**
 
 ## Solution - DP
 
