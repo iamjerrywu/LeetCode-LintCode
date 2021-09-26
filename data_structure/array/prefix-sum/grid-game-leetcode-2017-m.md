@@ -47,12 +47,24 @@ The second robot will collect 0 + 1 + 3 + 3 + 0 = 7 points.
 * `1 <= n <= 5 * 104`
 * `1 <= grid[r][c] <= 105`
 
-## Solution
+## Solution - Prefix Sums + Greedy
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+class Solution:
+    def gridGame(self, grid: List[List[int]]) -> int:
+        prefix_sums = [[0] for _ in range(2)]
+        for i in range(2):
+            for j in range(len(grid[0])):
+                prefix_sums[i].append(prefix_sums[i][-1] + grid[i][j])      
+        r2_min = float('inf')
+        
+        for j in range(len(grid[0])):
+            sum_val = max(prefix_sums[0][len(grid[0])] - prefix_sums[0][j + 1], prefix_sums[1][j])
+            if sum_val < r2_min:
+                r2_min = sum_val
+        return r2_min
 ```
 {% endtab %}
 {% endtabs %}
