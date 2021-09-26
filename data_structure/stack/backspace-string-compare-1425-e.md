@@ -1,4 +1,4 @@
-# Backspace String Compare 1425 \(E\)
+# Backspace String Compare \(1425\) \(E\)
 
 ## Problem
 
