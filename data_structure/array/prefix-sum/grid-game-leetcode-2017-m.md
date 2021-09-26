@@ -71,6 +71,7 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+  * n = m \* n \(m: len\(board\), n: len\(board\[0\]\)
+* **Space Complexity:O\(n\)**
 
