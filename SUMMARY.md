@@ -616,6 +616,7 @@
   * [Design Parking System \(LeetCode 1603\) \(E\)](other/simulation/design-parking-system-leetcode-1603-e.md)
   * [Pick Carrots 1896 \(E\)](other/simulation/pick-carrots-1896-e.md)
   * [Check if Move is Legal \(LeetCode 1958\) \(M\)](other/simulation/check-if-move-is-legal-leetcode-1958-m.md)
+  * [Check if Word Can Be Placed In Crossword \(LeetCode 2018\) \(M\)](other/simulation/check-if-word-can-be-placed-in-crossword-leetcode-2018-m.md)
 * [Object-Oriented Design](other/object-oriented-design/README.md)
   * [Student ID 455 \(E\)](other/object-oriented-design/student-id-455-e.md)
   * [Reference 456 \(N\)](other/object-oriented-design/reference-456-n.md)
