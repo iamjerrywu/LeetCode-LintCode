@@ -50,6 +50,8 @@ Explanation: The word "ca" can be placed as shown above (right to left).
 
 ## Solution
 
+Pay attention that the word actually doesn't need to fit in in order, but can be scattered randomly.
+
 {% tabs %}
 {% tab title="Python" %}
 ```python

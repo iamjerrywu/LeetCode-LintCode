@@ -521,6 +521,7 @@
   * [Partition](algorithm/dynamic_programming/partition/README.md)
     * [Longest Increasing Subsequence 76 \(M\)](algorithm/dynamic_programming/partition/76.-longest-increasing-sequence-m.md)
     * [Word Break 107 \(M\)](algorithm/dynamic_programming/partition/107.-word-break--m.md)
+    * [Maximum Product Subarray 191 \(M\)](algorithm/dynamic_programming/partition/maximum-product-subarray-191-m.md)
     * [Word Break II 582 \(H\)](algorithm/dynamic_programming/partition/word-break-ii-582-h.md)
     * [Word Break III 683 \(M\)](algorithm/dynamic_programming/partition/word-break-iii-m.md)
     * [Decode Ways 512 \(M\)](algorithm/dynamic_programming/partition/512.-decode-ways-m.md)
