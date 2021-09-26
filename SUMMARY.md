@@ -272,6 +272,7 @@
   * [Top k Largest Numbers 544 \(M\)](data_structure/heap/top-k-largest-numbers-544-m.md)
   * [Top k Largest Numbers II 545 \(M\)](data_structure/heap/top-k-largest-numbers-ii-545-m.md)
   * [K Closests Points 612 \(M\)](data_structure/heap/k-closets-points-612-m.md)
+  * [Reorganize String 1041 \(M\)](data_structure/heap/reorganize-string-1041-m.md)
   * [Top K Frequent Elements 1281 \(M\)](data_structure/heap/top-k-frequent-elements-1281-m.md)
   * [Minimum Cost to Hire K Workers 1512 \(H\)](data_structure/heap/minimum-cost-to-hire-k-workers-1512-h.md)
   * [Process Tasks Using Servers \(LeetCode1835\) \(M\)](data_structure/heap/process-tasks-using-servers-1835-m.md)
