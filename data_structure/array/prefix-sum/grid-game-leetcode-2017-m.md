@@ -49,6 +49,8 @@ The second robot will collect 0 + 1 + 3 + 3 + 0 = 7 points.
 
 ## Solution - Prefix Sums + Greedy
 
+![](../../../.gitbook/assets/screen-shot-2021-09-26-at-12.30.51-am.png)
+
 {% tabs %}
 {% tab title="Python" %}
 ```python
