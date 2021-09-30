@@ -32,7 +32,35 @@ Explanation: Longest consecutive sequence path is 2-3, not 3-2-1, so return 2.
 {% tabs %}
 {% tab title="Python" %}
 ```python
-
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def __init__(self):
+        self.max_length = 1
+    def longestConsecutive(self, root: Optional[TreeNode]) -> int:
+        if not root:
+            return 0
+        
+        self.dfs(root, self.max_length, 1, float('inf'))
+        return self.max_length
+    
+    def dfs(self, node, max_length, length, parent_val):
+        if not node:
+            return 
+        
+        if node.val == parent_val+1:
+            length+=1
+        else:
+            length = 1
+        self.max_length = max(self.max_length, length)
+        parent_val = node.val
+        self.dfs(node.left, self.max_length, length, parent_val)
+        self.dfs(node.right, self.max_length, length, parent_val)
+        
 ```
 {% endtab %}
 {% endtabs %}
