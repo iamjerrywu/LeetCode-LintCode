@@ -412,6 +412,7 @@
   * [Kth Smallest Numbers in Unsorted Array 461 \(M\)](algorithm/binary_search/kth-smallest-numbers-in-unsorted-array-461-m.md)
   * [Kth Smallest Sum In Two Sorted Arrays 465 \(H\)](algorithm/binary_search/kth-smallest-sum-in-two-sorted-arrays-465-h.md)
   * [Maximum Number in Mountain Sequence 585 \(M\)](algorithm/binary_search/maximum-number-in-mountain-sequence-585-m.md)
+  * [Binary Tree Longest Consecutive Sequence 595 \(M\)](algorithm/binary_search/binary-tree-longest-consecutive-sequence-595-m.md)
   * [Find Minimum in Rotated Sorted Array 159 \(M\)](algorithm/binary_search/find-minimum-in-rotated-sorted-array-159-m.md)
   * [Search in Rotated Sorted Array 62 \(M\)](algorithm/binary_search/search-in-rotated-sorted-array-62-m.md)
   * [Search in Rotated Sorted Array II 63 \(M\)](algorithm/binary_search/search-in-rotated-sorted-array-ii-63-m.md)

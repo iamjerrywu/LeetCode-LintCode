@@ -52,11 +52,12 @@ class Solution:
                 sec = heapq.heappop(rec)
                 ans.append(sec[1])
                 val2 = -sec[0] - 1
+                
+                if val2 > 0:
+                    heapq.heappush(rec, [-val2, sec[1]])
             
             if val1 > 0:
                 heapq.heappush(rec, [-val1, first[1]])
-            if val2 > 0:
-                heapq.heappush(rec, [-val2, sec[1]])
             
         
         #last chr
@@ -70,6 +71,6 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
-* **Space Complexity:**
+* **Time Complexity: O\(n\)**
+* **Space Complexity: O\(n\)**
 
