@@ -2,6 +2,10 @@
 
 ## Problem
 
+{% hint style="danger" %}
+This problem is a fake easy, more like a medium + 
+{% endhint %}
+
 Description
 
 Given a set of keywords `words` and a string `S`, make all appearances of all keywords in S bold. Any letters between `<b>` and `</b>` tags become bold.  
