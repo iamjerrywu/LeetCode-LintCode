@@ -48,6 +48,81 @@ Output:
 {% tabs %}
 {% tab title="python" %}
 ```python
+import collections
+class Solution:
+    def addBoldTag(self, s: str, words: List[str]) -> str:
+        rec = collections.defaultdict(list)
+        
+        for word in words:
+            self.process(s, word, rec)
+        rec_list = []
+        
+        for v_list in rec.values():
+            for start, end in v_list:
+                rec_list.append([start, end])
+        
+        rec_list.sort(key = lambda r:(r[0], r[1]))
+        new_rec_list = []
+        
+        for start, end in rec_list:
+            
+            if not new_rec_list or new_rec_list[-1][1] + 1 < start:
+                new_rec_list.append([start, end])
+            else:
+                new_rec_list[-1][1] = max(new_rec_list[-1][1], end)
+        
+        ans = self.generate_ans(s, new_rec_list)
+        return ans
+    
+    def process(self, s, word, rec):
+        start = 0
+        offset = 0
+        while s.find(word) != -1:
+            start = s.find(word)
+            
+            rec[word].append([offset + start, offset + start + len(word) - 1])
+            offset+= start + 1
+            s = s[start + 1:]
+                
+    def generate_ans(self, s, new_rec_list):
+        ans = ""
+        idx = 0
+        for i in range(len(s)):
+            if idx < len(new_rec_list) and i == new_rec_list[idx][0]:
+                ans+="<b>"
+                ans+=s[i]
+                if i == new_rec_list[idx][1]:
+                    ans+="</b>"
+                    idx+=1
+            elif idx < len(new_rec_list) and i == new_rec_list[idx][1]:
+                ans+=s[i]
+                ans+="</b>"
+                idx+=1
+            else:
+                ans+=s[i]
+        return ans
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+## Solution
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
 class Solution:
     """
     @param words: the words
