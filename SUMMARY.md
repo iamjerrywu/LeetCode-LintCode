@@ -393,6 +393,7 @@
     * [Pick Apples 1850 \(M\)](algorithm/two_pointer/same-direction/pick-apples-1850-m.md)
     * [1870. Number of Substrings with All Zeros \(M\)](algorithm/two_pointer/same-direction/1870.-number-of-substrings-with-all-zeros.md)
     * [Minimum Number of Flips to Make the Binary String Alternating \(LeetCode 1888\) \(M\)](algorithm/two_pointer/same-direction/minimum-number-of-flips-to-make-the-binary-string-alternating-leetcode-1888-m.md)
+    * [Untitled](algorithm/two_pointer/same-direction/untitled.md)
 * [Binary Search](algorithm/binary_search/README.md)
   * [Classical](algorithm/binary_search/classical/README.md)
     * [Search Insert Position 60 \(E\)](algorithm/binary_search/classical/search-insert-position-60-e.md)
