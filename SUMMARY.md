@@ -587,6 +587,7 @@
   * [Maximum Matrix Sum \(LeetCode 1975\) \(M\)](algorithm/greedy/maximum-matrix-sum-leetcode-1975-m.md)
   * [The Number of Weak Characters in the Game \(LeetCode 1996\) \(M\)](algorithm/greedy/the-number-of-weak-characters-in-the-game-leetcode-1996-m.md)
   * [Number of Pairs of Interchangeable Rectangles \(LeetCode 2001\) \(M\)](algorithm/greedy/number-of-pairs-of-interchangeable-rectangles-leetcode-2001-m.md)
+  * [Minimum Moves to Convert String \(LeetCode 2027\) \(E\)](algorithm/greedy/minimum-moves-to-convert-string-leetcode-2027-e.md)
 
 ## Other
 
