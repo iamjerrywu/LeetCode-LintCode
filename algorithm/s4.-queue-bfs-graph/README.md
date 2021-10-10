@@ -1,7 +1,6 @@
 ---
 description: 11 (2E/7M/2H)
 ---
-
 # BFS
 
 ## BFS
@@ -18,7 +17,7 @@ Application domain:
 * Tropological sorting 
   * Easier than BFS
 
-![](../../.gitbook/assets/capture%20%283%29.png)
+![](<../../.gitbook/assets/capture (3).png>)
 
 ### Applicable Scenarios
 
@@ -28,10 +27,10 @@ Application domain:
 
 #### Longest Path:
 
-* DP: if graph can be stratified \(path is directional and no loop\)
+* DP: if graph can be stratified (path is directional and no loop)
 * DFS: If graph cannot be stratified
 
-### Template \(1\)
+### Template (1)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -59,7 +58,7 @@ while queue:
 {% endtab %}
 {% endtabs %}
 
-### Template \(2\) - Basic BFS
+### Template (2) - Basic BFS
 
 {% tabs %}
 {% tab title="python" %}
@@ -74,6 +73,9 @@ visited.add(0)
 while queue:
     # take 1st element 
     now = queue.popleft()
+    
+    # write visited add here is bad! since the now m
+    # visited.add(now)
     
     for next_point in self.find_next(now):
         if not self.is_valid(next_point):
@@ -108,7 +110,7 @@ while (!queue.isEmpty()) {
 {% endtab %}
 {% endtabs %}
 
-### Template \(3\) - Level Order BFS
+### Template (3) - Level Order BFS
 
 {% tabs %}
 {% tab title="Python" %}
@@ -163,7 +165,7 @@ while (!queue.isEmpty()) {
 {% endtab %}
 {% endtabs %}
 
-### Template\(4\) - Dict BFS
+### Template(4) - Dict BFS
 
 {% tabs %}
 {% tab title="Python" %}
@@ -220,31 +222,31 @@ Still based on BFS structure
 Graph: 
 
 * n vertices, m edges
-* m largest can be O\(n^2\)
-* BFS Time Complexity = O\(n + m\)
-  * Can say it's O\(m\) as well, since m &gt;&gt; n
+* m largest can be O(n^2)
+* BFS Time Complexity = O(n + m)
+  * Can say it's O(m) as well, since m >> n
 
 Matrix:
 
 * R columns / C rows
 * R\*C vertices, R\*C\*2 edges
-* BFS Time Complexity = O\(R\*C\)
+* BFS Time Complexity = O(R\*C)
 
 ## Queue
 
-Queue is a FIFO \(first in first out\) data structure, and widely used in BFS \(breadth-first-search\)
+Queue is a FIFO (first in first out) data structure, and widely used in BFS (breadth-first-search)
 
 There are two ways to implement queue:
 
-* **Array**: Better in randomly search for index \(since array is orderly stored in memory\)
+* **Array**: Better in randomly search for index (since array is orderly stored in memory)
 * **LinkedList**: Better in insert/delete elements in queue
 
 {% hint style="danger" %}
-**Python:**  
-Recommend to use `deque` instead of `Queue`, Since `Queue` implemented mutex \(lock\) for multi-threading
+**Python:**\
+****Recommend to use `deque` instead of `Queue`, Since `Queue` implemented mutex (lock) for multi-threading
 
-**Java:**  
-Recommend to use `new ArrayDeque` , but not `new LinkedList`, Since LinkedList is slower
+**Java:**\
+****Recommend to use `new ArrayDeque` , but not `new LinkedList`, Since LinkedList is slower
 {% endhint %}
 
 ## Java Interface 
@@ -258,7 +260,7 @@ Set emphasizes on unique, like if trying to search any existed values, using set
 * No repeated values
 * Can have null value 
 * Unordered
-* Access faster O\(1\)
+* Access faster O(1)
 
 {% code title="HashSet" %}
 ```java
@@ -280,7 +282,7 @@ while (iter.hasNext()) {
 * No repeated values
 * Can't not have null value 
 * Ordered 
-* Access slower O\(logn\)
+* Access slower O(logn)
 
 {% code title="TreeSet" %}
 ```java
@@ -384,19 +386,19 @@ List is ordered and repetition and null value allowed data structure. In Java th
 
 * Based on linked-list
 
-**ArrayList:** 
+**ArrayList: **
 
 * Based on dynamic arrays
 
 **LinkedList vs ArrayList:**
 
-* For randomly access like **get/set**, ArrayList O\(1\) better than LinkedList O\(n\)
+* For randomly access like **get/set**, ArrayList O(1) better than LinkedList O(n)
 * For new/delete like **add, remove**, if already know which index need to modify:
-  * LinkedList O\(1\) better than ArrayList O\(n\), since ArrayList need moving elements
+  * LinkedList O(1) better than ArrayList O(n), since ArrayList need moving elements
 
 ### Queue
 
-Queue is a FIFO \(first in first out\) data structure, use enqueue to add value from tail, and remove from head 
+Queue is a FIFO (first in first out) data structure, use enqueue to add value from tail, and remove from head 
 
 #### PriorityQueue:
 
@@ -412,24 +414,24 @@ Queue is a FIFO \(first in first out\) data structure, use enqueue to add value 
 
 ### Adjacent matrix
 
-Following matrix means vertex 0 connect vertex 3, vertex 1 connect vertex 2. This data structure require O\(n^2\) space
+Following matrix means vertex 0 connect vertex 3, vertex 1 connect vertex 2. This data structure require O(n^2) space
 
-\[ \[1,0,0,1\],   
-  \[0,1,1,0\],   
-  \[0,1,1,0\],   
-  \[1,0,0,1\] \]  
-\]
+\[ \[1,0,0,1], \
+  \[0,1,1,0], \
+  \[0,1,1,0], \
+  \[1,0,0,1] ]\
+]
 
 ### Adjacent List
 
-Following matrix means vertex 0 connect to vertex 1, vertex 1 connect to vertex 2, vertex 1 connect to vertex 3. The total edges amount = m, and space complexity is O\(m\). For worst case is O\(n^2\), however, that's rare case
+Following matrix means vertex 0 connect to vertex 1, vertex 1 connect to vertex 2, vertex 1 connect to vertex 3. The total edges amount = m, and space complexity is O(m). For worst case is O(n^2), however, that's rare case
 
-\[  
- \[1\],  
- \[0,2,3\],  
- \[1\],  
- \[1\]  
-\]
+\[\
+ \[1],\
+ \[0,2,3],\
+ \[1],\
+ \[1]\
+]
 
 {% code title="In Java can use HashMap / HashSet to realize adjacent list" %}
 ```java
@@ -449,7 +451,5 @@ adjacency_list = {x:set() for x in nodes}
 
 
 
-![](../../.gitbook/assets/capture%20%284%29.png)
-
-
+![](<../../.gitbook/assets/capture (4).png>)
 
