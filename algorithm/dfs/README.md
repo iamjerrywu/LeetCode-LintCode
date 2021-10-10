@@ -1,7 +1,6 @@
 ---
 description: 18 (14M/4H)
 ---
-
 # DFS
 
 ## Recursion 
@@ -17,10 +16,10 @@ description: 18 (14M/4H)
 1. 函数的参数与返回值
 2. 函数的局部变量
 
-我们来看下面的这段代码：  
+我们来看下面的这段代码：\
 Java:
 
-```text
+```
 public int f(int n) {
     int[] nums = new int[n];
     int sum = 0;
@@ -34,7 +33,7 @@ public int f(int n) {
 
 Python:
 
-```text
+```
 def f(n):
     nums = [0]*n  # 相当于Java中的new int[n]
     sum = 0
@@ -46,7 +45,7 @@ def f(n):
 
 C++:
 
-```text
+```
 int f(int n) {
    int *nums = new int[n];
     int sum = 0;
@@ -63,7 +62,7 @@ int f(int n) {
 这里 nums 可以理解为两个部分：
 
 1. 一个名字叫做 nums 的局部变量，他存储了指向内存空间的一个地址（Reference），这个地址也就是 4 个字节（32位地址总线的计算机，地址大小为 4 字节）
-2. new 出来的，一共有 n 个位置的整数数组，int\[n\]。一共有 4 \* n 个字节。
+2. new 出来的，一共有 n 个位置的整数数组，int\[n]。一共有 4 \* n 个字节。
 
 这里 nums 这个变量本身，是存储在栈空间的，因为他是一个局部变量。但是 nums 里存储的 n 个整数，是存储在`堆空间`里的，Heap space。他并不占用栈空间，并不会导致栈溢出。
 
@@ -73,7 +72,7 @@ int f(int n) {
 
 Java:
 
-```text
+```
 public int[] copy(int[] nums) {
     int[] arr = new int[nums.length];
     for (int i = 0; i < nums.length; i++) {
@@ -91,7 +90,7 @@ public void main() {
 
 Python:
 
-```text
+```
 def copy(nums):
     arr = [0]*len(nums)  # 相当于Java中的new int[nums.length]
 		for i in range(len(nums)):
@@ -112,7 +111,7 @@ if __name__ == "__main__":
 
 C++
 
-```text
+```
 int* copy(int nums[], int length) {
     int *arr = new int[length];
     for (int i = 0; i < length; i++) {
@@ -129,8 +128,8 @@ int main() {
 }
 ```
 
-在 copy 这个函数中，arr 是一个局部变量，他在 copy 函数执行结束之后就会被销毁。但是里面 new 出来的新数组并不会被销毁。  
-这样，在 main 函数里，new\_nums 里才会有被复制后的数组。所以可以发现一个特点：
+在 copy 这个函数中，arr 是一个局部变量，他在 copy 函数执行结束之后就会被销毁。但是里面 new 出来的新数组并不会被销毁。\
+这样，在 main 函数里，new_nums 里才会有被复制后的数组。所以可以发现一个特点：
 
 > 栈空间里存储的内容，会在函数执行结束的时候被撤回
 
@@ -140,12 +139,12 @@ int main() {
 
 ### Recursion Depth
 
-递归深度就是递归函数在内存中，同时存在的最大次数。  
+递归深度就是递归函数在内存中，同时存在的最大次数。\
 例如下面这段求阶乘的代码：
 
 Java:
 
-```text
+```
 int factorial(int n) {
     if (n == 1) {
         return 1;
@@ -156,7 +155,7 @@ int factorial(int n) {
 
 Python:
 
-```text
+```
 def factorial(n):
     if n == 1:
         return 1
@@ -165,7 +164,7 @@ def factorial(n):
 
 C++:
 
-```text
+```
 int factorial(int n) {
     if (n == 1) {
         return 1;
@@ -174,7 +173,7 @@ int factorial(int n) {
 }
 ```
 
-当`n=100`时，递归深度就是100。一般来说，我们更关心**递归深度的数量级**，在该阶乘函数中递归深度是O\(n\)，而在二分查找中，递归深度是O\(log\(n\)\)。在后面的教程中，我们还会学到基于递归的快速排序、归并排序、以及平衡二叉树的遍历，这些的递归深度都是\(O\(log\(n\)\)。注意，此处说的是递归深度，而并非时间复杂度。
+当`n=100`时，递归深度就是100。一般来说，我们更关心**递归深度的数量级**，在该阶乘函数中递归深度是O(n)，而在二分查找中，递归深度是O(log(n))。在后面的教程中，我们还会学到基于递归的快速排序、归并排序、以及平衡二叉树的遍历，这些的递归深度都是(O(log(n))。注意，此处说的是递归深度，而并非时间复杂度。
 
 ### 太深的递归会内存溢出
 
@@ -182,23 +181,23 @@ int factorial(int n) {
 
 函数的调用，会在内存的栈空间中开辟新空间，来存放子函数。递归函数更是会不断占用栈空间，例如该阶乘函数，展开到最后`n=1`时，内存中会存在`factorial(100), factorial(99), factorial(98) ... factorial(1)`这些函数，它们从栈底向栈顶方向不断扩展。
 
-当递归过深时，栈空间会被耗尽，这时就无法开辟新的函数，会报出`stack overflow`这样的错误。  
+当递归过深时，栈空间会被耗尽，这时就无法开辟新的函数，会报出`stack overflow`这样的错误。\
 所以，在考虑空间复杂度时，递归函数的深度也是要考虑进去的。
 
 **Follow up：**
 
-尾递归：若递归函数中，递归调用是整个函数体中最后的语句，且它的返回值不属于表达式的一部分时，这个递归调用就是尾递归。（上例factorial函数满足前者，但不满足后者，故不是尾递归函数）  
-尾递归函数的特点是：在递归展开后该函数不再做任何操作，这意味着该函数可以不等子函数执行完，自己直接销毁，这样就不再占用内存。一个递归深度O\(n\)的尾递归函数，可以做到只占用O\(1\)空间。这极大的优化了栈空间的利用。  
-但要注意，这种内存优化是由编译器决定是否要采取的，不过大多数现代的编译器会利用这种特点自动生成优化的代码。在实际工作当中，尽量写尾递归函数，是很好的习惯。  
+尾递归：若递归函数中，递归调用是整个函数体中最后的语句，且它的返回值不属于表达式的一部分时，这个递归调用就是尾递归。（上例factorial函数满足前者，但不满足后者，故不是尾递归函数）\
+尾递归函数的特点是：在递归展开后该函数不再做任何操作，这意味着该函数可以不等子函数执行完，自己直接销毁，这样就不再占用内存。一个递归深度O(n)的尾递归函数，可以做到只占用O(1)空间。这极大的优化了栈空间的利用。\
+但要注意，这种内存优化是由编译器决定是否要采取的，不过大多数现代的编译器会利用这种特点自动生成优化的代码。在实际工作当中，尽量写尾递归函数，是很好的习惯。\
 而在算法题当中，计算空间复杂度时，建议还是老老实实地算空间复杂度了，尾递归这种优化提一下也是可以，但别太在意。
 
-## RSubSets \(Non-recursion / Iteration\)
+## SubSets (Non-recursion / Iteration)
 
 ### Binary Transformation:
 
- For a positive integer, `ith` : 1 means selected / 0 mean not selected. Therefore, in range of 0 ~ 2^n - 1 contains 2^n integers, mapping to subsets amount
+ For a positive integer, `ith` : 1 means selected / 0 mean not selected. Therefore, in range of 0 \~ 2^n - 1 contains 2^n integers, mapping to subsets amount
 
-```text
+```
 {1，2，3} subsets represent in 0 ~ 7
 
 0 -> 000 -> {}
@@ -288,7 +287,7 @@ public:
 
 ### BFS 
 
-```text
+```
 1st layer: []
 2nd layer: [1] [2] [3]
 3rd layer: [1, 2] [1, 3], [2, 3]
@@ -402,4 +401,3 @@ public:
 ```
 {% endtab %}
 {% endtabs %}
-
