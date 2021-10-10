@@ -74,7 +74,7 @@ while queue:
     # take 1st element 
     now = queue.popleft()
     
-    # write visited add here is bad! since the now m
+    # write visited add here is bad! since the now may be revisited before it's truly added
     # visited.add(now)
     
     for next_point in self.find_next(now):
