@@ -159,49 +159,6 @@ class Solution:
 {% tabs %}
 {% tab title="Python" %}
 ```python
-import collections
-DIRECTIONS = [[1, 0], [-1, 0], [0, 1], [0, -1], [1, 1], [-1, 1], [1, -1], [-1,-1]]
-class Solution:
-    def updateBoard(self, board: List[List[str]], click: List[int]) -> List[List[str]]:
-        if not board:
-            return board
-        
-        x, y = click
-        if board[x][y] == 'M':
-            board[x][y] = 'X'
-            return board
-        
-        queue = collections.deque([(x, y)])
-        self.bfs(x, y, board, queue, set())
-        return board
-    
-    def bfs(self, x, y, board, queue, visited):
-        while queue:
-            x, y = queue.popleft()
-            # Since in BFS, points may added duplicated, could check first with visited, to save time
-            if (x, y) in visited:
-                continue
-            visited.add((x, y))
-            adj_mines = 0
-            empty_list = []
-            for dx, dy in DIRECTIONS:
-                new_x, new_y = x + dx, y + dy
-                if self.is_valid(new_x, new_y, board, visited):
-                    if board[new_x][new_y] == 'M':
-                        adj_mines+=1
-                    elif board[new_x][new_y] == 'E':
-                        empty_list.append((new_x, new_y))                
-            if adj_mines:
-                board[x][y] = str(adj_mines)
-            else:
-                board[x][y] = 'B'
-                for new_x, new_y in empty_list:
-                    queue.append((new_x, new_y))
-    
-    def is_valid(self, x, y, board, visited):
-        if 0 <= x < len(board) and 0 <= y < len(board[0]):
-            return (x, y) not in visited
-        return False
 ```
 {% endtab %}
 {% endtabs %}
