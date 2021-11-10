@@ -1,4 +1,4 @@
-# Two Sum VII 1879 \(H\)
+# Two Sum VII 1879 (H)
 
 ## Problem
 
@@ -9,42 +9,42 @@ The function twoSum should return indices of the two numbers such that they add 
 You are not allowed to sort this array.
 
 * It is guaranteed that all numbers in the numsnums is distinct.
-* The length of numsnums is \leq 100\,000≤100000.
+* The length of numsnums is \leq 100\\,000≤100000.
 * The number in numsnums is \leq 10^9≤109.
 
 Example
 
-```text
+```
 Input: [0,-1,2,-3,4]1Output: [[1,2],[3,4]]Explanation: nums[1] + nums[2] = -1 + 2 = 1, nums[3] + nums[4] = -3 + 4 = 1You can return [[3,4],[1,2]], the system will automatically help you sort it to [[1,2],[3,4]]. But [[2,1],[3,4]] is invaild.
 ```
 
 Challenge
 
-\mathcal{O}\(n\)O\(n\) time complexity and \mathcal{O}\(1\)O\(1\) extra space
+\mathcal{O}(n)O(n) time complexity and \mathcal{O}(1)O(1) extra space
 
-## Solution 
+## Solution&#x20;
 
-Since the numbers is in absolute sorted order \(i.e: -1, 2, 3, -4, 8, 9, -10\)
+Since the numbers is in absolute sorted order (i.e: -1, 2, 3, -4, 8, 9, -10)
 
-First find out left \(min\), right\(max\), then use opposite two pointer solution
+First find out left (min), right(max), then use opposite two pointer solution
 
-* nums\[left\] + nums\[right\] &lt; target: move left
-* nums\[left\] + nums\[right\] &gt; target: move right
-* nums\[left\] + nums\[right\] == target, append to ans
+* nums\[left] + nums\[right] < target: move left
+* nums\[left] + nums\[right] > target: move right
+* nums\[left] + nums\[right] == target, append to ans
 
 Note:
 
 when move left, should find the next bigger left
 
-* if nums\[left\] &lt; 0
-  * First i from left - 1 to 0, if nums\[i\] &lt; 0, return i
-  * Second, \(if first don't return, means next left &gt; 0\), i from 0 to n - 1, if nums\[i\] &gt;= 0, then return i
-* If nums\[left\] &gt; 0
-  * i from left + 1 to n - 1, if nums\[i\] &gt;= 0, then return i
+* if nums\[left] < 0
+  * First i from left - 1 to 0, if nums\[i] < 0, return i
+  * Second, (if first don't return, means next left > 0), i from 0 to n - 1, if nums\[i] >= 0, then return i
+* If nums\[left] > 0
+  * i from left + 1 to n - 1, if nums\[i] >= 0, then return i
 
 If all no, then return -1
 
-Same approach using for finding next right \(next smaller right\)
+Same approach using for finding next right (next smaller right)
 
 ### Code
 
@@ -127,10 +127,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**
 
-\*\*\*\*
+****
 
 ## Solution - Binary Search
 
@@ -182,6 +182,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: O(1)**

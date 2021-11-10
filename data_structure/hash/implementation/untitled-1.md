@@ -1,20 +1,20 @@
-# Hash Function 128 \(E\)
+# Hash Function 128 (E)
 
 ## Problem
 
 [https://www.lintcode.com/problem/128](https://www.lintcode.com/problem/128)
 
-### Description 
+### Description&#x20;
 
-In data structure Hash, hash function is used to convert a string\(or any other type\) into an integer smaller than hash size and bigger or equal to zero. The objective of designing a hash function is to "hash" the key as unreasonable as possible. A good hash function can avoid collision as less as possible. A widely used hash function algorithm is using a magic number 33, consider any string as a 33 based big integer like follow:
+In data structure Hash, hash function is used to convert a string(or any other type) into an integer smaller than hash size and bigger or equal to zero. The objective of designing a hash function is to "hash" the key as unreasonable as possible. A good hash function can avoid collision as less as possible. A widely used hash function algorithm is using a magic number 33, consider any string as a 33 based big integer like follow:
 
-hashcode\("abcd"\) = \(ascii\(a\) \* 333 + ascii\(b\) \* 332 + ascii\(c\) \*33 + ascii\(d\)\) % HASH\_SIZE 
+hashcode("abcd") = (ascii(a) \* 333 + ascii(b) \* 332 + ascii(c) \*33 + ascii(d)) % HASH\_SIZE&#x20;
 
-                              = \(97\* 333 + 98 \* 332 + 99 \* 33 +100\) % HASH\_SIZE
+&#x20;                             \= (97\* 333 + 98 \* 332 + 99 \* 33 +100) % HASH\_SIZE
 
-                              = 3595978 % HASH\_SIZE
+&#x20;                             \= 3595978 % HASH\_SIZE
 
-here HASH\_SIZE is the capacity of the hash table \(you can assume a hash table is like an array with index 0 ~ HASH\_SIZE-1\).
+here HASH\_SIZE is the capacity of the hash table (you can assume a hash table is like an array with index 0 \~ HASH\_SIZE-1).
 
 Given a string as a key and the size of hash table, return the hash value of this key.
 
@@ -26,7 +26,7 @@ For this problem, you are not necessary to design your own hash algorithm or con
 
 **Example 1:**
 
-```text
+```
 Input:  key="abcd", size = 1000
 Output: 978
 Explanation: (97*33^3 + 98*33^2 + 99*33 + 100*1)%1000 = 978
@@ -34,7 +34,7 @@ Explanation: (97*33^3 + 98*33^2 + 99*33 + 100*1)%1000 = 978
 
 **Example 2:**
 
-```text
+```
 Input:  key="abcd", size = 100
 Output: 78
 Explanation: (97*33^3 + 98*33^2 + 99*33 + 100*1)%100 = 78
@@ -42,17 +42,17 @@ Explanation: (97*33^3 + 98*33^2 + 99*33 + 100*1)%100 = 78
 
 ## Approach
 
-### Intuition 
+### Intuition&#x20;
 
 Follow the problem guideline
 
 ### Algorithm
 
-congruence modulo principle: \(a  _b \) % MOD = \(\(a % MOD\)_  \(b % MOD\)\) % MOD
+congruence modulo principle: (a _ b ) % MOD = ((a % MOD) _ (b % MOD)) % MOD
 
 #### Step by step
 
-* Traverse every char in string 
+* Traverse every char in string&#x20;
   * ans time 33 than plus ascii value of char
   * mod HASH\_SIZE
 
@@ -101,11 +101,9 @@ public class Solution {
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
+* **Time Complexity: O(n)**
   * Traverse all char in string
-* **Space Complexity: O\(n\)**
-
-
+* **Space Complexity: O(n)**
 
 
 

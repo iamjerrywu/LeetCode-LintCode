@@ -1,4 +1,4 @@
-# Reverse Integer 413 \(E\)
+# Reverse Integer 413 (E)
 
 ## Problem
 
@@ -8,19 +8,19 @@ Reverse digits of an integer. Returns 0 when the reversed integer overflows `32-
 
 **Example 1:**
 
-```text
+```
 Input: 123
 Output: 321
 ```
 
 **Example 2:**
 
-```text
+```
 Input: -123
 Output: -321
 ```
 
-## Solution - Mathematic 
+## Solution - Mathematic&#x20;
 
 ### Code
 
@@ -48,17 +48,16 @@ class Solution:
 
 {% tab title="java" %}
 ```java
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**
 
-\*\*\*\*
+****
 
 ## Solution - String
 
@@ -95,13 +94,11 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**

@@ -1,4 +1,4 @@
-# Minimum Time to Type Word Using Special Typewriter \(LeetCode 1974\) \(E\)
+# Minimum Time to Type Word Using Special Typewriter (LeetCode 1974) (E)
 
 ## Problem
 
@@ -9,11 +9,11 @@ Each second, you may perform one of the following operations:
 * Move the pointer one character **counterclockwise** or **clockwise**.
 * Type the character the pointer is **currently** on.
 
-Given a string `word`, return the **minimum** number of seconds to type out the characters in `word`.
+Given a string `word`, return the** minimum** number of seconds to type out the characters in `word`.
 
 **Example 1:**
 
-```text
+```
 Input: word = "abc"
 Output: 5
 Explanation: 
@@ -27,7 +27,7 @@ The characters are printed as follows:
 
 **Example 2:**
 
-```text
+```
 Input: word = "bza"
 Output: 7
 Explanation:
@@ -42,7 +42,7 @@ The characters are printed as follows:
 
 **Example 3:**
 
-```text
+```
 Input: word = "zjpc"
 Output: 34
 Explanation:
@@ -62,7 +62,7 @@ The characters are printed as follows:
 * `1 <= word.length <= 100`
 * `word` consists of lowercase English letters.
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -82,6 +82,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**

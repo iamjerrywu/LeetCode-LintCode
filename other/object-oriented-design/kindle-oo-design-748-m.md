@@ -1,4 +1,4 @@
-# Kindle OO Design 748 \(M\)
+# Kindle OO Design 748 (M)
 
 ## Problem
 
@@ -13,13 +13,13 @@ Example
 
 Input:
 
-```text
+```
 readBook("EPUB")readBook("PDF")readBook("MOBI")
 ```
 
 Output:
 
-```text
+```
 Using EPUB reader, book content is: epubUsing PDF reader, book content is: pdfUsing MOBI reader, book content is: mobi
 ```
 
@@ -38,11 +38,11 @@ Using EPUB reader, book content is: epubUsing PDF reader, book content is: pdfUs
 * Read book
 * Remove book
 
-### Factory Design 
+### Factory Design&#x20;
 
-![](../../.gitbook/assets/screen-shot-2021-07-15-at-1.10.57-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-15 at 1.10.57 PM.png>)
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Java" %}
@@ -206,4 +206,3 @@ class PdfReader extends EBookReader{
 
 * **Time Complexity: N/A**
 * **Space Complexity: N/A**
-

@@ -1,4 +1,4 @@
-# Maximum Depth of Binary Tree 97 \(E\)
+# Maximum Depth of Binary Tree 97 (E)
 
 ## Problem
 
@@ -12,7 +12,7 @@ The answer will not exceed `5000`Example
 
 **Example 1:**
 
-```text
+```
 Input: tree = {}
 Output: 0
 Explanation: The height of empty tree is 0.
@@ -20,7 +20,7 @@ Explanation: The height of empty tree is 0.
 
 **Example 2:**
 
-```text
+```
 Input: tree = {1,2,3,#,#,4,5}
 Output: 3	
 Explanation: Like this:
@@ -69,7 +69,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -79,7 +78,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Divide Conquer
 
@@ -119,7 +118,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -128,4 +126,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

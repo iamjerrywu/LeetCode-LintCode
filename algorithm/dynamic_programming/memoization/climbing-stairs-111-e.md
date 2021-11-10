@@ -1,4 +1,4 @@
-# Climbing Stairs 111 \(E\)
+# Climbing Stairs 111 (E)
 
 ## Problem
 
@@ -6,7 +6,7 @@ You are climbing a stair case. It takes **n** steps to reach to the top.
 
 Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?Example
 
-```text
+```
 Example 1:
 	Input:  n = 3
 	Output: 3
@@ -28,7 +28,7 @@ Example 2:
 
 ## Solution - Recursion
 
-![](../../../.gitbook/assets/screen-shot-2021-04-25-at-12.24.38-am.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-04-25 at 12.24.38 AM.png>)
 
 ### Code
 
@@ -105,14 +105,14 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(2^n\) \(Roughly\)**
-* **Space Complexity: O\(n\)**
-  * call stack frame: O\(n\)
-  * HashMap: O\(n\)
+* **Time Complexity: O(2^n) (Roughly)**
+* **Space Complexity: O(n)**
+  * call stack frame: O(n)
+  * HashMap: O(n)
 
 ## Solution - Recursion with Memoization
 
-![](../../../.gitbook/assets/screen-shot-2021-04-25-at-12.27.11-am.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-04-25 at 12.27.11 AM.png>)
 
 ### Code
 
@@ -198,12 +198,12 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
-  * Call stack frame: O\(n\)
-  * HashMap: O\(n\)
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
+  * Call stack frame: O(n)
+  * HashMap: O(n)
 
-\*\*\*\*
+****
 
 ## Solution - DP
 
@@ -235,17 +235,16 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
 
-\*\*\*\*
+****
 
 ## Solution - DP with Strolling Arrays
 
@@ -277,17 +276,16 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**
 
-\*\*\*\*
+****
 
 ## Solution - Search 2
 
@@ -351,4 +349,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

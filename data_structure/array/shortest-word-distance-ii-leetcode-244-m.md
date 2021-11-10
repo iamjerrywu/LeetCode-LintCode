@@ -1,4 +1,4 @@
-# Shortest Word Distance II \(LeetCode 244\) \(M\)
+# Shortest Word Distance II (LeetCode 244) (M)
 
 ## Problem
 
@@ -11,7 +11,7 @@ Implement the `WordDistance` class:
 
 **Example 1:**
 
-```text
+```
 Input
 ["WordDistance", "shortest", "shortest"]
 [[["practice", "makes", "perfect", "coding", "makes"]], ["coding", "practice"], ["makes", "coding"]]
@@ -85,8 +85,7 @@ class WordDistance:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
-  * Shortest: O\(n\)
-    * n: len\(word1\) + len\(word2\)
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: **
+  * Shortest: O(n)
+    * n: len(word1) + len(word2)
+* **Space Complexity: O(n)**

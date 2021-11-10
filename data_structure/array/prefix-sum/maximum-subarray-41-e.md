@@ -1,4 +1,4 @@
-# Maximum Subarray 41 \(E\)
+# Maximum Subarray 41 (E)
 
 ## Problem
 
@@ -12,40 +12,40 @@ The subarray should contain at least one number.Have you met this question in a 
 
 Input:
 
-```text
+```
 nums = [−2,2,−3,4,−1,2,1,−5,3]
 ```
 
 Output:
 
-```text
+```
 6
 ```
 
 Explanation:
 
-the contiguous subarray \[4,−1,2,1\] has the largest sum = 6.  
+the contiguous subarray \[4,−1,2,1] has the largest sum = 6.\
 **Example 2:**
 
 Input:
 
-```text
+```
 nums = [1,2,3,4]
 ```
 
 Output:
 
-```text
+```
 10
 ```
 
 Explanation:
 
-the contiguous subarray \[1,2,3,4\] has the largest sum = 10.
+the contiguous subarray \[1,2,3,4] has the largest sum = 10.
 
 #### Challenge
 
-Can you do it in time complexity O\(n\)?
+Can you do it in time complexity O(n)?
 
 ## Solution - Prefix Sum
 
@@ -77,15 +77,14 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**
 
 ## Solution - DP
 
@@ -115,17 +114,16 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
 
-\*\*\*\*
+****
 
 ## Solution - DP - Strolling Array
 
@@ -155,13 +153,11 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**

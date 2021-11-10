@@ -1,4 +1,4 @@
-# Maximal Rectangle 510 \(H\)
+# Maximal Rectangle 510 (H)
 
 ## Problem
 
@@ -6,7 +6,7 @@ Given a `rows x cols` binary `matrix` filled with `0`'s and `1`'s, find the larg
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg)
 
-```text
+```
 Input: matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
 Output: 6
 Explanation: The maximal rectangle is shown in the above picture.
@@ -14,28 +14,28 @@ Explanation: The maximal rectangle is shown in the above picture.
 
 **Example 2:**
 
-```text
+```
 Input: matrix = []
 Output: 0
 ```
 
 **Example 3:**
 
-```text
+```
 Input: matrix = [["0"]]
 Output: 0
 ```
 
 **Example 4:**
 
-```text
+```
 Input: matrix = [["1"]]
 Output: 1
 ```
 
 **Example 5:**
 
-```text
+```
 Input: matrix = [["0","0"]]
 Output: 0
 ```
@@ -86,17 +86,17 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^6\)**
+* **Time Complexity: O(n^6)**
   * Enumerate the up, down, left, right, and judge whether the bounded area is filled with 1
-* **Space Complexity: O\(1\)**
+* **Space Complexity: O(1)**
 
-\*\*\*\*
+****
 
 ## Solution - Monotonic Stack
 
 For each row, update the height row and use the monotonic stack solution in problm 122
 
-![](../../../.gitbook/assets/screen-shot-2021-06-17-at-12.59.17-pm.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-06-17 at 12.59.17 PM.png>)
 
 ### Code
 
@@ -157,9 +157,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n \* \(m + m\)\) = O\(n \* m\)**
-  * Traverse from top to down: O\(n\)
-  * Update each row the height list: O\(m\)
-  * Monotonic stack: O\(m\)
-* **Space Complexity: O\(m\)**
-
+* **Time Complexity: O(n \* (m + m)) = O(n \* m)**
+  * Traverse from top to down: O(n)
+  * Update each row the height list: O(m)
+  * Monotonic stack: O(m)
+* **Space Complexity: O(m)**

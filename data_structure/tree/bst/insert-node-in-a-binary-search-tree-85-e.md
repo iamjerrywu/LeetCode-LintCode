@@ -1,4 +1,4 @@
-# Insert Node in a Binary Search Tree 85 \(E\)
+# Insert Node in a Binary Search Tree 85 (E)
 
 ## Problem
 
@@ -10,14 +10,14 @@ You can assume there is no duplicate values in this tree + node.Example
 
 Input:
 
-```text
+```
 tree = {}
 node= 1
 ```
 
 Output:
 
-```text
+```
 {1}
 ```
 
@@ -29,28 +29,28 @@ Insert node 1 into the empty tree, so there is only one node on the tree.
 
 Input:
 
-```text
+```
 tree = {2,1,4,#,#,3}
 node = 6
 ```
 
 Output:
 
-```text
+```
 {2,1,4,#,#,3,6}
 ```
 
 Explanation:
 
-     2                              2  
-   /   \                          /   \  
- 1     4          --&gt;       1       4  
-       /                                /  \  
-    3                                3      6Challenge
+&#x20;    2                              2\
+&#x20;  /   \                          /   \\\
+&#x20;1     4          -->       1       4\
+&#x20;      /                                /  \\\
+&#x20;   3                                3      6Challenge
 
 Can you do it without recursion?
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -92,4 +92,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

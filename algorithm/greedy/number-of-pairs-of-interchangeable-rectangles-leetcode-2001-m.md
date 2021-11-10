@@ -1,16 +1,16 @@
-# Number of Pairs of Interchangeable Rectangles \(LeetCode 2001\) \(M\)
+# Number of Pairs of Interchangeable Rectangles (LeetCode 2001) (M)
 
 ## Problem
 
 You are given `n` rectangles represented by a **0-indexed** 2D integer array `rectangles`, where `rectangles[i] = [widthi, heighti]` denotes the width and height of the `ith` rectangle.
 
-Two rectangles `i` and `j` \(`i < j`\) are considered **interchangeable** if they have the **same** width-to-height ratio. More formally, two rectangles are **interchangeable** if `widthi/heighti == widthj/heightj` \(using decimal division, not integer division\).
+Two rectangles `i` and `j` (`i < j`) are considered **interchangeable** if they have the **same** width-to-height ratio. More formally, two rectangles are **interchangeable** if `widthi/heighti == widthj/heightj` (using decimal division, not integer division).
 
-Return _the **number** of pairs of **interchangeable** rectangles in_ `rectangles`.
+Return _the **number** of pairs of **interchangeable** rectangles in _`rectangles`.
 
 **Example 1:**
 
-```text
+```
 Input: rectangles = [[4,8],[3,6],[10,20],[15,30]]
 Output: 6
 Explanation: The following are the interchangeable pairs of rectangles by index (0-indexed):
@@ -24,7 +24,7 @@ Explanation: The following are the interchangeable pairs of rectangles by index 
 
 **Example 2:**
 
-```text
+```
 Input: rectangles = [[4,5],[7,8]]
 Output: 0
 Explanation: There are no interchangeable pairs of rectangles.
@@ -37,7 +37,7 @@ Explanation: There are no interchangeable pairs of rectangles.
 * `rectangles[i].length == 2`
 * `1 <= widthi, heighti <= 105`
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -56,6 +56,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
-* **Space Complexity:** 
-
+* **Time Complexity: **
+* **Space Complexity: **

@@ -1,8 +1,8 @@
-# Build Post Office II 573 \(H\)
+# Build Post Office II 573 (H)
 
 ## Problem
 
-Given a 2D grid, each cell is either a wall `2`, an house `1` or empty `0` \(the number zero, one, two\), find a place to build a post office so that the sum of the distance from the post office to all the houses is smallest.
+Given a 2D grid, each cell is either a wall `2`, an house `1` or empty `0` (the number zero, one, two), find a place to build a post office so that the sum of the distance from the post office to all the houses is smallest.
 
 Returns the sum of the minimum distances from all houses to the post office.Return `-1` if it is not possible.
 
@@ -13,13 +13,13 @@ Example
 
 **Example 1:**
 
-```text
+```
 Input：[[0,1,0,0,0],[1,0,0,2,1],[0,1,0,0,0]]Output：8Explanation： Placing a post office at (1,1), the distance that post office to all the house sum is smallest.
 ```
 
 **Example 2:**
 
-```text
+```
 Input：[[0,1,0],[1,0,1],[0,1,0]]Output：4Explanation： Placing a post office at (1,1), th
 ```
 
@@ -101,20 +101,20 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(space \* n \* m\)**
+* **Time Complexity: O(space \* n \* m)**
   * Space: the empty space amounts
-  * n: len\(grid\), m: len\(grid\[0\]\)
-  * Calculate all point's distance to post office: O\(n\*m\)
-  * Worst case: O\(n^2 \* m^2\)
-* **Space Complexity:** 
+  * n: len(grid), m: len(grid\[0])
+  * Calculate all point's distance to post office: O(n\*m)
+  * Worst case: O(n^2 \* m^2)
+* **Space Complexity: **
 
-\*\*\*\*
+****
 
-## Solution - BFS \(2\)
+## Solution - BFS (2)
 
 #### Enumerate House Location
 
-Start from each houese, and from that house, do BFS to find out every empty place that it can reach \(for those it can reach, record how many it can be reached from houses, and the distance\). Eventually just calculate to have the min\_dist sum to have the answer.
+Start from each houese, and from that house, do BFS to find out every empty place that it can reach (for those it can reach, record how many it can be reached from houses, and the distance). Eventually just calculate to have the min\_dist sum to have the answer.
 
 ### Code
 
@@ -189,12 +189,11 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(House \* n \* m\)**
+* **Time Complexity: O(House \* n \* m)**
   * HOuse: the empty House amounts
-  * n: len\(grid\), m: len\(grid\[0\]\)
-  * Calculate all point's distance to post office: O\(n\*m\)
-  * Worst case: O\(n^2 \* m^2\)
-* **Space Complexity:** 
+  * n: len(grid), m: len(grid\[0])
+  * Calculate all point's distance to post office: O(n\*m)
+  * Worst case: O(n^2 \* m^2)
+* **Space Complexity: **
 
-\*\*\*\*
-
+****

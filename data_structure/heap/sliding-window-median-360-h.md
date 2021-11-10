@@ -1,4 +1,4 @@
-# Sliding Window Median 360 \(H\)
+# Sliding Window Median 360 (H)
 
 ## Problem
 
@@ -13,7 +13,7 @@ Return _the median array for each window in the original array_. Answers within 
 
 **Example 1:**
 
-```text
+```
 Input: nums = [1,3,-1,-3,5,3,6,7], k = 3
 Output: [1.00000,-1.00000,-1.00000,3.00000,5.00000,6.00000]
 Explanation: 
@@ -29,7 +29,7 @@ Window position                Median
 
 **Example 2:**
 
-```text
+```
 Input: nums = [1,2,3,4,2,3,1,4,2], k = 3
 Output: [2.00000,3.00000,3.00000,3.00000,2.00000,3.00000,2.00000]
 ```
@@ -39,7 +39,7 @@ Output: [2.00000,3.00000,3.00000,3.00000,2.00000,3.00000,2.00000]
 * `1 <= k <= nums.length <= 105`
 * `231 <= nums[i] <= 231 - 1`
 
-## Solution - Brute Force \(Sorting\)
+## Solution - Brute Force (Sorting)
 
 ### Code
 
@@ -74,16 +74,16 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(\(n - k\) \* klogk\)**
+* **Time Complexity: O((n - k) \* klogk)**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
-## Solution - Heap \(with O\(n\) remove\)
+## Solution - Heap (with O(n) remove)
 
-0 &lt;= len\(max-heap\) - len\(min-heap\) &lt;= 1
+0 <= len(max-heap) - len(min-heap) <= 1
 
-![](../../.gitbook/assets/screen-shot-2021-06-19-at-2.13.13-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-06-19 at 2.13.13 AM.png>)
 
 ### Code
 
@@ -150,12 +150,12 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(\(n - k\) \* k\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O((n - k) \* k)**
+* **Space Complexity: O(n)**
 
-\*\*\*\*
+****
 
-## Solution - Heap with O\(1\) remove
+## Solution - Heap with O(1) remove
 
 ### Code
 
@@ -267,5 +267,4 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
-
+****

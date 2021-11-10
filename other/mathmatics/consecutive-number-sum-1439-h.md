@@ -1,4 +1,4 @@
-# Consecutive Number Sum 1439 \(H\)
+# Consecutive Number Sum 1439 (H)
 
 ## Problem
 
@@ -8,19 +8,19 @@ Given a positive integer `N`, how many groups of continuous positive integers sa
 
 **Example 1:**
 
-```text
+```
 Input: 5Output: 2Explanation: 5 = 5 = 2 + 3
 ```
 
 **Example 2:**
 
-```text
+```
 Input: 9Output: 3Explanation: 9 = 9 = 4 + 5 = 2 + 3 + 4
 ```
 
 **Example 3:**
 
-```text
+```
 Input: 15Output: 4Explanation: 15 = 15 = 8 + 7 = 4 + 5 + 6 = 1 + 2 + 3 + 4 + 5
 ```
 
@@ -57,14 +57,14 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^3\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(n^3)**
+* **Space Complexity: O(1)**
 
 ## Solution - Factorization
 
-![](../../.gitbook/assets/screen-shot-2021-07-10-at-1.34.00-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-10 at 1.34.00 PM.png>)
 
-![](../../.gitbook/assets/screen-shot-2021-07-10-at-1.34.51-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-10 at 1.34.51 PM.png>)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -88,6 +88,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(logn\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(logn)**
+* **Space Complexity: O(1)**

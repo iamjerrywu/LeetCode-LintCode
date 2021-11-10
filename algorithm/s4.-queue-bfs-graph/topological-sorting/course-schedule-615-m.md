@@ -1,28 +1,28 @@
-# Course Schedule 615 \(M\)
+# Course Schedule 615 (M)
 
 ## Problem
 
 There are a total of n courses you have to take, labeled from `0` to `n - 1`.
 
-Before taking some courses, you need to take other courses. For example, to learn course 0, you need to learn course 1 first, which is expressed as \[0,1\].
+Before taking some courses, you need to take other courses. For example, to learn course 0, you need to learn course 1 first, which is expressed as \[0,1].
 
 Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses?Example
 
 Example 1:
 
-```text
+```
 Input: n = 2, prerequisites = [[1,0]] 
 Output: true
 ```
 
 Example 2:
 
-```text
+```
 Input: n = 2, prerequisites = [[1,0],[0,1]] 
 Output: false
 ```
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -69,11 +69,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(E + V\)**
+* **Time Complexity: O(E + V)**
   * E: Number of dependencies
   * V: Number of Courses
-* **Space Complexity:** 
-  * **O\(E + V\)**
+* **Space Complexity: **
+  * **O(E + V)**
     * E: Number of dependencies
     * V: Number of Courses
-

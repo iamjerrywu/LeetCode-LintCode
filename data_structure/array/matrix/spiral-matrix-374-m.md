@@ -1,4 +1,4 @@
-# Spiral Matrix 374 \(M\)
+# Spiral Matrix 374 (M)
 
 ## Problem
 
@@ -6,14 +6,14 @@ Given an `m x n` `matrix`, return _all elements of the_ `matrix` _in spiral orde
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2020/11/13/spiral1.jpg)
 
-```text
+```
 Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
 Output: [1,2,3,6,9,8,7,4,5]
 ```
 
 **Example 2:**![](https://assets.leetcode.com/uploads/2020/11/13/spiral.jpg)
 
-```text
+```
 Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
 Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 ```
@@ -23,11 +23,16 @@ Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 * `m == matrix.length`
 * `n == matrix[i].length`
 * `1 <= m, n <= 10`
-*   
+*
+
+    * `-100 <= matrix[i][j] <= 100`
+
+    \
+
 
 ## Solution - Simulation
 
-![](../../../.gitbook/assets/screen-shot-2021-07-21-at-12.40.38-pm.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-07-21 at 12.40.38 PM.png>)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -84,4 +89,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

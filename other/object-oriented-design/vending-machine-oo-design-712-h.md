@@ -1,4 +1,4 @@
-# Vending machine OO Design 712 \(H\)
+# Vending machine OO Design 712 (H)
 
 ## Problem
 
@@ -6,11 +6,11 @@
 
 ### Clarify
 
-![](../../.gitbook/assets/screen-shot-2021-07-11-at-10.11.51-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-11 at 10.11.51 PM.png>)
 
 ### Core Object
 
-![](../../.gitbook/assets/screen-shot-2021-07-14-at-10.42.28-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-14 at 10.42.28 AM.png>)
 
 ### Use Cases
 
@@ -24,11 +24,11 @@ Vending Machine
 
 ### Classes
 
-#### Use cases: 
+#### Use cases:&#x20;
 
 * _Select item_: Vending machine takes an external input, shows the price of that item
 * _Insert coin_: Insert a list of coins into vending machine
-* _Execute transection_: 
+* _Execute transection_:&#x20;
   * Get the current selected item
   * Compare the item price and inserted coins
   * If not enough money, throw an exception
@@ -37,11 +37,11 @@ Vending Machine
 * _Cancel transection_: Return the current coins that has been inserted
 * _Refill items_: Refill items on top of current stock
 
-![](../../.gitbook/assets/screen-shot-2021-07-14-at-10.56.13-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-14 at 10.56.13 AM.png>)
 
-### 
+###
 
-### Inflexible Design 
+### Inflexible Design&#x20;
 
 {% tabs %}
 {% tab title="Java" %}
@@ -97,16 +97,15 @@ public void refillItem(List<Item> items)
 
 {% tab title="Python" %}
 ```python
-
 ```
 {% endtab %}
 {% endtabs %}
 
-![](../../.gitbook/assets/screen-shot-2021-07-14-at-11.18.08-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-14 at 11.18.08 AM.png>)
 
 ### State Design Pattern
 
-For uses cases, what if there is no item is selected, or no coins inserted....etc, Insert coin\(\), Execute transaction\(\), Cancel transaction\(\) will all need to handle for exception. However, it's quite a redundant using if else condition like following:
+For uses cases, what if there is no item is selected, or no coins inserted....etc, Insert coin(), Execute transaction(), Cancel transaction() will all need to handle for exception. However, it's quite a redundant using if else condition like following:
 
 {% tabs %}
 {% tab title="Java" %}
@@ -132,9 +131,9 @@ public void insertCoin(List<Coin> coins)
 
 #### With state design
 
-![](../../.gitbook/assets/screen-shot-2021-07-14-at-11.24.33-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-14 at 11.24.33 AM.png>)
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -590,4 +589,3 @@ class InsertedMoneyState extends AbstractState{
 
 * **Time Complexity:**
 * **Space Complexity:**
-

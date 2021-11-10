@@ -1,4 +1,4 @@
-# Sum of Floored Pairs \(LeetCode 1862\) \(M\)
+# Sum of Floored Pairs (LeetCode 1862) (M)
 
 ## Problem
 
@@ -8,7 +8,7 @@ The `floor()` function returns the integer part of the division.
 
 **Example 1:**
 
-```text
+```
 Input: nums = [2,5,9]
 Output: 10
 Explanation:
@@ -22,7 +22,7 @@ We calculate the floor of the division for every pair of indices in the array th
 
 **Example 2:**
 
-```text
+```
 Input: nums = [7,7,7,7,7,7,7]
 Output: 49
 ```
@@ -56,10 +56,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^2\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n^2)**
+* **Space Complexity: O(n)**
 
-\*\*\*\*
+****
 
 ## Solution -Prefix\_Sum
 
@@ -119,6 +119,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^2\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(n^2)**
+* **Space Complexity: O(n)**

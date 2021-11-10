@@ -1,4 +1,4 @@
-# Valid Sudoku 389 \(E\)
+# Valid Sudoku 389 (E)
 
 ## Problem
 
@@ -10,12 +10,12 @@ Determine if a `9 x 9` Sudoku board is valid. Only the filled cells need to be v
 
 **Note:**
 
-* A Sudoku board \(partially filled\) could be valid but is not necessarily solvable.
+* A Sudoku board (partially filled) could be valid but is not necessarily solvable.
 * Only the filled cells need to be validated according to the mentioned rules.
 
 **Example 1:**![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
 
-```text
+```
 Input: board = 
 [["5","3",".",".","7",".",".",".","."]
 ,["6",".",".","1","9","5",".",".","."]
@@ -31,7 +31,7 @@ Output: true
 
 **Example 2:**
 
-```text
+```
 Input: board = 
 [["8","3",".",".","7",".",".",".","."]
 ,["6",".",".","1","9","5",".",".","."]
@@ -52,7 +52,89 @@ Explanation: Same as Example 1, except with the 5 in the top left corner being m
 * `board[i].length == 9`
 * `board[i][j]` is a digit or `'.'`.
 
-## Solution 
+
+
+## Solution - Brute Force Suduku Solver Sol.
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+        for i in range(len(board)):
+            for j in range(len(board[0])):
+                if not self.is_valid(i, j, board[i][j], board):
+                    return False
+        return True
+    
+    def is_valid(self, row, col, num, board):
+        if board[row][col] == '.':
+            return True
+        
+        # exclude board[row][col] itself
+        for i in range(9):
+            if i != row and board[i][col] == num:
+                return False
+        for j in range(9):
+            if j != col and board[row][j] == num:
+                return False
+        for k in range(9):
+            n_row = row//3 * 3 + k//3
+            n_col = col//3 * 3 + k%3
+            if n_row != row and n_col != col and board[row//3 * 3 + k//3][col//3 * 3 + k%3] == num:
+                return False
+        return True
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+****
+
+## Solution - Brute Force Suduku Solver Sol.
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+        for i in range(len(board)):
+            for j in range(len(board[0])):
+                if not self.is_valid(i, j, board[i][j], board):
+                    return False
+        return True
+    
+    def is_valid(self, row, col, num, board):
+        if board[row][col] == '.':
+            return True
+        
+        # exclude board[row][col] itself
+        for i in range(9):
+            if i != row and board[i][col] == num:
+                return False
+        for j in range(9):
+            if j != col and board[row][j] == num:
+                return False
+        for k in range(9):
+            n_row = row//3 * 3 + k//3
+            n_col = col//3 * 3 + k%3
+            if n_row != row and n_col != col and board[row//3 * 3 + k//3][col//3 * 3 + k%3] == num:
+                return False
+        return True
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -115,6 +197,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O(n^2)**
+* **Space Complexity:** O(1) (Reuse)
 

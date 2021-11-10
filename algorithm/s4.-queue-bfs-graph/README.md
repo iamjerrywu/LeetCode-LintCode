@@ -1,6 +1,7 @@
 ---
 description: 11 (2E/7M/2H)
 ---
+
 # BFS
 
 ## BFS
@@ -12,12 +13,12 @@ Application domain:
   * Shortest path
     * In graph every edge should be same length
 * Connective components
-  * Find all the connected vertices to one specific vertex 
+  * Find all the connected vertices to one specific vertex&#x20;
   * Find all solution for one problem but not using recursion
-* Tropological sorting 
+* Tropological sorting&#x20;
   * Easier than BFS
 
-![](<../../.gitbook/assets/capture (3).png>)
+![](<../../.gitbook/assets/Capture (4).PNG>)
 
 ### Applicable Scenarios
 
@@ -219,7 +220,7 @@ Still based on BFS structure
 
 #### Graph vs Matrix
 
-Graph: 
+Graph:&#x20;
 
 * n vertices, m edges
 * m largest can be O(n^2)
@@ -249,7 +250,7 @@ There are two ways to implement queue:
 ****Recommend to use `new ArrayDeque` , but not `new LinkedList`, Since LinkedList is slower
 {% endhint %}
 
-## Java Interface 
+## Java Interface&#x20;
 
 ### Set
 
@@ -258,7 +259,7 @@ Set emphasizes on unique, like if trying to search any existed values, using set
 #### HashSet
 
 * No repeated values
-* Can have null value 
+* Can have null value&#x20;
 * Unordered
 * Access faster O(1)
 
@@ -280,8 +281,8 @@ while (iter.hasNext()) {
 #### TreeSet
 
 * No repeated values
-* Can't not have null value 
-* Ordered 
+* Can't not have null value&#x20;
+* Ordered&#x20;
 * Access slower O(logn)
 
 {% code title="TreeSet" %}
@@ -301,13 +302,13 @@ while (iter.hasNext()) {
 
 ### Map
 
-Map is a type of fast key lookup data structure that offers flexible means of indexing into its individual elements. Key's non-repetitive. 
+Map is a type of fast key lookup data structure that offers flexible means of indexing into its individual elements. Key's non-repetitive.&#x20;
 
 #### HashMap
 
 * Key non-repetitive, value repetitive
 * Key/value can be "null"
-* unordered 
+* unordered&#x20;
 
 {% code title="HashMap" %}
 ```java
@@ -345,7 +346,7 @@ key = 5, value = 5
 
 * Key non-repetitive, value repetitive
 * Key/value cannot be "null"
-* Ordered 
+* Ordered&#x20;
 
 {% code title="TreeMap" %}
 ```java
@@ -398,11 +399,11 @@ List is ordered and repetition and null value allowed data structure. In Java th
 
 ### Queue
 
-Queue is a FIFO (first in first out) data structure, use enqueue to add value from tail, and remove from head 
+Queue is a FIFO (first in first out) data structure, use enqueue to add value from tail, and remove from head&#x20;
 
 #### PriorityQueue:
 
-* Based on "Heap" 
+* Based on "Heap"&#x20;
 * Non-FIFO
 
 #### Queue:
@@ -417,9 +418,9 @@ Queue is a FIFO (first in first out) data structure, use enqueue to add value fr
 Following matrix means vertex 0 connect vertex 3, vertex 1 connect vertex 2. This data structure require O(n^2) space
 
 \[ \[1,0,0,1], \
-  \[0,1,1,0], \
-  \[0,1,1,0], \
-  \[1,0,0,1] ]\
+&#x20; \[0,1,1,0], \
+&#x20; \[0,1,1,0], \
+&#x20; \[1,0,0,1] ]\
 ]
 
 ### Adjacent List
@@ -427,10 +428,10 @@ Following matrix means vertex 0 connect vertex 3, vertex 1 connect vertex 2. Thi
 Following matrix means vertex 0 connect to vertex 1, vertex 1 connect to vertex 2, vertex 1 connect to vertex 3. The total edges amount = m, and space complexity is O(m). For worst case is O(n^2), however, that's rare case
 
 \[\
- \[1],\
- \[0,2,3],\
- \[1],\
- \[1]\
+&#x20;\[1],\
+&#x20;\[0,2,3],\
+&#x20;\[1],\
+&#x20;\[1]\
 ]
 
 {% code title="In Java can use HashMap / HashSet to realize adjacent list" %}
@@ -447,9 +448,9 @@ adjacency_list = {x:set() for x in nodes}
 
 ## Double Direction BFS
 
-### Template 
+### Template&#x20;
 
 
 
-![](<../../.gitbook/assets/capture (4).png>)
+![](<../../.gitbook/assets/Capture (3).PNG>)
 

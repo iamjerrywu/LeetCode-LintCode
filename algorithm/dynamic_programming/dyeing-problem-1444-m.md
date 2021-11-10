@@ -1,4 +1,4 @@
-# Dyeing Problem 1444 \(M\)
+# Dyeing Problem 1444 (M)
 
 ## Problem
 
@@ -13,19 +13,19 @@ Example
 
 **Example 1:**
 
-```text
+```
 Input:n = 2,m = 3Output:6Explanation:One circle is divided into two sectors. There are six kinds of schemes for coloring in three colors: black, red, black and white, white and red, white and black, red and white, and red and black.
 ```
 
 **Example 2:**
 
-```text
+```
 Input:n = 3,m = 2Output:0Explanation:A circle is divided into 3 sectors and colored with 2 colors. No matter how it is colored, there is no guarantee that the adjacent colors are different.          
 ```
 
-## Solution 
+## Solution&#x20;
 
-![](../../.gitbook/assets/screen-shot-2021-07-01-at-8.33.20-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-01 at 8.33.20 PM.png>)
 
 ### Code
 
@@ -62,4 +62,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

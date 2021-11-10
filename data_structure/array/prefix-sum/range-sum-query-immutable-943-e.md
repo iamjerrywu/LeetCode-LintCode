@@ -1,4 +1,4 @@
-# Range Sum Query - Immutable 943 \(E\)
+# Range Sum Query - Immutable 943 (E)
 
 ## Problem
 
@@ -11,13 +11,13 @@ Example
 
 **Example1**
 
-```text
+```
 Input: nums = [-2, 0, 3, -5, 2, -1]sumRange(0, 2)sumRange(2, 5)sumRange(0, 5)Output:1-1-3Explanation: sumRange(0, 2) -> (-2) + 0 + 3 = 1sumRange(2, 5) -> 3 + (-5) + 2 + (-1) = -1sumRange(0, 5) -> (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
 ```
 
 **Example2**
 
-```text
+```
 Input: nums = [-4, -5]sumRange(0, 0)sumRange(1, 1)sumRange(0, 1)sumRange(1, 1)sumRange(0, 0)Output: -4-5-9-5-4Explanation: sumRange(0, 0) -> -4sumRange(1, 1) -> -5sumRange(0, 1) -> (-4) + (-5) = -9sumRange(1, 1) -> -5sumRange(0, 0) -> -4
 ```
 
@@ -53,11 +53,11 @@ class NumArray(object):
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
+* **Time Complexity: O(n)**
   * n: j - i
-* **Space Complexity: O\(1\)**
+* **Space Complexity: O(1)**
 
-\*\*\*\*
+****
 
 ## Solution - Prefix Sum
 
@@ -93,6 +93,5 @@ class NumArray(object):
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(1\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(1)**
+* **Space Complexity: O(n)**

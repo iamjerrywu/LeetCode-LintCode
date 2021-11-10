@@ -1,4 +1,4 @@
-# Maximal Square 436 \(M\)
+# Maximal Square 436 (M)
 
 ## Problem
 
@@ -6,21 +6,21 @@ Given an `m x n` binary `matrix` filled with `0`'s and `1`'s, _find the largest 
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2020/11/26/max1grid.jpg)
 
-```text
+```
 Input: matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
 Output: 4
 ```
 
 **Example 2:**![](https://assets.leetcode.com/uploads/2020/11/26/max2grid.jpg)
 
-```text
+```
 Input: matrix = [["0","1"],["1","0"]]
 Output: 1
 ```
 
 **Example 3:**
 
-```text
+```
 Input: matrix = [["0"]]
 Output: 0
 ```
@@ -36,7 +36,7 @@ Output: 0
 
 ## Solution - Brute Force
 
-![](../../../.gitbook/assets/screen-shot-2021-08-28-at-3.38.36-pm.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-08-28 at 3.38.36 PM.png>)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -72,10 +72,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:  O\(n \* m  \* \(n + m\)\)**
-  * n: len\(matrix\)
-  * m: len\(matrix\[0\]\)
-* **Space Complexity: O\(1\)**
+* **Time Complexity:  O(n \* m  \* (n + m))**
+  * n: len(matrix)
+  * m: len(matrix\[0])
+* **Space Complexity: O(1)**
 
 ## Solution - DP
 
@@ -117,6 +117,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
-* **Space Complexity:** 
-
+* **Time Complexity: **
+* **Space Complexity: **

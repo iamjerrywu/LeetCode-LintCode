@@ -2,16 +2,25 @@
 
 ## Problem
 
-## Solution
+
+
+
+
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
 ```python
+```
+{% endtab %}
 
+{% tab title="Java" %}
+```java
 ```
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity:**
 * **Space Complexity:**
 
+****

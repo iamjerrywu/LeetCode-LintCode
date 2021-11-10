@@ -1,11 +1,11 @@
-# Copy List with Random Pointer 105 \(M\)
+# Copy List with Random Pointer 105 (M)
 
 ## Problem
 
-A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.  
+A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.\
 Return a deep copy of the list.Challenge
 
-Could you solve it with O\(1\) space?
+Could you solve it with O(1) space?
 
 ## Solution - HashTable
 
@@ -50,12 +50,12 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
 
-## Solution 
+## Solution&#x20;
 
-![](../../.gitbook/assets/screen-shot-2021-05-06-at-1.18.45-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-06 at 1.18.45 AM.png>)
 
 ### Code
 
@@ -101,13 +101,11 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**

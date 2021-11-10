@@ -1,4 +1,4 @@
-# Paint House 515 \(M\)
+# Paint House 515 (M)
 
 ## Problem
 
@@ -12,7 +12,7 @@ Return _the minimum cost to paint all houses_.
 
 **Example 1:**
 
-```text
+```
 Input: costs = [[17,2,17],[16,16,5],[14,3,19]]
 Output: 10
 Explanation: Paint house 0 into blue, paint house 1 into green, paint house 2 into blue.
@@ -21,7 +21,7 @@ Minimum cost: 2 + 5 + 3 = 10.
 
 **Example 2:**
 
-```text
+```
 Input: costs = [[7,6,2]]
 Output: 2
 ```
@@ -72,10 +72,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(3n\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(3n)**
 
-\*\*\*\*
+****
 
 ## Solution - DP
 
@@ -116,10 +116,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(3n\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(3n)**
 
-\*\*\*\*
+****
 
 ## Solution - DP with strolling array
 
@@ -160,6 +160,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(5\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(5)**

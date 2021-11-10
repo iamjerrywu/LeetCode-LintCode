@@ -1,4 +1,4 @@
-# The Number of the Smallest Unoccupied Chair 1942 \(M\)
+# The Number of the Smallest Unoccupied Chair 1942 (M)
 
 ## Problem
 
@@ -10,11 +10,11 @@ When a friend leaves the party, their chair becomes unoccupied at the moment the
 
 You are given a **0-indexed** 2D integer array `times` where `times[i] = [arrivali, leavingi]`, indicating the arrival and leaving times of the `ith` friend respectively, and an integer `targetFriend`. All arrival times are **distinct**.
 
-Return _the **chair number** that the friend numbered_ `targetFriend` _will sit on_.
+Return_ the **chair number** that the friend numbered _`targetFriend`_ will sit on_.
 
 **Example 1:**
 
-```text
+```
 Input: times = [[1,4],[2,3],[4,6]], targetFriend = 1
 Output: 1
 Explanation: 
@@ -28,7 +28,7 @@ Since friend 1 sat on chair 1, we return 1.
 
 **Example 2:**
 
-```text
+```
 Input: times = [[3,10],[1,5],[2,6]], targetFriend = 0
 Output: 2
 Explanation: 
@@ -50,7 +50,7 @@ Since friend 0 sat on chair 2, we return 2.
 * `0 <= targetFriend <= n - 1`
 * Each `arrivali` time is **distinct**.
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -90,6 +90,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: O(n)**

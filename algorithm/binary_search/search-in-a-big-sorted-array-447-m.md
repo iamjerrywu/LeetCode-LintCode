@@ -1,36 +1,36 @@
-# Search in a Big Sorted Array 447 \(M\)
+# Search in a Big Sorted Array 447 (M)
 
 ## Problem
 
-Given a big sorted array with non-negative integers sorted by non-decreasing order. The array is so big so that you can not get the length of the whole array directly, and you can only access the kth number by `ArrayReader.get(k)` \(or ArrayReader-&gt;get\(k\) for C++\).
+Given a big sorted array with non-negative integers sorted by non-decreasing order. The array is so big so that you can not get the length of the whole array directly, and you can only access the kth number by `ArrayReader.get(k)` (or ArrayReader->get(k) for C++).
 
-Find the first index of a target number. Your algorithm should be in O\(log k\), where k is the first index of the target number.
+Find the first index of a target number. Your algorithm should be in O(log k), where k is the first index of the target number.
 
 Return -1, if the number doesn't exist in the array.
 
-If you accessed an inaccessible index \(outside of the array\), ArrayReader.get will return `2,147,483,647`.Example
+If you accessed an inaccessible index (outside of the array), ArrayReader.get will return `2,147,483,647`.Example
 
 **Example 1:**
 
-```text
+```
 Input: [1, 3, 6, 9, 21, ...], target = 3
 Output: 1
 ```
 
 **Example 2:**
 
-```text
+```
 Input: [1, 3, 6, 9, 21, ...], target = 4
 Output: -1
 ```
 
 Challenge
 
-O\(logn\) time, n is the first index of the given target number.
+O(logn) time, n is the first index of the given target number.
 
 ## Solution - Binary Search
 
-![](../../.gitbook/assets/screen-shot-2021-04-24-at-12.11.13-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-04-24 at 12.11.13 AM.png>)
 
 ### Code
 
@@ -67,13 +67,11 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: O(1)**

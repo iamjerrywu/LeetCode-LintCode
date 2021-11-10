@@ -1,4 +1,4 @@
-# Minimum Number of Work Sessions to Finish the Tasks \(LeetCode 1986\) \(M\)
+# Minimum Number of Work Sessions to Finish the Tasks (LeetCode 1986) (M)
 
 ## Problem
 
@@ -18,7 +18,7 @@ The tests are generated such that `sessionTime` is **greater** than or **equal**
 
 **Example 1:**
 
-```text
+```
 Input: tasks = [1,2,3], sessionTime = 3
 Output: 2
 Explanation: You can finish the tasks in two work sessions.
@@ -28,7 +28,7 @@ Explanation: You can finish the tasks in two work sessions.
 
 **Example 2:**
 
-```text
+```
 Input: tasks = [3,1,3,1,1], sessionTime = 8
 Output: 2
 Explanation: You can finish the tasks in two work sessions.
@@ -38,7 +38,7 @@ Explanation: You can finish the tasks in two work sessions.
 
 **Example 3:**
 
-```text
+```
 Input: tasks = [1,2,3,4,5], sessionTime = 15
 Output: 1
 Explanation: You can finish all the tasks in one work session.
@@ -55,10 +55,10 @@ Explanation: You can finish all the tasks in one work session.
 
 The greedy thinking for this problem would be
 
-1. First try to find .the perfect fit to remaining time \(sessionTime\) with search algorithm
+1. First try to find .the perfect fit to remaining time (sessionTime) with search algorithm
 2. If no perfect fit can be found, then start from biggest to the lowest
 
-Need to use a list to store task, and a set to record the task in case they are run out 
+Need to use a list to store task, and a set to record the task in case they are run out&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -141,6 +141,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
-* **Space Complexity:** 
-
+* **Time Complexity: **
+* **Space Complexity: **

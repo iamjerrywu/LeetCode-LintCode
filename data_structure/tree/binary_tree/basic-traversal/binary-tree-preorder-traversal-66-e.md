@@ -1,4 +1,4 @@
-# Binary Tree Preorder Traversal 66 \(E\)
+# Binary Tree Preorder Traversal 66 (E)
 
 ## Problem
 
@@ -6,7 +6,7 @@ Description
 
 Given a binary tree, return the preorder traversal of its nodes' values.
 
-* The first data is the root node, followed by the value of the left and right son nodes, and "\#" indicates that there is no child node.
+* The first data is the root node, followed by the value of the left and right son nodes, and "#" indicates that there is no child node.
 * The number of nodes does not exceed 20.
 
 Example
@@ -15,45 +15,45 @@ Example
 
 Input:
 
-```text
+```
 binary tree = {1,2,3}
 ```
 
 Output:
 
-```text
+```
 [1,2,3]
 ```
 
 Explanation:
 
-   1  
-  /  \  
-2     3  
+&#x20;  1\
+&#x20; /  \\\
+2     3\
 It will be serialized as {1,2,3} preorder traversal
 
 **Example 2:**
 
 Input:
 
-```text
+```
 binary tree = {1,#,2,3}
 ```
 
 Output:
 
-```text
+```
 [1,2,3]
 ```
 
 Explanation:
 
-1  
-  \  
-   2  
-  /  
-3  
-It will be serialized as {1,\#,2,3} preorder traversalChallenge
+1\
+&#x20; \\\
+&#x20;  2\
+&#x20; /\
+3\
+It will be serialized as {1,#,2,3} preorder traversalChallenge
 
 Can you do it without recursion?
 
@@ -99,7 +99,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Iteration using Stack
 
@@ -146,5 +146,4 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
-
+****

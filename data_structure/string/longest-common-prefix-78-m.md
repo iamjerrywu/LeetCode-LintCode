@@ -1,12 +1,12 @@
-# Longest Common Prefix 78 \(M\)
+# Longest Common Prefix 78 (M)
 
 ## Problem
 
 [https://www.lintcode.com/problem/78/](https://www.lintcode.com/problem/78/)
 
-Given k strings, find the longest common prefix \(_LCP_\).Example
+Given k strings, find the longest common prefix (_LCP_).Example
 
-```text
+```
 Example 1:
 	Input:  "ABCD", "ABEF", "ACEF"
 	Output:  "A"
@@ -47,19 +47,33 @@ class Solution:
 {% endtab %}
 
 {% tab title="java" %}
-```
-
+```java
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        Arrays.sort(strs, (a, b)->Integer.compare(a.length(), b.length()));
+        String ans = strs[0];
+        
+        for (int i = 1; i < strs.length; i++) {
+            for (int j = 0; j < Math.min(ans.length(), strs[i].length()); j++) {
+                if (ans.charAt(j) != strs[i].charAt(j)) {
+                    ans = ans.substring(0, j);
+                }
+            }
+        }
+        return ans;
+    }
+}
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(s\)**
+* **Time Complexity: O(s)**
   * s = length of total strs
-* **Space Complexity: O\(1\)**
+* **Space Complexity: O(1)**
 
-\*\*\*\*
+****
 
 ## Solution - Horizontal Scan
 
@@ -96,16 +110,14 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(s\)**
+* **Time Complexity: O(s)**
   * s = length of total strs
-* **Space Complexity: O\(1\)**
+* **Space Complexity: O(1)**
 
-\*\*\*\*
-
+****

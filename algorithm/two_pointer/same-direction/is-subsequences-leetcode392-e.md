@@ -1,21 +1,21 @@
-# Is Subsequences \(LeetCode392\) \(E\)
+# Is Subsequences (LeetCode392) (E)
 
 ## Problem
 
-Given two strings `s` and `t`, return `true` _if_ `s` _is a **subsequence** of_ `t`_, or_ `false` _otherwise_.
+Given two strings `s` and `t`, return `true`_ if _`s`_ is a **subsequence** of _`t`_, or _`false`_ otherwise_.
 
-A **subsequence** of a string is a new string that is formed from the original string by deleting some \(can be none\) of the characters without disturbing the relative positions of the remaining characters. \(i.e., `"ace"` is a subsequence of `"abcde"` while `"aec"` is not\).
+A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `"ace"` is a subsequence of `"abcde"` while `"aec"` is not).
 
 **Example 1:**
 
-```text
+```
 Input: s = "abc", t = "ahbgdc"
 Output: true
 ```
 
 **Example 2:**
 
-```text
+```
 Input: s = "axc", t = "ahbgdc"
 Output: false
 ```
@@ -26,7 +26,7 @@ Output: false
 * `0 <= t.length <= 104`
 * `s` and `t` consist only of lowercase English letters.
 
- **Follow up:** Suppose there are lots of incoming `s`, say `s1, s2, ..., sk` where `k >= 109`, and you want to check one by one to see if `t` has its subsequence. In this scenario, how would you change your code?  
+&#x20;**Follow up:** Suppose there are lots of incoming `s`, say `s1, s2, ..., sk` where `k >= 109`, and you want to check one by one to see if `t` has its subsequence. In this scenario, how would you change your code?\
 
 
 ## Solution - Find All Subsequences
@@ -63,7 +63,7 @@ Will LTE!
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Two Pointers
 
@@ -86,6 +86,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**

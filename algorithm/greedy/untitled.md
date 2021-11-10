@@ -1,8 +1,8 @@
-# Minimum Number of Swaps to Make the Binary String Alternating \(LeetCode 1864\) \(M\)
+# Minimum Number of Swaps to Make the Binary String Alternating (LeetCode 1864) (M)
 
 ## Problem
 
-Given a binary string `s`, return _the **minimum** number of character swaps to make it **alternating**, or_ `-1` _if it is impossible._
+Given a binary string `s`, return _the **minimum** number of character swaps to make it **alternating**, or _`-1`_ if it is impossible._
 
 The string is called **alternating** if no two adjacent characters are equal. For example, the strings `"010"` and `"1010"` are alternating, while the string `"0100"` is not.
 
@@ -10,7 +10,7 @@ Any two characters may be swapped, even if they are **not adjacent**.
 
 **Example 1:**
 
-```text
+```
 Input: s = "111000"
 Output: 1
 Explanation: Swap positions 1 and 4: "111000" -> "101010"
@@ -19,7 +19,7 @@ The string is now alternating.
 
 **Example 2:**
 
-```text
+```
 Input: s = "010"
 Output: 0
 Explanation: The string is already alternating, no swaps are needed.
@@ -27,7 +27,7 @@ Explanation: The string is already alternating, no swaps are needed.
 
 **Example 3:**
 
-```text
+```
 Input: s = "1110"
 Output: -1
 ```
@@ -37,17 +37,17 @@ Output: -1
 * `1 <= s.length <= 1000`
 * `s[i]` is either `'0'` or `'1'`.
 
-## Solution 
+## Solution&#x20;
 
 Greedy thoughts:
 
-* If abs\(count\[0\] - count\[1\]\) &gt; 1
+* If abs(count\[0] - count\[1]) > 1
   * Impossible to make it alternative stirng
-* If count\[0\] &gt; count\[1\]
+* If count\[0] > count\[1]
   * compare it with 0101...0
-* elif count\[0\] &lt; count\[1\]
+* elif count\[0] < count\[1]
   * compare it with 1010..1
-* else \(count\[0\] == count\[1\]\):
+* else (count\[0] == count\[1]):
   * compare it with 0101...0
   * compare it with 1010...1
   * Then pick the min vlaue
@@ -89,6 +89,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**

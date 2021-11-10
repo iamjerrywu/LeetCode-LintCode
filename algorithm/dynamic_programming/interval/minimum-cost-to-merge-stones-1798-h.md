@@ -1,34 +1,34 @@
-# Minimum Cost to Merge Stones 1798 \(H\)
+# Minimum Cost to Merge Stones 1798 (H)
 
 ## Problem
 
-There are N piles of stones arranged in a row. The i-th pile has stones\[i\] stones.
+There are N piles of stones arranged in a row. The i-th pile has stones\[i] stones.
 
 A move consists of merging exactly K consecutive piles into one pile, and the cost of this move is equal to the total number of stones in these K piles.
 
 Find the minimum cost to merge all piles of stones into one pile. If it is impossible, return -1.
 
-* 1 &lt;= stones.length &lt;= 100
-* 2 &lt;= K &lt;= 30
-* 1 &lt;= stones\[i\] &lt;= 100
+* 1 <= stones.length <= 100
+* 2 <= K <= 30
+* 1 <= stones\[i] <= 100
 
 Example
 
 Example 1:
 
-```text
+```
 Input: stones = [3,2,4,1], K = 2 Output: 20Explanation: We start with [3, 2, 4, 1].We merge [3, 2] for a cost of 5, and we are left with [5, 4, 1].We merge [4, 1] for a cost of 5, and we are left with [5, 5].We merge [5, 5] for a cost of 10, and we are left with [10].The total cost was 20, and this is the minimum possible.
 ```
 
 Example 1:
 
-```text
+```
 Input: stones = [3,2,4,1], K = 3Output: -1Explanation: After any merge operation, there are 2 piles left, and we can't merge anymore.  So the task is impossible.
 ```
 
 ## Solution - DP
 
-![](../../../.gitbook/assets/screen-shot-2021-06-08-at-5.30.50-pm.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-06-08 at 5.30.50 PM.png>)
 
 ### Code
 
@@ -88,7 +88,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Memorization
 
@@ -172,6 +172,4 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-
-
 

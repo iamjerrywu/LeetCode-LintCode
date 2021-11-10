@@ -1,18 +1,18 @@
-# Lowest Common Ancestor II 474 \(E\)
+# Lowest Common Ancestor II 474 (E)
 
 ## Problem
 
 Description
 
-Given the root and two nodes in a Binary Tree. Find the lowest common ancestor\(LCA\) of the two nodes.
+Given the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the two nodes.
 
-The nearest common ancestor of two nodes refers to the nearest common node among all the parent nodes of two nodes \(including the two nodes\).
+The nearest common ancestor of two nodes refers to the nearest common node among all the parent nodes of two nodes (including the two nodes).
 
 In addition to the left and right son pointers, each node also contains a father pointer, `parent`, pointing to its own father.Example
 
 **Example 1:**
 
-```text
+```
 Input：{4,3,7,#,#,5,6},3,5
 Output：4
 Explanation：
@@ -26,7 +26,7 @@ LCA(3, 5) = 4
 
 **Example 2:**
 
-```text
+```
 Input：{4,3,7,#,#,5,6},5,6
 Output：7
 Explanation：
@@ -45,13 +45,11 @@ LCA(5, 6) = 7
 {% tabs %}
 {% tab title="python" %}
 ```python
-
 ```
 {% endtab %}
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -61,7 +59,7 @@ LCA(5, 6) = 7
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - HashSet
 
@@ -106,7 +104,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -116,13 +113,13 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - List
 
 Use two lists to record all the values, than find the last same values from both
 
-![](../../../../.gitbook/assets/screen-shot-2021-04-22-at-1.10.40-am.png)
+![](<../../../../.gitbook/assets/Screen Shot 2021-04-22 at 1.10.40 AM.png>)
 
 ### Code
 
@@ -165,7 +162,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -174,4 +170,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

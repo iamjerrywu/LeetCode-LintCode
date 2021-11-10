@@ -1,16 +1,16 @@
-# Check if All Characters Have Equal Number of Occurrences 1941 \(E\)
+# Check if All Characters Have Equal Number of Occurrences 1941 (E)
 
 ## Problem
 
 
 
-Given a string `s`, return `true` _if_ `s` _is a **good** string, or_ `false` _otherwise_.
+Given a string `s`, return `true`_ if _`s`_ is a **good** string, or _`false`_ otherwise_.
 
-A string `s` is **good** if **all** the characters that appear in `s` have the **same** number of occurrences \(i.e., the same frequency\).
+A string `s` is **good** if **all** the characters that appear in `s` have the **same** number of occurrences (i.e., the same frequency).
 
 **Example 1:**
 
-```text
+```
 Input: s = "abacbc"
 Output: true
 Explanation: The characters that appear in s are 'a', 'b', and 'c'. All characters occur 2 times in s.
@@ -18,7 +18,7 @@ Explanation: The characters that appear in s are 'a', 'b', and 'c'. All characte
 
 **Example 2:**
 
-```text
+```
 Input: s = "aaabb"
 Output: false
 Explanation: The characters that appear in s are 'a' and 'b'.
@@ -54,7 +54,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Array
 
@@ -81,4 +81,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

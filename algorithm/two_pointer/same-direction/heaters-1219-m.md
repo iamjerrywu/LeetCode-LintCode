@@ -1,4 +1,4 @@
-# Heaters 1219 \(M\)
+# Heaters 1219 (M)
 
 ## Problem
 
@@ -8,14 +8,14 @@ Now, you are given positions of houses and heaters on a horizontal line, find ou
 
 So, your input will be the positions of houses and heaters seperately, and your expected output will be the minimum radius standard of heaters.
 
-1.Numbers of houses and heaters you are given are non-negative and will not exceed 25000.  
-2.Positions of houses and heaters you are given are non-negative and will not exceed 10^9.  
-3.As long as a house is in the heaters' warm radius range, it can be warmed.  
+1.Numbers of houses and heaters you are given are non-negative and will not exceed 25000.\
+2.Positions of houses and heaters you are given are non-negative and will not exceed 10^9.\
+3.As long as a house is in the heaters' warm radius range, it can be warmed.\
 4.All the heaters follow your radius standard and the warm radius will the same.Example
 
 **Example 1:**
 
-```text
+```
 Input: [1,2,3],[2]
 Output: 1
 Explanation: The only heater was placed in the position 2, and if we use the radius 1 standard, then all the houses can be warmed.
@@ -23,7 +23,7 @@ Explanation: The only heater was placed in the position 2, and if we use the rad
 
 **Example 2:**
 
-```text
+```
 Input: [1,2,3,4],[1,4]
 Output: 1
 Explanation: The two heater was placed in the position 1 and 4. We need to use radius 1 standard, then all the houses can be warmed.
@@ -33,10 +33,10 @@ Explanation: The two heater was placed in the position 1 and 4. We need to use r
 
 When house choosing heater, must be following two cases:
 
-* Left last one heater &lt;= house location 
-* Right first one heater &gt;= house location
+* Left last one heater <= house location&#x20;
+* Right first one heater >= house location
 
-![](../../../.gitbook/assets/screen-shot-2021-05-10-at-11.04.46-pm.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-05-10 at 11.04.46 PM.png>)
 
 ### Code
 
@@ -82,17 +82,17 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(\(n+m\)\*logm\)**
-  * Sort: O\(mlogm\)
-  * Traverse + Binary search: O\(n \* logm\)
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O((n+m)\*logm)**
+  * Sort: O(mlogm)
+  * Traverse + Binary search: O(n \* logm)
+* **Space Complexity: O(n)**
 
 ## Solution - Two Pointer
 
-Consider if heaters\[j\] can provide heat to house\[i\]
+Consider if heaters\[j] can provide heat to house\[i]
 
-* If heaters\[j\] is closer to house\[i\] than heaters\[j+1\] =&gt; then i+1
-* If heaters\[j + 1\] is closer to house\[i\] then heaters\[j\] =&gt; then j + 1
+* If heaters\[j] is closer to house\[i] than heaters\[j+1] => then i+1
+* If heaters\[j + 1] is closer to house\[i] then heaters\[j] => then j + 1
 
 ### Code
 
@@ -131,8 +131,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn + mlogm\)**
-  * Sort: O\(nlogn + mlogm\)
-  * traverse: O\(n + m\)
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(nlogn + mlogm)**
+  * Sort: O(nlogn + mlogm)
+  * traverse: O(n + m)
+* **Space Complexity: O(1)**

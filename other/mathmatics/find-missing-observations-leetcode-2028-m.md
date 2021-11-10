@@ -1,4 +1,4 @@
-# Find Missing Observations \(LeetCode 2028\) \(M\)
+# Find Missing Observations (LeetCode 2028) (M)
 
 ## Problem
 
@@ -6,7 +6,7 @@ You have observations of `n + m` **6-sided** dice rolls with each face numbered 
 
 You are given an integer array `rolls` of length `m` where `rolls[i]` is the value of the `ith` observation. You are also given the two integers `mean` and `n`.
 
-Return _an array of length_ `n` _containing the missing observations such that the **average value** of the_ `n + m` _rolls is **exactly**_ `mean`. If there are multiple valid answers, return _any of them_. If no such array exists, return _an empty array_.
+Return _an array of length _`n`_ containing the missing observations such that the **average value **of the _`n + m`_ rolls is **exactly** _`mean`. If there are multiple valid answers, return _any of them_. If no such array exists, return _an empty array_.
 
 The **average value** of a set of `k` numbers is the sum of the numbers divided by `k`.
 
@@ -14,7 +14,7 @@ Note that `mean` is an integer, so the sum of the `n + m` rolls should be divisi
 
 **Example 1:**
 
-```text
+```
 Input: rolls = [3,2,4,3], mean = 4, n = 2
 Output: [6,6]
 Explanation: The mean of all n + m rolls is (3 + 2 + 4 + 3 + 6 + 6) / 6 = 4.
@@ -22,7 +22,7 @@ Explanation: The mean of all n + m rolls is (3 + 2 + 4 + 3 + 6 + 6) / 6 = 4.
 
 **Example 2:**
 
-```text
+```
 Input: rolls = [1,5,6], mean = 3, n = 4
 Output: [2,3,2,2]
 Explanation: The mean of all n + m rolls is (1 + 5 + 6 + 2 + 3 + 2 + 2) / 7 = 3.
@@ -30,7 +30,7 @@ Explanation: The mean of all n + m rolls is (1 + 5 + 6 + 2 + 3 + 2 + 2) / 7 = 3.
 
 **Example 3:**
 
-```text
+```
 Input: rolls = [1,2,3,4], mean = 6, n = 4
 Output: []
 Explanation: It is impossible for the mean to be 6 no matter what the 4 missing rolls are.
@@ -38,7 +38,7 @@ Explanation: It is impossible for the mean to be 6 no matter what the 4 missing 
 
 **Example 4:**
 
-```text
+```
 Input: rolls = [1], mean = 3, n = 1
 Output: [5]
 Explanation: The mean of all n + m rolls is (1 + 5) / 2 = 3.
@@ -79,6 +79,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-

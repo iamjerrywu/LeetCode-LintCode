@@ -1,14 +1,14 @@
-# Number of Strings That Appear as Substrings in Word \(LeetCode 1967\) \(E\)
+# Number of Strings That Appear as Substrings in Word (LeetCode 1967) (E)
 
 ## Problem
 
-Given an array of strings `patterns` and a string `word`, return _the **number** of strings in_ `patterns` _that exist as a **substring** in_ `word`.
+Given an array of strings `patterns` and a string `word`, return _the **number** of strings in _`patterns`_ that exist as a **substring** in _`word`.
 
 A **substring** is a contiguous sequence of characters within a string.
 
 **Example 1:**
 
-```text
+```
 Input: patterns = ["a","abc","bc","d"], word = "abc"
 Output: 3
 Explanation:
@@ -21,7 +21,7 @@ Explanation:
 
 **Example 2:**
 
-```text
+```
 Input: patterns = ["a","b","c"], word = "aaaaabbbbb"
 Output: 2
 Explanation:
@@ -33,7 +33,7 @@ Explanation:
 
 **Example 3:**
 
-```text
+```
 Input: patterns = ["a","a","a"], word = "ab"
 Output: 3
 Explanation: Each of the patterns appears as a substring in word "ab".
@@ -46,7 +46,7 @@ Explanation: Each of the patterns appears as a substring in word "ab".
 * `1 <= word.length <= 100`
 * `patterns[i]` and `word` consist of lowercase English letters.
 
-## Solution - String.Find\(\)
+## Solution - String.Find()
 
 {% tabs %}
 {% tab title="Python" %}
@@ -67,9 +67,9 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
-## Solution - Construct Substrings \(1\)
+## Solution - Construct Substrings (1)
 
 Count the substring with start, and the end point
 
@@ -99,7 +99,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-## Solution - Construct Substrings \(2\)
+## Solution - Construct Substrings (2)
 
 Count the substring with start, and the length of substrings
 
@@ -131,4 +131,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

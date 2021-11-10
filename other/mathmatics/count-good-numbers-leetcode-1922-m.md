@@ -1,18 +1,18 @@
-# Count Good Numbers \(LeetCode 1922\) \(M\)
+# Count Good Numbers (LeetCode 1922) (M)
 
 ## Problem
 
-A digit string is **good** if the digits **\(0-indexed\)** at **even** indices are **even** and the digits at **odd** indices are **prime** \(`2`, `3`, `5`, or `7`\).
+A digit string is **good** if the digits **(0-indexed)** at **even** indices are **even** and the digits at **odd** indices are **prime** (`2`, `3`, `5`, or `7`).
 
-* For example, `"2582"` is good because the digits \(`2` and `8`\) at even positions are even and the digits \(`5` and `2`\) at odd positions are prime. However, `"3245"` is **not** good because `3` is at an even index but is not even.
+* For example, `"2582"` is good because the digits (`2` and `8`) at even positions are even and the digits (`5` and `2`) at odd positions are prime. However, `"3245"` is **not** good because `3` is at an even index but is not even.
 
-Given an integer `n`, return _the **total** number of good digit strings of length_ `n`. Since the answer may be large, **return it modulo** `109 + 7`.
+Given an integer `n`, return _the **total** number of good digit strings of length _`n`. Since the answer may be large, **return it modulo **`109 + 7`.
 
 A **digit string** is a string consisting of digits `0` through `9` that may contain leading zeros.
 
 **Example 1:**
 
-```text
+```
 Input: n = 1
 Output: 5
 Explanation: The good numbers of length 1 are "0", "2", "4", "6", "8".
@@ -20,14 +20,14 @@ Explanation: The good numbers of length 1 are "0", "2", "4", "6", "8".
 
 **Example 2:**
 
-```text
+```
 Input: n = 4
 Output: 400
 ```
 
 **Example 3:**
 
-```text
+```
 Input: n = 50
 Output: 564908303
 ```
@@ -36,7 +36,7 @@ Output: 564908303
 
 * `1 <= n <= 1015`
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -61,12 +61,12 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: O(1)**
 
-\*\*\*\*
+****
 
-## Solution - Pow\(\) library
+## Solution - Pow() library
 
 {% tabs %}
 {% tab title="Python" %}
@@ -85,6 +85,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: O(1)**

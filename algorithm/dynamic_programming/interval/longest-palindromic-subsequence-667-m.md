@@ -1,4 +1,4 @@
-# Longest Palindromic Subsequence 667 \(M\)
+# Longest Palindromic Subsequence 667 (M)
 
 ## Problem
 
@@ -6,7 +6,7 @@ Given a string s, find the longest palindromic subsequence's length in s. You ma
 
 **Example1**
 
-```text
+```
 Input: "bbbab"
 Output: 4
 Explanation:
@@ -15,14 +15,14 @@ One possible longest palindromic subsequence is "bbbb".
 
 **Example2**
 
-```text
+```
 Input: "bbbbb"
 Output: 5
 ```
 
 ## Solution - Interval DP
 
-![](../../../.gitbook/assets/screen-shot-2021-05-15-at-8.50.23-pm.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-05-15 at 8.50.23 PM.png>)
 
 ### Code
 
@@ -62,6 +62,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^2\)**
-* **Space Complexity: O\(n^2\)**
-
+* **Time Complexity: O(n^2)**
+* **Space Complexity: O(n^2)**

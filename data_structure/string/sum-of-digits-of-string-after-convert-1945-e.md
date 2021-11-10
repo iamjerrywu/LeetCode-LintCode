@@ -1,22 +1,22 @@
-# Sum of Digits of String After Convert 1945 \(E\)
+# Sum of Digits of String After Convert 1945 (E)
 
 ## Problem
 
 You are given a string `s` consisting of lowercase English letters, and an integer `k`.
 
-First, **convert** `s` into an integer by replacing each letter with its position in the alphabet \(i.e., replace `'a'` with `1`, `'b'` with `2`, ..., `'z'` with `26`\). Then, **transform** the integer by replacing it with the **sum of its digits**. Repeat the **transform** operation `k` **times** in total.
+First, **convert** `s` into an integer by replacing each letter with its position in the alphabet (i.e., replace `'a'` with `1`, `'b'` with `2`, ..., `'z'` with `26`). Then, **transform** the integer by replacing it with the **sum of its digits**. Repeat the **transform** operation `k`** times** in total.
 
 For example, if `s = "zbax"` and `k = 2`, then the resulting integer would be `8` by the following operations:
 
 * **Convert**: `"zbax" ➝ "(26)(2)(1)(24)" ➝ "262124" ➝ 262124`
-* **Transform \#1**: `262124 ➝ 2 + 6 + 2 + 1 + 2 + 4 ➝ 17`
-* **Transform \#2**: `17 ➝ 1 + 7 ➝ 8`
+* **Transform #1**: `262124 ➝ 2 + 6 + 2 + 1 + 2 + 4 ➝ 17`
+* **Transform #2**: `17 ➝ 1 + 7 ➝ 8`
 
 Return _the resulting integer after performing the operations described above_.
 
 **Example 1:**
 
-```text
+```
 Input: s = "iiii", k = 1
 Output: 36
 Explanation: The operations are as follows:
@@ -27,7 +27,7 @@ Thus the resulting integer is 36.
 
 **Example 2:**
 
-```text
+```
 Input: s = "leetcode", k = 2
 Output: 6
 Explanation: The operations are as follows:
@@ -39,7 +39,7 @@ Thus the resulting integer is 6.
 
 **Example 3:**
 
-```text
+```
 Input: s = "zbax", k = 2
 Output: 8
 ```
@@ -50,7 +50,7 @@ Output: 8
 * `1 <= k <= 10`
 * `s` consists of lowercase English letters.
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -77,4 +77,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

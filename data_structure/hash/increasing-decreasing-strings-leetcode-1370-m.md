@@ -1,4 +1,4 @@
-# Increasing Decreasing Strings \(LeetCode 1370\) \(M\)
+# Increasing Decreasing Strings (LeetCode 1370) (M)
 
 ## Problem
 
@@ -20,7 +20,7 @@ Return _the result string_ after sorting `s` with this algorithm.
 
 **Example 1:**
 
-```text
+```
 Input: s = "aaaabbbbcccc"
 Output: "abccbaabccba"
 Explanation: After steps 1, 2 and 3 of the first iteration, result = "abc"
@@ -32,7 +32,7 @@ After steps 4, 5 and 6 of the second iteration, result = "abccbaabccba"
 
 **Example 2:**
 
-```text
+```
 Input: s = "rat"
 Output: "art"
 Explanation: The word "rat" becomes "art" after re-ordering it with the mentioned algorithm.
@@ -40,21 +40,21 @@ Explanation: The word "rat" becomes "art" after re-ordering it with the mentione
 
 **Example 3:**
 
-```text
+```
 Input: s = "leetcode"
 Output: "cdelotee"
 ```
 
 **Example 4:**
 
-```text
+```
 Input: s = "ggggggg"
 Output: "ggggggg"
 ```
 
 **Example 5:**
 
-```text
+```
 Input: s = "spo"
 Output: "ops"
 ```
@@ -101,10 +101,10 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
 
-## Solution - Counter 
+## Solution - Counter&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -128,6 +128,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-

@@ -1,4 +1,4 @@
-# Connecting Graph 589 \(M\)
+# Connecting Graph 589 (M)
 
 ## Problem
 
@@ -13,17 +13,17 @@ Example
 
 Example 1:
 
-```text
+```
 Input:ConnectingGraph(5)query(1, 2)connect(1, 2)query(1, 3) connect(2, 4)query(1, 4) Output:[false,false,true]
 ```
 
 Example 2:
 
-```text
+```
 Input:ConnectingGraph(6)query(1, 2)query(2, 3)query(1, 3)query(5, 6)query(1, 4)Output:[false,false,false,false,false]
 ```
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -78,8 +78,7 @@ class ConnectingGraph:
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
-  * Connect: O\(1\)
-  * Query: O\(1\)
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: **
+  * Connect: O(1)
+  * Query: O(1)
+* **Space Complexity: O(n)**

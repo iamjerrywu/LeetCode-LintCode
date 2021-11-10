@@ -1,4 +1,4 @@
-# The Number of Weak Characters in the Game \(LeetCode 1996\) \(M\)
+# The Number of Weak Characters in the Game (LeetCode 1996) (M)
 
 ## Problem
 
@@ -10,7 +10,7 @@ Return _the number of **weak** characters_.
 
 **Example 1:**
 
-```text
+```
 Input: properties = [[5,5],[6,3],[3,6]]
 Output: 0
 Explanation: No character has strictly greater attack and defense than the other.
@@ -18,7 +18,7 @@ Explanation: No character has strictly greater attack and defense than the other
 
 **Example 2:**
 
-```text
+```
 Input: properties = [[2,2],[3,3]]
 Output: 1
 Explanation: The first character is weak because the second character has a strictly greater attack and defense.
@@ -26,7 +26,7 @@ Explanation: The first character is weak because the second character has a stri
 
 **Example 3:**
 
-```text
+```
 Input: properties = [[1,5],[10,4],[4,3]]
 Output: 1
 Explanation: The third character is weak because the second character has a strictly greater attack and defense.
@@ -38,9 +38,9 @@ Explanation: The third character is weak because the second character has a stri
 * `properties[i].length == 2`
 * `1 <= attacki, defensei <= 105`
 
-## Solution - Brute Force \(LTE, pass 39/44\)
+## Solution - Brute Force (LTE, pass 39/44)
 
-Find the attack, defense pairs respectively, then find their intersections. 
+Find the attack, defense pairs respectively, then find their intersections.&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -100,10 +100,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity:** 
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: **
 
-## Solution - Brute Force with Binary Search \(LTE, pass39/44\)
+## Solution - Brute Force with Binary Search (LTE, pass39/44)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -175,8 +175,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity:** 
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: **
 
 ## Solution - Stack one pass
 
@@ -203,6 +203,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity:** 
-
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: **

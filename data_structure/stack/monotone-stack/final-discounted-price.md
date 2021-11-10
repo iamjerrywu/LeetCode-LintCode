@@ -1,30 +1,30 @@
-# Final Discounted Price 1852 \(M\)
+# Final Discounted Price 1852 (M)
 
 ## Problem
 
-A shopkeeper needs to complete a sales task. He arranges the items for sale in a row.  
-Starting from the left, the shopkeeper subtracts the price of the first lower or the same price item on the right side of the item from its full price.  
-If there is no item to the right that costs less than or equal to the current item's price, the current item is sold at full price.  
+A shopkeeper needs to complete a sales task. He arranges the items for sale in a row.\
+Starting from the left, the shopkeeper subtracts the price of the first lower or the same price item on the right side of the item from its full price.\
+If there is no item to the right that costs less than or equal to the current item's price, the current item is sold at full price.\
 You should return the actual selling price of each item.
 
-* The length of Prices is within range: \[1, 100000\]
-* Prices\[i\] is within range: \[1, 1000000\]
+* The length of Prices is within range: \[1, 100000]
+* Prices\[i] is within range: \[1, 1000000]
 
 Example
 
 **Example 1:**
 
-```text
+```
 Input:Prices = [2, 3, 1, 2, 4, 2]Output: [1, 2, 1, 0, 2, 2]Explanation: The item 0 and 1 are each discounted by 1 unit, The item 3 at 2 units, is discounted 2 units, as would the item 4 at 4 units. 
 ```
 
 **Example 2:**
 
-```text
+```
 Input:Prices = [1, 2, 3, 4, 5]Output:[1, 2, 3, 4, 5]Explanation: each item should keep full price beacause there are not equal or lower priced items to the right
 ```
 
-## Solution - Brute Force \(Simulation\)
+## Solution - Brute Force (Simulation)
 
 ### Code
 
@@ -51,15 +51,15 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^2\)**
-  * n: len\(prices\)
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n^2)**
+  * n: len(prices)
+* **Space Complexity: O(n)**
 
 ## Solution - Monotonic Stack
 
 In this case, we maintain a monotone stack that the value inside should always be ascending
 
-![](../../../.gitbook/assets/screen-shot-2021-06-15-at-10.19.27-am.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-06-15 at 10.19.27 AM.png>)
 
 ### Code
 
@@ -89,8 +89,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(2n\) = O\(n\)**
-  * n: len\(prices\)
+* **Time Complexity: O(2n) = O(n)**
+  * n: len(prices)
   * Every element is visited twice
-* **Space Complexity: O\(n\)**
-
+* **Space Complexity: O(n)**

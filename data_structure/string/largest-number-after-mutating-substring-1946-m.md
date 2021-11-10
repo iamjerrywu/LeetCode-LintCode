@@ -1,18 +1,18 @@
-# Largest Number After Mutating Substring 1946 \(M\)
+# Largest Number After Mutating Substring 1946 (M)
 
 ## Problem
 
 You are given a string `num`, which represents a large integer. You are also given a **0-indexed** integer array `change` of length `10` that maps each digit `0-9` to another digit. More formally, digit `d` maps to digit `change[d]`.
 
-You may choose to **mutate** any substring of `num`. To mutate a substring, replace each digit `num[i]` with the digit it maps to in `change` \(i.e. replace `num[i]` with `change[num[i]]`\).
+You may choose to **mutate** any substring of `num`. To mutate a substring, replace each digit `num[i]` with the digit it maps to in `change` (i.e. replace `num[i]` with `change[num[i]]`).
 
-Return _a string representing the **largest** possible integer after **mutating** \(or choosing not to\) any substring of_ `num`.
+Return _a string representing the **largest** possible integer after **mutating** (or choosing not to) any substring of _`num`.
 
 A **substring** is a contiguous sequence of characters within the string.
 
 **Example 1:**
 
-```text
+```
 Input: num = "132", change = [9,8,5,0,3,6,4,2,6,8]
 Output: "832"
 Explanation: Replace the substring "1":
@@ -23,7 +23,7 @@ Thus, "132" becomes "832".
 
 **Example 2:**
 
-```text
+```
 Input: num = "021", change = [9,4,3,5,7,2,1,9,0,6]
 Output: "934"
 Explanation: Replace the substring "021":
@@ -36,7 +36,7 @@ Thus, "021" becomes "934".
 
 **Example 3:**
 
-```text
+```
 Input: num = "5", change = [1,4,7,5,3,2,5,6,9,4]
 Output: "5"
 Explanation: "5" is already the largest number that can be created, so return it.
@@ -49,7 +49,7 @@ Explanation: "5" is already the largest number that can be created, so return it
 * `change.length == 10`
 * `0 <= change[d] <= 9`
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -82,4 +82,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

@@ -1,12 +1,12 @@
-# Determine Whether Matrix Can Be Obtained By Rotation \(LeetCode 1886\) \(E\)
+# Determine Whether Matrix Can Be Obtained By Rotation (LeetCode 1886) (E)
 
 ## Problem
 
-Given two `n x n` binary matrices `mat` and `target`, return `true` _if it is possible to make_ `mat` _equal to_ `target` _by **rotating**_ `mat` _in **90-degree increments**, or_ `false` _otherwise._
+Given two `n x n` binary matrices `mat` and `target`, return `true`_ if it is possible to make _`mat`_ equal to _`target`_ by **rotating** _`mat`_ in **90-degree increments**, or _`false`_ otherwise._
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/05/20/grid3.png)
 
-```text
+```
 Input: mat = [[0,1],[1,0]], target = [[1,0],[0,1]]
 Output: true
 Explanation: We can rotate mat 90 degrees clockwise to make mat equal target.
@@ -14,7 +14,7 @@ Explanation: We can rotate mat 90 degrees clockwise to make mat equal target.
 
 **Example 2:**![](https://assets.leetcode.com/uploads/2021/05/20/grid4.png)
 
-```text
+```
 Input: mat = [[0,1],[1,1]], target = [[1,0],[0,1]]
 Output: false
 Explanation: It is impossible to make mat equal to target by rotating mat.
@@ -22,7 +22,7 @@ Explanation: It is impossible to make mat equal to target by rotating mat.
 
 **Example 3:**![](https://assets.leetcode.com/uploads/2021/05/26/grid4.png)
 
-```text
+```
 Input: mat = [[0,0,0],[0,1,0],[1,1,1]], target = [[1,1,1],[0,1,0],[0,0,0]]
 Output: true
 Explanation: We can rotate mat 90 degrees clockwise two times to make mat equal target.
@@ -35,7 +35,7 @@ Explanation: We can rotate mat 90 degrees clockwise two times to make mat equal 
 * `1 <= n <= 10`
 * `mat[i][j]` and `target[i][j]` are either `0` or `1`.
 
-[Discuss](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/discuss)  
+[Discuss](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/discuss)\
 
 
 ## Solution - In Place Comparsion
@@ -73,6 +73,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^2\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n^2)**
+* **Space Complexity: O(1)**

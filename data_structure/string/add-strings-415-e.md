@@ -1,10 +1,10 @@
-# Add Strings 415 \(E\)
+# Add Strings 415 (E)
 
 ## Problem
 
 Given two non-negative integers `num1` and `num2` represented as string, return the sum of `num1` and `num2`.
 
-* The length of both num1 and num2 is &lt; 5100.
+* The length of both num1 and num2 is < 5100.
 * Both num1 and num2 contains only digits 0-9.
 * Both num1 and num2 does not contain any leading zero.
 * You must not use any built-in BigInteger library or convert the inputs to integer directly.
@@ -13,11 +13,11 @@ Example
 
 **Example 1:**
 
-```text
+```
 Input : num1 = "123", num2 = "45"Output : "168"
 ```
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -52,12 +52,43 @@ class Solution:
         return res
 ```
 {% endtab %}
+
+{% tab title="Java" %}
+```java
+class Solution {
+    public String addStrings(String num1, String num2) {
+        int n1_ptr = num1.length() - 1;
+        int n2_ptr = num2.length() - 1;
+        
+        int val = 0;
+        int carry = 0;
+        String ans = "";
+        while (n1_ptr >=0 || n2_ptr >= 0 || carry > 0) {
+            if(n1_ptr >= 0) {
+                val+=Character.getNumericValue(num1.charAt(n1_ptr));
+                n1_ptr-=1;
+            }
+            
+            if(n2_ptr >= 0) {
+                val+=Character.getNumericValue(num2.charAt(n2_ptr));
+                n2_ptr-=1;
+            }
+            val+=carry;
+            carry = val/10;
+            val%=10;
+            ans = Integer.valueOf(val) + ans;
+            val = 0;
+        }
+        return ans;
+    }
+}
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(m + n\)**
-  * m: len\(num1\)
-  * n: len\(num2\)
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(m + n)**
+  * m: len(num1)
+  * n: len(num2)
+* **Space Complexity: O(1)**

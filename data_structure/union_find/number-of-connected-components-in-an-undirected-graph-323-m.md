@@ -1,4 +1,4 @@
-# Number of Connected Components in an Undirected Graph \(LeetCode323\) \(M\)
+# Number of Connected Components in an Undirected Graph (LeetCode323) (M)
 
 ## Problem
 
@@ -8,14 +8,14 @@ Return _the number of connected components in the graph_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/03/14/conn1-graph.jpg)
 
-```text
+```
 Input: n = 5, edges = [[0,1],[1,2],[3,4]]
 Output: 2
 ```
 
 **Example 2:**![](https://assets.leetcode.com/uploads/2021/03/14/conn2-graph.jpg)
 
-```text
+```
 Input: n = 5, edges = [[0,1],[1,2],[2,3],[3,4]]
 Output: 1
 ```
@@ -31,9 +31,9 @@ Output: 1
 
 ## Solution - DFS
 
-![](../../.gitbook/assets/screen-shot-2021-05-20-at-4.49.12-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-20 at 4.49.12 PM.png>)
 
-### Code 
+### Code&#x20;
 
 {% tabs %}
 {% tab title="python" %}
@@ -68,16 +68,16 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(N + E\)**
-  * Graph: O\(n\)
-  * Edges: O\(E\)
+* **Time Complexity: O(N + E)**
+  * Graph: O(n)
+  * Edges: O(E)
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
-\*\*\*\*
+****
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -113,12 +113,12 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
-* **Space Complexity:** 
+* **Time Complexity: **
+* **Space Complexity: **
 
 ## Solution - Union Find
 
-First init an array of n, and each value stores that index's parent \(initially every parent is itself\), later traverse the edges, and union the edges pairs. Like \[0,1\], then set both\(0, 1 nodes\) of their parents to 1. Then do like this so on and so forth
+First init an array of n, and each value stores that index's parent (initially every parent is itself), later traverse the edges, and union the edges pairs. Like \[0,1], then set both(0, 1 nodes) of their parents to 1. Then do like this so on and so forth
 
 ### Code
 
@@ -158,8 +158,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n + m \* logn\)**
+* **Time Complexity: O(n + m \* logn)**
   * n: total nodes
   * m: edges amount
-* **Space Complexity: O\(n\)**
-
+* **Space Complexity: O(n)**

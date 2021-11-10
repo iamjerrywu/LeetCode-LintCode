@@ -1,4 +1,4 @@
-# Longest Substring Without Repeating Characters 384 \(M\)
+# Longest Substring Without Repeating Characters 384 (M)
 
 ## Problem
 
@@ -8,7 +8,7 @@ Given a string, find the length of the longest substring without repeating chara
 
 **Example 1:**
 
-```text
+```
 Input: "abcabcbb"
 Output: 3
 Explanation: The longest substring is "abc".
@@ -16,7 +16,7 @@ Explanation: The longest substring is "abc".
 
 **Example 2:**
 
-```text
+```
 Input: "bbbbb"
 Output: 1
 Explanation: The longest substring is "b".
@@ -24,11 +24,11 @@ Explanation: The longest substring is "b".
 
 Challenge
 
-time complexity O\(n\)
+time complexity O(n)
 
 ## Solution - Two Pointer and Set
 
-Two pointer that one act as start point, and the other would traverse `s` and stop until encounter repetitive characters. Use set to record unique characters, and once move the start pointer to next step, remove the repetitive character inside. 
+Two pointer that one act as start point, and the other would traverse `s` and stop until encounter repetitive characters. Use set to record unique characters, and once move the start pointer to next step, remove the repetitive character inside.&#x20;
 
 
 
@@ -60,21 +60,20 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^2\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n^2)**
+* **Space Complexity: O(n)**
 
-\*\*\*\*
+****
 
 ## Solution - Hashmap
 
-Use Hashmap to recorded the visited characters, and update the start pointer to the position of the latest visited character's previous existed location + 1. 
+Use Hashmap to recorded the visited characters, and update the start pointer to the position of the latest visited character's previous existed location + 1.&#x20;
 
 ### Code
 
@@ -102,13 +101,11 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**

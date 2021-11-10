@@ -1,4 +1,4 @@
-# Critical Connections in a Network 1271 \(H\)
+# Critical Connections in a Network 1271 (H)
 
 ## Problem
 
@@ -6,7 +6,7 @@ There are `n` servers numbered from `0` to `n-1` connected by undirected server-
 
 A _critical connection_ is a connection that, if removed, will make some server unable to reach some other server.
 
-Return all critical connections in the network in any order, but **you should guarantee that for each connections, when you return, index1 is less than index 2. For instance, if the answer is \[\[1,2\],\[3,4\]\] you can return \[\[3,4\],\[1,2\]\], but \[\[2,1\],\[3,4\]\] is invaild.**
+Return all critical connections in the network in any order, but **you should guarantee that for each connections, when you return, index1 is less than index 2. For instance, if the answer is \[\[1,2],\[3,4]] you can return \[\[3,4],\[1,2]], but \[\[2,1],\[3,4]] is invaild.**
 
 * `1 <= n <= 10^5`
 * `n-1 <= connections.length <= 10^5`
@@ -15,16 +15,16 @@ Return all critical connections in the network in any order, but **you should gu
 
 In Java, because of low stack, when you get 57% passed and then RE, you can think that you have passed the problem.Example
 
-```text
+```
 Input:4[[0,1],[1,2],[2,0],[1,3]]Output: [[1,3]]
 ```
 
-Explanation:  
-![&#x56FE;&#x7247;](https://media-test.jiuzhang.com/media/markdown/images/3/30/734d12e2-7278-11ea-9c38-0242ac1a0004.jpg)
+Explanation:\
+![图片](https://media-test.jiuzhang.com/media/markdown/images/3/30/734d12e2-7278-11ea-9c38-0242ac1a0004.jpg)
 
-## Solution 
+## Solution&#x20;
 
-![](../../.gitbook/assets/screen-shot-2021-06-23-at-1.42.19-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-06-23 at 1.42.19 PM.png>)
 
 ### Code
 
@@ -79,4 +79,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

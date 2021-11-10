@@ -1,4 +1,4 @@
-# Product of the Last K Numbers \(LeetCode 1352\) \(M\)
+# Product of the Last K Numbers (LeetCode 1352) (M)
 
 ## Problem
 
@@ -14,7 +14,7 @@ The test cases are generated so that, at any time, the product of any contiguous
 
 **Example:**
 
-```text
+```
 Input
 ["ProductOfNumbers","add","add","add","add","add","getProduct","getProduct","getProduct","add","getProduct"]
 [[],[3],[0],[2],[5],[4],[2],[3],[4],[8],[2]]
@@ -81,6 +81,5 @@ class ProductOfNumbers:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-

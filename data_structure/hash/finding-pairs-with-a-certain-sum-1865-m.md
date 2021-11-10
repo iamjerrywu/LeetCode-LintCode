@@ -1,4 +1,4 @@
-# Finding Pairs With a Certain Sum \(LeetCode1865\) \(M\)
+# Finding Pairs With a Certain Sum (LeetCode1865) (M)
 
 ## Problem
 
@@ -7,7 +7,7 @@
 You are given two integer arrays `nums1` and `nums2`. You are tasked to implement a data structure that supports queries of two types:
 
 1. **Add** a positive integer to an element of a given index in the array `nums2`.
-2. **Count** the number of pairs `(i, j)` such that `nums1[i] + nums2[j]` equals a given value \(`0 <= i < nums1.length` and `0 <= j < nums2.length`\).
+2. **Count** the number of pairs `(i, j)` such that `nums1[i] + nums2[j]` equals a given value (`0 <= i < nums1.length` and `0 <= j < nums2.length`).
 
 Implement the `FindSumPairs` class:
 
@@ -17,7 +17,7 @@ Implement the `FindSumPairs` class:
 
 **Example 1:**
 
-```text
+```
 Input
 ["FindSumPairs", "count", "add", "count", "count", "add", "add", "count"]
 [[[1, 1, 2, 2, 2, 3], [1, 4, 5, 2, 5, 4]], [7], [3, 2], [8], [4], [0, 1], [1, 1], [7]]
@@ -45,9 +45,9 @@ findSumPairs.count(7);  // return 11; pairs (2,1), (2,2), (2,4), (3,1), (3,2), (
 * `1 <= val <= 105`
 * `1 <= tot <= 109`
 
-## Solution - Hash \(1\)
+## Solution - Hash (1)
 
-HashMap storing pairsum as key, and their appearance time as val 
+HashMap storing pairsum as key, and their appearance time as val&#x20;
 
 {% hint style="danger" %}
 LTE
@@ -90,17 +90,17 @@ class FindSumPairs:
 ### Complexity Analysis
 
 * **Time Complexity:**
-  * Add: O\(n\)
+  * Add: O(n)
     * n = total pair sum amounts
-  * Count: O\(1\)
-* **Space Complexity: O\(n\)**
+  * Count: O(1)
+* **Space Complexity: O(n)**
   * n = total pair sum amounts
 
-\*\*\*\*
+****
 
-## Solution - Hash \(2\)
+## Solution - Hash (2)
 
-Store the appearance time of element in nums1, nums2 
+Store the appearance time of element in nums1, nums2&#x20;
 
 ### Code
 
@@ -137,11 +137,10 @@ class FindSumPairs:
 ### Complexity Analysis
 
 * **Time Complexity:**
-  * Add: O\(1\)
+  * Add: O(1)
     * n = total pair sum amounts
-  * Count: O\(n\)
+  * Count: O(n)
     * n: The identical elements amount in n1
-* **Space Complexity: O\(n + m\)**
+* **Space Complexity: O(n + m)**
   * n: The identical elements amount in n1
   * m: The identical elements amount in 2
-

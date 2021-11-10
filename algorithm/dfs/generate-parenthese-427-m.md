@@ -1,4 +1,4 @@
-# Generate Parenthese 427 \(M\)
+# Generate Parenthese 427 (M)
 
 ## Problem
 
@@ -6,17 +6,17 @@ Given n, and there are n pairs of parentheses, write a function to generate all 
 
 **Example 1:**
 
-```text
+```
 Input: 3Output: ["((()))", "(()())", "(())()", "()(())", "()()()"]
 ```
 
 **Example 2:**
 
-```text
+```
 Input: 2Output: ["()()", "(())"]
 ```
 
-## Solution - DFS \(1\)
+## Solution - DFS (1)
 
 ### Code
 
@@ -56,9 +56,9 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
-## Solution - DFS \(2\)
+## Solution - DFS (2)
 
 ### Code
 
@@ -86,4 +86,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

@@ -1,4 +1,4 @@
-# UTF-8 Validation 1262 \(M\)
+# UTF-8 Validation 1262 (M)
 
 ## Problem
 
@@ -11,7 +11,7 @@ A character in **UTF8** can be from **1 to 4 bytes** long, subjected to the foll
 
 This is how the UTF-8 encoding would work:
 
-```text
+```
    Char. number range  |        UTF-8 octet sequence
       (hexadecimal)    |              (binary)
    --------------------+---------------------------------------------
@@ -21,11 +21,11 @@ This is how the UTF-8 encoding would work:
    0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
 ```
 
-**Note:** The input is an array of integers. Only the **least significant 8 bits** of each integer is used to store the data. This means each integer represents only 1 byte of data.
+**Note: **The input is an array of integers. Only the **least significant 8 bits** of each integer is used to store the data. This means each integer represents only 1 byte of data.
 
 **Example 1:**
 
-```text
+```
 Input: data = [197,130,1]
 Output: true
 Explanation: data represents the octet sequence: 11000101 10000010 00000001.
@@ -34,7 +34,7 @@ It is a valid utf-8 encoding for a 2-bytes character followed by a 1-byte charac
 
 **Example 2:**
 
-```text
+```
 Input: data = [235,140,4]
 Output: false
 Explanation: data represented the octet sequence: 11101011 10001100 00000100.
@@ -48,7 +48,7 @@ But the second continuation byte does not start with 10, so it is invalid.
 * `1 <= data.length <= 2 * 104`
 * `0 <= data[i] <= 255`
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -100,6 +100,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(1\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(1)**
+* **Space Complexity: O(1)**

@@ -1,14 +1,14 @@
-# Minimum Moves to Convert String \(LeetCode 2027\) \(E\)
+# Minimum Moves to Convert String (LeetCode 2027) (E)
 
 ## Problem
 
 A **move** is defined as selecting **three** **consecutive characters** of `s` and converting them to `'O'`. Note that if a move is applied to the character `'O'`, it will stay the **same**.
 
-Return _the **minimum** number of moves required so that all the characters of_ `s` _are converted to_ `'O'`.
+Return _the **minimum** number of moves required so that all the characters of _`s`_ are converted to _`'O'`.
 
 **Example 1:**
 
-```text
+```
 Input: s = "XXX"
 Output: 1
 Explanation: XXX -> OOO
@@ -17,7 +17,7 @@ We select all the 3 characters and convert them in one move.
 
 **Example 2:**
 
-```text
+```
 Input: s = "XXOX"
 Output: 2
 Explanation: XXOX -> OOOX -> OOOO
@@ -27,7 +27,7 @@ Then we select the last 3 characters and convert them so that the final string c
 
 **Example 3:**
 
-```text
+```
 Input: s = "OOOO"
 Output: 0
 Explanation: There are no 'X's in s to convert.
@@ -58,6 +58,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-

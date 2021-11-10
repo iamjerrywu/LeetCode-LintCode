@@ -1,14 +1,14 @@
-# Find Original Array From Doubled Array \(LeetCode 2007\) \(M\)
+# Find Original Array From Doubled Array (LeetCode 2007) (M)
 
 ## Problem
 
 An integer array `original` is transformed into a **doubled** array `changed` by appending **twice the value** of every element in `original`, and then randomly **shuffling** the resulting array.
 
-Given an array `changed`, return `original` _if_ `changed` _is a **doubled** array. If_ `changed` _is not a **doubled** array, return an empty array. The elements in_ `original` _may be returned in **any** order_.
+Given an array `changed`, return `original`_ if _`changed`_ is a **doubled** array. If _`changed`_ is not a **doubled** array, return an empty array. The elements in_ `original` _may be returned in **any** order_.
 
 **Example 1:**
 
-```text
+```
 Input: changed = [1,3,4,2,6,8]
 Output: [1,3,4]
 Explanation: One possible original array could be [1,3,4]:
@@ -20,7 +20,7 @@ Other original arrays could be [4,3,1] or [3,1,4].
 
 **Example 2:**
 
-```text
+```
 Input: changed = [6,3,0,1]
 Output: []
 Explanation: changed is not a doubled array.
@@ -28,7 +28,7 @@ Explanation: changed is not a doubled array.
 
 **Example 3:**
 
-```text
+```
 Input: changed = [1]
 Output: []
 Explanation: changed is not a doubled array.
@@ -69,6 +69,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-

@@ -1,14 +1,14 @@
-# Longest Consecutive Sequence 124 \(M\)
+# Longest Consecutive Sequence 124 (M)
 
 ## Problem
 
 Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
 
-Your algorithm should run in O\(n\) complexity.Example
+Your algorithm should run in O(n) complexity.Example
 
 _**Example 1**_
 
-```text
+```
 Input : [100, 4, 200, 1, 3, 2]
 Output : 4
 Explanation : The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length:4
@@ -47,20 +47,19 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^2\)**
+* **Time Complexity: O(n^2)**
   * Would Time Limite Exceed
-* **Space Complexity: O\(n\)**
+* **Space Complexity: O(n)**
 
-\*\*\*\*
+****
 
-## Solution - HashMap Optimized 
+## Solution - HashMap Optimized&#x20;
 
 Only need to start counting on the minimum number in any consecutive sublist
 
@@ -92,13 +91,11 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
+* **Time Complexity: O(n)**
 * **Space Complexity:**
-

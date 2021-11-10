@@ -1,21 +1,21 @@
-# Longest Path On The Tree 1469 \(M\)
+# Longest Path On The Tree 1469 (M)
 
 ## Problem
 
-Given a tree consisting of `n` nodes, `n-1` edges. Output the distance between the two nodes with the furthest distance on this tree.  
+Given a tree consisting of `n` nodes, `n-1` edges. Output the distance between the two nodes with the furthest distance on this tree.\
 Given three arrays of size `n-1`, `starts`, `ends`, and `lens`, indicating that the `i`-th edge is from `starts[i]` to `ends[i]` and the length is `lens[i]`.
 
-Return the farthest distance between any two nodes on the tree, not the depth of the tree. Note that the given edges are undirected edge.  
+Return the farthest distance between any two nodes on the tree, not the depth of the tree. Note that the given edges are undirected edge.\
 It is guaranteed that the given edges are able to constitute a tree.
 
 * 1 \leq n \leq 1\* 10^51≤n≤1∗10​5​​
-* 1 \leq lens\[i\] \leq 1\* 10^31≤lens\[i\]≤1∗10​3​​
+* 1 \leq lens\[i] \leq 1\* 10^31≤lens\[i]≤1∗10​3​​
 
 Example
 
 **Example 1:**
 
-```text
+```
 Input：n=5,starts=[0,0,2,2],ends=[1,2,3,4],lens=[1,2,5,6]
 Output：11
 Explanation:
@@ -24,7 +24,7 @@ Explanation:
 
 **Example 2:**
 
-```text
+```
 Input：n=5,starts=[0,0,2,2],ends=[1,2,3,4],lens=[5,2,5,6]
 Output：13
 Explanation:
@@ -34,7 +34,7 @@ Explanation:
 ## Solution - DFS
 
 {% hint style="danger" %}
-Maximum Recursion Depth Exceeded 
+Maximum Recursion Depth Exceeded&#x20;
 {% endhint %}
 
 ### Code
@@ -106,21 +106,21 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution -BFS
 
-1. 1st BFS: 
+1. 1st BFS:&#x20;
    1. Find the start point that the farthest to the root
 2. 2nd BFS:
    1. From the start, find the end that is farthest to the start
 
-#### Follow-up: 
+#### Follow-up:&#x20;
 
 Find the 2nd longest path
 
-* Longest Path: Start -&gt; End
-* 2nd Longest Path: Start - &gt; End' or Start' -&gt; End \(must be same in one of the ends\)
+* Longest Path: Start -> End
+* 2nd Longest Path: Start - > End' or Start' -> End (must be same in one of the ends)
 
 ### Code
 
@@ -189,4 +189,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

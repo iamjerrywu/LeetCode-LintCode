@@ -1,4 +1,4 @@
-# Triangle Count 382 \(M\)
+# Triangle Count 382 (M)
 
 ## Problem
 
@@ -8,7 +8,7 @@ Given an array of integers, how many three numbers can be found in the array, so
 
 **Example 1:**
 
-```text
+```
 Input: [3, 4, 6, 7]
 Output: 3
 Explanation:
@@ -19,7 +19,7 @@ They are (3, 4, 6),
 
 **Example 2:**
 
-```text
+```
 Input: [4, 4, 4, 4]
 Output: 4
 Explanation:
@@ -29,7 +29,7 @@ So the answer is C(3, 4) = 4
 
 ## Solution
 
-![](../../../../.gitbook/assets/screen-shot-2021-04-22-at-11.48.54-pm.png)
+![](<../../../../.gitbook/assets/Screen Shot 2021-04-22 at 11.48.54 PM.png>)
 
 ### Code
 
@@ -59,7 +59,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -68,4 +67,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

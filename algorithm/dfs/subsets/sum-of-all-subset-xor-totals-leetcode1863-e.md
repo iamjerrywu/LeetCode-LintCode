@@ -1,20 +1,20 @@
-# Sum of All Subset XOR Totals \(LeetCode1863\) \(E\)
+# Sum of All Subset XOR Totals (LeetCode1863) (E)
 
 ## Problem
 
-The **XOR total** of an array is defined as the bitwise `XOR` of **all its elements**, or `0` if the array is **empty**.
+The **XOR total** of an array is defined as the bitwise `XOR` of** all its elements**, or `0` if the array is** empty**.
 
 * For example, the **XOR total** of the array `[2,5,6]` is `2 XOR 5 XOR 6 = 1`.
 
-Given an array `nums`, return _the **sum** of all **XOR totals** for every **subset** of_ `nums`. 
+Given an array `nums`, return _the **sum** of all **XOR totals** for every **subset** of _`nums`.&#x20;
 
 **Note:** Subsets with the **same** elements should be counted **multiple** times.
 
-An array `a` is a **subset** of an array `b` if `a` can be obtained from `b` by deleting some \(possibly zero\) elements of `b`.
+An array `a` is a **subset** of an array `b` if `a` can be obtained from `b` by deleting some (possibly zero) elements of `b`.
 
 **Example 1:**
 
-```text
+```
 Input: nums = [1,3]
 Output: 6
 Explanation: The 4 subsets of [1,3] are:
@@ -27,7 +27,7 @@ Explanation: The 4 subsets of [1,3] are:
 
 **Example 2:**
 
-```text
+```
 Input: nums = [5,1,6]
 Output: 28
 Explanation: The 8 subsets of [5,1,6] are:
@@ -44,7 +44,7 @@ Explanation: The 8 subsets of [5,1,6] are:
 
 **Example 3:**
 
-```text
+```
 Input: nums = [3,4,5,6,7,8]
 Output: 480
 Explanation: The sum of all XOR totals for every subset is 480.
@@ -87,4 +87,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

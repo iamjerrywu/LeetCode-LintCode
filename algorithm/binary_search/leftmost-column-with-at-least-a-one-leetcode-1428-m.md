@@ -1,16 +1,16 @@
-# leftmost Column with at Least a One \(LeetCode 1428\) \(M\)
+# leftmost Column with at Least a One (LeetCode 1428) (M)
 
 ## Problem
 
-_\(This problem is an **interactive problem**.\)_
+_(This problem is an **interactive problem**.)_
 
 A **row-sorted binary matrix** means that all elements are `0` or `1` and each row of the matrix is sorted in non-decreasing order.
 
-Given a **row-sorted binary matrix** `binaryMatrix`, return _the index \(0-indexed\) of the **leftmost column** with a 1 in it_. If such an index does not exist, return `-1`.
+Given a **row-sorted binary matrix** `binaryMatrix`, return _the index (0-indexed) of the **leftmost column** with a 1 in it_. If such an index does not exist, return `-1`.
 
 **You can't access the Binary Matrix directly.** You may only access the matrix using a `BinaryMatrix` interface:
 
-* `BinaryMatrix.get(row, col)` returns the element of the matrix at index `(row, col)` \(0-indexed\).
+* `BinaryMatrix.get(row, col)` returns the element of the matrix at index `(row, col)` (0-indexed).
 * `BinaryMatrix.dimensions()` returns the dimensions of the matrix as a list of 2 elements `[rows, cols]`, which means the matrix is `rows x cols`.
 
 Submissions making more than `1000` calls to `BinaryMatrix.get` will be judged _Wrong Answer_. Also, any solutions that attempt to circumvent the judge will result in disqualification.
@@ -21,7 +21,7 @@ For custom testing purposes, the input will be the entire binary matrix `mat`. Y
 
 ![](https://assets.leetcode.com/uploads/2019/10/25/untitled-diagram-5.jpg)
 
-```text
+```
 Input: mat = [[0,0],[1,1]]
 Output: 0
 ```
@@ -30,7 +30,7 @@ Output: 0
 
 ![](https://assets.leetcode.com/uploads/2019/10/25/untitled-diagram-4.jpg)
 
-```text
+```
 Input: mat = [[0,0],[0,1]]
 Output: 1
 ```
@@ -39,7 +39,7 @@ Output: 1
 
 ![](https://assets.leetcode.com/uploads/2019/10/25/untitled-diagram-3.jpg)
 
-```text
+```
 Input: mat = [[0,0],[0,0]]
 Output: -1
 ```
@@ -48,7 +48,7 @@ Output: -1
 
 ![](https://assets.leetcode.com/uploads/2019/10/25/untitled-diagram-6.jpg)
 
-```text
+```
 Input: mat = [[0,0,0,1],[0,0,1,1],[0,1,1,1]]
 Output: 1
 ```
@@ -89,10 +89,10 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: O\(n \* m\)**
-* **Space Complexity:O\(1\)**
+* **Time Complexity: O(n \* m)**
+* **Space Complexity:O(1)**
 
-\*\*\*\*
+****
 
 ## Solution - Binary Search
 
@@ -145,6 +145,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: O\(nlogm\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(nlogm)**
+* **Space Complexity: O(1)**

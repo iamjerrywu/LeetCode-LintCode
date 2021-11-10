@@ -1,4 +1,4 @@
-# Largest Rectangle in Histogram 122 \(H\)
+# Largest Rectangle in Histogram 122 (H)
 
 ## Problem
 
@@ -6,7 +6,7 @@ Given an array of integers `heights` representing the histogram's bar height whe
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/01/04/histogram.jpg)
 
-```text
+```
 Input: heights = [2,1,5,6,2,3]
 Output: 10
 Explanation: The above is a histogram where width of each bar is 1.
@@ -15,7 +15,7 @@ The largest rectangle is shown in the red area, which has an area = 10 units.
 
 **Example 2:**![](https://assets.leetcode.com/uploads/2021/01/04/histogram-1.jpg)
 
-```text
+```
 Input: heights = [2,4]
 Output: 4
 ```
@@ -57,8 +57,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^3\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(n^3)**
+* **Space Complexity: O(1)**
 
 ## Solution - Enumeration Brute Force with optimization
 
@@ -91,24 +91,24 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^2\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(n^2)**
+* **Space Complexity: O(1)**
 
 ## Solution - Monotonic Stack
 
 Characteristic for monotonic stack is that the first value smaller than cur value in left/right.
 
-Since we try to enumerate the max height, which means the max retangle can be find at height\[i\]. Therefore, toward left, and toward right, we need to find the first element that's smaller than it.
+Since we try to enumerate the max height, which means the max retangle can be find at height\[i]. Therefore, toward left, and toward right, we need to find the first element that's smaller than it.
 
-Example of illustrating L list / R list 
+Example of illustrating L list / R list&#x20;
 
-![](../../../.gitbook/assets/screen-shot-2021-06-17-at-10.56.21-am.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-06-17 at 10.56.21 AM.png>)
 
 Example here:
 
-![](../../../.gitbook/assets/screen-shot-2021-06-17-at-11.24.10-am.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-06-17 at 11.24.10 AM.png>)
 
-![](../../../.gitbook/assets/screen-shot-2021-06-17-at-11.24.51-am.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-06-17 at 11.24.51 AM.png>)
 
 ### Code
 
@@ -147,6 +147,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**

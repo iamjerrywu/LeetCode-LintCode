@@ -1,4 +1,4 @@
-# Climbing Stairs II 272 \(E\)
+# Climbing Stairs II 272 (E)
 
 ## Problem
 
@@ -8,7 +8,7 @@ For `n=0`, we think the answer is 1.Example
 
 **Example 1:**
 
-```text
+```
 Input: 3
 Output: 4
 Explanation: 1 + 1 + 1 = 2 + 1 = 1 + 2 = 3 = 3 , there are 4 ways.
@@ -16,13 +16,13 @@ Explanation: 1 + 1 + 1 = 2 + 1 = 1 + 2 = 3 = 3 , there are 4 ways.
 
 **Example 2:**
 
-```text
+```
 Input: 4
 Output: 7
 Explanation: 1 + 1 + 1 + 1 = 1 + 1 + 2 = 1 + 2 + 1 = 2 + 1 + 1 = 2 + 2 = 1 + 3 = 3 + 1 = 4 , there are 7 ways.
 ```
 
-## Solution - Memoization 
+## Solution - Memoization&#x20;
 
 ### Code
 
@@ -61,7 +61,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -71,7 +70,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - DP
 
@@ -110,17 +109,16 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
 
-\*\*\*\*
+****
 
 ## Solution - DP with Strolling Array
 
@@ -159,13 +157,11 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**

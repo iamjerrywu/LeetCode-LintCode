@@ -1,4 +1,4 @@
-# Minimum Path Sum 110 \(E\)
+# Minimum Path Sum 110 (E)
 
 ## Problem
 
@@ -10,40 +10,40 @@ The robot can only move either down or right at any point in time.Example
 
 Input:
 
-```text
+```
 grid = [[1,3,1],[1,5,1],[4,2,1]]
 ```
 
 Output:
 
-```text
+```
 7
 ```
 
 Explanation:
 
-Path is: 1 -&gt; 3 -&gt; 1 -&gt; 1 -&gt; 1
+Path is: 1 -> 3 -> 1 -> 1 -> 1
 
 **Example 2:**
 
 Input:
 
-```text
+```
 grid = [[1,3,2]]
 ```
 
 Output:
 
-```text
+```
 6
 ```
 
 Explanation:
 
-Path is: 1 -&gt; 3 -&gt; 2  
+Path is: 1 -> 3 -> 2\
 
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -84,4 +84,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

@@ -1,14 +1,14 @@
-# Distinct Subsequences II 1702 \(H\)
+# Distinct Subsequences II 1702 (H)
 
 ## Problem
 
 Given a string `s`, count the number of distinct, non-empty subsequences of `s` .
 
-Since the result may be large, **return the answer modulo** `109 + 7`.
+Since the result may be large, **return the answer modulo **`109 + 7`.
 
 **Example 1:**
 
-```text
+```
 Input: s = "abc"
 Output: 7
 Explanation: The 7 distinct subsequences are "a", "b", "c", "ab", "ac", "bc", and "abc".
@@ -16,7 +16,7 @@ Explanation: The 7 distinct subsequences are "a", "b", "c", "ab", "ac", "bc", an
 
 **Example 2:**
 
-```text
+```
 Input: s = "aba"
 Output: 6
 Explanation: The 6 distinct subsequences are "a", "b", "ab", "ba", "aa" and "aba".
@@ -24,7 +24,7 @@ Explanation: The 6 distinct subsequences are "a", "b", "ab", "ba", "aa" and "aba
 
 **Example 3:**
 
-```text
+```
 Input: s = "aaa"
 Output: 3
 Explanation: The 3 distinct subsequences are "a", "aa" and "aaa".
@@ -84,6 +84,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**

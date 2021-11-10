@@ -1,52 +1,52 @@
-# Binary Tree Maximum Path Sum 94 \(M\)
+# Binary Tree Maximum Path Sum 94 (M)
 
 ## Problem
 
-Given a binary tree, find the maximum path sum.  
-The path may start and end at any node in the tree.  
-\(Path sum is the sum of the weights of nodes on the path between two nodes.\)Example
+Given a binary tree, find the maximum path sum.\
+The path may start and end at any node in the tree.\
+(Path sum is the sum of the weights of nodes on the path between two nodes.)Example
 
 **Example 1:**
 
 Input:
 
-```text
+```
 tree = {2}
 ```
 
 Output:
 
-```text
+```
 2
 ```
 
 Explanation:
 
-There is only one node 2  
+There is only one node 2\
 **Example 2:**
 
 Input:
 
-```text
+```
 tree = {1,2,3}
 ```
 
 Output:
 
-```text
+```
 6
 ```
 
 Explanation:
 
-```text
+```
 As shown in the figure below, the longest path is 2-1-3
       1
      / \
     2   
 ```
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -83,8 +83,9 @@ class Solution:
         max_left = self.get_max_path_sum(node.left)
         max_right = self.get_max_path_sum(node.right)
         self.max_sum = max(self.max_sum, max_left + max_right + node.val)
+        # can only add either max_left or max_right, since we want to form a path
         current_max = node.val + max(max_left, max_right)
-        
+        # if < 0, just don't pick up
         return current_max if current_max > 0 else 0
 
 ```
@@ -95,4 +96,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

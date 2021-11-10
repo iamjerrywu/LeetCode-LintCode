@@ -1,4 +1,4 @@
-# Integer to English Words \(LeetCode 273\) \(H\)
+# Integer to English Words (LeetCode 273) (H)
 
 ## Problem
 
@@ -6,28 +6,28 @@ Convert a non-negative integer `num` to its English words representation.
 
 **Example 1:**
 
-```text
+```
 Input: num = 123
 Output: "One Hundred Twenty Three"
 ```
 
 **Example 2:**
 
-```text
+```
 Input: num = 12345
 Output: "Twelve Thousand Three Hundred Forty Five"
 ```
 
 **Example 3:**
 
-```text
+```
 Input: num = 1234567
 Output: "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
 ```
 
 **Example 4:**
 
-```text
+```
 Input: num = 1234567891
 Output: "One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Thousand Eight Hundred Ninety One"
 ```
@@ -38,7 +38,7 @@ Output: "One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Th
 
 
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -108,6 +108,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
-* **Space Complexity:** 
-
+* **Time Complexity: **
+* **Space Complexity: **

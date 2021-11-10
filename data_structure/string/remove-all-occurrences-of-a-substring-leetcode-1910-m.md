@@ -1,4 +1,4 @@
-# Remove All Occurrences of a Substring \(LeetCode 1910\) \(M\)
+# Remove All Occurrences of a Substring (LeetCode 1910) (M)
 
 ## Problem
 
@@ -6,13 +6,13 @@ Given two strings `s` and `part`, perform the following operation on `s` until *
 
 * Find the **leftmost** occurrence of the substring `part` and **remove** it from `s`.
 
-Return `s` _after removing all occurrences of_ `part`.
+Return `s`_ after removing all occurrences of _`part`.
 
 A **substring** is a contiguous sequence of characters in a string.
 
 **Example 1:**
 
-```text
+```
 Input: s = "daabcbaabcbc", part = "abc"
 Output: "dab"
 Explanation: The following operations are done:
@@ -24,7 +24,7 @@ Now s has no occurrences of "abc".
 
 **Example 2:**
 
-```text
+```
 Input: s = "axxxxyyyyb", part = "xy"
 Output: "ab"
 Explanation: The following operations are done:
@@ -41,7 +41,7 @@ Now s has no occurrences of "xy".
 * `1 <= part.length <= 1000`
 * `s`​​​​​​ and `part` consists of lowercase English letters.
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -66,4 +66,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

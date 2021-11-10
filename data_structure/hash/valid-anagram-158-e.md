@@ -1,4 +1,4 @@
-# Valid Anagram 158 \(E\)
+# Valid Anagram 158 (E)
 
 ## Problem
 
@@ -6,14 +6,14 @@ Given two strings `s` and `t`, return `true` _if_ `t` _is an anagram of_ `s`_, a
 
 **Example 1:**
 
-```text
+```
 Input: s = "anagram", t = "nagaram"
 Output: true
 ```
 
 **Example 2:**
 
-```text
+```
 Input: s = "rat", t = "car"
 Output: false
 ```
@@ -38,10 +38,10 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:  O\(nlogn\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity:  O(nlogn)**
+* **Space Complexity: O(n)**
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -64,6 +64,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
-* **Space Complexity:** 
-
+* **Time Complexity: **
+* **Space Complexity: **

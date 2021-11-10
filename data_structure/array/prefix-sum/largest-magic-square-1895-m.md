@@ -1,4 +1,4 @@
-# Largest Magic Square 1895 \(M\)
+# Largest Magic Square 1895 (M)
 
 ## Problem
 
@@ -6,11 +6,11 @@
 
 A `k x k` **magic square** is a `k x k` grid filled with integers such that every row sum, every column sum, and both diagonal sums are **all equal**. The integers in the magic square **do not have to be distinct**. Every `1 x 1` grid is trivially a **magic square**.
 
-Given an `m x n` integer `grid`, return _the **size** \(i.e., the side length_ `k`_\) of the **largest magic square** that can be found within this grid_.
+Given an `m x n` integer `grid`, return _the **size** (i.e., the side length _`k`_) of the **largest magic square** that can be found within this grid_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/05/29/magicsquare-grid.jpg)
 
-```text
+```
 Input: grid = [[7,1,4,5,6],[2,5,1,6,4],[1,5,4,3,2],[1,2,7,3,4]]
 Output: 3
 Explanation: The largest magic square has a size of 3.
@@ -22,7 +22,7 @@ Every row sum, column sum, and diagonal sum of this magic square is equal to 12.
 
 **Example 2:**![](https://assets.leetcode.com/uploads/2021/05/29/magicsquare2-grid.jpg)
 
-```text
+```
 Input: grid = [[5,1,3,1],[9,3,3,1],[1,3,3,8]]
 Output: 2
 ```
@@ -38,21 +38,21 @@ Output: 2
 
 If using brute force, the time complexity would be:
 
-* O\(n^5\)m \(n ~= m\)
-  * Traverse square: O\(n\*m\)
-  * Find valid length: O\(min\(n, m\)\)
-  * Verify whether magic: O\(min\(n, m\) ^2\)
-    * For rows, columns would need O\(min\(n, m\) ^2\)
-    * For diagnose line, only need O\(min\(n, m\)\)
+* O(n^5)m (n \~= m)
+  * Traverse square: O(n\*m)
+  * Find valid length: O(min(n, m))
+  * Verify whether magic: O(min(n, m) ^2)
+    * For rows, columns would need O(min(n, m) ^2)
+    * For diagnose line, only need O(min(n, m))
 
-If we apply using prefix sum, it can be reduced to O\(n^4\)
+If we apply using prefix sum, it can be reduced to O(n^4)
 
-* O\(n^4\), \(n ~= m\)
-  * Traverse square: O\(n\*m\)
-  * Find valid length: O\(min\(n, m\)\)
-  * Verify whether magic: O\(min\(n, m\)\)
-    * For rows, columns would need O\(\(n, m\)\)
-    * For diagnose line, only need O\(min\(n, m\)\)
+* O(n^4), (n \~= m)
+  * Traverse square: O(n\*m)
+  * Find valid length: O(min(n, m))
+  * Verify whether magic: O(min(n, m))
+    * For rows, columns would need O((n, m))
+    * For diagnose line, only need O(min(n, m))
 
 ### Code
 
@@ -104,6 +104,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^4\)**
-* **Space Complexity: O\(n^2\)**
-
+* **Time Complexity: O(n^4)**
+* **Space Complexity: O(n^2)**

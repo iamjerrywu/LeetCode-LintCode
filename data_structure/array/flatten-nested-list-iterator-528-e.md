@@ -1,4 +1,4 @@
-# Flatten Nested List Iterator 528 \(M\)
+# Flatten Nested List Iterator 528 (M)
 
 ## Problem
 
@@ -12,7 +12,7 @@ Implement the `NestedIterator` class:
 
 Your code will be tested with the following pseudocode:
 
-```text
+```
 initialize iterator with nestedList
 res = []
 while iterator.hasNext()
@@ -24,7 +24,7 @@ If `res` matches the expected flattened list, then your code will be judged as c
 
 **Example 1:**
 
-```text
+```
 Input: nestedList = [[1,1],2,[1,1]]
 Output: [1,1,2,1,1]
 Explanation: By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: [1,1,2,1,1].
@@ -32,7 +32,7 @@ Explanation: By calling next repeatedly until hasNext returns false, the order o
 
 **Example 2:**
 
-```text
+```
 Input: nestedList = [1,[4,[6]]]
 Output: [1,4,6]
 Explanation: By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: [1,4,6].
@@ -43,7 +43,7 @@ Explanation: By calling next repeatedly until hasNext returns false, the order o
 * `1 <= nestedList.length <= 500`
 * The values of the integers in the nested list is in the range `[-106, 106]`.
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -103,6 +103,5 @@ class NestedIterator:
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
-* **Space Complexity:** 
-
+* **Time Complexity: **
+* **Space Complexity: **

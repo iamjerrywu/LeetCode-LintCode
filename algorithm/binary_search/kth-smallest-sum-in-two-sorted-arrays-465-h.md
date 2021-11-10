@@ -1,4 +1,4 @@
-# Kth Smallest Sum In Two Sorted Arrays 465 \(H\)
+# Kth Smallest Sum In Two Sorted Arrays 465 (H)
 
 ## Problem
 
@@ -6,19 +6,19 @@ Given two integer arrays sorted in ascending order and an integer k. Define _sum
 
 **Example 1**
 
-```text
+```
 Input:a = [1, 7, 11]b = [2, 4, 6]k = 3Output: 7Explanation: The sums are [3, 5, 7, 9, 11, 13, 13, 15, 17] and the 3th is 7.
 ```
 
 **Example 2**
 
-```text
+```
 Input:a = [1, 7, 11]b = [2, 4, 6]k = 4Output: 9Explanation: The sums are [3, 5, 7, 9, 11, 13, 13, 15, 17] and the 4th is 9.
 ```
 
 **Example 3**
 
-```text
+```
 Input:a = [1, 7, 11]b = [2, 4, 6]k = 8Output: 15Explanation: The sums are [3, 5, 7, 9, 11, 13, 13, 15, 17] and the 8th is 15.
 ```
 
@@ -26,8 +26,8 @@ Challenge
 
 Do it in either of the following time complexity:
 
-1. O\(k log min\(n, m, k\)\). where n is the size of A, and m is the size of B.
-2. O\( \(m + n\) log maxValue\). where maxValue is the max number in A and B.
+1. O(k log min(n, m, k)). where n is the size of A, and m is the size of B.
+2. O( (m + n) log maxValue). where maxValue is the max number in A and B.
 
 ## Solution - Binary Search + Two Pointer
 
@@ -82,16 +82,16 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(\(m+n\)logmax\)**
-  * m: len\(A\), n: len\(B\)
-  * max: the max\(A, B\)
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O((m+n)logmax)**
+  * m: len(A), n: len(B)
+  * max: the max(A, B)
+* **Space Complexity: O(1)**
 
-\*\*\*\*
+****
 
 ## Solution - Greedy + Heap
 
-First put in the A\[0\] + B\[i\] \(i = 0 ~ len\(B\) - 1\) of element in to heap, then pop and put A\[i + 1\] + B\[b\_id\] for k times, then would reach the kth smallest sum of value on the heap top
+First put in the A\[0] + B\[i] (i = 0 \~ len(B) - 1) of element in to heap, then pop and put A\[i + 1] + B\[b\_id] for k times, then would reach the kth smallest sum of value on the heap top
 
 ### Code
 
@@ -131,8 +131,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(klogm\)**
-  * k times: O\(k\)
-  * Heap push, pop: O\(logm\), m = len\(B\)
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(klogm)**
+  * k times: O(k)
+  * Heap push, pop: O(logm), m = len(B)
+* **Space Complexity: O(n)**

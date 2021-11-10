@@ -1,4 +1,4 @@
-# Flatten Binary Tree to Linked List 453 \(E\)
+# Flatten Binary Tree to Linked List 453 (E)
 
 ## Problem
 
@@ -10,7 +10,7 @@ Don't forget to mark the left child of each node to null. Or you will get Time L
 
 **Example 1:**
 
-```text
+```
 Input:{1,2,5,3,4,#,6}
 Output：{1,#,2,#,3,#,4,#,5,#,6}
 Explanation：
@@ -35,7 +35,7 @@ Explanation：
 
 **Example 2:**
 
-```text
+```
 Input:{1}
 Output:{1}
 Explanation：
@@ -47,7 +47,7 @@ Challenge
 
 Do it in-place without any extra memory.
 
-## Solution - Divide Conquer \(Wrong Example using Global variable\)
+## Solution - Divide Conquer (Wrong Example using Global variable)
 
 ### Code
 
@@ -91,7 +91,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -105,7 +104,7 @@ class Solution:
 
 ### Code
 
-![](../../../.gitbook/assets/screen-shot-2021-04-22-at-12.27.58-am.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-04-22 at 12.27.58 AM.png>)
 
 {% tabs %}
 {% tab title="python" %}
@@ -147,7 +146,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -156,6 +154,4 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-
-
 

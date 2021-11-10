@@ -1,4 +1,4 @@
-# Reverse Linked List II 36 \(M\)
+# Reverse Linked List II 36 (M)
 
 ## Problem
 
@@ -12,7 +12,7 @@ m and n satisfy the following condition: 1 ≤ m ≤ n ≤ length of list.Exampl
 
 Input:
 
-```text
+```
 linked list = 1->2->3->4->5->NULL
 m = 2
 n = 4
@@ -20,19 +20,19 @@ n = 4
 
 Output:
 
-```text
+```
 1->4->3->2->5->NULL
 ```
 
 Explanation:
 
-Reverse the \[2,4\] position of the linked list.
+Reverse the \[2,4] position of the linked list.
 
 **Example 2:**
 
 Input:
 
-```text
+```
 linked list = 1->2->3->4->null
 m = 2
 n = 3
@@ -40,13 +40,13 @@ n = 3
 
 Output:
 
-```text
+```
 1->3->2->4->NULL
 ```
 
 Explanation:
 
-Reverse the \[2,3\] position of the linked list.Challenge
+Reverse the \[2,3] position of the linked list.Challenge
 
 Reverse it in-place and in one-pass
 
@@ -96,12 +96,12 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)** 
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n) **
+* **Space Complexity: O(n)**
 
 ## Solution
 
-![](../../.gitbook/assets/screen-shot-2021-04-25-at-4.29.48-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-04-25 at 4.29.48 PM.png>)
 
 ### Code
 
@@ -151,13 +151,11 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**

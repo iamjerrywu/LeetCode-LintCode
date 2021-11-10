@@ -1,4 +1,4 @@
-# Maximum Subtree 628 \(E\)
+# Maximum Subtree 628 (E)
 
 ## Problem
 
@@ -6,12 +6,12 @@ Description
 
 Given a binary tree, find the subtree with maximum sum. Return the root of the subtree.
 
-LintCode will print the node you return as the optimal subtree.  
+LintCode will print the node you return as the optimal subtree.\
 It's guaranteed that there is only one subtree with maximum sum and the given binary tree is not an empty tree.Example
 
 Example 1:
 
-```text
+```
 Input:
 {1,-5,2,0,3,-4,-5}
 Output:3
@@ -27,7 +27,7 @@ The sum of subtree 3 (only one node) is the maximum. So we return 3.
 
 Example 2:
 
-```text
+```
 Input:
 {1}
 Output:1
@@ -80,7 +80,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -90,9 +89,9 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
-## Solution - DC \(w/o Global Variable\)
+## Solution - DC (w/o Global Variable)
 
 ### Code
 
@@ -140,7 +139,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -149,4 +147,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

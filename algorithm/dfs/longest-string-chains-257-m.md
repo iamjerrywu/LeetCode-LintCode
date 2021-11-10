@@ -1,4 +1,4 @@
-# Longest String Chains 257 \(M\)
+# Longest String Chains 257 (M)
 
 ## Problem
 
@@ -8,13 +8,13 @@ You are given an array of `words` where each word consists of lowercase English 
 
 * For example, `"abc"` is a **predecessor** of `"abac"`, while `"cba"` is not a **predecessor** of `"bcad"`.
 
-A **word chain** __is a sequence of words `[word1, word2, ..., wordk]` with `k >= 1`, where `word1` is a **predecessor** of `word2`, `word2` is a **predecessor** of `word3`, and so on. A single word is trivially a **word chain** with `k == 1`.
+A **word chain**_ _is a sequence of words `[word1, word2, ..., wordk]` with `k >= 1`, where `word1` is a **predecessor** of `word2`, `word2` is a **predecessor** of `word3`, and so on. A single word is trivially a **word chain** with `k == 1`.
 
-Return _the **length** of the **longest possible word chain** with words chosen from the given list of_ `words`.
+Return _the **length** of the **longest possible word chain** with words chosen from the given list of _`words`.
 
 **Example 1:**
 
-```text
+```
 Input: words = ["a","b","ba","bca","bda","bdca"]
 Output: 4
 Explanation: One of the longest word chains is ["a","ba","bda","bdca"].
@@ -22,7 +22,7 @@ Explanation: One of the longest word chains is ["a","ba","bda","bdca"].
 
 **Example 2:**
 
-```text
+```
 Input: words = ["xbc","pcxbcf","xb","cxbc","pcxbc"]
 Output: 5
 Explanation: All the words can be put in a word chain ["xb", "xbc", "cxbc", "pcxbc", "pcxbcf"].
@@ -30,7 +30,7 @@ Explanation: All the words can be put in a word chain ["xb", "xbc", "cxbc", "pcx
 
 **Example 3:**
 
-```text
+```
 Input: words = ["abcd","dbqca"]
 Output: 1
 Explanation: The trivial word chain ["abcd"] is one of the longest word chains.
@@ -69,7 +69,7 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
 
 ## Solution - Graph Sol 2
@@ -114,6 +114,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-

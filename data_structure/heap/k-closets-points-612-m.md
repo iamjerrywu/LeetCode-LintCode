@@ -1,4 +1,4 @@
-# K Closests Points 612 \(M\)
+# K Closests Points 612 (M)
 
 ## Problem
 
@@ -6,21 +6,21 @@ Given some `points` and an `origin` in two-dimensional space,Find `k` `points` f
 
 Example 1:
 
-```text
+```
 Input: points = [[4,6],[4,7],[4,4],[2,5],[1,1]], origin = [0, 0], k = 3 
 Output: [[1,1],[2,5],[4,4]]
 ```
 
 Example 2:
 
-```text
+```
 Input: points = [[0,0],[0,9]], origin = [3, 1], k = 1
 Output: [[0,0]]
 ```
 
 Challenge
 
-O\(nlogn\) is OK, but can you think of a solution to O\(nlogk\)？
+O(nlogn) is OK, but can you think of a solution to O(nlogk)？
 
 ## Solution - Quick Select
 
@@ -81,19 +81,18 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n + klogk\)**
+* **Time Complexity: O(n + klogk)**
 * **Space Complexity:**
 
-## Solution - Max Heap
+## Solution - Max Heap (1)
 
-Since python heapq is default a min-heap, so need to `values  *(-1)` inorder to make it act as max\_heap 
+Since python heapq is default a min-heap, so need to `values  *(-1)` inorder to make it act as max\_heap&#x20;
 
 ### Code
 
@@ -134,8 +133,27 @@ class Solution:
 {% endtab %}
 
 {% tab title="java" %}
-```
-
+```java
+class Solution {
+    public int[][] kClosest(int[][] points, int k) {
+        // PriorityQueue<Integer> pQueue = new PriorityQueue<>();
+        PriorityQueue<int[]> pQueue = new PriorityQueue<int[]>((p1, p2)-> (p2[0] * p2[0] + p2[1] * p2[1]) - (p1[0] * p1[0] + p1[1] * p1[1]));
+        
+        for (int i = 0; i < points.length; i++) {
+            pQueue.add(points[i]);
+            
+            if (pQueue.size() > k) {
+                pQueue.poll();
+            }
+        }
+        
+        int[][] ans = new int[k][2];
+        for (int i = 0; i < k; i++) {
+            ans[i] = pQueue.poll();
+        }
+        return ans;
+    }
+}
 ```
 {% endtab %}
 {% endtabs %}
@@ -145,7 +163,45 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
+
+## Solution - Max Heap (2)
+
+Since python heapq is default a min-heap, so need to `values  *(-1)` inorder to make it act as max\_heap&#x20;
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+import heapq
+class Solution:
+    def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
+        heap = []
+        
+        for point in points:
+            dist = point[0]**2 + point[1]**2
+            heapq.heappush(heap, (-dist, point[0], point[1]))
+            
+            if len(heap) > k:
+                heapq.heappop(heap)
+        ans = [[point_x, point_y] for dist, point_x, point_y in heap]
+        return ans
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+****
 
 ## Solution - Min Heap
 
@@ -190,13 +246,11 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogk\)**
+* **Time Complexity: O(nlogk)**
 * **Space Complexity:**
-

@@ -1,19 +1,19 @@
-# Longest Semi Alternating Substring 1819 \(E\)
+# Longest Semi Alternating Substring 1819 (E)
 
 ## Problem
 
-You are given a string SS of length NN containing only characters `a` and `b`. A substring \(contiguous fragment\) of SS is called a semi-alternating substring if it does not contain three identical consecutive characters. In other words, it does not contain either `aaa` or `bbb` substrings. Note that whole SS is its own substring.
+You are given a string SS of length NN containing only characters `a` and `b`. A substring (contiguous fragment) of SS is called a semi-alternating substring if it does not contain three identical consecutive characters. In other words, it does not contain either `aaa` or `bbb` substrings. Note that whole SS is its own substring.
 
 Write a function, which given a string SS, returns the length of the longest semi-alternating substring of SS.
 
-* NN is an integer within the range \[1,200\,000\]\[1,200000\];
+* NN is an integer within the range \[1,200\\,000]\[1,200000];
 * string SS consists only of the characters `a` and/or `b`.
 
 Example
 
 **Example 1**
 
-```text
+```
 Input: "baaabbabbb"
 Output: 7
 Explanation: "aabbabb" is the longest semi-alternating substring.
@@ -21,7 +21,7 @@ Explanation: "aabbabb" is the longest semi-alternating substring.
 
 **Example 2**
 
-```text
+```
 Input: "babba"
 Output: 5
 Explanation: Whole S is semi-alternating.
@@ -29,13 +29,13 @@ Explanation: Whole S is semi-alternating.
 
 **Example 3**
 
-```text
+```
 Input: "abaaaa"
 Output: 4
 Explanation: "abaa" is the longest semi-alternating substring.
 ```
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -75,7 +75,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -84,4 +83,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

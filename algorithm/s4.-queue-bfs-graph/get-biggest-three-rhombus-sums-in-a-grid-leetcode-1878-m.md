@@ -1,4 +1,4 @@
-# Get Biggest Three Rhombus Sums in a Grid \(LeetCode 1878\) \(M\)
+# Get Biggest Three Rhombus Sums in a Grid (LeetCode 1878) (M)
 
 ## Problem
 
@@ -8,11 +8,11 @@ A **rhombus sum** is the sum of the elements that form **the** **border** of a r
 
 Note that the rhombus can have an area of 0, which is depicted by the purple rhombus in the bottom right corner.
 
-Return _the biggest three **distinct rhombus sums** in the_ `grid` _in **descending order**. If there are less than three distinct values, return all of them_.
+Return _the biggest three **distinct rhombus sums** in the _`grid`_ in **descending order**. If there are less than three distinct values, return all of them_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/04/23/pc73-q4-ex1.png)
 
-```text
+```
 Input: grid = [[3,4,5,1,3],[3,3,4,2,3],[20,30,200,40,10],[1,5,5,4,1],[4,3,2,2,5]]
 Output: [228,216,211]
 Explanation: The rhombus shapes for the three biggest distinct rhombus sums are depicted above.
@@ -23,7 +23,7 @@ Explanation: The rhombus shapes for the three biggest distinct rhombus sums are 
 
 **Example 2:**![](https://assets.leetcode.com/uploads/2021/04/23/pc73-q4-ex2.png)
 
-```text
+```
 Input: grid = [[1,2,3],[4,5,6],[7,8,9]]
 Output: [20,9,8]
 Explanation: The rhombus shapes for the three biggest distinct rhombus sums are depicted above.
@@ -34,7 +34,7 @@ Explanation: The rhombus shapes for the three biggest distinct rhombus sums are 
 
 **Example 3:**
 
-```text
+```
 Input: grid = [[7,7,7]]
 Output: [7]
 Explanation: All three possible rhombus sums are the same, so return [7].
@@ -47,7 +47,7 @@ Explanation: All three possible rhombus sums are the same, so return [7].
 * `1 <= m, n <= 100`
 * `1 <= grid[i][j] <= 105`
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -109,4 +109,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

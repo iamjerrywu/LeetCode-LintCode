@@ -1,17 +1,17 @@
-# LRU Cache 134 \(H\)
+# LRU Cache 134 (H)
 
 ## Problem
 
-Design and implement a data structure for Least Recently Used \(LRU\) cache. It should support the following operations: `get` and `set`.
+Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: `get` and `set`.
 
-* `get(key)` Get the value \(will always be positive\) of the key if the key exists in the cache, otherwise return -1.
+* `get(key)` Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
 * `set(key, value)` Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
 
 Finally, you need to return the data from each get.Example
 
 **Example1**
 
-```text
+```
 Input:
 LRUCache(2)
 set(2, 1)
@@ -27,7 +27,7 @@ cache cap is 2，set(2,1)，set(1, 1)，get(2) and return 1，set(4,1) and delet
 
 **Example 2:**
 
-```text
+```
 Input：
 LRUCache(1)
 set(2, 1)
@@ -44,11 +44,11 @@ cache cap is 1，set(2,1)，get(2) and return 1，set(3,2) and delete (2,1)，ge
 
 Using singly-linkedlist and hashmap to record the previous node
 
-* Since linked list access O\(1\) \(with hashmap\), and if out of size, linkedlist can do in O\(1\) deleting node as well
-  * Even array can do O\(1\) access, but deleting first node require O\(n\) adjusting values in rest positions
+* Since linked list access O(1) (with hashmap), and if out of size, linkedlist can do in O(1) deleting node as well
+  * Even array can do O(1) access, but deleting first node require O(n) adjusting values in rest positions
 * With hashmap don't need to implement doubly linkedlist
 
-![](../../.gitbook/assets/screen-shot-2021-04-25-at-11.57.55-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-04-25 at 11.57.55 PM.png>)
 
 ### Code
 
@@ -131,13 +131,11 @@ class LRUCache:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(1\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(1)**
+* **Space Complexity: O(1)**

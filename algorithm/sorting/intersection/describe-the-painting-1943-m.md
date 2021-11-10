@@ -1,4 +1,4 @@
-# Describe the Painting \(LeetCode1943\) \(M\)
+# Describe the Painting (LeetCode1943) (M)
 
 ## Problem
 
@@ -13,10 +13,10 @@ For the sake of simplicity, you should only output the **sum** of the elements i
 You want to **describe** the painting with the **minimum** number of non-overlapping **half-closed segments** of these mixed colors. These segments can be represented by the 2D array `painting` where `painting[j] = [leftj, rightj, mixj]` describes a **half-closed segment** `[leftj, rightj)` with the mixed color **sum** of `mixj`.
 
 * For example, the painting created with `segments = [[1,4,5],[1,7,7]]` can be described by `painting = [[1,4,12],[4,7,7]]` because:
-  * `[1,4)` is colored `{5,7}` \(with a sum of `12`\) from both the first and second segments.
+  * `[1,4)` is colored `{5,7}` (with a sum of `12`) from both the first and second segments.
   * `[4,7)` is colored `{7}` from only the second segment.
 
-Return _the 2D array_ `painting` _describing the finished painting \(excluding any parts that are **not** painted\). You may return the segments in **any order**_.
+Return _the 2D array _`painting`_ describing the finished painting (excluding any parts that are **not **painted). You may return the segments in **any order**_.
 
 A **half-closed segment** `[a, b)` is the section of the number line between points `a` and `b` **including** point `a` and **not including** point `b`.
 
@@ -53,6 +53,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: O(n)**

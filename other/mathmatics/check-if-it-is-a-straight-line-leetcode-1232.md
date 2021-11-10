@@ -1,4 +1,4 @@
-# Check If It Is a Straight Line \(LeetCode 1232\)
+# Check If It Is a Straight Line (LeetCode 1232)
 
 ## Problem
 
@@ -8,7 +8,7 @@ You are given an array `coordinates`, `coordinates[i] = [x, y]`, where `[x, y]` 
 
 ![](https://assets.leetcode.com/uploads/2019/10/15/untitled-diagram-2.jpg)
 
-```text
+```
 Input: coordinates = [[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]
 Output: true
 ```
@@ -17,7 +17,7 @@ Output: true
 
 ![](https://assets.leetcode.com/uploads/2019/10/09/untitled-diagram-1.jpg)
 
-```text
+```
 Input: coordinates = [[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]
 Output: false
 ```
@@ -29,9 +29,9 @@ Output: false
 * `-10^4 <= coordinates[i][0], coordinates[i][1] <= 10^4`
 * `coordinates` contains no duplicate point.
 
-## Solution 
+## Solution&#x20;
 
-if \(x1 - x0\)/\(y1 - y0 == \(x2 - x1\)/\(y2-y1\), then \(x1-x0\)\(y2-y1\) == \(x2-x1\)\(y1-y0\)
+if (x1 - x0)/(y1 - y0 == (x2 - x1)/(y2-y1), then (x1-x0)(y2-y1) == (x2-x1)(y1-y0)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -51,6 +51,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
-* **Space Complexity:** 
-
+* **Time Complexity: **
+* **Space Complexity: **

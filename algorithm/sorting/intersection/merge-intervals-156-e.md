@@ -1,4 +1,4 @@
-# Merge Intervals 156 \(E\)
+# Merge Intervals 156 (E)
 
 ## Problem
 
@@ -6,23 +6,23 @@ Given a collection of intervals, merge all overlapping intervals.Example
 
 **Example 1:**
 
-```text
+```
 Input: [(1,3)]
 Output: [(1,3)]
 ```
 
 **Example 2:**
 
-```text
+```
 Input:  [(1,3),(2,6),(8,10),(15,18)]
 Output: [(1,6),(8,10),(15,18)]
 ```
 
 Challenge
 
-O\(_n_ log _n_\) time and O\(1\) extra space.
+O(_n_ log _n_) time and O(1) extra space.
 
-## Solution - Greedy \(1\)
+## Solution - Greedy (1)
 
 ### Code
 
@@ -67,7 +67,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-## Solution - Greedy \(Concise\)
+## Solution - Greedy (Concise)
 
 ### Code
 
@@ -106,7 +106,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Line Sweep
 
@@ -166,6 +166,4 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-
-
 

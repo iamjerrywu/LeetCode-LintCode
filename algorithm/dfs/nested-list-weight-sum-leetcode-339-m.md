@@ -1,4 +1,4 @@
-# Nested List Weight Sum \(LeetCode 339\) \(M\)
+# Nested List Weight Sum (LeetCode 339) (M)
 
 ## Problem
 
@@ -6,11 +6,11 @@ You are given a nested list of integers `nestedList`. Each element is either an 
 
 The **depth** of an integer is the number of lists that it is inside of. For example, the nested list `[1,[2,2],[[3],2],1]` has each integer's value set to its **depth**.
 
-Return _the sum of each integer in_ `nestedList` _multiplied by its **depth**_.
+Return _the sum of each integer in _`nestedList`_ multiplied by its **depth**_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/01/14/nestedlistweightsumex1.png)
 
-```text
+```
 Input: nestedList = [[1,1],2,[1,1]]
 Output: 10
 Explanation: Four 1's at depth 2, one 2 at depth 1. 1*2 + 1*2 + 2*1 + 1*2 + 1*2 = 10.
@@ -18,7 +18,7 @@ Explanation: Four 1's at depth 2, one 2 at depth 1. 1*2 + 1*2 + 2*1 + 1*2 + 1*2 
 
 **Example 2:**![](https://assets.leetcode.com/uploads/2021/01/14/nestedlistweightsumex2.png)
 
-```text
+```
 Input: nestedList = [1,[4,[6]]]
 Output: 27
 Explanation: One 1 at depth 1, one 4 at depth 2, and one 6 at depth 3. 1*1 + 4*2 + 6*3 = 27.
@@ -26,7 +26,7 @@ Explanation: One 1 at depth 1, one 4 at depth 2, and one 6 at depth 3. 1*1 + 4*2
 
 **Example 3:**
 
-```text
+```
 Input: nestedList = [0]
 Output: 0
 ```
@@ -102,6 +102,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-

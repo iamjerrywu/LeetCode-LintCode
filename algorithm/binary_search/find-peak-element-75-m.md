@@ -1,4 +1,4 @@
-# Find Peak Element 75 \(M\)
+# Find Peak Element 75 (M)
 
 ## Problem
 
@@ -7,11 +7,11 @@ Description
 There is an integer array which has the following features:
 
 * The numbers in adjacent positions are different.
-* A\[0\] &lt; A\[1\] && A\[A.length - 2\] &gt; A\[A.length - 1\].
+* A\[0] < A\[1] && A\[A.length - 2] > A\[A.length - 1].
 
 We define a position P is a peak if:
 
-```text
+```
 A[P] > A[P-1] && A[P] > A[P+1]
 ```
 
@@ -23,7 +23,7 @@ Find a peak element in this array. Return the index of the peak.
 
 Example
 
-```text
+```
 Example 1:
 	Input:  [1, 2, 1, 3, 4, 5, 7, 6]
 	Output:  1 or 6
@@ -39,7 +39,7 @@ Example 2:
 
 ## Solution
 
-![](../../.gitbook/assets/screen-shot-2021-04-25-at-1.41.16-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-04-25 at 1.41.16 AM.png>)
 
 ### Code
 
@@ -77,13 +77,11 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:O\(logn\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity:O(logn)**
+* **Space Complexity: O(1)**

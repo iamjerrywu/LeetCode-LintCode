@@ -1,16 +1,16 @@
-# Array With Elements Not Equal to Average of Neighbors \(LeetCode 1968\) \(M\)
+# Array With Elements Not Equal to Average of Neighbors (LeetCode 1968) (M)
 
-## Problem 
+## Problem&#x20;
 
 You are given a **0-indexed** array `nums` of **distinct** integers. You want to rearrange the elements in the array such that every element in the rearranged array is **not** equal to the **average** of its neighbors.
 
 More formally, the rearranged array should have the property such that for every `i` in the range `1 <= i < nums.length - 1`, `(nums[i-1] + nums[i+1]) / 2` is **not** equal to `nums[i]`.
 
-Return _**any** rearrangement of_ `nums` _that meets the requirements_.
+Return _**any** rearrangement of _`nums`_ that meets the requirements_.
 
 **Example 1:**
 
-```text
+```
 Input: nums = [1,2,3,4,5]
 Output: [1,2,4,5,3]
 Explanation:
@@ -21,7 +21,7 @@ When i=3, nums[i] = 5, and the average of its neighbors is (4+3) / 2 = 3.5.
 
 **Example 2:**
 
-```text
+```
 Input: nums = [6,2,0,9,7]
 Output: [9,7,6,2,0]
 Explanation:
@@ -69,7 +69,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - In Place
 
@@ -94,4 +94,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

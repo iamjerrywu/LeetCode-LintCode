@@ -1,10 +1,10 @@
-# Number of Ways to Stay in the Same Place After Some Steps II 1827 \(M\)
+# Number of Ways to Stay in the Same Place After Some Steps II 1827 (M)
 
 ## Problem
 
 You have a pointer at index 00 in an array of size arrLenarrLen.
 
-At each step, you can move 11 position to the left, 11 position to the right in the array or stay in the same place \(The pointer should not be placed outside the array at any time\).
+At each step, you can move 11 position to the left, 11 position to the right in the array or stay in the same place (The pointer should not be placed outside the array at any time).
 
 Given two integers stepssteps and arrLenarrLen, return the number of ways such that your pointer still at index 00 after **exactly** stepssteps steps.
 
@@ -17,25 +17,25 @@ Example
 
 **Example 1:**
 
-```text
+```
 Input: 32Output: 4Explanation: There are 4 differents ways to stay at index 0 after 3 steps.Right, Left, StayStay, Right, LeftRight, Stay, LeftStay, Stay, Stay
 ```
 
 **Example 2:**
 
-```text
+```
 Input: 24Output: 2Explanation: There are 2 differents ways to stay at index 0 after 2 stepsRight, LeftStay, Stay
 ```
 
 **Example 3:**
 
-```text
+```
 Input: 42Output: 8
 ```
 
 ## Solution - DP
 
-![](../../../.gitbook/assets/screen-shot-2021-06-07-at-3.26.48-pm.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-06-07 at 3.26.48 PM.png>)
 
 ### Code
 
@@ -78,10 +78,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(m\*n\)**
+* **Time Complexity: O(m\*n)**
   * m: steps
   * n: max distance
-* **Space Complexity: O\(n\*m\)**
+* **Space Complexity: O(n\*m)**
 
 ## Solution - DP with strolling arrays
 
@@ -126,8 +126,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n \* m\)**
+* **Time Complexity: O(n \* m)**
   * m: steps
   * n: max distance
-* **Space Complexity: O\(n\)**
-
+* **Space Complexity: O(n)**

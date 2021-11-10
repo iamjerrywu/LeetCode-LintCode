@@ -1,4 +1,4 @@
-# Number of Visible People in a Queue \(LeetCode1944\) \(H\)
+# Number of Visible People in a Queue (LeetCode1944) (H)
 
 ## Problem
 
@@ -6,13 +6,13 @@ There are `n` people standing in a queue, and they numbered from `0` to `n - 1` 
 
 A person can **see** another person to their right in the queue if everybody in between is **shorter** than both of them. More formally, the `ith` person can see the `jth` person if `i < j` and `min(heights[i], heights[j]) > max(heights[i+1], heights[i+2], ..., heights[j-1])`.
 
-Return _an array_ `answer` _of length_ `n` _where_ `answer[i]` _is the **number of people** the_ `ith` _person can **see** to their right in the queue_.
+Return _an array _`answer`_ of length _`n`_ where _`answer[i]`_ is the **number of people** the _`ith`_ person can **see** to their right in the queue_.
 
 **Example 1:**
 
 ![](https://assets.leetcode.com/uploads/2021/05/29/queue-plane.jpg)
 
-```text
+```
 Input: heights = [10,6,8,5,11,9]
 Output: [3,1,2,1,1,0]
 Explanation:
@@ -26,7 +26,7 @@ Person 5 can see no one since nobody is to the right of them.
 
 **Example 2:**
 
-```text
+```
 Input: heights = [5,1,2,3,10]
 Output: [4,1,1,1,0]
 ```
@@ -38,7 +38,7 @@ Output: [4,1,1,1,0]
 * `1 <= heights[i] <= 105`
 * All the values of `heights` are **unique**.
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -62,6 +62,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
+* **Time Complexity: O(n)**
 * **Space Complexity:**
-

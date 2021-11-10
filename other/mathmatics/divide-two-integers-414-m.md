@@ -1,26 +1,55 @@
-# Divide Two Integers 414 \(M\)
+# Divide Two Integers 414 (M)
 
 ## Problem
 
 Divide two integers **without using multiplication, division and mod operator.**
 
-If it will overflow\(exceeding 32-bit signed integer representation range\), return `2147483647`
+If it will overflow(exceeding 32-bit signed integer representation range), return `2147483647`
 
 The integer division should truncate toward zero.Example
 
 **Example 1:**
 
-```text
+```
 Input: dividend = 0, divisor = 1Output: 0
 ```
 
 **Example 2:**
 
-```text
+```
 Input: dividend = 100, divisor = 9Output: 11
 ```
 
-## Solution 
+## Solution - Brute Force (TLE)
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    def divide(self, dividend: int, divisor: int) -> int:
+        dividend_sign = 1 if dividend > 0 else -1
+        divisor_sign = 1 if divisor > 0 else -1
+        
+        i = 1
+        ans = 0
+        while True:
+            if i * abs(divisor) > abs(dividend):
+                ans = i - 1
+                break
+            i+=1
+        return ans * dividend_sign * divisor_sign
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O(n)**
+* **Space Complexity O(1)**
+
+## Solution&#x20;
 
 ### Code
 
@@ -59,6 +88,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(logn\)**
-* **Space Complexity O\(1\)**
-
+* **Time Complexity: O(logn)**
+* **Space Complexity O(1)**

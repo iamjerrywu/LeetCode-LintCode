@@ -1,14 +1,14 @@
-# Remove One Element to Make the Array Strictly Increasing \(LeetCode1909\) \(E\)
+# Remove One Element to Make the Array Strictly Increasing (LeetCode1909) (E)
 
 ## Problem
 
-Given a **0-indexed** integer array `nums`, return `true` _if it can be made **strictly increasing** after removing **exactly one** element, or_ `false` _otherwise. If the array is already strictly increasing, return_ `true`.
+Given a **0-indexed** integer array `nums`, return `true` _if it can be made **strictly increasing** after removing **exactly one** element, or _`false`_ otherwise. If the array is already strictly increasing, return _`true`.
 
 The array `nums` is **strictly increasing** if `nums[i - 1] < nums[i]` for each index `(1 <= i < nums.length).`
 
 **Example 1:**
 
-```text
+```
 Input: nums = [1,2,10,5,7]
 Output: true
 Explanation: By removing 10 at index 2 from nums, it becomes [1,2,5,7].
@@ -17,7 +17,7 @@ Explanation: By removing 10 at index 2 from nums, it becomes [1,2,5,7].
 
 **Example 2:**
 
-```text
+```
 Input: nums = [2,3,1,2]
 Output: false
 Explanation:
@@ -30,7 +30,7 @@ No resulting array is strictly increasing, so return false.
 
 **Example 3:**
 
-```text
+```
 Input: nums = [1,1,1]
 Output: false
 Explanation: The result of removing any element is [1,1].
@@ -39,7 +39,7 @@ Explanation: The result of removing any element is [1,1].
 
 **Example 4:**
 
-```text
+```
 Input: nums = [1,2,3]
 Output: true
 Explanation: [1,2,3] is already strictly increasing, so return true.
@@ -82,7 +82,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Greedy
 
@@ -91,7 +91,6 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -100,4 +99,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

@@ -1,18 +1,18 @@
-# Count Sub Islands \(LeetCode1905\) \(M\)
+# Count Sub Islands (LeetCode1905) (M)
 
 ## Problem
 
 
 
-You are given two `m x n` binary matrices `grid1` and `grid2` containing only `0`'s \(representing water\) and `1`'s \(representing land\). An **island** is a group of `1`'s connected **4-directionally** \(horizontal or vertical\). Any cells outside of the grid are considered water cells.
+You are given two `m x n` binary matrices `grid1` and `grid2` containing only `0`'s (representing water) and `1`'s (representing land). An **island** is a group of `1`'s connected **4-directionally** (horizontal or vertical). Any cells outside of the grid are considered water cells.
 
-An island in `grid2` is considered a **sub-island** if there is an island in `grid1` that contains **all** the cells that make up **this** island in `grid2`.
+An island in `grid2` is considered a **sub-island **if there is an island in `grid1` that contains **all** the cells that make up **this** island in `grid2`.
 
-Return the _**number** of islands in_ `grid2` _that are considered **sub-islands**_.
+Return the _**number** of islands in _`grid2` _that are considered **sub-islands**_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/06/10/test1.png)
 
-```text
+```
 Input: grid1 = [[1,1,1,0,0],[0,1,1,1,1],[0,0,0,0,0],[1,0,0,0,0],[1,1,0,1,1]], grid2 = [[1,1,1,0,0],[0,0,1,1,1],[0,1,0,0,0],[1,0,1,1,0],[0,1,0,1,0]]
 Output: 3
 Explanation: In the picture above, the grid on the left is grid1 and the grid on the right is grid2.
@@ -21,7 +21,7 @@ The 1s colored red in grid2 are those considered to be part of a sub-island. The
 
 **Example 2:**![](https://assets.leetcode.com/uploads/2021/06/03/testcasex2.png)
 
-```text
+```
 Input: grid1 = [[1,0,1,0,1],[1,1,1,1,1],[0,0,0,0,0],[1,1,1,1,1],[1,0,1,0,1]], grid2 = [[0,0,0,0,0],[1,1,1,1,1],[0,1,0,1,0],[0,1,0,1,0],[1,0,0,0,1]]
 Output: 2 
 Explanation: In the picture above, the grid on the left is grid1 and the grid on the right is grid2.
@@ -37,7 +37,7 @@ The 1s colored red in grid2 are those considered to be part of a sub-island. The
 
 ## Solution - BFS
 
-Similar to 'Number of Islands 433' problem, however need to additionally check whether grid1 island is sub-island of grid2. 
+Similar to 'Number of Islands 433' problem, however need to additionally check whether grid1 island is sub-island of grid2.&#x20;
 
 ### Code
 
@@ -88,10 +88,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(m \* n\)**
-  * m: len\(grid\)
-  * n: len\(grid\[0\]\)
-* **Space Complexity: O\(min\(m, n\)**
+* **Time Complexity: O(m \* n)**
+  * m: len(grid)
+  * n: len(grid\[0])
+* **Space Complexity: O(min(m, n)**
 
 ## Solution - DFS
 
@@ -147,4 +147,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

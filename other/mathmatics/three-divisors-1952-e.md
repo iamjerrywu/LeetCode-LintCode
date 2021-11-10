@@ -1,14 +1,14 @@
-# Three Divisors 1952 \(E\)
+# Three Divisors 1952 (E)
 
 ## Problem
 
-Given an integer `n`, return `true` _if_ `n` _has **exactly three positive divisors**. Otherwise, return_ `false`.
+Given an integer `n`, return `true`_ if _`n`_ has **exactly three positive divisors**. Otherwise, return _`false`.
 
 An integer `m` is a **divisor** of `n` if there exists an integer `k` such that `n = k * m`.
 
 **Example 1:**
 
-```text
+```
 Input: n = 2
 Output: false
 Explantion: 2 has only two divisors: 1 and 2.
@@ -16,13 +16,13 @@ Explantion: 2 has only two divisors: 1 and 2.
 
 **Example 2:**
 
-```text
+```
 Input: n = 4
 Output: true
 Explantion: 4 has three divisors: 1, 2, and 4.
 ```
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -48,4 +48,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

@@ -1,4 +1,4 @@
-# Eliminate Maximum Number of Monsters 1921 \(M\)
+# Eliminate Maximum Number of Monsters 1921 (M)
 
 ## Problem
 
@@ -8,11 +8,11 @@ The monsters walk toward the city at a **constant** speed. The speed of each mon
 
 The monsters start moving at **minute 0**. You have a weapon that you can **choose** to use at the start of every minute, including minute 0. You cannot use the weapon in the middle of a minute. The weapon can eliminate any monster that is still alive. You lose when any monster reaches your city. If a monster reaches the city **exactly** at the start of a minute, it counts as a **loss**, and the game ends before you can use your weapon in that minute.
 
-Return _the **maximum** number of monsters that you can eliminate before you lose, or_ `n` _if you can eliminate all the monsters before they reach the city._
+Return _the **maximum** number of monsters that you can eliminate before you lose, or _`n`_ if you can eliminate all the monsters before they reach the city._
 
 **Example 1:**
 
-```text
+```
 Input: dist = [1,3,4], speed = [1,1,1]
 Output: 3
 Explanation:
@@ -25,7 +25,7 @@ All 3 monsters can be eliminated.
 
 **Example 2:**
 
-```text
+```
 Input: dist = [1,1,2,3], speed = [1,1,1,1]
 Output: 1
 Explanation:
@@ -36,7 +36,7 @@ You can only eliminate 1 monster.
 
 **Example 3:**
 
-```text
+```
 Input: dist = [3,2,4], speed = [5,3,2]
 Output: 1
 Explanation:
@@ -53,9 +53,9 @@ You can only eliminate 1 monster.
 
 ## Solution - Greedy
 
-Simply do the simulation here would LTE, and can't use binary search \(finding the maximum time that can have monster in range &lt;= 0\) here either.
+Simply do the simulation here would LTE, and can't use binary search (finding the maximum time that can have monster in range <= 0) here either.
 
-Use a list to store the monster reaching timing and sort it, then find the one &lt;= index
+Use a list to store the monster reaching timing and sort it, then find the one <= index
 
 {% tabs %}
 {% tab title="Python" %}
@@ -78,6 +78,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: O(n)**

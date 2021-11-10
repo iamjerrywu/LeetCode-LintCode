@@ -2,5 +2,4 @@
 
 
 
-![](../../../../.gitbook/assets/screen-shot-2021-05-27-at-12.37.50-pm.png)
-
+![](<../../../../.gitbook/assets/Screen Shot 2021-05-27 at 12.37.50 PM.png>)

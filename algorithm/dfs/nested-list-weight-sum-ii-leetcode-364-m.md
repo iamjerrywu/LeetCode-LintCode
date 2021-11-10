@@ -1,4 +1,4 @@
-# Nested List Weight Sum II \(LeetCode 364\) \(M\)
+# Nested List Weight Sum II (LeetCode 364) (M)
 
 ## Problem
 
@@ -8,11 +8,11 @@ The **depth** of an integer is the number of lists that it is inside of. For exa
 
 The **weight** of an integer is `maxDepth - (the depth of the integer) + 1`.
 
-Return _the sum of each integer in_ `nestedList` _multiplied by its **weight**_.
+Return _the sum of each integer in _`nestedList`_ multiplied by its **weight**_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/03/27/nestedlistweightsumiiex1.png)
 
-```text
+```
 Input: nestedList = [[1,1],2,[1,1]]
 Output: 8
 Explanation: Four 1's with a weight of 1, one 2 with a weight of 2.
@@ -21,7 +21,7 @@ Explanation: Four 1's with a weight of 1, one 2 with a weight of 2.
 
 **Example 2:**![](https://assets.leetcode.com/uploads/2021/03/27/nestedlistweightsumiiex2.png)
 
-```text
+```
 Input: nestedList = [1,[4,[6]]]
 Output: 17
 Explanation: One 1 at depth 3, one 4 at depth 2, and one 6 at depth 1.
@@ -108,6 +108,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-

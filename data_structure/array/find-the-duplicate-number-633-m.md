@@ -1,4 +1,4 @@
-# Find the Duplicate Number 633 \(H\)
+# Find the Duplicate Number 633 (H)
 
 ## Problem
 
@@ -10,28 +10,28 @@ You must solve the problem **without** modifying the array `nums` and uses only 
 
 **Example 1:**
 
-```text
+```
 Input: nums = [1,3,4,2,2]
 Output: 2
 ```
 
 **Example 2:**
 
-```text
+```
 Input: nums = [3,1,3,4,2]
 Output: 3
 ```
 
 **Example 3:**
 
-```text
+```
 Input: nums = [1,1]
 Output: 1
 ```
 
 **Example 4:**
 
-```text
+```
 Input: nums = [1,1,2]
 Output: 1
 ```
@@ -72,12 +72,12 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity: O\(n\)**
-  * Python timsort\(\) as default sorting algorithm
-    * When doing merge, would use extra O\(n\) space 
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: O(n)**
+  * Python timsort() as default sorting algorithm
+    * When doing merge, would use extra O(n) space&#x20;
 
-\*\*\*\*
+****
 
 ## Solution - HashSet
 
@@ -108,7 +108,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Binary Search
 
@@ -151,14 +151,14 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: O(1)**
 
-\*\*\*\*
+****
 
 ## Solution - Two Pointers
 
-![](../../.gitbook/assets/screen-shot-2021-06-05-at-7.28.05-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-06-05 at 7.28.05 PM.png>)
 
 ### Code
 
@@ -191,6 +191,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**

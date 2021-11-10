@@ -1,4 +1,4 @@
-# Process Tasks Using Servers \(LeetCode1835\) \(M\)
+# Process Tasks Using Servers (LeetCode1835) (M)
 
 ## Problem
 
@@ -12,11 +12,11 @@ You may assign multiple tasks at the same second if there are multiple free serv
 
 Build an array `ans`​​​​ of length `m`, where `ans[j]` is the **index** of the server the `j​​​​​​th` task will be assigned to.
 
-Return _the array_ `ans`​​​​.
+Return _the array _`ans`​​​​.
 
 **Example 1:**
 
-```text
+```
 Input: servers = [3,3,2], tasks = [1,2,3,2,1,2]
 Output: [2,2,0,2,1,2]
 Explanation: Events in chronological order go as follows:
@@ -30,7 +30,7 @@ Explanation: Events in chronological order go as follows:
 
 **Example 2:**
 
-```text
+```
 Input: servers = [5,1,4,3,2], tasks = [2,1,2,4,5,2,1]
 Output: [1,4,1,4,1,3,2]
 Explanation: Events in chronological order go as follows: 
@@ -93,10 +93,9 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n + mlogn\)**
+* **Time Complexity: O(n + mlogn)**
   * n: server's length
   * m: tasks' length
-  * Heapify: O\(n\), Traverse tasks taks O\(m\)
-  * Heappush, Heappop takes logn \(heap size &lt;= m\)
-* **Space Complexity: O\(n + m\)**
-
+  * Heapify: O(n), Traverse tasks taks O(m)
+  * Heappush, Heappop takes logn (heap size <= m)
+* **Space Complexity: O(n + m)**

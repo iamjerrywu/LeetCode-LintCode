@@ -1,20 +1,20 @@
-# Unique Length-3 Palindromic Subsequences \(LeetCode 1930\) \(M\)
+# Unique Length-3 Palindromic Subsequences (LeetCode 1930) (M)
 
 ## Problem
 
-Given a string `s`, return _the number of **unique palindromes of length three** that are a **subsequence** of_ `s`.
+Given a string `s`, return _the number of **unique palindromes of length three** that are a **subsequence** of _`s`.
 
 Note that even if there are multiple ways to obtain the same subsequence, it is still only counted **once**.
 
 A **palindrome** is a string that reads the same forwards and backwards.
 
-A **subsequence** of a string is a new string generated from the original string with some characters \(can be none\) deleted without changing the relative order of the remaining characters.
+A **subsequence** of a string is a new string generated from the original string with some characters (can be none) deleted without changing the relative order of the remaining characters.
 
 * For example, `"ace"` is a subsequence of `"abcde"`.
 
 **Example 1:**
 
-```text
+```
 Input: s = "aabca"
 Output: 3
 Explanation: The 3 palindromic subsequences of length 3 are:
@@ -25,7 +25,7 @@ Explanation: The 3 palindromic subsequences of length 3 are:
 
 **Example 2:**
 
-```text
+```
 Input: s = "adc"
 Output: 0
 Explanation: There are no palindromic subsequences of length 3 in "adc".
@@ -33,7 +33,7 @@ Explanation: There are no palindromic subsequences of length 3 in "adc".
 
 **Example 3:**
 
-```text
+```
 Input: s = "bbcbaba"
 Output: 4
 Explanation: The 4 palindromic subsequences of length 3 are:
@@ -48,7 +48,7 @@ Explanation: The 4 palindromic subsequences of length 3 are:
 * `3 <= s.length <= 105`
 * `s` consists of only lowercase English letters.
 
-## Solution 
+## Solution&#x20;
 
 
 
@@ -87,8 +87,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(26n\)**
+* **Time Complexity: O(26n)**
   * n: traver string
-  * 26: possibility of left/right 
+  * 26: possibility of left/right&#x20;
 * **Space Complexity:**
-

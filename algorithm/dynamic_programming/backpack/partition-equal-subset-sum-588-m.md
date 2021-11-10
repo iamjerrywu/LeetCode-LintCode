@@ -1,17 +1,17 @@
-# Partition Equal Subset Sum 588 \(M\)
+# Partition Equal Subset Sum 588 (M)
 
 ## Problem
 
 Given a `non-empty` array containing `only positive integers`, find if the array can be partitioned into `two` subsets such that the sum of elements in both subsets is equal.
 
-Each of the array element will not exceed 100.  
+Each of the array element will not exceed 100.\
 The array size will not exceed 200.Have you met this question in a real interview?  YesProblem Correction
 
 #### Example
 
 Example 1:
 
-```text
+```
 Input: nums = [1, 5, 11, 5], 
 Output: true
 Explanation:
@@ -20,18 +20,18 @@ two subsets: [1, 5, 5], [11]
 
 Example 2:
 
-```text
+```
 Input: nums = [1, 2, 3, 9], 
 Output: false
 ```
 
-## Solution - DP \(1\)
+## Solution - DP (1)
 
-In brute force, one way is to find all the subsets and then find whether any of it equals to sum\(total\)/2. However, that require O\(2^n\) times
+In brute force, one way is to find all the subsets and then find whether any of it equals to sum(total)/2. However, that require O(2^n) times
 
 If any num can be found, that mark as 1
 
-![](../../../.gitbook/assets/screen-shot-2021-06-03-at-5.59.53-pm.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-06-03 at 5.59.53 PM.png>)
 
 ### Code
 
@@ -72,23 +72,22 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n \* m\)**
-* **Space Complexity: O\(n \* m\)**
+* **Time Complexity: O(n \* m)**
+* **Space Complexity: O(n \* m)**
 
-## Solution - DP \(2\)
+## Solution - DP (2)
 
 Since every number whether it can be sums of subset or not, depend on previous state
 
 State function can write as :
 
-* dp\[j\] = dp\[j\] \| dp\[j - nums\[i\]\]
+* dp\[j] = dp\[j] | dp\[j - nums\[i]]
 
 ### Code
 
@@ -143,4 +142,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

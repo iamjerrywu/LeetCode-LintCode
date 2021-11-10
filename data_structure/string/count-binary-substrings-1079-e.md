@@ -1,4 +1,4 @@
-# Count Binary Substrings 1079 \(E\)
+# Count Binary Substrings 1079 (E)
 
 ## Problem
 
@@ -7,7 +7,7 @@
 
 **Constraints:**
 
-```text
+```
 Input: s = "10101"
 Output: 4
 Explanation: There are 4 substrings: "10", "01", "10", "01" that have equal number of consecutive 1's and 0's.
@@ -15,7 +15,7 @@ Explanation: There are 4 substrings: "10", "01", "10", "01" that have equal numb
 
 **Example 2:**
 
-```text
+```
 Input: s = "00110011"
 Output: 6
 Explanation: There are 6 substrings that have equal number of consecutive 1's and 0's: "0011", "01", "1100", "10", "0011", and "01".
@@ -29,7 +29,7 @@ Substrings that occur multiple times are counted the number of times they occur.
 
 Give a binary string `s`, return the number of non-empty substrings that have the same number of `0`'s and `1`'s, and all the `0`'s and all the `1`'s in these substrings are grouped consecutively.
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -55,10 +55,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(m \* n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(m \* n)**
+* **Space Complexity: O(n)**
 
-\*\*\*\*
+****
 
 ## Solution - group by characters
 
@@ -86,12 +86,12 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
 
-## Solution - O\(1\) Space
+## Solution - O(1) Space
 
-![](../../.gitbook/assets/screen-shot-2021-10-03-at-1.20.07-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-10-03 at 1.20.07 PM.png>)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -119,10 +119,9 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**
 
-\*\*\*\*
+****
 
-\*\*\*\*
-
+****

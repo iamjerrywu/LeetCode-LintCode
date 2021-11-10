@@ -1,4 +1,4 @@
-# Minimum Cost to Hire K Workers 1512 \(H\)
+# Minimum Cost to Hire K Workers 1512 (H)
 
 ## Problem
 
@@ -11,30 +11,30 @@ Now we want to hire exactly K workers to form a paid group. When hiring a group 
 
 Return the least amount of money needed to form a paid group satisfying the above conditions.
 
-1.`1 <= K <= N <= 10000`, where `N = quality.length = wage.length`  
-2.`1 <= quality[i] <= 10000`  
-3.`1 <= wage[i] <= 10000`  
+1.`1 <= K <= N <= 10000`, where `N = quality.length = wage.length`\
+2.`1 <= quality[i] <= 10000`\
+3.`1 <= wage[i] <= 10000`\
 4.Answers within `10^-5` of the correct answer will be considered correct.Example
 
 **Example 1:**
 
-```text
+```
 Input: quality = [10,20,5], wage = [70,50,30], K = 2Output: 105.00000Explanation: We pay 70 to 0-th worker and 35 to 2-th worker.
 ```
 
 **Example 2:**
 
-```text
+```
 Input: quality = [3,1,10,10,1], wage = [4,8,2,2,7], K = 3Output: 30.66667Explanation: We pay 4 to 0-th worker, 13.33333 to 2-th and 3-th workers seperately. 
 ```
 
-## Solution 
+## Solution&#x20;
 
-![](../../.gitbook/assets/screen-shot-2021-06-19-at-6.19.05-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-06-19 at 6.19.05 PM.png>)
 
-![](../../.gitbook/assets/screen-shot-2021-06-19-at-6.19.23-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-06-19 at 6.19.23 PM.png>)
 
-![](../../.gitbook/assets/screen-shot-2021-06-19-at-6.19.55-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-06-19 at 6.19.55 PM.png>)
 
 ### Code
 
@@ -78,8 +78,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-  * sort\(\): O\(nlogn\)
-  * traverse and heap: O\(nlogk\)
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(nlogn)**
+  * sort(): O(nlogn)
+  * traverse and heap: O(nlogk)
+* **Space Complexity: O(n)**

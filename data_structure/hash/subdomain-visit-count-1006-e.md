@@ -1,12 +1,12 @@
-# Subdomain Visit Count 1006 \(E\)
+# Subdomain Visit Count 1006 (E)
 
 ## Problem
 
 A website domain like "discuss.lintcode.com" consists of various subdomains. At the top level, we have "com", at the next level, we have "lintcode.com", and at the lowest level, "discuss.lintcode.com". When we visit a domain like "discuss.lintcode.com", we will also visit the parent domains "lintcode.com" and "com" implicitly.
 
-Now, call a "count-paired domain" to be a count \(representing the number of visits this domain received\), followed by a space, followed by the address. An example of a count-paired domain might be "9001 discuss.lintcode.com".
+Now, call a "count-paired domain" to be a count (representing the number of visits this domain received), followed by a space, followed by the address. An example of a count-paired domain might be "9001 discuss.lintcode.com".
 
-We are given a list `cpdomains` of count-paired domains. We would like a list of count-paired domains, \(in the same format as the input, and in any order\), that explicitly counts the number of visits to each subdomain.
+We are given a list `cpdomains` of count-paired domains. We would like a list of count-paired domains, (in the same format as the input, and in any order), that explicitly counts the number of visits to each subdomain.
 
 * The length of `cpdomains` will not exceed `100`.
 * The length of each domain name will not exceed `100`.
@@ -18,7 +18,7 @@ Example
 
 **Example 1:**
 
-```text
+```
 Input: 
 ["9001 discuss.lintcode.com"]
 Output: 
@@ -29,7 +29,7 @@ We only have one website domain: "discuss.lintcode.com". As discussed above, the
 
 **Example 2:**
 
-```text
+```
 Input: 
 ["900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"]
 Output: 
@@ -38,7 +38,7 @@ Explanation:
 We will visit "google.mail.com" 900 times, "yahoo.com" 50 times, "intel.mail.com" once and "wiki.org" 5 times. For the subdomains, we will visit "mail.com" 900 + 1 = 901 times, "com" 900 + 50 + 1 = 951 times, and "org" 5 times.
 ```
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -67,10 +67,36 @@ class Solution:
                 
 ```
 {% endtab %}
+
+{% tab title="Java" %}
+```java
+class Solution {
+    public List<String> subdomainVisits(String[] cpdomains) {
+        Map<String, Integer> records = new HashMap<>();
+        for (String cpdomain : cpdomains) {
+            String[] arr_str1 = cpdomain.split(" ");
+            int amount = Integer.valueOf(arr_str1[0]);
+            String[] domain_strs = arr_str1[1].split("\\.");
+            List<String> str_list = Arrays.asList(domain_strs);
+            for (int i = 0; i < str_list.size(); i++) {
+                String key = String.join(".", str_list.subList(i, domain_strs.length));
+                records.put(key, records.getOrDefault(key, 0) + amount);
+            }
+        }
+        System.out.println(records);
+        List<String> ans = new ArrayList<>();
+        for (Map.Entry<String, Integer> entry : records.entrySet()) {
+            ans.add(entry.getValue() + " " + entry.getKey());
+        }
+        
+        return ans;
+    }
+}
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
 * **Time Complexity:**
 * **Space Complexity:**
-

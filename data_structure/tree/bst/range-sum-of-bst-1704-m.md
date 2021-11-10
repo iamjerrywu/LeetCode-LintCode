@@ -1,24 +1,24 @@
-# Range Sum of BST 1704 \(M\)
+# Range Sum of BST 1704 (M)
 
 ## Problem
 
-Given the root node of a binary search tree, return the sum of values of all nodes with value between L and R \(inclusive\).
+Given the root node of a binary search tree, return the sum of values of all nodes with value between L and R (inclusive).
 
 The binary search tree is guaranteed to have unique values.
 
-The number of nodes in the tree is at most 10000.  
+The number of nodes in the tree is at most 10000.\
 The final answer is guaranteed to be less than 2^31.Example
 
 **Example 1:**
 
-```text
+```
 Input: root = [10,5,15,3,7,null,18], L = 7, R = 15
 Output: 32
 ```
 
 **Example 2:**
 
-```text
+```
 Input: root = [10,5,15,3,7,13,18,1,null,6], L = 6, R = 10
 Output: 23
 ```
@@ -59,19 +59,18 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
+* **Time Complexity: O(n)**
   * n: total amounts of nodes
-* **Space Complexity: O\(h\)**
-  * h: height of the tree \(can be worst as n\), call stack frame
+* **Space Complexity: O(h)**
+  * h: height of the tree (can be worst as n), call stack frame
 
-\*\*\*\*
+****
 
 ## Solution - DFS
 
@@ -113,15 +112,13 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(h\)**
+* **Time Complexity: O(h)**
   * h is the BST height
-* **Space Complexity: O\(h\)**
-  * h: height of the tree, 
-
+* **Space Complexity: O(h)**
+  * h: height of the tree,&#x20;

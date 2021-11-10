@@ -1,35 +1,35 @@
-# Modern Ludo I 1565 \(M\)
+# Modern Ludo I 1565 (M)
 
 ## Problem
 
-There is a one-dimensional board with a starting point on the far left side of the board and an end point on the far right side of the board. There are several positions on the board that are connected to other positions, ie if A is connected to B, then when chess falls at position A, you can choose whether to give up to throw dice and move the chess from A to B directly. And the connection is one way, which means that the chess cannot move from B to A. Now given the `length` and `connections` of the board, and you have a six-sided dice\(1-6\), output the minimum steps to reach the end point.
+There is a one-dimensional board with a starting point on the far left side of the board and an end point on the far right side of the board. There are several positions on the board that are connected to other positions, ie if A is connected to B, then when chess falls at position A, you can choose whether to give up to throw dice and move the chess from A to B directly. And the connection is one way, which means that the chess cannot move from B to A. Now given the `length` and `connections` of the board, and you have a six-sided dice(1-6), output the minimum steps to reach the end point.
 
 * the index starts from 1.
-* length &gt; 1
+* length > 1
 * The starting point is not connected to any other location
-* connections\[i\]\[0\] &lt; connections\[i\]\[1\]
+* connections\[i]\[0] < connections\[i]\[1]
 
 Example
 
 **Example1**
 
-```text
+```
 Input: length = 10 and connections = [[2, 10]]Output: 1Explanation: 1->2 (dice)2->10(for free)
 ```
 
 **Example2**
 
-```text
+```
 Input: length = 15 and connections = [[2, 8],[6, 9]]Output: 2Explanation: 1->6 (dice)6->9 (for free)9->15(dice)
 ```
 
 ## Solution - BFS + BFS
 
-The outer BFS determine the shortest path 
+The outer BFS determine the shortest path&#x20;
 
-The inner BFS do the traverse \(and take care those visited/unvisited\) path
+The inner BFS do the traverse (and take care those visited/unvisited) path
 
-![](../../.gitbook/assets/screen-shot-2021-05-26-at-12.02.04-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-26 at 12.02.04 PM.png>)
 
 ### Code
 
@@ -88,12 +88,12 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(N + E\)**
+* **Time Complexity: O(N + E)**
   * N: nodes amount
   * E: edges amount
-* **Space Complexity:** 
+* **Space Complexity: **
 
-\*\*\*\*
+****
 
 ## Solution - Double Queue
 
@@ -153,7 +153,7 @@ class Solution:
 
 ## Solution - SPFA
 
-SPFA \(shortest Path Faster Algorithm\): 
+SPFA (shortest Path Faster Algorithm):&#x20;
 
 * Design to solve complex graph problems
 
@@ -205,7 +205,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: Can reach O\(n^2 \* m\)**
+* **Time Complexity: Can reach O(n^2 \* m)**
 * **Space Complexity:**
 
 ## Solution - SPFA Optimization
@@ -262,7 +262,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-## Solution - DP \(Bottom Up\)
+## Solution - DP (Bottom Up)
 
 ### Code
 
@@ -312,7 +312,7 @@ class Solution:
 
 
 
-## Solution - DP \(Top Down\)
+## Solution - DP (Top Down)
 
 ### Code
 
@@ -356,6 +356,4 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-
-
 

@@ -1,18 +1,18 @@
-# Reduction Operations to Make the Array Elements Equal （LeetCode 1887\) \(M\)
+# Reduction Operations to Make the Array Elements Equal （LeetCode 1887) (M)
 
 ## Problem
 
 Given an integer array `nums`, your goal is to make all elements in `nums` equal. To complete one operation, follow these steps:
 
-1. Find the **largest** value in `nums`. Let its index be `i` \(**0-indexed**\) and its value be `largest`. If there are multiple elements with the largest value, pick the smallest `i`.
+1. Find the **largest** value in `nums`. Let its index be `i` (**0-indexed**) and its value be `largest`. If there are multiple elements with the largest value, pick the smallest `i`.
 2. Find the **next largest** value in `nums` **strictly smaller** than `largest`. Let its value be `nextLargest`.
 3. Reduce `nums[i]` to `nextLargest`.
 
-Return _the number of operations to make all elements in_ `nums` _equal_.
+Return _the number of operations to make all elements in _`nums`_ equal_.
 
 **Example 1:**
 
-```text
+```
 Input: nums = [5,1,3]
 Output: 3
 Explanation: It takes 3 operations to make all elements in nums equal:
@@ -23,7 +23,7 @@ Explanation: It takes 3 operations to make all elements in nums equal:
 
 **Example 2:**
 
-```text
+```
 Input: nums = [1,1,1]
 Output: 0
 Explanation: All elements in nums are already equal.
@@ -31,7 +31,7 @@ Explanation: All elements in nums are already equal.
 
 **Example 3:**
 
-```text
+```
 Input: nums = [1,1,2,2,3]
 Output: 4
 Explanation: It takes 4 operations to make all elements in nums equal:
@@ -46,7 +46,7 @@ Explanation: It takes 4 operations to make all elements in nums equal:
 * `1 <= nums.length <= 5 * 104`
 * `1 <= nums[i] <= 5 * 104`
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -77,4 +77,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

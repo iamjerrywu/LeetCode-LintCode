@@ -1,4 +1,4 @@
-# Find Pivot Index \(1068\) \(E\)
+# Find Pivot Index (1068) (E)
 
 ## Problem
 
@@ -12,7 +12,7 @@ Return _the **leftmost pivot index**_. If no such index exists, return -1.
 
 **Example 1:**
 
-```text
+```
 Input: nums = [1,7,3,6,5,6]
 Output: 3
 Explanation:
@@ -23,7 +23,7 @@ Right sum = nums[4] + nums[5] = 5 + 6 = 11
 
 **Example 2:**
 
-```text
+```
 Input: nums = [1,2,3]
 Output: -1
 Explanation:
@@ -32,7 +32,7 @@ There is no index that satisfies the conditions in the problem statement.
 
 **Example 3:**
 
-```text
+```
 Input: nums = [2,1,-1]
 Output: 0
 Explanation:
@@ -70,10 +70,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
 
-\*\*\*\*
+****
 
 ## Solution - Enumeration
 
@@ -96,6 +96,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**

@@ -1,4 +1,4 @@
-# Maximum Product of the Length of Two Palindromic Subsequences \(LeetCode 2002\) \(M\)
+# Maximum Product of the Length of Two Palindromic Subsequences (LeetCode 2002) (M)
 
 ## Problem
 
@@ -10,7 +10,7 @@ A **subsequence** is a string that can be derived from another string by deletin
 
 **Example 1:**![example-1](https://assets.leetcode.com/uploads/2021/08/24/two-palindromic-subsequences.png)
 
-```text
+```
 Input: s = "leetcodecom"
 Output: 9
 Explanation: An optimal solution is to choose "ete" for the 1st subsequence and "cdc" for the 2nd subsequence.
@@ -19,7 +19,7 @@ The product of their lengths is: 3 * 3 = 9.
 
 **Example 2:**
 
-```text
+```
 Input: s = "bb"
 Output: 1
 Explanation: An optimal solution is to choose "b" (the first character) for the 1st subsequence and "b" (the second character) for the 2nd subsequence.
@@ -28,7 +28,7 @@ The product of their lengths is: 1 * 1 = 1.
 
 **Example 3:**
 
-```text
+```
 Input: s = "accbcaxxcxx"
 Output: 25
 Explanation: An optimal solution is to choose "accca" for the 1st subsequence and "xxcxx" for the 2nd subsequence.
@@ -75,6 +75,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: O\(n^2\)**
-* **Space Complexity:** 
-
+* **Time Complexity: O(n^2)**
+* **Space Complexity: **

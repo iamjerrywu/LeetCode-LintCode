@@ -1,18 +1,18 @@
-# Symmetric Tree 1360 \(M\)
+# Symmetric Tree 1360 (M)
 
 ## Problem
 
-Given a binary tree, check whether it is a mirror of itself \(ie, symmetric around its center\).Example
+Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).Example
 
 **Example1**
 
-```text
+```
 Input: {1,2,2,3,4,4,3}Output: trueExplanation:    1   / \  2   2 / \ / \3  4 4  3This binary tree {1,2,2,3,4,4,3} is symmetric
 ```
 
 **Example2**
 
-```text
+```
 Input: {1,2,2,#,3,#,3}Output: falseExplanation:    1   / \  2   2   \   \   3    3This is not a symmetric tree
 ```
 
@@ -78,11 +78,11 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n/2\)**
-  * Each pair \(left, right\) node would be traversed, and each node only be traversed once
+* **Time Complexity: O(n/2)**
+  * Each pair (left, right) node would be traversed, and each node only be traversed once
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Recursion DFS
 
@@ -135,11 +135,11 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n/2\)**
-  * Each pair \(left, right\) node would be traversed, and each node only be traversed once
+* **Time Complexity: O(n/2)**
+  * Each pair (left, right) node would be traversed, and each node only be traversed once
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Iteration DFS
 
@@ -237,7 +237,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(4n\)**
+* **Time Complexity: O(4n)**
   * Traverse 4 times
 * **Space Complexity:**
-

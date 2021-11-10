@@ -1,4 +1,4 @@
-# Black Jack OO Design 714 \(M\)
+# Black Jack OO Design 714 (M)
 
 ## Problem
 
@@ -11,31 +11,31 @@
 
 Example
 
-```text
+```
 Player(10)Player(100)Player(500)Card([1,4,2,3,1,4,2,3,9,10])InitialCards()compareResult()
 ```
 
 You should return below:
 
-```text
+```
 playerid: 1 ;Cards: 1 , 1; Current best value is: 12, current bets: 10, total bets: 990playerid: 2 ;Cards: 4 , 4; Current best value is: 8, current bets: 100, total bets: 900playerid: 3 ;Cards: 2 , 2; Current best value is: 4, current bets: 500, total bets: 500Dealer Cards: 3 , 3; Current best value is: 6, total bets: 10000playerid: 1 ;Cards: 1 , 1; Current best value is: 12, current bets: 0, total bets: 1010playerid: 2 ;Cards: 4 , 4; Current best value is: 8, current bets: 0, total bets: 1100playerid: 3 ;Cards: 2 , 2; Current best value is: 4, current bets: 0, total bets: 500Dealer Cards: 3 , 3; Current best value is: 6, total bets: 10390
 ```
 
 ## Clarify
 
 * Player
-  * How many players can we support in table?  \(no limit\)
-  * Is there a fixed dealer or players take turns to become dealer? \(fixed dealer per table\)
+  * How many players can we support in table?  (no limit)
+  * Is there a fixed dealer or players take turns to become dealer? (fixed dealer per table)
 * Rule
-  * What if run out of cards? \(always enough\)
-  * Can dealer run out of bets? \(always enough\)
+  * What if run out of cards? (always enough)
+  * Can dealer run out of bets? (always enough)
 * Win/Lose
 * Scores
-  * How many initial bets players have \(the same\)
+  * How many initial bets players have (the same)
 
 ## Solution
 
-![](../../.gitbook/assets/screen-shot-2021-07-20-at-11.14.47-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-20 at 11.14.47 AM.png>)
 
 {% tabs %}
 {% tab title="Java" %}
@@ -297,4 +297,3 @@ class Dealer {
 
 * **Time Complexity:**
 * **Space Complexity:**
-

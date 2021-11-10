@@ -1,23 +1,23 @@
-# Delete Nodes And Return Forest \(LeetCode 1110\) \(M\)
+# Delete Nodes And Return Forest (LeetCode 1110) (M)
 
 ## Problem
 
 Given the `root` of a binary tree, each node in the tree has a distinct value.
 
-After deleting all nodes with a value in `to_delete`, we are left with a forest \(a disjoint union of trees\).
+After deleting all nodes with a value in `to_delete`, we are left with a forest (a disjoint union of trees).
 
 Return the roots of the trees in the remaining forest. You may return the result in any order.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2019/07/01/screen-shot-2019-07-01-at-53836-pm.png)
 
-```text
+```
 Input: root = [1,2,3,4,5,6,7], to_delete = [3,5]
 Output: [[1,2,null,4],[6],[7]]
 ```
 
 **Example 2:**
 
-```text
+```
 Input: root = [1,2,4,null,3], to_delete = [3]
 Output: [[1,2,4]]
 ```
@@ -29,7 +29,7 @@ Output: [[1,2,4]]
 * `to_delete.length <= 1000`
 * `to_delete` contains distinct values between `1` and `1000`.
 
-## Solution 
+## Solution&#x20;
 
 Only if the root is not deleted, then it can be and it's the root, then it can be add to the res
 
@@ -64,6 +64,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
-* **Space Complexity:** 
-
+* **Time Complexity: **
+* **Space Complexity: **

@@ -1,10 +1,10 @@
-# Binary Tree Postorder Traversal 68 \(E\)
+# Binary Tree Postorder Traversal 68 (E)
 
 ## Problem
 
 Given a binary tree, return the postorder traversal of its nodes’ values.
 
-* The first data is the root node, followed by the value of the left and right son nodes, and "\#" indicates that there is no child node.
+* The first data is the root node, followed by the value of the left and right son nodes, and "#" indicates that there is no child node.
 * The number of nodes does not exceed 20.
 
 Example
@@ -13,45 +13,45 @@ Example
 
 Input:
 
-```text
+```
 binary tree = {1,2,3}
 ```
 
 Output:
 
-```text
+```
 [2,1,3]
 ```
 
 Explanation:
 
-   1  
-  /  \  
-2     3  
+&#x20;  1\
+&#x20; /  \\\
+2     3\
 It will be serialized as {1,2,3} postorder traversal
 
 **Example 2:**
 
 Input:
 
-```text
+```
 binary tree = {1,#,2,3}
 ```
 
 Output:
 
-```text
+```
 [1,3,2]
 ```
 
 Explanation:
 
-1  
-  \  
-   2  
-  /  
-3  
-It will be serialized as {1,\#,2,3} postorder traversalChallenge
+1\
+&#x20; \\\
+&#x20;  2\
+&#x20; /\
+3\
+It will be serialized as {1,#,2,3} postorder traversalChallenge
 
 Can you do it without recursion?
 
@@ -96,7 +96,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Non-Recursion
 
@@ -152,6 +152,4 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-
-
 

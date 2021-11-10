@@ -1,4 +1,4 @@
-# Binary Tree Inorder Traversal 67 \(E\)
+# Binary Tree Inorder Traversal 67 (E)
 
 ## Problem
 
@@ -8,45 +8,45 @@ Given a binary tree, return the inorder traversal of its nodes‘ values.Example
 
 Input:
 
-```text
+```
 binary tree = {1,2,3}
 ```
 
 Output:
 
-```text
+```
 [2,1,3]
 ```
 
 Explanation:
 
-   1  
-  /  \  
-2     3  
+&#x20;  1\
+&#x20; /  \\\
+2     3\
 It will be serialized as {1,2,3} inorder traversal
 
 **Example 2:**
 
 Input:
 
-```text
+```
 binary tree = {1,#,2,3}
 ```
 
 Output:
 
-```text
+```
 [1,3,2]
 ```
 
 Explanation:
 
-1  
-  \  
-   2  
-  /  
-3  
-It will be serialized as {1,\#,2,3} inorder traversalChallenge
+1\
+&#x20; \\\
+&#x20;  2\
+&#x20; /\
+3\
+It will be serialized as {1,#,2,3} inorder traversalChallenge
 
 Can you do it without recursion?
 
@@ -89,7 +89,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution  - Iteration Stack
 
@@ -143,4 +143,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

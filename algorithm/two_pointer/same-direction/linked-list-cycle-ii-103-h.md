@@ -1,4 +1,4 @@
-# Linked List Cycle II 103 \(H\)
+# Linked List Cycle II 103 (H)
 
 ## Problem
 
@@ -8,7 +8,7 @@ If there is no cycle, return `null`.Example
 
 Example 1:
 
-```text
+```
 Input：null, no cycle
 Output：no cycle
 Explanation：
@@ -17,7 +17,7 @@ List is null, so no cycle.
 
 Example 2:
 
-```text
+```
 Input：-21->10->4->5, tail connects to node index 1
 Output：10
 Explanation：
@@ -28,9 +28,9 @@ Challenge
 
 Can you solve it without using extra space?
 
-## Solution - Two Pointer 
+## Solution - Two Pointer&#x20;
 
-![](../../../.gitbook/assets/screen-shot-2021-04-24-at-5.31.06-pm.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-04-24 at 5.31.06 PM.png>)
 
 ### Code
 
@@ -74,13 +74,11 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**

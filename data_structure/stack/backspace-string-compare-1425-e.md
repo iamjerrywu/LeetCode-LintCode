@@ -1,4 +1,4 @@
-# Backspace String Compare \(1425\) \(E\)
+# Backspace String Compare (1425) (E)
 
 ## Problem
 
@@ -12,25 +12,25 @@ Example
 
 **Example 1:**
 
-```text
+```
 Input: S = "ab#c", T = "ad#c"Output: trueExplanation: Both S and T become "ac".
 ```
 
 **Example 2:**
 
-```text
+```
 Input: S = "ab##", T = "c#d#"Output: trueExplanation: Both S and T become "".
 ```
 
 **Example 3:**
 
-```text
+```
 Input: S = "a##c", T = "#a#c"Output: trueExplanation: Both S and T become "c".
 ```
 
 **Example 4:**
 
-```text
+```
 Input: S = "a#c", T = "b"Output: falseExplanation: S becomes "c" while T becomes "b".
 ```
 
@@ -60,10 +60,10 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity:  O\(n\)**
+* **Time Complexity: O(n)**
+* **Space Complexity:  O(n)**
 
-\*\*\*\*
+****
 
 ## Solution - Two Pointer
 
@@ -102,5 +102,4 @@ class Solution {
 {% endtabs %}
 
 * **Time Complexity:**
-* **Space Complexity:** 
-
+* **Space Complexity: **

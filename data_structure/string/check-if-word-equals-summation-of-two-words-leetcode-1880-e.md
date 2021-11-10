@@ -1,4 +1,4 @@
-# Check if Word Equals Summation of Two Words \(LeetCode 1880\) \(E\)
+# Check if Word Equals Summation of Two Words (LeetCode 1880) (E)
 
 ## Problem
 
@@ -8,7 +8,7 @@
 * **Total Submissions:**7890
 * **Difficulty:**Easy
 
-The **letter value** of a letter is its position in the alphabet **starting from 0** \(i.e. `'a' -> 0`, `'b' -> 1`, `'c' -> 2`, etc.\).
+The **letter value** of a letter is its position in the alphabet **starting from 0** (i.e. `'a' -> 0`, `'b' -> 1`, `'c' -> 2`, etc.).
 
 The **numerical value** of some string of lowercase English letters `s` is the **concatenation** of the **letter values** of each letter in `s`, which is then **converted** into an integer.
 
@@ -16,11 +16,11 @@ The **numerical value** of some string of lowercase English letters `s` is the *
 
 You are given three strings `firstWord`, `secondWord`, and `targetWord`, each consisting of lowercase English letters `'a'` through `'j'` **inclusive**.
 
-Return `true` _if the **summation** of the **numerical values** of_ `firstWord` _and_ `secondWord` _equals the **numerical value** of_ `targetWord`_, or_ `false` _otherwise._
+Return `true` _if the **summation** of the **numerical values** of _`firstWord`_ and _`secondWord`_ equals the **numerical value** of _`targetWord`_, or _`false`_ otherwise._
 
 **Example 1:**
 
-```text
+```
 Input: firstWord = "acb", secondWord = "cba", targetWord = "cdb"
 Output: true
 Explanation:
@@ -32,7 +32,7 @@ We return true because 21 + 210 == 231.
 
 **Example 2:**
 
-```text
+```
 Input: firstWord = "aaa", secondWord = "a", targetWord = "aab"
 Output: false
 Explanation: 
@@ -44,7 +44,7 @@ We return false because 0 + 0 != 1.
 
 **Example 3:**
 
-```text
+```
 Input: firstWord = "aaa", secondWord = "a", targetWord = "aaaa"
 Output: true
 Explanation: 
@@ -59,7 +59,7 @@ We return true because 0 + 0 == 0.
 * `1 <= firstWord.length, secondWord.length, targetWord.length <= 8`
 * `firstWord`, `secondWord`, and `targetWord` consist of lowercase English letters from `'a'` to `'j'` **inclusive**.
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -90,4 +90,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

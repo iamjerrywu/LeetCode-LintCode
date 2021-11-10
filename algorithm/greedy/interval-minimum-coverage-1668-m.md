@@ -1,4 +1,4 @@
-# Interval Minimum Coverage 1668 \(M\)
+# Interval Minimum Coverage 1668 (M)
 
 ## Problem
 
@@ -14,7 +14,7 @@ Example
 
 **Example 1:**
 
-```text
+```
 Input: [(1,5), (4,8), (10,12)]
 Output: 2
 Explanation: 
@@ -26,7 +26,7 @@ Explanation:
 
 **Example 2:**
 
-```text
+```
 Input: [(1,5), (4,8), (5,12)]
 Output: 1
 Explanation: All intervals contain 5
@@ -34,7 +34,7 @@ Explanation: All intervals contain 5
 
 ## Solution
 
-![](../../.gitbook/assets/screen-shot-2021-05-01-at-11.43.40-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-01 at 11.43.40 PM.png>)
 
 ### Code
 
@@ -73,7 +73,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -82,4 +81,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

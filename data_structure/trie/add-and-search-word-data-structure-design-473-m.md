@@ -1,10 +1,10 @@
-# Add and Search Word - Data structure design 473 \(M\)
+# Add and Search Word - Data structure design 473 (M)
 
 ## Problem
 
 Design a data structure that supports the following two operations: `addWord(word)` and `search(word)`
 
-Addword \(word\) adds a word to the data structure.`search(word)` can search a literal word or a regular expression string containing only letters `a-z` or `.`.
+Addword (word) adds a word to the data structure.`search(word)` can search a literal word or a regular expression string containing only letters `a-z` or `.`.
 
 A `.` means it can represent any one letter.
 
@@ -12,13 +12,13 @@ You may assume that all words are consist of lowercase letters a-z.Example
 
 **Example 1:**
 
-```text
+```
 Input:  addWord("a")  search(".")Output:  true
 ```
 
 **Example 2:**
 
-```text
+```
 Input:  addWord("bad")  addWord("dad")  addWord("mad")  search("pad")    search("bad")    search(".ad")    search("b..")  Output:  false  true  true  true
 ```
 
@@ -64,18 +64,18 @@ class WordDictionary:
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
-  * addword\(\): O\(1\)
-  * Search\(\):  O\(m \* n\)
+* **Time Complexity: **
+  * addword(): O(1)
+  * Search():  O(m \* n)
     * m: length-n word's amount
     * n: length of the word
-* **Space Complexity: O\(n\)**
+* **Space Complexity: O(n)**
 
-\*\*\*\*
+****
 
-## Solution - Trie \(Complete\)
+## Solution - Trie (Complete)
 
-Construct Trie Node data structure 
+Construct Trie Node data structure&#x20;
 
 ### Code
 
@@ -149,16 +149,16 @@ class WordDictionary:
 ### Complexity Analysis
 
 * **Time Complexity:**
-  * addword\(\): O\(n\)
-  * Search: 
-    * Best Case: O\(n\), n is the word length
-    * Worst Case: need to traverse the whole trie O\(26^n \* m\)
+  * addword(): O(n)
+  * Search:&#x20;
+    * Best Case: O(n), n is the word length
+    * Worst Case: need to traverse the whole trie O(26^n \* m)
       * n is the word length
       * m is the number of keys
 * **Space Complexity:**
-  * addword\(\): O\(n\)
+  * addword(): O(n)
 
-## Solution - Trie\(Simple\)
+## Solution - Trie(Simple)
 
 Construct trie in a simpler way
 
@@ -215,12 +215,11 @@ class WordDictionary:
 ### Complexity Analysis
 
 * **Time Complexity:**
-  * addword\(\): O\(n\)
-  * Search: 
-    * Best Case: O\(n\), n is the word length
-    * Worst Case: need to traverse the whole trie O\(26^n \* m\)
+  * addword(): O(n)
+  * Search:&#x20;
+    * Best Case: O(n), n is the word length
+    * Worst Case: need to traverse the whole trie O(26^n \* m)
       * n is the word length
       * m is the number of keys
 * **Space Complexity:**
-  * addword\(\): O\(n\)
-
+  * addword(): O(n)

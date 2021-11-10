@@ -1,4 +1,4 @@
-# Subarray Sum Equals to k 838 \(E\)
+# Subarray Sum Equals to k 838 (E)
 
 ## Problem
 
@@ -6,7 +6,7 @@ Given an array of integers and an integer k, you need to find the total number o
 
 **Example1**
 
-```text
+```
 Input: nums = [1,1,1] and k = 2
 Output: 2
 Explanation:
@@ -15,7 +15,7 @@ subarray [0,1] and [1,2]
 
 **Example2**
 
-```text
+```
 Input: nums = [2,1,-1,1,2] and k = 3
 Output: 4
 Explanation:
@@ -50,17 +50,16 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^2\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(n^2)**
+* **Space Complexity: O(1)**
 
-\*\*\*\*
+****
 
 ## Solution - Prefix Sum
 
@@ -96,14 +95,30 @@ class Solution:
 {% endtab %}
 
 {% tab title="java" %}
-```
-
+```java
+class Solution {
+    public int subarraySum(int[] nums, int k) {
+        
+        int sumVal = 0;
+        Map<Integer, Integer> prefixSums = new HashMap<>();
+        prefixSums.put(0, 1);
+        
+        int ans = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sumVal+=nums[i];
+            if (prefixSums.containsKey(sumVal - k)) {
+                ans+=prefixSums.get(sumVal - k);
+            }
+            prefixSums.put(sumVal, prefixSums.getOrDefault(sumVal, 0) + 1);
+        }
+        return ans;
+    }
+}
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**

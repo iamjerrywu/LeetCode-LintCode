@@ -1,4 +1,4 @@
-# Analyze User Website Visit Pattern \(LeetCode 1152\) \(M\)
+# Analyze User Website Visit Pattern (LeetCode 1152) (M)
 
 ## Problem
 
@@ -6,7 +6,7 @@
 
 You are given two string arrays `username` and `website` and an integer array `timestamp`. All the given arrays are of the same length and the tuple `[username[i], website[i], timestamp[i]]` indicates that the user `username[i]` visited the website `website[i]` at time `timestamp[i]`.
 
-A **pattern** is a list of three websites \(not necessarily distinct\).
+A **pattern** is a list of three websites (not necessarily distinct).
 
 * For example, `["home", "away", "love"]`, `["leetcode", "love", "leetcode"]`, and `["luffy", "luffy", "luffy"]` are all patterns.
 
@@ -20,7 +20,7 @@ Return _the **pattern** with the largest **score**_. If there is more than one p
 
 **Example 1:**
 
-```text
+```
 Input: username = ["joe","joe","joe","james","james","james","james","mary","mary","mary"], timestamp = [1,2,3,4,5,6,7,8,9,10], website = ["home","about","career","home","cart","maps","home","home","about","career"]
 Output: ["home","about","career"]
 Explanation: The tuples in this example are:
@@ -35,7 +35,7 @@ The pattern ("home", "home", "home") has score 0 (no user visited home 3 times).
 
 **Example 2:**
 
-```text
+```
 Input: username = ["ua","ua","ua","ub","ub","ub"], timestamp = [1,2,3,4,5,6], website = ["a","b","a","a","b","c"]
 Output: ["a","b","a"]
 ```
@@ -91,6 +91,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-

@@ -1,4 +1,4 @@
-# Number of Provinces 547 \(M\)
+# Number of Provinces 547 (M)
 
 ## Problem
 
@@ -14,14 +14,14 @@ Return _the total number of **provinces**_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2020/12/24/graph1.jpg)
 
-```text
+```
 Input: isConnected = [[1,1,0],[1,1,0],[0,0,1]]
 Output: 2
 ```
 
 **Example 2:**![](https://assets.leetcode.com/uploads/2020/12/24/graph2.jpg)
 
-```text
+```
 Input: isConnected = [[1,0,0],[0,1,0],[0,0,1]]
 Output: 3
 ```
@@ -67,12 +67,12 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-  * Call stack depth: O\(n\)
-  * Loop: O\(n\), since set would avoid the next loop, each city would only be visited once 
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n)**
+  * Call stack depth: O(n)
+  * Loop: O(n), since set would avoid the next loop, each city would only be visited once&#x20;
+* **Space Complexity: O(n)**
 
-\*\*\*\*
+****
 
 ## Solution - BFS
 
@@ -104,8 +104,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^2\)**
-  * Traverse every city: O\(n\)
-    * For each city, would traverse again every possible connections O\(n\)
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(n^2)**
+  * Traverse every city: O(n)
+    * For each city, would traverse again every possible connections O(n)
+* **Space Complexity: O(n)**

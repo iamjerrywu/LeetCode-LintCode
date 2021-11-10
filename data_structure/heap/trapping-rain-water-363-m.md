@@ -1,4 +1,4 @@
-# Trapping Rain Water 363 \(M\)
+# Trapping Rain Water 363 (M)
 
 ## Problem
 
@@ -8,27 +8,27 @@ Given _n_ non-negative integers representing an elevation map where the width of
 
 **Example 1:**
 
-```text
+```
 Input: [0,1,0]Output: 0
 ```
 
 **Example 2:**
 
-```text
+```
 Input: [0,1,0,2,1,0,1,3,2,1,2,1]Output: 6
 ```
 
 Challenge
 
-O\(n\) time and O\(1\) memory
+O(n) time and O(1) memory
 
-O\(n\) time and O\(n\) memory is also acceptable.
+O(n) time and O(n) memory is also acceptable.
 
-## Solution - Brute Force 
+## Solution - Brute Force&#x20;
 
 Traverse every position, and that position's possible water area would be:
 
-* min\(right_max, leftmax\)  - heights\[i\] \* 1 \(the width\)_
+* min(right_max, leftmax)  - heights\[i] \* 1 (the width)_
 * Right Max: from current position looks right, the max value
 * Left Max: from current position looks left, the max value
 
@@ -94,14 +94,14 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^2\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(n^2)**
+* **Space Complexity: O(1)**
 
 {% hint style="danger" %}
 In this approach, actually when finding max, we redundantly traverse the elements in list
 {% endhint %}
 
-## Solution - Prefix Max 
+## Solution - Prefix Max&#x20;
 
 ### Code
 
@@ -139,12 +139,12 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
 
 ## Solution - Two Pointer
 
-![](../../.gitbook/assets/screen-shot-2021-06-19-at-1.02.17-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-06-19 at 1.02.17 PM.png>)
 
 ### Code
 
@@ -187,7 +187,7 @@ class Solution:
 
 ## Solution - Monotonic Stack
 
-![](../../.gitbook/assets/screen-shot-2021-06-19-at-1.45.06-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-06-19 at 1.45.06 PM.png>)
 
 ### Code
 
@@ -227,6 +227,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**

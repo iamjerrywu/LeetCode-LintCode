@@ -1,21 +1,21 @@
-# Defanging an IP Address \(LeetCode 1080\) \(E\)
+# Defanging an IP Address (LeetCode 1080) (E)
 
 ## Problem
 
-Given a valid \(IPv4\) IP `address`, return a defanged version of that IP address.
+Given a valid (IPv4) IP `address`, return a defanged version of that IP address.
 
 A _defanged IP address_ replaces every period `"."` with `"[.]"`.
 
 **Example 1:**
 
-```text
+```
 Input: address = "1.1.1.1"
 Output: "1[.]1[.]1[.]1"
 ```
 
 **Example 2:**
 
-```text
+```
 Input: address = "255.100.50.0"
 Output: "255[.]100[.]50[.]0"
 ```
@@ -66,11 +66,9 @@ class Solution {
 
 {% tab title="C++" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-

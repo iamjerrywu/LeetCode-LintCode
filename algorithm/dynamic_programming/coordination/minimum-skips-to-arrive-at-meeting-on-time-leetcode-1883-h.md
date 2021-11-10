@@ -1,8 +1,8 @@
-# Minimum Skips to Arrive at Meeting On Time \(LeetCode 1883\) \(H\)
+# Minimum Skips to Arrive at Meeting On Time (LeetCode 1883) (H)
 
 ## Problem
 
-You are given an integer `hoursBefore`, the number of hours you have to travel to your meeting. To arrive at your meeting, you have to travel through `n` roads. The road lengths are given as an integer array `dist` of length `n`, where `dist[i]` describes the length of the `ith` road in **kilometers**. In addition, you are given an integer `speed`, which is the speed \(in **km/h**\) you will travel at.
+You are given an integer `hoursBefore`, the number of hours you have to travel to your meeting. To arrive at your meeting, you have to travel through `n` roads. The road lengths are given as an integer array `dist` of length `n`, where `dist[i]` describes the length of the `ith` road in **kilometers**. In addition, you are given an integer `speed`, which is the speed (in **km/h**) you will travel at.
 
 After you travel road `i`, you must rest and wait for the **next integer hour** before you can begin traveling on the next road. Note that you do not have to rest after traveling the last road because you are already at the meeting.
 
@@ -12,11 +12,11 @@ However, you are allowed to **skip** some rests to be able to arrive on time, me
 
 * For example, suppose traveling the first road takes `1.4` hours and traveling the second road takes `0.6` hours. Skipping the rest after the first road will mean you finish traveling the second road right at the `2` hour mark, letting you start traveling the third road immediately.
 
-Return _the **minimum number of skips required** to arrive at the meeting on time, or_ `-1` _if it is **impossible**_.
+Return _the **minimum number of skips required** to arrive at the meeting on time, or_ `-1`_ if it is** impossible**_.
 
 **Example 1:**
 
-```text
+```
 Input: dist = [1,3,2], speed = 4, hoursBefore = 2
 Output: 1
 Explanation:
@@ -27,7 +27,7 @@ Note that the second rest is shortened because you finish traveling the second r
 
 **Example 2:**
 
-```text
+```
 Input: dist = [7,3,5,5], speed = 2, hoursBefore = 10
 Output: 2
 Explanation:
@@ -37,7 +37,7 @@ You can skip the first and third rest to arrive in ((7/2 + 0) + (3/2 + 0)) + ((5
 
 **Example 3:**
 
-```text
+```
 Input: dist = [7,3,5,5], speed = 1, hoursBefore = 10
 Output: -1
 Explanation: It is impossible to arrive at the meeting on time even if you skip all the rests.
@@ -51,9 +51,9 @@ Explanation: It is impossible to arrive at the meeting on time even if you skip 
 * `1 <= speed <= 106`
 * `1 <= hoursBefore <= 107`
 
-## Solution 
+## Solution&#x20;
 
-dp\[i\]\[j\] state means: 
+dp\[i]\[j] state means:&#x20;
 
 * The time required in to reach ith distance with j skips rests
 
@@ -96,6 +96,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^2\)**
-* **Space Complexity: O\(n^2\)**
-
+* **Time Complexity: O(n^2)**
+* **Space Complexity: O(n^2)**

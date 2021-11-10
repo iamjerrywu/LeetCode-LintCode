@@ -1,4 +1,4 @@
-# Copy Books II 438 \(H\)
+# Copy Books II 438 (H)
 
 ## Problem
 
@@ -10,7 +10,7 @@ Return the shortest time.Example
 
 **Example 1:**
 
-```text
+```
 Input: n = 4, times = [3, 2, 4]
 Output: 4
 Explanation:
@@ -21,7 +21,7 @@ Third person spends 4 minutes to copy 1 book.
 
 **Example 2:**
 
-```text
+```
 Input: n = 4, times = [3, 2, 4, 5]
 Output: 4
 Explanation: Use the same strategy as example 1 and the forth person does nothing.
@@ -29,7 +29,7 @@ Explanation: Use the same strategy as example 1 and the forth person does nothin
 
 ## Solution - Binary Search
 
-![](../../.gitbook/assets/screen-shot-2021-05-12-at-11.57.10-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-12 at 11.57.10 PM.png>)
 
 ### Code
 
@@ -69,7 +69,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(logx\)**
-  * x = min\(times\) \* n
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(logx)**
+  * x = min(times) \* n
+* **Space Complexity: O(1)**

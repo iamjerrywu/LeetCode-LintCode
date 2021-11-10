@@ -1,4 +1,4 @@
-# Cousins in Binary Tree \(LeetCode 993\) \(E\)
+# Cousins in Binary Tree (LeetCode 993) (E)
 
 ## Problem
 
@@ -10,18 +10,18 @@ We are given the `root` of a binary tree with unique values, and the values `x` 
 
 Return `true` if and only if the nodes corresponding to the values `x` and `y` are cousins.
 
-**Example 1:**  
-![](https://assets.leetcode.com/uploads/2019/02/12/q1248-01.png)
+**Example 1:**\
+****![](https://assets.leetcode.com/uploads/2019/02/12/q1248-01.png)
 
-```text
+```
 Input: root = [1,2,3,4], x = 4, y = 3
 Output: false
 ```
 
-**Example 2:**  
-![](https://assets.leetcode.com/uploads/2019/02/12/q1248-02.png)
+**Example 2:**\
+****![](https://assets.leetcode.com/uploads/2019/02/12/q1248-02.png)
 
-```text
+```
 Input: root = [1,2,3,null,4,null,5], x = 5, y = 4
 Output: true
 ```
@@ -30,7 +30,7 @@ Output: true
 
 ![](https://assets.leetcode.com/uploads/2019/02/13/q1248-03.png)
 
-```text
+```
 Input: root = [1,2,3,null,4], x = 2, y = 3
 Output: false
 ```
@@ -92,4 +92,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

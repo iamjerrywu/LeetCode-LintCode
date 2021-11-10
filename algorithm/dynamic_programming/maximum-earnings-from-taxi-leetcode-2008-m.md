@@ -1,4 +1,4 @@
-# Maximum Earnings From Taxi \(LeetCode 2008\) \(M\)
+# Maximum Earnings From Taxi (LeetCode 2008) (M)
 
 ## Problem
 
@@ -6,7 +6,7 @@ There are `n` points on a road you are driving your taxi on. The `n` points on t
 
 The passengers are represented by a **0-indexed** 2D integer array `rides`, where `rides[i] = [starti, endi, tipi]` denotes the `ith` passenger requesting a ride from point `starti` to point `endi` who is willing to give a `tipi` dollar tip.
 
-For **each** passenger `i` you pick up, you **earn** `endi - starti + tipi` dollars. You may only drive **at most one** passenger at a time.
+For** each **passenger `i` you pick up, you **earn** `endi - starti + tipi` dollars. You may only drive **at most one **passenger at a time.
 
 Given `n` and `rides`, return _the **maximum** number of dollars you can earn by picking up the passengers optimally._
 
@@ -14,7 +14,7 @@ Given `n` and `rides`, return _the **maximum** number of dollars you can earn by
 
 **Example 1:**
 
-```text
+```
 Input: n = 5, rides = [[2,5,4],[1,5,1]]
 Output: 7
 Explanation: We can pick up passenger 0 to earn 5 - 2 + 4 = 7 dollars.
@@ -22,7 +22,7 @@ Explanation: We can pick up passenger 0 to earn 5 - 2 + 4 = 7 dollars.
 
 **Example 2:**
 
-```text
+```
 Input: n = 20, rides = [[1,6,1],[3,10,2],[10,12,3],[11,12,2],[12,15,2],[13,18,1]]
 Output: 20
 Explanation: We will pick up the following passengers:
@@ -40,7 +40,7 @@ We earn 9 + 5 + 6 = 20 dollars in total.
 * `1 <= starti < endi <= n`
 * `1 <= tipi <= 105`
 
-## Solution - DFS \(LTE\)
+## Solution - DFS (LTE)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -71,10 +71,10 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Heap
 
@@ -100,10 +100,10 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution
 
@@ -127,6 +127,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-

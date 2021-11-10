@@ -2,7 +2,7 @@
 
 ## What's Monotonic Stack?
 
-O\(n\) algorithm, use to solve problem like finding the nearest element in the list that's is bigger or smaller than current element.
+O(n) algorithm, use to solve problem like finding the nearest element in the list that's is bigger or smaller than current element.
 
 ## Template:
 
@@ -16,5 +16,4 @@ for i in range(n):
 
 ## Applicable Scenario
 
-![](../../../.gitbook/assets/screen-shot-2021-06-17-at-10.07.27-am.png)
-
+![](<../../../.gitbook/assets/Screen Shot 2021-06-17 at 10.07.27 AM.png>)

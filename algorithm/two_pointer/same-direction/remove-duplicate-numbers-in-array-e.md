@@ -1,4 +1,4 @@
-# Remove Duplicate Numbers in Array 521 \(E\)
+# Remove Duplicate Numbers in Array 521 (E)
 
 ## Problem
 
@@ -16,7 +16,7 @@ You don't need to keep the original order of the integers.Example
 
 Example 1:
 
-```text
+```
 Input:
 nums = [1,3,1,4,4,2]
 Output:
@@ -26,12 +26,13 @@ Output:
 
 Explanation:
 
-1. Move duplicate integers to the tail of _nums_ =&gt; _nums_ = `[1,3,4,2,?,?]`.
-2. Return the number of unique integers in _nums_ =&gt; `4`. Actually we don't care about what you place in `?`, we only care about the part which has no duplicate integers.
+1. Move duplicate integers to the tail of _nums_ => _nums_ = `[1,3,4,2,?,?]`.
+2. Return the number of unique integers in _nums_ => `4`.\
+   Actually we don't care about what you place in `?`, we only care about the part which has no duplicate integers.
 
 Example 2:
 
-```text
+```
 Input:
 nums = [1,2,3]
 Output:
@@ -41,8 +42,8 @@ Output:
 
 Challenge
 
-1. Do it in O\(n\) time complexity.
-2. Do it in O\(nlogn\) time without extra space.
+1. Do it in O(n) time complexity.
+2. Do it in O(nlogn) time without extra space.
 
 ## Solution
 
@@ -75,7 +76,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -84,4 +84,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

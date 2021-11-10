@@ -1,4 +1,4 @@
-# Shortest Word Distance \(LeetCode 243\) \(E\)
+# Shortest Word Distance (LeetCode 243) (E)
 
 ## Problem
 
@@ -6,14 +6,14 @@ Given an array of strings `wordsDict` and two different strings that already exi
 
 **Example 1:**
 
-```text
+```
 Input: wordsDict = ["practice", "makes", "perfect", "coding", "makes"], word1 = "coding", word2 = "practice"
 Output: 3
 ```
 
 **Example 2:**
 
-```text
+```
 Input: wordsDict = ["practice", "makes", "perfect", "coding", "makes"], word1 = "makes", word2 = "coding"
 Output: 1
 ```
@@ -26,7 +26,7 @@ Output: 1
 * `word1` and `word2` are in `wordsDict`.
 * `word1 != word2`
 
-## Solution 
+## Solution&#x20;
 
 
 
@@ -52,6 +52,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
-* **Space Complexity:** 
-
+* **Time Complexity: **
+* **Space Complexity: **

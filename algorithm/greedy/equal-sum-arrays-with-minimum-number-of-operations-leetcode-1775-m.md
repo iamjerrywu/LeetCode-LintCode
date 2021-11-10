@@ -1,16 +1,16 @@
-# Equal Sum Arrays With Minimum Number of Operations \(LeetCode 1775\) \(M\)
+# Equal Sum Arrays With Minimum Number of Operations (LeetCode 1775) (M)
 
 ## Problem
 
 You are given two arrays of integers `nums1` and `nums2`, possibly of different lengths. The values in the arrays are between `1` and `6`, inclusive.
 
-In one operation, you can change any integer's value in **any** of the arrays to **any** value between `1` and `6`, inclusive.
+In one operation, you can change any integer's value in **any **of the arrays to **any** value between `1` and `6`, inclusive.
 
-Return _the minimum number of operations required to make the sum of values in_ `nums1` _equal to the sum of values in_ `nums2`_._ Return `-1`​​​​​ if it is not possible to make the sum of the two arrays equal.
+Return _the minimum number of operations required to make the sum of values in _`nums1`_ equal to the sum of values in _`nums2`_._ Return `-1`​​​​​ if it is not possible to make the sum of the two arrays equal.
 
 **Example 1:**
 
-```text
+```
 Input: nums1 = [1,2,3,4,5,6], nums2 = [1,1,2,2,2,2]
 Output: 3
 Explanation: You can make the sums of nums1 and nums2 equal with 3 operations. All indices are 0-indexed.
@@ -21,7 +21,7 @@ Explanation: You can make the sums of nums1 and nums2 equal with 3 operations. A
 
 **Example 2:**
 
-```text
+```
 Input: nums1 = [1,1,1,1,1,1,1], nums2 = [6]
 Output: -1
 Explanation: There is no way to decrease the sum of nums1 or to increase the sum of nums2 to make them equal.
@@ -29,7 +29,7 @@ Explanation: There is no way to decrease the sum of nums1 or to increase the sum
 
 **Example 3:**
 
-```text
+```
 Input: nums1 = [6,6], nums2 = [1]
 Output: 3
 Explanation: You can make the sums of nums1 and nums2 equal with 3 operations. All indices are 0-indexed. 
@@ -76,6 +76,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: O(n)**

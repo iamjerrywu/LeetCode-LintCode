@@ -1,18 +1,18 @@
-# Maximize the Confusion of an Exam \(LeetCode 2024\) \(M\)
+# Maximize the Confusion of an Exam (LeetCode 2024) (M)
 
 ## Problem
 
-A teacher is writing a test with `n` true/false questions, with `'T'` denoting true and `'F'` denoting false. He wants to confuse the students by **maximizing** the number of **consecutive** questions with the **same** answer \(multiple trues or multiple falses in a row\).
+A teacher is writing a test with `n` true/false questions, with `'T'` denoting true and `'F'` denoting false. He wants to confuse the students by **maximizing** the number of **consecutive** questions with the **same** answer (multiple trues or multiple falses in a row).
 
 You are given a string `answerKey`, where `answerKey[i]` is the original answer to the `ith` question. In addition, you are given an integer `k`, the maximum number of times you may perform the following operation:
 
-* Change the answer key for any question to `'T'` or `'F'` \(i.e., set `answerKey[i]` to `'T'` or `'F'`\).
+* Change the answer key for any question to `'T'` or `'F'` (i.e., set `answerKey[i]` to `'T'` or `'F'`).
 
 Return _the **maximum** number of consecutive_ `'T'`s or `'F'`s _in the answer key after performing the operation at most_ `k` _times_.
 
 **Example 1:**
 
-```text
+```
 Input: answerKey = "TTFF", k = 2
 Output: 4
 Explanation: We can replace both the 'F's with 'T's to make answerKey = "TTTT".
@@ -21,7 +21,7 @@ There are four consecutive 'T's.
 
 **Example 2:**
 
-```text
+```
 Input: answerKey = "TFFT", k = 1
 Output: 3
 Explanation: We can replace the first 'T' with an 'F' to make answerKey = "FFFT".
@@ -31,7 +31,7 @@ In both cases, there are three consecutive 'F's.
 
 **Example 3:**
 
-```text
+```
 Input: answerKey = "TTFTTFTT", k = 1
 Output: 5
 Explanation: We can replace the first 'F' to make answerKey = "TTTTTFTT"
@@ -50,9 +50,9 @@ In both cases, there are five consecutive 'T's.
 
 Maintain Two Pointers:
 
-i \(the right pointer\), j \(the left pointer\)
+i (the right pointer), j (the left pointer)
 
-Only need to move j pointer when k == 0 \(move to the right until reach answerKey\[j\] != target, then move one more step
+Only need to move j pointer when k == 0 (move to the right until reach answerKey\[j] != target, then move one more step
 
 {% tabs %}
 {% tab title="Python" %}
@@ -84,6 +84,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-

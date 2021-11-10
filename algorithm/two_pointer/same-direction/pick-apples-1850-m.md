@@ -1,20 +1,20 @@
-# Pick Apples 1850 \(M\)
+# Pick Apples 1850 (M)
 
 ## Problem
 
-Alice and Bob work in a beautiful orchard. There are N apple trees in the orchard. The apple trees are arranged in a row and they are numbered from 1 to N.  
-Alice is planning to collect all the apples from K consecutive trees and Bob is planning to collect all the apples from L consecutive trees.  
-They want to choose to disjoint segements \(one consisting of K trees of Alice and the other consisting of L trees for Bob\) so as not to disturb each other. you should return the maximum number of apples that they can collect.
+Alice and Bob work in a beautiful orchard. There are N apple trees in the orchard. The apple trees are arranged in a row and they are numbered from 1 to N.\
+Alice is planning to collect all the apples from K consecutive trees and Bob is planning to collect all the apples from L consecutive trees.\
+They want to choose to disjoint segements (one consisting of K trees of Alice and the other consisting of L trees for Bob) so as not to disturb each other. you should return the maximum number of apples that they can collect.
 
-* N is an integer within the range: \[2, 600\]
-* K and L are integers within the range: \[1, N - 1\]
-* each element of array A is an integer within the range: \[1, 500\]
+* N is an integer within the range: \[2, 600]
+* K and L are integers within the range: \[1, N - 1]
+* each element of array A is an integer within the range: \[1, 500]
 
 Example
 
 **Example 1:**
 
-```text
+```
 input:
 A = [6, 1, 4, 6, 3, 2, 7, 4]
 K = 3
@@ -27,7 +27,7 @@ beacuse Alice can choose tree 3 to 5 and collect 4 + 6 + 3 = 13 apples, and Bob 
 
 **Example 2:**
 
-```text
+```
 Input:
 A = [10, 19, 15]
 K = 2
@@ -38,9 +38,9 @@ Explanation:
 beacause it is not possible for Alice and Bob to choose two disjoint intervals.
 ```
 
-## Solution 
+## Solution&#x20;
 
-![](../../../.gitbook/assets/screen-shot-2021-05-19-at-4.31.11-pm.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-05-19 at 4.31.11 PM.png>)
 
 ### Code
 
@@ -100,4 +100,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

@@ -1,4 +1,4 @@
-# Minimum Garden Perimeter to Collect Enough Apples \(LeetCode 1954\) \(M\)
+# Minimum Garden Perimeter to Collect Enough Apples (LeetCode 1954) (M)
 
 ## Problem
 
@@ -6,16 +6,16 @@ In a garden represented as an infinite 2D grid, there is an apple tree planted a
 
 You will buy an axis-aligned **square plot** of land that is centered at `(0, 0)`.
 
-Given an integer `neededApples`, return _the **minimum perimeter** of a plot such that **at least**_ ****`neededApples` _apples are **inside or on** the perimeter of that plot_.
+Given an integer `neededApples`, return _the **minimum perimeter** of a plot such that **at least**_** **`neededApples` _apples are **inside or on** the perimeter of that plot_.
 
 The value of `|x|` is defined as:
 
 * `x` if `x >= 0`
 * `-x` if `x < 0`
 
-**Example 1:**![](https://assets.leetcode.com/uploads/2019/08/30/1527_example_1_2.png)
+**Example 1:**![](https://assets.leetcode.com/uploads/2019/08/30/1527\_example\_1\_2.png)
 
-```text
+```
 Input: neededApples = 1
 Output: 8
 Explanation: A square plot of side length 1 does not contain any apples.
@@ -25,14 +25,14 @@ The perimeter is 2 * 4 = 8.
 
 **Example 2:**
 
-```text
+```
 Input: neededApples = 13
 Output: 16
 ```
 
 **Example 3:**
 
-```text
+```
 Input: neededApples = 1000000000
 Output: 5040
 ```
@@ -41,7 +41,7 @@ Output: 5040
 
 * `1 <= neededApples <= 1015`
 
-## Solution - BFS Level 
+## Solution - BFS Level&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -85,7 +85,7 @@ class Solution:
 
 ## Solution - Math
 
-![](../../.gitbook/assets/screen-shot-2021-08-01-at-1.46.06-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-08-01 at 1.46.06 PM.png>)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -115,4 +115,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

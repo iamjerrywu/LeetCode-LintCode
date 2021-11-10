@@ -1,4 +1,4 @@
-# Largest Number 184 \(M\)
+# Largest Number 184 (M)
 
 ## Problem
 
@@ -38,17 +38,16 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
+* **Time Complexity: O(nlogn)**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Quick Sort
 
@@ -99,13 +98,11 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)** 
+* **Time Complexity: O(nlogn) **
 * **Space Complexity:**
-

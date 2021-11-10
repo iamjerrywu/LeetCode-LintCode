@@ -1,16 +1,16 @@
-# Fast Power 140 \(M\)
+# Fast Power 140 (M)
 
 ## Problem
 
-Calculate the a^n \% ba​n​​%b where a, b and n are all 32bit non-negative integers.Example
+Calculate the a^n \\% ba​n​​%b where a, b and n are all 32bit non-negative integers.Example
 
 For 231 % 3 = 2
 
 For 1001000 % 1000 = 0Challenge
 
-O\(logn\)
+O(logn)
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -41,4 +41,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

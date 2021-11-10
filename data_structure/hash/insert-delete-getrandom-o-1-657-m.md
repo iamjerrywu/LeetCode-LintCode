@@ -1,4 +1,4 @@
-# Insert Delete GetRandom O\(1\) 657 \(M\)
+# Insert Delete GetRandom O(1) 657 (M)
 
 ## Problem
 
@@ -10,7 +10,7 @@ Design a data structure that supports all following operations in average `O(1)`
 
 Example
 
-```text
+```
 // Init an empty set.
 RandomizedSet randomSet = new RandomizedSet();
 
@@ -38,11 +38,11 @@ randomSet.getRandom();
 
 ## Solution
 
-To O\(1\) access the specific val in list, use a hashmap to store their index \(from val to index\)
+To O(1) access the specific val in list, use a hashmap to store their index (from val to index)
 
-Also, when ever remove specific value, place the last value in list in the target location, then pop out last element \(can achieve O\(1\)\)
+Also, when ever remove specific value, place the last value in list in the target location, then pop out last element (can achieve O(1))
 
-![](../../.gitbook/assets/screen-shot-2021-04-26-at-12.39.46-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-04-26 at 12.39.46 AM.png>)
 
 ### Code
 
@@ -109,7 +109,6 @@ class RandomizedSet:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -118,4 +117,3 @@ class RandomizedSet:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

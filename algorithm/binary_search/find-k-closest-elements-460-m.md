@@ -1,4 +1,4 @@
-# Find K Closest Elements 460 \(M\)
+# Find K Closest Elements 460 (M)
 
 ## Problem
 
@@ -14,25 +14,25 @@ Example
 
 **Example 1:**
 
-```text
+```
 Input: A = [1, 2, 3], target = 2, k = 3
 Output: [2, 1, 3]
 ```
 
 **Example 2:**
 
-```text
+```
 Input: A = [1, 4, 6, 8], target = 3, k = 3
 Output: [4, 1, 6]
 ```
 
 Challenge
 
-O\(logn + k\) time
+O(logn + k) time
 
 ## Solution
 
-![](../../.gitbook/assets/screen-shot-2021-04-24-at-12.13.52-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-04-24 at 12.13.52 AM.png>)
 
 ### Code
 
@@ -99,16 +99,14 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-  * Binary Search: O\(nlogn\)
-  * Two Pointer: O\(k\)
-    * k &lt;= n
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(nlogn)**
+  * Binary Search: O(nlogn)
+  * Two Pointer: O(k)
+    * k <= n
+* **Space Complexity: O(1)**

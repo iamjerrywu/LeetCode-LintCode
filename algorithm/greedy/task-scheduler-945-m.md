@@ -1,4 +1,4 @@
-# Task Scheduler 945 \(M\)
+# Task Scheduler 945 (M)
 
 ## Problem
 
@@ -15,7 +15,7 @@ Example
 
 **Example1**
 
-```text
+```
 Input: tasks = ['A','A','A','B','B','B'], n = 2
 Output: 8
 Explanation:
@@ -24,7 +24,7 @@ A -> B -> idle -> A -> B -> idle -> A -> B.
 
 **Example2**
 
-```text
+```
 Input: tasks = ['A','A','A','B','B','B'], n = 1
 Output: 6
 Explanation:
@@ -76,11 +76,11 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
+* **Time Complexity: O(n)**
   * n: the totals amount of tasks need to be executed
-* **Space Complexity: O\(1\)**
+* **Space Complexity: O(1)**
 
-\*\*\*\*
+****
 
 ## Solution - Math
 
@@ -104,7 +104,7 @@ The first situation is straightforward because the total number of slots is defi
 
 The second situation is a bit more tricky and requires to know the number `n_max` and the frequency `f_max` of the most frequent tasks.
 
-![fig](https://leetcode.com/problems/task-scheduler/Figures/621/f_max.png)
+![fig](https://leetcode.com/problems/task-scheduler/Figures/621/f\_max.png)
 
 Now it's easy to compute:
 
@@ -148,7 +148,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
+* **Time Complexity: O(n)**
   * n: the totals amount of tasks need to be executed
-* **Space Complexity: O\(1\)**
-
+* **Space Complexity: O(1)**

@@ -1,4 +1,4 @@
-# Contains Duplicate II 1319 \(E\)
+# Contains Duplicate II 1319 (E)
 
 ## Problem
 
@@ -6,21 +6,21 @@ Given an integer array `nums` and an integer `k`, return `true` if there are two
 
 **Example 1:**
 
-```text
+```
 Input: nums = [1,2,3,1], k = 3
 Output: true
 ```
 
 **Example 2:**
 
-```text
+```
 Input: nums = [1,0,1,1], k = 1
 Output: true
 ```
 
 **Example 3:**
 
-```text
+```
 Input: nums = [1,2,3,1,2,3], k = 2
 Output: false
 ```
@@ -56,10 +56,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: O(n)**
 
-\*\*\*\*
+****
 
 ## Solution - Hash
 
@@ -82,6 +82,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**

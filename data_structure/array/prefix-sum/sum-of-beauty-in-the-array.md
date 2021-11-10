@@ -1,18 +1,18 @@
-# Sum of Beauty in the Array \(LeetCode 2012\) \(M\)
+# Sum of Beauty in the Array (LeetCode 2012) (M)
 
 ## Problem
 
-You are given a **0-indexed** integer array `nums`. For each index `i` \(`1 <= i <= nums.length - 2`\) the **beauty** of `nums[i]` equals:
+You are given a **0-indexed** integer array `nums`. For each index `i` (`1 <= i <= nums.length - 2`) the **beauty** of `nums[i]` equals:
 
 * `2`, if `nums[j] < nums[i] < nums[k]`, for **all** `0 <= j < i` and for **all** `i < k <= nums.length - 1`.
 * `1`, if `nums[i - 1] < nums[i] < nums[i + 1]`, and the previous condition is not satisfied.
 * `0`, if none of the previous conditions holds.
 
-Return _the **sum of beauty** of all_ `nums[i]` _where_ `1 <= i <= nums.length - 2`.
+Return_ the **sum of beauty** of all _`nums[i]`_ where _`1 <= i <= nums.length - 2`.
 
 **Example 1:**
 
-```text
+```
 Input: nums = [1,2,3]
 Output: 2
 Explanation: For each index i in the range 1 <= i <= 1:
@@ -21,7 +21,7 @@ Explanation: For each index i in the range 1 <= i <= 1:
 
 **Example 2:**
 
-```text
+```
 Input: nums = [2,4,6,4]
 Output: 1
 Explanation: For each index i in the range 1 <= i <= 2:
@@ -31,7 +31,7 @@ Explanation: For each index i in the range 1 <= i <= 2:
 
 **Example 3:**
 
-```text
+```
 Input: nums = [3,2,1]
 Output: 0
 Explanation: For each index i in the range 1 <= i <= 1:
@@ -75,6 +75,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**

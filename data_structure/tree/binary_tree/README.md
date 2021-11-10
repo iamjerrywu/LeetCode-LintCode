@@ -1,8 +1,8 @@
 # Binary Tree
 
-## Post-Order Traversal \(Non-recursion\)
+## Post-Order Traversal (Non-recursion)
 
-![](../../../.gitbook/assets/screen-shot-2021-04-20-at-12.56.00-am.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-04-20 at 12.56.00 AM.png>)
 
 {% tabs %}
 {% tab title="python" %}
@@ -45,7 +45,7 @@ class Solution:
 
 ### In-Order Traversal
 
-![](../../../.gitbook/assets/screen-shot-2021-04-20-at-12.49.26-am.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-04-20 at 12.49.26 AM.png>)
 
 1. 如果当前节点的左孩子为空，则输出当前节点并将其右孩子作为当前节点。
 2. 如果当前节点的左孩子不为空，在当前节点的左子树中找到当前节点在中序遍历下的前驱节点。
@@ -130,7 +130,7 @@ public class Solution {
 
 ### Pre-Order Traversal
 
-![](../../../.gitbook/assets/screen-shot-2021-04-20-at-12.51.48-am.png)
+![](<../../../.gitbook/assets/Screen Shot 2021-04-20 at 12.51.48 AM.png>)
 
 1. 如果当前节点的左孩子为空，则输出当前节点并将其右孩子作为当前节点。
 2. 如果当前节点的左孩子不为空，在当前节点的左子树中找到当前节点在中序遍历下的前驱节点。
@@ -280,7 +280,7 @@ public class Solution {
 {% endtab %}
 {% endtabs %}
 
-## Find Descendatns \(including itself\) of balanced complete tree
+## Find Descendatns (including itself) of balanced complete tree
 
 ```python
 import collections
@@ -303,7 +303,6 @@ for i in range(n):
 print(descendants)
 ```
 
-```text
+```
 {0: [1, 2, 3, 4, 5, 6], 1: [3, 4], 2: [5, 6], 3: [], 4: [], 5: [], 6: []}
 ```
-

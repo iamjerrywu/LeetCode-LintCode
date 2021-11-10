@@ -1,14 +1,14 @@
-# Bricks Falling When Hit 1014 \(H\)
+# Bricks Falling When Hit 1014 (H)
 
 ## Problem
 
-We have a grid of `1` and `0`; the `1` in a cell represent bricks. A brick will not drop if and only if it is directly connected to the bottom of the grid, or at least one of its \(4-way\) adjacent bricks will not drop.
+We have a grid of `1` and `0`; the `1` in a cell represent bricks. A brick will not drop if and only if it is directly connected to the bottom of the grid, or at least one of its (4-way) adjacent bricks will not drop.
 
-We will do some erasures sequentially. Each time we want to do the erasure at the location \(i, j\), the brick \(if it exists\) on that location will disappear, and then some other bricks may drop because of that erasure.
+We will do some erasures sequentially. Each time we want to do the erasure at the location (i, j), the brick (if it exists) on that location will disappear, and then some other bricks may drop because of that erasure.
 
 Return an array representing the number of bricks that will drop after each erasure in sequence.
 
-1. The number of rows and columns in the grid will be in the range of \[1, 200\].
+1. The number of rows and columns in the grid will be in the range of \[1, 200].
 2. It is guaranteed that each erasure will be different from any other erasure, and located inside the grid.
 3. An erasure may refer to a location with no brick - if it does, no bricks drop.
 4. It's lower when the row index is smaller - the cell whose row index is 0 connects to the bottom of the grid.
@@ -17,21 +17,21 @@ You can imagine all the bricks are on the same plane. The bricks at the bottom o
 
 **Example 1:**
 
-```text
+```
 Input: grid = [[1,0,0,0],[1,1,1,0]], hits = [[1,0]]Output: [2]Explanation: If we erase the brick at (1, 0), the brick at (1, 1) and (1, 2) will drop. So we should return 2.
 ```
 
 **Example 2:**
 
-```text
+```
 Input: grid = [[1,0,0,0],[1,1,0,0]], hits = [[1,1],[1,0]]Output: [0,0]Explanation: When we erase the brick at (1, 0), the brick at (1, 1) has already disappeared due to the last move.
 ```
 
 ## Solution - Union Find
 
-Using Backward solution \(from the end situation to refer back to initial condition\), calculating how many blocks are added back, then that's the answer
+Using Backward solution (from the end situation to refer back to initial condition), calculating how many blocks are added back, then that's the answer
 
-![](../../.gitbook/assets/screen-shot-2021-06-12-at-1.31.24-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-06-12 at 1.31.24 PM.png>)
 
 ### Code
 
@@ -159,4 +159,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

@@ -1,4 +1,4 @@
-# Minimum Window Substring 32 \(M\)
+# Minimum Window Substring 32 (M)
 
 ## Problem
 
@@ -14,14 +14,14 @@ Example
 
 Input:
 
-```text
+```
 source = "abc"
 target = "ac"
 ```
 
 Output:
 
-```text
+```
 "abc"
 ```
 
@@ -33,14 +33,14 @@ Explanation:
 
 Input:
 
-```text
+```
 source = "adobecodebanc"
 target = "abc"
 ```
 
 Output:
 
-```text
+```
 "banc"
 ```
 
@@ -52,14 +52,14 @@ Explanation:
 
 Input:
 
-```text
+```
 source = "abc"
 target = "aa"
 ```
 
 Output:
 
-```text
+```
 ""
 ```
 
@@ -67,10 +67,10 @@ Explanation:
 
 No substring contains two 'a'.Challenge
 
-O\(n\) time  
+O(n) time\
 
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -123,4 +123,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

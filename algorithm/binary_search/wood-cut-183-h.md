@@ -1,14 +1,14 @@
-# Wood Cut 183 \(H\)
+# Wood Cut 183 (H)
 
 ## Problem
 
-Given n pieces of wood with length `L[i]` \(integer array\). Cut them into small pieces to guarantee you could have equal or more than k pieces with the same length. What is the longest length you can get from the n pieces of wood? Given L & k, return the maximum length of the small pieces.
+Given n pieces of wood with length `L[i]` (integer array). Cut them into small pieces to guarantee you could have equal or more than k pieces with the same length. What is the longest length you can get from the n pieces of wood? Given L & k, return the maximum length of the small pieces.
 
-The unit of length is centimeter.The length of the woods are all positive integers,you couldn't cut wood into float length.If you couldn't get &gt;= _k_ pieces, return `0`.Example
+The unit of length is centimeter.The length of the woods are all positive integers,you couldn't cut wood into float length.If you couldn't get >= _k_ pieces, return `0`.Example
 
 **Example 1**
 
-```text
+```
 Input:
 L = [232, 124, 456]
 k = 7
@@ -18,7 +18,7 @@ Explanation: We can cut it into 7 pieces if any piece is 114cm long, however we 
 
 **Example 2**
 
-```text
+```
 Input:
 L = [1, 2, 3]
 k = 7
@@ -28,11 +28,11 @@ Explanation: It is obvious we can't make it.
 
 Challenge
 
-O\(n log Len\), where Len is the longest length of the wood.
+O(n log Len), where Len is the longest length of the wood.
 
 ## Solution -Binary Search
 
-![](../../.gitbook/assets/screen-shot-2021-04-25-at-1.37.15-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-04-25 at 1.37.15 PM.png>)
 
 ### Code
 
@@ -77,15 +77,13 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nloglength\)**
+* **Time Complexity: O(nloglength)**
   * n: total nums of L
-  * Max length of L's element 
-* **Space Complexity: O\(1\)**
-
+  * Max length of L's element&#x20;
+* **Space Complexity: O(1)**

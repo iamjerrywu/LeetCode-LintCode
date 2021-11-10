@@ -1,4 +1,4 @@
-# The Number of Full Rounds You Have Played \(LeetCode 1904\) \(M\)
+# The Number of Full Rounds You Have Played (LeetCode 1904) (M)
 
 ## Problem
 
@@ -8,13 +8,13 @@ Given two strings `startTime` and `finishTime` in the format `"HH:MM"` represent
 
 * For example, if `startTime = "05:20"` and `finishTime = "05:59"` this means you played only one full round from `05:30` to `05:45`. You did not play the full round from `05:15` to `05:30` because you started after the round began, and you did not play the full round from `05:45` to `06:00` because you stopped before the round ended.
 
-If `finishTime` is **earlier** than `startTime`, this means you have played overnight \(from `startTime` to the midnight and from midnight to `finishTime`\).
+If `finishTime` is **earlier** than `startTime`, this means you have played overnight (from `startTime` to the midnight and from midnight to `finishTime`).
 
-Return _the **number of full rounds** that you have played if you had started playing at_ `startTime` _and finished at_ `finishTime`.
+Return _the **number of full rounds** that you have played if you had started playing at _`startTime`_ and finished at _`finishTime`.
 
 **Example 1:**
 
-```text
+```
 Input: startTime = "12:01", finishTime = "12:44"
 Output: 1
 Explanation: You played one full round from 12:15 to 12:30.
@@ -24,7 +24,7 @@ You did not play the full round from 12:30 to 12:45 because you stopped playing 
 
 **Example 2:**
 
-```text
+```
 Input: startTime = "20:00", finishTime = "06:00"
 Output: 40
 Explanation: You played 16 full rounds from 20:00 to 00:00 and 24 full rounds from 00:00 to 06:00.
@@ -33,7 +33,7 @@ Explanation: You played 16 full rounds from 20:00 to 00:00 and 24 full rounds fr
 
 **Example 3:**
 
-```text
+```
 Input: startTime = "00:00", finishTime = "23:59"
 Output: 95
 Explanation: You played 4 full rounds each hour except for the last hour where you played 3 full rounds.
@@ -79,4 +79,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

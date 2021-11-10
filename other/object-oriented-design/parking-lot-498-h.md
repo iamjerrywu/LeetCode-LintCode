@@ -1,4 +1,4 @@
-# Parking Lot 498 \(H\)
+# Parking Lot 498 (H)
 
 ## Problem
 
@@ -18,13 +18,13 @@ Example
 
 **Example 1**
 
-```text
+```
 Input:level=1num_rows=1spots_per_row=11parkVehicle("Motorcycle_1")parkVehicle("Car_1")parkVehicle("Car_2")parkVehicle("Car_3")parkVehicle("Car_4")parkVehicle("Car_5")parkVehicle("Bus_1")unParkVehicle("Car_5")parkVehicle("Bus_1")Output:truetruetruetruetruetruefalsetrueExplanation: Parking Lot：Motorcycle: 0 1Car:        2 3 4 5Bus:        6 7 8 9 10When "Car_5" first got to the parking lot, there is no place for it in compact spots. The "Car_5" has to park in Bus spot 6. So "Bus_1" cannot park until "Car_5" left.
 ```
 
 **Example 2**
 
-```text
+```
 Input:level=1num_rows=1spots_per_row=14parkVehicle("Motorcycle_1")parkVehicle("Motorcycle_2")parkVehicle("Motorcycle_3")parkVehicle("Car_1")parkVehicle("Car_2")parkVehicle("Car_3")parkVehicle("Motorcycle_4")parkVehicle("Car_4")parkVehicle("Car_5")parkVehicle("Car_6")parkVehicle("Car_7")parkVehicle("Bus_1")unParkVehicle("Car_1")unParkVehicle("Motorcycle_4")unParkVehicle("Car_3")unParkVehicle("Car_6")parkVehicle("Bus_1")unParkVehicle("Car_7")parkVehicle("Bus_1")Output:truetruetruetruetruetruetruetruetruetruetruefalsefalsetrue
 ```
 
@@ -40,7 +40,7 @@ Input:level=1num_rows=1spots_per_row=14parkVehicle("Motorcycle_1")parkVehicle("M
 
 ### Core Object
 
-![](../../.gitbook/assets/screen-shot-2021-07-22-at-11.15.02-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-22 at 11.15.02 AM.png>)
 
 ### Cases
 
@@ -59,7 +59,7 @@ Management user cases:
 
 ### Class
 
-![](../../.gitbook/assets/screen-shot-2021-07-22-at-11.54.36-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-22 at 11.54.36 AM.png>)
 
 #### Correctness
 
@@ -108,11 +108,11 @@ parkingLot.clearParkingSpot(ticket);
 
 Ensure a class has only one instance, and provide a global point of access to it
 
-![](../../.gitbook/assets/screen-shot-2021-07-22-at-12.28.07-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-22 at 12.28.07 PM.png>)
 
-![](../../.gitbook/assets/screen-shot-2021-07-22-at-12.57.46-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-22 at 12.57.46 PM.png>)
 
-#### Example \(will fail in concurrent situation\)
+#### Example (will fail in concurrent situation)
 
 {% tabs %}
 {% tab title="Java" %}
@@ -182,7 +182,7 @@ public class ParkingLot
 {% endtab %}
 {% endtabs %}
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -296,7 +296,6 @@ class ParkingLot:
 
 {% tab title="Java" %}
 ```java
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -305,4 +304,3 @@ class ParkingLot:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

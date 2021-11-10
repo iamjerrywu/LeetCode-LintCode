@@ -1,4 +1,4 @@
-# Most Stones Removed with Same Row or Column \(LeetCode 947\) \(M\)
+# Most Stones Removed with Same Row or Column (LeetCode 947) (M)
 
 ## Problem
 
@@ -10,7 +10,7 @@ Given an array `stones` of length `n` where `stones[i] = [xi, yi]` represents th
 
 **Example 1:**
 
-```text
+```
 Input: stones = [[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]
 Output: 5
 Explanation: One way to remove 5 stones is as follows:
@@ -24,7 +24,7 @@ Stone [0,0] cannot be removed since it does not share a row/column with another 
 
 **Example 2:**
 
-```text
+```
 Input: stones = [[0,0],[0,2],[1,1],[2,0],[2,2]]
 Output: 3
 Explanation: One way to make 3 moves is as follows:
@@ -36,7 +36,7 @@ Stones [0,0] and [1,1] cannot be removed since they do not share a row/column wi
 
 **Example 3:**
 
-```text
+```
 Input: stones = [[0,0]]
 Output: 0
 Explanation: [0,0] is the only stone on the plane, so you cannot remove it.
@@ -75,6 +75,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-

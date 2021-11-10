@@ -1,4 +1,4 @@
-# Insert into a Sorted Circular Linked List 708 \(M\)
+# Insert into a Sorted Circular Linked List 708 (M)
 
 ## Problem
 
@@ -6,12 +6,12 @@ Given a node from a **Circular Linked List** which is sorted in ascending order,
 
 If there are multiple suitable places for insertion, you may choose any place to insert the new value. After the insertion, the circular list should remain sorted.
 
-If the list is empty \(i.e., given node is `null`\), you should create a new single circular list and return the reference to that single node. Otherwise, you should return the original given node.
+If the list is empty (i.e., given node is `null`), you should create a new single circular list and return the reference to that single node. Otherwise, you should return the original given node.
 
-**Example 1:**![](https://assets.leetcode.com/uploads/2019/01/19/example_1_before_65p.jpg)  
- 
+**Example 1:**![](https://assets.leetcode.com/uploads/2019/01/19/example\_1\_before\_65p.jpg)\
+&#x20;
 
-```text
+```
 Input: head = [3,4,1], insertVal = 2
 Output: [3,4,1,2]
 Explanation: In the figure above, there is a sorted circular list of three elements. You are given a reference to the node with value 3, and we need to insert 2 into the list. The new node should be inserted between node 1 and node 3. After the insertion, the list should look like this, and we should still return node 3.
@@ -22,7 +22,7 @@ Explanation: In the figure above, there is a sorted circular list of three eleme
 
 **Example 2:**
 
-```text
+```
 Input: head = [], insertVal = 1
 Output: [1]
 Explanation: The list is empty (given head is null). We create a new single circular list and return the reference to that single node.
@@ -30,7 +30,7 @@ Explanation: The list is empty (given head is null). We create a new single circ
 
 **Example 3:**
 
-```text
+```
 Input: head = [1], insertVal = 0
 Output: [1,0]
 ```
@@ -41,7 +41,7 @@ Output: [1,0]
 * `-10^6 <= Node.val <= 10^6`
 * `-10^6 <= insertVal <= 10^6`
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -93,4 +93,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

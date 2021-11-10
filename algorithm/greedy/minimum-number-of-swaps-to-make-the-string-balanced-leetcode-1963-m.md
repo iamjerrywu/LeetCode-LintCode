@@ -1,4 +1,4 @@
-# Minimum Number of Swaps to Make the String Balanced \(LeetCode 1963\) \(M\)
+# Minimum Number of Swaps to Make the String Balanced (LeetCode 1963) (M)
 
 ## Problem
 
@@ -12,11 +12,11 @@ A string is called **balanced** if and only if:
 
 You may swap the brackets at **any** two indices **any** number of times.
 
-Return _the **minimum** number of swaps to make_ `s` _**balanced**_.
+Return _the **minimum** number of swaps to make _`s` _**balanced**_.
 
 **Example 1:**
 
-```text
+```
 Input: s = "][]["
 Output: 1
 Explanation: You can make the string balanced by swapping index 0 with index 3.
@@ -25,7 +25,7 @@ The resulting string is "[[]]".
 
 **Example 2:**
 
-```text
+```
 Input: s = "]]][[["
 Output: 2
 Explanation: You can do the following to make the string balanced:
@@ -36,7 +36,7 @@ The resulting string is "[[][]]".
 
 **Example 3:**
 
-```text
+```
 Input: s = "[]"
 Output: 0
 Explanation: The string is already balanced.
@@ -47,10 +47,10 @@ Explanation: The string is already balanced.
 * `n == s.length`
 * `2 <= n <= 106`
 * `n` is even.
-* `s[i]` is either `'['` or `']'`.
+* `s[i]` is either `'[' `or `']'`.
 * The number of opening brackets `'['` equals `n / 2`, and the number of closing brackets `']'` equals `n / 2`.
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -77,4 +77,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

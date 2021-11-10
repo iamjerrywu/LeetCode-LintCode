@@ -1,4 +1,4 @@
-# Check If String is a Prefix of Array \(LeetCode 1961\) \(E\)
+# Check If String is a Prefix of Array (LeetCode 1961) (E)
 
 ## Problem
 
@@ -6,11 +6,11 @@ Given a string `s` and an array of strings `words`, determine whether `s` is a *
 
 A string `s` is a **prefix string** of `words` if `s` can be made by concatenating the first `k` strings in `words` for some **positive** `k` no larger than `words.length`.
 
-Return `true` _if_ `s` _is a **prefix string** of_ `words`_, or_ `false` _otherwise_.
+Return `true`_ if _`s`_ is a **prefix string** of _`words`_, or _`false`_ otherwise_.
 
 **Example 1:**
 
-```text
+```
 Input: s = "iloveleetcode", words = ["i","love","leetcode","apples"]
 Output: true
 Explanation:
@@ -19,7 +19,7 @@ s can be made by concatenating "i", "love", and "leetcode" together.
 
 **Example 2:**
 
-```text
+```
 Input: s = "iloveleetcode", words = ["apples","i","love","leetcode"]
 Output: false
 Explanation:
@@ -33,7 +33,7 @@ It is impossible to make s using a prefix of arr.
 * `1 <= s.length <= 1000`
 * `words[i]` and `s` consist of only lowercase English letters.
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -59,4 +59,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

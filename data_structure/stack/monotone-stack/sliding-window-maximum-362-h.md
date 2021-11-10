@@ -1,24 +1,24 @@
-# Sliding Window Maximum 362 \(H\)
+# Sliding Window Maximum 362 (H)
 
 ## Problem
 
-Given an array of n integer with duplicate number, and a moving window\(size k\), move the window at each iteration from the start of the array, find the maximum number inside the window at each moving.Example
+Given an array of n integer with duplicate number, and a moving window(size k), move the window at each iteration from the start of the array, find the maximum number inside the window at each moving.Example
 
 **Example 1:**
 
-```text
+```
 Input:[1,2,7,7,8]3输出:[7,7,8]Explanation：At first the window is at the start of the array like this `[|1, 2, 7| ,7, 8]` , return the maximum `7`;then the window move one step forward.`[1, |2, 7 ,7|, 8]`, return the maximum `7`;then the window move one step forward again.`[1, 2, |7, 7, 8|]`, return the maximum `8`;
 ```
 
 **Example 2:**
 
-```text
+```
 Input:[1,2,3,1,2,3]5Output:[3,3]Explanation:At first, the state of the window is as follows: ` [,2,3,1,2,1 | , 3] `, a maximum of ` 3 `;And then the window to the right one. ` [1, | 2,3,1,2,3 |] `, a maximum of ` 3 `;
 ```
 
 Challenge
 
-o\(n\) time and O\(k\) memory
+o(n) time and O(k) memory
 
 ## Solution - Brute Force Enumeration
 
@@ -48,10 +48,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n \* k\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n \* k)**
+* **Space Complexity: O(n)**
 
-## Solution - Heap
+## Solution - Heap (Lazy Remove)
 
 ### Code
 
@@ -75,7 +75,7 @@ class Heap:
     
     #O(logk)
     def top(self):
-        self._lazy_delete()
+        self._lazy_delete (Lazy Remove)()
         return self.minheap[0]
     #O(logk)
     def pop(self):
@@ -116,10 +116,41 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogk\)**
+* **Time Complexity: O(nlogk)**
   * Traverse nums
-  * Push, Delete: O\(logk\), O\(1\)
-* **Space Complexity: O\(k\)**
+  * Push, Delete: O(logk), O(1)
+* **Space Complexity: O(k)**
+
+## Solution - Heap (Greedy)
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+import collections
+class Solution:
+    def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+        ans = []
+        heap = []
+        
+        for i, num in enumerate(nums):
+            while heap and i >= k and heap[0][1] <= i - k:
+                heapq.heappop(heap)
+            heapq.heappush(heap, (-num, i))
+            
+            if i >= k - 1:
+                ans.append(-heap[0][0])
+        
+        return ans
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O(n \* logn)**
+* **Space Complexity: O(n)**
 
 ## Solution - Monotonic Queue
 
@@ -158,6 +189,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**

@@ -1,4 +1,4 @@
-# The Skyline Problem 131 \(H\)
+# The Skyline Problem 131 (H)
 
 ## Problem
 
@@ -18,7 +18,7 @@ The **skyline** should be represented as a list of "key points" **sorted by thei
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2020/12/01/merged.jpg)
 
-```text
+```
 Input: buildings = [[2,9,10],[3,7,15],[5,12,12],[15,20,10],[19,24,8]]
 Output: [[2,10],[3,15],[7,12],[12,0],[15,10],[20,8],[24,0]]
 Explanation:
@@ -28,7 +28,7 @@ Figure B shows the skyline formed by those buildings. The red points in figure B
 
 **Example 2:**
 
-```text
+```
 Input: buildings = [[0,2,3],[2,5,3]]
 Output: [[0,3],[5,0]]
 ```
@@ -40,7 +40,7 @@ Output: [[0,3],[5,0]]
 * `1 <= heighti <= 231 - 1`
 * `buildings` is sorted by `lefti` in non-decreasing order.
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -88,14 +88,14 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^2\)**
-  * Traverse: O\(n\)
-  * Heap manipulation: 
-    * Push: O\(logn\)
-    * Remove: O\(n\)
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n^2)**
+  * Traverse: O(n)
+  * Heap manipulation:&#x20;
+    * Push: O(logn)
+    * Remove: O(n)
+* **Space Complexity: O(n)**
 
-\*\*\*\*
+****
 
 ## Solution - Heap with Lazy Delete
 
@@ -175,6 +175,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: O(n)**

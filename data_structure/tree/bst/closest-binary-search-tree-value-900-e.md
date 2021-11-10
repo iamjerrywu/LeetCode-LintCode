@@ -1,4 +1,4 @@
-# Closest Binary Search Tree Value 900 \(E\)
+# Closest Binary Search Tree Value 900 (E)
 
 ## Problem
 
@@ -11,7 +11,7 @@ Example
 
 **Example1**
 
-```text
+```
 Input: root = {5,4,9,2,#,8,10} and target = 6.124780
 Output: 5
 Explanation：
@@ -25,7 +25,7 @@ Binary tree {5,4,9,2,#,8,10},  denote the following structure:
 
 **Example2**
 
-```text
+```
 Input: root = {3,2,4,1} and target = 4.142857
 Output: 4
 Explanation：
@@ -37,7 +37,7 @@ Binary tree {3,2,4,1},  denote the following structure:
 1
 ```
 
-## Solution - Divide Conquer 
+## Solution - Divide Conquer&#x20;
 
 ### Code
 
@@ -81,7 +81,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -91,9 +90,9 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
-## Solution - Iteration with Upper/Lower  
+## Solution - Iteration with Upper/Lower &#x20;
 
 ### Code
 
@@ -135,7 +134,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -145,7 +143,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Iteration with MinNode, MinDiff
 
@@ -189,7 +187,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -198,6 +195,4 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-
-
 

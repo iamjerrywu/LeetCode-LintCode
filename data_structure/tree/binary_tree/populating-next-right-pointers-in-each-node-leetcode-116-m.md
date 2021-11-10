@@ -1,10 +1,10 @@
-# Populating Next Right Pointers in Each Node \(LeetCode 116\) \(M\)
+# Populating Next Right Pointers in Each Node (LeetCode 116) (M)
 
 ## Problem
 
 You are given a **perfect binary tree** where all leaves are on the same level, and every parent has two children. The binary tree has the following definition:
 
-```text
+```
 struct Node {
   int val;
   Node *left;
@@ -17,9 +17,9 @@ Populate each next pointer to point to its next right node. If there is no next 
 
 Initially, all next pointers are set to `NULL`.
 
-**Example 1:**![](https://assets.leetcode.com/uploads/2019/02/14/116_sample.png)
+**Example 1:**![](https://assets.leetcode.com/uploads/2019/02/14/116\_sample.png)
 
-```text
+```
 Input: root = [1,2,3,4,5,6,7]
 Output: [1,#,2,3,#,4,5,6,7,#]
 Explanation: Given the above perfect binary tree (Figure A), your function should populate each next pointer to point to its next right node, just like in Figure B. The serialized output is in level order as connected by the next pointers, with '#' signifying the end of each level.
@@ -27,7 +27,7 @@ Explanation: Given the above perfect binary tree (Figure A), your function shoul
 
 **Example 2:**
 
-```text
+```
 Input: root = []
 Output: []
 ```
@@ -84,10 +84,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:  O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity:  O(n)**
+* **Space Complexity: O(n)**
 
-\*\*\*\*
+****
 
 ## Solution - Constant Space
 
@@ -95,14 +95,13 @@ class Solution:
 
 Let's look at the two types of `next` pointer connections we need to establish for a given tree.
 
-1. This first case is the one where we establish the next pointers between the two children of a given node. This is the easier of the two cases since both the children are accessible via the same node. We can simply do the following to establish this connection.
+1.  This first case is the one where we establish the next pointers between the two children of a given node. This is the easier of the two cases since both the children are accessible via the same node. We can simply do the following to establish this connection.
 
-   ```text
-    node.left.next = node.right
-   ```
+    ```
+     node.left.next = node.right
+    ```
 
-   ![](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/Figures/116/img6.png)
-
+    ![](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/Figures/116/img6.png)
 2. This next case is not too straightforward to handle. In addition to establishing the next pointers between the nodes having a common parent, we also need to set-up the correct pointers between nodes which have a different parent.![](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/Figures/116/img7.png)
 
 If we simply had the parent pointers available with each node, this problem would have been trivial to solve. However, we don't have any such pointers available. The basic idea for this approach is based on the fact that:
@@ -145,6 +144,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
-* **Space Complexity:** 
-
+* **Time Complexity: **
+* **Space Complexity: **

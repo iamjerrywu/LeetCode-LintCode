@@ -1,4 +1,4 @@
-# Cyclically Rotating a Grid \(LeetCode 1914\) \(M\)
+# Cyclically Rotating a Grid (LeetCode 1914) (M)
 
 ## Problem
 
@@ -8,13 +8,13 @@ The matrix is composed of several layers, which is shown in the below image, whe
 
 ![](https://assets.leetcode.com/uploads/2021/06/10/ringofgrid.png)
 
-A cyclic rotation of the matrix is done by cyclically rotating **each layer** in the matrix. To cyclically rotate a layer once, each element in the layer will take the place of the adjacent element in the **counter-clockwise** direction. An example rotation is shown below:![](https://assets.leetcode.com/uploads/2021/06/22/explanation_grid.jpg)
+A cyclic rotation of the matrix is done by cyclically rotating **each layer** in the matrix. To cyclically rotate a layer once, each element in the layer will take the place of the adjacent element in the **counter-clockwise** direction. An example rotation is shown below:![](https://assets.leetcode.com/uploads/2021/06/22/explanation\_grid.jpg)
 
-Return _the matrix after applying_ `k` _cyclic rotations to it_.
+Return _the matrix after applying _`k` _cyclic rotations to it_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/06/19/rod2.png)
 
-```text
+```
 Input: grid = [[40,10],[30,20]], k = 1
 Output: [[10,20],[40,30]]
 Explanation: The figures above represent the grid at every state.
@@ -22,7 +22,7 @@ Explanation: The figures above represent the grid at every state.
 
 **Example 2:**![](https://assets.leetcode.com/uploads/2021/06/10/ringofgrid5.png) ![](https://assets.leetcode.com/uploads/2021/06/10/ringofgrid6.png) ![](https://assets.leetcode.com/uploads/2021/06/10/ringofgrid7.png)
 
-```text
+```
 Input: grid = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]], k = 2
 Output: [[3,4,8,12],[2,11,10,16],[1,7,6,15],[5,9,13,14]]
 Explanation: The figures above represent the grid at every state.
@@ -86,4 +86,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

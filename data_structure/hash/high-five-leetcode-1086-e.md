@@ -1,16 +1,16 @@
-# High Five \(LeetCode 1086\) \(E\)
+# High Five (LeetCode 1086) (E)
 
 ## Problem
 
 Given a list of the scores of different students, `items`, where `items[i] = [IDi, scorei]` represents one score from a student with `IDi`, calculate each student's **top five average**.
 
-Return _the answer as an array of pairs_ `result`_, where_ `result[j] = [IDj, topFiveAveragej]` _represents the student with_ `IDj` _and their **top five average**. Sort_ `result` _by_ `IDj` _in **increasing order**._
+Return _the answer as an array of pairs _`result`_, where _`result[j] = [IDj, topFiveAveragej]`_ represents the student with _`IDj`_ and their **top five average**. Sort _`result`_ by _`IDj`_ in **increasing order**._
 
 A student's **top five average** is calculated by taking the sum of their top five scores and dividing it by `5` using **integer division**.
 
 **Example 1:**
 
-```text
+```
 Input: items = [[1,91],[1,92],[2,93],[2,97],[1,60],[2,77],[1,65],[1,87],[1,100],[2,100],[2,76]]
 Output: [[1,87],[2,88]]
 Explanation: 
@@ -20,7 +20,7 @@ The student with ID = 2 got scores 93, 97, 77, 100, and 76. Their top five avera
 
 **Example 2:**
 
-```text
+```
 Input: items = [[1,100],[7,100],[1,100],[7,100],[1,100],[7,100],[1,100],[7,100],[1,100],[7,100]]
 Output: [[1,100],[7,100]]
 ```
@@ -33,7 +33,7 @@ Output: [[1,100],[7,100]]
 * `0 <= scorei <= 100`
 * For each `IDi`, there will be **at least** five scores.
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -59,4 +59,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

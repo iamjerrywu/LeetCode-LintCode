@@ -1,14 +1,14 @@
-# Number of Good Pairs \(LeetCode 1512\) \(E\)
+# Number of Good Pairs (LeetCode 1512) (E)
 
 ## Problem
 
 Given an array of integers `nums`, return _the number of **good pairs**_.
 
-A pair `(i, j)` is called _good_ if `nums[i] == nums[j]` and `i` &lt; `j`.
+A pair `(i, j)` is called _good_ if `nums[i] == nums[j]` and `i` < `j`.
 
 **Example 1:**
 
-```text
+```
 Input: nums = [1,2,3,1,1,3]
 Output: 4
 Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
@@ -16,7 +16,7 @@ Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
 
 **Example 2:**
 
-```text
+```
 Input: nums = [1,1,1,1]
 Output: 6
 Explanation: Each pair in the array are good.
@@ -24,7 +24,7 @@ Explanation: Each pair in the array are good.
 
 **Example 3:**
 
-```text
+```
 Input: nums = [1,2,3]
 Output: 0
 ```
@@ -65,6 +65,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-

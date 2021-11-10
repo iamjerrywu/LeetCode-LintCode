@@ -1,4 +1,4 @@
-# Design Tic-Tac-Toe 746 \(H\)
+# Design Tic-Tac-Toe 746 (H)
 
 ## Problem
 
@@ -17,13 +17,13 @@ Example
 
 Example 1:
 
-```text
+```
 Input:move(0, 0) // X turnmove(1, 0) // O trun move(1, 1) // X turnmove(2, 0) // O turnmove(2, 2) // X turn and winmove(0, 0)  //throw GameEndExceptionmove(0, 0) // X turnmove(0, 0) // throw AlreadyTakenExceptionmove(1, 0) // O turnmove(1, 1) // X turnmove(2, 0) // o turnmove(2, 2) // X turn and winOutput:x player wins!x player wins!
 ```
 
 ## Procedure
 
-![](../../.gitbook/assets/screen-shot-2021-07-17-at-10.59.57-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-17 at 10.59.57 AM.png>)
 
 ## Solution - Brute Force
 
@@ -328,12 +328,12 @@ class AlreadyTakenException extends Exception {
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n^2\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n^2)**
 
-\*\*\*\*
+****
 
-## Solution - Optimized 
+## Solution - Optimized&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -382,6 +382,5 @@ class TicTacToe:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(1\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(1)**
+* **Space Complexity: O(n)**

@@ -1,4 +1,4 @@
-# Detect Squares \(LeetCode 2013\) \(M\)
+# Detect Squares (LeetCode 2013) (M)
 
 ## Problem
 
@@ -17,7 +17,7 @@ Implement the `DetectSquares` class:
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/09/01/image.png)
 
-```text
+```
 Input
 ["DetectSquares", "add", "add", "add", "count", "count", "add", "count"]
 [[], [[3, 10]], [[11, 2]], [[3, 2]], [[11, 10]], [[14, 8]], [[11, 2]], [[11, 10]]]
@@ -44,9 +44,9 @@ detectSquares.count([11, 10]); // return 2. You can choose:
 * `0 <= x, y <= 1000`
 * At most `5000` calls **in total** will be made to `add` and `count`.
 
-## Solution - Hash \(Brute Force\)
+## Solution - Hash (Brute Force)
 
-![](../../.gitbook/assets/screen-shot-2021-09-19-at-12.51.03-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-09-19 at 12.51.03 AM.png>)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -91,12 +91,12 @@ class DetectSquares:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
-## Solution - Hash \(Optimized\)
+## Solution - Hash (Optimized)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -135,6 +135,5 @@ class DetectSquares:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity**
-

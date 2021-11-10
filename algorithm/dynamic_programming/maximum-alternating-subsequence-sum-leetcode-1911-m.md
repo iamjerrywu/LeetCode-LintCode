@@ -1,4 +1,4 @@
-# Maximum Alternating Subsequence Sum \(LeetCode 1911\) \(M\)
+# Maximum Alternating Subsequence Sum (LeetCode 1911) (M)
 
 ## Problem
 
@@ -6,14 +6,15 @@ The **alternating sum** of a **0-indexed** array is defined as the **sum** of th
 
 * For example, the alternating sum of `[4,2,5,3]` is `(4 + 5) - (2 + 3) = 4`.
 
-Given an array `nums`, return _the **maximum alternating sum** of any subsequence of_ `nums` _\(after **reindexing** the elements of the subsequence\)_.
+Given an array `nums`, return _the **maximum alternating sum** of any subsequence of _`nums`_ (after **reindexing** the elements of the subsequence)_.
 
-* 
-A **subsequence** of an array is a new array generated from the original array by deleting some elements \(possibly none\) without changing the remaining elements' relative order. For example, `[2,7,4]` is a subsequence of `[4,2,3,7,2,1,4]` \(the underlined elements\), while `[2,4,2]` is not.
+*
+
+A **subsequence** of an array is a new array generated from the original array by deleting some elements (possibly none) without changing the remaining elements' relative order. For example, `[2,7,4]` is a subsequence of `[4,2,3,7,2,1,4]` (the underlined elements), while `[2,4,2]` is not.
 
 **Example 1:**
 
-```text
+```
 Input: nums = [4,2,5,3]
 Output: 7
 Explanation: It is optimal to choose the subsequence [4,2,5] with alternating sum (4 + 5) - 2 = 7.
@@ -21,7 +22,7 @@ Explanation: It is optimal to choose the subsequence [4,2,5] with alternating su
 
 **Example 2:**
 
-```text
+```
 Input: nums = [5,6,7,8]
 Output: 8
 Explanation: It is optimal to choose the subsequence [8] with alternating sum 8.
@@ -29,7 +30,7 @@ Explanation: It is optimal to choose the subsequence [8] with alternating sum 8.
 
 **Example 3:**
 
-```text
+```
 Input: nums = [6,2,1,2,4,5]
 Output: 10
 Explanation: It is optimal to choose the subsequence [6,1,5] with alternating sum (6 + 5) - 1 = 10.
@@ -42,7 +43,7 @@ Explanation: It is optimal to choose the subsequence [6,1,5] with alternating su
 
 ## Solution - Peak / Valley
 
-![](../../.gitbook/assets/screen-shot-2021-07-01-at-12.22.44-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-01 at 12.22.44 PM.png>)
 
 ### Code
 
@@ -72,8 +73,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**
 
 ## Solution - DP
 
@@ -96,8 +97,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
 
 ## Solution - DP with scrolling arrays
 
@@ -121,6 +122,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**

@@ -1,4 +1,4 @@
-# Remove Nth Node From End of List 174 \(E\)
+# Remove Nth Node From End of List 174 (E)
 
 ## Problem
 
@@ -6,7 +6,7 @@ Given a linked list, remove the nth node from the end of list and return its hea
 
 The minimum number of nodes in list is _n_.Example
 
-```text
+```
 Example 1:
 	Input: list = 1->2->3->4->5->null， n = 2
 	Output: 1->2->3->5->null
@@ -118,13 +118,13 @@ public class Solution {
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Slow Fast Pointer
 
 Fast pointer go first for n steps, then both slow/fast pointers move. Once fast.next reach Null, then remove slow.next
 
-![](../../.gitbook/assets/screen-shot-2021-05-06-at-12.47.03-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-06 at 12.47.03 AM.png>)
 
 ### Code
 
@@ -165,7 +165,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -174,4 +173,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

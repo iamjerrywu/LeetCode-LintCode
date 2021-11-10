@@ -1,4 +1,4 @@
-# Equal Tree Partition 864 \(M\)
+# Equal Tree Partition 864 (M)
 
 ## Problem
 
@@ -8,13 +8,14 @@ Given a binary tree with `n` nodes, your task is to check if it's possible to pa
 
 1. The range of tree node value is in the range of `[-100000, 100000]`.
 2. `1 <= n <= 10000`
-3. You can assume that the tree is not `null` [Binary Tree Representation](https://www.lintcode.com/help/binary-tree-representation/)
+3. You can assume that the tree is not `null`\
+   [Binary Tree Representation](https://www.lintcode.com/help/binary-tree-representation/)
 
 Example
 
 **Example 1:**
 
-```text
+```
 Input: {5,10,10,#,#,2,3}
 Output: true
 Explanation:
@@ -32,7 +33,7 @@ Explanation:
 
 **Example 2:**
 
-```text
+```
 Input: {1,2,10,#,#,2,20}
 Output: false
 Explanation:
@@ -85,7 +86,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -94,4 +94,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

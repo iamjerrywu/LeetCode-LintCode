@@ -4,19 +4,17 @@ description: 22 (4E/17M/1H)
 
 # Two Pointer
 
-## Two Pointer Application 
+## Two Pointer Application&#x20;
 
-![](../../.gitbook/assets/screen-shot-2021-04-22-at-10.21.34-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-04-22 at 10.21.34 PM.png>)
 
 ## Partition Template
 
-![](../../.gitbook/assets/screen-shot-2021-04-23-at-12.57.24-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-04-23 at 12.57.24 AM.png>)
 
 {% hint style="warning" %}
-Need to write as left &lt;= right, but not left &lt; right
+Need to write as left <= right, but not left < right
 
 Because after while loop, if write `<=`, would gaurantee left is in the first element of right parts
 {% endhint %}
-
-
 

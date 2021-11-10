@@ -1,4 +1,4 @@
-# Sliding Puzzle II 794 \(H\)
+# Sliding Puzzle II 794 (H)
 
 ## Problem
 
@@ -12,13 +12,13 @@ If it is impossible to move from initial state to final state, return -1.Example
 
 **Example 1:**
 
-```text
+```
 Input:[ [2,8,3], [1,0,4], [7,6,5]][ [1,2,3], [8,0,4], [7,6,5]]Output:4Explanation:[                 [ [2,8,3],          [2,0,3], [1,0,4],   -->    [1,8,4], [7,6,5]           [7,6,5]]                 ][                 [ [2,0,3],          [0,2,3], [1,8,4],   -->    [1,8,4], [7,6,5]           [7,6,5]]                 ][                 [ [0,2,3],          [1,2,3], [1,8,4],   -->    [0,8,4], [7,6,5]           [7,6,5]]                 ][                 [ [1,2,3],          [1,2,3], [0,8,4],   -->    [8,0,4], [7,6,5]           [7,6,5]]                 ]
 ```
 
 **Example 2：**
 
-```text
+```
 Input:[[2,3,8],[7,0,5],[1,6,4]][[1,2,3],[8,0,4],[7,6,5]]Output:-1
 ```
 
@@ -94,7 +94,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-\*\*\*\*
+****
 
 ## Solution - Double Direction BFS
 
@@ -177,4 +177,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

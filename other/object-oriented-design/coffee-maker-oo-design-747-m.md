@@ -1,4 +1,4 @@
-# Coffee Maker OO Design 747 \(M\)
+# Coffee Maker OO Design 747 (M)
 
 ## Problem
 
@@ -14,13 +14,13 @@ Example
 
 Input:
 
-```text
+```
 pack(2, 3)makeCoffee()
 ```
 
 Output:
 
-```text
+```
 Cost for this coffee is: 4.5Ingredients for this coffee is: Plain Coffee, Milk, Milk, Sugar, Sugar, Sugar
 ```
 
@@ -28,14 +28,14 @@ Cost for this coffee is: 4.5Ingredients for this coffee is: Plain Coffee, Milk, 
 
 ### Decorate Design Pattern
 
-* Decorator pattern allows user to add new functionality to an existing object without alterning its structure. 
+* Decorator pattern allows user to add new functionality to an existing object without alterning its structure.&#x20;
 * This design pattern comes under structural pattern as this pattern acts as a wrapper to existing class.
 
-![](../../.gitbook/assets/screen-shot-2021-07-15-at-10.13.26-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-15 at 10.13.26 AM.png>)
 
-![](../../.gitbook/assets/screen-shot-2021-07-15-at-10.14.12-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-15 at 10.14.12 AM.png>)
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -228,4 +228,3 @@ class WithSugar extends CoffeeDecorator {
 
 * **Time Complexity:**
 * **Space Complexity:**
-

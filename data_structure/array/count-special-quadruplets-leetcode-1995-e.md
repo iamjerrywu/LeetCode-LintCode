@@ -1,4 +1,4 @@
-# Count Special Quadruplets \(LeetCode 1995\) \(E\)
+# Count Special Quadruplets (LeetCode 1995) (E)
 
 ## Problem
 
@@ -9,7 +9,7 @@ Given a **0-indexed** integer array `nums`, return _the number of **distinct** q
 
 **Example 1:**
 
-```text
+```
 Input: nums = [1,2,3,6]
 Output: 1
 Explanation: The only quadruplet that satisfies the requirement is (0, 1, 2, 3) because 1 + 2 + 3 == 6.
@@ -17,7 +17,7 @@ Explanation: The only quadruplet that satisfies the requirement is (0, 1, 2, 3) 
 
 **Example 2:**
 
-```text
+```
 Input: nums = [3,3,6,4,5]
 Output: 0
 Explanation: There are no such quadruplets in [3,3,6,4,5].
@@ -25,7 +25,7 @@ Explanation: There are no such quadruplets in [3,3,6,4,5].
 
 **Example 3:**
 
-```text
+```
 Input: nums = [1,1,1,3,5]
 Output: 4
 Explanation: The 4 quadruplets that satisfy the requirement are:
@@ -69,12 +69,12 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
-* **Space Complexity:** 
+* **Time Complexity: **
+* **Space Complexity: **
 
-\*\*\*\*
+****
 
-## Solution - For Loop 
+## Solution - For Loop&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -96,6 +96,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:** 
-* **Space Complexity:** 
-
+* **Time Complexity: **
+* **Space Complexity: **

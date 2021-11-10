@@ -1,20 +1,20 @@
-# Graph Valid Tree 178 \(M\)
+# Graph Valid Tree 178 (M)
 
 ## Problem
 
-Given `n` nodes labeled from `0` to `n - 1` and a list of `undirected` edges \(each edge is a pair of nodes\), write a function to check whether these edges make up a valid tree.
+Given `n` nodes labeled from `0` to `n - 1` and a list of `undirected` edges (each edge is a pair of nodes), write a function to check whether these edges make up a valid tree.
 
 You can assume that no duplicate edges will appear in edges. Since all edges are `undirected`, `[0, 1]` is the same as `[1, 0]` and thus will not appear together in edges.Example
 
 **Example 1:**
 
-```text
+```
 Input: n = 5 edges = [[0, 1], [0, 2], [0, 3], [1, 4]]Output: true.
 ```
 
 **Example 2:**
 
-```text
+```
 Input: n = 5 edges = [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]Output: false.
 ```
 
@@ -22,10 +22,10 @@ Input: n = 5 edges = [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]Output: false.
 
 If a graph is a valid tree, then it should comply following attributes:
 
-1. N nodes with \(N - 1\) Edges
-2. No circle in the graph 
+1. N nodes with (N - 1) Edges
+2. No circle in the graph&#x20;
 
-![](../../.gitbook/assets/screen-shot-2021-06-09-at-11.08.20-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-06-09 at 11.08.20 AM.png>)
 
 ### Code
 
@@ -68,14 +68,14 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(N + E\)**
+* **Time Complexity: O(N + E)**
   * N: nodes amount / E: Edges amount
-  * Construct Graph: O\(E\)
+  * Construct Graph: O(E)
   * BFS traverse:
-    * O\(N + E\)
-* **Space Complexity:** 
-  * Graph: O\(N + E\)
-  * BFS O\(N\):
+    * O(N + E)
+* **Space Complexity: **
+  * Graph: O(N + E)
+  * BFS O(N):
     * The queue would have worst case of length N
 
 ## Solution - Union Find
@@ -122,9 +122,9 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-  * Length of the graph \(worst case as a list\)
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n)**
+  * Length of the graph (worst case as a list)
+* **Space Complexity: O(n)**
 
 ## Solution - Union Find with Path Compression
 
@@ -174,6 +174,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(log\*n\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(log\*n)**
+* **Space Complexity: O(n)**

@@ -1,4 +1,4 @@
-# Design Browser History \(LeetCode 1472\) \(M\)
+# Design Browser History (LeetCode 1472) (M)
 
 ## Problem
 
@@ -13,7 +13,7 @@ Implement the `BrowserHistory` class:
 
 **Example:**
 
-```text
+```
 Input:
 ["BrowserHistory","visit","visit","visit","back","back","forward","visit","forward","back","back"]
 [["leetcode.com"],["google.com"],["facebook.com"],["youtube.com"],[1],[1],[1],["linkedin.com"],[2],[2],[7]]
@@ -84,6 +84,5 @@ class BrowserHistory:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-

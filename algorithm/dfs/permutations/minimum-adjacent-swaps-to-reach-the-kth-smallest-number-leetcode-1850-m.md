@@ -1,4 +1,4 @@
-# Minimum Adjacent Swaps to Reach the Kth Smallest Number \(LeetCode 1850\) \(M\)
+# Minimum Adjacent Swaps to Reach the Kth Smallest Number (LeetCode 1850) (M)
 
 ## Problem
 
@@ -14,13 +14,13 @@ We call some integer **wonderful** if it is a **permutation** of the digits in `
   * The 3rd smallest wonderful integer is `"5489355412"`.
   * The 4th smallest wonderful integer is `"5489355421"`.
 
-Return _the **minimum number of adjacent digit swaps** that needs to be applied to_ `num` _to reach the_ `kth` _**smallest wonderful** integer_.
+Return _the **minimum number of adjacent digit swaps** that needs to be applied to _`num`_ to reach the _`kth`_** smallest wonderful** integer_.
 
 The tests are generated in such a way that `kth` smallest wonderful integer exists.
 
 **Example 1:**
 
-```text
+```
 Input: num = "5489355142", k = 4
 Output: 2
 Explanation: The 4th smallest wonderful number is "5489355421". To get this number:
@@ -30,7 +30,7 @@ Explanation: The 4th smallest wonderful number is "5489355421". To get this numb
 
 **Example 2:**
 
-```text
+```
 Input: num = "11112", k = 4
 Output: 4
 Explanation: The 4th smallest wonderful number is "21111". To get this number:
@@ -42,7 +42,7 @@ Explanation: The 4th smallest wonderful number is "21111". To get this number:
 
 **Example 3:**
 
-```text
+```
 Input: num = "00123", k = 1
 Output: 1
 Explanation: The 1st smallest wonderful number is "00132". To get this number:
@@ -55,7 +55,7 @@ Explanation: The 1st smallest wonderful number is "00132". To get this number:
 * `1 <= k <= 1000`
 * `num` only consists of digits.
 
-## Solution 
+## Solution&#x20;
 
 First find the kth permutation number, then do the swap counts calculation
 
@@ -111,7 +111,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -120,4 +119,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-

@@ -1,4 +1,4 @@
-# Daily Temperatures 1020 \(M\)
+# Daily Temperatures 1020 (M)
 
 ## Problem
 
@@ -6,21 +6,21 @@ Given an array of integers `temperatures` represents the daily temperatures, ret
 
 **Example 1:**
 
-```text
+```
 Input: temperatures = [73,74,75,71,69,72,76,73]
 Output: [1,1,4,2,1,1,0,0]
 ```
 
 **Example 2:**
 
-```text
+```
 Input: temperatures = [30,40,50,60]
 Output: [1,1,1,0]
 ```
 
 **Example 3:**
 
-```text
+```
 Input: temperatures = [30,60,90]
 Output: [1,1,0]
 ```
@@ -55,6 +55,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity:** 
+* **Time Complexity: **
 * **Space Complexity:**
-
