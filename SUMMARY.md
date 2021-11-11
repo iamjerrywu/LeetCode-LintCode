@@ -440,6 +440,7 @@
   * [Search a 2D Matrix 28 (E)](algorithm/binary\_search/28.-search-a-2d-matrix.md)
   * [Search a 2D Matrix II 38 (M)](algorithm/binary\_search/38.-search-a-2d-matrix-ii-m.md)
   * [Median of Two Sorted Arrays 65 (H)](algorithm/binary\_search/65.-median-of-two-sorted-arrays.md)
+  * [Design Hit Counter (LeetCode 362) (M)](algorithm/binary\_search/design-hit-counter-leetcode-362-m.md)
   * [Copy Books 437 (M)](algorithm/binary\_search/437.-copy-books-m.md)
   * [Copy Books II 438 (H)](algorithm/binary\_search/copy-books-ii-438-h.md)
   * [Search in a Big Sorted Array 447 (M)](algorithm/binary\_search/search-in-a-big-sorted-array-447-m.md)
