@@ -161,6 +161,7 @@
   * [Remove All Adjacent Duplicates In String (LeetCode 1047) (E)](data\_structure/stack/remove-all-adjacent-duplicates-in-string-leetcode-1047-e.md)
   * [Remove All Adjacent Duplicates In String II (LeetCode 1209) (M)](data\_structure/stack/remove-all-adjacent-duplicates-in-string-ii-leetcode-1209-m.md)
   * [Minimum Remove to Make Valid Parentheses 1249 (M)](data\_structure/stack/minimum-remove-to-make-valid-parentheses-1249-m.md)
+  * [Design a Stack With Increment Operation (LeetCode1381) (M)](data\_structure/stack/design-a-stack-with-increment-operation-leetcode1381-m.md)
   * [Backspace String Compare (1425) (E)](data\_structure/stack/backspace-string-compare-1425-e.md)
   * [Design Browser History (LeetCode 1472) (M)](data\_structure/stack/design-browser-history-leetcode-1472-m.md)
 * [Queue](data\_structure/s4.-stack-and-queue/README.md)
