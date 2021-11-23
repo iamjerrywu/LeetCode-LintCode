@@ -510,6 +510,7 @@
     * [Permutations 15 (M)](algorithm/dfs/permutations/15.-permutations-m.md)
     * [Permutations II 16 (M)](algorithm/dfs/permutations/16.-permutations-ii-m.md)
     * [Next Permutation 52 (M)](algorithm/dfs/permutations/52.-next-permutation.md)
+    * [Next Greater Element III (LeetCode556) (M)](algorithm/dfs/permutations/next-greater-element-iii-leetcode556-m.md)
     * [Permutation Index 197 (M)](algorithm/dfs/permutations/197.-permutation-index.md)
     * [String Permutations II 10 (M)](algorithm/dfs/permutations/10.-string-permutations-ii-m.md)
     * [Minimum Adjacent Swaps to Reach the Kth Smallest Number (LeetCode 1850) (M)](algorithm/dfs/permutations/minimum-adjacent-swaps-to-reach-the-kth-smallest-number-leetcode-1850-m.md)
