@@ -36,6 +36,10 @@ Output: -1
 
 ## Solution&#x20;
 
+{% hint style="warning" %}
+This problem is actually different from LeetCode 52: Next Permutation problem. Really similar, but in permutation, it would actually wrap, but in this problem we only need to find the larger one, so no wrap condition will happen.&#x20;
+{% endhint %}
+
 {% tabs %}
 {% tab title="Python" %}
 ```python
