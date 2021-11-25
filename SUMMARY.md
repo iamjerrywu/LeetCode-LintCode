@@ -197,6 +197,7 @@
   * [Strobogrammatic Number 644 (E)](data\_structure/hash/strobogrammatic-number-644-e.md)
   * [Insert Delete GetRandom O(1) 657 (M)](data\_structure/hash/insert-delete-getrandom-o-1-657-m.md)
   * [Top K Frequent Words (LeetCode 692) (M)](data\_structure/hash/top-k-frequent-words-leetcode-692-m.md)
+  * [Degree of an Array](data\_structure/hash/degree-of-an-array.md)
   * [Insert Delete GetRandom O(1) - Duplicates Allowed 954 (H)](data\_structure/hash/insert-delete-getrandom-o-1-duplicates-allowed-954-h.md)
   * [First Unique Number in Data Stream 685 (M)](data\_structure/hash/first-unique-number-in-data-stream-685-m.md)
   * [First Unique Number in Data Stream II 960 (M)](data\_structure/hash/first-unique-number-in-data-stream-ii-960-m.md)

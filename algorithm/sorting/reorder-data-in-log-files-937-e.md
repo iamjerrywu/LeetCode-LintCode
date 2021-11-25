@@ -1,4 +1,4 @@
-# Reorder Data in Log Files 937 \(E\)
+# Reorder Data in Log Files 937 (E)
 
 ## Problem
 
@@ -6,8 +6,8 @@ You are given an array of `logs`. Each log is a space-delimited string of words,
 
 There are two types of logs:
 
-* **Letter-logs**: All words \(except the identifier\) consist of lowercase English letters.
-* **Digit-logs**: All words \(except the identifier\) consist of digits.
+* **Letter-logs**: All words (except the identifier) consist of lowercase English letters.
+* **Digit-logs**: All words (except the identifier) consist of digits.
 
 Reorder these logs so that:
 
@@ -19,7 +19,7 @@ Return _the final order of the logs_.
 
 **Example 1:**
 
-```text
+```
 Input: logs = ["dig1 8 1 5 1","let1 art can","dig2 3 6","let2 own kit dig","let3 art zero"]
 Output: ["let1 art can","let3 art zero","let2 own kit dig","dig1 8 1 5 1","dig2 3 6"]
 Explanation:
@@ -29,7 +29,7 @@ The digit-logs have a relative order of "dig1 8 1 5 1", "dig2 3 6".
 
 **Example 2:**
 
-```text
+```
 Input: logs = ["a1 9 2 3 1","g1 act car","zo4 4 7","ab1 off key dog","a8 act zoo"]
 Output: ["g1 act car","a8 act zoo","ab1 off key dog","a1 9 2 3 1","zo4 4 7"]
 ```
@@ -41,7 +41,38 @@ Output: ["g1 act car","a8 act zoo","ab1 off key dog","a1 9 2 3 1","zo4 4 7"]
 * All the tokens of `logs[i]` are separated by a **single** space.
 * `logs[i]` is guaranteed to have an identifier and at least one word after the identifier.
 
-## Solution - Lambda Sorting \(tricky\)
+
+
+## Solution - Lambda Sorting (Straight)
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def reorderLogFiles(self, logs: List[str]) -> List[str]:
+        digit = []
+        letter = []
+        
+        for log in logs:
+            if log.split()[1].isalpha():
+                letter.append(log)
+            else:
+                digit.append(log)
+        # i.e: l = "a1 do what cat"
+        # split(' ', 1)[1] = "do what cat"
+        # split(' ', 1)[0] = 'a1'
+        return sorted(letter, key = lambda l:(l.split(' ', 1)[1], l.split(' ', 1)[0])) + digit
+        
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+## Solution - Lambda Sorting (tricky)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -66,4 +97,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-
