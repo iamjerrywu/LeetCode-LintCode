@@ -1,4 +1,4 @@
-# Degree of an Array
+# Degree of an Array (LeetCode 697) (E)
 
 ## Problem
 
