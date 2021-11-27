@@ -686,6 +686,7 @@
   * [Single Number III 84 (M)](other/binary/single-number-iii-84-m.md)
   * [Add Binary 408 (E)](other/binary/add-binary-408-e.md)
   * [UTF-8 Validation 1262 (M)](other/binary/utf-8-validation-1262-m.md)
+  * [Cinema Seat Allocation (LeetCode 1386) (M)](other/binary/cinema-seat-allocation-leetcode-1386-m.md)
 * [Simulation](other/simulation/README.md)
   * [Page 1](other/simulation/page-1.md)
   * [Narcissistic Number 147 (E)](other/simulation/narcissistic-number-147-e.md)
