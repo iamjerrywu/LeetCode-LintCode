@@ -8,7 +8,7 @@ Given an integer array `nums`, your goal is to make all elements in `nums` equal
 2. Find the **next largest** value in `nums` **strictly smaller** than `largest`. Let its value be `nextLargest`.
 3. Reduce `nums[i]` to `nextLargest`.
 
-Return _the number of operations to make all elements in _`nums`_ equal_.
+Return _the number of operations to make all elements in_ `nums` _equal_.
 
 **Example 1:**
 

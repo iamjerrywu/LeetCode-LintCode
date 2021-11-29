@@ -101,7 +101,7 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**
 
 ## Solution - Counter&#x20;
@@ -128,5 +128,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**

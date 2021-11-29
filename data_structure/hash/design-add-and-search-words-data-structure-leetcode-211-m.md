@@ -76,5 +76,5 @@ class WordDictionary:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**

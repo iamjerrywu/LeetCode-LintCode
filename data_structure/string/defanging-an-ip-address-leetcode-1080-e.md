@@ -70,5 +70,5 @@ class Solution {
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**

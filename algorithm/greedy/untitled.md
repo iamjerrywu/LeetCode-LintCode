@@ -2,7 +2,7 @@
 
 ## Problem
 
-Given a binary string `s`, return _the **minimum** number of character swaps to make it **alternating**, or _`-1`_ if it is impossible._
+Given a binary string `s`, return _the **minimum** number of character swaps to make it **alternating**, or_ `-1` _if it is impossible._
 
 The string is called **alternating** if no two adjacent characters are equal. For example, the strings `"010"` and `"1010"` are alternating, while the string `"0100"` is not.
 

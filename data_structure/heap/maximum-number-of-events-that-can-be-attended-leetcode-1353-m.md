@@ -8,7 +8,7 @@ Given an array of `events` where `events[i] = [startDayi, endDayi]`. Every event
 
 You can attend an event `i` at any day `d` where `startTimei <= d <= endTimei`. Notice that you can only attend one event at any time `d`.
 
-Return _the maximum number of events _you can attend.
+Return _the maximum number of events_ you can attend.
 
 &#x20;
 

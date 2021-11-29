@@ -4,7 +4,7 @@
 
 &#x20;
 
-Given a binary array `nums` and an integer `k`, return _the maximum number of consecutive _`1`_'s in the array if you can flip at most_ `k` `0`'s.
+Given a binary array `nums` and an integer `k`, return _the maximum number of consecutive_ `1`_'s in the array if you can flip at most_ `k` `0`'s.
 
 &#x20;
 
@@ -62,5 +62,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**

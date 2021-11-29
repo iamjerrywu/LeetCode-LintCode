@@ -2,7 +2,7 @@
 
 ## Problem
 
-Given a binary string `s`, return `true`_ if the **longest** contiguous segment of _`1`_s is **strictly longer** than the **longest** contiguous segment of _`0`_s in _`s`. Return `false`_ otherwise_.
+Given a binary string `s`, return `true` _if the **longest** contiguous segment of_ `1`_s is **strictly longer** than the **longest** contiguous segment of_ `0`_s in_ `s`. Return `false` _otherwise_.
 
 * For example, in `s = "110100010"` the longest contiguous segment of `1`s has length `2`, and the longest contiguous segment of `0`s has length `3`.
 

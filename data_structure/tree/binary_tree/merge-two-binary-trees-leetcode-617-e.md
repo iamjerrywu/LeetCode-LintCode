@@ -71,7 +71,7 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**
 
 ## Solution - Create New Tree
@@ -116,5 +116,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**

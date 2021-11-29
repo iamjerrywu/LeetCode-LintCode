@@ -9,7 +9,7 @@ A row `i` is **weaker** than a row `j` if one of the following is true:
 * The number of soldiers in row `i` is less than the number of soldiers in row `j`.
 * Both rows have the same number of soldiers and `i < j`.
 
-Return _the indices of the _`k`_ **weakest** rows in the matrix ordered from weakest to strongest_.
+Return _the indices of the_ `k` _ **weakest** rows in the matrix ordered from weakest to strongest_.
 
 **Example 1:**
 

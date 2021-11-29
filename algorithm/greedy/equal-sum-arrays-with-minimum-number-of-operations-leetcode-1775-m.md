@@ -4,9 +4,9 @@
 
 You are given two arrays of integers `nums1` and `nums2`, possibly of different lengths. The values in the arrays are between `1` and `6`, inclusive.
 
-In one operation, you can change any integer's value in **any **of the arrays to **any** value between `1` and `6`, inclusive.
+In one operation, you can change any integer's value in **any** of the arrays to **any** value between `1` and `6`, inclusive.
 
-Return _the minimum number of operations required to make the sum of values in _`nums1`_ equal to the sum of values in _`nums2`_._ Return `-1`​​​​​ if it is not possible to make the sum of the two arrays equal.
+Return _the minimum number of operations required to make the sum of values in_ `nums1` _equal to the sum of values in_ `nums2`_._ Return `-1`​​​​​ if it is not possible to make the sum of the two arrays equal.
 
 **Example 1:**
 

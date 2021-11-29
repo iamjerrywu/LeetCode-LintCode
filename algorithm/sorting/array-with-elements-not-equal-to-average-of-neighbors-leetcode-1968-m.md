@@ -6,7 +6,7 @@ You are given a **0-indexed** array `nums` of **distinct** integers. You want to
 
 More formally, the rearranged array should have the property such that for every `i` in the range `1 <= i < nums.length - 1`, `(nums[i-1] + nums[i+1]) / 2` is **not** equal to `nums[i]`.
 
-Return _**any** rearrangement of _`nums`_ that meets the requirements_.
+Return _**any** rearrangement of_ `nums` _that meets the requirements_.
 
 **Example 1:**
 

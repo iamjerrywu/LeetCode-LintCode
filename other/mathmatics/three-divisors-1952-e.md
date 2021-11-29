@@ -2,7 +2,7 @@
 
 ## Problem
 
-Given an integer `n`, return `true`_ if _`n`_ has **exactly three positive divisors**. Otherwise, return _`false`.
+Given an integer `n`, return `true` _if_ `n` _has **exactly three positive divisors**. Otherwise, return_ `false`.
 
 An integer `m` is a **divisor** of `n` if there exists an integer `k` such that `n = k * m`.
 

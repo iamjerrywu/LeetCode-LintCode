@@ -8,7 +8,7 @@ You are given two **distinct 0-indexed** integer arrays `nums1` and `nums2`, whe
 
 For each `0 <= i < nums1.length`, find the index `j` such that `nums1[i] == nums2[j]` and determine the **next greater element** of `nums2[j]` in `nums2`. If there is no next greater element, then the answer for this query is `-1`.
 
-Return _an array _`ans`_ of length _`nums1.length`_ such that _`ans[i]`_ is the **next greater element** as described above._
+Return _an array_ `ans` _of length_ `nums1.length` _such that_ `ans[i]` _is the **next greater element** as described above._
 
 &#x20;
 

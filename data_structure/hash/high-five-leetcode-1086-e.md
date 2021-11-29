@@ -4,7 +4,7 @@
 
 Given a list of the scores of different students, `items`, where `items[i] = [IDi, scorei]` represents one score from a student with `IDi`, calculate each student's **top five average**.
 
-Return _the answer as an array of pairs _`result`_, where _`result[j] = [IDj, topFiveAveragej]`_ represents the student with _`IDj`_ and their **top five average**. Sort _`result`_ by _`IDj`_ in **increasing order**._
+Return _the answer as an array of pairs_ `result`_, where_ `result[j] = [IDj, topFiveAveragej]` _represents the student with_ `IDj` _and their **top five average**. Sort_ `result` _by_ `IDj` _in **increasing order**._
 
 A student's **top five average** is calculated by taking the sum of their top five scores and dividing it by `5` using **integer division**.
 

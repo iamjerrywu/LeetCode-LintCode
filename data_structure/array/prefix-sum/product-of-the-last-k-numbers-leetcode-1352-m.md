@@ -81,5 +81,5 @@ class ProductOfNumbers:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**

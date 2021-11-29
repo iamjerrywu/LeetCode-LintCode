@@ -16,7 +16,7 @@ A token is a valid word if:
 
 Examples of valid words include `"a-b."`, `"afad"`, `"ba-c"`, `"a!"`, and `"!"`.
 
-Given a string `sentence`, return _the **number** of valid words in _`sentence`.&#x20;
+Given a string `sentence`, return _the **number** of valid words in_ `sentence`.&#x20;
 
 **Example 1:**
 
@@ -104,5 +104,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**

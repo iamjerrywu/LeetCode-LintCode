@@ -4,7 +4,7 @@
 
 ## Problem
 
-Given an array of strings `words` and an integer `k`, return _the _`k`_ most frequent strings_.
+Given an array of strings `words` and an integer `k`, return _the_ `k` _most frequent strings_.
 
 Return the answer **sorted** by **the frequency** from highest to lowest. Sort the words with the same frequency by their **lexicographical order**.
 
@@ -34,7 +34,7 @@ Explanation: "the", "is", "sunny" and "day" are the four most frequent words, wi
 * `1 <= words.length <= 500`
 * `1 <= words[i] <= 10`
 * `words[i]` consists of lowercase English letters.
-* `k` is in the range `[1, The number of `**`unique`**` words[i]]`
+* `k` is in the range `[1, The number of`` `**`unique`**` ``words[i]]`
 
 
 

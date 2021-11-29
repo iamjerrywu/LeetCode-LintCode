@@ -85,7 +85,7 @@ class WordDistance:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
   * Shortest: O(n)
     * n: len(word1) + len(word2)
 * **Space Complexity: O(n)**

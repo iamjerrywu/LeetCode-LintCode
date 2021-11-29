@@ -14,7 +14,7 @@ We call some integer **wonderful** if it is a **permutation** of the digits in `
   * The 3rd smallest wonderful integer is `"5489355412"`.
   * The 4th smallest wonderful integer is `"5489355421"`.
 
-Return _the **minimum number of adjacent digit swaps** that needs to be applied to _`num`_ to reach the _`kth`_** smallest wonderful** integer_.
+Return _the **minimum number of adjacent digit swaps** that needs to be applied to_ `num` _to reach the_ `kth` _**smallest wonderful** integer_.
 
 The tests are generated in such a way that `kth` smallest wonderful integer exists.
 

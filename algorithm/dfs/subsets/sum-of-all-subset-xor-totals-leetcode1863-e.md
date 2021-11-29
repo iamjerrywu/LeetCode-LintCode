@@ -2,11 +2,11 @@
 
 ## Problem
 
-The **XOR total** of an array is defined as the bitwise `XOR` of** all its elements**, or `0` if the array is** empty**.
+The **XOR total** of an array is defined as the bitwise `XOR` of **all its elements**, or `0` if the array is **empty**.
 
 * For example, the **XOR total** of the array `[2,5,6]` is `2 XOR 5 XOR 6 = 1`.
 
-Given an array `nums`, return _the **sum** of all **XOR totals** for every **subset** of _`nums`.&#x20;
+Given an array `nums`, return _the **sum** of all **XOR totals** for every **subset** of_ `nums`.&#x20;
 
 **Note:** Subsets with the **same** elements should be counted **multiple** times.
 

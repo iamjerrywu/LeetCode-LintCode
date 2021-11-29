@@ -15,7 +15,7 @@ For Bob to win, the sum of the digits in the first half of `num` must be **equal
 
 * For example, if the game ended with `num = "243801"`, then Bob wins because `2+4+3 = 8+0+1`. If the game ended with `num = "243803"`, then Alice wins because `2+4+3 != 8+0+3`.
 
-Assuming Alice and Bob play **optimally**, return `true` _if Alice will win and _`false` _if Bob will win_.
+Assuming Alice and Bob play **optimally**, return `true` _if Alice will win and_ `false` _if Bob will win_.
 
 **Example 1:**
 

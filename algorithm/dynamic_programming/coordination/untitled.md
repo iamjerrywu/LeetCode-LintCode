@@ -7,7 +7,7 @@ You are given a **0-indexed** binary string `s` and two integers `minJump` and `
 * `i + minJump <= j <= min(i + maxJump, s.length - 1)`, and
 * `s[j] == '0'`.
 
-Return `true` if you can reach index `s.length - 1` in `s`_, or _`false`_ otherwise._
+Return `true` if you can reach index `s.length - 1` in `s`_, or_ `false` _otherwise._
 
 **Example 1:**
 

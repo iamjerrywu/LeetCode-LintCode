@@ -2,7 +2,7 @@
 
 ## Problem
 
-Given two `n x n` binary matrices `mat` and `target`, return `true`_ if it is possible to make _`mat`_ equal to _`target`_ by **rotating** _`mat`_ in **90-degree increments**, or _`false`_ otherwise._
+Given two `n x n` binary matrices `mat` and `target`, return `true` _if it is possible to make_ `mat` _equal to_ `target` _by **rotating** _ `mat` _in **90-degree increments**, or_ `false` _otherwise._
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/05/20/grid3.png)
 

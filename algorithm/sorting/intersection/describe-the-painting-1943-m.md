@@ -16,7 +16,7 @@ You want to **describe** the painting with the **minimum** number of non-overlap
   * `[1,4)` is colored `{5,7}` (with a sum of `12`) from both the first and second segments.
   * `[4,7)` is colored `{7}` from only the second segment.
 
-Return _the 2D array _`painting`_ describing the finished painting (excluding any parts that are **not **painted). You may return the segments in **any order**_.
+Return _the 2D array_ `painting` _describing the finished painting (excluding any parts that are **not** painted). You may return the segments in **any order**_.
 
 A **half-closed segment** `[a, b)` is the section of the number line between points `a` and `b` **including** point `a` and **not including** point `b`.
 

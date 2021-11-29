@@ -8,7 +8,7 @@
 
 An integer `x` is **numerically balanced** if for every digit `d` in the number `x`, there are **exactly** `d` occurrences of that digit in `x`.
 
-Given an integer `n`, return _the **smallest numerically balanced** number **strictly greater** than _`n`_._
+Given an integer `n`, return _the **smallest numerically balanced** number **strictly greater** than_ `n`_._
 
 &#x20;
 
@@ -92,5 +92,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**

@@ -10,7 +10,7 @@ When a friend leaves the party, their chair becomes unoccupied at the moment the
 
 You are given a **0-indexed** 2D integer array `times` where `times[i] = [arrivali, leavingi]`, indicating the arrival and leaving times of the `ith` friend respectively, and an integer `targetFriend`. All arrival times are **distinct**.
 
-Return_ the **chair number** that the friend numbered _`targetFriend`_ will sit on_.
+Return _the **chair number** that the friend numbered_ `targetFriend` _will sit on_.
 
 **Example 1:**
 

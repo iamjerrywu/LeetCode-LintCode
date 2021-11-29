@@ -4,7 +4,7 @@
 
 Given a string `s`, count the number of distinct, non-empty subsequences of `s` .
 
-Since the result may be large, **return the answer modulo **`109 + 7`.
+Since the result may be large, **return the answer modulo** `109 + 7`.
 
 **Example 1:**
 

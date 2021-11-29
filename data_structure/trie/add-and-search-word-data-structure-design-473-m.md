@@ -64,7 +64,7 @@ class WordDictionary:
 
 ### Complexity Analysis
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
   * addword(): O(1)
   * Search():  O(m \* n)
     * m: length-n word's amount

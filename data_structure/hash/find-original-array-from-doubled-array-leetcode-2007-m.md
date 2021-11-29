@@ -4,7 +4,7 @@
 
 An integer array `original` is transformed into a **doubled** array `changed` by appending **twice the value** of every element in `original`, and then randomly **shuffling** the resulting array.
 
-Given an array `changed`, return `original`_ if _`changed`_ is a **doubled** array. If _`changed`_ is not a **doubled** array, return an empty array. The elements in_ `original` _may be returned in **any** order_.
+Given an array `changed`, return `original` _if_ `changed` _is a **doubled** array. If_ `changed` _is not a **doubled** array, return an empty array. The elements in_ `original` _may be returned in **any** order_.
 
 **Example 1:**
 
@@ -69,5 +69,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**

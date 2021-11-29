@@ -6,7 +6,7 @@
 
 A string `s` is called **good** if there are no two different characters in `s` that have the same **frequency**.
 
-Given a string `s`, return_ the **minimum** number of characters you need to delete to make _`s`_ **good**._
+Given a string `s`, return _the **minimum** number of characters you need to delete to make_ `s` _ **good**._
 
 The **frequency** of a character in a string is the number of times it appears in the string. For example, in the string `"aab"`, the **frequency** of `'a'` is `2`, while the **frequency** of `'b'` is `1`.
 

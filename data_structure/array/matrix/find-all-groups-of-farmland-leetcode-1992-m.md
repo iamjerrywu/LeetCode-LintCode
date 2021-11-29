@@ -10,7 +10,7 @@ To keep the land organized, there are designated rectangular areas of hectares t
 
 `land` can be represented by a coordinate system where the top left corner of `land` is `(0, 0)` and the bottom right corner of `land` is `(m-1, n-1)`. Find the coordinates of the top left and bottom right corner of each **group** of farmland. A **group** of farmland with a top left corner at `(r1, c1)` and a bottom right corner at `(r2, c2)` is represented by the 4-length array `[r1, c1, r2, c2].`
 
-Return _a 2D array containing the 4-length arrays described above for each **group** of farmland in _`land`_. If there are no groups of farmland, return an empty array. You may return the answer in **any order**_.
+Return _a 2D array containing the 4-length arrays described above for each **group** of farmland in_ `land`_. If there are no groups of farmland, return an empty array. You may return the answer in **any order**_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/07/27/screenshot-2021-07-27-at-12-23-15-copy-of-diagram-drawio-diagrams-net.png)
 
@@ -80,5 +80,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: **
-* **Space Complexity: **
+* **Time Complexity:**&#x20;
+* **Space Complexity:**&#x20;

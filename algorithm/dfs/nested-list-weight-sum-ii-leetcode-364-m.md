@@ -8,7 +8,7 @@ The **depth** of an integer is the number of lists that it is inside of. For exa
 
 The **weight** of an integer is `maxDepth - (the depth of the integer) + 1`.
 
-Return _the sum of each integer in _`nestedList`_ multiplied by its **weight**_.
+Return _the sum of each integer in_ `nestedList` _multiplied by its **weight**_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/03/27/nestedlistweightsumiiex1.png)
 
@@ -108,5 +108,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**

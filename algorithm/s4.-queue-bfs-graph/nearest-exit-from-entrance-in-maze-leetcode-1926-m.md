@@ -6,7 +6,7 @@ You are given an `m x n` matrix `maze` (**0-indexed**) with empty cells (represe
 
 In one step, you can move one cell **up**, **down**, **left**, or **right**. You cannot step into a cell with a wall, and you cannot step outside the maze. Your goal is to find the **nearest exit** from the `entrance`. An **exit** is defined as an **empty cell** that is at the **border** of the `maze`. The `entrance` **does not count** as an exit.
 
-Return _the **number of steps** in the shortest path from the _`entrance`_ to the nearest exit, or _`-1`_ if no such path exists_.
+Return _the **number of steps** in the shortest path from the_ `entrance` _to the nearest exit, or_ `-1` _if no such path exists_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/06/04/nearest1-grid.jpg)
 

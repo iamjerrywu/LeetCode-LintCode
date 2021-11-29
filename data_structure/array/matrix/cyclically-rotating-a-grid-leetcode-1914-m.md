@@ -10,7 +10,7 @@ The matrix is composed of several layers, which is shown in the below image, whe
 
 A cyclic rotation of the matrix is done by cyclically rotating **each layer** in the matrix. To cyclically rotate a layer once, each element in the layer will take the place of the adjacent element in the **counter-clockwise** direction. An example rotation is shown below:![](https://assets.leetcode.com/uploads/2021/06/22/explanation\_grid.jpg)
 
-Return _the matrix after applying _`k` _cyclic rotations to it_.
+Return _the matrix after applying_ `k` _cyclic rotations to it_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/06/19/rod2.png)
 

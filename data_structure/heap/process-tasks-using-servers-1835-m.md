@@ -12,7 +12,7 @@ You may assign multiple tasks at the same second if there are multiple free serv
 
 Build an array `ans`​​​​ of length `m`, where `ans[j]` is the **index** of the server the `j​​​​​​th` task will be assigned to.
 
-Return _the array _`ans`​​​​.
+Return _the array_ `ans`​​​​.
 
 **Example 1:**
 

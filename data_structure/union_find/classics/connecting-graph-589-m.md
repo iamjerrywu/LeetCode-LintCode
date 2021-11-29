@@ -78,7 +78,7 @@ class ConnectingGraph:
 
 ### Complexity Analysis
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
   * Connect: O(1)
   * Query: O(1)
 * **Space Complexity: O(n)**

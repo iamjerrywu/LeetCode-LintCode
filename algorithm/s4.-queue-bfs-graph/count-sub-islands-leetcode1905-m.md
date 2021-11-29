@@ -6,9 +6,9 @@
 
 You are given two `m x n` binary matrices `grid1` and `grid2` containing only `0`'s (representing water) and `1`'s (representing land). An **island** is a group of `1`'s connected **4-directionally** (horizontal or vertical). Any cells outside of the grid are considered water cells.
 
-An island in `grid2` is considered a **sub-island **if there is an island in `grid1` that contains **all** the cells that make up **this** island in `grid2`.
+An island in `grid2` is considered a **sub-island** if there is an island in `grid1` that contains **all** the cells that make up **this** island in `grid2`.
 
-Return the _**number** of islands in _`grid2` _that are considered **sub-islands**_.
+Return the _**number** of islands in_ `grid2` _that are considered **sub-islands**_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/06/10/test1.png)
 

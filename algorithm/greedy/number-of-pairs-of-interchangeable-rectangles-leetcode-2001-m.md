@@ -6,7 +6,7 @@ You are given `n` rectangles represented by a **0-indexed** 2D integer array `re
 
 Two rectangles `i` and `j` (`i < j`) are considered **interchangeable** if they have the **same** width-to-height ratio. More formally, two rectangles are **interchangeable** if `widthi/heighti == widthj/heightj` (using decimal division, not integer division).
 
-Return _the **number** of pairs of **interchangeable** rectangles in _`rectangles`.
+Return _the **number** of pairs of **interchangeable** rectangles in_ `rectangles`.
 
 **Example 1:**
 
@@ -56,5 +56,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
-* **Space Complexity: **
+* **Time Complexity:**&#x20;
+* **Space Complexity:**&#x20;

@@ -2,7 +2,7 @@
 
 ## Problem
 
-Given an array of strings `nums` containing `n` **unique** binary strings each of length `n`, return _a binary string of length _`n`_ that **does not appear** in `nums`. If there are multiple answers, you may return **any** of them_.
+Given an array of strings `nums` containing `n` **unique** binary strings each of length `n`, return _a binary string of length_ `n` _that **does not appear** in `nums`. If there are multiple answers, you may return **any** of them_.
 
 **Example 1:**
 
@@ -33,7 +33,7 @@ Explanation: "101" does not appear in nums. "000", "010", "100", and "110" would
 * `n == nums.length`
 * `1 <= n <= 16`
 * `nums[i].length == n`
-* `nums[i] `is either `'0'` or `'1'`.
+* `nums[i]` is either `'0'` or `'1'`.
 
 ## Solution&#x20;
 

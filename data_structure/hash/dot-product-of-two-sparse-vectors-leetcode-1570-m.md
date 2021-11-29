@@ -9,9 +9,9 @@ Implement class `SparseVector`:
 * `SparseVector(nums)` Initializes the object with the vector `nums`
 * `dotProduct(vec)` Compute the dot product between the instance of _SparseVector_ and `vec`
 
-A **sparse vector** is a vector that has mostly zero values, you should store the sparse vector **efficiently **and compute the dot product between two _SparseVector_.
+A **sparse vector** is a vector that has mostly zero values, you should store the sparse vector **efficiently** and compute the dot product between two _SparseVector_.
 
-**Follow up: **What if only one of the vectors is sparse?
+**Follow up:** What if only one of the vectors is sparse?
 
 **Example 1:**
 

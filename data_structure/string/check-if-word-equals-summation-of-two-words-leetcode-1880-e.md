@@ -16,7 +16,7 @@ The **numerical value** of some string of lowercase English letters `s` is the *
 
 You are given three strings `firstWord`, `secondWord`, and `targetWord`, each consisting of lowercase English letters `'a'` through `'j'` **inclusive**.
 
-Return `true` _if the **summation** of the **numerical values** of _`firstWord`_ and _`secondWord`_ equals the **numerical value** of _`targetWord`_, or _`false`_ otherwise._
+Return `true` _if the **summation** of the **numerical values** of_ `firstWord` _and_ `secondWord` _equals the **numerical value** of_ `targetWord`_, or_ `false` _otherwise._
 
 **Example 1:**
 

@@ -106,7 +106,7 @@ class Solution:
   * n: len(grid), m: len(grid\[0])
   * Calculate all point's distance to post office: O(n\*m)
   * Worst case: O(n^2 \* m^2)
-* **Space Complexity: **
+* **Space Complexity:**&#x20;
 
 ****
 
@@ -194,6 +194,6 @@ class Solution:
   * n: len(grid), m: len(grid\[0])
   * Calculate all point's distance to post office: O(n\*m)
   * Worst case: O(n^2 \* m^2)
-* **Space Complexity: **
+* **Space Complexity:**&#x20;
 
 ****

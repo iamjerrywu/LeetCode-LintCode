@@ -73,7 +73,7 @@ class Solution:
   * Construct Graph: O(E)
   * BFS traverse:
     * O(N + E)
-* **Space Complexity: **
+* **Space Complexity:**&#x20;
   * Graph: O(N + E)
   * BFS O(N):
     * The queue would have worst case of length N

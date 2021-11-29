@@ -6,7 +6,7 @@ Given two positive integers `n` and `k`.
 
 A factor of an integer `n` is defined as an integer `i` where `n % i == 0`.
 
-Consider a list of all factors of `n` sorted in **ascending order**, return _the _`kth`_ factor_ in this list or return **-1** if `n` has less than `k` factors.
+Consider a list of all factors of `n` sorted in **ascending order**, return _the_ `kth` _factor_ in this list or return **-1** if `n` has less than `k` factors.
 
 &#x20;
 

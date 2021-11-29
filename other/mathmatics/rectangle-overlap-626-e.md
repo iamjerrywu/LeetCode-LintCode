@@ -6,7 +6,7 @@ An axis-aligned rectangle is represented as a list `[x1, y1, x2, y2]`, where `(x
 
 Two rectangles overlap if the area of their intersection is **positive**. To be clear, two rectangles that only touch at the corner or edges do not overlap.
 
-Given two axis-aligned rectangles `rec1` and `rec2`, return `true`_ if they overlap, otherwise return _`false`.
+Given two axis-aligned rectangles `rec1` and `rec2`, return `true` _if they overlap, otherwise return_ `false`.
 
 **Example 1:**
 
@@ -57,5 +57,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: **
-* **Space Complexity: **
+* **Time Complexity:**&#x20;
+* **Space Complexity:**&#x20;

@@ -4,7 +4,7 @@
 
 
 
-Given an integer array `nums` and an integer `k`, return _the number of non-empty **subarrays** that have a sum divisible by _`k`.
+Given an integer array `nums` and an integer `k`, return _the number of non-empty **subarrays** that have a sum divisible by_ `k`.
 
 A **subarray** is a **contiguous** part of an array.
 

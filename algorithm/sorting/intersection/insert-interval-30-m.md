@@ -6,7 +6,7 @@ You are given an array of non-overlapping intervals `intervals` where `intervals
 
 Insert `newInterval` into `intervals` such that `intervals` is still sorted in ascending order by `starti` and `intervals` still does not have any overlapping intervals (merge overlapping intervals if necessary).
 
-Return `intervals`_ after the insertion_.
+Return `intervals` _after the insertion_.
 
 **Example 1:**
 
@@ -101,5 +101,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: **
-* **Space Complexity: **
+* **Time Complexity:**&#x20;
+* **Space Complexity:**&#x20;

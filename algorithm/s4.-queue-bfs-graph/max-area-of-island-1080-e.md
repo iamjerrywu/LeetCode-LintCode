@@ -6,7 +6,7 @@ You are given an `m x n` binary matrix `grid`. An island is a group of `1`'s (re
 
 The **area** of an island is the number of cells with a value `1` in the island.
 
-Return _the maximum **area** of an island in _`grid`. If there is no island, return `0`.
+Return _the maximum **area** of an island in_ `grid`. If there is no island, return `0`.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/05/01/maxarea1-grid.jpg)
 

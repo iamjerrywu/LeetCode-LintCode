@@ -101,7 +101,7 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity: O(nlogn)**
-* **Space Complexity: **
+* **Space Complexity:**&#x20;
 
 ## Solution - Brute Force with Binary Search (LTE, pass39/44)
 
@@ -176,7 +176,7 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity: O(nlogn)**
-* **Space Complexity: **
+* **Space Complexity:**&#x20;
 
 ## Solution - Stack one pass
 
@@ -204,4 +204,4 @@ class Solution:
 ### Complexity Analysis
 
 * **Time Complexity: O(nlogn)**
-* **Space Complexity: **
+* **Space Complexity:**&#x20;

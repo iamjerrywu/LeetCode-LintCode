@@ -6,7 +6,7 @@ There are `n` people standing in a queue, and they numbered from `0` to `n - 1` 
 
 A person can **see** another person to their right in the queue if everybody in between is **shorter** than both of them. More formally, the `ith` person can see the `jth` person if `i < j` and `min(heights[i], heights[j]) > max(heights[i+1], heights[i+2], ..., heights[j-1])`.
 
-Return _an array _`answer`_ of length _`n`_ where _`answer[i]`_ is the **number of people** the _`ith`_ person can **see** to their right in the queue_.
+Return _an array_ `answer` _of length_ `n` _where_ `answer[i]` _is the **number of people** the_ `ith` _person can **see** to their right in the queue_.
 
 **Example 1:**
 

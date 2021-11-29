@@ -8,9 +8,9 @@ You are given an array of `words` where each word consists of lowercase English 
 
 * For example, `"abc"` is a **predecessor** of `"abac"`, while `"cba"` is not a **predecessor** of `"bcad"`.
 
-A **word chain**_ _is a sequence of words `[word1, word2, ..., wordk]` with `k >= 1`, where `word1` is a **predecessor** of `word2`, `word2` is a **predecessor** of `word3`, and so on. A single word is trivially a **word chain** with `k == 1`.
+A **word chain** __ is a sequence of words `[word1, word2, ..., wordk]` with `k >= 1`, where `word1` is a **predecessor** of `word2`, `word2` is a **predecessor** of `word3`, and so on. A single word is trivially a **word chain** with `k == 1`.
 
-Return _the **length** of the **longest possible word chain** with words chosen from the given list of _`words`.
+Return _the **length** of the **longest possible word chain** with words chosen from the given list of_ `words`.
 
 **Example 1:**
 
@@ -69,7 +69,7 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**
 
 ## Solution - Graph Sol 2
@@ -114,5 +114,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**

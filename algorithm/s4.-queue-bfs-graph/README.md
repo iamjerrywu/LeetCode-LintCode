@@ -387,7 +387,7 @@ List is ordered and repetition and null value allowed data structure. In Java th
 
 * Based on linked-list
 
-**ArrayList: **
+**ArrayList:**&#x20;
 
 * Based on dynamic arrays
 

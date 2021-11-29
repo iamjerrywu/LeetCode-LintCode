@@ -2,7 +2,7 @@
 
 ## Problem
 
-Given a **0-indexed** integer array `nums`, return `true` _if it can be made **strictly increasing** after removing **exactly one** element, or _`false`_ otherwise. If the array is already strictly increasing, return _`true`.
+Given a **0-indexed** integer array `nums`, return `true` _if it can be made **strictly increasing** after removing **exactly one** element, or_ `false` _otherwise. If the array is already strictly increasing, return_ `true`.
 
 The array `nums` is **strictly increasing** if `nums[i - 1] < nums[i]` for each index `(1 <= i < nums.length).`
 

@@ -8,7 +8,7 @@ A **rhombus sum** is the sum of the elements that form **the** **border** of a r
 
 Note that the rhombus can have an area of 0, which is depicted by the purple rhombus in the bottom right corner.
 
-Return _the biggest three **distinct rhombus sums** in the _`grid`_ in **descending order**. If there are less than three distinct values, return all of them_.
+Return _the biggest three **distinct rhombus sums** in the_ `grid` _in **descending order**. If there are less than three distinct values, return all of them_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/04/23/pc73-q4-ex1.png)
 

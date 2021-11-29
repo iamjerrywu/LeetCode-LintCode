@@ -9,7 +9,7 @@ You are given a positive integer `p`. Consider an array `nums` (**1-indexed**) t
 
 For example, if `x = 1101` and `y = 0011`, after swapping the `2nd` bit from the right, we have `x = 1111` and `y = 0001`.
 
-Find the **minimum non-zero** product of `nums` after performing the above operation **any** number of times. Return _this product **modulo** _`109 + 7`.
+Find the **minimum non-zero** product of `nums` after performing the above operation **any** number of times. Return _this product **modulo** _ `109 + 7`.
 
 **Note:** The answer should be the minimum product **before** the modulo operation is done.
 

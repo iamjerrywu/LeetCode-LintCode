@@ -16,7 +16,7 @@ The data structure should support the following functions:
 Implement the `LockingTree` class:
 
 * `LockingTree(int[] parent)` initializes the data structure with the parent array.
-* `lock(int num, int user)` returns `true` if it is possible for the user with id `user` to lock the node `num`, or `false` otherwise. If it is possible, the node `num` will become** locked** by the user with id `user`.
+* `lock(int num, int user)` returns `true` if it is possible for the user with id `user` to lock the node `num`, or `false` otherwise. If it is possible, the node `num` will become **locked** by the user with id `user`.
 * `unlock(int num, int user)` returns `true` if it is possible for the user with id `user` to unlock the node `num`, or `false` otherwise. If it is possible, the node `num` will become **unlocked**.
 * `upgrade(int num, int user)` returns `true` if it is possible for the user with id `user` to upgrade the node `num`, or `false` otherwise. If it is possible, the node `num` will be **upgraded**.
 
@@ -140,5 +140,5 @@ class LockingTree:
 
 ### Complexity Analysis
 
-* **Time Complexity: **
-* **Space Complexity: **
+* **Time Complexity:**&#x20;
+* **Space Complexity:**&#x20;

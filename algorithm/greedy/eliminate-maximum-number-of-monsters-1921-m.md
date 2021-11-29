@@ -8,7 +8,7 @@ The monsters walk toward the city at a **constant** speed. The speed of each mon
 
 The monsters start moving at **minute 0**. You have a weapon that you can **choose** to use at the start of every minute, including minute 0. You cannot use the weapon in the middle of a minute. The weapon can eliminate any monster that is still alive. You lose when any monster reaches your city. If a monster reaches the city **exactly** at the start of a minute, it counts as a **loss**, and the game ends before you can use your weapon in that minute.
 
-Return _the **maximum** number of monsters that you can eliminate before you lose, or _`n`_ if you can eliminate all the monsters before they reach the city._
+Return _the **maximum** number of monsters that you can eliminate before you lose, or_ `n` _if you can eliminate all the monsters before they reach the city._
 
 **Example 1:**
 

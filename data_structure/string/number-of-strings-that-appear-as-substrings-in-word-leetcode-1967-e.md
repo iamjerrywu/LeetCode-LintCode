@@ -2,7 +2,7 @@
 
 ## Problem
 
-Given an array of strings `patterns` and a string `word`, return _the **number** of strings in _`patterns`_ that exist as a **substring** in _`word`.
+Given an array of strings `patterns` and a string `word`, return _the **number** of strings in_ `patterns` _that exist as a **substring** in_ `word`.
 
 A **substring** is a contiguous sequence of characters within a string.
 

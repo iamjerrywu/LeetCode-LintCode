@@ -8,7 +8,7 @@ You are given a **0-indexed** integer array `piles`, where `piles[i]` represents
 
 **Notice** that you can apply the operation on the **same** pile more than once.
 
-Return _the **minimum** possible total number of stones remaining after applying the _`k`_ operations_.
+Return _the **minimum** possible total number of stones remaining after applying the_ `k` _operations_.
 
 `floor(x)` is the **greatest** integer that is **smaller** than or **equal** to `x` (i.e., rounds `x` down).
 

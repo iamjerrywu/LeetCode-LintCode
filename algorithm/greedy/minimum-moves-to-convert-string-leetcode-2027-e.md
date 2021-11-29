@@ -4,7 +4,7 @@
 
 A **move** is defined as selecting **three** **consecutive characters** of `s` and converting them to `'O'`. Note that if a move is applied to the character `'O'`, it will stay the **same**.
 
-Return _the **minimum** number of moves required so that all the characters of _`s`_ are converted to _`'O'`.
+Return _the **minimum** number of moves required so that all the characters of_ `s` _are converted to_ `'O'`.
 
 **Example 1:**
 
@@ -58,5 +58,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**

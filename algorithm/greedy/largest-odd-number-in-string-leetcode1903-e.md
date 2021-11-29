@@ -4,7 +4,7 @@
 
 
 
-You are given a string `num`, representing a large integer. Return _the **largest-valued odd** integer (as a string) that is a **non-empty substring** of _`num`_, or an empty string _`""`_ if no odd integer exists_.
+You are given a string `num`, representing a large integer. Return _the **largest-valued odd** integer (as a string) that is a **non-empty substring** of_ `num`_, or an empty string_ `""` _if no odd integer exists_.
 
 A **substring** is a contiguous sequence of characters within a string.
 

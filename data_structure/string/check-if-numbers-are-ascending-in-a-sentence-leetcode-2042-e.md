@@ -10,7 +10,7 @@ A sentence is a list of **tokens** separated by a **single** space with no leadi
 
 Given a string `s` representing a sentence, you need to check if **all** the numbers in `s` are **strictly increasing** from left to right (i.e., other than the last number, **each** number is **strictly smaller** than the number on its **right** in `s`).
 
-Return `true`_ if so, or _`false`_ otherwise_.
+Return `true` _if so, or_ `false` _otherwise_.
 
 &#x20;
 
@@ -84,5 +84,5 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**

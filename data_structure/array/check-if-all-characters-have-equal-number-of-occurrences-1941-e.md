@@ -4,7 +4,7 @@
 
 
 
-Given a string `s`, return `true`_ if _`s`_ is a **good** string, or _`false`_ otherwise_.
+Given a string `s`, return `true` _if_ `s` _is a **good** string, or_ `false` _otherwise_.
 
 A string `s` is **good** if **all** the characters that appear in `s` have the **same** number of occurrences (i.e., the same frequency).
 

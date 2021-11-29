@@ -96,7 +96,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O(n) **
+* **Time Complexity: O(n)**&#x20;
 * **Space Complexity: O(n)**
 
 ## Solution

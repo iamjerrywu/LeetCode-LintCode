@@ -11,7 +11,7 @@ To determine how you "say" a digit string, split it into the **minimal** number 
 
 For example, the saying and conversion for digit string `"3322251"`:![](https://assets.leetcode.com/uploads/2020/10/23/countandsay.jpg)
 
-Given a positive integer `n`, return _the _`nth`_ term of the **count-and-say** sequence_.
+Given a positive integer `n`, return _the_ `nth` _term of the **count-and-say** sequence_.
 
 **Example 1:**
 
@@ -68,4 +68,4 @@ class Solution:
 {% endtabs %}
 
 * **Time Complexity:**
-* **Space Complexity: **
+* **Space Complexity:**&#x20;

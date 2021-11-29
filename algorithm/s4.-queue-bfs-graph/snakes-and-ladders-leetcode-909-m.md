@@ -17,7 +17,7 @@ Note that you only take a snake or ladder at most once per move. If the destinat
 
 * For example, suppose the board is `[[-1,4],[-1,3]]`, and on the first move, your destination square is `2`. You follow the ladder to square `3`, but do **not** follow the subsequent ladder to `4`.
 
-Return _the least number of moves required to reach the square _`n2`_. If it is not possible to reach the square, return _`-1`.
+Return _the least number of moves required to reach the square_ `n2`_. If it is not possible to reach the square, return_ `-1`.
 
 &#x20;
 

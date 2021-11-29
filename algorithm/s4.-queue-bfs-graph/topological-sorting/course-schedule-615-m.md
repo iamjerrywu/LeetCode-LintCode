@@ -72,7 +72,7 @@ class Solution:
 * **Time Complexity: O(E + V)**
   * E: Number of dependencies
   * V: Number of Courses
-* **Space Complexity: **
+* **Space Complexity:**&#x20;
   * **O(E + V)**
     * E: Number of dependencies
     * V: Number of Courses

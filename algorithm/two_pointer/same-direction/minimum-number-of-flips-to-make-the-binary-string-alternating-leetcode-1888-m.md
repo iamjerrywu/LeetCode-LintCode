@@ -7,7 +7,7 @@ You are given a binary string `s`. You are allowed to perform two types of opera
 * **Type-1: Remove** the character at the start of the string `s` and **append** it to the end of the string.
 * **Type-2: Pick** any character in `s` and **flip** its value, i.e., if its value is `'0'` it becomes `'1'` and vice-versa.
 
-Return _the **minimum** number of **type-2** operations you need to perform_ _such that _`s` _becomes **alternating**._
+Return _the **minimum** number of **type-2** operations you need to perform_ _such that_ `s` _becomes **alternating**._
 
 The string is called **alternating** if no two adjacent characters are equal.
 

@@ -91,7 +91,7 @@ class Solution:
 * **Time Complexity: O(N + E)**
   * N: nodes amount
   * E: edges amount
-* **Space Complexity: **
+* **Space Complexity:**&#x20;
 
 ****
 

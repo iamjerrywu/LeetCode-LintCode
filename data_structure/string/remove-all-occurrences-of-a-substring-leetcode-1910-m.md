@@ -6,7 +6,7 @@ Given two strings `s` and `part`, perform the following operation on `s` until *
 
 * Find the **leftmost** occurrence of the substring `part` and **remove** it from `s`.
 
-Return `s`_ after removing all occurrences of _`part`.
+Return `s` _after removing all occurrences of_ `part`.
 
 A **substring** is a contiguous sequence of characters in a string.
 

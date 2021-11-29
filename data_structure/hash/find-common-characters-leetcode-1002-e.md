@@ -2,7 +2,7 @@
 
 ## Problem
 
-Given a string array `words`, return _an array of all characters that show up in all strings within the _`words`_ (including duplicates)_. You may return the answer in **any order**.
+Given a string array `words`, return _an array of all characters that show up in all strings within the_ `words` _(including duplicates)_. You may return the answer in **any order**.
 
 &#x20;
 

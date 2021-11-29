@@ -6,7 +6,7 @@ The **alternating sum** of a **0-indexed** array is defined as the **sum** of th
 
 * For example, the alternating sum of `[4,2,5,3]` is `(4 + 5) - (2 + 3) = 4`.
 
-Given an array `nums`, return _the **maximum alternating sum** of any subsequence of _`nums`_ (after **reindexing** the elements of the subsequence)_.
+Given an array `nums`, return _the **maximum alternating sum** of any subsequence of_ `nums` _(after **reindexing** the elements of the subsequence)_.
 
 *
 

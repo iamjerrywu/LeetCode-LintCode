@@ -12,7 +12,7 @@ A string is called **balanced** if and only if:
 
 You may swap the brackets at **any** two indices **any** number of times.
 
-Return _the **minimum** number of swaps to make _`s` _**balanced**_.
+Return _the **minimum** number of swaps to make_ `s` _**balanced**_.
 
 **Example 1:**
 
@@ -47,7 +47,7 @@ Explanation: The string is already balanced.
 * `n == s.length`
 * `2 <= n <= 106`
 * `n` is even.
-* `s[i]` is either `'[' `or `']'`.
+* `s[i]` is either `'['` or `']'`.
 * The number of opening brackets `'['` equals `n / 2`, and the number of closing brackets `']'` equals `n / 2`.
 
 ## Solution&#x20;

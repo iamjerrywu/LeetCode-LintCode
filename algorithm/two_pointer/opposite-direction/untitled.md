@@ -9,7 +9,7 @@ The **pair sum** of a pair `(a,b)` is equal to `a + b`. The **maximum pair sum**
 Given an array `nums` of **even** length `n`, pair up the elements of `nums` into `n / 2` pairs such that:
 
 * Each element of `nums` is in **exactly one** pair, and
-* The **maximum pair sum **is **minimized**.
+* The **maximum pair sum** is **minimized**.
 
 Return _the minimized **maximum pair sum** after optimally pairing up the elements_.
 

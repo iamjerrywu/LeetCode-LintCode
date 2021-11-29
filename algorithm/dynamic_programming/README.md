@@ -82,7 +82,7 @@ Big Scale problems depends on small scale problem's result
 
 **Backpack DP vs DFS**
 
-**Time complexity: **
+**Time complexity:**&#x20;
 
 * Backpack DP: O(n \* m)
   * n = total items, m = key value

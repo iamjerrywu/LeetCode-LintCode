@@ -12,7 +12,7 @@ Each student will be assigned to **one** mentor, and each mentor will have **one
 
 * For example, if the student's answers were `[1, 0, 1]` and the mentor's answers were `[0, 0, 1]`, then their compatibility score is 2 because only the second and the third answers are the same.
 
-You are tasked with finding the optimal student-mentor pairings to **maximize** the** sum of the compatibility scores**.
+You are tasked with finding the optimal student-mentor pairings to **maximize** the **sum of the compatibility scores**.
 
 Given `students` and `mentors`, return _the **maximum compatibility score sum** that can be achieved._
 

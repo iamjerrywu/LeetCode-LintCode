@@ -91,7 +91,7 @@ class DetectSquares:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity:**
 
 ****
@@ -135,5 +135,5 @@ class DetectSquares:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: **
+* **Time Complexity:**&#x20;
 * **Space Complexity**

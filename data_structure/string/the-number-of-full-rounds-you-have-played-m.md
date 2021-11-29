@@ -10,7 +10,7 @@ Given two strings `startTime` and `finishTime` in the format `"HH:MM"` represent
 
 If `finishTime` is **earlier** than `startTime`, this means you have played overnight (from `startTime` to the midnight and from midnight to `finishTime`).
 
-Return _the **number of full rounds** that you have played if you had started playing at _`startTime`_ and finished at _`finishTime`.
+Return _the **number of full rounds** that you have played if you had started playing at_ `startTime` _and finished at_ `finishTime`.
 
 **Example 1:**
 

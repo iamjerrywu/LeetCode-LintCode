@@ -12,7 +12,7 @@ However, you are allowed to **skip** some rests to be able to arrive on time, me
 
 * For example, suppose traveling the first road takes `1.4` hours and traveling the second road takes `0.6` hours. Skipping the rest after the first road will mean you finish traveling the second road right at the `2` hour mark, letting you start traveling the third road immediately.
 
-Return _the **minimum number of skips required** to arrive at the meeting on time, or_ `-1`_ if it is** impossible**_.
+Return _the **minimum number of skips required** to arrive at the meeting on time, or_ `-1` _if it is **impossible**_.
 
 **Example 1:**
 

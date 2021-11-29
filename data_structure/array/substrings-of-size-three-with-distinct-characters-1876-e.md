@@ -4,7 +4,7 @@
 
 A string is **good** if there are no repeated characters.
 
-Given a string `s`​​​​​, return _the number of **good substrings** of length **three **in _`s`​​​​​​.
+Given a string `s`​​​​​, return _the number of **good substrings** of length **three** in_ `s`​​​​​​.
 
 Note that if there are multiple occurrences of the same substring, every occurrence should be counted.
 

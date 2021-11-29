@@ -6,7 +6,7 @@ You are given a string `num`, which represents a large integer. You are also giv
 
 You may choose to **mutate** any substring of `num`. To mutate a substring, replace each digit `num[i]` with the digit it maps to in `change` (i.e. replace `num[i]` with `change[num[i]]`).
 
-Return _a string representing the **largest** possible integer after **mutating** (or choosing not to) any substring of _`num`.
+Return _a string representing the **largest** possible integer after **mutating** (or choosing not to) any substring of_ `num`.
 
 A **substring** is a contiguous sequence of characters within the string.
 

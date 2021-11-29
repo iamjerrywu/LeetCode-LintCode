@@ -8,7 +8,7 @@ You are given a **0-indexed** integer array `nums`. For each index `i` (`1 <= i 
 * `1`, if `nums[i - 1] < nums[i] < nums[i + 1]`, and the previous condition is not satisfied.
 * `0`, if none of the previous conditions holds.
 
-Return_ the **sum of beauty** of all _`nums[i]`_ where _`1 <= i <= nums.length - 2`.
+Return _the **sum of beauty** of all_ `nums[i]` _where_ `1 <= i <= nums.length - 2`.
 
 **Example 1:**
 

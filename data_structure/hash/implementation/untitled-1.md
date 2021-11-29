@@ -48,7 +48,7 @@ Follow the problem guideline
 
 ### Algorithm
 
-congruence modulo principle: (a _ b ) % MOD = ((a % MOD) _ (b % MOD)) % MOD
+congruence modulo principle: (a _b ) % MOD = ((a % MOD)_ (b % MOD)) % MOD
 
 #### Step by step
 
