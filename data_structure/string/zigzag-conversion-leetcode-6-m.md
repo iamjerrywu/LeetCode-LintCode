@@ -89,8 +89,34 @@ class Solution:
 {% endtab %}
 
 {% tab title="Java" %}
-```java
+```cpp
+class Solution {
+public:
+    string convert(string s, int numRows) {
+        if (numRows == 1) return s;
+        
+        vector<string> rows(min(numRows, int(s.size())));
+        
+        int idx = 0;
+        int inc = -1;
+        
+        for (int i = 0; i < s.size(); i++) {
+            if (i%(numRows - 1) == 0) {
+                inc*=-1;
+            }
+            rows[idx]+=s[i];
+            idx+=inc;
+        }
+        string res;
+        for (string row : rows) res+=row;
+        return res;    
+    }
+};
 ```
+{% endtab %}
+
+{% tab title="C++" %}
+
 {% endtab %}
 {% endtabs %}
 
