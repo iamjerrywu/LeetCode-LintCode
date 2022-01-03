@@ -18,11 +18,6 @@
 ```java
 ```
 {% endtab %}
-
-{% tab title="C++" %}
-```cpp
-```
-{% endtab %}
 {% endtabs %}
 
 * **Time Complexity:**

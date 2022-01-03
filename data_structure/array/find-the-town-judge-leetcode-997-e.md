@@ -79,6 +79,11 @@ class Solution:
 ```java
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+```
+{% endtab %}
 {% endtabs %}
 
 * **Time Complexity: O(n)**
