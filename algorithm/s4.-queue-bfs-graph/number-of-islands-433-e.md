@@ -1,4 +1,4 @@
-# Number of Islands 433 \(E\)
+# Number of Islands 433 (E)
 
 ## Problem
 
@@ -10,7 +10,7 @@ Find the number of islands.Have you met this question in a real interview?  YesP
 
 **Example 1:**
 
-```text
+```
 Input:
 [
   [1,1,0,0,0],
@@ -25,7 +25,7 @@ Output:
 
 **Example 2:**
 
-```text
+```
 Input:
 [
   [1,1]
@@ -85,18 +85,67 @@ class Solution:
 {% endtab %}
 
 {% tab title="java" %}
+```cpp
 ```
+{% endtab %}
 
+{% tab title="Untitled" %}
+```cpp
+
+class Solution {
+public:
+    int numIslands(vector<vector<char>>& grid) {
+        queue<pair<int, int>> queue;
+        int ans = 0;
+        for (int i = 0; i < grid.size(); i++) {
+            for (int j = 0; j < grid[0].size(); j++) {
+                if (grid[i][j] == '1') {
+                    grid[i][j] = '0';
+                    queue.push(pair(i, j));
+                    bfs(queue, grid);
+                    ans+=1;
+                }
+            }
+        }
+        return ans;
+    }
+    
+    void bfs (queue<pair<int, int>> &queue, vector<vector<char>> &grid) {
+        vector<int> dx = {0, 1, 0, -1};
+        vector<int> dy = {1, 0, -1, 0};
+        
+        while (!queue.empty()) {
+            pair<int, int> pos = queue.front();
+            queue.pop();
+            for (int i = 0; i < dx.size(); i++) {
+                int new_x = pos.first + dx[i];
+                int new_y = pos.second + dy[i];
+                
+                if (isValid(new_x, new_y, grid)) {
+                    grid[new_x][new_y] = '0';
+                    queue.push(pair(new_x, new_y));
+                }
+            }
+        }
+    }
+    
+    bool isValid(int new_x, int new_y, vector<vector<char>> &grid) {
+        if ((new_x >= 0) && (new_x < grid.size()) && (new_y >= 0) && (new_y < grid[0].size())) {
+            return grid[new_x][new_y] == '1';
+        }
+        return false;
+    }
+};
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(m \* n\)**
-  * m: len\(grid\)
-  * n: len\(grid\[0\]\)
-* **Space Complexity: O\(min\(m, n\)**
+* **Time Complexity: O(m \* n)**
+  * m: len(grid)
+  * n: len(grid\[0])
+* **Space Complexity: O(min(m, n)**
 
 ## Solution - DFS
 
@@ -149,18 +198,17 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(m \* n\)**
-  * m: len\(grid\)
-  * n: len\(grid\[0\]\)
-* **Space Complexity: O\(m \* n\)**
-  * Max recursion depth O\(m \* n\)
+* **Time Complexity: O(m \* n)**
+  * m: len(grid)
+  * n: len(grid\[0])
+* **Space Complexity: O(m \* n)**
+  * Max recursion depth O(m \* n)
 
 ## Solution - Union Find
 
@@ -234,4 +282,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-
