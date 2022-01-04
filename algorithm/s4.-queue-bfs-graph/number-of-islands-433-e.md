@@ -200,6 +200,51 @@ class Solution:
 ```
 ```
 {% endtab %}
+
+{% tab title="c++" %}
+```cpp
+
+class Solution {
+public:
+    int numIslands(vector<vector<char>>& grid) {
+        int ans = 0;
+        for (int i = 0; i < grid.size(); i++) {
+            for (int j = 0; j < grid[0].size(); j++) {
+                if (grid[i][j] == '1') {
+                    grid[i][j] = '0';
+                    dfs(i, j, grid);
+                    ans+=1;
+                }
+            }
+        }
+        return ans;
+    }
+    
+    void dfs (int x, int y, vector<vector<char>> &grid) {
+        vector<int> dx = {0, 1, 0, -1};
+        vector<int> dy = {1, 0, -1, 0};
+        
+        
+        for (int i = 0; i < dx.size(); i++) {
+            int new_x = x + dx[i];
+            int new_y = y + dy[i];
+
+            if (isValid(new_x, new_y, grid)) {
+                grid[new_x][new_y] = '0';
+                dfs(new_x, new_y, grid);
+            }
+        }
+    }
+    
+    bool isValid(int new_x, int new_y, vector<vector<char>> &grid) {
+        if ((new_x >= 0) && (new_x < grid.size()) && (new_y >= 0) && (new_y < grid[0].size())) {
+            return grid[new_x][new_y] == '1';
+        }
+        return false;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
