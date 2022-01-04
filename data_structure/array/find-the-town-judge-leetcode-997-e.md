@@ -52,7 +52,7 @@ Output: -1
 
 
 
-## Solution&#x20;
+## Solution - Array
 
 {% tabs %}
 {% tab title="Python" %}
@@ -82,6 +82,101 @@ class Solution:
 
 {% tab title="C++" %}
 ```cpp
+class Solution {
+public:
+    int findJudge(int n, vector<vector<int>>& trust) {
+        if (n == 0) return -1;
+        
+        if ((n == 1) && (trust.size() == 0)) {
+            return 1;
+        }
+        
+        int trusted[n + 1];
+        int trust_others[n + 1];
+        
+        for (int i = 0; i < n + 1; i++) {
+            trusted[i] = 0;
+            trust_others[i] = 0;
+        }
+        // the variable sized array must initialized in this way
+        for (vector<int> vec : trust) {
+            trusted[vec[1]]+=1;
+            trust_others[vec[0]]+=1;
+        }
+        
+        for (int i = 0; i < sizeof(trusted)/sizeof(trusted[0]); i++) {
+            if (( trusted[i] == (n - 1)) && (trust_others[i] == 0)) {
+                return i;
+            } 
+        }
+        return -1;
+    }
+};
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
+
+****
+
+## Solution - HashMap
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+import collections
+class Solution:
+    def findJudge(self, n: int, trust: List[List[int]]) -> int:
+        
+        if n == 1 and not trust:
+            return 1
+        
+        trusted = collections.defaultdict(int)
+        trust_others = collections.defaultdict(int)
+        
+        for p1, p2 in trust:
+            trusted[p2]+=1
+            trust_others[p1]+=1
+        # print(trusted, trust_others)
+        for k, v in trusted.items():
+            if v == n - 1 and trust_others[k] == 0:
+                return k
+        return -1
+```
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int findJudge(int n, vector<vector<int>>& trust) {
+        if ((n == 1) && (trust.size() == 0)) {
+            return 1;
+        }
+        
+        map<int, int> trusted;
+        map<int, int> trust_others;
+        
+        for (vector<int> vec : trust) {
+            trusted[vec[1]]+=1;
+            trust_others[vec[0]]+=1;
+        }
+        
+        for (const auto& kv : trusted) {
+            if ((kv.second == (n - 1)) && (trust_others[kv.first] == 0)) {
+                return kv.first;
+            } 
+        }
+        return -1;
+    }
+};
 ```
 {% endtab %}
 {% endtabs %}
