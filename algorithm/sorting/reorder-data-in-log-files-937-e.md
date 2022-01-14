@@ -65,6 +65,37 @@ class Solution:
         
 ```
 {% endtab %}
+
+{% tab title="c++" %}
+```cpp
+class Solution {
+public:
+    static bool compare(string str1, string str2) {
+        // sort by contents
+        string str1Contents = str1.substr(str1.find(' '));
+        string str2Contents = str2.substr(str2.find(' '));
+        
+        return str1Contents == str2Contents ? str1 < str2 : str1Contents < str2Contents;
+    }
+    vector<string> reorderLogFiles(vector<string>& logs) {
+        vector<string> result;
+        int count = 0;
+        
+        for (auto log : logs) {
+            if (log.back() <= 'z' and log.back() >= 'a') {
+                result.insert(result.begin(), log);
+                count+=1;
+            } else {
+                result.push_back(log);
+            }
+        }
+        
+        sort(result.begin(), result.begin() + count, compare);
+        return result;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
