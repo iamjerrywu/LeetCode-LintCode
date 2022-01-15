@@ -1,6 +1,6 @@
 # The kth Factor of n (LeetCode 1492) (M)
 
-## Problem
+## \`\`\`fProblem
 
 Given two positive integers `n` and `k`.
 
@@ -79,6 +79,25 @@ class Solution:
 ```java
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int kthFactor(int n, int k) {
+    
+        int index = 0;
+        for (int i = 1; i <= n; i++) {
+            if ((n%i) == 0) {
+                index+=1;    
+            }
+            if (index == k) return i;    
+        }
+        return -1;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 * **Time Complexity: O(n)**
@@ -114,6 +133,37 @@ class Solution:
 
 {% tab title="Java" %}
 ```java
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int kthFactor(int n, int k) {
+    
+        int index = 0;
+        int upper = int(sqrt(n));
+        for (int i = 1; i <= upper; i++) {
+            if ((n%i) == 0) {
+                index+=1;    
+            }
+            if (index == k) return i;    
+        }
+        if ((upper * upper) == n) k+=1;
+        cout << k << index << endl;
+        int newIndex = 0;
+        for (int i = 1; i <= upper; i++) {
+            if ((n%i) == 0) {
+                newIndex+=1;
+                if(((index * 2) - newIndex + 1) == k) {
+                    return n/i;
+                }
+            }
+        }
+        return -1;
+    }
+};
 ```
 {% endtab %}
 {% endtabs %}

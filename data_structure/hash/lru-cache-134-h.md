@@ -139,3 +139,72 @@ class LRUCache:
 
 * **Time Complexity: O(1)**
 * **Space Complexity: O(1)**
+
+## Solution **- Unorderd\_Map**
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+```
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class LRUCache {
+public:
+    LRUCache(int capacity) {
+        maxSize = capacity;
+    }
+    
+    int get(int key) {
+        if (hashMap.find(key) != hashMap.end()) {
+            int value = hashMap[key]->second;
+            updateCache(key, value);
+            return value;
+        }     
+        return -1;
+    }
+    
+    void put(int key, int value) {
+        if (hashMap.find(key) != hashMap.end()) {
+            updateCache(key, value);
+        } else {
+            cache.push_front(pair(key, value));
+            hashMap[key] = cache.begin();
+        }
+        
+        if (hashMap.size() > maxSize) {
+            hashMap.erase(cache.back().first);
+            cache.pop_back();
+        }
+    }
+
+private:
+    list<pair<int, int>> cache;
+    unordered_map<int, list<pair<int, int>> :: iterator> hashMap;
+    int maxSize;
+    
+    void updateCache(int key, int value) {
+        cache.erase(hashMap[key]);
+        cache.push_front(pair(key, value));
+        hashMap[key] = cache.begin();
+    }
+};
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache* obj = new LRUCache(capacity);
+ * int param_1 = obj->get(key);
+ * obj->put(key,value);
+ */
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity:**
+* **Space Complexity:**
