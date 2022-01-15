@@ -1,4 +1,4 @@
-# Maximum Unit on a Truck \(LeetCode 1710\) \(E\)
+# Maximum Unit on a Truck (LeetCode 1710) (E)
 
 ## Problem
 
@@ -13,7 +13,7 @@ Return _the **maximum** total number of **units** that can be put on the truck._
 
 **Example 1:**
 
-```text
+```
 Input: boxTypes = [[1,3],[2,2],[3,1]], truckSize = 4
 Output: 8
 Explanation: There are:
@@ -26,7 +26,7 @@ The total number of units will be = (1 * 3) + (2 * 2) + (1 * 1) = 8.
 
 **Example 2:**
 
-```text
+```
 Input: boxTypes = [[5,10],[2,5],[4,7],[3,9]], truckSize = 10
 Output: 91
 ```
@@ -37,7 +37,7 @@ Output: 91
 * `1 <= numberOfBoxesi, numberOfUnitsPerBoxi <= 1000`
 * `1 <= truckSize <= 106`
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -56,11 +56,35 @@ class Solution:
         return ans
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    static bool compare(vector<int> b1, vector<int> b2) {
+        return b1[1] > b2[1];
+    }
+    
+    int maximumUnits(vector<vector<int>>& boxTypes, int truckSize) {
+        sort(boxTypes.begin(), boxTypes.end(), compare);
+
+        int res = 0;
+        for (vector<int> box : boxTypes) {
+            for (int i = 0; i < box[0]; i++) {
+                if (truckSize == 0) return res;
+                res+=box[1];
+                truckSize-=1;
+            }
+        }
+        return res;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:  O\(nlogn\)**
-  * n: len\(boxTypes\)
-* **Space Complexity:  O\(n\)**
-
+* **Time Complexity:  O(nlogn)**
+  * n: len(boxTypes)
+* **Space Complexity:  O(n)**
