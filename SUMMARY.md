@@ -629,6 +629,7 @@
   * [House Rober III 535 (M)](algorithm/dynamic\_programming/house-rober-iii-535-m.md)
   * [Minimum Adjustment Cost 91 (M)](algorithm/dynamic\_programming/91.-minimum-adjustment-cost-m.md)
   * [Minimum Partition 724 (M)](algorithm/dynamic\_programming/724.-minimum-partition.md)
+  * [Flip String to Monotone Increasing (LeetCode 926)](algorithm/dynamic\_programming/flip-string-to-monotone-increasing-leetcode-926.md)
   * [Dyeing Problem 1444 (M)](algorithm/dynamic\_programming/dyeing-problem-1444-m.md)
   * [Maximum Number of Points with Cost 1937 (M)](algorithm/dynamic\_programming/maximum-number-of-points-with-cost-1937-m.md)
   * [Maximum Earnings From Taxi (LeetCode 2008) (M)](algorithm/dynamic\_programming/maximum-earnings-from-taxi-leetcode-2008-m.md)
