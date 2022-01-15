@@ -95,6 +95,8 @@ private:
 
 ## Solution - Sort
 
+![](<../../.gitbook/assets/Screen Shot 2022-01-15 at 5.48.51 PM.png>)
+
 {% tabs %}
 {% tab title="Python" %}
 ```python
