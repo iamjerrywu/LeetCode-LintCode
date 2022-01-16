@@ -1,14 +1,14 @@
-# Meeting Rooms 920 \(E\)
+# Meeting Rooms 920 (E)
 
 ## Problem
 
 Given an array of meeting time intervals consisting of start and end times `[[s1,e1],[s2,e2],...] (si < ei)`, determine if a person could attend all meetings.
 
-\(0,8\),\(8,10\) is not conflict at 8Example
+(0,8),(8,10) is not conflict at 8Example
 
 **Example1**
 
-```text
+```
 Input: intervals = [(0,30),(5,10),(15,20)]
 Output: false
 Explanation: 
@@ -17,14 +17,14 @@ Explanation:
 
 **Example2**
 
-```text
+```
 Input: intervals = [(5,8),(9,15)]
 Output: true
 Explanation: 
 Two times will not conflict 
 ```
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -57,10 +57,29 @@ class Solution:
         return True
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    bool canAttendMeetings(vector<vector<int>>& intervals) {
+        if (intervals.size() == 0) return true;
+        
+        sort(intervals.begin(), intervals.end());
+        
+        for (int i = 0; i < intervals.size() - 1; i++) {
+            if (intervals[i][1] > intervals[i + 1][0]) {
+                return false;
+            }
+        }
+        return true;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
 * **Time Complexity:**
 * **Space Complexity:**
-
