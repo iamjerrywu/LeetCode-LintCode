@@ -89,6 +89,65 @@ class Solution:
                         domain_rec[(arr[i], arr[j], arr[k])]+=1
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    vector<string> mostVisitedPattern(vector<string>& username, vector<int>& timestamp, vector<string>& website) {
+        unordered_map<string, map<int, string>> records;
+        unordered_map<string, int> freq;
+        
+        for (int i = 0; i < username.size(); i++) {
+            records[username[i]][timestamp[i]] = website[i];
+        }
+        
+        for (auto kv1 : records) {
+            vector<string> webRec;
+            for (auto kv2 : kv1.second) {
+                webRec.push_back(kv2.second);
+            }
+
+            // every three is pattern
+            if (webRec.size() >= 3) {
+                update(webRec, freq);
+            }
+        }
+           
+        string maxPattern = "";
+        int maxCnt = 0;
+        
+        for (auto kv : freq) {
+            if (kv.second == maxCnt) {
+                maxPattern = min(maxPattern, kv.first);
+            } else if (kv.second > maxCnt) {
+                maxPattern = kv.first;
+                maxCnt = kv.second;
+            }
+        }
+        int firstSpace = maxPattern.find(" ");
+        int secondSpace = maxPattern.substr(firstSpace + 1).find(" ");
+        return {maxPattern.substr(0, firstSpace), maxPattern.substr(firstSpace + 1, secondSpace), maxPattern.substr(firstSpace + 1).substr(secondSpace + 1)};
+    }
+
+private:
+    void update(vector<string> &webRec, unordered_map<string, int> &freq) {
+        // need to ensure for one user, the pattern can only be count once
+        set<string> visited;
+        for (int i = 0; i < webRec.size(); i++) 
+            for (int j = i + 1; j < webRec.size(); j ++) 
+                for (int k = j + 1; k < webRec.size(); k++) {
+                    string key = webRec[i] +" " + webRec[j] + " " + webRec[k];
+                    if (visited.count(key) == 0) {
+                        visited.insert(key);
+                        if (freq.count(key) == 0) freq[key] = 1;
+                        else freq[key]+=1;
+                    }
+                }
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 * **Time Complexity:**&#x20;
