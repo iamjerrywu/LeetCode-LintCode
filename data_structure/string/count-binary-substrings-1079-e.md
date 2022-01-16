@@ -115,6 +115,33 @@ class Solution:
         return ans
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int countBinarySubstrings(string s) {
+        int prevCnt = 0, curCnt = 1;
+        
+        int i = 0, res = 0;
+        
+        while (i < s.length()) {
+            while ((i < s.length() - 1) && (s[i] == s[i + 1])) {
+                i+=1;
+                curCnt+=1;
+            }
+            
+            if (prevCnt > 0) res+=min(prevCnt, curCnt);
+            prevCnt = curCnt;
+            curCnt = 1;
+            i+=1;
+        }
+        
+        return res;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis

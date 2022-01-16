@@ -434,6 +434,7 @@
     * [Window Sum 604 (E)](algorithm/two\_pointer/same-direction/604.-window-sum.md)
     * [Max Consecutive Ones III (LeetCode 1004) (M)](algorithm/two\_pointer/same-direction/max-consecutive-ones-iii-leetcode-1004-m.md)
     * [Expressive Words 1008 (M)](algorithm/two\_pointer/same-direction/expressive-words-1008-m.md)
+    * [Minimum Swaps to Group All 1's Together (LeetCode 1151) (M)](algorithm/two\_pointer/same-direction/minimum-swaps-to-group-all-1s-together-leetcode-1151-m.md)
     * [Heaters 1219 (M)](algorithm/two\_pointer/same-direction/heaters-1219-m.md)
     * [Meeting Scheduler](algorithm/two\_pointer/same-direction/meeting-scheduler.md)
     * [Sum of Two Strings 1343 (E)](algorithm/two\_pointer/same-direction/sum-of-two-strings-1343-e.md)
