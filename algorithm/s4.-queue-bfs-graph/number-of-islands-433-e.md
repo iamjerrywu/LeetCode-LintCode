@@ -89,9 +89,9 @@ class Solution:
 ```
 {% endtab %}
 
-{% tab title="Untitled" %}
+{% tab title="C++ (1)" %}
 ```cpp
-
+// not using visited
 class Solution {
 public:
     int numIslands(vector<vector<char>>& grid) {
@@ -132,6 +132,57 @@ public:
     bool isValid(int new_x, int new_y, vector<vector<char>> &grid) {
         if ((new_x >= 0) && (new_x < grid.size()) && (new_y >= 0) && (new_y < grid[0].size())) {
             return grid[new_x][new_y] == '1';
+        }
+        return false;
+    }
+};
+```
+{% endtab %}
+
+{% tab title="C++ (2)" %}
+```cpp
+class Solution {
+public:
+    int numIslands(vector<vector<char>>& grid) {
+        set<pair<int, int>> visited;
+        int ans = 0;
+        queue<pair<int, int>> queue;
+        
+        for (int i = 0; i < grid.size(); i++) {
+            for (int j = 0; j < grid[0].size(); j++) {
+                pair<int, int> pos = pair(i, j);
+                if ((visited.count(pos) == 0) && (grid[i][j] == '1')) {
+                    visited.insert(pos);
+                    queue.push(pos);
+                    bfs(queue, grid, visited);
+                    ans+=1;
+                }
+            }
+        }
+        return ans;
+    }
+    
+    void bfs(queue<pair<int, int>> &queue, vector<vector<char>> &grid, set<pair<int, int>> &visited) {
+        vector<int> dx = {1, 0, -1,  0};
+        vector<int> dy = {0, 1,  0, -1};
+        
+        while (!queue.empty()) {
+            pair<int, int> curPos = queue.front();
+            queue.pop();
+
+            for(int i = 0; i < dx.size(); i++) {
+                pair<int, int> newPos = pair(curPos.first + dx[i], curPos.second + dy[i]);
+                if (isValid(newPos, grid, visited)) {
+                    queue.push(newPos);
+                    visited.insert(newPos);
+                }
+            }
+        }
+    }
+    
+    bool isValid(pair<int, int> &newPos, vector<vector<char>> &grid, set<pair<int, int>> &visited) {
+        if ((newPos.first >= 0) && (newPos.first < grid.size()) && (newPos.second >= 0) && (newPos.second < grid[0].size())) {
+            return ((visited.count(newPos) == 0) && (grid[newPos.first][newPos.second] == '1'));
         }
         return false;
     }
