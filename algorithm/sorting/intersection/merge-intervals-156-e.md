@@ -189,6 +189,36 @@ class Solution:
         return res
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    vector<vector<int>> merge(vector<vector<int>>& intervals) {
+        sort(intervals.begin(), intervals.end(), compare);
+        
+        vector<vector<int>> res;
+        int left = intervals[0][0], right = intervals[0][1];
+        
+        for (vector<int> interval : intervals) {
+            if ((res.size() == 0) or (res.back()[1] < interval[0])) {
+                res.push_back(interval);
+            } else {
+                res.back()[1] = max(res.back()[1], interval[1]);
+            }
+        }
+        
+        return res;
+    }
+    
+
+private:
+    static bool compare(vector<int> v1, vector<int> v2) {
+        return v1[0] == v2[0] ? v1[1] < v2[1] : v1[0] < v2[0];
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
