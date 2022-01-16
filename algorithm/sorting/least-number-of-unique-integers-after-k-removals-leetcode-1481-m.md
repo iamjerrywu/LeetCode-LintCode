@@ -1,13 +1,14 @@
-# Least Number of Unique Integers after K Removals \(LeetCode 1481\) \(M\)
+# Least Number of Unique Integers after K Removals (LeetCode 1481) (M)
 
 ## Problem
 
 Given an array of integers `arr` and an integer `k`. Find the _least number of unique integers_ after removing **exactly** `k` elements**.**
 
-1. 
+1.
+
 **Example 1:**
 
-```text
+```
 Input: arr = [5,5,4], k = 1
 Output: 1
 Explanation: Remove the single 4, only 5 is left.
@@ -15,7 +16,7 @@ Explanation: Remove the single 4, only 5 is left.
 
 **Example 2:**
 
-```text
+```
 Input: arr = [4,3,1,1,3,3,2], k = 3
 Output: 2
 Explanation: Remove 4, 2 and either one of the two 1s or three 3s. 1 and 3 will be left.
@@ -27,7 +28,7 @@ Explanation: Remove 4, 2 and either one of the two 1s or three 3s. 1 and 3 will 
 * `1 <= arr[i] <= 10^9`
 * `0 <= k <= arr.length`
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -55,10 +56,41 @@ class Solution:
             return ans
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int findLeastNumOfUniqueInts(vector<int>& arr, int k) {
+        unordered_map<int, int> counter;
+        
+        for (int val : arr) {
+            if (counter.count(val) == 0) counter[val] = 1;
+            else counter[val]+=1;
+        }
+        
+        vector<int> appears;
+        for (auto &kv : counter) {
+            appears.push_back(kv.second);
+        }
+        
+        sort(appears.begin(), appears.end());
+        
+        for (int i = 0; i < appears.size(); i++) {
+            while (appears[i]) {
+                if (k == 0) return appears.size() - i;
+                k-=1;
+                appears[i]-=1;
+            }
+        }
+        return 0;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:  O\(nlogn\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity:  O(nlogn)**
+* **Space Complexity: O(n)**
