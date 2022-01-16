@@ -1,4 +1,4 @@
-# Meeting Rooms II 919 \(M\)
+# Meeting Rooms II 919 (M)
 
 ## Problem
 
@@ -6,7 +6,7 @@ Given an array of meeting time intervals consisting of start and end times `[[s1
 
 **Example1**
 
-```text
+```
 Input: intervals = [(0,30),(5,10),(15,20)]
 Output: 2
 Explanation:
@@ -17,7 +17,7 @@ room2: (5,10),(15,20)
 
 **Example2**
 
-```text
+```
 Input: intervals = [(2,7)]
 Output: 1
 Explanation: 
@@ -59,15 +59,43 @@ class Solution:
         return max_cnt
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int minMeetingRooms(vector<vector<int>>& intervals) {
+        
+        vector<vector<int>> boundaries;
+        for (vector<int> interval : intervals) {
+            boundaries.push_back(vector<int>{interval[0], 1});
+            boundaries.push_back(vector<int>{interval[1], -1});
+        }
+        
+        sort(boundaries.begin(), boundaries.end());
+        
+        int needs = 0;
+        int ans = -INT_MAX;
+        for (vector<int> boundary : boundaries) {
+            needs+=boundary[1];
+            ans = max(needs, ans);
+        }
+        
+        return ans;
+        
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-  * n: the length of the intervals 
-  * Traverse: O\(n\)
-  * Sort: O\(nlogn\)
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(nlogn)**
+  * n: the length of the intervals&#x20;
+  * Traverse: O(n)
+  * Sort: O(nlogn)
+* **Space Complexity: O(n)**
 
 
 
@@ -96,9 +124,9 @@ def minMeetingRooms(self, intervals):
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(T\)**
-  * T: the max end time 
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(T)**
+  * T: the max end time&#x20;
+* **Space Complexity: O(n)**
 
 ## Solution - Heap
 
@@ -137,7 +165,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-  * n: len\(intervals\)
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(nlogn)**
+  * n: len(intervals)
+* **Space Complexity: O(n)**
