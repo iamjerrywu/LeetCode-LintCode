@@ -75,58 +75,6 @@ class Solution:
 ```java
 ```
 {% endtab %}
-
-{% tab title="C++" %}
-```cpp
-class Solution {
-public:
-    int sumSubarrayMins(vector<int>& arr) {
-        int n = arr.size();
-        int left[n];
-        for (int i = 0; i < n; i++) left[i] = 1;
-        vector<vector<int>> dec_q;
-        dec_q.push_back(vector<int>{arr[0], 1});
-        
-        for (int i = 1; i < n; i++) {
-            // here need to write <=
-            while ((dec_q.size() > 0) && (arr[i] <= dec_q.back()[0])) {
-                left[i]+=dec_q.back()[1];
-                dec_q.pop_back();
-            }
-            dec_q.push_back(vector<int>{arr[i], left[i]});
-        }
-        
-        int right[n];
-        for (int i = 0; i < n; i++) right[i] = 1;
-        dec_q.clear();
-        dec_q.push_back(vector<int>{arr[n - 1], 1});
-        
-        for (int i = n - 2; i >= 0; i--) {
-            // here only need to write <, since '=' condition is already considered in left side situation
-            while ((dec_q.size() > 0) && (arr[i] < dec_q.back()[0])) {
-                right[i]+=dec_q.back()[1];
-                dec_q.pop_back();
-            }
-            dec_q.push_back(vector<int>{arr[i], right[i]});
-        }
-        
-        int ans = 0;
-        long modulo = 1e9 + 7;
-        
-        for (int i = 0; i < n; i++) {
-            long sumVal = arr[i]; 
-            sumVal*= left[i]; 
-            sumVal*= right[i];
-            sumVal%=modulo;
-            ans+=sumVal;
-            ans%=modulo;
-        }
-        return ans;
-        
-    }
-};
-```
-{% endtab %}
 {% endtabs %}
 
 * **Time Complexity:**
