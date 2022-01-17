@@ -112,6 +112,30 @@ class Solution:
 ```
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    string longestCommonPrefix(vector<string>& strs) {
+        if (strs.size() == 1) return strs[0];
+        
+        string prefix = strs[0];
+        for (int i = 1; i < strs.size(); i++) {
+            int upper = min(prefix.length(), strs[i].length());
+            prefix = prefix.substr(0, upper);
+            for (int j = 0; j < upper; j++) {
+                if (prefix[j] != strs[i][j]) {
+                    prefix = prefix.substr(0, j);
+                    break;
+                }
+            }
+        }
+        return prefix;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
