@@ -65,6 +65,46 @@ class Solution:
         return num_choose == numCourses
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+        int inDegrees[numCourses];
+        unordered_map<int, vector<int>> nxts;
+        
+        // init data structure
+        for (int i = 0; i < numCourses; i++) inDegrees[i] = 0;
+        for (vector<int> pr : prerequisites) {
+            inDegrees[pr[0]]+=1;
+            nxts[pr[1]].push_back(pr[0]);
+        }
+        
+        queue<int> queue;
+        // if indegree is 0, means it can be started courses
+        for (int i = 0; i < numCourses; i++) {
+            if (inDegrees[i] == 0) {
+                queue.push(i);
+            }
+        }
+        int taken = 0;
+        while (!queue.empty()) {
+            int curCourse = queue.front();
+            taken+=1;
+            queue.pop();
+            for (int nxtCourse : nxts[curCourse]) {
+                inDegrees[nxtCourse]-=1;
+                if (inDegrees[nxtCourse] == 0) {
+                    queue.push(nxtCourse);
+                } 
+            }
+        }
+        return taken == numCourses;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
