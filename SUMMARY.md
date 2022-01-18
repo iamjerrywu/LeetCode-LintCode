@@ -477,6 +477,7 @@
   * [Wood Cut 183 (H)](algorithm/binary\_search/wood-cut-183-h.md)
   * [Smallest Rectangle Enclosing Black Pixels 600 (H)](algorithm/binary\_search/600.-smallest-rectangle-enclosing-black-pixels.md)
   * [Capacity To Ship Packages Within D Days (LeetCode 1011) (M)](algorithm/binary\_search/capacity-to-ship-packages-within-d-days-leetcode-1011-m.md)
+  * [Count Negative Numbers in a Sorted Matrix (LeetCode 1351) (E)](algorithm/binary\_search/count-negative-numbers-in-a-sorted-matrix-leetcode-1351-e.md)
   * [Find the Distance Value Between Two Arrays (LeetCode 1385) (E)](algorithm/binary\_search/find-the-distance-value-between-two-arrays-leetcode-1385-e.md)
   * [leftmost Column with at Least a One (LeetCode 1428) (M)](algorithm/binary\_search/leftmost-column-with-at-least-a-one-leetcode-1428-m.md)
   * [Minimum Speed to Arrive on Time (LeetCode1870) (M)](algorithm/binary\_search/minimum-speed-to-arrive-on-time-1870-m.md)
