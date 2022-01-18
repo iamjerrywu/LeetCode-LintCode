@@ -669,6 +669,7 @@
 * [Mathmatics](other/mathmatics/README.md)
   * [Trailing Zeros 2 (E)](other/mathmatics/trailing-zeros-2-e.md)
   * [Fizz Buzz 9 (E)](other/mathmatics/fizz-buzz-9-e.md)
+  * [Multiply Strings (LeetCode 43) (M)](other/mathmatics/multiply-strings-leetcode-43-m.md)
   * [Fast Power 140 (M)](other/mathmatics/fast-power-140-m.md)
   * [Prime Factorization 235 (E)](other/mathmatics/235.-prime-factorization-e.md)
   * [Bulb Switcher 319 (M)](other/mathmatics/bulb-switcher-319-m.md)
