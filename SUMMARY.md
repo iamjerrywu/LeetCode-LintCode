@@ -534,6 +534,7 @@
   * [N-Queens 33 (M)](algorithm/dfs/33.-n-queens-m.md)
   * [N-Queens II 34 (M)](algorithm/dfs/34.-n-queens-ii-m.md)
   * [k Sum II 90 (M)](algorithm/dfs/90.-k-sum-ii-m.md)
+  * [Restore IP Addresses (LeetCode 93) (M)](algorithm/dfs/restore-ip-addresses-leetcode-93-m.md)
   * [Word Ladders II 121 (H)](algorithm/dfs/word-ladders-ii-121-h.md)
   * [Word Search 123 (M)](algorithm/dfs/word-search-123-m.md)
   * [Word Search II 132 (H)](algorithm/dfs/132.-word-search-ii-h.md)
