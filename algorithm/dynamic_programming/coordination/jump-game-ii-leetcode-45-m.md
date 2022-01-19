@@ -50,6 +50,12 @@ class Solution:
             for j in range(nums[i] + 1):
                 if i + j < n:
                     dp[i + j] = min(dp[i + j], dp[i] + 1)
+        '''
+        for i in range(n):
+            for j in range(i, i + nums[i] + 1):
+                if j < n and dp[i] != float('inf'):
+                    dp[j] = min(dp[j], dp[i] + 1) 
+        '''            
         return dp[-1]
 ```
 {% endtab %}
