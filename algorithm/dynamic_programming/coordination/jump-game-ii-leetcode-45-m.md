@@ -69,4 +69,40 @@ class Solution:
 * **Time Complexity: O(n^2)**
 * **Space Complexity: O(n)**
 
+## Solution - Greedy
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def jump(self, nums: List[int]) -> int:
+        n = len(nums)
+        farthest = 0
+        steps = 0
+        cur = 0
+        
+        for i in range(n - 1):
+            if i <= farthest:
+                farthest = max(farthest, i + nums[i])
+                
+                if i == cur:
+                    print(i, cur, farthest)
+                    steps+=1
+                    cur = farthest
+
+        return steps
+```
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**
+
+****
+
 ****

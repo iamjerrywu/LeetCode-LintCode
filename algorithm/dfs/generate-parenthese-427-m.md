@@ -86,3 +86,42 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
+
+****
+
+## Solution - DFS (2)
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    def generateParenthesis(self, n: int) -> List[str]:
+        res = []
+        self.dfs(0, 0, 0, "", n, res)
+        return  res
+    
+    def dfs(self, index, l_cnt, r_cnt, tmp_s, n, res):
+        if index == 2 * n:
+            res.append(tmp_s)
+        
+        if index > 2 * n:
+            return 
+        
+        # add left
+        if l_cnt < n:
+            self.dfs(index + 1, l_cnt + 1, r_cnt, tmp_s + '(', n, res)
+            
+        # add right (right should always less than the left)
+        if r_cnt < n and r_cnt < l_cnt:
+            self.dfs(index + 1, l_cnt, r_cnt + 1, tmp_s + ')', n, res)
+        
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
