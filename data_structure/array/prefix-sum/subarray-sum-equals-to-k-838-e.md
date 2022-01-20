@@ -68,29 +68,21 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
+import collections
 class Solution:
-    """
-    @param nums: a list of integer
-    @param k: an integer
-    @return: return an integer, denote the number of continuous subarrays whose sum equals to k
-    """
-    def subarraySumEqualsK(self, nums, k):
-        # write your code here
-        if not nums:
-            return 0
-
-        prefix_sum = 0
-        prefix_sum_to_times = {0:1}
+    def subarraySum(self, nums: List[int], k: int) -> int:
         
-        cnt = 0
+        appears = collections.defaultdict(int)
+        appears[0]+=1
+        
+        prefix_sum = 0
+        ans = 0
         for num in nums:
             prefix_sum+=num
-            if prefix_sum - k in prefix_sum_to_times:
-               cnt+=prefix_sum_to_times[prefix_sum - k] 
-            prefix_sum_to_times[prefix_sum] = prefix_sum_to_times.get(prefix_sum, 0) + 1
-
-        return cnt            
-
+            ans+=appears[prefix_sum - k]
+            appears[prefix_sum]+=1
+        return ans
+        
 ```
 {% endtab %}
 

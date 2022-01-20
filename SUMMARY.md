@@ -161,6 +161,7 @@
   * [Longest Absolute File Path 643 (M)](data\_structure/stack/longest-absolute-file-path-643-m.md)
   * [Asteroid Collision (LeetCode  735) (M)](data\_structure/stack/asteroid-collision-leetcode-735-m.md)
   * [Max Stack 859 (H)](data\_structure/stack/859-max-stack-h.md)
+  * [Minimum Add to Make Parentheses Valid (LeetCode 921) (M)](data\_structure/stack/minimum-add-to-make-parentheses-valid-leetcode-921-m.md)
   * [Basic Calculator 978 (M)](data\_structure/stack/basic-calculator-978-m.md)
   * [Basuc Calculator II 980 (M)](data\_structure/stack/basuc-cakcykatir-ii-980-m.md)
   * [Basic Calculator III 849 (H)](data\_structure/stack/basic-calculator-iii-849-h.md)
