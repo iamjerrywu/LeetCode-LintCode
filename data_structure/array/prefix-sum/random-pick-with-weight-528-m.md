@@ -109,35 +109,32 @@ class Solution:
 class Solution:
 
     def __init__(self, w: List[int]):
-        self.prefix_sum = []
-        cur_sum = 0
-        for weight in w:
-            cur_sum+=weight
-            self.prefix_sum.append(cur_sum)
-        self.total = cur_sum
-        
-        
+        self.prefix_sums = [w[0]]
+        if len(w) > 1:
+            for i in range(1, len(w)):
+                self.prefix_sums.append(self.prefix_sums[-1] + w[i])
 
     def pickIndex(self) -> int:
-        target = self.total * random.random()
-        # binary search search
-        return self.binary_search(self.prefix_sum, 0, len(self.prefix_sum) - 1, target) 
+        # have to use random() here
+        # "DON'T USE" random.randint(), since it would only generate integer, which has bias
+        val = self.prefix_sums[-1] * random.random()
+        return self.binary_search(val, self.prefix_sums)
     
-    def binary_search(self, arr, start, end, target):
+    def binary_search(self, tar, arr):
+        start, end = 0, len(arr) - 1
+        
         while start + 1 < end:
-            mid = (start + end)//2
+            mid = start + (end - start)//2
             
-            if arr[mid] <= target:
+            if arr[mid] < tar:
                 start = mid
             else:
                 end = mid
-            
-        if arr[start] > target:
+        if tar <= arr[start]:
             return start
-        elif arr[end] > target:
+        if tar <= arr[end]:
             return end
-
-
+    
 # Your Solution object will be instantiated and called as such:
 # obj = Solution(w)
 # param_1 = obj.pickIndex()
