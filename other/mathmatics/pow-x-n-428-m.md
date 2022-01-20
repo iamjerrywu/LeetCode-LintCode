@@ -1,34 +1,34 @@
-# Pow\(x, n\) 428 \(M\)
+# Pow(x, n) 428 (M)
 
 ## Problem
 
-Implement pow\(x, n\). \(n is an integer.\)
+Implement pow(x, n). (n is an integer.)
 
 You don't need to care about the precision of your answer, it's acceptable if the expected answer and your answer 's difference is smaller than `1e-3`.Example
 
 **Example 1:**
 
-```text
+```
 Input: x = 9.88023, n = 3Output: 964.498
 ```
 
 **Example 2:**
 
-```text
+```
 Input: x = 2.1, n = 3Output: 9.261
 ```
 
 **Example 3:**
 
-```text
+```
 Input: x = 1, n = 0Output: 1
 ```
 
 Challenge
 
-O\(_logn_\) time
+O(_logn_) time
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -55,10 +55,30 @@ class Solution:
             return self.myPow(x * x, n / 2)
 ```
 {% endtab %}
+
+{% tab title="python" %}
+```python
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        
+        if n < 0:
+            x = 1/x
+            n = -n
+        
+        ans = 1
+        while n:
+            if n%2:
+                ans*= x
+                n-=1
+            else:
+                x = x * x
+                n//=2
+        return ans
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(logn\)**
+* **Time Complexity: O(logn)**
 * **Space Complexity:**
-

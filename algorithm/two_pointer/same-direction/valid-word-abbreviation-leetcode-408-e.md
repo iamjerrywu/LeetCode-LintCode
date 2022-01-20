@@ -1,23 +1,23 @@
-# Valid Word Abbreviation \(LeetCode 408\) \(E\)
+# Valid Word Abbreviation (LeetCode 408) (E)
 
 ## Problem
 
-A string can be **abbreviated** by replacing any number of **non-adjacent** substrings with their lengths. For example, a string such as `"substitution"` could be abbreviated as \(but not limited to\):
+A string can be **abbreviated** by replacing any number of **non-adjacent** substrings with their lengths. For example, a string such as `"substitution"` could be abbreviated as (but not limited to):
 
-* `"s10n"` \(`"s ubstitutio n"`\)
-* `"sub4u4"` \(`"sub stit u tion"`\)
-* `"12"` \(`"substitution"`\)
-* `"su3i1u2on"` \(`"su bst i t u ti on"`\)
-* `"substitution"` \(no substrings replaced\)
-* `"s010n"` \(leading zeros in numbers are **NOT** allowed\)
+* `"s10n"` (`"s ubstitutio n"`)
+* `"sub4u4"` (`"sub stit u tion"`)
+* `"12"` (`"substitution"`)
+* `"su3i1u2on"` (`"su bst i t u ti on"`)
+* `"substitution"` (no substrings replaced)
+* `"s010n"` (leading zeros in numbers are **NOT** allowed)
 
-Note that `"s55n"` \(`"s ubsti tutio n"`\) is not a valid abbreviation of `"substitution"` because the replaced substrings are adjacent.
+Note that `"s55n"` (`"s ubsti tutio n"`) is not a valid abbreviation of `"substitution"` because the replaced substrings are adjacent.
 
 Given a string `word` and an abbreviation `abbr`, return _whether the string **matches** with the given abbreviation_.
 
 **Example 1:**
 
-```text
+```
 Input: word = "internationalization", abbr = "i12iz4n"
 Output: true
 Explanation: The word "internationalization" can be abbreviated as "i12iz4n" ("i nternational iz atio n").
@@ -25,7 +25,7 @@ Explanation: The word "internationalization" can be abbreviated as "i12iz4n" ("i
 
 **Example 2:**
 
-```text
+```
 Input: word = "apple", abbr = "a2e"
 Output: false
 Explanation: The word "apple" cannot be abbreviated as "a2e".
@@ -73,8 +73,32 @@ class Solution:
         return w_p == len(word) and a_p == len(abbr)
 ```
 {% endtab %}
+
+{% tab title="Python (2)" %}
+```python
+class Solution:
+    def validWordAbbreviation(self, word: str, abbr: str) -> bool:
+        w_ptr, a_ptr = 0, 0
+        
+        while w_ptr < len(word) and a_ptr < len(abbr):
+            if abbr[a_ptr].isalpha():
+                if word[w_ptr] != abbr[a_ptr]:
+                    return False
+                w_ptr+=1
+                a_ptr+=1
+            else:
+                num_str = ""
+                while a_ptr < len(abbr) and abbr[a_ptr].isdigit():
+                    # deal with leading zeros
+                    if not num_str and abbr[a_ptr] == '0':
+                        return False
+                    num_str+=abbr[a_ptr]
+                    a_ptr+=1
+                w_ptr+=int(num_str)
+        return w_ptr == len(word) and a_ptr == len(abbr)
+```
+{% endtab %}
 {% endtabs %}
 
-* **Time Complexity:  O\(max\(m, n\)\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity:  O(max(m, n))**
+* **Space Complexity: O(1)**
