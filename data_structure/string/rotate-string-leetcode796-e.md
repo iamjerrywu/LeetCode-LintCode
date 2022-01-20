@@ -44,7 +44,11 @@ class Solution:
             return False
         
         for i in range(len(s)):
+            # approach 1
             if self.check(s, goal, i):
+             
+             # approach 2
+             # if s[i:] + s[:i] == goal:
                 return True
         return False
     
@@ -75,87 +79,7 @@ class Solution {
         }
         return false;
     }
-}class Solution:
-    def rotateString(self, s: str, goal: str) -> bool:
-        if len(s) != len(goal):
-            return False
-        
-        for i in range(len(s)):
-            if self.check(s, goal, i):
-                return True
-        return False
-    
-    def check(self, s, goal, mid):
-        # right
-        for i in range(mid, len(goal)):
-            if s[i] != goal[i - mid]:
-                return False
-            
-        # left
-        for i in range(mid):
-            if s[i] != goal[i + (len(goal) - mid)]:
-                return False
-        return Trueclass Solution:
-    def rotateString(self, s: str, goal: str) -> bool:
-        if len(s) != len(goal):
-            return False
-        
-        for i in range(len(s)):
-            if self.check(s, goal, i):
-                return True
-        return False
-    
-    def check(self, s, goal, mid):
-        # right
-        for i in range(mid, len(goal)):
-            if s[i] != goal[i - mid]:
-                return False
-            
-        # left
-        for i in range(mid):
-            if s[i] != goal[i + (len(goal) - mid)]:
-                return False
-        return Trueclass Solution:
-    def rotateString(self, s: str, goal: str) -> bool:
-        if len(s) != len(goal):
-            return False
-        
-        for i in range(len(s)):
-            if self.check(s, goal, i):
-                return True
-        return False
-    
-    def check(self, s, goal, mid):
-        # right
-        for i in range(mid, len(goal)):
-            if s[i] != goal[i - mid]:
-                return False
-            
-        # left
-        for i in range(mid):
-            if s[i] != goal[i + (len(goal) - mid)]:
-                return False
-        return Trueclass Solution:
-    def rotateString(self, s: str, goal: str) -> bool:
-        if len(s) != len(goal):
-            return False
-        
-        for i in range(len(s)):
-            if self.check(s, goal, i):
-                return True
-        return False
-    
-    def check(self, s, goal, mid):
-        # right
-        for i in range(mid, len(goal)):
-            if s[i] != goal[i - mid]:
-                return False
-            
-        # left
-        for i in range(mid):
-            if s[i] != goal[i + (len(goal) - mid)]:
-                return False
-        return True
+}
 ```
 {% endtab %}
 

@@ -94,21 +94,17 @@ class Solution:
 {% tab title="python" %}
 ```python
 class Solution:
-    """
-    @param nums: A list of integers
-    @return: A integer indicate the sum of max subarray
-    """
-    def maxSubArray(self, nums):
-        # write your code here
+    def maxSubArray(self, nums: List[int]) -> int:
+        
         n = len(nums)
+        
+        # dp[i] means the largest subarray end with ith
         dp = [-float('inf')] * n
         dp[0] = nums[0]
-        ans = dp[0]
-        # dp[i] state means the longest length that end with nums[i]
+        
         for i in range(1, n):
-            dp[i] = nums[i] + max(0, dp[(i - 1)])
-            ans = dp[i] if dp[i] > ans else ans
-        return ans
+            dp[i] = max(dp[i - 1] + nums[i], nums[i])
+        return max(dp)
 ```
 {% endtab %}
 

@@ -1,4 +1,4 @@
-# Valid Palindrome II 891 \(M\)
+# Valid Palindrome II 891 (M)
 
 ## Problem
 
@@ -13,7 +13,7 @@ Example
 
 **Example 1:**
 
-```text
+```
 Input: s = "aba"
 Output: true
 Explanation: Originally a palindrome.
@@ -21,7 +21,7 @@ Explanation: Originally a palindrome.
 
 **Example 2:**
 
-```text
+```
 Input: s = "abca"
 Output: true
 Explanation: Delete 'b' or 'c'.
@@ -29,7 +29,7 @@ Explanation: Delete 'b' or 'c'.
 
 **Example 3:**
 
-```text
+```
 Input: s = "abc"
 Output: false
 Explanation: Deleting any letter can not make it a palindrome.
@@ -40,7 +40,7 @@ Explanation: Deleting any letter can not make it a palindrome.
 ### Code
 
 {% tabs %}
-{% tab title="python" %}
+{% tab title="python(1)" %}
 ```python
 class Solution:
     """
@@ -68,6 +68,36 @@ class Solution:
             left+=1
             right-=1
         return left, right
+```
+{% endtab %}
+
+{% tab title="python(2)" %}
+```python
+class Solution:
+    def validPalindrome(self, s: str) -> bool:
+        l, r = 0, len(s) - 1
+        
+        # move left, or move right when encounter difference
+        return self.check(s, True) or self.check(s, False)
+    
+    def check(self, s, move_left):
+        l, r = 0, len(s) - 1
+        
+        cnt = 0
+        while l < r:
+            if s[l] != s[r]:
+                if cnt == 0:
+                    cnt+=1
+                    if move_left:
+                        l+=1
+                    else:
+                        r-=1
+                else:
+                    return False
+            else:
+                l+=1
+                r-=1
+        return True
 ```
 {% endtab %}
 
@@ -125,4 +155,3 @@ public class Solution {
 
 * **Time Complexity:**
 * **Space Complexity:**
-
