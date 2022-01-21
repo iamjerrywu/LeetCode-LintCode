@@ -145,6 +145,37 @@ class LRUCache:
 {% tabs %}
 {% tab title="Python" %}
 ```python
+# Here using ordered dict
+
+import collections
+class LRUCache:
+
+    def __init__(self, capacity: int):
+        self.rec = collections.OrderedDict()
+        self.max_cap = capacity
+        
+    def get(self, key: int) -> int:
+        if key in self.rec:
+            self.rec.move_to_end(key)
+            return self.rec[key]
+        return -1
+        
+        
+
+    def put(self, key: int, value: int) -> None:
+        self.rec[key] = value
+        self.rec.move_to_end(key)
+        
+        if len(self.rec) > self.max_cap:
+            self.rec.popitem(last = False)
+        
+            
+        
+    
+# Your LRUCache object will be instantiated and called as such:
+# obj = LRUCache(capacity)
+# param_1 = obj.get(key)
+# obj.put(key,value)
 ```
 {% endtab %}
 
