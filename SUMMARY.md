@@ -194,6 +194,7 @@
   * [Group Shifted Strings (LeetCode 249) (M)](data\_structure/hash/group-shifted-strings-leetcode-249-m.md)
   * [Line Reflections (LeetCode 356) (M)](data\_structure/hash/line-reflections-leetcode-356-m.md)
   * [Reconstruct Original Digits from English (LeetCode 423) (M)](data\_structure/hash/reconstruct-original-digits-from-english-leetcode-423-m.md)
+  * [Custom Sort String (LeetCode 791) (M)](data\_structure/hash/custom-sort-string-leetcode-791-m.md)
   * [Contains Duplicate 1320 (E)](data\_structure/hash/contains-duplicate-1320-e.md)
   * [Contains Duplicate II 1319 (E)](data\_structure/hash/contains-duplicate-ii-1319-e.md)
   * [Contains Duplicate III 1318 (M)](data\_structure/hash/contains-duplicate-iii-1318-m.md)
