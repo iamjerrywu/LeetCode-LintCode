@@ -86,57 +86,7 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: O(n^2)**
-* **Space Complexity: O(n + m)**
-
-****
-
-## Solution - O(1) Space Check
-
-{% tabs %}
-{% tab title="Python" %}
-```python
-import collections
-class Solution:
-    def isToeplitzMatrix(self, matrix: List[List[int]]) -> bool:
-        
-        # check horizontal
-        for j in range(len(matrix[0])):
-            if not self.check_horizontal(0, j, matrix):
-                return False
-        
-        # check vertical
-        for i in range(len(matrix)):
-            if not self.check_vertical(i, 0, matrix):
-                return False
-        return True
-    
-    def check_horizontal(self, x, y, matrix):
-        for k in range(min(len(matrix[0]) - y, len(matrix)) - 1):
-            if matrix[x + k][y + k] != matrix[x + k + 1][y + k + 1]:
-                return False
-        return True
-    
-    def check_vertical(self, x, y, matrix):
-        for k in range(min(len(matrix) - x, len(matrix[0])) - 1):
-            if matrix[x + k][y + k] != matrix[x + k + 1][y + k + 1]:
-                return False
-        return True
-```
-{% endtab %}
-
-{% tab title="Java" %}
-```java
-```
-{% endtab %}
-
-{% tab title="C++" %}
-```cpp
-```
-{% endtab %}
-{% endtabs %}
-
-* **Time Complexity: O(n^2)**
-* **Space Complexity: O(1)**
+* **Time Complexity:**
+* **Space Complexity:**
 
 ****
