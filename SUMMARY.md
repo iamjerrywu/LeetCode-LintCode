@@ -68,6 +68,7 @@
     * [Subarray Sum 138 (E)](data\_structure/array/prefix-sum/subarray-sum-138-e.md)
     * [Subarray Sum Closest 139 (M)](data\_structure/array/prefix-sum/subarray-sum-closest-139-m.md)
     * [Distance Metrics 327 (M)](data\_structure/array/prefix-sum/distance-metrics-327-m.md)
+    * [Continous Subarray Sum (LeetCode 523) (M)](data\_structure/array/prefix-sum/continous-subarray-sum-leetcode-523-m.md)
     * [Random Pick with Weight 528 (M)](data\_structure/array/prefix-sum/random-pick-with-weight-528-m.md)
     * [Bomb Enemy 553 (M)](data\_structure/array/prefix-sum/bomb-enemy-553-m.md)
     * [Subarray Sum Equals to k 838 (E)](data\_structure/array/prefix-sum/subarray-sum-equals-to-k-838-e.md)

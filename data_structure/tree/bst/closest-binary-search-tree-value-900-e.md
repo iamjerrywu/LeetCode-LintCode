@@ -152,36 +152,32 @@ class Solution:
 {% tabs %}
 {% tab title="python" %}
 ```python
-"""
-Definition of TreeNode:
-class TreeNode:
-    def __init__(self, val):
-        self.val = val
-        self.left, self.right = None, None
-"""
-
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 class Solution:
-    """
-    @param root: the given BST
-    @param target: the given target
-    @return: the value in the BST that is closest to the target
-    """
-    def closestValue(self, root, target):
-        # write your code here
-        upper = root
-        lower = root
+    def closestValue(self, root: Optional[TreeNode], target: float) -> int:
+        
+        
+        diff = abs(root.val - target)
+        ans = root.val
+        
         while root:
-            if target > root.val:
-                lower = root
-                root = root.right
-            elif target < root.val:
-                upper = root
+            cur_diff = abs(root.val - target)
+            if cur_diff < diff:
+                diff = cur_diff
+                ans = root.val
+            if root.val > target:
                 root = root.left
+            elif root.val < target:
+                root = root.right
+            # early return if value equals
             else:
                 return root.val
-        if abs(upper.val - target) <= abs(lower.val - target):
-            return upper.val
-        return lower.val
+        return ans
 ```
 {% endtab %}
 
