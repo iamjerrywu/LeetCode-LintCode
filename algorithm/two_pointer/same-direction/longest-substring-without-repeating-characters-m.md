@@ -62,6 +62,31 @@ class Solution:
 ```
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        if (s.length() < 2) return s.length();
+        
+        int r = 0;
+        set<char> rec;
+        int ans = 0;
+        for (int l = 0; l < s.length(); l++) {
+            while ((r < s.length()) && (rec.count(s[r]) == 0)) {
+                rec.insert(s[r]);
+                r+=1;
+            }
+            ans = max(ans, r - l);
+            rec.erase(s[l]);
+        }
+        return ans;
+        
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
