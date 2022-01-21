@@ -90,6 +90,7 @@
     * [Rotate Image 161 (M)](data\_structure/array/matrix/rotate-image-161-m.md)
     * [Spiral Matrix 374 (M)](data\_structure/array/matrix/spiral-matrix-374-m.md)
     * [Diagonal Traverse (LeetCode 498) (M)](data\_structure/array/matrix/diagonal-traverse-leetcode-498-m.md)
+    * [Toeplitz Matrix (LeetCode 766) (E)](data\_structure/array/matrix/toeplitz-matrix-leetcode-766-e.md)
     * [Rotating the Box (LeetCode 1861) (M)](data\_structure/array/matrix/rotating-the-box-leetcode-1861-m.md)
     * [Determine Whether Matrix Can Be Obtained By Rotation (LeetCode 1886) (E)](data\_structure/array/matrix/determine-whether-matrix-can-be-obtained-by-rotation-leetcode-1886-e.md)
     * [Cyclically Rotating a Grid (LeetCode 1914) (M)](data\_structure/array/matrix/cyclically-rotating-a-grid-leetcode-1914-m.md)
