@@ -685,6 +685,7 @@
   * [Pow(x, n) 428 (M)](other/mathmatics/pow-x-n-428-m.md)
   * [Minimum Moves to Equal Array Elements (LeetCode 453)](other/mathmatics/minimum-moves-to-equal-array-elements-leetcode-453.md)
   * [Rectangle Overlap 626 (E)](other/mathmatics/rectangle-overlap-626-e.md)
+  * [Maximum Swap (LeetCode 670) (M)](other/mathmatics/maximum-swap-leetcode-670-m.md)
   * [Check If It Is a Straight Line (LeetCode 1232)](other/mathmatics/check-if-it-is-a-straight-line-leetcode-1232.md)
   * [Consecutive Number Sum 1439 (H)](other/mathmatics/consecutive-number-sum-1439-h.md)
   * [The kth Factor of n (LeetCode 1492) (M)](other/mathmatics/the-kth-factor-of-n-leetcode-1492-m.md)

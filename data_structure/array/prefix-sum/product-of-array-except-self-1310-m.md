@@ -1,14 +1,14 @@
-# Product of Array Except Self 1310 \(M\)
+# Product of Array Except Self 1310 (M)
 
 ## Problem
 
-Given an array of n integers where n &gt; 1, `nums`, return an array output such that `output[i]` is equal to the product of all the elements of `nums` except `nums[i]`.
+Given an array of n integers where n > 1, `nums`, return an array output such that `output[i]` is equal to the product of all the elements of `nums` except `nums[i]`.
 
-Solve it **without division** and in O\(n\).Example
+Solve it **without division** and in O(n).Example
 
 **Example1**
 
-```text
+```
 Input: [1,2,3,4]
 Output: [24,12,8,6]
 Explanation:
@@ -20,7 +20,7 @@ Explanation:
 
 **Example2**
 
-```text
+```
 Input: [2,3,8]
 Output: [24,16,6]
 Explanation:
@@ -31,7 +31,7 @@ Explanation:
 
 Challenge
 
-Could you solve it with constant space complexity? \(Note: The output array does not count as extra space for the purpose of space complexity analysis.\)
+Could you solve it with constant space complexity? (Note: The output array does not count as extra space for the purpose of space complexity analysis.)
 
 ## Solution - Simulation
 
@@ -42,23 +42,25 @@ Could you solve it with constant space complexity? \(Note: The output array does
 ```python
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        total_product = 1
+        product = 1
         zero_cnt = 0
+        
         for num in nums:
             if num != 0:
-                total_product*=num
+                product*=num
             else:
                 zero_cnt+=1
+        
         res = []
+        
         for num in nums:
-            if zero_cnt == 0:
-                res.append(total_product//num)
+            if  zero_cnt == 0:
+                res.append(product//num)
                 continue
-            if num == 0 and zero_cnt > 1 or num != 0:
+            if zero_cnt > 1 or num != 0:
                 res.append(0)
             else:
-                res.append(total_product)
-                    
+                res.append(product)
         return res
 ```
 {% endtab %}
@@ -102,13 +104,11 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**

@@ -49,7 +49,7 @@ class Solution:
         done = False
         
         while not done:
-        # tag rows
+            # tag rows
             done = True
             for row in range(len(board)):
                 for col in range(len(board[0]) - 2):
