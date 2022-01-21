@@ -190,6 +190,7 @@
   * [Valid Anagram 158 (E)](data\_structure/hash/valid-anagram-158-e.md)
   * [First Unique Character in a String 209 (E)](data\_structure/hash/first-unique-character-in-a-string-209-e.md)
   * [Design Add and Search Words Data Structure (LeetCode 211) (M)](data\_structure/hash/design-add-and-search-words-data-structure-leetcode-211-m.md)
+  * [Group Shifted Strings (LeetCode 249) (M)](data\_structure/hash/group-shifted-strings-leetcode-249-m.md)
   * [Line Reflections (LeetCode 356) (M)](data\_structure/hash/line-reflections-leetcode-356-m.md)
   * [Reconstruct Original Digits from English (LeetCode 423) (M)](data\_structure/hash/reconstruct-original-digits-from-english-leetcode-423-m.md)
   * [Contains Duplicate 1320 (E)](data\_structure/hash/contains-duplicate-1320-e.md)
