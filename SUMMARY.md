@@ -495,6 +495,7 @@
   * [Kth Missing Positive Number (LeetCode1539) (E)](algorithm/binary\_search/kth-missing-positive-number-leetcode1539-e.md)
   * [Minimum Speed to Arrive on Time (LeetCode1870) (M)](algorithm/binary\_search/minimum-speed-to-arrive-on-time-1870-m.md)
   * [Minimum Space Wasted From Packaging (LeetCode 1889) (H)](algorithm/binary\_search/minimum-space-wasted-from-packaging-leetcode-1889-h.md)
+  * [Cutting Ribbons (LeetCode 1891) (M)](algorithm/binary\_search/cutting-ribbons-leetcode-1891-m.md)
   * [Maximum Number of Removable Characters (LeetCode 1898) M](algorithm/binary\_search/maximum-number-of-removable-characters-leetcode-1898-m.md)
 * [BFS](algorithm/s4.-queue-bfs-graph/README.md)
   * [Topological Sorting](algorithm/s4.-queue-bfs-graph/topological-sorting/README.md)
