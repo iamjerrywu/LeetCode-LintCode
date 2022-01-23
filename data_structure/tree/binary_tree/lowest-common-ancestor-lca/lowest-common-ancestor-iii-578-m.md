@@ -1,19 +1,19 @@
-# Lowest Common Ancestor III 578 \(M\)
+# Lowest Common Ancestor III 578 (M)
 
 ## Problem
 
 Description
 
-Given the root and two nodes in a Binary Tree. Find the lowest common ancestor\(LCA\) of the two nodes.  
-The nearest common ancestor of two nodes refers to the nearest common node among all the parent nodes of two nodes \(including the two nodes\).  
+Given the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the two nodes.\
+The nearest common ancestor of two nodes refers to the nearest common node among all the parent nodes of two nodes (including the two nodes).\
 Return `null` if LCA does not exist.
 
-**node A or node B may not exist in tree.**  
+**node A or node B may not exist in tree.**\
 Each node has a different valueExample
 
 **Example1**
 
-```text
+```
 Input: 
 {4, 3, 7, #, #, 5, 6}
 3 5
@@ -41,7 +41,7 @@ LCA(5, 8) = null
 
 **Example2**
 
-```text
+```
 Input:
 {1}
 1 1
@@ -101,9 +101,42 @@ class Solution:
 ```
 {% endtab %}
 
+{% tab title="Python (Better)" %}
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        node, cnt = self.dfs(root, p, q)
+        if cnt < 2:
+            return None
+        return node
+    
+    def dfs(self, node, p, q):
+        if not node:
+            return None, 0
+        
+        left, l_cnt = self.dfs(node.left, p, q)
+        right, r_cnt = self.dfs(node.right, p, q)
+        cnt = l_cnt + r_cnt
+        if node == p or node == q:
+            return node, cnt + 1
+        if left and right:
+            return node, 2
+        
+        if left:
+            return left, cnt
+        return right, cnt
+```
+{% endtab %}
+
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -112,4 +145,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-
