@@ -105,6 +105,7 @@
   * [Second Max Array 479 (E)](data\_structure/array/second-max-array-479-e.md)
   * [Flatten Nested List Iterator 528 (M)](data\_structure/array/flatten-nested-list-iterator-528-e.md)
   * [Find the Duplicate Number 633 (H)](data\_structure/array/find-the-duplicate-number-633-m.md)
+  * [Monotonic Array (LeetCode 896) (E)](data\_structure/array/monotonic-array-leetcode-896-e.md)
   * [Find the Town Judge (LeetCode 997) (E)](data\_structure/array/find-the-town-judge-leetcode-997-e.md)
   * [Can Place Flowers 1138 (E)](data\_structure/array/can-place-flowers-1138-e.md)
   * [Game of Life 1301 (M)](data\_structure/array/game-of-life-1301-m.md)

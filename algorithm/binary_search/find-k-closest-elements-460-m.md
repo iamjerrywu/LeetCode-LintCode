@@ -97,6 +97,56 @@ class Solution:
 ```
 {% endtab %}
 
+{% tab title="Python (Better)" %}
+```python
+import collections
+class Solution:
+    def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:
+        # find index 
+        index = self.binary_search(0, len(arr) - 1, arr, x)
+
+        k -=1
+        res = collections.deque([arr[index]])
+        l = index - 1
+        r = index + 1
+        # two pointers moving opposite direction
+        while k > 0:
+            if l >= 0 and r < len(arr):
+                if abs(arr[l] - x) <= abs(arr[r] - x):
+                    res.appendleft(arr[l])
+                    l-=1
+                    k-=1
+                else:
+                    res.append(arr[r])
+                    r+=1
+                    k-=1
+            elif l >= 0:
+                res.appendleft(arr[l])
+                l-=1
+                k-=1
+            else:
+                res.append(arr[r])
+                r+=1
+                k-=1
+        return res
+    
+    def binary_search(self, start, end, arr, x):
+        while start + 1 < end:
+            mid = start + (end - start)//2
+            
+            if arr[mid] < x:
+                start = mid
+            else:
+                end = mid
+        print(start, end)
+        if abs(arr[start] - x) <= abs(arr[end] - x):
+            return start
+        return end
+            
+
+```
+{% endtab %}
+
 {% tab title="java" %}
 ```
 ```
@@ -110,3 +160,40 @@ class Solution:
   * Two Pointer: O(k)
     * k <= n
 * **Space Complexity: O(1)**
+
+## Solution - Heap
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+import heapq
+class Solution:
+    def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:
+        heap = []
+        
+        for num in arr:
+            heapq.heappush(heap, [-abs(num - x), -num])
+            if len(heap) > k:
+                heapq.heappop(heap)
+                
+        ans = [-val for dist, val in heap]
+        ans.sort()
+        return ans
+```
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+****
