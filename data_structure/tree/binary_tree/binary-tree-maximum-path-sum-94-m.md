@@ -90,6 +90,31 @@ class Solution:
 
 ```
 {% endtab %}
+
+{% tab title="Python (Better) " %}
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def __init__(self):
+        self.max_val = float('-inf')
+    def maxPathSum(self, root: Optional[TreeNode]) -> int:
+        self.dfs(root)
+        return self.max_val
+    def dfs(self, root):
+        if not root:
+            return 0
+        left_max = max(self.dfs(root.left), 0)
+        right_max = max(self.dfs(root.right), 0)
+        self.max_val = max(self.max_val, left_max + right_max + root.val)
+        
+        return max(left_max + root.val, right_max + root.val)
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
