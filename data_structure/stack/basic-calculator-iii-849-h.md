@@ -63,7 +63,7 @@ class Solution:
                 num = num * 10 + int(c)
             # add this recursion part dealing with expression within paranthess 
             # then rest of it is pretty the much the same as 
-            elif c == '(':
+            if c == '(':
                 j, cnt = i, 0
                 for i in range(j, len(s)):
                     if s[i] == '(':
@@ -88,7 +88,7 @@ class Solution:
                 sign = c
                 num = 0
             i+=1
-        return sum(stack) + num
+        return sum(stack)
 ```
 {% endtab %}
 {% endtabs %}
