@@ -293,6 +293,7 @@
     * [Construct String from Binary Tree 1137 (E)](data\_structure/tree/binary\_tree/construct-string-from-binary-tree-1137-e.md)
     * [Maximum level Sum of a Binary Tree (LeetCode 1161) (M)](data\_structure/tree/binary\_tree/maximum-level-sum-of-a-binary-tree-leetcode-1161-m.md)
     * [Diameter of Binary Tree 1181 (E)](data\_structure/tree/binary\_tree/diameter-of-binary-tree-1181-e-1.md)
+    * [Diameter of N-Ary Tree (LeetCode 1522) (M)](data\_structure/tree/binary\_tree/diameter-of-n-ary-tree-leetcode-1522-m.md)
     * [Maximum Product of Splitted Binary Tree (LeetCode 1339) (M)](data\_structure/tree/binary\_tree/maximum-product-of-splited-binary-tree-leetcode-1339-m.md)
     * [Symmetric Tree 1360 (M)](data\_structure/tree/binary\_tree/symmetric-tree-1360-m.md)
     * [Balance a Binary Search Tree (LeetCode 1382) (M)](data\_structure/tree/binary\_tree/balance-a-binary-search-tree-leetcode-1382-m.md)
