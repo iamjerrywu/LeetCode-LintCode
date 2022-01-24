@@ -51,10 +51,12 @@ class Solution:
             for j in range(n - 1, -1, -1):
                 mul = int(num1[i]) * int(num2[j])
                 sum_val = vals[i + j + 1] + mul
-                vals[i + j] += sum_val//10
+                # digit
                 vals[i + j + 1] = sum_val%10
-                # print(vals)
+                # carry
+                vals[i + j] += sum_val//10
         ans = ""
+        # if leading zeros, ignored
         for val in vals:
             if ans or val != 0:
                 ans+=str(val)
