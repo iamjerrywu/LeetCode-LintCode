@@ -109,36 +109,26 @@ class Solution:
 
 class Solution:
     def leftMostColumnWithOne(self, binaryMatrix: 'BinaryMatrix') -> int:
-        ans = float('inf')
-        
         m, n = binaryMatrix.dimensions()
         
+        ans = float('inf')
         for i in range(m):
-            index = self.binary_search(binaryMatrix, i, n, ans)
+            index = self.binary_search(binaryMatrix, i, n)
             ans = min(ans, index)
         return ans if ans != float('inf') else -1
     
-    def binary_search(self, binaryMatrix, i, n, ans):
+    def binary_search(self, binaryMatrix, row, n):
         start, end = 0, n - 1
-        while start + 1 < end:
-            # early break
-            if start >= ans:
-                return float('inf')
-            mid = start + (end - start)//2
-            if binaryMatrix.get(i, mid) == 1:
-                end = mid
-            else:
-                start = mid
         
-        # early break
-        if start >= ans:
-            return float('inf')
-        if binaryMatrix.get(i, start) == 1:
+        while start + 1 < end:
+            mid = start + (end - start) //2
+            if binaryMatrix.get(row, mid) == 0:
+                start = mid
+            else:
+                end = mid
+        if binaryMatrix.get(row, start) == 1:
             return start
-        # early break
-        if end >= ans:
-            return float('inf')
-        if binaryMatrix.get(i, end) == 1:
+        if binaryMatrix.get(row, end) == 1:
             return end
         return float('inf')
 ```

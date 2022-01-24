@@ -702,6 +702,7 @@
   * [Rectangle Overlap 626 (E)](other/mathmatics/rectangle-overlap-626-e.md)
   * [Maximum Swap (LeetCode 670) (M)](other/mathmatics/maximum-swap-leetcode-670-m.md)
   * [Check If It Is a Straight Line (LeetCode 1232)](other/mathmatics/check-if-it-is-a-straight-line-leetcode-1232.md)
+  * [Angle Between Hands of a Clock (LeetCode 1344) (M)](other/mathmatics/angle-between-hands-of-a-clock-leetcode-1344-m.md)
   * [Consecutive Number Sum 1439 (H)](other/mathmatics/consecutive-number-sum-1439-h.md)
   * [The kth Factor of n (LeetCode 1492) (M)](other/mathmatics/the-kth-factor-of-n-leetcode-1492-m.md)
   * [Count Good Numbers (LeetCode 1922) (M)](other/mathmatics/count-good-numbers-leetcode-1922-m.md)
