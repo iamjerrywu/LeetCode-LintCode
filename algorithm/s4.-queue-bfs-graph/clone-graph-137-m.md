@@ -130,5 +130,59 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
+* **Time Complexity: O( N + M)**
+* **Space Complexity: O(n)**
+
+****
+
+## Solution - DFS
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+"""
+# Definition for a Node.
+class Node:
+    def __init__(self, val = 0, neighbors = None):
+        self.val = val
+        self.neighbors = neighbors if neighbors is not None else []
+"""
+import collections
+class Solution:
+    def cloneGraph(self, node: 'Node') -> 'Node':
+        if not node:
+            return None
+        
+        mapping = {}
+        mapping[node.val] = Node(node.val)
+        
+        self.dfs(node, mapping)
+        return mapping[node.val]
+        
+    def dfs(self, node, mapping):
+        for neighbor in node.neighbors:
+            if neighbor.val not in mapping:
+                clone_neighbor = Node(neighbor.val)
+            else:
+                clone_neighbor = mapping[neighbor.val]
+            mapping[node.val].neighbors.append(clone_neighbor)
+            if neighbor.val not in mapping:
+                mapping[neighbor.val] = clone_neighbor
+                self.dfs(neighbor, mapping)
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O( N + M)**
+  * N: number of nodes
+  * M: number of edges
 * **Space Complexity:**
