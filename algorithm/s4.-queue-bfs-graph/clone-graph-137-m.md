@@ -1,4 +1,4 @@
-# Clone Graph 137 \(M\)
+# Clone Graph 137 (M)
 
 ## Problem
 
@@ -8,12 +8,12 @@ Clone an undirected graph. Each node in the graph contains a `label` and a list 
 
 You need to return a deep copied graph, which has the same structure as the original graph, and any changes to the new graph will not have any effect on the original graph.
 
-You need return the node with the same label as the input node.  
+You need return the node with the same label as the input node.\
 How we represent an undirected graph: [http://www.lintcode.com/help/graph/](http://www.lintcode.com/help/graph/)Example
 
 **Example1**
 
-```text
+```
 Input:
 {1,2,4#2,1,4#4,1,2}
 Output: 
@@ -87,9 +87,43 @@ class Solution:
 ```
 {% endtab %}
 
+{% tab title="Python (Better)" %}
+```python
+"""
+# Definition for a Node.
+class Node:
+    def __init__(self, val = 0, neighbors = None):
+        self.val = val
+        self.neighbors = neighbors if neighbors is not None else []
+"""
+import collections
+class Solution:
+    def cloneGraph(self, node: 'Node') -> 'Node':
+        if not node:
+            return None
+        
+        mapping = {}
+        mapping[node.val] = Node(node.val)
+        queue = collections.deque([(node)])
+        
+        while queue:
+            cur = queue.popleft()
+            for neighbor in cur.neighbors:
+                if neighbor.val not in mapping:
+                    clone_neighbor = Node(neighbor.val)
+                else:
+                    clone_neighbor = mapping[neighbor.val]
+                mapping[cur.val].neighbors.append(clone_neighbor)
+                if neighbor.val not in mapping:
+                    queue.append(neighbor)
+                    # like visited, add the node here after traversing all the neighbors
+                    mapping[neighbor.val] = clone_neighbor
+        return mapping[node.val]
+```
+{% endtab %}
+
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -98,4 +132,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-
