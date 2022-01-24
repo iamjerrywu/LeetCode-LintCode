@@ -64,18 +64,16 @@ class Solution:
             # add this recursion part dealing with expression within paranthess 
             # then rest of it is pretty the much the same as 
             if c == '(':
-                j, cnt = i, 0
-                for i in range(j, len(s)):
-                    if s[i] == '(':
+                cnt = 0
+                for j in range(i, len(s)):
+                    if s[j] == '(':
                         cnt+=1
-                    if s[i] == ')':
+                    if s[j] == ')':
                         cnt-=1
                     if cnt == 0:
                         break
-                num = self.calculate(s[j + 1:i])
-                if i != len(s) - 1:
-                    i+=1
-                continue
+                num = self.calculate(s[i + 1:j])
+                i = j
             if not c.isdigit() or i == len(s) - 1:
                 if sign == '+':
                     stack.append(num)
