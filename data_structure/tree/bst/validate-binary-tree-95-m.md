@@ -1,10 +1,10 @@
-# Validate Binary Search Tree 95 \(M\)
+# Validate Binary Search Tree 95 (M)
 
 ## Problem
 
 
 
-Given a binary tree, determine if it is a valid binary search tree \(BST\).
+Given a binary tree, determine if it is a valid binary search tree (BST).
 
 Assume a BST is defined as follows:
 
@@ -17,7 +17,7 @@ Example
 
 **Example 1:**
 
-```text
+```
 Input:  {-1}
 Output：true
 Explanation：
@@ -28,7 +28,7 @@ This is a binary search tree.
 
 **Example 2:**
 
-```text
+```
 Input:  {2,1,4,#,#,3,5}
 Output: true
 For the following binary tree:
@@ -82,7 +82,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -92,3 +91,44 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
+****
+
+## Solution - Recursion with Boundary
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+        return self.dfs(root, float(-inf), float('inf'))
+        
+    def dfs(self, node, low, high):
+        if not node:
+            return True
+        if node.val <= low or node.val >= high:
+            return False
+        
+        return self.dfs(node.left, low, node.val) and self.dfs(node.right, node.val, high)
+    
+```
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity:**
+* **Space Complexity:**

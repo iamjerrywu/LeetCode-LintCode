@@ -74,6 +74,8 @@ class Solution:
                 if board[new_x][new_y] == 'M':
                     adj_mines+=1
                 elif board[new_x][new_y] == 'E':
+                    # can only first add into empty list, since we don't know 
+                    # whether current x, y has adjacent mines
                     empty_list.append((new_x, new_y))                
         if adj_mines:
             board[x][y] = str(adj_mines)
