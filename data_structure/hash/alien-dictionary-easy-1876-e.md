@@ -1,36 +1,36 @@
-# Alien Dictionary\(easy\) 1876 \(E\)
+# Alien Dictionary(easy) 1876 (E)
 
 ## Problem
 
-In an alien language, surprisingly they also use english lowercase letters, but possibly in a different order. The order of the alphabet is some permutation of lowercase letters.  
+In an alien language, surprisingly they also use english lowercase letters, but possibly in a different order. The order of the alphabet is some permutation of lowercase letters.\
 Given a sequence of words written in the alien language, and the order of the alphabet, return true if and only if the given words are sorted lexicographically in this alien language.Otherwise, it returns false.
 
-1. 1 &lt;= words.length &lt;= 100
-2. 1 &lt;= words\[i\].length &lt;= 20
+1. 1 <= words.length <= 100
+2. 1 <= words\[i].length <= 20
 3. order.length == 26
-4. All characters in words\[i\] and order are English lowercase letters.
+4. All characters in words\[i] and order are English lowercase letters.
 
 Example
 
 **Example 1:**
 
-```text
+```
 Input: words = ["hello","leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz"Output: trueExplanation: As 'h' comes before 'l' in this language, then the sequence is sorted.
 ```
 
 **Example 2:**
 
-```text
+```
 Input: words = ["word","world","row"], order = "worldabcefghijkmnpqstuvxyz"Output: falseExplanation: As 'd' comes after 'l' in this language, then words[0] > words[1], hence the sequence is unsorted.
 ```
 
 **Example 3:**
 
-```text
+```
 Input: words = ["apple","app"], order = "abcdefghijklmnopqrstuvwxyz"Output: falseExplanation: The first three characters "app" match, and the second string is shorter (in size.) According to lexicographical rules "apple" > "app", because 'l' > '∅', where '∅' is defined as the blank character which is less than any other character (More info).
 ```
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -63,10 +63,36 @@ class Solution:
         return len(word1) <= len(word2)
 ```
 {% endtab %}
+
+{% tab title="Python (Better)" %}
+```python
+class Solution:
+    def isAlienSorted(self, words: List[str], order: str) -> bool:
+        order_map = [0] * 26
+        for i in range(len(order)):
+            order_map[ord(order[i]) - ord('a')] = i
+        for i in range(len(words) - 1):
+            if not self.is_order(words[i], words[i + 1], order_map):
+                return False
+        return True
+    
+    def is_order(self, word1, word2, order_map):
+        pt1, pt2 = 0, 0
+        
+        while pt1 < len(word1) and pt2 < len(word2):
+            if order_map[ord(word1[pt1]) - ord('a')] > order_map[ord(word2[pt2]) - ord('a')]:
+                return False
+            elif order_map[ord(word1[pt1]) - ord('a')] < order_map[ord(word2[pt2]) - ord('a')]:
+                return True
+            else:
+                pt1+=1
+                pt2+=1
+        return len(word1) <= len(word2)
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**
