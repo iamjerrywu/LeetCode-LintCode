@@ -266,6 +266,7 @@
     * [Maximum Depth of Binary Tree 97 (E)](data\_structure/tree/binary\_tree/maximum-depth-of-binary-tree-97-e.md)
     * [Populating Next Right Pointers in Each Node (LeetCode 116) (M)](data\_structure/tree/binary\_tree/populating-next-right-pointers-in-each-node-leetcode-116-m.md)
     * [Populating Next Right Pointers in Each Node (LeetCode 117) (M)](data\_structure/tree/binary\_tree/populating-next-right-pointers-in-each-node-leetcode-117-m.md)
+    * [Sum Root to Leaf Numbers (LeetCode 129) (M)](data\_structure/tree/binary\_tree/sum-root-to-leaf-numbers-leetcode-129-m.md)
     * [Minimum Depth of Binary Tree 155 (E)](data\_structure/tree/binary\_tree/minimum-depth-of-binary-tree-155-e.md)
     * [Invert Binary Tree 175 (E)](data\_structure/tree/binary\_tree/175.-invert-binary-tree-e.md)
     * [Subtree of Another Tree 1165 (E)](data\_structure/tree/binary\_tree/subtree-of-another-tree-1165-e.md)
