@@ -144,6 +144,40 @@ class Solution:
 ```
 {% endtab %}
 
+{% tab title="Python (Better)" %}
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    
+    def flatten(self, root):
+        
+        node, last_node = self.dfs(root)
+        return node
+    
+    
+    def dfs(self, node):
+        if not node:
+            return None, None
+        left, left_last = self.dfs(node.left)
+        right, right_last = self.dfs(node.right)
+        
+        node.left = None
+        last = node
+        if left:
+            last.right = left
+            last = left_last
+        if right:
+            last.right = right
+            last = right_last
+        return node, last
+```
+{% endtab %}
+
 {% tab title="java" %}
 ```
 ```
