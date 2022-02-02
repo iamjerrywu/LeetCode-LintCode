@@ -87,6 +87,61 @@ class Solution:
         return head   
 ```
 {% endtab %}
+
+{% tab title="Python (Better)" %}
+```python
+"""
+# Definition for a Node.
+class Node:
+    def __init__(self, val=None, next=None):
+        self.val = val
+        self.next = next
+"""
+
+class Solution:
+    def insert(self, head: 'Optional[Node]', insertVal: int) -> 'Node':
+        
+        # empty
+        if not head:
+            node = Node(insertVal)
+            node.next = node
+            return node
+        
+        # if only one node
+        if head == head.next:
+            node = Node(insertVal)
+            head.next = node
+            node.next = head
+            return head
+            
+        
+        origin = head
+        while True:
+    
+            # insert value btw head and head.next
+            
+            # 1. head.val <= insertVal <= head.next.val
+            if head.val <= insertVal <= head.next.val:
+                self.update(head, insertVal)
+                break
+            # 2. insertval <= head.val, insertval >= head.next.val
+            elif head.val > head.next.val and (head.val <= insertVal and insertVal >= head.next.val or head.val >= insertVal and insertVal <= head.next.val):
+                self.update(head, insertVal)
+                break
+            # 3. if all nodes are the same values
+            elif head.next  == origin:
+                self.update(head, insertVal)
+                break
+            head = head.next
+        return origin
+    
+    def update(self, head, insertVal):
+        node = Node(insertVal)
+        nxt = head.next
+        head.next = node
+        node.next = nxt
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
