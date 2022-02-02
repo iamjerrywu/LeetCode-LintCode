@@ -159,3 +159,73 @@ class Solution:
 
 * **Time Complexity: O(n)**
 * **Space Complexity: O(1)**
+
+****
+
+## Solution
+
+![](<../../.gitbook/assets/Screen Shot 2022-02-01 at 3.48.05 PM.png>)
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
+        
+        dummy = ListNode(-1)
+        dummy.next = head
+        
+        # if rotate from beginning
+        if left == 1:
+            before_rotate = dummy
+            rotate_start = head
+        else:
+            tmp_left = left
+            while tmp_left - 1:
+                before_rotate = head
+                head = head.next
+                rotate_start = head
+                tmp_left-=1
+        
+        head, tail, rotate_end = self.rotate(rotate_start, right - left + 1)
+        if not rotate_end:
+            before_rotate.next = head
+        else:
+            before_rotate.next = head
+            tail.next = rotate_end
+        return dummy.next
+    
+    def rotate(self, node, length):
+        tail = head = node
+        rotate_end = node.next
+        new = None
+        while length:
+            nxt = node.next
+            node.next = new
+            new = node
+            node = nxt
+            
+            rotate_end = node
+            head = new
+            length-=1
+        return head, tail, rotate_end
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**

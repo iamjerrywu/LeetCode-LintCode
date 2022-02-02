@@ -642,6 +642,7 @@
   * [Interval](algorithm/dynamic\_programming/interval/README.md)
     * [Burst Balloons 168 (H)](algorithm/dynamic\_programming/interval/168.-burst-balloons-h.md)
     * [Longest Palindromic Substring 200 (M)](algorithm/dynamic\_programming/interval/200.-longest-palindromic-substring-m.md)
+    * [Palindromic Substrings (LeetCode 647) (M)](algorithm/dynamic\_programming/interval/palindromic-substrings-leetcode-647-m.md)
     * [Stone Game 476 (M)](algorithm/dynamic\_programming/interval/472.-stone-game-m.md)
     * [Minimum Cost to Merge Stones 1798 (H)](algorithm/dynamic\_programming/interval/minimum-cost-to-merge-stones-1798-h.md)
     * [Longest Palindromic Subsequence 667 (M)](algorithm/dynamic\_programming/interval/longest-palindromic-subsequence-667-m.md)
