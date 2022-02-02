@@ -463,6 +463,7 @@
     * [Longest Semi Alternating Substring 1819 (E)](algorithm/two\_pointer/same-direction/longest-semi-alternating-substring-1819-e.md)
     * [Grumpy Bookstore Owner 1849 (M)](algorithm/two\_pointer/same-direction/grumpy-bookstore-owner-1849-m.md)
     * [Pick Apples 1850 (M)](algorithm/two\_pointer/same-direction/pick-apples-1850-m.md)
+    * [Product of Two Run-Length Encoded Arrays (LeetCode 1868) (M)](algorithm/two\_pointer/same-direction/product-of-two-run-length-encoded-arrays-leetcode-1868-m.md)
     * [1870. Number of Substrings with All Zeros (M)](algorithm/two\_pointer/same-direction/1870.-number-of-substrings-with-all-zeros.md)
     * [Minimum Number of Flips to Make the Binary String Alternating (LeetCode 1888) (M)](algorithm/two\_pointer/same-direction/minimum-number-of-flips-to-make-the-binary-string-alternating-leetcode-1888-m.md)
     * [Maximize the Confusion of an Exam (LeetCode 2024) (M)](algorithm/two\_pointer/same-direction/longest-string-chain-1048-m.md)
