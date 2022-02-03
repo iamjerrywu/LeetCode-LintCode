@@ -1,4 +1,4 @@
-# 3Sum Closest 59 \(M\)
+# 3Sum Closest 59 (M)
 
 ## Problem
 
@@ -10,42 +10,42 @@ You may assume that each input would have exactly one solution.Example
 
 Input:
 
-```text
+```
 numbers = [2,7,11,15]
 target = 3
 ```
 
 Output:
 
-```text
+```
 20
 ```
 
 Explanation:
 
-2+7+11=20  
+2+7+11=20\
 **Example 2:**
 
 Input:
 
-```text
+```
 numbers = [-1,2,1,-4]
 target = 1
 ```
 
 Output:
 
-```text
+```
 2
 ```
 
 Explanation:
 
--1+2+1=2Challenge
+\-1+2+1=2Challenge
 
-O\(n^2\)O\(n​2​​\) time, O\(1\)O\(1\) extra space
+O(n^2)O(n​2​​) time, O(1)O(1) extra space
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -84,18 +84,45 @@ class Solution:
 ```
 {% endtab %}
 
+{% tab title="Python (Better)" %}
+```python
+ class Solution:
+    def threeSumClosest(self, nums: List[int], target: int) -> int:
+        nums.sort()
+        min_diff = float('inf')
+        for i in range(len(nums)):
+            base = nums[i]
+            
+            tar = target - base
+            
+            l, r = i + 1, len(nums) - 1
+            while l < r:
+                sum_val = base + nums[l] + nums[r]
+                if nums[l] + nums[r] > tar:
+                    r-=1
+                elif nums[l] + nums[r] < tar:
+                    l+=1
+                else:
+                    return base + nums[l] + nums[r]
+                
+                if abs(sum_val - target) < min_diff:
+                    min_diff = abs(sum_val - target)
+                    ans = sum_val
+                    
+        return ans
+```
+{% endtab %}
+
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^2\)**
-  * Sort: O\(nlogn\)
+* **Time Complexity: O(n^2)**
+  * Sort: O(nlogn)
   * Two loops:
-    * O\(n^2\)
-* **Space Complexity: O\(1\)**
-
+    * O(n^2)
+* **Space Complexity: O(1)**
