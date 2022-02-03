@@ -1,8 +1,8 @@
-# Insert Delete GetRandom O\(1\) - Duplicates Allowed 954 \(H\)
+# Insert Delete GetRandom O(1) - Duplicates Allowed 954 (H)
 
 ## Problem
 
-Design a data structure that supports all following operations in average **O\(1\)** time.
+Design a data structure that supports all following operations in average **O(1)** time.
 
 **Duplicate elements are allowed.**
 
@@ -14,7 +14,7 @@ Example
 
 **Example 1:**
 
-```text
+```
 Input:
 insert(1)
 insert(1)
@@ -46,7 +46,7 @@ collection.getRandom();
 
 **Example 2:**
 
-```text
+```
 Input:
 insert(1)
 insert(1)
@@ -54,7 +54,7 @@ getRandom()
 remove(1)
 ```
 
-## Solution - HashMap + List \(Brute Force\)
+## Solution - HashMap + List (Brute Force)
 
 ### Code
 
@@ -121,9 +121,53 @@ class RandomizedCollection(object):
 ```
 {% endtab %}
 
+{% tab title="Python (Better)" %}
+```python
+from collections import defaultdict
+import random
+class RandomizedCollection:
+
+    def __init__(self):
+        self.val_to_index = defaultdict(set)
+        self.arr = []
+
+    def insert(self, val: int) -> bool:
+        self.val_to_index[val].add(len(self.arr))
+        self.arr.append(val)
+        return len(self.val_to_index[val]) == 1
+        
+
+    def remove(self, val: int) -> bool:
+        if len(self.val_to_index[val]) == 0:
+            return False
+        
+        remove_idx, lst = self.val_to_index[val].pop(), self.arr[-1]
+        last_val = self.arr[-1]
+        
+        self.arr[remove_idx] = last_val
+        self.val_to_index[last_val].add(remove_idx)
+        self.val_to_index[last_val].remove(len(self.arr) - 1)
+        
+        self.arr.pop()
+        return True
+            
+        
+
+    def getRandom(self) -> int:
+        return self.arr[random.randint(0, len(self.arr) - 1)]
+        
+
+
+# Your RandomizedCollection object will be instantiated and called as such:
+# obj = RandomizedCollection()
+# param_1 = obj.insert(val)
+# param_2 = obj.remove(val)
+# param_3 = obj.getRandom()
+```
+{% endtab %}
+
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -132,4 +176,3 @@ class RandomizedCollection(object):
 
 * **Time Complexity:**
 * **Space Complexity:**
-
