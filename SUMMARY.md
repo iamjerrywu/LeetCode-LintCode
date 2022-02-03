@@ -704,6 +704,7 @@
   * [Fast Power 140 (M)](other/mathmatics/fast-power-140-m.md)
   * [Prime Factorization 235 (E)](other/mathmatics/235.-prime-factorization-e.md)
   * [Bulb Switcher 319 (M)](other/mathmatics/bulb-switcher-319-m.md)
+  * [Random Pick Index (LeetCode 398) (M)](other/mathmatics/random-pick-index-leetcode-398-m.md)
   * [Reverse Integer 413 (E)](other/mathmatics/reverse-integer-413-e.md)
   * [Divide Two Integers 414 (M)](other/mathmatics/divide-two-integers-414-m.md)
   * [Fraction to Recurring Decimal (LeetCode 166) (M)](other/mathmatics/fraction-to-recurring-decimal-leetcode-166-m.md)
