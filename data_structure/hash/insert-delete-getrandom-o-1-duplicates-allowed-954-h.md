@@ -54,7 +54,7 @@ getRandom()
 remove(1)
 ```
 
-## Solution - HashMap + List (Brute Force)
+## Solution - HashMap + List/Set (Brute Force)
 
 ### Code
 
