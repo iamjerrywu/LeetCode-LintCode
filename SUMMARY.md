@@ -315,6 +315,7 @@
     * [Trim a Binary Search Tree 701 (M)](data\_structure/tree/bst/701.-trim-a-binary-search-tree.md)
     * [Closest Binary Search Tree Value 900 (E)](data\_structure/tree/bst/closest-binary-search-tree-value-900-e.md)
     * [Closest Binary Search Tree Value II 901 (H)](data\_structure/tree/bst/closest-binary-search-tree-value-ii-901-h.md)
+    * [Construct Binary Search from Preorder Traversal (LeetCode 1008) (M)](data\_structure/tree/bst/construct-binary-search-from-preorder-traversal-leetcode-1008-m.md)
     * [Serialize and Deserialize BST 1235 (M)](data\_structure/tree/bst/serialize-and-deserialize-bst-1235-m.md)
     * [Search in a Binary Search Tree 1524 (E)](data\_structure/tree/bst/search-in-a-binary-search-tree-1524-e.md)
     * [Convert Binary Search Tree to Sorted Doubly Linked List 1534 (M)](data\_structure/tree/bst/convert-binary-search-tree-to-sorted-doubly-linked-list-1534-m.md)
