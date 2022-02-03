@@ -1,14 +1,14 @@
-# Bold Words in String 812 \(E\)
+# Bold Words in String 812 (E)
 
 ## Problem
 
 {% hint style="danger" %}
-This problem is a fake easy, more like a medium + 
+This problem is a fake easy, more like a medium +&#x20;
 {% endhint %}
 
 Description
 
-Given a set of keywords `words` and a string `S`, make all appearances of all keywords in S bold. Any letters between `<b>` and `</b>` tags become bold.  
+Given a set of keywords `words` and a string `S`, make all appearances of all keywords in S bold. Any letters between `<b>` and `</b>` tags become bold.\
 The returned string should use the least number of tags possible, and of course the tags should form a valid combination.
 
 * `words` has length in range `[0, 50]`.
@@ -20,7 +20,7 @@ Example
 
 **Example 1:**
 
-```text
+```
 Input:
 ["ab", "bc"]
 "aabcd"
@@ -33,7 +33,7 @@ Note that returning "a<b>a<b>b</b>c</b>d" would use more tags, so it is incorrec
 
 **Example 2:**
 
-```text
+```
 Input:
 ["bcccaeb","b","eedcbda","aeebebebd","ccd","eabbbdcde","deaaea","aea","accebbb","d"]
 "ceaaabbbedabbecbcced"
@@ -106,7 +106,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -164,9 +163,33 @@ class Solution:
 ```
 {% endtab %}
 
+{% tab title="Python (Better)" %}
+```python
+class Solution:
+    def addBoldTag(self, s: str, words: List[str]) -> str:
+        flag = [0] * len(s)
+        cur_end = -1
+        for i in range(len(s)):
+            for word in words:
+                if s.startswith(word, i):
+                # if s[i:].find(word) == 0:
+                    cur_end = max(cur_end, i + len(word) - 1)
+            flag[i] = i <= cur_end
+        
+        ans = ""
+        for i in range(len(flag)):
+            if flag[i] and (i == 0 or not flag[i - 1]):
+                ans+="<b>"
+            ans+=s[i]
+            if flag[i] and (i == len(s) - 1 or not flag[i + 1]):
+                ans+="</b>"
+            
+        return ans
+```
+{% endtab %}
+
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -175,4 +198,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-
