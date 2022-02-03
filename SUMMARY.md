@@ -79,6 +79,7 @@
     * [Find Pivot Index (1068) (E)](data\_structure/array/prefix-sum/find-pivot-index-1068-e.md)
     * [Product of the Last K Numbers (LeetCode 1352) (M)](data\_structure/array/prefix-sum/product-of-the-last-k-numbers-leetcode-1352-m.md)
     * [Subarray Sum Equals to k II 1844 (M)](data\_structure/array/prefix-sum/subarray-sum-equals-to-k-ii-1844.md)
+    * [Maximum Size Subarray Sum Equals k (LeetCode 325) (M)](data\_structure/array/prefix-sum/maximum-size-subarray-sum-equals-k-leetcode-325-m.md)
     * [Maximum Points You Can Obtain from Cards (LeetCode 1423) (M)](data\_structure/array/prefix-sum/maximum-points-you-can-obtain-from-cards-leetcode-1423-m.md)
     * [Search Subarray 1457 (M)](data\_structure/array/prefix-sum/search-subarray-1457-m.md)
     * [Shortest Subarray with Sum at Least K 1507 (H)](data\_structure/array/prefix-sum/shortest-subarray-with-sum-at-least-k-1507-h.md)
