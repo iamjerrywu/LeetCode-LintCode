@@ -289,6 +289,7 @@
     * [Binary Tree Right Side View 760 (M)](data\_structure/tree/binary\_tree/binary-tree-right-side-view-760-m.md)
     * [All Nodes Distance K in Binary Tree (LeetCode 863) (M)](data\_structure/tree/binary\_tree/all-nodes-distance-k-in-binary-tree-leetcode-863-m.md)
     * [Equal Tree Partition 864 (M)](data\_structure/tree/binary\_tree/equal-tree-partition-864-m.md)
+    * [Check Completeness of a Binary Tree (LeetCode 958) (M)](data\_structure/tree/binary\_tree/check-completeness-of-a-binary-tree-leetcode-958-m.md)
     * [Vertical Order Traversal of a Binary Tree (LeetCode 987) (H)](data\_structure/tree/binary\_tree/vertical-order-traversal-of-a-binary-tree-leetcode-987-h.md)
     * [Cousins in Binary Tree (LeetCode 993) (E)](data\_structure/tree/binary\_tree/cousins-in-binary-tree-leetcode993-e.md)
     * [Delete Nodes And Return Forest (LeetCode 1110) (M)](data\_structure/tree/binary\_tree/delete-nodes-and-return-forest-leetcode-1110-m.md)
