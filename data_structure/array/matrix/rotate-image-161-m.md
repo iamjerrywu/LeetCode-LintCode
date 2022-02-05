@@ -1,20 +1,20 @@
-# Rotate Image 161 \(M\)
+# Rotate Image 161 (M)
 
 ## Problem
 
-You are given an _n_ x _n_ 2D matrix representing an image.  
-Rotate the image by `90` degrees \(clockwise\).Example
+You are given an _n_ x _n_ 2D matrix representing an image.\
+Rotate the image by `90` degrees (clockwise).Example
 
 **Example 1：**
 
-```text
+```
 Input:[[1,2],[3,4]]
 Output:[[3,1],[4,2]]
 ```
 
 **Example 2:**
 
-```text
+```
 Input:[[1,2,3],[4,5,6],[7,8,9]]
 Output:[[7,4,1],[8,5,2],[9,6,3]]
 ```
@@ -59,7 +59,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -69,7 +68,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-## Solution 
+## Solution&#x20;
 
 ### Code - In-Place
 
@@ -99,7 +98,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -109,3 +107,40 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
+****
+
+## Solution - Geometry
+
+![](<../../../.gitbook/assets/Screen Shot 2022-02-04 at 8.10.17 PM.png>)
+
+### Code - In-Place
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    def rotate(self, matrix: List[List[int]]) -> None:
+        """
+        Do not return anything, modify matrix in-place instead.
+        """
+        
+        # first reverse matrix 
+        matrix.reverse()
+        
+        # transpose matrix
+        for i in range(len(matrix)):
+            for j in range(i + 1, (len(matrix[i]))):
+                matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
+```
+{% endtab %}
+
+{% tab title="java" %}
+```
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
