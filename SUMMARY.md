@@ -589,6 +589,7 @@
   * [Most Stones Removed with Same Row or Column (LeetCode 947) (M)](algorithm/dfs/most-stones-removed-with-same-row-or-column-leetcode-947-m.md)
   * [Critical Connections in a Network 1271 (H)](algorithm/dfs/critical-connections-in-a-network-1271-h.md)
   * [Longest Path On The Tree 1469 (M)](algorithm/dfs/longest-path-on-the-tree-1469-m.md)
+  * [Detect Cycles in 2D Grid (LeetCode 1559) (M)](algorithm/dfs/detect-cycles-in-2d-grid-leetcode-1559-m.md)
   * [Minimum Degree of a Connected Trio in a Graph (LeetCode 1761) (H)](algorithm/dfs/minimum-degree-of-a-connected-trio-in-a-graph-leetcode-1761-h.md)
   * [Splitting a String Into Descending Consecutive Values (LeetCode 1849) (M) (](algorithm/dfs/splitting-a-string-into-descending-consecutive-values-leetcode-1849-m.md)
   * [Number of Ways to Arrive at Destination (LeetCode1976) (M)](algorithm/dfs/number-of-ways-to-arrive-at-destination-leetcode1976-m.md)
