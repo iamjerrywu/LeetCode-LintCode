@@ -6,6 +6,7 @@
 ## Data\_Structure
 
 * [String](data\_structure/string/README.md)
+  * [String to Integer (atoi) (LeetCode 8) (M)](data\_structure/string/string-to-integer-atoi-leetcode-8-m.md)
   * [Zigzag Conversion (LeetCode 6) (M)](data\_structure/string/zigzag-conversion-leetcode-6-m.md)
   * [Rotate String 8 (E)](data\_structure/string/rotate-string-8-e.md)
   * [Rotate String (LeetCode796) (E)](data\_structure/string/rotate-string-leetcode796-e.md)
