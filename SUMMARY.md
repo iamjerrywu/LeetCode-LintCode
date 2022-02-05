@@ -614,6 +614,7 @@
     * [Partition Equal Subset Sum 588 (M)](algorithm/dynamic\_programming/backpack/partition-equal-subset-sum-588-m.md)
     * [Coin Change 669 (M)](algorithm/dynamic\_programming/backpack/coin-change-669-m.md)
     * [Coin Change 2 740 (M)](algorithm/dynamic\_programming/backpack/coin-change-2-740-m.md)
+    * [Minimum Cost For Tickets (LeetCode 983) (M)](algorithm/dynamic\_programming/backpack/minimum-cost-for-tickets-leetcode-983-m.md)
     * [Profitable Schemes 1607 (H)](algorithm/dynamic\_programming/backpack/profitable-schemes-1607-h.md)
     * [Float Combination Sum 1800 (M)](algorithm/dynamic\_programming/backpack/float-combination-sum-1800-m.md)
   * [Coordination](algorithm/dynamic\_programming/coordination/README.md)
