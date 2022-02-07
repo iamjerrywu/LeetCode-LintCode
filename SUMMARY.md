@@ -542,6 +542,7 @@
   * [Open the Lock 796 (H)](algorithm/s4.-queue-bfs-graph/untitled.md)
   * [Number of Distinct Islands 860 (M)](algorithm/s4.-queue-bfs-graph/number-of-distinct-islands-860-m.md)
   * [Snakes and Ladders (LeetCode 909) (M)](algorithm/s4.-queue-bfs-graph/snakes-and-ladders-leetcode-909-m.md)
+  * [Shortest Bridge (LeetCode 934) (M)](algorithm/s4.-queue-bfs-graph/shortest-bridge-leetcode-934-m.md)
   * [Rotting Oranges (LeetCode 994) (M)](algorithm/s4.-queue-bfs-graph/untitled-1.md)
   * [Shortest Path in Binary Matrix (LeetCode 1091) (M)](algorithm/s4.-queue-bfs-graph/shortest-path-in-binary-matrix-leetcode-1091-m.md)
   * [Friend Circles 1179 (M)](algorithm/s4.-queue-bfs-graph/1179.-friend-circles.md)
