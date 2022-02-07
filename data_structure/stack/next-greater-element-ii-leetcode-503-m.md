@@ -73,6 +73,32 @@ class Solution:
 ```
 {% endtab %}
 
+{% tab title="Python (Better)" %}
+```python
+class Solution:
+    def nextGreaterElements(self, nums: List[int]) -> List[int]:
+        stack = []
+        ans = [-1] * len(nums)
+        
+        
+        # first round
+        # 5, 3, 2, 4
+        # 5, (3, 2), 4  => here that both 3, 2 will be popped
+        for i in range(len(nums)):
+            while stack and nums[i] > nums[stack[-1]]:
+                ans[stack.pop()] = nums[i]
+            stack.append(i)
+        
+        # second loop, since we need to find if after wrapper
+        # any val in the array is bigger than element in the stack
+        for i in range(len(nums)):
+            while stack and nums[i] > nums[stack[-1]]:
+                ans[stack.pop()] = nums[i]
+        return ans
+        
+```
+{% endtab %}
+
 {% tab title="Java" %}
 ```java
 ```
