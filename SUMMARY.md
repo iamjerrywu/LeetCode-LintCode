@@ -297,6 +297,7 @@
     * [Check Completeness of a Binary Tree (LeetCode 958) (M)](data\_structure/tree/binary\_tree/check-completeness-of-a-binary-tree-leetcode-958-m.md)
     * [Vertical Order Traversal of a Binary Tree (LeetCode 987) (H)](data\_structure/tree/binary\_tree/vertical-order-traversal-of-a-binary-tree-leetcode-987-h.md)
     * [Cousins in Binary Tree (LeetCode 993) (E)](data\_structure/tree/binary\_tree/cousins-in-binary-tree-leetcode993-e.md)
+    * [Sum of Root To Leaf Binary Numbers (LeetCode 1022) (E)](data\_structure/tree/binary\_tree/sum-of-root-to-leaf-binary-numbers-leetcode-1022-e.md)
     * [Delete Nodes And Return Forest (LeetCode 1110) (M)](data\_structure/tree/binary\_tree/delete-nodes-and-return-forest-leetcode-1110-m.md)
     * [Add One Row to Tree 1122 (M)](data\_structure/tree/binary\_tree/add-one-row-to-tree-1122-m.md)
     * [Construct String from Binary Tree 1137 (E)](data\_structure/tree/binary\_tree/construct-string-from-binary-tree-1137-e.md)
