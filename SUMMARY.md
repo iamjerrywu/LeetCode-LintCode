@@ -229,6 +229,7 @@
   * [Pairs of Songs With Total Durations Divisible by 60 (LeetCode 1010) (M)](data\_structure/hash/pairs-of-songs-with-total-durations-divisible-by-60-leetcode-1010-m.md)
   * [Rabbits in Forest 1035 (M)](data\_structure/hash/rabbits-in-forest-1035-m.md)
   * [High Five (LeetCode 1086) (E)](data\_structure/hash/high-five-leetcode-1086-e.md)
+  * [Snapshot Array (LeetCode 1146) (M)](data\_structure/hash/snapshot-array-leetcode-1146-m.md)
   * [Group the People Given the Group Size They Belong To (LeetCode 1282) (M)](data\_structure/hash/group-the-people-given-the-group-size-they-belong-to-leetcode-1282-m.md)
   * [Bulls and Cows 1299 (M)](data\_structure/hash/bulls-and-cows-1299-m.md)
   * [Tweet Counts Per Frequency 1348 (M)](data\_structure/hash/tweet-counts-per-frequency-1348-m.md)
