@@ -45,39 +45,30 @@ Output: ["1.0.10.23","1.0.102.3","10.1.0.23","10.10.2.3","101.0.2.3"]
 ```python
 class Solution:
     def restoreIpAddresses(self, s: str) -> List[str]:
-        res = []
-        
-        self.dfs(0, s, [], 0, res)
-        return res
+        ans = []
+        self.dfs(0, "", s, 0, ans)
+        return ans
     
-    def dfs(self, index, s, tmp_s, cnt, res):
-        
-        # early punning, reduce searching time
+    
+    def dfs(self, idx, string, s, cnt,  ans):
         if cnt > 4:
-            return
-        # reach base condition, should return 
-        if index == len(s):
-            if cnt == 4:
-                res.append(".".join(tmp_s))
             return 
         
-        # count one char
-        if 0 <= int(s[index]) <= 9:
-            tmp_s.append(s[index])
-            self.dfs(index + 1, s, tmp_s, cnt + 1, res)
-            tmp_s.pop()
+        if idx == len(s):
+            if cnt == 4:
+                ans.append(string[1:])
+            return 
+            
+        # take one digit
+        self.dfs(idx + 1, string + '.' + s[idx], s, cnt + 1, ans)
         
-        # count two char
-        if index + 1 < len(s) and 0 <= int(s[index : index + 2]) <= 99 and s[index] != '0':
-            tmp_s.append(s[index : index + 2])
-            self.dfs(index + 2, s, tmp_s, cnt + 1, res)
-            tmp_s.pop()
-
-        # count three char
-        if index + 2 < len(s) and 0 <= int(s[index : index + 3]) <= 255 and s[index] != '0':        
-            tmp_s.append(s[index : index + 3])
-            self.dfs(index + 3, s, tmp_s, cnt + 1, res)
-            tmp_s.pop()
+        # take two digits
+        if idx + 1 < len(s) and 10 <= int(s[idx:idx + 2]) <= 99:
+            self.dfs(idx + 2, string + '.' + s[idx:idx + 2], s, cnt + 1, ans)
+        
+        # take three digits
+        if idx + 2 < len(s) and 100 <= int(s[idx:idx + 3]) <= 255:
+            self.dfs(idx + 3, string + '.' + s[idx:idx + 3], s, cnt + 1, ans)
 ```
 {% endtab %}
 
