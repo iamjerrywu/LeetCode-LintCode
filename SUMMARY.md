@@ -185,6 +185,7 @@
   * [Implement Queue by Linked List 492 (E)](data\_structure/s4.-stack-and-queue/457.-implement-queue-by-linked-list.md)
   * [Implement Queue by Interface 546 (E)](data\_structure/s4.-stack-and-queue/implement-queue-by-interface-546-e.md)
   * [Zigzag Iterator II 541 (M)](data\_structure/s4.-stack-and-queue/zigzag-iterator-ii-541-m.md)
+  * [Design Circular Queue (LeetCode 622) (M)](data\_structure/s4.-stack-and-queue/design-circular-queue-leetcode-622-m.md)
   * [Employee Importance (LeetCode 690) (M)](data\_structure/s4.-stack-and-queue/employee-importance-leetcode-690-m.md)
   * [Flood Fill (LeetCode 733) (E)](data\_structure/s4.-stack-and-queue/flood-fill-leetcode-733-e.md)
 * [Hash](data\_structure/hash/README.md)
