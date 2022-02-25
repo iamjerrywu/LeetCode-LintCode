@@ -1,4 +1,4 @@
-# Remove Linked List Elements 452 \(E\)
+# Remove Linked List Elements 452 (E)
 
 ## Problem
 
@@ -6,19 +6,19 @@ Remove all elements from a linked list of integers that have value `val`.Example
 
 **Example 1:**
 
-```text
+```
 Input: head = 1->2->3->3->4->5->3->null, val = 3
 Output: 1->2->4->5->null
 ```
 
 **Example 2:**
 
-```text
+```
 Input: head = 1->1->null, val = 1
 Output: null
 ```
 
-## Solution 
+## Solution - Iteration
 
 ### Code
 
@@ -53,6 +53,37 @@ class Solution:
         
 ```
 {% endtab %}
+
+{% tab title="Java" %}
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode removeElements(ListNode head, int val) {
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode prev = dummy;
+        while (head != null) {
+            if (head.val == val) {
+                prev.next = head.next;
+            } else {
+                prev = prev.next;
+            }
+            head = head.next;
+        }
+        return dummy.next;
+    }   
+}
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
@@ -60,3 +91,52 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
+****
+
+## Solution - Recursion
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode removeElements(ListNode head, int val) {
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        recursion(dummy, head, val);
+        return dummy.next;
+    }
+    
+    private void recursion(ListNode prev, ListNode cur, int val) {
+        if (cur == null) return;
+        if (cur.val == val) {
+            prev.next = cur.next;
+            recursion(prev, cur.next, val);
+        } else {
+            recursion(prev.next, cur.next, val);
+        }
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
