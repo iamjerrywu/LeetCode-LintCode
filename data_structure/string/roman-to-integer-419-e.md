@@ -87,15 +87,14 @@ class Solution:
             "C" :  100,
             "D" :  500,
             "M" : 1000}
-        ans = 0
-        i = 0
+        ans, i = 0, 0
         while i < len(s):
             if i < len(s) - 1 and hash_map[s[i]] < hash_map[s[i + 1]]:
                 ans+=-hash_map[s[i]]
             else:
                 ans+=hash_map[s[i]]
             i+=1
-        return ansinte
+        return ans
 ```
 {% endtab %}
 
@@ -143,8 +142,7 @@ public:
             {'M', 1000}
         };
         
-        int i = 0;
-        int ans = 0;
+        int i = 0, ans = 0;
     
         while (i < s.length()) {
             if (i < s.length() - 1 && rec[s[i]] < rec[s[i + 1]]) {
