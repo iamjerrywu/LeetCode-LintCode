@@ -70,6 +70,10 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 ## Solution&#x20;
 
+### Oberservation
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-08-27 at 1.16.27 PM.png" alt=""><figcaption></figcaption></figure>
+
 {% tabs %}
 {% tab title="Python" %}
 ```python
@@ -92,6 +96,67 @@ class Solution:
                 ans+=hash_map[s[i]]
             i+=1
         return ansinte
+```
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+class Solution {
+    public int romanToInt(String s) {
+        Map<String, Integer> map = new HashMap<>() {{
+            put("I", 1);
+            put("V", 5);
+            put("X", 10);
+            put("L", 50);
+            put("C", 100);
+            put("D", 500);
+            put("M", 1000);
+        }};
+        
+        int i = 0, ans = 0;
+        while (i < s.length()) {
+            if (i < s.length() - 1 && map.get(String.valueOf(s.charAt(i))) < map.get(String.valueOf(s.charAt(i + 1)))) {
+                ans -= map.get(String.valueOf(s.charAt(i)));
+            } else {
+                ans += map.get(String.valueOf(s.charAt(i)));
+            }
+            i+=1;
+        }
+        return ans;
+    }
+}
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int romanToInt(string s) {
+        map<char, int> rec = {
+            {'I', 1},
+            {'V', 5},
+            {'X', 10},
+            {'L', 50},
+            {'C', 100},
+            {'D', 500},
+            {'M', 1000}
+        };
+        
+        int i = 0;
+        int ans = 0;
+    
+        while (i < s.length()) {
+            if (i < s.length() - 1 && rec[s[i]] < rec[s[i + 1]]) {
+                ans-=rec[s[i]];
+            } else {
+                ans+=rec[s[i]];
+            }
+            i++;
+        }
+        return ans;
+    }
+};
 ```
 {% endtab %}
 {% endtabs %}
