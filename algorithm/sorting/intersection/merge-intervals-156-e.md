@@ -100,18 +100,39 @@ class Solution:
 ```
 {% endtab %}
 
+{% tab title="Java" %}
+```java
+class Solution {
+    public int[][] merge(int[][] intervals) {
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+        List<int[]> merged = new ArrayList<>();
+        for (int[] interval : intervals) {
+            if (merged.isEmpty() || interval[0] > merged.getLast(merged.size() - 1)[1]) {
+                merged.add(interval);
+            } else {
+                merged.get(merged.size() - 1)[1] = Math.max(merged.get(merged.size() - 1)[1], interval[1]);
+            }
+        }
+        
+        return merged.toArray(new int[merged.size()][]);
+    }
+}
+```
+{% endtab %}
+
 {% tab title="C++" %}
 ```cpp
 class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
+        // or can simply write: 
+        // sort(intervals.begin(), intervals.end())
         sort(intervals.begin(), intervals.end(), compare);
         
         vector<vector<int>> res;
-        int left = intervals[0][0], right = intervals[0][1];
-        
+    
         for (vector<int> interval : intervals) {
-            if ((res.size() == 0) or (res.back()[1] < interval[0])) {
+            if (res.size() == 0 or res.back()[1] < interval[0]) {
                 res.push_back(interval);
             } else {
                 res.back()[1] = max(res.back()[1], interval[1]);
@@ -132,8 +153,8 @@ private:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: O(n)**
 
 ****
 
@@ -190,28 +211,76 @@ class Solution:
 ```
 {% endtab %}
 
-{% tab title="C++" %}
-```cpp
+{% tab title="Java" %}
+```java
 class Solution {
-public:
-    vector<vector<int>> merge(vector<vector<int>>& intervals) {
-        sort(intervals.begin(), intervals.end(), compare);
+    public int[][] merge(int[][] intervals) {
         
-        vector<vector<int>> res;
-        int left = intervals[0][0], right = intervals[0][1];
+        ArrayList<int[]> new_arr = new ArrayList<int[]>();
+        for (int[] interval : intervals) {
+            new_arr.add(new int[]{interval[0], -1});
+            new_arr.add(new int[]{interval[1], 1});
+        }
+        Collections.sort(new_arr, myComparator);
         
-        for (vector<int> interval : intervals) {
-            if ((res.size() == 0) or (res.back()[1] < interval[0])) {
-                res.push_back(interval);
-            } else {
-                res.back()[1] = max(res.back()[1], interval[1]);
+        int is_matched = 0;
+        List<int[]> res = new ArrayList<>();
+        int left = 0, right = 0;
+        for (int[] arr : new_arr) {
+            if (is_matched == 0) {
+                left = arr[0];
+            }
+            is_matched+=arr[1];
+            if (is_matched == 0) {
+                right = arr[0];
+                res.add(new int[]{left, right});
             }
         }
+        return res.toArray(new int[res.size()][]);
+    }
+    private Comparator<int[]> myComparator = new Comparator<int[]>() {
+        @Override
+        public int compare(int[] a, int[] b) {
+            if (a[0] == b[0]) {
+                return a[1] < b[1] ? -1 : 1;
+            }
+            return a[0] < b[0] ? -1 : 1;
+        }
+    };
+}
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+lass Solution {
+public:
+    vector<vector<int>> merge(vector<vector<int>>& intervals) {
+        vector<vector<int>> boundaries;
         
+        for (vector<int> interval : intervals) {
+            boundaries.push_back(vector<int>{interval[0], -1});
+            boundaries.push_back(vector<int>{interval[1], 1});
+        }
+        
+        sort(boundaries.begin(), boundaries.end(), compare);
+        
+        vector<vector<int>> res;
+        int is_matched = 0;
+        int left = 0;
+        for (vector<int> boundary : boundaries) {
+            if (is_matched == 0) {
+                left = boundary[0];
+            }
+            is_matched+=boundary[1];
+            if (is_matched == 0) {
+                res.push_back(vector<int>{left, boundary[0]});
+            }
+        }
         return res;
     }
     
-private:
+private: 
     static bool compare(vector<int> v1, vector<int> v2) {
         return v1[0] == v2[0] ? v1[1] < v2[1] : v1[0] < v2[0];
     }

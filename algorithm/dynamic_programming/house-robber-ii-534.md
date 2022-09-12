@@ -1,4 +1,4 @@
-# House Robber II 534 \(M\)
+# House Robber II 534 (M)
 
 ## Problem
 
@@ -18,12 +18,12 @@ This is an extension of [House Robber](http://www.lintcode.com/problem/house-rob
 
 **Example1**
 
-```text
+```
 Input: nums = [3,6,4]
 Output: 6
 ```
 
-```text
+```
 Input: nums = [3,6,4]
 Output: 6
 ```
@@ -32,12 +32,12 @@ Output: 6
 
 **Example2**
 
-```text
+```
 Input: nums = [2,3,2,3]
 Output: 6
 ```
 
-```text
+```
 Input: nums = [2,3,2,3]
 Output: 6
 ```
@@ -80,8 +80,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
 
 ## Solution - DP with Strolling Arrays
 
@@ -121,6 +121,51 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**
 
+****
+
+****
+
+## Solution - DP **(2)**
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        if not nums:
+            return 0 
+        
+        if len(nums) < 2:
+            return nums[0]
+        if len(nums) < 3:
+            return max(nums[0], nums[1])
+
+        n = len(nums)
+        # house[0] ~ house[n - 2]
+        dp_left = [0] * n
+        dp_left[0] = nums[0]
+        dp_left[1] = max(nums[0], nums[1])
+        for i in range(2, len(nums) - 1):
+            dp_left[i] = max(dp_left[i - 1], dp_left[i - 2] + nums[i])
+        
+        # house[1] ~ house[n - 1]
+        dp_right = [0] * n
+        dp_right[1] = nums[1]
+        dp_right[2] = max(nums[1], nums[2])
+        for i in range(3, len(nums)):
+            dp_right[i] = max(dp_right[i - 1], dp_right[i - 2] + nums[i])
+        
+        return max(dp_left[n - 2], dp_right[-1])
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**

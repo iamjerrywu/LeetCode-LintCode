@@ -1,4 +1,4 @@
-# First Missing Positive 189 \(M\)
+# First Missing Positive 189 (M)
 
 ## Problem
 
@@ -6,19 +6,19 @@ Given an **unsorted** integer array, find the first **missing** positive integer
 
 **Example 1:**
 
-```text
+```
 Input:[1,2,0]Output:3
 ```
 
 **Example 2:**
 
-```text
+```
 Input:[3,4,-1,1]Output:2
 ```
 
 Challenge
 
-Your algorithm should run in O\(_n_\) time and uses constant space.
+Your algorithm should run in O(_n_) time and uses constant space.
 
 ## Solution - Hash Table
 
@@ -39,8 +39,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
 
 ## Solution - Greedy
 
@@ -63,6 +63,31 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**
 
+## Solution - Greedy **(2)**
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-09-11 at 5.28.07 PM.png" alt=""><figcaption></figcaption></figure>
+
+```python
+class Solution:
+    def firstMissingPositive(self, nums: List[int]) -> int:
+        n = len(nums)
+        
+        # first scan: put the right number in the right index
+        for i in range(n):
+            while 0 < nums[i] <= n and nums[nums[i] - 1] != nums[i]:
+                nums[nums[i] - 1], nums[i] = nums[i], nums[nums[i] - 1]
+        
+        # second scan: check missing number by index, if not match, then that's answer 
+        for i in range(n):
+            if nums[i] != i + 1:
+                return i + 1
+        return n + 1
+```
+
+### Complexity Analysis
+
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**
