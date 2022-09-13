@@ -640,6 +640,7 @@
     * [Unique Paths II 115 (E)](algorithm/dynamic\_programming/coordination/115.-unique-paths-ii-e.md)
     * [Jump Game 116 (M)](algorithm/dynamic\_programming/coordination/116.-jump-game-m.md)
     * [Pascal's Triangle (LeetCode 118) (E)](algorithm/dynamic\_programming/coordination/pascals-triangle-leetcode-118-e.md)
+    * [Solving Questions With Brainpower (LeetCode 2140) (M)](algorithm/dynamic\_programming/coordination/solving-questions-with-brainpower-leetcode-2140-m.md)
     * [Jump Game II (LeetCode 45) (M)](algorithm/dynamic\_programming/coordination/jump-game-ii-leetcode-45-m.md)
     * [Jump Game VII (LeetCode 5765) (M)](algorithm/dynamic\_programming/coordination/untitled.md)
     * [Maximal Square 436 (M)](algorithm/dynamic\_programming/coordination/untitled-1.md)
