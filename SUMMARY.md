@@ -750,6 +750,7 @@
   * [Find Greatest Common Divisor of Array (LeetCode 5850) (E)](other/mathmatics/find-greatest-common-divisor-of-array-leetcode-5850-e.md)
   * [Find Missing Observations (LeetCode 2028) (M)](other/mathmatics/find-missing-observations-leetcode-2028-m.md)
   * [Minimum Operations to Make a Uni-Value Grid (LeetCode 2033) (M)](other/mathmatics/minimum-operations-to-make-a-uni-value-grid-leetcode-2033-m.md)
+  * [Minimum Moves to Reach Target Score (LeetCode 2139)](other/mathmatics/minimum-moves-to-reach-target-score-leetcode-2139.md)
 * [Binary](other/binary/README.md)
   * [Reverse Bits (LeetCode 190) (E)](other/binary/reverse-bits-leetcode-190-e.md)
   * [Single Number II 83 (M)](other/binary/single-number-ii-83-m.md)
