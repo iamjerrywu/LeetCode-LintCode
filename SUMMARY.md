@@ -255,6 +255,7 @@
   * [Minimize the Difference Between Target and Chosen Elements (LeetCode 1981) (M)](data\_structure/hash/minimize-the-difference-between-target-and-chosen-elements-leetcode-1981-m.md)
   * [Find Original Array From Doubled Array (LeetCode 2007) (M)](data\_structure/hash/find-original-array-from-doubled-array-leetcode-2007-m.md)
   * [Detect Squares (LeetCode 2013) (M)](data\_structure/hash/detect-squares-leetcode-2013-m.md)
+  * [Keep Multiplying Found Values by Two (LeetCode 2154) (E)](data\_structure/hash/keep-multiplying-found-values-by-two-leetcode-2154-e.md)
 * [Tree](data\_structure/tree/README.md)
   * [Binary Tree](data\_structure/tree/binary\_tree/README.md)
     * [Basic Traversal](data\_structure/tree/binary\_tree/basic-traversal/README.md)
