@@ -128,6 +128,7 @@
   * [Check if All Characters Have Equal Number of Occurrences 1941 (E)](data\_structure/array/check-if-all-characters-have-equal-number-of-occurrences-1941-e.md)
   * [Count Special Quadruplets (LeetCode 1995) (E)](data\_structure/array/count-special-quadruplets-leetcode-1995-e.md)
 * [Linked List](data\_structure/linked\_list/README.md)
+  * [Reverse Nodes in k-Group (LeetCode 25) (H)](data\_structure/linked\_list/reverse-nodes-in-k-group-leetcode-25-h.md)
   * [Middle of Linked List 228 (N)](data\_structure/linked\_list/middle-of-linked-list-228-n.md)
   * [Middle of the LinkedList 1609 (E)](data\_structure/linked\_list/middle-of-the-linkedlist-1609-e.md)
   * [Remove Duplicates from Unsorted List 217 (E)](data\_structure/linked\_list/remove-duplicates-from-unsorted-list-217-e.md)
