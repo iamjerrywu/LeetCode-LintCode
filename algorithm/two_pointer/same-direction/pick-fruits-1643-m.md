@@ -1,4 +1,4 @@
-# Pick Fruits 1643 \(M\)
+# Pick Fruits 1643 (M)
 
 ## Problem
 
@@ -8,13 +8,13 @@ The length of the array does not exceed 100,000Example
 
 **Example 1:**
 
-```text
+```
 Input：[1,2,1,3,4,3,5,1,2]Output：3Explanation：Select [1, 2, 1] or [3, 4, 3]. The length is 3.
 ```
 
 **Example 2:**
 
-```text
+```
 Input：[1,2,1,2,1,2,1]Output：7Explanation：Select  [1, 2, 1, 2, 1, 2, 1].The length is 7.
 ```
 
@@ -42,8 +42,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^3\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n^3)**
+* **Space Complexity: O(n)**
 
 ## Solution - Two Pointers
 
@@ -76,6 +76,39 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
 
+****
+
+## Solution - Two Pointers (2)
+
+```python
+class Solution:
+    def totalFruit(self, fruits: List[int]) -> int:
+        basket = collections.defaultdict(int)
+        cnt, ans = 0, 0
+        s = 0
+        for i in range(len(fruits)):
+            fruit = fruits[i]
+            if fruit not in basket and len(basket) == 2:
+                while len(basket) >= 2:
+                    basket[fruits[s]]-=1
+                    if basket[fruits[s]] == 0:
+                        basket.pop(fruits[s])
+                    cnt-=1
+                    s+=1
+                basket[fruit]+=1
+                cnt+=1
+            else:
+                basket[fruit]+=1
+                cnt+=1
+            ans = max(ans, cnt)
+        return ans
+                    
+```
+
+### Complexity Analysis
+
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
