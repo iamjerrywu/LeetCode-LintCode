@@ -34,27 +34,35 @@ Output: false
 
 ## Solution - Sliding Window + Buckets
 
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-09-23 at 12.54.43 PM.png" alt=""><figcaption></figcaption></figure>
+
 {% tabs %}
 {% tab title="Python" %}
 ```python
 class Solution:
-    def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool:
-        if t < 0:
-            return False
-        buckets={}
-        for i in range(len(nums)):
-            bucket_id = nums[i]//(t+1)
-            if bucket_id in buckets.keys():
-                return True
-            if bucket_id - 1 in buckets.keys() and abs(buckets[bucket_id-1] - nums[i]) <= t:
-                return True
-            if bucket_id + 1 in buckets.keys() and abs(buckets[bucket_id+1] - nums[i]) <= t:
-                return True
-            buckets[bucket_id] = nums[i]
-            if i >= k :
-                del buckets[nums[i-k]//(t+1)]
+    def containsNearbyAlmostDuplicate(self, nums: List[int], indexDiff: int, valueDiff: int) -> bool:
+        # if valueDiff == 0:
+        #     return True
         
+        bucket = {}
+        for i, num in enumerate(nums):
+            # devided into (valueDiff + 1) group
+            bucket_id = num//(valueDiff)
+            
+            if bucket_id in bucket:
+                return True
+            if bucket_id - 1 in bucket and abs(bucket[bucket_id - 1] - num) <= valueDiff:
+                return True
+            if bucket_id + 1 in bucket and abs(bucket[bucket_id + 1] - num) <= valueDiff:
+                return True
+            # make the bucket always has the latest value
+            bucket[bucket_id] = num
+            if i >= indexDiff:
+                bucket.pop(nums[i - indexDiff]//(valueDiff))
+            print(bucket)
         return False
+    
+
         
 ```
 {% endtab %}

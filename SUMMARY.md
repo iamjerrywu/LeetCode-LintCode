@@ -702,6 +702,7 @@
 * [Greedy](algorithm/greedy/README.md)
   * [Gas Station 187 (M)](algorithm/greedy/gas-station-187-m.md)
   * [Find the Celebrity (LeetCode 277) (M)](algorithm/greedy/find-the-celebrity-leetcode-277-m.md)
+  * [Remove Duplicate Letters (LeetCode 316) (M)](algorithm/greedy/remove-duplicate-letters-leetcode-316-m.md)
   * [Smallest Subset 761 (M)](algorithm/greedy/smallest-subset-761-m.md)
   * [Global and Local Inversions (LeetCode 775) (M)](algorithm/greedy/global-and-local-inversions-leetcode-775-m.md)
   * [Task Scheduler 945 (M)](algorithm/greedy/task-scheduler-945-m.md)
