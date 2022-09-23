@@ -123,3 +123,94 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
+
+## Solution - Sliding Window 2 (better)
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    def minWindow(self, s: str, t: str) -> str:
+        appears = Counter(t)
+        ans_length = float('inf')
+        ans = ''
+        cnt = len(appears)
+        
+        start, end = 0, 0
+        
+        while end < len(s):
+            while end < len(s) and cnt != 0:
+                if s[end] in appears:
+                    appears[s[end]]-=1
+                    if appears[s[end]] == 0:
+                        cnt-=1
+                end+=1
+            
+            while start < end and cnt == 0:
+                if ans_length > end - start:
+                    ans_length = end - start
+                    ans = s[start:end]
+                
+                if s[start] in appears:
+                    appears[s[start]]+=1
+                    if appears[s[start]] > 0:
+                        cnt+=1
+                    
+                start+=1
+        print(end, start)
+        return ans
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+****
+
+## Solution **- Sliding Window 2 (better)**
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+class Solution:
+    def minWindow(self, s: str, t: str) -> str:
+        appears = Counter(t)
+        ans_length = float('inf')
+        ans = ''
+        cnt = len(appears)
+        
+        start = 0
+        
+        for end in range(len(s)):
+            if cnt > 0:
+                if s[end] in appears:
+                    appears[s[end]]-=1
+                    if appears[s[end]] == 0:
+                        cnt-=1
+            while start < (end + 1) and cnt == 0:
+                if ans_length > end - start:
+                    ans_length = end - start
+                    ans = s[start:(end + 1)]
+                if s[start] in appears:
+                    appears[s[start]]+=1
+                    if appears[s[start]] > 0:
+                        cnt+=1
+                start+=1
+        return ans
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+****
