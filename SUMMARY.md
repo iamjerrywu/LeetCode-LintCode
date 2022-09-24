@@ -296,6 +296,7 @@
     * [Flatten Binary Tree to Linked List 453 (E)](data\_structure/tree/binary\_tree/flatten-binary-tree-to-linked-list.md)
     * [Find Largest Value in Each Tree Row (LeetCode 515) (M)](data\_structure/tree/binary\_tree/find-largest-value-in-each-tree-row-leetcode-515-m.md)
     * [Construct Binary Tree from String (LeetCode 536) (M)](data\_structure/tree/binary\_tree/construct-binary-tree-from-string-leetcode-536-m.md)
+    * [Boundary of Binary Tree](data\_structure/tree/binary\_tree/boundary-of-binary-tree.md)
     * [Binary Tree Longest Consecutive Sequence 595 (M)](data\_structure/tree/binary\_tree/binary-tree-longest-consecutive-sequence-595-m.md)
     * [Minimum Subtree 596 (E)](data\_structure/tree/binary\_tree/596-minimum-subtree-e.md)
     * [Subtree with Maximum Average 597 (E)](data\_structure/tree/binary\_tree/subtree-with-maximum-average-597-m.md)
