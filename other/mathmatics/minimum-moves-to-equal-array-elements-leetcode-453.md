@@ -36,6 +36,8 @@ Output: 0
 
 ## Solution&#x20;
 
+Can also think in this way, that everytime (m - 1) number plus one, equals to one number minus one
+
 ![](<../../.gitbook/assets/Screen Shot 2021-11-06 at 1.50.34 PM.png>)
 
 {% tabs %}
