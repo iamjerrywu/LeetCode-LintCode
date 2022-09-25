@@ -41,23 +41,20 @@ Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.
 ```python
 class Solution:
     def longestOnes(self, nums: List[int], k: int) -> int:
+        zero_cnt = 0
         ans = 0
-        left = 0
-        length = 0
-        for right in range(len(nums)):
-            if nums[right] == 1:
-                length+=1
-            else:
-                if k == 0:
-                    while nums[left] == 1:
-                        left+=1
-                    left+=1
-                    k+=1
-                k-=1
-                length = right - left + 1
-            ans = max(ans, length)
+        
+        j = 0
+        for i in range(len(nums)):
+            if nums[i] == 0:
+                zero_cnt+=1
+            
+            while zero_cnt > k:
+                if nums[j] == 0:
+                    zero_cnt-=1
+                j+=1
+            ans = max(ans, i - j + 1)
         return ans
-                
 ```
 {% endtab %}
 {% endtabs %}

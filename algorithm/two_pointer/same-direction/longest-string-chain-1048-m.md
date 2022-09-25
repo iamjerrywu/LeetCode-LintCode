@@ -59,27 +59,26 @@ Only need to move j pointer when k == 0 (move to the right until reach answerKey
 ```python
 class Solution:
     def maxConsecutiveAnswers(self, answerKey: str, k: int) -> int:
-        
-        return max(self.find_max_length(answerKey, 'T', k), self.find_max_length(answerKey, 'F', k))
-    
-    def find_max_length(self, answerKey, target, k):
-        max_len = 0
-        length = 0
-        j = 0
-        for i in range(len(answerKey)):
-            if answerKey[i] == target:
-                length+=1
-            else:
-                if k == 0:
-                    while answerKey[j] == target:
-                        j+=1
-                    # move one more step
-                    j+=1
-                    k+=1
-                k-=1
-                length = i - j + 1
-            max_len = max(max_len, length)
-        return max_len          
+        F_cnt, F_start = 0, 0
+        T_cnt, T_start = 0, 0
+        ans = 0
+        for end in range(len(answerKey)):
+            if answerKey[end] == 'F':
+                F_cnt+=1
+            while F_cnt > k:
+                if answerKey[F_start] == 'F':
+                    F_cnt-=1
+                F_start+=1
+            
+            if answerKey[end] == 'T':
+                T_cnt+=1
+            while T_cnt > k:
+                if answerKey[T_start] == 'T':
+                    T_cnt-=1
+                T_start+=1
+            
+            ans = max(ans, end - F_start + 1, end - T_start + 1)
+        return ans
 ```
 {% endtab %}
 {% endtabs %}
