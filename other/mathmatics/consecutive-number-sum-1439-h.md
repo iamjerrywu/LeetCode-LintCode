@@ -84,9 +84,43 @@ class Solution:
         return res
 ```
 {% endtab %}
+
+{% tab title="Untitled" %}
+```python
+class Solution:
+    def consecutiveNumbersSum(self, n: int) -> int:
+
+        # amount upper bound (lenght of longest consecutive positive numbers)
+        # appears in case like 1,2,3,4......
+        # Therefore, (1 + 1 + upper - 1) * (upper - 1) = 2n
+        # upper = sqrt(2 * n - 1)
+        ans = 0
+        for a in range(1, int(sqrt(2 * n - 1)) + 1):
+            if self.is_int(a, n):
+                ans+=1
+        return ans
+    
+        # m: i s the min value
+        # a: is the total consecutive numbers
+        # (m + m + a - 1) * a = 2n
+        # m = (2n - a - a^2)/2*a
+        # amount from range 1.......upper bound, and m (min value) must > 1
+    def is_int(self, amount, n):
+        min_val = (2 * n + amount - amount**2)/(2 * amount)
+        if min_val == int(min_val) and min_val > 0:
+            return True
+        return False
+    
+       
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
 * **Time Complexity: O(logn)**
 * **Space Complexity: O(1)**
+
+****
+
+****
