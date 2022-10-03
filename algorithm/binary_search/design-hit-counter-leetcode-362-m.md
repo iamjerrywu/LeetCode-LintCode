@@ -99,4 +99,43 @@ class HitCounter:
 * **Time Complexity:**
 * **Space Complexity:**
 
+
+
+## Solution - Heap
+
+
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+from collections import deque
+class HitCounter:
+
+    def __init__(self):
+        self.rec = deque()
+
+    def hit(self, timestamp: int) -> None:
+        self.rec.append(timestamp)
+    
+    def getHits(self, timestamp: int) -> int:
+        while self.rec and self.rec[0] < timestamp - 300 + 1:
+            self.rec.popleft()
+        return len(self.rec)
+    
+# Your HitCounter object will be instantiated and called as such:
+# obj = HitCounter()
+# obj.hit(timestamp)
+# param_2 = obj.getHits(timestamp)
+```
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity:**
+* **Space Complexity:**
+
 ****
