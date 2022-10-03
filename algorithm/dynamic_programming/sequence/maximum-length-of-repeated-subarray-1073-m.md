@@ -1,4 +1,4 @@
-# Maximum Length of Repeated Subarray 1073 (M)
+# Maximum Length of Repeated Subarray 1073 \(M\)
 
 ## Problem
 
@@ -6,7 +6,7 @@ Given two integer arrays `nums1` and `nums2`, return _the maximum length of a su
 
 **Example 1:**
 
-```
+```text
 Input: nums1 = [1,2,3,2,1], nums2 = [3,2,1,4,7]
 Output: 3
 Explanation: The repeated subarray with maximum length is [3,2,1].
@@ -14,7 +14,7 @@ Explanation: The repeated subarray with maximum length is [3,2,1].
 
 **Example 2:**
 
-```
+```text
 Input: nums1 = [0,0,0,0,0], nums2 = [0,0,0,0,0]
 Output: 5
 ```
@@ -51,14 +51,14 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O(n^3)**
-* **Space Complexity: O(n)**
+* **Time Complexity: O\(n^3\)**
+* **Space Complexity: O\(n\)**
 
 {% hint style="danger" %}
 LTE
 {% endhint %}
 
-## Solution - Binary Search with Sets (Best)
+## Solution - Binary Search with Sets \(Best\)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -96,8 +96,8 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:  O(log(m, n) \* max(m,n))**
-* **Space Complexity: O(log(m, n)\* max(m, n))**
+* **Time Complexity:  O\(log\(m, n\) \* max\(m,n\)\)**
+* **Space Complexity: O\(log\(m, n\)\* max\(m, n\)\)**
 
 ## Solution - DP
 
@@ -111,7 +111,6 @@ class Solution:
         
         
         # dp[i][j] means the longest repeated subarray btw nums1[0:i] and nums2[0:j]
-        # in other word, the longest one end in ith in nums1 and jth in nums2
         dp = [[0] * (n + 1) for _ in range(m + 1)]
         ans = 0
         
@@ -129,5 +128,6 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:  O(m \* n)**
-* **Space Complexity: O(m \* n)**
+* **Time Complexity:  O\(m \* n\)**
+* **Space Complexity: O\(m \* n\)**
+

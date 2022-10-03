@@ -53,7 +53,7 @@ hitCounter.getHits(301); // get hits at timestamp 301, return 3.
 {% tabs %}
 {% tab title="Python" %}
 ```python
-import collections
+from collections import deque
 class HitCounter:
 
     def __init__(self):
@@ -63,35 +63,30 @@ class HitCounter:
         self.rec.append(timestamp)
     
     def getHits(self, timestamp: int) -> int:
-        if not self.rec:
-            return 0
-        
-        target = timestamp - 300 + 1
-        if target < 0:
-            target = 0
-        
-        idx = self.binary_search(self.rec, target)
-        return 0 if idx < 0 else len(self.rec) - idx
-        
+        tar = timestamp - 300 + 1
+        idx = self.bi_search(timestamp - 300 + 1)
+        if idx is not None:
+            return len(self.rec) - idx
+        return 0
     
-    def binary_search(self, rec, target):
-        start, end = 0, len(rec) - 1
+    def bi_search(self, tar):
+        if not self.rec:
+            return None
+        start, end = 0, len(self.rec) - 1
+        
         while start + 1 < end:
             mid = start + (end - start)//2
-            if rec[mid] < target:
+            if self.rec[mid] > tar:
+                end = mid
+            elif self.rec[mid] < tar:
                 start = mid
             else:
                 end = mid
-        if rec[start] >= target:
+        if self.rec[start] >= tar:
             return start
-        if rec[end] >= target:
+        if self.rec[end] >= tar:
             return end
-        return -1
-
-# Your HitCounter object will be instantiated and called as such:
-# obj = HitCounter()
-# obj.hit(timestamp)
-# param_2 = obj.getHits(timestamp)
+        return None
 ```
 {% endtab %}
 
