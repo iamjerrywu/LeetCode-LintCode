@@ -53,7 +53,7 @@ hitCounter.getHits(301); // get hits at timestamp 301, return 3.
 {% tabs %}
 {% tab title="Python" %}
 ```python
-from collections import deque
+import collections
 class HitCounter:
 
     def __init__(self):
@@ -63,65 +63,31 @@ class HitCounter:
         self.rec.append(timestamp)
     
     def getHits(self, timestamp: int) -> int:
-        tar = timestamp - 300 + 1
-        idx = self.bi_search(timestamp - 300 + 1)
-        if idx is not None:
-            return len(self.rec) - idx
-        return 0
-    
-    def bi_search(self, tar):
         if not self.rec:
-            return None
-        start, end = 0, len(self.rec) - 1
+            return 0
         
+        target = timestamp - 300 + 1
+        if target < 0:
+            target = 0
+        
+        idx = self.binary_search(self.rec, target)
+        return 0 if idx < 0 else len(self.rec) - idx
+        
+    
+    def binary_search(self, rec, target):
+        start, end = 0, len(rec) - 1
         while start + 1 < end:
             mid = start + (end - start)//2
-            if self.rec[mid] > tar:
-                end = mid
-            elif self.rec[mid] < tar:
+            if rec[mid] < target:
                 start = mid
             else:
                 end = mid
-        if self.rec[start] >= tar:
+        if rec[start] >= target:
             return start
-        if self.rec[end] >= tar:
+        if rec[end] >= target:
             return end
-        return None
-```
-{% endtab %}
+        return -1
 
-{% tab title="Java" %}
-```java
-```
-{% endtab %}
-{% endtabs %}
-
-* **Time Complexity:**
-* **Space Complexity:**
-
-
-
-## Solution - Heap
-
-
-
-{% tabs %}
-{% tab title="Python" %}
-```python
-from collections import deque
-class HitCounter:
-
-    def __init__(self):
-        self.rec = deque()
-
-    def hit(self, timestamp: int) -> None:
-        self.rec.append(timestamp)
-    
-    def getHits(self, timestamp: int) -> int:
-        while self.rec and self.rec[0] < timestamp - 300 + 1:
-            self.rec.popleft()
-        return len(self.rec)
-    
 # Your HitCounter object will be instantiated and called as such:
 # obj = HitCounter()
 # obj.hit(timestamp)
