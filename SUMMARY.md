@@ -127,6 +127,7 @@
   * [Add Minimum Number of Rungs 1936 (M0](data\_structure/array/add-minimum-number-of-rungs-1936-m0.md)
   * [Check if All Characters Have Equal Number of Occurrences 1941 (E)](data\_structure/array/check-if-all-characters-have-equal-number-of-occurrences-1941-e.md)
   * [Count Special Quadruplets (LeetCode 1995) (E)](data\_structure/array/count-special-quadruplets-leetcode-1995-e.md)
+  * [Amount of New Area Painted Each Day (LeetCode 2158) (H)](data\_structure/array/amount-of-new-area-painted-each-day-leetcode-2158-h.md)
 * [Linked List](data\_structure/linked\_list/README.md)
   * [Reverse Nodes in k-Group (LeetCode 25) (H)](data\_structure/linked\_list/reverse-nodes-in-k-group-leetcode-25-h.md)
   * [Middle of Linked List 228 (N)](data\_structure/linked\_list/middle-of-linked-list-228-n.md)
@@ -365,6 +366,7 @@
   * [Process Tasks Using Servers (LeetCode1835) (M)](data\_structure/heap/process-tasks-using-servers-1835-m.md)
   * [The Number of the Smallest Unoccupied Chair 1942 (M)](data\_structure/heap/the-number-of-the-smallest-unoccupied-chair-1942-m.md)
   * [Remove Stones to Minimize the Total (LeetCode 1962) (M)](data\_structure/heap/remove-stones-to-minimize-the-total-leetcode-1962-m.md)
+  * [Stock Price Fluctuation (LeetCode 2034) (M)](data\_structure/heap/stock-price-fluctuation-leetcode-2034-m.md)
 * [Trie](data\_structure/trie/README.md)
   * [Identifying Strings 333 (M)](data\_structure/trie/identifying-strings-333-m.md)
   * [Implement Trie (Prefix Tree) 442 (M)](data\_structure/trie/untitled.md)
@@ -577,6 +579,7 @@
   * [Lake Escape 1828 (H)](algorithm/s4.-queue-bfs-graph/lake-escape-1828-h.md)
   * [Get Biggest Three Rhombus Sums in a Grid (LeetCode 1878) (M)](algorithm/s4.-queue-bfs-graph/get-biggest-three-rhombus-sums-in-a-grid-leetcode-1878-m.md)
   * [Nearest Exit from Entrance in Maze (LeetCode 1926) (M)](algorithm/s4.-queue-bfs-graph/nearest-exit-from-entrance-in-maze-leetcode-1926-m.md)
+  * [Find All Possible Recipes from Given Supplies (LeetCode 2115) (M)](algorithm/s4.-queue-bfs-graph/find-all-possible-recipes-from-given-supplies-leetcode-2115-m.md)
 * [DFS](algorithm/dfs/README.md)
   * [Subsets](algorithm/dfs/subsets/README.md)
     * [Subsets 17 (M)](algorithm/dfs/subsets/17.-subsets-m.md)
@@ -739,6 +742,7 @@
   * [Minimum Moves to Convert String (LeetCode 2027) (E)](algorithm/greedy/minimum-moves-to-convert-string-leetcode-2027-e.md)
   * [Minimum Number of Moves to Seat Everyone (LeetCode 2037) (E)](algorithm/greedy/minimum-number-of-moves-to-seat-everyone-leetcode-2037-e.md)
   * [Remove Colored Pieces if Both Neighbors are the Same Color (LeetCode 2038) (M)](algorithm/greedy/remove-colored-pieces-if-both-neighbors-are-the-same-color-leetcode-2038-m.md)
+  * [Maximum Split of Positive Even Integers (LeetCode 2178) (M)](algorithm/greedy/maximum-split-of-positive-even-integers-leetcode-2178-m.md)
 
 ## Other
 
@@ -787,6 +791,7 @@
   * [Plus One 407 (E)](other/simulation/plus-one-407-e.md)
   * [Happy Number 488 (E)](other/simulation/happy-number-488-e.md)
   * [Candy Crush (LeetCode 723) (M)](other/simulation/candy-crush-leetcode-723-m.md)
+  * [Guess the Word (LeetCode 843) (H)](other/simulation/guess-the-word-leetcode-843-h.md)
   * [Robot Bounded In Circle (LeetCode1041) (M)](other/simulation/robot-bounded-in-circle-1041-m.md)
   * [Count All Valid Pickup and Delivery Options (LeetCode 1359) (H)](other/simulation/count-all-valid-pickup-and-delivery-options-leetcode-1359-h.md)
   * [Design Parking System (LeetCode 1603) (E)](other/simulation/design-parking-system-leetcode-1603-e.md)

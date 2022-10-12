@@ -1,4 +1,4 @@
-# Word Search 123 \(M\)
+# Word Search 123 (M)
 
 ## Problem
 
@@ -14,43 +14,43 @@ The dimension of the letter matrix does not exceed 100, and the length of the st
 
 Input:
 
-```text
+```
 board = ["ABCE","SFCS","ADEE"]word = "ABCCED"
 ```
 
 Output:
 
-```text
+```
 true
 ```
 
 Explanation:
 
-\[  
-A B C E  
-S F C S  
-A D E E  
-\]  
-\(0,0\)-&gt;\(0,1\)-&gt;\(0,2\)-&gt;\(1,2\)-&gt;\(2,2\)-&gt;\(2,1\)
+\[\
+A B C E\
+S F C S\
+A D E E\
+]\
+(0,0)->(0,1)->(0,2)->(1,2)->(2,2)->(2,1)
 
 **Example 1:**
 
 Input:
 
-```text
+```
 board = ["z"]word = "z"
 ```
 
 Output:
 
-```text
+```
 true
 ```
 
 Explanation:
 
-\[ z \]  
-\(0,0\)
+\[ z ]\
+(0,0)
 
 ## Solution - DFS
 
@@ -117,3 +117,45 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
+****
+
+## Solution - DFS
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+from collections import deque
+DIRECTIONS = [[1, 0], [-1, 0], [0, 1], [0, -1]]
+class Solution:
+    def exist(self, board: List[List[str]], word: str) -> bool:
+        
+        def dfs(x, y, k):
+            if k == len(word):
+                return True
+            if not (0 <= x < n and 0 <= y < m and (x, y) not in visited and board[x][y] == word[k]):
+                return False
+            visited.add((x, y))
+            for dx, dy in DIRECTIONS:
+                if dfs(x + dx, y + dy, k + 1):
+                    return True
+            visited.remove((x, y))
+            return False
+        
+        n = len(board)
+        m = len(board[0])
+        visited = set()
+        for i in range(n):
+            for j in range(m):
+                if board[i][j] == word[0] and dfs(i, j, 0):
+                    return True
+        return False
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity:**
+* **Space Complexity:**

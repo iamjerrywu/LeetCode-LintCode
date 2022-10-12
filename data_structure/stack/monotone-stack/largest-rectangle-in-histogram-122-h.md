@@ -149,3 +149,49 @@ class Solution:
 
 * **Time Complexity: O(n)**
 * **Space Complexity: O(n)**
+
+****
+
+## Solution&#x20;
+
+<figure><img src="../../../.gitbook/assets/Screen Shot 2022-10-12 at 12.24.29 AM.png" alt=""><figcaption></figcaption></figure>
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def largestRectangleArea(self, heights: List[int]) -> int:
+        
+        up_stack = []
+        ans = 0
+        ans = 0
+        for i, height in enumerate(heights + [0]):
+            while up_stack and heights[up_stack[-1]] > height:
+                prev_height = heights[up_stack.pop()]
+                
+                # if no stack, means the prev height is the lowest one among all the heigh traversed so far
+                if not up_stack:
+                    width = i
+                else:
+                    width = i - up_stack[-1] - 1
+                ans = max(ans, prev_height * width)
+            up_stack.append(i)
+        return ans
+```
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity:**
+* **Space Complexity:**
+
+****

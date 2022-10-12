@@ -69,3 +69,41 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**&#x20;
+
+
+
+## Solution
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class Solution:
+    def countAndSay(self, n: int) -> str:
+        base = '1'
+        for i in range(2, n + 1):
+            base = self.process(base)
+        return base
+    
+    # becomes count how many consecutive number
+    # 211 -> one 2 two 1 -> 1211
+    def process(self, base):
+        cnt = 0
+        ans = ""
+        prev = base[0]
+        
+        for i in range(len(base)):
+            if base[i] == prev:
+                i+=1
+                cnt+=1
+            else:
+                ans+=str(cnt) + prev
+                prev = base[i]
+                cnt = 1
+        ans+=str(cnt) + prev
+        return ans
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity:**
+* **Space Complexity:**&#x20;
