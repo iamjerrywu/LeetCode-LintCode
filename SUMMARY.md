@@ -675,6 +675,7 @@
     * [Word Break 107 (M)](algorithm/dynamic\_programming/partition/107.-word-break--m.md)
     * [Word Break II 582 (H)](algorithm/dynamic\_programming/partition/word-break-ii-582-h.md)
     * [Word Break III 683 (M)](algorithm/dynamic\_programming/partition/word-break-iii-m.md)
+    * [Concatenated Words (LeetCode 472) (H)](algorithm/dynamic\_programming/partition/concatenated-words-leetcode-472-h.md)
     * [Maximum Product Subarray 191 (M)](algorithm/dynamic\_programming/partition/maximum-product-subarray-191-m.md)
     * [Decode Ways 512 (M)](algorithm/dynamic\_programming/partition/512.-decode-ways-m.md)
     * [Largest Divisible Subset 603 (M)](algorithm/dynamic\_programming/partition/603-largest-divisible-subset-m.md)

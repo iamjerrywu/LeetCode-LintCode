@@ -1,12 +1,12 @@
-# Word Ladder 120 \(H\)
+# Word Ladder 120 (H)
 
 ## Problem
 
-Given two words \(_start_ and _end_\), and a dictionary, find the shortest transformation sequence from _start_ to _end_, output the length of the sequence.  
+Given two words (_start_ and _end_), and a dictionary, find the shortest transformation sequence from _start_ to _end_, output the length of the sequence.\
 Transformation rule such that:
 
 1. Only one letter can be changed at a time
-2. Each intermediate word must exist in the dictionary. \(Start and end words do not need to appear in the dictionary \)
+2. Each intermediate word must exist in the dictionary. (Start and end words do not need to appear in the dictionary )
 
 * Return 0 if there is no such transformation sequence.
 * All words have the same length.
@@ -18,7 +18,7 @@ Example
 
 **Example 1:**
 
-```text
+```
 Input：start = "a"，end = "c"，dict =["a","b","c"]
 Output：2
 Explanation：
@@ -27,12 +27,63 @@ Explanation：
 
 **Example 2:**
 
-```text
+```
 Input：start ="hit"，end = "cog"，dict =["hot","dot","dog","lot","log"]
 Output：5
 Explanation：
 "hit"->"hot"->"dot"->"dog"->"cog"
 ```
+
+
+
+## Solution&#x20;
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+from collections import deque
+class Solution:
+    def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
+        queue = deque([beginWord])
+        n = len(beginWord)
+        wordList.append(beginWord)
+        ans = 1
+        visited = set()
+        visited.add(beginWord)
+        rec = defaultdict(list)
+        # construct the rec as "new word" to "word"
+        for word in wordList:
+            for i in range(n):
+                rec[word[:i] + '*' + word[i + 1:]].append(word)
+        while queue:
+            for _ in range(len(queue)):
+                cur_word = queue.popleft()
+                if cur_word == endWord:
+                    return ans
+                for i in range(n):
+                    new_word = cur_word[:i] + "*" + cur_word[i + 1:]
+                    for nxt_word in rec[new_word]:
+                        if nxt_word not in visited:
+                            visited.add(nxt_word)
+                            queue.append(nxt_word)
+            ans+=1
+        return 0
+```
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity: O(m^2 \* n)**
+* **Space Complexity: O(m^2 \* n)**
 
 ## Solution - Double Direction BFS
 
@@ -103,7 +154,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -112,4 +162,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-
