@@ -141,3 +141,73 @@ class Leaderboard:
 
 * **Time Complexity:**
 * **Space Complexity:**
+
+****
+
+## Solution - SortedDict
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+from sortedcontainers import SortedDict
+class Leaderboard:
+
+    def __init__(self):
+        self.scores = dict() # playerId -> score
+        self.sortedScores = SortedDict() # playerscore -> ppl amount
+
+    def addScore(self, playerId: int, score: int) -> None:
+        if playerId not in self.scores:
+            self.scores[playerId] = score
+            self.sortedScores[-score] = self.sortedScores.get(-score, 0) + 1
+        else:
+            pre_score = self.scores[playerId]
+            amt = self.sortedScores[-pre_score]
+            if amt == 1:
+                del self.sortedScores[-pre_score]
+            else:
+                self.sortedScores[-pre_score] = amt - 1
+            new_score = pre_score + score
+            self.scores[playerId] = new_score
+            self.sortedScores[-new_score] = self.sortedScores.get(-new_score, 0) + 1
+
+    def top(self, K: int) -> int:
+        cnt, total = 0, 0
+        for score, amt in self.sortedScores.items():
+            for _ in range(amt):
+                total+=score
+                cnt+=1
+                
+                if cnt == K:
+                    return -total
+
+    def reset(self, playerId: int) -> None:
+        pre_score = self.scores[playerId]
+        if self.sortedScores[-pre_score] == 1:
+            del self.sortedScores[-pre_score]
+        else:
+            self.sortedScores[-pre_score]-=1
+        del self.scores[playerId]
+
+
+# Your Leaderboard object will be instantiated and called as such:
+# obj = Leaderboard()
+# obj.addScore(playerId,score)
+# param_2 = obj.top(K)
+# obj.reset(playerId)
+```
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity:**
+* **Space Complexity:**

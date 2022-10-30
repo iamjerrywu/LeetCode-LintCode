@@ -87,3 +87,47 @@ class OrderedStream:
 
 * **Time Complexity:**
 * **Space Complexity:**
+
+****
+
+## Solution - Space Efficieny
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+class OrderedStream:
+
+    def __init__(self, n: int):
+        self.arr = [""]
+        self.ptr = 0
+        self.cur = 0
+
+    def insert(self, idKey: int, value: str) -> List[str]:
+        if idKey > len(self.arr):
+            for _ in range(idKey - len(self.arr)):
+                self.arr.append("")
+        self.arr[idKey - 1] = value
+        if self.arr[self.cur]:
+            start = self.cur
+            while self.cur < len(self.arr) and self.arr[self.cur]:
+                self.cur+=1
+            return self.arr[start:self.cur]
+# Your OrderedStream object will be instantiated and called as such:
+# obj = OrderedStream(n)
+# param_1 = obj.insert(idKey,value)max st
+```
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity:**
+* **Space Complexity:**
