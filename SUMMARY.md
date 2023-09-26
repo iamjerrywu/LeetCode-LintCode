@@ -444,7 +444,7 @@
 * [Two Pointer](algorithm/two\_pointer/README.md)
   * [Opposite Direction](algorithm/two\_pointer/opposite-direction/README.md)
     * [N Sum](algorithm/two\_pointer/opposite-direction/2-sum/README.md)
-      * [Two Sum 56 (E)](algorithm/two\_pointer/opposite-direction/2-sum/56.-two-sum.md)
+      * [Two Sum 1 (E)](algorithm/two\_pointer/opposite-direction/2-sum/56.-two-sum.md)
       * [Two Sum II - Input array is sorted 608 (M)](algorithm/two\_pointer/opposite-direction/2-sum/two-sum-ii-input-array-is-sorted-608-m.md)
       * [Two Sum III - Data Structure Design 607 (E)](algorithm/two\_pointer/opposite-direction/2-sum/two-sum-iii-data-structure-design-607-e.md)
       * [Two Sum - Greater than target 443 (M)](algorithm/two\_pointer/opposite-direction/2-sum/two-sum-greater-than-target-443-m.md)
