@@ -169,7 +169,7 @@
   * [Longest Valid Parentheses 193 (M)](data\_structure/stack/longest-valid-parentheses-193-m.md)
   * [Implement Stack by Two Queues 494 (E)](data\_structure/stack/implement-stack-by-two-queues-494-e.md)
   * [Implement Stack 495 (E)](data\_structure/stack/implement-stack-495-e.md)
-  * [Valid Parenthese 423 (E)](data\_structure/stack/valid-parenthese-423-e.md)
+  * [Valid Parenthese 20 (E)](data\_structure/stack/valid-parenthese-423-e.md)
   * [Matching of parentheses 263 (E)](data\_structure/stack/matching-of-parentheses-263-e.md)
   * [Binary Search Tree Iterator 86 (H)](data\_structure/stack/86.-binary-search-tree-iterator-h.md)
   * [Min Stack 12 (M)](data\_structure/stack/12.-min-stack.md)

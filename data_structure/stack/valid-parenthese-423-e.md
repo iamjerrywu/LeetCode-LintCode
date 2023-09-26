@@ -1,4 +1,4 @@
-# Valid Parenthese 423 (E)
+# Valid Parenthese 20 (E)
 
 ## Problem
 
@@ -82,6 +82,29 @@ class Solution {
     }
 }
 ```
+{% endtab %}
+
+{% tab title="c++" %}
+````cpp
+class Solution {
+public:
+    bool isValid(string s) {
+        stack<char> stack;
+        for (char c : s) {
+            if (c == ')' and (stack.empty() or stack.top() != '(')) return false;
+            if (c == ']' and (stack.empty() or stack.top() != '[')) return false;
+            if (c == '}' and (stack.empty() or stack.top() != '{')) return false;
+            if (c == '(' or c == '[' or c == '{') {
+                stack.push(c);
+            } else {
+                stack.pop();
+            }
+        }
+        return stack.empty();
+    }
+};
+```
+````
 {% endtab %}
 {% endtabs %}
 
