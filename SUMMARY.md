@@ -405,7 +405,7 @@
     * [Merge Sorted Array 64 (E)](algorithm/sorting/merge-sort/64.-merge-sorted-array-e.md)
     * [Merge Two Sorted Arrays 6 (E)](algorithm/sorting/merge-sort/6.-merge-two-sorted-arrays-e.md)
     * [Merge K Sorted Arrays 486 (M)](algorithm/sorting/merge-sort/486.-merge-k-sorted-arrays-m.md)
-    * [Merge Two Sorted Lists 165 (E)](algorithm/sorting/merge-sort/merge-two-sorted-lists-165-e.md)
+    * [Merge Two Sorted Lists 21 (E)](algorithm/sorting/merge-sort/merge-two-sorted-lists-165-e.md)
     * [Merge K Sorted Lists 104 (M)](algorithm/sorting/merge-sort/104.-merge-k-sorted-lists.md)
     * [K-diff Paris in an Array](algorithm/sorting/merge-sort/k-diff-paris-in-an-array.md)
     * [Merge Two Sorted Interval Lists 839 (E)](algorithm/sorting/merge-sort/839.-merge-two-sorted-interval-lists.md)
