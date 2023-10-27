@@ -36,6 +36,19 @@ class Solution:
         
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+        sort(s.begin(), s.end());
+        sort(t.begin(), t.end());
+        return s == t;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 * **Time Complexity:  O(nlogn)**
@@ -62,7 +75,32 @@ class Solution:
         return True
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+        map<char, int> s_cnt;
+        for (char c : s){
+            s_cnt[c]+=1;
+        }
+        for (char c : t) {
+            if (!s_cnt.count(c)) {
+                return false;
+            }
+            s_cnt[c]-=1;
+            if (s_cnt[c] == 0) {
+                s_cnt.erase(c);
+            }
+        }
+        return s_cnt.size() == 0;
+
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
-* **Time Complexity:**&#x20;
-* **Space Complexity:**&#x20;
+* **Time Complexity: O(n)**&#x20;
+* **Space Complexity: O(n)**
