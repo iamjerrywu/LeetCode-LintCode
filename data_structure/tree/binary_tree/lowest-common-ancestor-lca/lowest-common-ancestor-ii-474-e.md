@@ -59,7 +59,7 @@ LCA(5, 6) = 7
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - HashSet
 
@@ -106,6 +106,37 @@ class Solution:
 ```
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+/*
+// Definition for a Node.
+class Node {
+public:
+    int val;
+    Node* left;
+    Node* right;
+    Node* parent;
+};
+*/
+
+class Solution {
+public:
+    Node* lowestCommonAncestor(Node* p, Node * q) {
+        set<Node*> appears;
+        while(p) {
+            appears.insert(p);
+            p = p->parent;
+        }
+        while (q) {
+            if (appears.count(q)) return q;
+            q = q->parent;
+        }
+        return NULL;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
@@ -113,7 +144,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - List
 

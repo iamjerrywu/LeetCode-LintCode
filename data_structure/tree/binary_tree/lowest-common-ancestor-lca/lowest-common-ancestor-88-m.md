@@ -1,10 +1,10 @@
-# Lowest Common Ancestor 88 \(M\)
+# Lowest Common Ancestor 88 (M)
 
 ## Problem
 
 [https://www.lintcode.com/problem/88/description](https://www.lintcode.com/problem/88/description)
 
-Given the root and two nodes in a Binary Tree. Find the lowest common ancestor\(LCA\) of the two nodes.
+Given the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the two nodes.
 
 The lowest common ancestor is the node with largest depth which is the ancestor of both nodes.
 
@@ -16,7 +16,7 @@ Assume two nodes are exist in tree.Example
 
 **Example 1:**
 
-```text
+```
 Input：{1},1,1
 Output：1
 Explanation：
@@ -27,7 +27,7 @@ Explanation：
 
 **Example 2:**
 
-```text
+```
 Input：{4,3,7,#,#,5,6},3,5
 Output：4
 Explanation：
@@ -87,7 +87,35 @@ class Solution:
 
 {% tab title="java" %}
 ```
+```
+{% endtab %}
 
+{% tab title="C++" %}
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+
+class Solution {
+public:
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        if (root == NULL) return NULL;
+        if (root == p or root == q) return root;
+        TreeNode* left = lowestCommonAncestor(root->left, p, q);
+        TreeNode* right = lowestCommonAncestor(root->right, p, q);
+
+        if (left and right) return root;
+        if (left) return left;
+        if (right) return right;
+        return NULL;
+    }
+};
 ```
 {% endtab %}
 {% endtabs %}
@@ -96,4 +124,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-
