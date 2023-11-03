@@ -1,20 +1,20 @@
-# Implement Queue by Two Stacks 40 \(M\)
+# Implement Queue by Two Stacks 40 (M)
 
 ## Problem
 
 As the title described, you should only use two stacks to implement a queue's actions.
 
-The queue should support `push(element)`, `pop()` and `top()` where pop is pop the first\(a.k.a front\) element in the queue.
+The queue should support `push(element)`, `pop()` and `top()` where pop is pop the first(a.k.a front) element in the queue.
 
 Both pop and top methods should return the value of first element.
 
-Suppose the queue is not empty when the pop\(\) function is called.Example
+Suppose the queue is not empty when the pop() function is called.Example
 
 **Example 1:**
 
 Input:
 
-```text
+```
 Queue Operations = 
     push(1)
     pop()    
@@ -26,7 +26,7 @@ Queue Operations =
 
 Output:
 
-```text
+```
 1
 2
 2
@@ -40,7 +40,7 @@ Both pop and top methods should return the value of the first element.
 
 Input:
 
-```text
+```
 Queue Operations = 
     push(1)
     push(2)
@@ -55,7 +55,7 @@ Queue Operations =
 
 Output:
 
-```text
+```
 []
 ```
 
@@ -63,9 +63,9 @@ Explanation:
 
 There is no output.Challenge
 
-implement it by two stacks, do not use any other data structure and push, pop and top should be O\(1\) by _AVERAGE_.
+implement it by two stacks, do not use any other data structure and push, pop and top should be O(1) by _AVERAGE_.
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -109,10 +109,57 @@ class MyQueue:
         return self.stack2[-1]
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+<pre class="language-cpp"><code class="lang-cpp"><strong>class MyQueue {
+</strong>public:
+    stack&#x3C;int> stack1, stack2;
+    MyQueue() {
+    }
+    void push(int x) {
+        stack1.push(x);
+    }
+    
+    int pop() {
+        int ret = peek();
+        if (ret) {
+            stack2.pop();
+        }
+        return ret;
+    }
+    
+    int peek() {
+        if (stack2.empty()) {
+            while(!stack1.empty()) {
+                stack2.push(stack1.top());
+                stack1.pop();
+            }
+        }
+        if (!stack2.empty()){
+            int ret = stack2.top();
+            return ret;
+        }
+        return 0;
+    }
+    
+    bool empty() {
+        return stack1.empty() and stack2.empty();
+    }
+};
+
+/**
+ * Your MyQueue object will be instantiated and called as such:
+ * MyQueue* obj = new MyQueue();
+ * obj->push(x);
+ * int param_2 = obj->pop();
+ * int param_3 = obj->peek();
+ * bool param_4 = obj->empty();
+ */
+</code></pre>
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
 * **Time Complexity:**
 * **Space Complexity:**
-
