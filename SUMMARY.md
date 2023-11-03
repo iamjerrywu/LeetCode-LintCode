@@ -216,6 +216,7 @@
   * [Group Shifted Strings (LeetCode 249) (M)](data\_structure/hash/group-shifted-strings-leetcode-249-m.md)
   * [Palindrome Permutation (LeetCode 266) (E)](data\_structure/hash/palindrome-permutation-leetcode-266-e.md)
   * [Line Reflections (LeetCode 356) (M)](data\_structure/hash/line-reflections-leetcode-356-m.md)
+  * [Ransom Note (LeetCode 383)](data\_structure/hash/ransom-note-leetcode-383.md)
   * [Reconstruct Original Digits from English (LeetCode 423) (M)](data\_structure/hash/reconstruct-original-digits-from-english-leetcode-423-m.md)
   * [Lonely Pixel I (LeetCode 531) (M)](data\_structure/hash/lonely-pixel-i-leetcode-531-m.md)
   * [Rotated Digits (LeetCode 788) (M)](data\_structure/hash/rotated-digits-leetcode-788-m.md)

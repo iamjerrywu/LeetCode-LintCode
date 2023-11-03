@@ -2,11 +2,11 @@
 
 ## Problem
 
-****
 
 
 
-## Solution&#x20;
+
+## Solution
 
 {% tabs %}
 {% tab title="Python" %}
