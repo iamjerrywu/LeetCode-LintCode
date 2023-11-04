@@ -1,4 +1,4 @@
-# Longest Palindrome 627 \(E\)
+# Longest Palindrome 627 (E)
 
 ## Problem
 
@@ -12,14 +12,14 @@ Assume the length of given string will not exceed `100000`.Example
 
 **Example 1:**
 
-```text
+```
 Input : s = "abccccdd"
 Output : 7
 Explanation :
 One longest palindrome that can be built is "dccaccd", whose length is `7`.
 ```
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -48,7 +48,32 @@ class Solution:
 
 {% tab title="java" %}
 ```
+```
+{% endtab %}
 
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int longestPalindrome(string s) {
+        map<char, int> appears;
+        for(char c : s) {
+            appears[c]+=1;
+        }
+        bool has_odd = false;
+        int cnt = 0;
+        for (auto kv : appears) {
+            if (kv.second%2) {
+                has_odd = true;
+                cnt+=kv.second-1;
+            } else {
+                cnt+=kv.second;
+            }
+        }
+        if (has_odd) cnt+=1;
+        return cnt;
+    }
+};
 ```
 {% endtab %}
 {% endtabs %}
@@ -57,4 +82,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-
