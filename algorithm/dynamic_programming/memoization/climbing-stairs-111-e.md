@@ -1,4 +1,4 @@
-# Climbing Stairs 111 (E)
+# Climbing Stairs 70 (E)
 
 ## Problem
 
@@ -255,7 +255,38 @@ class Solution:
 {% endtab %}
 
 {% tab title="java" %}
+```cpp
+class Solution {
+public:
+    int climbStairs(int n) {
+        int dp[3];
+
+        dp[0] = 1;
+        dp[1] = 1;
+        for (int i = 2; i < (n + 1); i++) {
+            dp[i%3] = dp[(i - 1)%3] + dp[(i - 2)%3];
+        }
+        return dp[n%3];
+    }
+};
 ```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int climbStairs(int n) {
+        int dp[3];
+
+        dp[0] = 1;
+        dp[1] = 1;
+        for (int i = 2; i < (n + 1); i++) {
+            dp[i%3] = dp[(i - 1)%3] + dp[(i - 2)%3];
+        }
+        return dp[n%3];
+    }
+};
 ```
 {% endtab %}
 {% endtabs %}

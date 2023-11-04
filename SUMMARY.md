@@ -649,7 +649,7 @@
   * [Find Unique Binary String (LeetCode5851) (M)](algorithm/dfs/find-unique-binary-string-leetcode5851-m.md)
 * [Dynamic Programming](algorithm/dynamic\_programming/README.md)
   * [Memoization](algorithm/dynamic\_programming/memoization/README.md)
-    * [Climbing Stairs 111 (E)](algorithm/dynamic\_programming/memoization/climbing-stairs-111-e.md)
+    * [Climbing Stairs 70 (E)](algorithm/dynamic\_programming/memoization/climbing-stairs-111-e.md)
     * [Climbing Stairs II 272 (E)](algorithm/dynamic\_programming/memoization/climbing-stairs-ii-272-e.md)
     * [Triangle 109 (M)](algorithm/dynamic\_programming/memoization/109.-triangle-m.md)
     * [Cherry Pickup (LeetCode 741) (H)](algorithm/dynamic\_programming/memoization/cherry-pickup-leetcode-741-h.md)
