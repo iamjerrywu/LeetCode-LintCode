@@ -101,6 +101,27 @@ class Solution:
         return self.search(i + 1, n, cnt) + self.search(i + 2, n, cnt)
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int climbStairs(int n) {
+        map<int, int> memo;
+        return recur(0, n, memo);
+    }
+
+    int recur(int cur, int n, map<int, int> &memo) {
+        if (memo.count(cur)) return memo[cur];
+        if (cur > n) return 0;
+        if (cur == n) return 1;
+        int rec = recur(cur + 1, n, memo) + recur(cur + 2, n, memo);
+        memo[cur] = rec;
+        return rec;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
@@ -203,7 +224,7 @@ class Solution:
   * Call stack frame: O(n)
   * HashMap: O(n)
 
-****
+
 
 ## Solution - DP
 
@@ -244,7 +265,7 @@ class Solution:
 * **Time Complexity: O(n)**
 * **Space Complexity: O(n)**
 
-****
+
 
 ## Solution - DP with Strolling Arrays
 
@@ -285,7 +306,7 @@ class Solution:
 * **Time Complexity: O(n)**
 * **Space Complexity: O(1)**
 
-****
+
 
 ## Solution - Search 2
 
