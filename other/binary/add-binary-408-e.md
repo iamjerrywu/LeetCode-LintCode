@@ -1,22 +1,22 @@
-# Add Binary 408 \(E\)
+# Add Binary 408 (E)
 
 ## Problem
 
-Given two binary strings, return their sum \(In binary notation\).Example
+Given two binary strings, return their sum (In binary notation).Example
 
 **Example 1:**
 
-```text
+```
 Input:a = "0", b = "0"Output:"0"
 ```
 
 **Example 2:**
 
-```text
+```
 Input:a = "11", b = "1"Output:"100"
 ```
 
-## Solution 
+## Solution&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
@@ -50,12 +50,45 @@ class Solution:
         return ans
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    string addBinary(string a, string b) {
+        int a_ptr = a.length() - 1;
+        int b_ptr = b.length() - 1;
+        int digit;
+        int carry = 0;
+        string ans = "";
+        int sum = 0;
+        while(a_ptr >= 0 or b_ptr >= 0) {
+            if (a_ptr >= 0) {  
+                sum+=int(a[a_ptr] - '0');
+                a_ptr-=1;
+            }
+            if (b_ptr >= 0) {
+                sum+=int(b[b_ptr] - '0');
+                b_ptr-=1;
+            }
+            sum+=carry;
+            digit = sum&0x1;
+            carry = sum/2;
+            ans = to_string(digit) + ans;
+            sum = 0;
+        }
+        if (carry)
+            ans = to_string(carry) + ans;
+        return ans;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n + m\)**
-  * n: len\(a\)
-  * m: len\(b\)
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n + m)**
+  * n: len(a)
+  * m: len(b)
+* **Space Complexity: O(1)**
