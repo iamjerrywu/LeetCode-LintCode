@@ -1,4 +1,4 @@
-# Diameter of Binary Tree 1181 \(E\)
+# Diameter of Binary Tree 1181 (E)
 
 ## Problem
 
@@ -8,7 +8,7 @@ The length of path between two nodes is represented by the number of edges betwe
 
 **Example 1:**
 
-```text
+```
 Given a binary tree 
           1
          / \
@@ -20,7 +20,7 @@ Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].
 
 **Example 2:**
 
-```text
+```
 Input:[2,3,#,1]
 Output:2
 
@@ -74,10 +74,10 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
-  * O\(n\) in worst case as tree like linkedlist
-  * O\(logn\) in best case as balanced tree
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
+  * O(n) in worst case as tree like linkedlist
+  * O(logn) in best case as balanced tree
 
 ## Solution - DFS without Global Variables
 
@@ -117,12 +117,46 @@ class Solution:
         return max_d, max_c
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int diameterOfBinaryTree(TreeNode* root) {
+        pair<int, int> ret = dfs(root);
+        return ret.second;
+    }
+
+    pair<int, int> dfs(TreeNode* root) {
+        if (root==NULL) return pair<int, int>(0, 0);
+        pair<int, int> left = dfs(root->left);
+        pair<int, int> right = dfs(root->right);
+
+        int max_h = max(left.first, right.first) + 1;
+        int max_d = max(max(left.second, right.second), left.first + right.first);
+        return pair<int, int>(max_h, max_d);
+    }
+
+    
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(n\)**
-  * O\(n\) in worst case as tree like linkedlist
-  * O\(logn\) in best case as balanced tree
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
+  * O(n) in worst case as tree like linkedlist
+  * O(logn) in best case as balanced tree
