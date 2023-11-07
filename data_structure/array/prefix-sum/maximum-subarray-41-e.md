@@ -119,7 +119,7 @@ class Solution:
 * **Time Complexity: O(n)**
 * **Space Complexity: O(n)**
 
-****
+
 
 ## Solution - DP - Strolling Array
 
@@ -148,7 +148,26 @@ class Solution:
 {% endtab %}
 
 {% tab title="java" %}
+```java
 ```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+        int dp[nums.size()];
+        // dp[i], the max subarray value that ends with nums[i]
+        dp[0] = nums[0];
+        int max_val = dp[0];
+        for (int i = 1; i < nums.size(); i++) {
+            dp[i] = max(dp[i - 1] + nums[i], nums[i]);
+            max_val = max(dp[i], max_val);
+        }
+        return max_val;
+    }
+};
 ```
 {% endtab %}
 {% endtabs %}
