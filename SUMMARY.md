@@ -563,6 +563,7 @@
   * [Pacific Atlantic Water Flow (LeetCode 417) (M)](algorithm/s4.-queue-bfs-graph/pacific-atlantic-water-flow-leetcode-417-m.md)
   * [Number of Islands 433 (E)](algorithm/s4.-queue-bfs-graph/number-of-islands-433-e.md)
   * [Count Sub Islands (LeetCode1905) (M)](algorithm/s4.-queue-bfs-graph/count-sub-islands-leetcode1905-m.md)
+  * [01 Matrix (LeetCode 542) (M)](algorithm/s4.-queue-bfs-graph/01-matrix-leetcode-542-m.md)
   * [Build Post Office II 573 (H)](algorithm/s4.-queue-bfs-graph/build-post-office-ii-573-h.md)
   * [Knight Shortest Path 611 (M)](algorithm/s4.-queue-bfs-graph/knight-shortest-path-611-m.md)
   * [Search Graph Nodes 618 (M)](algorithm/s4.-queue-bfs-graph/search-graph-nodes-618-m.md)
