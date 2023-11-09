@@ -1,23 +1,23 @@
-# Three Sum 57 \(M\)
+# Three Sum 57 (M)
 
 ## Problem
 
 Given an array _S_ of n integers, are there elements _a_, _b_, _c_ in _S_ such that `a + b + c = 0`? Find all unique triplets in the array which gives the sum of zero.
 
-Elements in a triplet \(a,b,c\) must be in non-descending order. \(ie, a ≤ b ≤ c\)
+Elements in a triplet (a,b,c) must be in non-descending order. (ie, a ≤ b ≤ c)
 
 The solution set must not contain duplicate triplets.Example
 
 **Example 1:**
 
-```text
+```
 Input:[2,7,11,15]
 Output:[]
 ```
 
 **Example 2:**
 
-```text
+```
 Input:[-1,0,1,2,-1,-4]
 Output:	[[-1, 0, 1],[-1, -1, 2]]
 ```
@@ -26,7 +26,7 @@ Output:	[[-1, 0, 1],[-1, -1, 2]]
 
 The second and third element add up should equal to the first elements
 
-Note that to take the duplicated number that shouldn't be visited twice! 
+Note that to take the duplicated number that shouldn't be visited twice!&#x20;
 
 ### Code
 
@@ -72,14 +72,46 @@ class Solution:
 
 {% tab title="java" %}
 ```
+```
+{% endtab %}
 
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        int n = nums.size();
+        set<tuple<int, int, int>> ans_set;
+        for (int i = 0; i <  n - 2; i++) {
+            int l = i + 1, r = n - 1;
+            int tar = -nums[i];
+            while (l < r) {
+                if ((nums[l] + nums[r]) < tar) {
+                    l++;
+                } else if (nums[l] + nums[r] > tar) {
+                    r--;
+                } else {
+                    ans_set.insert(tuple<int, int, int>(nums[i], nums[l], nums[r]));
+                    l++;
+                    r--;
+                }
+            }
+        }
+        vector<vector<int>> ans;
+        for(auto a : ans_set) {
+            ans.push_back(vector<int>{get<0>(a), get<1>(a), get<2>(a)});
+        }
+        return ans;
+    }
+};
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n^2\)**
+* **Time Complexity: O(n^2)**
 * **Space Complexity:**
 
 ```python
@@ -142,4 +174,3 @@ def triplets(t, d):
     
 if __name__ == '__main__':
 ```
-
