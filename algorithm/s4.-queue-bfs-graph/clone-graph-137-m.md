@@ -133,7 +133,7 @@ class Solution:
 * **Time Complexity: O( N + M)**
 * **Space Complexity: O(n)**
 
-****
+
 
 ## Solution - DFS
 
@@ -176,6 +176,60 @@ class Solution:
 
 {% tab title="java" %}
 ```
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+/*
+// Definition for a Node.
+class Node {
+public:
+    int val;
+    vector<Node*> neighbors;
+    Node() {
+        val = 0;
+        neighbors = vector<Node*>();
+    }
+    Node(int _val) {
+        val = _val;
+        neighbors = vector<Node*>();
+    }
+    Node(int _val, vector<Node*> _neighbors) {
+        val = _val;
+        neighbors = _neighbors;
+    }
+};
+*/
+
+class Solution {
+public:
+    Node* cloneGraph(Node* node) {
+        if (node == NULL) return NULL;
+        map<int, Node*> mapping;
+        mapping[node->val] = new Node(node->val);
+
+        dfs(node, mapping);
+        return mapping[node->val];
+    }
+
+    void dfs(Node* node, map<int, Node*>& mapping) {
+        for (Node* neighbor : node->neighbors) {
+            Node* clone_neighbor;
+            if (!mapping.count(neighbor->val)) {
+                clone_neighbor = new Node(neighbor->val);
+                
+            } else {
+                clone_neighbor = mapping[neighbor->val];
+            }
+            mapping[node->val]->neighbors.push_back(clone_neighbor);
+            if (!mapping.count(neighbor->val)) {
+                mapping[neighbor->val] = clone_neighbor;
+                dfs(neighbor, mapping);
+            }
+        }
+    }
+};
 ```
 {% endtab %}
 {% endtabs %}
