@@ -82,6 +82,45 @@ class Solution:
         return -(-a // b) if (a < 0) ^ (b < 0) else a // b
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int evalRPN(vector<string>& tokens) {
+        stack<int> stk;
+
+        for (const string& s : tokens) {
+            if (s == "+" or s == "-" or s == "*" or s == "/") {
+                int sec = stk.top();
+                stk.pop();
+                int first = stk.top();
+                stk.pop();
+                if (s == "+") {
+                    stk.push(first + sec);
+                } else if (s == "-") {
+                    stk.push(first - sec);
+                } else if (s == "*") {
+                    stk.push(first * sec);
+                } else {
+                    stk.push(first/sec);
+                }
+            } else if (is_number(s)){
+                stk.push(stoi(s));
+            }
+        }
+        return stk.top();
+    }
+private:
+    static bool is_number(const string& s) {
+        for (int i = 0; i < s.length(); i++) {
+            if (!isdigit(s[i])) return false;
+        }
+        return true;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 * **Time Complexity:  O(n)**
