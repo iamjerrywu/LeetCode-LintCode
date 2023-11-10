@@ -1,4 +1,4 @@
-# Implement Trie \(Prefix Tree\) 442 \(M\)
+# Implement Trie (Prefix Tree) 442 (M)
 
 ## Problem
 
@@ -8,17 +8,17 @@ You may assume that all inputs are consist of lowercase letters a-z.Example
 
 **Example 1:**
 
-```text
+```
 Input:  insert("lintcode")  search("lint")  startsWith("lint")Output:  false  true
 ```
 
 **Example 2:**
 
-```text
+```
 Input:  insert("lintcode")  search("code")  startsWith("lint")  startsWith("linterror")  insert("linterror")  search("lintcode“)  startsWith("linterror")Output:  false  true  false  true  true
 ```
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -78,13 +78,69 @@ class Trie:
         return True
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+````cpp
+class TrieNode {
+public:
+    map<char, TrieNode*> children;
+    bool is_word = false;
+};
+
+class Trie {
+public:
+    TrieNode* root;
+    Trie() {
+        root = new TrieNode();
+    }
+    
+    void insert(string word) {
+        TrieNode* node = root;
+        for (char c : word) {
+            if (!node->children.count(c)) {
+                node->children[c] = new TrieNode;
+            }
+            node = node->children[c];
+        }
+        node->is_word = true;
+    }
+    
+    bool search(string word) {
+        TrieNode* node = root;
+        for (char c : word) {
+            if (!node->children.count(c)) return false;
+            node = node->children[c];
+        }
+        return node->is_word;
+    }
+    
+    bool startsWith(string prefix) {
+        TrieNode* node = root;
+        for (char c : prefix) {
+            if (!node->children.count(c)) return false;
+            node = node->children[c];
+        }
+        return true;
+        
+    }
+};
+
+/**
+ * Your Trie object will be instantiated and called as such:
+ * Trie* obj = new Trie();
+ * obj->insert(word);
+ * bool param_2 = obj->search(word);
+ * bool param_3 = obj->startsWith(prefix);
+ */
+```
+````
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
 * **Time Complexity:**
-  * insert\(\): O\(L\)
-  * has\_word\(\): O\(L\)
-  * startWith\(\): O\(L\)
-* **Space Complexity: O\(L\)**
-
+  * insert(): O(L)
+  * has\_word(): O(L)
+  * startWith(): O(L)
+* **Space Complexity: O(L)**
