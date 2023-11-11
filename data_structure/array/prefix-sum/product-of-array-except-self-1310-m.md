@@ -106,6 +106,39 @@ class Solution:
 ```
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    vector<int> productExceptSelf(vector<int>& nums) {
+        int prefix_product[nums.size() + 1];
+        int suffix_product[nums.size() + 1];
+        // prfix_product[i] * suffix_product[i + 1]
+        int prefix_product_val = 1;
+        prefix_product[0] = prefix_product_val;
+        for (int i = 0; i < nums.size(); i++) {
+            prefix_product_val*=nums[i];
+            prefix_product[i + 1] = prefix_product_val;
+        }
+
+        int suffix_product_val = 1;
+        suffix_product[nums.size()] = suffix_product_val;
+        for (int i = nums.size() - 1; i >= 0; i--) {
+            suffix_product_val*=nums[i];
+            suffix_product[i] = suffix_product_val;
+        }
+
+        vector<int> ans;
+        for (int i = 0; i < nums.size(); i++) {
+            ans.push_back(prefix_product[i] * suffix_product[i + 1]);
+        }
+
+        return ans;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
