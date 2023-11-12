@@ -98,6 +98,12 @@ class Solution:
         return False
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+// Some code
+```
+{% endtab %}
 {% endtabs %}
 
 * **Time Complexity:**&#x20;
