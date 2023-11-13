@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Design a Leaderboard class, which has 3 functions:
 
@@ -92,7 +92,7 @@ class Leaderboard:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Heap
 
@@ -135,6 +135,45 @@ class Leaderboard:
 
 {% tab title="C++" %}
 ```cpp
+class Leaderboard {
+public:
+    map<int, int> mapping;
+    priority_queue<int> q;
+    Leaderboard() {
+        
+    }
+    
+    void addScore(int playerId, int score) {
+        mapping[playerId] += score;
+    }
+    
+    int top(int K) {
+        int sum_val = 0;
+        for (auto kv : mapping) {
+            q.push(-kv.second);
+            if(q.size() > K) {
+                q.pop();
+            }
+        }
+        while(!q.empty()) {
+            sum_val+= -q.top();
+            q.pop();
+        }
+        return sum_val;
+    }
+    
+    void reset(int playerId) {
+        mapping.erase(playerId);
+    }
+};
+
+/**
+ * Your Leaderboard object will be instantiated and called as such:
+ * Leaderboard* obj = new Leaderboard();
+ * obj->addScore(playerId,score);
+ * int param_2 = obj->top(K);
+ * obj->reset(playerId);
+ */
 ```
 {% endtab %}
 {% endtabs %}
@@ -142,7 +181,7 @@ class Leaderboard:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - SortedDict
 
