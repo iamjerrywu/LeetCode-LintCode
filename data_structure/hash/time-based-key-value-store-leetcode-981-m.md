@@ -7,7 +7,7 @@ Design a time-based key-value data structure that can store multiple values for 
 Implement the `TimeMap` class:
 
 * `TimeMap()` Initializes the object of the data structure.
-* `void set(String key, String value, int timestamp)` Stores the key `key` with the value `value `at the given time `timestamp`.
+* `void set(String key, String value, int timestamp)` Stores the key `key` with the value `value` at the given time `timestamp`.
 * `String get(String key, int timestamp)` Returns a value such that `set` was called previously, with `timestamp_prev <= timestamp`. If there are multiple such values, it returns the value associated with the largest `timestamp_prev`. If there are no values, it returns `""`.
 
 **Example 1:**
@@ -124,6 +124,51 @@ class TimeMap:
 # obj = TimeMap()
 # obj.set(key,value,timestamp)
 # param_2 = obj.get(key,timestamp)
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class TimeMap {
+public:
+    map<string, vector<pair<string, int>>> mapping;
+    TimeMap() {
+        
+    }
+    
+    void set(string key, string value, int timestamp) {
+        if (!mapping.count(key)) {
+            vector<pair<string, int>> store = {pair<string, int>(value, timestamp)};
+            mapping[key] = store;
+        } else {
+            mapping[key].push_back(pair<string, int>(value, timestamp));
+        }
+    }
+    
+    string get(string key, int timestamp) {
+        if (!mapping.count(key)) return "";
+        vector<pair<string, int>> &vec = mapping[key];
+        int start = 0, end = vec.size() - 1;
+        while (start + 1 < end) {
+            int mid = start + (end - start)/2;
+            if (vec[mid].second < timestamp) {
+                start = mid;
+            } else {
+                end = mid;
+            }
+        }
+        if (vec[end].second <= timestamp) return vec[end].first;
+        if (vec[start].second <= timestamp) return vec[start].first;
+        return "";
+    }
+};
+
+/**
+ * Your TimeMap object will be instantiated and called as such:
+ * TimeMap* obj = new TimeMap();
+ * obj->set(key,value,timestamp);
+ * string param_2 = obj->get(key,timestamp);
+ */
 ```
 {% endtab %}
 {% endtabs %}
