@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given an `m x n` `matrix`, return _`true` if the matrix is Toeplitz. Otherwise, return `false`._
 
@@ -89,7 +89,7 @@ class Solution:
 * **Time Complexity: O(n^2)**
 * **Space Complexity: O(n + m)**
 
-****
+
 
 ## Solution - O(1) Space Check
 
@@ -139,4 +139,3 @@ class Solution:
 * **Time Complexity: O(n^2)**
 * **Space Complexity: O(1)**
 
-****

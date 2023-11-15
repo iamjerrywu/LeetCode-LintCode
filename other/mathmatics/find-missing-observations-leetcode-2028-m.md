@@ -6,7 +6,7 @@ You have observations of `n + m` **6-sided** dice rolls with each face numbered 
 
 You are given an integer array `rolls` of length `m` where `rolls[i]` is the value of the `ith` observation. You are also given the two integers `mean` and `n`.
 
-Return _an array of length_ `n` _containing the missing observations such that the **average value** of the_ `n + m` _rolls is **exactly** _ `mean`. If there are multiple valid answers, return _any of them_. If no such array exists, return _an empty array_.
+Return _an array of length_ `n` _containing the missing observations such that the **average value** of the_ `n + m` _rolls is **exactly**_ `mean`. If there are multiple valid answers, return _any of them_. If no such array exists, return _an empty array_.
 
 The **average value** of a set of `k` numbers is the sum of the numbers divided by `k`.
 

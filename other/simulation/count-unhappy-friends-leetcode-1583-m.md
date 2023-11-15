@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 You are given a list of `preferences` for `n` friends, where `n` is always **even**.
 
@@ -31,7 +31,8 @@ Return _the number of unhappy friends_.
 Friend 3 is unhappy because:
 - 3 is paired with 2 but prefers 1 over 2, and
 - 1 prefers 3 over 0.
-Friends 0 and 2 are happy.</code></pre>
+Friends 0 and 2 are happy.
+</code></pre>
 
 **Example 2:**
 
@@ -39,13 +40,15 @@ Friends 0 and 2 are happy.</code></pre>
 <strong>Output:
 </strong> 0
 <strong>Explanation:
-</strong> Both friends 0 and 1 are happy.</code></pre>
+</strong> Both friends 0 and 1 are happy.
+</code></pre>
 
 **Example 3:**
 
 <pre><code>Input: n = 4, preferences = [[1, 3, 2], [2, 3, 0], [1, 3, 0], [0, 2, 1]], pairs = [[1, 3], [0, 2]]
 <strong>Output:
-</strong> 4</code></pre>
+</strong> 4
+</code></pre>
 
 &#x20;
 

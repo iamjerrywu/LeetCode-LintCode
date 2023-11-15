@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 A certain bug's home is on the x-axis at position `x`. Help them get there from position `0`.
 
@@ -25,13 +25,15 @@ Given an array of integers `forbidden`, where `forbidden[i]` means that the bug 
 <strong>Output:
 </strong> 3
 <strong>Explanation:
-</strong> 3 jumps forward (0 -> 3 -> 6 -> 9) will get the bug home.</code></pre>
+</strong> 3 jumps forward (0 -> 3 -> 6 -> 9) will get the bug home.
+</code></pre>
 
 **Example 2:**
 
 <pre><code>Input: forbidden = [8,3,16,6,12,20], a = 15, b = 13, x = 11
 <strong>Output:
-</strong> -1</code></pre>
+</strong> -1
+</code></pre>
 
 **Example 3:**
 
@@ -39,7 +41,8 @@ Given an array of integers `forbidden`, where `forbidden[i]` means that the bug 
 <strong>Output:
 </strong> 2
 <strong>Explanation:
-</strong> One jump forward (0 -> 16) then one jump backward (16 -> 7) will get the bug home.</code></pre>
+</strong> One jump forward (0 -> 16) then one jump backward (16 -> 7) will get the bug home.
+</code></pre>
 
 &#x20;
 

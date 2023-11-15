@@ -32,7 +32,8 @@ os.insert(5, "eeeee"); // Inserts (5, "eeeee"), returns [].
 os.insert(4, "ddddd"); // Inserts (4, "ddddd"), returns ["ddddd", "eeeee"].
 // Concatentating all the chunks returned:
 // [] + ["aaaaa"] + ["bbbbb", "ccccc"] + [] + ["ddddd", "eeeee"] = ["aaaaa", "bbbbb", "ccccc", "ddddd", "eeeee"]
-// The resulting order is the same as the order above.</code></pre>
+// The resulting order is the same as the order above.
+</code></pre>
 
 &#x20;
 
@@ -88,7 +89,7 @@ class OrderedStream:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Space Efficieny
 

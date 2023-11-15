@@ -73,7 +73,7 @@ class Solution {
   * s = length of total strs
 * **Space Complexity: O(1)**
 
-****
+
 
 ## Solution - Horizontal Scan
 
@@ -144,4 +144,3 @@ public:
   * s = length of total strs
 * **Space Complexity: O(1)**
 
-****

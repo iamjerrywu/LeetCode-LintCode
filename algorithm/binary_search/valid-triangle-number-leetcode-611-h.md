@@ -15,13 +15,15 @@ Given an integer array `nums`, return _the number of triplets chosen from the ar
 </strong> Valid combinations are: 
 2,3,4 (using the first 2)
 2,3,4 (using the second 2)
-2,2,3</code></pre>
+2,2,3
+</code></pre>
 
 **Example 2:**
 
 <pre><code>Input: nums = [4,2,3,4]
 <strong>Output:
-</strong> 4</code></pre>
+</strong> 4
+</code></pre>
 
 &#x20;
 
@@ -83,7 +85,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution&#x20;
 

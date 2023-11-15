@@ -72,7 +72,7 @@ class Solution:
   * Loop: O(n), since set would avoid the next loop, each city would only be visited once&#x20;
 * **Space Complexity: O(n)**
 
-****
+
 
 ## Solution - BFS
 

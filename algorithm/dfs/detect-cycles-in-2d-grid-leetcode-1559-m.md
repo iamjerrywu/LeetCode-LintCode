@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given a 2D array of characters `grid` of size `m x n`, you need to find if there exists any cycle consisting of the **same value** in `grid`.
 
@@ -108,4 +108,3 @@ class Solution:
 * **Time Complexity: O(n \* m)**
 * **Space Complexity:**
 
-****

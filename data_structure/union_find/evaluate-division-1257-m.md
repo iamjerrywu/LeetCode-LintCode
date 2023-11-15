@@ -26,7 +26,7 @@ Given a / b = 2.0, b / c = 3.0.queries are: a / c = ?, b / a = ?, a / e = ?, a /
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - BFS
 
@@ -84,7 +84,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - DFS
 

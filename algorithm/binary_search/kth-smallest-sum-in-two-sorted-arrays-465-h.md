@@ -87,7 +87,7 @@ class Solution:
   * max: the max(A, B)
 * **Space Complexity: O(1)**
 
-****
+
 
 ## Solution - Greedy + Heap
 

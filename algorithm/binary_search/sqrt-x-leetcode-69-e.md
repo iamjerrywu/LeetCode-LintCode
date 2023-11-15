@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given a non-negative integer `x`, return _the square root of_ `x` _rounded down to the nearest integer_. The returned integer should be **non-negative** as well.
 
@@ -18,7 +18,8 @@ You **must not use** any built-in exponent function or operator.
 <strong>Output:
 </strong> 2
 <strong>Explanation:
-</strong> The square root of 4 is 2, so we return 2.</code></pre>
+</strong> The square root of 4 is 2, so we return 2.
+</code></pre>
 
 **Example 2:**
 
@@ -26,7 +27,8 @@ You **must not use** any built-in exponent function or operator.
 <strong>Output:
 </strong> 2
 <strong>Explanation:
-</strong> The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned.</code></pre>
+</strong> The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned.
+</code></pre>
 
 &#x20;
 

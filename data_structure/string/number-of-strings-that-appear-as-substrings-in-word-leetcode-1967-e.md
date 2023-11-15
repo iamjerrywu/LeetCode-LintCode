@@ -67,7 +67,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Construct Substrings (1)
 

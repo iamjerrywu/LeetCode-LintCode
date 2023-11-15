@@ -57,7 +57,7 @@ class NumArray(object):
   * n: j - i
 * **Space Complexity: O(1)**
 
-****
+
 
 ## Solution - Prefix Sum
 

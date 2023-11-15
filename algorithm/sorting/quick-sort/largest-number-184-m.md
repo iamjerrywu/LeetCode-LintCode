@@ -47,7 +47,7 @@ class Solution:
 * **Time Complexity: O(nlogn)**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Quick Sort
 

@@ -72,7 +72,7 @@ class Solution:
 * **Time Complexity:**&#x20;
 * **Space Complexity:**&#x20;
 
-****
+
 
 ## Solution - For Loop&#x20;
 

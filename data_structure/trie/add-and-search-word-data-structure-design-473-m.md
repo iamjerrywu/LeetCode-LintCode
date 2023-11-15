@@ -71,7 +71,7 @@ class WordDictionary:
     * n: length of the word
 * **Space Complexity: O(n)**
 
-****
+
 
 ## Solution - Trie (Complete)
 

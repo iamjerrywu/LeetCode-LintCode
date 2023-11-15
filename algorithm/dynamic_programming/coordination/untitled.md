@@ -72,7 +72,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - DP
 
@@ -154,7 +154,7 @@ class Solution:
   * m: maxJump - minJump
 * **Space Complexity: O(2n)**
 
-****
+
 
 ## Solution - Greedy
 

@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given two strings `s` and `t`, return _the number of distinct subsequences of `s` which equals `t`_.
 
@@ -24,7 +24,8 @@ The test cases are generated so that the answer fits on a 32-bit signed integer.
 <strong>ra
 </strong>bbbit
 <strong>rab
-</strong>bbit</code></pre>
+</strong>bbit
+</code></pre>
 
 **Example 2:**
 
@@ -40,7 +41,8 @@ The test cases are generated so that the answer fits on a 32-bit signed integer.
 <strong>b
 </strong>abgbag
 babgbag
-babgbag</code></pre>
+babgbag
+</code></pre>
 
 &#x20;
 

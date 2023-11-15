@@ -4,7 +4,7 @@
 
 ## Problem
 
-****
+
 
 Given an integer array `nums` of size `n`, return _the minimum number of moves required to make all array elements equal_.
 
@@ -21,13 +21,15 @@ Test cases are designed so that the answer will fit in a **32-bit** integer.
 </strong> 2
 <strong>Explanation:
 </strong>Only two moves are needed (remember each move increments or decrements one element):
-[1,2,3]  =>  [2,2,3]  =>  [2,2,2]</code></pre>
+[1,2,3]  =>  [2,2,3]  =>  [2,2,2]
+</code></pre>
 
 **Example 2:**
 
 <pre><code>Input: nums = [1,10,2,9]
 <strong>Output:
-</strong> 16</code></pre>
+</strong> 16
+</code></pre>
 
 &#x20;
 

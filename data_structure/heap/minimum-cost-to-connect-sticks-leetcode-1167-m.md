@@ -97,4 +97,3 @@ public:
   * n: sticks length
 * **Space Complexity: O(n)**
 
-****

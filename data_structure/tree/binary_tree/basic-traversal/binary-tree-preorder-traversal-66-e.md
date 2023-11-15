@@ -99,7 +99,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Iteration using Stack
 
@@ -146,4 +146,3 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****

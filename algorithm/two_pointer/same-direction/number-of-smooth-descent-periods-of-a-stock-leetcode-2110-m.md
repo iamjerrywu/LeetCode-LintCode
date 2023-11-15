@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 You are given an integer array `prices` representing the daily price history of a stock, where `prices[i]` is the stock price on the `ith` day.
 
@@ -20,7 +20,8 @@ Return _the number of **smooth descent periods**_.
 <strong>Explanation:
 </strong> There are 7 smooth descent periods:
 [3], [2], [1], [4], [3,2], [2,1], and [3,2,1]
-Note that a period with one day is a smooth descent period by the definition.</code></pre>
+Note that a period with one day is a smooth descent period by the definition.
+</code></pre>
 
 **Example 2:**
 
@@ -29,7 +30,8 @@ Note that a period with one day is a smooth descent period by the definition.</c
 </strong> 4
 <strong>Explanation:
 </strong> There are 4 smooth descent periods: [8], [6], [7], and [7]
-Note that [8,6] is not a smooth descent period as 8 - 6 ≠ 1.</code></pre>
+Note that [8,6] is not a smooth descent period as 8 - 6 ≠ 1.
+</code></pre>
 
 **Example 3:**
 
@@ -37,7 +39,8 @@ Note that [8,6] is not a smooth descent period as 8 - 6 ≠ 1.</code></pre>
 <strong>Output:
 </strong> 1
 <strong>Explanation:
-</strong> There is 1 smooth descent period: [1]</code></pre>
+</strong> There is 1 smooth descent period: [1]
+</code></pre>
 
 &#x20;
 
@@ -86,4 +89,3 @@ class Solution:
 * **Time Complexity: O(n)**
 * **Space Complexity: O(1)**
 
-****

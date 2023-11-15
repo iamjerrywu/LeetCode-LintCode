@@ -90,7 +90,7 @@ class Solution:
   * Enumerate the up, down, left, right, and judge whether the bounded area is filled with 1
 * **Space Complexity: O(1)**
 
-****
+
 
 ## Solution - Monotonic Stack
 

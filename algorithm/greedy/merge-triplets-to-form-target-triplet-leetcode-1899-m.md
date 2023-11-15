@@ -9,7 +9,7 @@ To obtain `target`, you may apply the following operation on `triplets` **any nu
 * Choose two indices (**0-indexed**) `i` and `j` (`i != j`) and **update** `triplets[j]` to become `[max(ai, aj), max(bi, bj), max(ci, cj)]`.
   * For example, if `triplets[i] = [2, 5, 3]` and `triplets[j] = [1, 7, 5]`, `triplets[j]` will be updated to `[max(2, 1), max(5, 7), max(3, 5)] = [2, 7, 5]`.
 
-Return `true` _if it is possible to obtain the_ `target` _ **triplet** _ `[x, y, z]` _as an **element** of_ `triplets`_, or_ `false` _otherwise_.
+Return `true` _if it is possible to obtain the_ `target` _**triplet**_ `[x, y, z]` _as an **element** of_ `triplets`_, or_ `false` _otherwise_.
 
 **Example 1:**
 

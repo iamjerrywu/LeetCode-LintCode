@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given a string `s` containing an out-of-order English representation of digits `0-9`, return _the digits in **ascending** order_.
 
@@ -76,4 +76,3 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****

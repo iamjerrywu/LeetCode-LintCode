@@ -6,7 +6,7 @@ In a garden represented as an infinite 2D grid, there is an apple tree planted a
 
 You will buy an axis-aligned **square plot** of land that is centered at `(0, 0)`.
 
-Given an integer `neededApples`, return _the **minimum perimeter** of a plot such that **at least**_** ** `neededApples` _apples are **inside or on** the perimeter of that plot_.
+Given an integer `neededApples`, return _the **minimum perimeter** of a plot such that **at least**_ `neededApples` _apples are **inside or on** the perimeter of that plot_.
 
 The value of `|x|` is defined as:
 

@@ -114,4 +114,3 @@ class Solution:
   * n: Total days
 * **Space Complexity:**
 
-****

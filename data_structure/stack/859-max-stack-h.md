@@ -114,7 +114,7 @@ class MaxStack:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution
 

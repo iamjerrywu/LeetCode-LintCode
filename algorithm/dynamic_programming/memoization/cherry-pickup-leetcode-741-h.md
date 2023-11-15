@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 ou are given an `n x n` `grid` representing a field of cherries, each cell is one of three possible integers.
 
@@ -30,13 +30,15 @@ Return _the maximum number of cherries you can collect by following the rules be
 </strong> The player started at (0, 0) and went down, down, right right to reach (2, 2).
 4 cherries were picked up during this single trip, and the matrix becomes [[0,1,-1],[0,0,-1],[0,0,0]].
 Then, the player went left, up, up, left to return home, picking up one more cherry.
-The total number of cherries picked up is 5, and this is the maximum possible.</code></pre>
+The total number of cherries picked up is 5, and this is the maximum possible.
+</code></pre>
 
 **Example 2:**
 
 <pre><code>Input: grid = [[1,1,-1],[1,-1,1],[-1,1,1]]
 <strong>Output:
-</strong> 0</code></pre>
+</strong> 0
+</code></pre>
 
 &#x20;
 

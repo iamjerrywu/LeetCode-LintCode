@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 On a **single-threaded** CPU, we execute a program containing `n` functions. Each function has a unique ID between `0` and `n-1`.
 
@@ -116,4 +116,3 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****

@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 A binary string is monotone increasing if it consists of some number of `0`'s (possibly none), followed by some number of `1`'s (also possibly none).
 
@@ -87,7 +87,7 @@ public:
 * **Time Complexity: O(n)**
 * **Space Complexity: O(1)**
 
-****
+
 
 ## Solution - DP
 

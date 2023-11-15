@@ -21,7 +21,8 @@ Given the two integers `target` and `maxDoubles`, return _the minimum number of 
 <strong>Output:
 </strong> 4
 <strong>Explanation:
-</strong> Keep incrementing by 1 until you reach target.</code></pre>
+</strong> Keep incrementing by 1 until you reach target.
+</code></pre>
 
 **Example 2:**
 
@@ -34,7 +35,8 @@ Increment 3 times so x = 4
 Double once so x = 8
 Increment once so x = 9
 Double again so x = 18
-Increment once so x = 19</code></pre>
+Increment once so x = 19
+</code></pre>
 
 **Example 3:**
 
@@ -46,7 +48,8 @@ Increment once so x = 19</code></pre>
 Increment once so x = 2
 Double once so x = 4
 Increment once so x = 5
-Double again so x = 10</code></pre>
+Double again so x = 10
+</code></pre>
 
 &#x20;
 
@@ -97,4 +100,3 @@ class Solution:
 * **Time Complexity:**&#x20;
 * **Space Complexity:**
 
-****

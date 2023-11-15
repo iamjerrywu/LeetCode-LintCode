@@ -78,7 +78,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Stack
 
@@ -112,4 +112,3 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****

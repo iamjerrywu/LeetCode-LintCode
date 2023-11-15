@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 The set `[1, 2, 3, ..., n]` contains a total of `n!` unique permutations.
 
@@ -23,19 +23,22 @@ Given `n` and `k`, return the `kth` permutation sequence.
 
 <pre><code>Input: n = 3, k = 3
 <strong>Output:
-</strong> "213"</code></pre>
+</strong> "213"
+</code></pre>
 
 **Example 2:**
 
 <pre><code>Input: n = 4, k = 9
 <strong>Output:
-</strong> "2314"</code></pre>
+</strong> "2314"
+</code></pre>
 
 **Example 3:**
 
 <pre><code>Input: n = 3, k = 1
 <strong>Output:
-</strong> "123"</code></pre>
+</strong> "123"
+</code></pre>
 
 &#x20;
 

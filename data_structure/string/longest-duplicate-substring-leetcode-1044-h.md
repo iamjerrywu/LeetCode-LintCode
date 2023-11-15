@@ -75,7 +75,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Binary Search + Rolling Hash
 
@@ -126,7 +126,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Binary Search + Rolling Hash Mod
 

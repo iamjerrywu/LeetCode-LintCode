@@ -153,6 +153,5 @@ class Solution:
   * **m up to 120, the max age of ages**
 * **Space Complexity:**
 
-****
 
-****
+

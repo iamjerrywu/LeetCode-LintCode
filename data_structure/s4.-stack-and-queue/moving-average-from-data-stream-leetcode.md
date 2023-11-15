@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.
 
@@ -83,4 +83,3 @@ class MovingAverage:
 * **Time Complexity: O(1)**
 * **Space Complexity: O(n)**
 
-****

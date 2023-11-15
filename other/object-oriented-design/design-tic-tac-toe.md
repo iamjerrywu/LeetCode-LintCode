@@ -331,7 +331,7 @@ class AlreadyTakenException extends Exception {
 * **Time Complexity: O(n)**
 * **Space Complexity: O(n^2)**
 
-****
+
 
 ## Solution - Optimized&#x20;
 

@@ -4,7 +4,7 @@
 
 ## Problem
 
-****
+
 
 You have information about `n` different recipes. You are given a string array `recipes` and a 2D string array `ingredients`. The `ith` recipe has the name `recipes[i]`, and you can **create** it if you have **all** the needed ingredients from `ingredients[i]`. Ingredients to a recipe may need to be created from **other** recipes, i.e., `ingredients[i]` may contain a string that is in `recipes`.
 
@@ -22,7 +22,8 @@ Note that two recipes may contain each other in their ingredients.
 <strong>Output:
 </strong> ["bread"]
 <strong>Explanation:
-</strong>We can create "bread" since we have the ingredients "yeast" and "flour".</code></pre>
+</strong>We can create "bread" since we have the ingredients "yeast" and "flour".
+</code></pre>
 
 **Example 2:**
 
@@ -31,7 +32,8 @@ Note that two recipes may contain each other in their ingredients.
 </strong> ["bread","sandwich"]
 <strong>Explanation:
 </strong>We can create "bread" since we have the ingredients "yeast" and "flour".
-We can create "sandwich" since we have the ingredient "meat" and can create the ingredient "bread".</code></pre>
+We can create "sandwich" since we have the ingredient "meat" and can create the ingredient "bread".
+</code></pre>
 
 **Example 3:**
 
@@ -41,7 +43,8 @@ We can create "sandwich" since we have the ingredient "meat" and can create the 
 <strong>Explanation:
 </strong>We can create "bread" since we have the ingredients "yeast" and "flour".
 We can create "sandwich" since we have the ingredient "meat" and can create the ingredient "bread".
-We can create "burger" since we have the ingredient "meat" and can create the ingredients "bread" and "sandwich".</code></pre>
+We can create "burger" since we have the ingredient "meat" and can create the ingredients "bread" and "sandwich".
+</code></pre>
 
 &#x20;
 

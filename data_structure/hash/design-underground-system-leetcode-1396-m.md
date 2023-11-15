@@ -126,7 +126,7 @@ class UndergroundSystem:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Faster
 
@@ -181,4 +181,3 @@ class UndergroundSystem:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****

@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 A company is planning to interview `2n` people. Given the array `costs` where `costs[i] = [aCosti, bCosti]`, the cost of flying the `ith` person to city `a` is `aCosti`, and the cost of flying the `ith` person to city `b` is `bCosti`.
 
@@ -21,19 +21,22 @@ The second person goes to city A for a cost of 30.
 The third person goes to city B for a cost of 50.
 The fourth person goes to city B for a cost of 20.
 
-The total minimum cost is 10 + 30 + 50 + 20 = 110 to have half the people interviewing in each city.</code></pre>
+The total minimum cost is 10 + 30 + 50 + 20 = 110 to have half the people interviewing in each city.
+</code></pre>
 
 **Example 2:**
 
 <pre><code>Input: costs = [[259,770],[448,54],[926,667],[184,139],[840,118],[577,469]]
 <strong>Output:
-</strong> 1859</code></pre>
+</strong> 1859
+</code></pre>
 
 **Example 3:**
 
 <pre><code>Input: costs = [[515,563],[451,713],[537,709],[343,819],[855,779],[457,60],[650,359],[631,42]]
 <strong>Output:
-</strong> 3086</code></pre>
+</strong> 3086
+</code></pre>
 
 &#x20;
 

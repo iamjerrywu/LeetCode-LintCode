@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 We can shift a string by shifting each of its letters to its successive letter.
 
@@ -84,4 +84,3 @@ class Solution:
 * **Time Complexity: O(n \* m)**
 * **Space Complexity:**
 
-****

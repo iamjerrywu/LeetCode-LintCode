@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given an array of strings `words` (**without duplicates**), return _all the **concatenated words** in the given list of_ `words`.
 
@@ -18,13 +18,15 @@ A **concatenated word** is defined as a string that is comprised entirely of at 
 <strong>Explanation:
 </strong> "catsdogcats" can be concatenated by "cats", "dog" and "cats"; 
 "dogcatsdog" can be concatenated by "dog", "cats" and "dog"; 
-"ratcatdogcat" can be concatenated by "rat", "cat", "dog" and "cat".</code></pre>
+"ratcatdogcat" can be concatenated by "rat", "cat", "dog" and "cat".
+</code></pre>
 
 **Example 2:**
 
 <pre><code>Input: words = ["cat","dog","catdog"]
 <strong>Output:
-</strong> ["catdog"]</code></pre>
+</strong> ["catdog"]
+</code></pre>
 
 &#x20;
 

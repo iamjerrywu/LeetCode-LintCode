@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 You are given an array of **positive** integers `beans`, where each integer represents the number of magic beans found in a particular magic bag.
 
@@ -26,7 +26,8 @@ Return _the **minimum** number of magic beans that you have to remove_.
 - Then we remove 1 bean from the bag with 5 beans.
   This results in the remaining bags: [4,0,4,4]
 We removed a total of 1 + 2 + 1 = 4 beans to make the remaining non-empty bags have an equal number of beans.
-There are no other solutions that remove 4 beans or fewer.</code></pre>
+There are no other solutions that remove 4 beans or fewer.
+</code></pre>
 
 **Example 2:**
 
@@ -41,7 +42,8 @@ There are no other solutions that remove 4 beans or fewer.</code></pre>
 - Then we remove 3 beans from the bag with 3 beans. 
   This results in the remaining bags: [0,10,0,0]
 We removed a total of 2 + 2 + 3 = 7 beans to make the remaining non-empty bags have an equal number of beans.
-There are no other solutions that removes 7 beans or fewer.</code></pre>
+There are no other solutions that removes 7 beans or fewer.
+</code></pre>
 
 &#x20;
 

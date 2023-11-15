@@ -6,7 +6,7 @@ You are given two strings `s` and `p` where `p` is a **subsequence** of `s`. You
 
 You want to choose an integer `k` (`0 <= k <= removable.length`) such that, after removing `k` characters from `s` using the **first** `k` indices in `removable`, `p` is still a **subsequence** of `s`. More formally, you will mark the character at `s[removable[i]]` for each `0 <= i < k`, then remove all marked characters and check if `p` is still a subsequence.
 
-Return _the **maximum** _ `k` _you can choose such that_ `p` _is still a **subsequence** of_ `s` _after the removals_.
+Return _the **maximum**_ `k` _you can choose such that_ `p` _is still a **subsequence** of_ `s` _after the removals_.
 
 A **subsequence** of a string is a new string generated from the original string with some characters (can be none) deleted without changing the relative order of the remaining characters.
 

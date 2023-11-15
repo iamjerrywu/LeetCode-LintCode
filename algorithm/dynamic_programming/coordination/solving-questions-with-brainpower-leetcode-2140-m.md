@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 You are given a **0-indexed** 2D integer array `questions` where `questions[i] = [pointsi, brainpoweri]`.
 
@@ -26,7 +26,8 @@ Return _the **maximum** points you can earn for the exam_.
 - Solve question 0: Earn 3 points, will be unable to solve the next 2 questions
 - Unable to solve questions 1 and 2
 - Solve question 3: Earn 2 points
-Total points earned: 3 + 2 = 5. There is no other way to earn 5 or more points.</code></pre>
+Total points earned: 3 + 2 = 5. There is no other way to earn 5 or more points.
+</code></pre>
 
 **Example 2:**
 
@@ -39,7 +40,8 @@ Total points earned: 3 + 2 = 5. There is no other way to earn 5 or more points.<
 - Solve question 1: Earn 2 points, will be unable to solve the next 2 questions
 - Unable to solve questions 2 and 3
 - Solve question 4: Earn 5 points
-Total points earned: 2 + 5 = 7. There is no other way to earn 7 or more points.</code></pre>
+Total points earned: 2 + 5 = 7. There is no other way to earn 7 or more points.
+</code></pre>
 
 &#x20;
 

@@ -2,9 +2,9 @@
 
 ## Problem
 
-****
 
-Given an array of strings `words`, return _the first **palindromic** string in the array_. If there is no such string, return _an **empty string** _ `""`.
+
+Given an array of strings `words`, return _the first **palindromic** string in the array_. If there is no such string, return _an **empty string**_ `""`.
 
 A string is **palindromic** if it reads the same forward and backward.
 
@@ -17,7 +17,8 @@ A string is **palindromic** if it reads the same forward and backward.
 </strong> "ada"
 <strong>Explanation:
 </strong> The first string that is palindromic is "ada".
-Note that "racecar" is also palindromic, but it is not the first.</code></pre>
+Note that "racecar" is also palindromic, but it is not the first.
+</code></pre>
 
 **Example 2:**
 
@@ -25,7 +26,8 @@ Note that "racecar" is also palindromic, but it is not the first.</code></pre>
 <strong>Output:
 </strong> "racecar"
 <strong>Explanation:
-</strong> The first and only string that is palindromic is "racecar".</code></pre>
+</strong> The first and only string that is palindromic is "racecar".
+</code></pre>
 
 **Example 3:**
 
@@ -33,7 +35,8 @@ Note that "racecar" is also palindromic, but it is not the first.</code></pre>
 <strong>Output:
 </strong> ""
 <strong>Explanation:
-</strong> There are no palindromic strings, so the empty string is returned.</code></pre>
+</strong> There are no palindromic strings, so the empty string is returned.
+</code></pre>
 
 &#x20;
 
@@ -81,4 +84,3 @@ class Solution:
 * **Time Complexity: O(n)**
 * **Space Complexity: O(1)**
 
-****

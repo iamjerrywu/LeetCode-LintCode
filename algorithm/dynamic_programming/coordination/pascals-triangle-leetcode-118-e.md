@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given an integer `numRows`, return the first numRows of **Pascal's triangle**.
 
@@ -91,4 +91,3 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****

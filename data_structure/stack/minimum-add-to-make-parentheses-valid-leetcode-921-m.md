@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 A parentheses string is valid if and only if:
 
@@ -76,4 +76,3 @@ class Solution:
 * **Time Complexity: O(n)**
 * **Space Complexity: O(1)**
 
-****

@@ -87,7 +87,7 @@ class Solution:
 * **Time Complexity:**&#x20;
 * **Space Complexity:**
 
-****
+
 
 ## Solution - DFS
 

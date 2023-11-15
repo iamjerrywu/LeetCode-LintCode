@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 The **boundary** of a binary tree is the concatenation of the **root**, the **left boundary**, the **leaves** ordered from left-to-right, and the **reverse order** of the **right boundary**.
 
@@ -33,7 +33,8 @@ Explanation:
 - The right boundary follows the path starting from the root's right child 2 -> 4.
   4 is a leaf, so the right boundary is [2].
 - The leaves from left to right are [3,4].
-Concatenating everything results in [1] + [] + [3,4] + [2] = [1,3,4,2].</code></pre>
+Concatenating everything results in [1] + [] + [3,4] + [2] = [1,3,4,2].
+</code></pre>
 
 **Example 2:**
 
@@ -48,7 +49,8 @@ Explanation:
 - The right boundary follows the path starting from the root's right child 3 -> 6 -> 10.
   10 is a leaf, so the right boundary is [3,6], and in reverse order is [6,3].
 - The leaves from left to right are [4,7,8,9,10].
-Concatenating everything results in [1] + [2] + [4,7,8,9,10] + [6,3] = [1,2,4,7,8,9,10,6,3].</code></pre>
+Concatenating everything results in [1] + [2] + [4,7,8,9,10] + [6,3] = [1,2,4,7,8,9,10,6,3].
+</code></pre>
 
 &#x20;
 
@@ -169,4 +171,3 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****

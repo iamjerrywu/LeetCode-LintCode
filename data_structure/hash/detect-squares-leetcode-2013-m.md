@@ -94,7 +94,7 @@ class DetectSquares:
 * **Time Complexity:**&#x20;
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Hash (Optimized)
 

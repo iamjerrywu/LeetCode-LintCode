@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Implement a SnapshotArray that supports the following interface:
 
@@ -91,4 +91,3 @@ class SnapshotArray:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****

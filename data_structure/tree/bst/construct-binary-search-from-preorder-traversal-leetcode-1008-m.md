@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given an array of integers preorder, which represents the **preorder traversal** of a BST (i.e., **binary search tree**), construct the tree and return _its root_.
 
@@ -92,4 +92,3 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****

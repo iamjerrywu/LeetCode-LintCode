@@ -4,7 +4,7 @@
 
 ## Problem
 
-****
+
 
 You are given all the nodes of an [**N-ary tree**](https://leetcode.com/articles/introduction-to-n-ary-trees/) as an array of `Node` objects, where each node has a **unique value**.
 
@@ -39,7 +39,8 @@ The testing will be done in the following way:
 The driver code creates the tree and gives findRoot the Node objects in an arbitrary order.
 For example, the passed array could be [Node(5),Node(4),Node(3),Node(6),Node(2),Node(1)] or [Node(2),Node(6),Node(1),Node(3),Node(5),Node(4)].
 The findRoot function should return the root Node(1), and the driver code will serialize it and compare with the input data.
-The input data and serialized Node(1) are the same, so the test passes.</code></pre>
+The input data and serialized Node(1) are the same, so the test passes.
+</code></pre>
 
 **Example 2:**
 
@@ -47,7 +48,8 @@ The input data and serialized Node(1) are the same, so the test passes.</code></
 
 <pre><code>Input: tree = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
 <strong>Output:
-</strong> [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]</code></pre>
+</strong> [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
+</code></pre>
 
 &#x20;
 
@@ -103,7 +105,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Constant Space
 

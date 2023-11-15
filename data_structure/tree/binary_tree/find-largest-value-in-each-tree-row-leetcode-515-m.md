@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given the `root` of a binary tree, return _an array of the largest value in each row_ of the tree **(0-indexed)**.
 
@@ -82,7 +82,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - DFS
 
@@ -132,4 +132,3 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****

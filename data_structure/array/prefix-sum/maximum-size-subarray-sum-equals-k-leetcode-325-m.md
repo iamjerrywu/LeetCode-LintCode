@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given an integer array `nums` and an integer `k`, return _the maximum length of a subarray that sums to_ `k`. If there is not one, return `0` instead.
 

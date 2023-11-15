@@ -80,7 +80,7 @@ class Solution:
   * n: the totals amount of tasks need to be executed
 * **Space Complexity: O(1)**
 
-****
+
 
 ## Solution - Math
 

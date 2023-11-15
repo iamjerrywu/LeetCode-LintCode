@@ -13,7 +13,7 @@ A word can be placed **horizontally** (left to right **or** right to left) or **
 * There must not be any empty cells `' '` or other lowercase letters **directly left or right** of the word if the word was placed **horizontally**.
 * There must not be any empty cells `' '` or other lowercase letters **directly above or below** the word if the word was placed **vertically**.
 
-Given a string `word`, return `true` _if_ `word` _can be placed in_ `board`_, or_ `false` _ **otherwise**_.
+Given a string `word`, return `true` _if_ `word` _can be placed in_ `board`_, or_ `false` _**otherwise**_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/09/18/crossword-1.png)
 

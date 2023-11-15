@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given an `n x n` binary matrix `grid`, return _the length of the shortest **clear path** in the matrix_. If there is no clear path, return `-1`.
 
@@ -107,4 +107,3 @@ class Solution:
   * n: number of cells
 * **Space Complexity:**
 
-****

@@ -77,7 +77,7 @@ class Solution:
 * **Time Complexity: O((n - k) \* klogk)**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Heap (with O(n) remove)
 
@@ -153,7 +153,7 @@ class Solution:
 * **Time Complexity: O((n - k) \* k)**
 * **Space Complexity: O(n)**
 
-****
+
 
 ## Solution - Heap with O(1) remove
 
@@ -267,4 +267,3 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****

@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 The chess knight has a **unique movement**, it may move two squares vertically and one square horizontally, or two squares horizontally and one square vertically (with both forming the shape of an **L**). The possible movements of chess knight are shown in this diagaram:
 
@@ -28,7 +28,8 @@ As the answer may be very large, **return the answer modulo** `109 + 7`.
 <strong>Output:
 </strong> 10
 <strong>Explanation:
-</strong> We need to dial a number of length 1, so placing the knight over any numeric cell of the 10 cells is sufficient.</code></pre>
+</strong> We need to dial a number of length 1, so placing the knight over any numeric cell of the 10 cells is sufficient.
+</code></pre>
 
 **Example 2:**
 
@@ -36,7 +37,8 @@ As the answer may be very large, **return the answer modulo** `109 + 7`.
 <strong>Output:
 </strong> 20
 <strong>Explanation:
-</strong> All the valid number we can dial are [04, 06, 16, 18, 27, 29, 34, 38, 40, 43, 49, 60, 61, 67, 72, 76, 81, 83, 92, 94]</code></pre>
+</strong> All the valid number we can dial are [04, 06, 16, 18, 27, 29, 34, 38, 40, 43, 49, 60, 61, 67, 72, 76, 81, 83, 92, 94]
+</code></pre>
 
 **Example 3:**
 
@@ -44,7 +46,8 @@ As the answer may be very large, **return the answer modulo** `109 + 7`.
 <strong>Output:
 </strong> 136006598
 <strong>Explanation:
-</strong> Please take care of the mod.</code></pre>
+</strong> Please take care of the mod.
+</code></pre>
 
 &#x20;
 

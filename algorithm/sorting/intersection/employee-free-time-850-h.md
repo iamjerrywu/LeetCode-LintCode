@@ -76,7 +76,7 @@ class Solution:
   * n: len(employee)
 * **Space Complexity: O(n)**
 
-****
+
 
 ## Solution - Heap
 

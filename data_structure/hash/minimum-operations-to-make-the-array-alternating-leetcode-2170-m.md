@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 You are given a **0-indexed** array `nums` consisting of `n` positive integers.
 
@@ -25,7 +25,8 @@ Return _the **minimum number of operations** required to make the array alternat
 <strong>Explanation:
 </strong>One way to make the array alternating is by converting it to [3,1,3,1,3,1].
 The number of operations required in this case is 3.
-It can be proven that it is not possible to make the array alternating in less than 3 operations. </code></pre>
+It can be proven that it is not possible to make the array alternating in less than 3 operations. 
+</code></pre>
 
 **Example 2:**
 
@@ -35,7 +36,8 @@ It can be proven that it is not possible to make the array alternating in less t
 <strong>Explanation:
 </strong>One way to make the array alternating is by converting it to [1,2,1,2,1].
 The number of operations required in this case is 2.
-Note that the array cannot be converted to [2,2,2,2,2] because in this case nums[0] == nums[1] which violates the conditions of an alternating array.</code></pre>
+Note that the array cannot be converted to [2,2,2,2,2] because in this case nums[0] == nums[1] which violates the conditions of an alternating array.
+</code></pre>
 
 &#x20;
 
@@ -108,4 +110,3 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****

@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given two strings `s` and `goal`, return `true` _if you can swap two letters in_ `s` _so the result is equal to_ `goal`_, otherwise, return_ `false`_._
 
@@ -91,4 +91,3 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****

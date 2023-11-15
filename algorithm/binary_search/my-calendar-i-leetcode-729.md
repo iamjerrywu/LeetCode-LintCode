@@ -26,7 +26,8 @@ Implement the `MyCalendar` class:
 </strong>MyCalendar myCalendar = new MyCalendar();
 myCalendar.book(10, 20); // return True
 myCalendar.book(15, 25); // return False, It can not be booked because time 15 is already booked by another event.
-myCalendar.book(20, 30); // return True, The event can be booked, as the first event takes every time less than 20, but not including 20.</code></pre>
+myCalendar.book(20, 30); // return True, The event can be booked, as the first event takes every time less than 20, but not including 20.
+</code></pre>
 
 &#x20;
 
@@ -73,7 +74,7 @@ class MyCalendar:
 * **Time Complexity: O(n^2)**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Binary Search
 

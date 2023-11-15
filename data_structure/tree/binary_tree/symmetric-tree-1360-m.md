@@ -82,7 +82,7 @@ class Solution:
   * Each pair (left, right) node would be traversed, and each node only be traversed once
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Recursion DFS
 
@@ -139,7 +139,7 @@ class Solution:
   * Each pair (left, right) node would be traversed, and each node only be traversed once
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Iteration DFS
 

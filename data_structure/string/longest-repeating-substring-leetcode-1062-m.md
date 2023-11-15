@@ -80,7 +80,7 @@ class Solution:
   * The substr slicing: O(n)
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Binary Search
 
@@ -235,6 +235,5 @@ class Solution:
 * **Time Complexity: O(nlogl)**
 * **Space Complexity: O(n)**
 
-****
 
-****
+

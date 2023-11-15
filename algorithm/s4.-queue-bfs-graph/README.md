@@ -244,10 +244,10 @@ There are two ways to implement queue:
 
 {% hint style="danger" %}
 **Python:**\
-****Recommend to use `deque` instead of `Queue`, Since `Queue` implemented mutex (lock) for multi-threading
+Recommend to use `deque` instead of `Queue`, Since `Queue` implemented mutex (lock) for multi-threading
 
 **Java:**\
-****Recommend to use `new ArrayDeque` , but not `new LinkedList`, Since LinkedList is slower
+Recommend to use `new ArrayDeque` , but not `new LinkedList`, Since LinkedList is slower
 {% endhint %}
 
 ## Java Interface&#x20;

@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 A transaction is possibly invalid if:
 
@@ -21,19 +21,22 @@ Return a list of `transactions` that are possibly invalid. You may return the an
 <strong>Output:
 </strong> ["alice,20,800,mtv","alice,50,100,beijing"]
 <strong>Explanation:
-</strong> The first transaction is invalid because the second transaction occurs within a difference of 60 minutes, have the same name and is in a different city. Similarly the second one is invalid too.</code></pre>
+</strong> The first transaction is invalid because the second transaction occurs within a difference of 60 minutes, have the same name and is in a different city. Similarly the second one is invalid too.
+</code></pre>
 
 **Example 2:**
 
 <pre><code>Input: transactions = ["alice,20,800,mtv","alice,50,1200,mtv"]
 <strong>Output:
-</strong> ["alice,50,1200,mtv"]</code></pre>
+</strong> ["alice,50,1200,mtv"]
+</code></pre>
 
 **Example 3:**
 
 <pre><code>Input: transactions = ["alice,20,800,mtv","bob,50,1200,mtv"]
 <strong>Output:
-</strong> ["bob,50,1200,mtv"]</code></pre>
+</strong> ["bob,50,1200,mtv"]
+</code></pre>
 
 &#x20;
 

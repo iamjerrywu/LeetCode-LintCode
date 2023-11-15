@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 You are given a **0-indexed** integer array `nums` and an integer `k`.
 
@@ -20,7 +20,8 @@ Return _the **maximum score** you can get_.
 <strong>Output:
 </strong> 7
 <strong>Explanation:
-</strong> You can choose your jumps forming the subsequence [1,-1,4,3] (underlined above). The sum is 7.</code></pre>
+</strong> You can choose your jumps forming the subsequence [1,-1,4,3] (underlined above). The sum is 7.
+</code></pre>
 
 **Example 2:**
 
@@ -28,13 +29,15 @@ Return _the **maximum score** you can get_.
 <strong>Output:
 </strong> 17
 <strong>Explanation:
-</strong> You can choose your jumps forming the subsequence [10,4,3] (underlined above). The sum is 17.</code></pre>
+</strong> You can choose your jumps forming the subsequence [10,4,3] (underlined above). The sum is 17.
+</code></pre>
 
 **Example 3:**
 
 <pre><code>Input: nums = [1,-5,-20,4,-1,3,-6,-3], k = 2
 <strong>Output:
-</strong> 0</code></pre>
+</strong> 0
+</code></pre>
 
 &#x20;
 

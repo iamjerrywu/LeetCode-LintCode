@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 You are given an integer array `nums` of length `n` which represents a permutation of all the integers in the range `[0, n - 1]`.
 
@@ -77,4 +77,3 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****

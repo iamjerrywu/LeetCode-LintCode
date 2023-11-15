@@ -23,7 +23,8 @@ A subarray is a contiguous **non-empty** sequence of elements within an array.
 [1,2], range = 2 - 1 = 1
 [2,3], range = 3 - 2 = 1
 [1,2,3], range = 3 - 1 = 2
-So the sum of all ranges is 0 + 0 + 0 + 1 + 1 + 2 = 4.</code></pre>
+So the sum of all ranges is 0 + 0 + 0 + 1 + 1 + 2 = 4.
+</code></pre>
 
 **Example 2:**
 
@@ -38,7 +39,8 @@ So the sum of all ranges is 0 + 0 + 0 + 1 + 1 + 2 = 4.</code></pre>
 [1,3], range = 3 - 1 = 2
 [3,3], range = 3 - 3 = 0
 [1,3,3], range = 3 - 1 = 2
-So the sum of all ranges is 0 + 0 + 0 + 2 + 0 + 2 = 4.</code></pre>
+So the sum of all ranges is 0 + 0 + 0 + 2 + 0 + 2 = 4.
+</code></pre>
 
 **Example 3:**
 
@@ -46,7 +48,8 @@ So the sum of all ranges is 0 + 0 + 0 + 2 + 0 + 2 = 4.</code></pre>
 <strong>Output:
 </strong> 59
 <strong>Explanation:
-</strong> The sum of all subarray ranges of nums is 59.</code></pre>
+</strong> The sum of all subarray ranges of nums is 59.
+</code></pre>
 
 &#x20;
 
@@ -102,4 +105,3 @@ class Solution:
 * **Time Complexity: O(n)**
 * **Space Complexity: O(n)**
 
-****

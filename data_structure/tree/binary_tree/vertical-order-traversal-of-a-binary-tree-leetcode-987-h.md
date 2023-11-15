@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given the `root` of a binary tree, calculate the **vertical order traversal** of the binary tree.
 
@@ -127,4 +127,3 @@ class Solution:
     * Average: O(logn)
   * storage
 
-****

@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 You are given an integer array `ribbons`, where `ribbons[i]` represents the length of the `ith` ribbon, and an integer `k`. You may cut any of the ribbons into any number of segments of **positive integer** lengths, or perform no cuts at all.
 
@@ -111,4 +111,3 @@ class Solution:
 * **Time Complexity: O(nlogn)**
 * **Space Complexity:**
 
-****

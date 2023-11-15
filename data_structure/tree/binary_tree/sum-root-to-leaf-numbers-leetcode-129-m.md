@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 You are given the `root` of a binary tree containing digits from `0` to `9` only.
 
@@ -101,4 +101,3 @@ class Solution:
   * **h: height of the binary tree**
 * **Space Complexity:**
 
-****

@@ -77,7 +77,7 @@ class Solution:
   * Python timsort() as default sorting algorithm
     * When doing merge, would use extra O(n) space&#x20;
 
-****
+
 
 ## Solution - HashSet
 
@@ -108,7 +108,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Binary Search
 
@@ -154,7 +154,7 @@ class Solution:
 * **Time Complexity: O(nlogn)**
 * **Space Complexity: O(1)**
 
-****
+
 
 ## Solution - Two Pointers
 

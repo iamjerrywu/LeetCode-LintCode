@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 You are given an array of integers `nums`. You are also given an integer `original` which is the first number that needs to be searched for in `nums`.
 
@@ -26,7 +26,8 @@ Return _the **final** value of_ `original`.
 - 3 is found in nums. 3 is multiplied by 2 to obtain 6.
 - 6 is found in nums. 6 is multiplied by 2 to obtain 12.
 - 12 is found in nums. 12 is multiplied by 2 to obtain 24.
-- 24 is not found in nums. Thus, 24 is returned.</code></pre>
+- 24 is not found in nums. Thus, 24 is returned.
+</code></pre>
 
 **Example 2:**
 
@@ -34,7 +35,8 @@ Return _the **final** value of_ `original`.
 <strong>Output:
 </strong> 4
 <strong>Explanation:
-</strong>- 4 is not found in nums. Thus, 4 is returned.</code></pre>
+</strong>- 4 is not found in nums. Thus, 4 is returned.
+</code></pre>
 
 &#x20;
 

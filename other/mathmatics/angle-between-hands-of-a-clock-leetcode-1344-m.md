@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given two numbers, `hour` and `minutes`, return _the smaller angle (in degrees) formed between the_ `hour` _and the_ `minute` _hand_.
 

@@ -284,6 +284,7 @@
     * [Binary Tree Level Order Traversal 69 (E)](data\_structure/tree/binary\_tree/69.-binary-tree-level-order-traversal.md)
     * [Binary Tree Level Order Traversal II 70 (M)](data\_structure/tree/binary\_tree/binary-tree-level-order-traversal-ii-70-m.md)
     * [Binary Tree Zigzag Level Order Traversal 71 (M)](data\_structure/tree/binary\_tree/binary-tree-zigzag-level-order-traversal-71-m.md)
+    * [Construct Binary Tree from Preorder and Inorder Traversal (LeetCode 105) (M)](data\_structure/tree/binary\_tree/construct-binary-tree-from-preorder-and-inorder-traversal-leetcode-105-m.md)
     * [Binary Tree Vertical Order Traversal 651 (M)](data\_structure/tree/binary\_tree/binary-tree-vertical-order-traversal-651-m.md)
     * [Balanced Binary Tree 93 (E)](data\_structure/tree/binary\_tree/93.-balanced-binary-tree.md)
     * [Binary Tree Maximum Path Sum 94 (M)](data\_structure/tree/binary\_tree/binary-tree-maximum-path-sum-94-m.md)

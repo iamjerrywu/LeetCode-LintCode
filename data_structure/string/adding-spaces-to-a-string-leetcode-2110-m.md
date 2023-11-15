@@ -6,7 +6,7 @@ You are given a **0-indexed** string `s` and a **0-indexed** integer array `spac
 
 * For example, given `s = "EnjoyYourCoffee"` and `spaces = [5, 9]`, we place spaces before `'Y'` and `'C'`, which are at indices `5` and `9` respectively. Thus, we obtain `"Enjoy`` `**`Y`**`our`` `**`C`**`offee"`.
 
-Return **** _the modified string **after** the spaces have been added._
+Return _the modified string **after** the spaces have been added._
 
 &#x20;
 
@@ -18,7 +18,8 @@ Return **** _the modified string **after** the spaces have been added._
 <strong>Explanation:
 </strong> 
 The indices 8, 13, and 15 correspond to the underlined characters in "LeetcodeHelpsMeLearn".
-We then place spaces before those characters.</code></pre>
+We then place spaces before those characters.
+</code></pre>
 
 **Example 2:**
 
@@ -27,7 +28,8 @@ We then place spaces before those characters.</code></pre>
 </strong> "i code in py thon"
 <strong>Explanation:
 </strong>The indices 1, 5, 7, and 9 correspond to the underlined characters in "icodeinpython".
-We then place spaces before those characters.</code></pre>
+We then place spaces before those characters.
+</code></pre>
 
 **Example 3:**
 
@@ -35,7 +37,8 @@ We then place spaces before those characters.</code></pre>
 <strong>Output:
 </strong> " s p a c i n g"
 <strong>Explanation:
-</strong>We are also able to place spaces before the first character of the string.</code></pre>
+</strong>We are also able to place spaces before the first character of the string.
+</code></pre>
 
 &#x20;
 
@@ -84,4 +87,3 @@ class Solution:
 * **Time Complexity: O(n)**
 * **Space Complexity: O(1)**
 
-****

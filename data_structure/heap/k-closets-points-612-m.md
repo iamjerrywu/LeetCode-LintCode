@@ -190,7 +190,7 @@ public:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Max Heap (2)
 
@@ -228,7 +228,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Min Heap
 

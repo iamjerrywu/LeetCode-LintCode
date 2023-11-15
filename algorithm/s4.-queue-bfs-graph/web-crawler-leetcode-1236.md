@@ -2,7 +2,7 @@
 
 ## Problem
 
-****
+
 
 Given a url `startUrl` and an interface `HtmlParser`, implement a web crawler to crawl all links that are under the **same hostname** as `startUrl`.&#x20;
 
@@ -52,7 +52,8 @@ startUrl = "http://news.yahoo.com/news/topics/"
   "http://news.yahoo.com/news",
   "http://news.yahoo.com/news/topics/",
   "http://news.yahoo.com/us"
-]</code></pre>
+]
+</code></pre>
 
 **Example 2:**
 
@@ -70,7 +71,8 @@ startUrl = "http://news.google.com"
 <strong>Output:
 </strong> ["http://news.google.com"]
 <strong>Explanation: 
-</strong>The startUrl links to all other pages that do not share the same hostname.</code></pre>
+</strong>The startUrl links to all other pages that do not share the same hostname.
+</code></pre>
 
 &#x20;
 

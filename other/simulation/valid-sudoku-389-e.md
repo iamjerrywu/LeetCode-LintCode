@@ -93,7 +93,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-****
+
 
 ## Solution - Brute Force Suduku Solver Sol.
 
