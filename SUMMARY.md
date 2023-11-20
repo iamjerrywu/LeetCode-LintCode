@@ -296,6 +296,7 @@
     * [Invert Binary Tree 175 (E)](data\_structure/tree/binary\_tree/175.-invert-binary-tree-e.md)
     * [Subtree of Another Tree 1165 (E)](data\_structure/tree/binary\_tree/subtree-of-another-tree-1165-e.md)
     * [Subtree 245 (M)](data\_structure/tree/binary\_tree/subtree-245-m.md)
+    * [Minimum Height Tree (LeetCode 310) (M)](data\_structure/tree/binary\_tree/minimum-height-tree-leetcode-310-m.md)
     * [Binary Tree Path Sum 376 (E)](data\_structure/tree/binary\_tree/binary-tree-path-sum-376-e.md)
     * [Same Tree 469 (E)](data\_structure/tree/binary\_tree/same-tree-469-e.md)
     * [Tweaked Identical Binary Tree 470 (E)](data\_structure/tree/binary\_tree/tweaked-identical-binary-tree-470-e.md)
