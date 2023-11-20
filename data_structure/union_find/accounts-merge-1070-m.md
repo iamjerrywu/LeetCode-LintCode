@@ -169,6 +169,51 @@ class Solution:
 
 {% tab title="C++" %}
 ```cpp
+class Solution {
+public:
+    vector<vector<string>> accountsMerge(vector<vector<string>>& accounts) {
+        map<string,string> mail_to_name;
+        map<string, vector<string>> graph;
+
+        // construct graph
+        for (vector<string> acc : accounts) {
+            string name = acc[0];
+            string mail1 = acc[1];
+            mail_to_name[mail1] = name;
+            if (!graph.count(mail1))
+                graph[mail1] = vector<string>{};
+            if (acc.size() < 3) continue;
+            for (int i = 2; i < acc.size(); i++) {
+                mail_to_name[acc[2]] = name;
+                graph[mail1].push_back(acc[i]);
+                graph[acc[i]].push_back(mail1);
+            }
+        }
+        // dfs
+        set<string> seen;
+        vector<vector<string>> ans;
+        for (auto kv : mail_to_name) {
+            if (seen.count(kv.first)) continue;
+            vector<string> tmp;
+            dfs(kv.first, mail_to_name, graph, seen, tmp);
+            
+            sort(tmp.begin(), tmp.end());
+            tmp.insert(tmp.begin(), mail_to_name[kv.first]);
+            ans.push_back(tmp);
+        }
+        return ans;
+    }
+
+private:
+    void dfs(string mail, map<string,string> &mail_to_name, map<string, vector<string>> &graph, set<string> &seen, vector<string> &tmp) {
+        if (seen.count(mail)) return;
+        seen.insert(mail);
+        tmp.push_back(mail);
+        for (string nb : graph[mail]) {
+            dfs(nb, mail_to_name, graph, seen, tmp);
+        }
+    }
+};
 ```
 {% endtab %}
 {% endtabs %}
