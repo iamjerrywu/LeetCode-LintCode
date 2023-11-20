@@ -153,6 +153,51 @@ class Solution:
         return False
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    vector<int> dx = {1, 0, -1, 0};
+    vector<int> dy = {0, 1, 0, -1};
+    bool exist(vector<vector<char>>& board, string word) {
+        if (word.length() == 0) return true;
+        if (board.size() == 0 or board[0].size() == 0) return false;
+        vector<vector<int>> visited(board.size(), vector<int>(board[0].size(), 0));
+        for (int i = 0; i < board.size(); i++) {
+            for (int j = 0; j < board[0].size(); j++) {
+                visited[i][j] = 1;
+                if (board[i][j] == word[0] and dfs(i, j, board, visited, 0, word)) 
+                    return true;
+                visited[i][j] = 0;
+            }
+        }
+        return false;
+    }
+    
+private:
+    bool dfs(int x, int y, vector<vector<char>> &board, vector<vector<int>>& visited, int idx, string word) {
+        if (idx == word.length() - 1) return true;
+        for (int i = 0; i < dx.size(); i++) {
+            int new_x = x + dx[i];
+            int new_y = y + dy[i];
+            if (is_valid(new_x, new_y, board, visited, word[idx + 1])) {
+                visited[new_x][new_y] = 1;
+                if (dfs(new_x, new_y, board, visited, idx + 1, word)) return true;
+                visited[new_x][new_y] = 0;
+            }
+        }
+        return false;
+    }   
+
+    bool is_valid(int x, int y, vector<vector<char>> &board, vector<vector<int>>& visited, char tar) {
+        if (x < 0 or x >= board.size() or y < 0 or y >= board[0].size()) return false;
+        if (board[x][y] != tar or visited[x][y]) return false;
+        return true;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
