@@ -31,6 +31,85 @@ Explanation:
 A -> B -> A -> B -> A -> B.
 ```
 
+## Solution - Simulation&#x20;
+
+## Intuition <a href="#intuition" id="intuition"></a>
+
+The problem asks to schedule a sequence of tasks with cooling intervals such that the same task cannot be scheduled within 'n' units of time. We need to find the minimum time required to execute all tasks under these constraints. To solve this, we can use a priority queue (max-heap) to keep track of the most frequent tasks and a queue to handle the cooling intervals.
+
+## Approach <a href="#approach" id="approach"></a>
+
+1. Initialize a max-heap (priority\_queue) 'pq' to store the frequencies of tasks in descending order.
+2. Initialize a queue of vectors 'q', where each vector contains two elements: \[remaining frequency, next available time]. This queue will be used to handle cooling intervals.
+3. Initialize a vector 'counter' of size 26 (to represent characters 'A' to 'Z') to count the frequency of each task.
+4. Iterate through the 'tasks' vector:\
+   a. Increment the corresponding counter for each task.
+5. Iterate through the 26 characters ('A' to 'Z'):\
+   a. If the counter for a character is greater than 0, push its frequency onto the 'pq'.
+6. Initialize a variable 'time' to 0 to keep track of the current time.
+7. While 'q' is not empty or 'pq' is not empty:\
+   a. Increment 'time' to represent the passage of time.\
+   b. If 'pq' is not empty (i.e., there are tasks available to execute):\
+   i. Pop the top element from 'pq' (representing the most frequent task).\
+   ii. If the frequency of this task is greater than 1, push a vector \[remaining frequency - 1, time + n] onto 'q' to schedule it for a cooling interval.\
+   c. If 'q' is not empty and the next task in 'q' can be executed at time 'time':\
+   i. Pop the task from 'q'.\
+   ii. Push the remaining frequency of this task back onto 'pq' to make it available for execution.
+8. Return 'time', which represents the minimum time required to complete all tasks.
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int leastInterval(vector<char>& tasks, int n) {
+        vector<int> freq(26, 0);
+        for (char t : tasks) {
+            freq[t - 'A']+=1;
+        }
+
+        priority_queue<int> pq;
+        for (int f : freq) {
+            if (f) pq.push(f);
+        }  
+        // queue pair<remaining for that task, the time that it can be executed again>
+        deque<pair<int, int>> q;
+        int time = 0;
+        while (!pq.empty() or (!q.empty())) {
+            time++;
+            if (!pq.empty()) {
+                int max_freq = pq.top();
+                pq.pop();
+                // only if task hasn't been finished, need to put in queue
+                if (max_freq > 1)
+                    q.push_back(pair(max_freq - 1, time + n));
+            }
+            if (!q.empty() and q.front().second <= time) {
+                pair<int, int> todo = q.front();
+                q.pop_front();
+                pq.push(todo.first);
+            }
+        }
+        return time;  
+    }
+};
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O(n)**
+  * n: the totals amount of tasks need to be executed
+* **Space Complexity: O(1)**
+
 ## Solution - Greedy
 
 The total number of CPU intervals we need consists of busy and idle slots. Number of busy slots is defined by the number of tasks to execute: `len(tasks)`. The problem is to compute a number of idle slots.
