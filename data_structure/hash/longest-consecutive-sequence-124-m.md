@@ -93,6 +93,44 @@ class Solution:
 ```
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int longestConsecutive(vector<int>& nums) {
+        // if nums is empty vector
+        if (nums.empty()) return 0;
+        
+        /*
+            logic here is like, the start of the sequence val is that we cannot find the val - 1 in the nums
+            so we can use a set to store all the nums
+        */
+        
+        // O(n)
+        std::unordered_set<int> seen(nums.begin(), nums.end());
+        
+        int max_length = 0;
+        // iterate the seen dict instead of the num
+        for (int num : seen) {
+            int cur_val = num;
+            // current num as 1 length
+            int length = 1;
+                
+            if (!seen.contains(cur_val - 1)) {
+                // start finding the sequence
+                while(seen.contains(cur_val + 1)) {
+                    length+=1;
+                    cur_val+=1;
+                }
+            }
+            max_length = std::max(max_length, length);
+        }
+        return max_length;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
