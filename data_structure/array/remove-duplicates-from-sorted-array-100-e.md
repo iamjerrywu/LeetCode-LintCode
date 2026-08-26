@@ -1,4 +1,4 @@
-# Remove Duplicates from Sorted Array 100 \(E\)
+# Remove Duplicates from Sorted Array 100 (E)
 
 ## Problem
 
@@ -10,36 +10,36 @@ Do not allocate extra space for another array, you must do this in place with co
 
 Input:
 
-```text
+```
 nums = []
 ```
 
 Output:
 
-```text
+```
 0
 ```
 
 Explanation:
 
-The array is empty.  
+The array is empty.\
 **Example 2:**
 
 Input:
 
-```text
+```
 nums = [1,1,2]
 ```
 
 Output:
 
-```text
+```
 2
 ```
 
 Explanation:
 
-uniqued array: \[1,2\]
+uniqued array: \[1,2]
 
 ## Solution - Two Pointer
 
@@ -66,10 +66,28 @@ class Solution:
 
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        if (nums.size() == 0) return 0;
+        int l = 0;
+        for (int r = 0; r < nums.size(); r++) {
+            if (nums[r] != nums[l]) {
+                l+=1;
+                nums[l] = nums[r];
+            }
+        }
+        return l + 1;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**
