@@ -134,3 +134,49 @@ class Solution:
 
 * **Time Complexity: O(n)**
 * **Space Complexity: O(n)**
+
+## Solution - Array (Best)
+
+We can simply use Array since the character amounts are fix, most likely just 128 in ASCII code. Also, we can simply move the left pointer directry to the alreadty seen character location, instead of +1, +1 moving.
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        
+        // since ASII character only has 128
+        std::vector<int> seen(128, -1);
+
+        if (s.length() <= 1) return s.length();
+        int l = 0, ans = 0;
+        for (int r = 0; r < s.length(); r++) {
+            if (seen[s[r]] >= l) {
+                // we can simply move the left pointer to the last seen index
+                l = seen[s[r]] + 1;
+            }
+            seen[s[r]] = r;
+
+            ans = std::max(ans, r - l + 1);
+        }
+        return ans;
+
+    }
+};
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**
+
