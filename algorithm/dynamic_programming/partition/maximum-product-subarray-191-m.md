@@ -1,4 +1,4 @@
-# Maximum Product Subarray 191 \(M\)
+# Maximum Product Subarray 191 (M)
 
 ## Problem
 
@@ -10,7 +10,7 @@ A **subarray** is a contiguous subsequence of the array.
 
 **Example 1:**
 
-```text
+```
 Input: nums = [2,3,-2,4]
 Output: 6
 Explanation: [2,3] has the largest product 6.
@@ -18,7 +18,7 @@ Explanation: [2,3] has the largest product 6.
 
 **Example 2:**
 
-```text
+```
 Input: nums = [-2,0,-1]
 Output: 0
 Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
@@ -51,8 +51,8 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
-* **Time Complexity: O\(n^2\)**
-* **Space Complexity: O\(1\)**
+* **Time Complexity: O(n^2)**
+* **Space Complexity: O(1)**
 
 ## Solution - DP
 
@@ -75,8 +75,38 @@ class Solution:
         return max_val
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int maxProduct(vector<int>& nums) {
+        /*
+            cur_max, ended in cur_idx of max
+            cur_min, ended in cur_idx of min
+            cur_max = max(cur_max * nums[i], cur_min * nums[i], nums[i])
+            cur_min = min(cur_max * nums[i], cur_min * nums[i], nums[i])
+
+            max_so_far = max(max_so_far, cur_max)
+        */
+
+        if (nums.size() == 0) return 0;
+        int cur_max = nums[0], cur_min = nums[0], max_so_far = nums[0];
+        for (int i = 1; i < nums.size(); i++) {
+            // if num < 0, then we swap 
+            if (nums[i] < 0) {
+                std::swap(cur_max, cur_min);
+            }
+            cur_max = std::max(cur_max * nums[i], nums[i]);
+            cur_min = std::min(cur_min * nums[i], nums[i]);
+            max_so_far = std::max(max_so_far, cur_max);
+        }
+        return max_so_far;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(1\)**
-
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**
