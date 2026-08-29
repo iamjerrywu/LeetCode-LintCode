@@ -149,16 +149,16 @@ class Solution:
                 # save topleft
                 top_left = matrix[top][left + i]
                 
-                # move bottom left to topleft
+                # update top left with bottom left
                 matrix[top][left + i] = matrix[bottom - i][left]
                 
-                # move bottom right to bottom left
+                # update bottom left with bottom right
                 matrix[bottom - i][left] = matrix[bottom][right - i]
                 
-                # move top right to bottom right
+                # update bottom right with top right
                 matrix[bottom][right - i] = matrix[top + i][right]
                 
-                # move top left to top right
+                # update top right with top left
                 matrix[top + i][right] = top_left
                 
             left+=1
