@@ -61,12 +61,32 @@ class Solution:
 ```
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    void rotate(vector<vector<int>>& matrix) {
+        
+        // copy a new matrix
+        vector<vector<int>> new_matrix(matrix);
+        int n = matrix.size();
+        // move value 
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                matrix[j][n - i - 1] = new_matrix[i][j];
+            }
+        }
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity O(n^2):**
+* **Space Complexity O(n^2):**
 
 ## Solution&#x20;
 
@@ -150,6 +170,39 @@ class Solution:
 ```
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    void rotate(vector<vector<int>>& matrix) {
+        int left = 0, right = matrix.size() - 1;
+        while (left < right) {
+            for (int i = 0; i < right - left; i++) {
+                int top = left, bottom = right;
+                
+                // save top left
+                int top_left = matrix[top][left + i];
+
+                // move bottom left to top left
+                matrix[top][left + i] = matrix[bottom - i][left];
+
+                // move bottom right to bottom left
+                matrix[bottom -i][left] = matrix[bottom][right - i];
+
+                // move top right to bottom right
+                matrix[bottom][right - i] = matrix[top + i][right];
+
+                // move top left to top right
+                matrix[top + i][right] = top_left;
+            }
+            left+=1;
+            right-=1;
+        }
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
@@ -160,6 +213,8 @@ class Solution:
 
 
 ## Solution - Geometry
+
+So it's actually first do the transpose then the reverse
 
 ![](<../../../.gitbook/assets/Screen Shot 2022-02-04 at 8.10.17 PM.png>)
 
@@ -188,9 +243,33 @@ class Solution:
 ```
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    void rotate(vector<vector<int>>& matrix) {
+        
+        int n = matrix.size();
+        // transpose first
+        for (int i = 0; i < n; i++) {
+            // we avoid swapping the element itself 
+            for (int j = i + 1; j < n; j++) {
+                swap(matrix[i][j], matrix[j][i]);
+            }
+        }
+
+        // reverse each row
+        for (int i = 0; i < n; i++) {
+            reverse(matrix[i].begin(), matrix[i].end());
+        }
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O(n^2)**
+* **Space Complexity: O(n)**
