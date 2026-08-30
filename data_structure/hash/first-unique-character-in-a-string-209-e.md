@@ -1,10 +1,10 @@
-# First Unique Character in a String 209 \(E\)
+# First Unique Character in a String 209 (E)
 
 ## Problem
 
 Given a string and find the first unique character in a given string. You can assume that there is at least one unique character in the string.Example
 
-```text
+```
 Example 1:
 	Input: "abaccdeff"
 	Output:  'b'
@@ -21,7 +21,7 @@ Example 2:
 	'b' is the first one.
 ```
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -44,10 +44,45 @@ class Solution:
                 return k
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int firstUniqChar(string s) {
+        int arr[26] = {0};
+        for (char c : s) {
+            arr[c - 'a']+=1;
+        }
+
+        for (int i = 0; i < s.length(); i++) {
+            if (arr[s[i] - 'a'] == 1) return i; 
+        }
+        return -1;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
 
+
+
+#### Follow-up
+
+If support up to ASCII (256 Characters), we can literally cast to unsigned char&#x20;
+
+```c++
+// Cast to unsigned char to safely handle potential negative char values
+ arr[static_cast<unsigned char>(c)] += 1; 
+```
+
+If support up to full unicode, can just use unordered\_map
+
+```cpp
+std::unordered_map<char, int> count_map; 
+```
