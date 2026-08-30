@@ -81,21 +81,18 @@ class Solution:
 class Solution {
 public:
     bool isAnagram(string s, string t) {
-        map<char, int> s_cnt;
-        for (char c : s){
-            s_cnt[c]+=1;
+        if (s.length() != t.length()) return false;
+        int arr[26] = {0};
+        for (char c : s) {
+            arr[c - 'a']+=1;
         }
-        for (char c : t) {
-            if (!s_cnt.count(c)) {
-                return false;
-            }
-            s_cnt[c]-=1;
-            if (s_cnt[c] == 0) {
-                s_cnt.erase(c);
-            }
-        }
-        return s_cnt.size() == 0;
 
+        for (char c : t) {
+            // early exit before third loop
+            if (--arr[c - 'a'] < 0) return false;
+        }
+        
+        return true;
     }
 };
 ```
