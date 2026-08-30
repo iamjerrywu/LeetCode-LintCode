@@ -89,6 +89,8 @@ public:
 
         for (char c : t) {
             // early exit before third loop
+            // lengths are equal, so if any is negative means not anagrams
+            
             if (--arr[c - 'a'] < 0) return false;
         }
         
