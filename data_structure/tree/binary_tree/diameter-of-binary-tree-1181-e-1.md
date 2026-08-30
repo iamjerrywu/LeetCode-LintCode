@@ -134,21 +134,20 @@ class Solution:
 class Solution {
 public:
     int diameterOfBinaryTree(TreeNode* root) {
-        pair<int, int> ret = dfs(root);
-        return ret.second;
+        int maxDiameter = 0;
+        dfs(root, maxDiameter);
+        return maxDiameter;
     }
 
-    pair<int, int> dfs(TreeNode* root) {
-        if (root==NULL) return pair<int, int>(0, 0);
-        pair<int, int> left = dfs(root->left);
-        pair<int, int> right = dfs(root->right);
+private:
+    int dfs(TreeNode* node, int &maxDiameter) {
+        if (node == nullptr) return 0;
+        int leftDepth = dfs(node->left, maxDiameter);
+        int rightDepth = dfs(node->right, maxDiameter);
 
-        int max_h = max(left.first, right.first) + 1;
-        int max_d = max(max(left.second, right.second), left.first + right.first);
-        return pair<int, int>(max_h, max_d);
+        maxDiameter = std::max(maxDiameter, leftDepth + rightDepth);
+        return std::max(leftDepth, rightDepth) + 1;
     }
-
-    
 };
 ```
 {% endtab %}
