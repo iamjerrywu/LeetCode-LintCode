@@ -89,6 +89,38 @@ class Solution:
         res.append(root.val)
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    vector<int> postorderTraversal(TreeNode* root) {
+        // left -> right -> root
+        vector<int> res;
+        dfs(root, res);
+        return res;
+    }
+private:
+    void dfs(TreeNode* node, vector<int> &res) {
+        if (node == nullptr) return;
+        dfs(node->left, res);
+        dfs(node->right, res);
+        res.push_back(node->val);
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
@@ -146,10 +178,52 @@ class Solution:
         return result
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    vector<int> postorderTraversal(TreeNode* root) {
+        /*
+            postoder is left -> right -> node
+            preorder is node -> left -> right, we can turn it into node -> right -> left
+            then reverse it to postorder
+        */
+
+        vector<int> res;
+        stack<TreeNode*> s;
+        s.push(root);
+
+        while(!s.empty()) {
+            TreeNode* curr = s.top();
+            s.pop();
+            if (curr != nullptr) {
+                res.push_back(curr->val);
+                s.push(curr->left);
+                s.push(curr->right);
+            }
+        }
+        reverse(res.begin(), res.end());
+        return res;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**
 

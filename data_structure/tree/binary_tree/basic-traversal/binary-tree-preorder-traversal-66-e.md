@@ -215,5 +215,5 @@ public:
 ### Complexity Analysis
 
 * **Time Complexity: O(n)**
-* **Space Complexity: O(h)**
+* **Space Complexity: O(n)**
 
