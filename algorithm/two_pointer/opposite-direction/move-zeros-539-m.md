@@ -1,4 +1,4 @@
-# Move Zeros 539 \(M\)
+# Move Zeros 539 (M)
 
 ## Problem
 
@@ -11,19 +11,19 @@ Example
 
 Example 1:
 
-```text
+```
 Input: nums = [0, 1, 0, 3, 12],
 Output: [1, 3, 12, 0, 0].
 ```
 
 Example 2:
 
-```text
+```
 Input: nums = [0, 0, 0, 3, 1],
 Output: [3, 1, 0, 0, 0].
 ```
 
-## Solution - Two Pointer \(same direction\)
+## Solution - Two Pointer (same direction)
 
 This solution is straight forward but actualy requiring more modification on values
 
@@ -53,7 +53,26 @@ class Solution:
 
 {% tab title="java" %}
 ```
+```
+{% endtab %}
 
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+        // idx for non-zero
+        int l = 0;
+        for (int r = 0; r < nums.size(); r++) {
+            if (nums[r] != 0) {
+                if (l != r) { // optimization to prevent swapping itself
+                    swap(nums[l], nums[r]);
+                    l++;
+                }
+            }
+        }
+    }
+};
 ```
 {% endtab %}
 {% endtabs %}
@@ -63,7 +82,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-## Solution - Two Pointer \(Better\)
+## Solution - Two Pointer (Better)
 
 Assign all non-zero values on left side, then change those on the right side to zeros
 
@@ -100,7 +119,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -110,7 +128,7 @@ class Solution:
 * **Time Complexity:**
 * **Space Complexity:**
 
-## Solution - Partition Array \(not remained order\)
+## Solution - Partition Array (not remained order)
 
 Required least modification on values, but would change the original orders
 
@@ -147,7 +165,6 @@ class Solution:
 
 {% tab title="java" %}
 ```
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -156,4 +173,3 @@ class Solution:
 
 * **Time Complexity:**
 * **Space Complexity:**
-
