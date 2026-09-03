@@ -92,3 +92,53 @@ private:
 
 * **Time Complexity: O(len(s) +** $$\sum_{\text{word} \in W} |\text{word}| \cdot \log(|s|)$$
 * **Space Complexity: O(len(s))**
+
+## Solution - Two Pointer + Simulation
+
+{% tabs %}
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int numMatchingSubseq(string s, vector<string>& words) {
+        // Pairs of: {word_idx_in_words, char_idx_in_word}
+        vector<vector<pair<int, int>>> waiting(26);
+
+        for (int i = 0; i < words.size(); i++) {
+            // the first idx in the word
+            waiting[words[i][0] - 'a'].push_back({i, 0});
+        }
+
+        int ans = 0;
+
+        for (char c : s) {
+            int bucketIdx = c - 'a';
+            // since there's no word starting with this char, we can just skip
+            if (waiting[bucketIdx].empty()) continue;
+            
+            // we clear the current queue, where those words start with that char
+            auto currentWords = move(waiting[bucketIdx]);
+            waiting[bucketIdx].clear();
+
+            // for those waiting words, we need to move to their next char 
+            for (auto &p : currentWords) {
+                int wordIdx = p.first;
+                int nextCharIdx = p.second + 1;
+                
+                if (nextCharIdx == words[wordIdx].length()) {
+                    ans+=1;
+                } else {
+                    char nextChar = words[wordIdx][nextCharIdx];
+                    waiting[nextChar - 'a'].push_back({wordIdx, nextCharIdx});
+                }
+            }
+        }
+        return ans;
+    }
+};
+```
+{% endtab %}
+{% endtabs %}
+
+* **Time Complexity: O(len(s) +** $$\sum_{\text{word} \in W} |\text{word}|$$
+* Space Complexity: O(w), w = words's length
