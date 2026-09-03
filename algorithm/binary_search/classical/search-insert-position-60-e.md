@@ -1,4 +1,4 @@
-# Search Insert Position 60 \(E\)
+# Search Insert Position 60 (E)
 
 ## Problem
 
@@ -10,14 +10,14 @@ You may assume **NO** duplicates in the array.Example
 
 Input:
 
-```text
+```
 array = [1,3,5,6]
 target = 5
 ```
 
 Output:
 
-```text
+```
 2
 ```
 
@@ -29,14 +29,14 @@ Explanation:
 
 Input:
 
-```text
+```
 array = [1,3,5,6]
 target = 2
 ```
 
 Output:
 
-```text
+```
 1
 ```
 
@@ -48,14 +48,14 @@ Explanation:
 
 Input:
 
-```text
+```
 array = [1,3,5,6]
 target = 7
 ```
 
 Output:
 
-```text
+```
 4
 ```
 
@@ -67,14 +67,14 @@ Explanation:
 
 Input:
 
-```text
+```
 array = [1,3,5,6]
 target = 0
 ```
 
 Output:
 
-```text
+```
 0
 ```
 
@@ -82,9 +82,9 @@ Explanation:
 
 0 should be inserted into the position with index 0.Challenge
 
-O\(log\(n\)\) time
+O(log(n)) time
 
-## Solution 
+## Solution&#x20;
 
 ### Code
 
@@ -118,10 +118,35 @@ class Solution:
         
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+class Solution {
+public:
+    int searchInsert(vector<int>& nums, int target) {
+        
+        int start = 0, end = nums.size() - 1;
+
+        while (start + 1 < end) {
+            int mid = start + (end - start)/2;
+
+            if (nums[mid] < target) {
+                start = mid;
+            } else {
+                end = mid;
+            }            
+        }
+
+        if (nums[start] >= target) return start;
+        if (nums[end] >= target) return end;
+        return nums.size();
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
 * **Time Complexity:**
 * **Space Complexity:**
-
