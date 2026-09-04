@@ -82,6 +82,7 @@
     * [Range Sum Query 2D - Immutable 665 (M)](data_structure/array/prefix-sum/range-sum-query-2d-immutable-665-m.md)
     * [Range Sum Query 2D - Mutable (LeetCode 308) (H)](data_structure/array/prefix-sum/range-sum-query-2d-mutable-leetcode-308-h.md)
     * [Find Pivot Index (1068) (E)](data_structure/array/prefix-sum/find-pivot-index-1068-e.md)
+    * [Find the Highest Altitude (LeetCode 1732)](data_structure/array/prefix-sum/find-the-highest-altitude-leetcode-1732.md)
     * [Product of the Last K Numbers (LeetCode 1352) (M)](data_structure/array/prefix-sum/product-of-the-last-k-numbers-leetcode-1352-m.md)
     * [Subarray Sum Equals to k II 1844 (M)](data_structure/array/prefix-sum/subarray-sum-equals-to-k-ii-1844.md)
     * [Maximum Size Subarray Sum Equals k (LeetCode 325) (M)](data_structure/array/prefix-sum/maximum-size-subarray-sum-equals-k-leetcode-325-m.md)

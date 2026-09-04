@@ -48,6 +48,8 @@ Right sum = nums[1] + nums[2] = 1 + -1 = 0
 
 ## Solution - Prefix Sums
 
+Using the prefix sums with space is overkill !
+
 {% tabs %}
 {% tab title="Python" %}
 ```python
@@ -65,6 +67,28 @@ class Solution:
         return prefix_sums
         
 ```
+{% endtab %}
+
+{% tab title="C++" %}
+{% code overflow="wrap" %}
+```cpp
+class Solution {
+public:
+    int pivotIndex(vector<int>& nums) {
+        
+        vector<int> prefixSum{0};
+        for (int num: nums) {
+            prefixSum.push_back(prefixSum.back() + num);
+        }
+
+        for (int i = 0; i < prefixSum.size() - 1; i++) {
+            if (prefixSum[i] == (prefixSum.back() - prefixSum[i + 1])) return i;
+        }
+        return -1;
+    }
+};
+```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -91,6 +115,26 @@ class Solution:
             left_sum+=nums[i]
         return -1
 ```
+{% endtab %}
+
+{% tab title="C++" %}
+{% code overflow="wrap" %}
+```cpp
+class Solution {
+public:
+    int pivotIndex(vector<int>& nums) {
+        int totalSum = std::accumulate(nums.begin(), nums.end(), 0);
+
+        int leftSum = 0;
+        for (int i = 0; i < nums.size(); i++) {
+            if (leftSum == (totalSum - leftSum - nums[i])) return i;
+            leftSum+=nums[i];
+        }
+        return -1;
+    }
+};
+```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
