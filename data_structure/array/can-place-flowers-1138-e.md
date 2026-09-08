@@ -77,6 +77,40 @@ class Solution:
 ```
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+
+
+```cpp
+class Solution {
+public:
+    bool canPlaceFlowers(vector<int>& flowerbed, int n) {
+        if (n <= 0) return true;
+
+        // the left is empty or it's at the beginning
+        // the right is empty of it's at the end
+
+        for (int i = 0; i < flowerbed.size(); i++) {
+            if (flowerbed[i] == 0) {
+                // check the left is empty or it's at the beginning
+                bool leftEmpty = (i == 0 || flowerbed[i - 1] == 0);
+
+                // check the right is empty of it's in the end
+                bool rightEmpty = ((i == (flowerbed.size() - 1)) || (flowerbed[i + 1] == 0));
+
+                if (leftEmpty && rightEmpty) {
+                    flowerbed[i] = 1;
+                    n-=1;
+
+                    if (n == 0) return true;
+                }
+            }
+        }
+        return n <= 0;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
