@@ -45,6 +45,7 @@
   * [Ambiguous Coordinates 1372 (M)](data_structure/string/ambiguous-coordinates-1372-m.md)
   * [Buddy Strings 1510 (E)](data_structure/string/buddy-strings-1510-e.md)
   * [Count Email Groups 1632 (E)](data_structure/string/count-email-groups-1632-e.md)
+  * [Merge Strings Alternately (LeetCode 1768)](data_structure/string/merge-strings-alternately-leetcode-1768.md)
   * [Reverse ASCII Encoded Strings 1781 (E)](data_structure/string/reverse-ascii-encoded-strings-1781-e.md)
   * [Sorting the Sentence (LeetCode 1859) (E)](data_structure/string/sorting-the-sentence-1859-e.md)
   * [Check if Word Equals Summation of Two Words (LeetCode 1880) (E)](data_structure/string/check-if-word-equals-summation-of-two-words-leetcode-1880-e.md)
