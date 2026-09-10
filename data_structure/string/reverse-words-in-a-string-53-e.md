@@ -48,7 +48,7 @@ Explanation:
 
 return a reverse the string word by word.
 
-## Solution&#x20;
+## Solution - Copy String
 
 ### Code
 
@@ -102,5 +102,58 @@ public:
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(n)**<br>
+
+## Solution - In-place&#x20;
+
+### Code
+
+{% tabs %}
+{% tab title="python" %}
+```python
+```
+{% endtab %}
+
+{% tab title="C++" %}
+
+
+```cpp
+class Solution {
+public:
+    string reverseWords(string s) {
+        // we first reverse entire string
+        reverse(s.begin(), s.end());
+        
+        int writeIdx = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s[i] != ' ') {
+                if (writeIdx != 0) {
+                    s[writeIdx++] = ' ';
+                }
+                // then we find each word, and reverse them
+                int start = writeIdx;
+                while (s[i] != ' ' && i < s.length()) {
+                    s[writeIdx++] = s[i++];
+                }
+                
+                reverse(s.begin() + start, s.begin() + writeIdx);
+            }
+        }
+
+        /* we don't write return s.substr(0, writeIdx);, 
+        because that will force to allocate a brand-new block of memory [1] elsewhere, 
+        copy the characters from s into that new memory, and return it
+        */
+        s.resize(writeIdx);
+        return s;
+    }
+};
+```
+{% endtab %}
+{% endtabs %}
+
+### Complexity Analysis
+
+* **Time Complexity: O(n)**
+* **Space Complexity: O(1)**<br>
