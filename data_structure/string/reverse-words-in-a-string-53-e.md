@@ -71,6 +71,33 @@ class Solution:
         
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+
+
+```cpp
+class Solution {
+public:
+    string reverseWords(string s) {
+        stringstream ss(s);
+        vector<string> words;
+        string word;
+        
+        // this help you to generate the word and handle the spaces
+        while(ss >> word) {
+            words.push_back(word);
+        }
+        string ans;
+        for (int i = words.size() - 1; i >= 0; i--) {
+            ans+=words[i];
+            if (i > 0) ans+=" ";
+        }
+        return ans;
+                
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
