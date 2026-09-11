@@ -1,4 +1,4 @@
-# String Compression 213 \(E\)
+# String Compression 213 (E)
 
 ## Problem
 
@@ -6,17 +6,17 @@ Implement a method to perform basic string compression using the counts of repea
 
 If the "compressed" string would not become smaller than the original string, your method should return the original string.
 
-You can assume the string has only upper and lower case letters \(a-z\).Example
+You can assume the string has only upper and lower case letters (a-z).Example
 
 **Example 1:**
 
-```text
+```
 Input: str = "aabcccccaaa"Output: "a2b1c5a3"
 ```
 
 **Example 2:**
 
-```text
+```
 Input: str = "aabbcc"Output: "aabbcc"
 
 ```
@@ -56,15 +56,15 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(n\)**
-* **Space Complexity: O\(m\)**
+* **Time Complexity: O(n)**
+* **Space Complexity: O(m)**
   * m: the amount of inorder group of characters
   * Stack: string use m times
   * Heap: no heap used
 
 ## Solution - Iteration In-Place update
 
-If Question changes to update input array \(chars\) in place
+If Question changes to update input array (chars) in place
 
 ### Code
 
@@ -100,15 +100,45 @@ class Solution:
         return upd_id
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+{% code overflow="wrap" %}
+```cpp
+class Solution {
+public:
+    int compress(vector<char>& chars) {
+        int writeIdx = 0, readIdx = 0;
+        char curChar;
+        int cnt = 0;
+        while(readIdx < chars.size()) {
+            curChar = chars[readIdx];
+            cnt = 0;
+            while (readIdx < chars.size() && chars[readIdx] == curChar) {
+                cnt++;
+                readIdx++;
+            }
+            chars[writeIdx++] = curChar;
+            // update chars with cnt
+            string cntStr = to_string(cnt);
+            if (cnt > 1) {
+                for (char c : cntStr) {
+                    chars[writeIdx++] = c;
+                }
+            }
+        }
+        return writeIdx;
+    }
+};
+```
+{% endcode %}
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity: O\(nlogn\)**
-* **Space Complexity: O\(m\)**
+* **Time Complexity: O(nlogn)**
+* **Space Complexity: O(m)**
   * m: the amount of inorder group of characters
   * Stack: string use m times
   * Heap: no heap used
-
-
 
