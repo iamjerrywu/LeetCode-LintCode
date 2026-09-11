@@ -19,6 +19,7 @@
   * [Integer to English Words (LeetCode 273) (H)](data_structure/string/integer-to-english-words-leetcode-273-h.md)
   * [Integer to Roman 418 (M)](data_structure/string/integer-to-roman-418-m.md)
   * [Roman to Integer 419 (M)](data_structure/string/roman-to-integer-419-e.md)
+  * [Increasing Triplet Subsequences](data_structure/string/increasing-triplet-subsequences.md)
   * [Count and Say 420 (E)](data_structure/string/count-and-say-420-e.md)
   * [Longest Palindrome 627 (E)](data_structure/string/longest-palindrome-627-e.md)
   * [Add Strings 415 (E)](data_structure/string/add-strings-415-e/README.md)
