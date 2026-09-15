@@ -40,8 +40,7 @@ Output:
 
 Explanation:
 
-Path is: 1 -> 3 -> 2\
-
+Path is: 1 -> 3 -> 2<br>
 
 ## Solution&#x20;
 

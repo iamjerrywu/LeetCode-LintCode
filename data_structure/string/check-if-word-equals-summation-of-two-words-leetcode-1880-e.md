@@ -2,11 +2,11 @@
 
 ## Problem
 
-* **User Accepted:**5850
-* **User Tried:**6095
-* **Total Accepted:**5964
-* **Total Submissions:**7890
-* **Difficulty:**Easy
+* **User Accepted:**&#x35;850
+* **User Tried:**&#x36;095
+* **Total Accepted:**&#x35;964
+* **Total Submissions:**&#x37;890
+* **Difficulty:**&#x45;asy
 
 The **letter value** of a letter is its position in the alphabet **starting from 0** (i.e. `'a' -> 0`, `'b' -> 1`, `'c' -> 2`, etc.).
 

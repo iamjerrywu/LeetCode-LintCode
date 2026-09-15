@@ -2,7 +2,7 @@
 
 ## Problem
 
-Given two integer arrays sorted in ascending order and an integer k. Define _sum = a + b_, where _a_ is an element from the first array and _b_ is an element from the second one. Find the _k_th smallest sum out of all possible sums.Example
+Given two integer arrays sorted in ascending order and an integer k. Define _sum = a + b_, where _a_ is an element from the first array and _b_ is an element from the second one. Find the _&#x6B;_&#x74;h smallest sum out of all possible sums.Example
 
 **Example 1**
 

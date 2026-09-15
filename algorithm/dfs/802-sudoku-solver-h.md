@@ -103,7 +103,7 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**O(n ^ m)&#x20;
+* **Time Complexity:**&#x4F;(n ^ m)&#x20;
   * where n is the number of possibilities for each square (i.e., 9 in classic Sudoku) and m is the number of spaces that are blank.
   * The problem can be designed for a grid size of N\*N where N is a perfect square. For such an N, let M = N\*N, the recurrence equation can be written as T(M) = 9\*T(M-1) + O(1), where T(N) is the running time of the solution for a problem size of N. Solving this recurrence will yield, O(9^M).
 * **Space Complexity O(m):**
@@ -175,5 +175,5 @@ class Solution:
 
 ### Complexity Analysis
 
-* **Time Complexity:**O(n ^ m)&#x20;
+* **Time Complexity:**&#x4F;(n ^ m)&#x20;
 * **Space Complexity O(m):**

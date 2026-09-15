@@ -14,19 +14,22 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 
 <pre><code>Input: l1 = [7,2,4,3], l2 = [5,6,4]
 <strong>Output:
-</strong> [7,8,0,7]</code></pre>
+</strong> [7,8,0,7]
+</code></pre>
 
 **Example 2:**
 
 <pre><code>Input: l1 = [2,4,3], l2 = [5,6,4]
 <strong>Output:
-</strong> [8,0,7]</code></pre>
+</strong> [8,0,7]
+</code></pre>
 
 **Example 3:**
 
 <pre><code>Input: l1 = [0], l2 = [0]
 <strong>Output:
-</strong> [0]</code></pre>
+</strong> [0]
+</code></pre>
 
 &#x20;
 
@@ -36,8 +39,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 * `0 <= Node.val <= 9`
 * It is guaranteed that the list represents a number that does not have leading zeros.
 
-\
-
+<br>
 
 
 

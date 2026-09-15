@@ -35,8 +35,7 @@ Explanation: We can rotate mat 90 degrees clockwise two times to make mat equal 
 * `1 <= n <= 10`
 * `mat[i][j]` and `target[i][j]` are either `0` or `1`.
 
-[Discuss](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/discuss)\
-
+[Discuss](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/discuss)<br>
 
 ## Solution - In Place Comparsion
 

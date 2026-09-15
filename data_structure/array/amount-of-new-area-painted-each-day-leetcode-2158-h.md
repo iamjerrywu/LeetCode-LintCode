@@ -24,7 +24,8 @@ On day 1, paint everything between 4 and 7.
 The amount of new area painted on day 1 is 7 - 4 = 3.
 On day 2, paint everything between 7 and 8.
 Everything between 5 and 7 was already painted on day 1.
-The amount of new area painted on day 2 is 8 - 7 = 1. </code></pre>
+The amount of new area painted on day 2 is 8 - 7 = 1. 
+</code></pre>
 
 **Example 2:**
 
@@ -40,7 +41,8 @@ On day 1, paint everything between 5 and 8.
 The amount of new area painted on day 1 is 8 - 5 = 3.
 On day 2, paint everything between 4 and 5.
 Everything between 5 and 7 was already painted on day 1.
-The amount of new area painted on day 2 is 5 - 4 = 1. </code></pre>
+The amount of new area painted on day 2 is 5 - 4 = 1. 
+</code></pre>
 
 **Example 3:**
 
@@ -53,7 +55,8 @@ The amount of new area painted on day 2 is 5 - 4 = 1. </code></pre>
 </strong>On day 0, paint everything between 1 and 5.
 The amount of new area painted on day 0 is 5 - 1 = 4.
 On day 1, paint nothing because everything between 2 and 4 was already painted on day 0.
-The amount of new area painted on day 1 is 0.</code></pre>
+The amount of new area painted on day 1 is 0.
+</code></pre>
 
 &#x20;
 
@@ -63,8 +66,7 @@ The amount of new area painted on day 1 is 0.</code></pre>
 * `paint[i].length == 2`
 * `0 <= starti < endi <= 5 * 104`
 
-Accepted18,726Submissions\
-
+Accepted18,726Submissions<br>
 
 
 

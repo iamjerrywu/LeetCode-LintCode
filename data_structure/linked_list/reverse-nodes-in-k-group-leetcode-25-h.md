@@ -12,19 +12,21 @@ You may not alter the values in the list's nodes, only nodes themselves may be c
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/03/reverse\_ex1.jpg)
+![](https://assets.leetcode.com/uploads/2020/10/03/reverse_ex1.jpg)
 
 <pre><code>Input: head = [1,2,3,4,5], k = 2
 <strong>Output:
-</strong> [2,1,4,3,5]</code></pre>
+</strong> [2,1,4,3,5]
+</code></pre>
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/03/reverse\_ex2.jpg)
+![](https://assets.leetcode.com/uploads/2020/10/03/reverse_ex2.jpg)
 
 <pre><code>Input: head = [1,2,3,4,5], k = 3
 <strong>Output:
-</strong> [3,2,1,4,5]</code></pre>
+</strong> [3,2,1,4,5]
+</code></pre>
 
 &#x20;
 
@@ -41,7 +43,7 @@ You may not alter the values in the list's nodes, only nodes themselves may be c
 Traverse the linked list, strategy will be:
 
 1. Check if starting from cur there are at least k node afterward
-   1. if yes, reverse all of them, and find the new_head, new\_tail_
+   1. if yes, reverse all of them, and find the ne&#x77;_&#x68;ead, new\_tail_
    2. return cur as head
 
 {% tabs %}

@@ -43,8 +43,7 @@ Explanation: Use the second operation on the second element to make s = "1010".
 * `1 <= s.length <= 105`
 * `s[i]` is either `'0'` or `'1'`.
 
-[Discuss](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/discuss)\
-
+[Discuss](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/discuss)<br>
 
 ## Solution - Sliding Window
 

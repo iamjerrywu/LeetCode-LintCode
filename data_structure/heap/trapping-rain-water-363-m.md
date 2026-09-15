@@ -28,7 +28,7 @@ O(n) time and O(n) memory is also acceptable.
 
 Traverse every position, and that position's possible water area would be:
 
-* min(right_max, leftmax)  - heights\[i] \* 1 (the width)_
+* min(righ&#x74;_&#x6D;ax, leftmax)  - heights\[i] \* 1 (the width)_
 * Right Max: from current position looks right, the max value
 * Left Max: from current position looks left, the max value
 

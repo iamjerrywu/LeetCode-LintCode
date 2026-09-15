@@ -67,8 +67,7 @@ Explanation:
 
 No substring contains two 'a'.Challenge
 
-O(n) time\
-
+O(n) time<br>
 
 ## Solution&#x20;
 
