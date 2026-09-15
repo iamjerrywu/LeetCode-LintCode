@@ -57,6 +57,31 @@ class Solution:
         return ans
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+{% code overflow="wrap" %}
+```cpp
+// Some codeclass Solution {
+public:
+    int longestOnes(vector<int>& nums, int k) {
+        int l = 0, ans = 0, zeroCnt = 0;
+        for (int r = 0; r < nums.size(); r++) {
+            if (nums[r] == 0) zeroCnt++;
+
+            while (zeroCnt > k) {
+                if (!nums[l]) {
+                    zeroCnt-=1;
+                }
+                l++;
+            }
+            ans = max(ans, r - l + 1);
+        }
+        return ans;
+    }
+};
+```
+{% endcode %}
+{% endtab %}
 {% endtabs %}
 
 * **Time Complexity:**&#x20;
