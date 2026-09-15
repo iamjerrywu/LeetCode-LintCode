@@ -475,6 +475,7 @@
     * [Reverse Only Letters (LeetCode 917) (E)](algorithm/two_pointer/opposite-direction/reverse-only-letters-leetcode-917-e.md)
     * [Decrease To Be Palindrome 1784 (E)](algorithm/two_pointer/opposite-direction/decrease-to-be-palindrome-1784-e.md)
     * [Move Zeros 539 (M)](algorithm/two_pointer/opposite-direction/move-zeros-539-m.md)
+    * [Max Number of K-Sum Pairs](algorithm/two_pointer/opposite-direction/max-number-of-k-sum-pairs.md)
     * [Longest Repeating Character Replacement 1246 (M)](algorithm/two_pointer/opposite-direction/1246.-longest-repeating-character-replacement.md)
     * [Minimize Maximum Pair Sum in Array (LeetCode 1877) (M)](algorithm/two_pointer/opposite-direction/untitled.md)
     * [Squares of a Sorted Array 1901 (E)](algorithm/two_pointer/opposite-direction/squares-of-a-sorted-array-1901-e.md)
