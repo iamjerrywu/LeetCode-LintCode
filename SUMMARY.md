@@ -273,6 +273,7 @@
   * [Detect Squares (LeetCode 2013) (M)](data_structure/hash/detect-squares-leetcode-2013-m.md)
   * [Keep Multiplying Found Values by Two (LeetCode 2154) (E)](data_structure/hash/keep-multiplying-found-values-by-two-leetcode-2154-e.md)
   * [Minimum Operations to Make the Array Alternating (LeetCode 2170) (M)](data_structure/hash/minimum-operations-to-make-the-array-alternating-leetcode-2170-m.md)
+  * [Equal Row and Column Pairs (LeetCode 2352) (M)](data_structure/hash/equal-row-and-column-pairs-leetcode-2352-m.md)
 * [Tree](data_structure/tree/README.md)
   * [Binary Tree](data_structure/tree/binary_tree/README.md)
     * [Basic Traversal](data_structure/tree/binary_tree/basic-traversal/README.md)
