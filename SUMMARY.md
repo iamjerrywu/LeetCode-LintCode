@@ -194,6 +194,7 @@
   * [Design a Stack With Increment Operation (LeetCode1381) (M)](data_structure/stack/design-a-stack-with-increment-operation-leetcode1381-m.md)
   * [Backspace String Compare (1425) (E)](data_structure/stack/backspace-string-compare-1425-e.md)
   * [Design Browser History (LeetCode 1472) (M)](data_structure/stack/design-browser-history-leetcode-1472-m.md)
+  * [Removing Starts From a String (LeetCode 2390) (M)](data_structure/stack/removing-starts-from-a-string-leetcode-2390-m.md)
 * [Queue](data_structure/s4.-stack-and-queue/README.md)
   * [Implement Queue by Two Stacks 40 (M)](data_structure/s4.-stack-and-queue/implement-queue-by-two-stacks-40-m.md)
   * [Moving Average from Data Stream (LeetCode](data_structure/s4.-stack-and-queue/moving-average-from-data-stream-leetcode.md)
