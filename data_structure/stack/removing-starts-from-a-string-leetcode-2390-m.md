@@ -48,6 +48,8 @@ Return _the string after **all** stars have been removed_.
 
 ## Solution - Stack&#x20;
 
+This is the standard, clean solution expected in most general software engineering interviews. By using `ans.reserve(s.size())` and treating the string like a stack with `push_back()` and `pop_back()`, you write highly readable, bug-resistant code. The trade-off is the unavoidable second heap allocation to store the result, which doubles your memory footprint for this specific operation.
+
 {% tabs %}
 {% tab title="Python" %}
 ```python
@@ -83,6 +85,8 @@ public:
 * **Space Complexity: O(1)**
 
 ## Solution - Two Pointers
+
+This is the Staff-level systems and infrastructure solution. Because the function signature `string removeStars(string s)` passes the input by value, C++ is already handing you a freshly allocated, mutable copy of the string. By using a read pointer and a write pointer to overwrite characters in that exact same buffer, and then finishing with `s.resize()`, you execute the entire algorithm without requesting a single extra byte of heap memory. This demonstrates a deep understanding of standard library memory management and zero-copy principles.
 
 {% tabs %}
 {% tab title="Python" %}
