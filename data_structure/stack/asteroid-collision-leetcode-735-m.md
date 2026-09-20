@@ -102,6 +102,39 @@ class Solution:
         return stack
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+
+
+```cpp
+class Solution {
+public:
+    vector<int> asteroidCollision(vector<int>& asteroids) {
+        // C++ vector can literally be used as stack
+        vector<int> ans;
+        ans.reserve(asteroids.size());
+        
+        for (int ast : asteroids) {
+            bool destroyed = false; // upcoming asteroids need to be destroyed ot not
+
+            while(!ans.empty() && ans.back() > 0 && ast < 0) {
+                if (ans.back() < -ast) {
+                    ans.pop_back();
+                    continue;
+                } else if (ans.back() == -ast) {
+                    ans.pop_back();
+                }
+                destroyed = true;
+                break;
+            }
+            
+            if (!destroyed) ans.push_back(ast);
+        }
+        return ans;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 * **Time Complexity:**
