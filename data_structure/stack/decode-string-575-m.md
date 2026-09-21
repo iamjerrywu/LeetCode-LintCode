@@ -174,9 +174,50 @@ public:
 };
 ```
 {% endtab %}
+
+{% tab title="C++ (2 stack - best)" %}
+
+
+```cpp
+class Solution {
+public:
+    string decodeString(string s) {
+        stack<int> cntStack;
+        stack<string> strStack;
+        int cnt = 0;
+        string curStr = "";
+        for (char c : s) {
+            if (isdigit(c)) {
+                cnt = cnt * 10 + (c - '0');
+            } else if (isalpha(c)) {
+                curStr+=c;
+            } else if (c == '[') {
+                cntStack.push(cnt);
+                strStack.push(curStr);
+                cnt = 0;
+                curStr = "";
+            } else { // c == ']'
+                int num = cntStack.top();
+                cntStack.pop();
+                string tmpStr = "";
+                for (int i = 0; i < num; i++) {
+                    tmpStr+=curStr;
+                }
+                // need to concatenate with previous string
+                curStr = strStack.top() + tmpStr;
+                strStack.pop();
+            }
+        }
+        return curStr;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
 
-* **Time Complexity:**
-* **Space Complexity:**
+* **Time Complexity: O(n)**
+  * **n: string length**
+* **Space Complexity: O(m)**
+  * **m: numger of letters and digits**
