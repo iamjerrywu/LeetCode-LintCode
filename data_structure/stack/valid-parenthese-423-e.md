@@ -85,26 +85,28 @@ class Solution {
 {% endtab %}
 
 {% tab title="c++" %}
-````cpp
+```cpp
 class Solution {
 public:
     bool isValid(string s) {
-        stack<char> stack;
+        // check if odd-length string
+        if (s.size()%2) return false;
+        
+        // vector allocate contigious memory, while stack/deque use discrete chunks
+        vector<char> charStack;
         for (char c : s) {
-            if (c == ')' and (stack.empty() or stack.top() != '(')) return false;
-            if (c == ']' and (stack.empty() or stack.top() != '[')) return false;
-            if (c == '}' and (stack.empty() or stack.top() != '{')) return false;
-            if (c == '(' or c == '[' or c == '{') {
-                stack.push(c);
-            } else {
-                stack.pop();
+            if (c == '(') charStack.push_back(')');
+            else if (c == '[') charStack.push_back(']');
+            else if (c == '{') charStack.push_back('}');
+            else {
+                if (charStack.empty() || c != charStack.back()) return false;
+                charStack.pop_back();
             }
         }
-        return stack.empty();
+        return charStack.empty();
     }
 };
 ```
-````
 {% endtab %}
 {% endtabs %}
 
