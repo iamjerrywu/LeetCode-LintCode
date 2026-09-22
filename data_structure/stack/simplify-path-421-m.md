@@ -58,6 +58,48 @@ class Solution:
         return ans
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+
+
+```cpp
+class Solution {
+public:
+    string simplifyPath(string path) {
+        vector<string> stack;
+        string curStr = "";
+
+        curStr.reserve(path.size());
+        for (int i = 0; i <= path.size(); i++) {
+            if (path[i] == '/' || i == path.size()) {
+                if (curStr == "") {
+                    continue;
+                }
+                if (curStr == "..") {
+                    if (!stack.empty()) {
+                        stack.pop_back();
+                    }
+                } else if (curStr != ".") {
+                    stack.push_back(curStr);
+                }
+                curStr.clear();
+            } else {
+                curStr+=path[i];
+            }
+        }
+        if (stack.empty()) return "/";
+        
+        string ans;
+        ans.reserve(path.size());
+        for (string &s : stack) {
+            ans+='/';
+            ans+=s;
+        }
+        return ans;
+    }
+};
+```
+{% endtab %}
 {% endtabs %}
 
 ### Complexity Analysis
