@@ -203,6 +203,7 @@
   * [Zigzag Iterator II 541 (M)](data_structure/s4.-stack-and-queue/zigzag-iterator-ii-541-m.md)
   * [Design Circular Queue (LeetCode 622) (M)](data_structure/s4.-stack-and-queue/design-circular-queue-leetcode-622-m.md)
   * [Employee Importance (LeetCode 690) (M)](data_structure/s4.-stack-and-queue/employee-importance-leetcode-690-m.md)
+  * [Dota2 Senate](data_structure/s4.-stack-and-queue/dota2-senate.md)
   * [Flood Fill (LeetCode 733) (E)](data_structure/s4.-stack-and-queue/flood-fill-leetcode-733-e.md)
   * [Number of Recent Calls (LeetCode 933) (E)](data_structure/s4.-stack-and-queue/number-of-recent-calls-leetcode-933-e.md)
   * [Find the Winner of the Circular Game (LeetCode 1823) (M)](data_structure/s4.-stack-and-queue/find-the-winner-of-the-circular-game-leetcode-1823-m.md)
