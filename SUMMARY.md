@@ -155,7 +155,7 @@
   * [Convert Array List to Linked List 489 (E)](data_structure/linked_list/convert-array-list-to-linked-list-489-e.md)
   * [Implement Queue by Linked List II 493 (E)](data_structure/linked_list/implement-queue-by-linked-list-ii-493-e.md)
   * [Odd Even Linked List 1292 (M)](data_structure/linked_list/odd-even-linked-list-1292-m.md)
-  * [Maximum Twin Sum of a Linked List](data_structure/linked_list/maximum-twin-sum-of-a-linked-list.md)
+  * [Maximum Twin Sum of a Linked List (LeetCode 2130) (M)](data_structure/linked_list/maximum-twin-sum-of-a-linked-list-leetcode-2130-m.md)
 * [Stack](data_structure/stack/README.md)
   * [Monotonic Stack](data_structure/stack/monotone-stack/README.md)
     * [Largest Rectangle in Histogram 122 (H)](data_structure/stack/monotone-stack/largest-rectangle-in-histogram-122-h.md)
