@@ -142,6 +142,7 @@
   * [Reverse Linked List II 36 (M)](data_structure/linked_list/reverse-linked-list-ii-36-m.md)
   * [Copy List with Random Pointer 105 (M)](data_structure/linked_list/copy-list-with-random-pointer-105-m.md)
   * [Add Two Numbers 167 (E)](data_structure/linked_list/add-two-numbers-167-e.md)
+  * [Odd Even Linked List (LeetCode 328) (M)](data_structure/linked_list/odd-even-linked-list-leetcode-328-m.md)
   * [Add Two Numbers II (LeetCode 445) (M)](data_structure/linked_list/add-two-numbers-ii-leetcode-445-m.md)
   * [Rotate List 170 (M)](data_structure/linked_list/rotate-list-170-m.md)
   * [Remove Nth Node From End of List 174 (E)](data_structure/linked_list/remove-nth-node-from-end-of-list-174-e.md)
